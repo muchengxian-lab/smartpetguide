@@ -1,0 +1,43 @@
+---
+interface Product {
+  name: string;
+  brand: string;
+  price: number;
+  rating: number;
+  features: string[];
+  bestFor: string[];
+}
+
+interface Props { products: Product[]; dimensionLabels?: string[]; }
+
+const { products, dimensionLabels = ["Price", "Rating", "App Control", "Camera", "Capacity", "Best For"] } = Astro.props;
+---
+
+<div class="overflow-x-auto rounded-xl border border-gray-200">
+  <table class="w-full text-left text-sm">
+    <thead>
+      <tr class="border-b bg-gray-50">
+        <th class="px-4 py-3 font-semibold text-gray-700">Product</th>
+        {dimensionLabels.map((label) => (
+          <th class="px-4 py-3 font-semibold text-gray-700">{label}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {products.map((p) => (
+        <tr class="border-b last:border-0 hover:bg-gray-50">
+          <td class="px-4 py-3 font-medium">
+            <span class="text-gray-900">{p.name}</span>
+            <span class="block text-xs text-gray-400">{p.brand}</span>
+          </td>
+          <td class="px-4 py-3 font-semibold text-primary">${p.price}</td>
+          <td class="px-4 py-3 text-accent">{"★".repeat(Math.round(p.rating))}</td>
+          <td class="px-4 py-3">{p.features.includes("App control") ? "✓" : "—"}</td>
+          <td class="px-4 py-3">{p.features.some(f => f.toLowerCase().includes("camera")) ? "✓" : "—"}</td>
+          <td class="px-4 py-3 text-xs text-gray-500">{p.features.find(f => f.toLowerCase().includes("capacity") || f.toLowerCase().includes("l")) || "—"}</td>
+          <td class="px-4 py-3 text-xs text-gray-500">{p.bestFor.slice(0, 2).join(", ")}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

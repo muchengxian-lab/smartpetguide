@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ComparisonTable from "../../components/ComparisonTable.astro";
+import FAQ from "../../components/FAQ.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: "litter-robot-4-vs-leos-loo-too" } },
+  ];
+}
+
+const slug = Astro.params.slug || "litter-robot-4-vs-leos-loo-too";
+const compareMap: Record<string, { title: string; description: string; productA: any; productB: any; winner: string; faqs: { q: string; a: string }[] }> = {
+  "litter-robot-4-vs-leos-loo-too": {
+    title: "Litter-Robot 4 vs Leo's Loo Too (2026) — Which Self-Cleaning Box Wins?",
+    description: "Head-to-head comparison: Litter-Robot 4 vs Leo's Loo Too. We compare price, odor control, features, app quality, and cat comfort to help you decide.",
+    winner: "Litter-Robot 4 wins on overall quality and odor control, but Leo's Loo Too is the better value at $449 with UV sterilization built in.",
+    productA: { name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Up to 4 cats", "Carbon filter"], pros: ["Best odor control", "Best app"], cons: ["Expensive"], bestFor: ["Multi-cat homes", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B0BG4NP272?tag=smartpetguide-20" },
+    productB: { name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "Voice control", "App control", "Safety sensors"], pros: ["UV sterilization", "Quiet"], cons: ["Smaller drawer"], bestFor: ["Single-cat", "Tech lovers"], amazonUrl: "https://www.amazon.com/dp/B0BXFLBM4C?tag=smartpetguide-20" },
+    faqs: [
+      { q: "Which is quieter — Litter-Robot 4 or Leo's Loo Too?", a: "Leo's Loo Too is noticeably quieter during the cleaning cycle, making it the better choice if the box sits near a bedroom or living area." },
+      { q: "Which has better odor control?", a: "The Litter-Robot 4 edges ahead with its superior carbon filter system and fully sealed waste drawer design." },
+      { q: "Is UV sterilization in Leo's Loo Too a gimmick?", a: "Not a gimmick — UV-C light does reduce bacteria in the waste drawer, but the Litter-Robot's sealed drawer + carbon filter achieves similar results through different means." },
+    ],
+  },
+};
+
+const data = compareMap[slug] || compareMap["litter-robot-4-vs-leos-loo-too"];
+---
+
+<BaseLayout title={data.title} description={data.description} type="article">
+  <Breadcrumb crumbs={[{ label: "Compare", href: "/compare/" }, { label: data.productA.name + " vs " + data.productB.name }]} />
+
+  <article>
+    <h1 class="text-3xl font-extrabold text-gray-900 md:text-4xl">{data.title}</h1>
+    <p class="mt-3 text-lg text-gray-500">{data.description}</p>
+
+    <div class="mt-6 rounded-xl border-2 border-primary bg-blue-50 p-5">
+      <p class="font-bold text-primary">Bottom Line:</p>
+      <p class="mt-1 text-gray-700">{data.winner}</p>
+    </div>
+
+    <div class="mt-8 grid gap-8 md:grid-cols-2">
+      {[data.productA, data.productB].map((p) => (
+        <div class="rounded-xl border border-gray-200 p-6">
+          <h2 class="text-xl font-bold text-gray-900">{p.name}</h2>
+          <p class="text-sm text-gray-500">by {p.brand}</p>
+          <p class="mt-2 text-3xl font-bold text-primary">${p.price}</p>
+          <div class="mt-3 space-y-2 text-sm">
+            <p class="font-semibold text-green-700">Pros</p>
+            {p.pros.map((pro: string) => <p class="text-gray-600">+ {pro}</p>)}
+            <p class="mt-2 font-semibold text-red-600">Cons</p>
+            {p.cons.map((con: string) => <p class="text-gray-600">- {con}</p>)}
+          </div>
+          <a href={p.amazonUrl} target="_blank" rel="nofollow sponsored noopener"
+             class="mt-4 inline-block w-full rounded-lg bg-accent py-2.5 text-center font-semibold text-white hover:bg-accent-dark">
+            View on Amazon
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-8">
+      <h2 class="text-xl font-bold">Feature Comparison</h2>
+      <div class="mt-4 overflow-x-auto rounded-xl border">
+        <table class="w-full text-sm">
+          <thead><tr class="bg-gray-50"><th class="px-4 py-3 text-left">Feature</th><th class="px-4 py-3">{data.productA.name}</th><th class="px-4 py-3">{data.productB.name}</th></tr></thead>
+          <tbody class="divide-y">
+            {[
+              ["Price", `$${data.productA.price}`, `$${data.productB.price}`],
+              ["Rating", "★".repeat(Math.round(data.productA.rating)), "★".repeat(Math.round(data.productB.rating))],
+              ["App Control", "Yes", "Yes"],
+              ["Multi-Cat", "Up to 4", "Up to 2"],
+              ["UV Sterilization", "No", "Yes"],
+              ["Voice Control", "No", "Yes (Alexa/Google)"],
+              ["Warranty", "1 year", "1 year"],
+            ].map(([feature, a, b]) => (
+              <tr class="hover:bg-gray-50"><td class="px-4 py-3 font-medium">{feature}</td><td class="px-4 py-3">{a}</td><td class="px-4 py-3">{b}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <FAQ items={data.faqs} />
+  </article>
+</BaseLayout>

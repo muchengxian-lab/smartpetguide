@@ -1,0 +1,130 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import ComparisonTable from "../../components/ComparisonTable.astro";
+import FAQ from "../../components/FAQ.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: "self-cleaning-litter-boxes" } },
+    { params: { slug: "automatic-cat-feeders" } },
+  ];
+}
+
+const slugMap: Record<string, { title: string; description: string; products: any[]; faqs: { q: string; a: string }[] }> = {
+  "self-cleaning-litter-boxes": {
+    title: "5 Best Self-Cleaning Litter Boxes of 2026 — Tested & Reviewed",
+    description: "We tested the top automatic litter boxes to find the best for odor control, multi-cat homes, and budget. Litter-Robot vs Leo's Loo vs PetSafe and more.",
+    products: [
+      { id: "litter-robot-4", name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Multi-cat compatible", "Odor control", "Waste drawer indicator", "4 cat capacity"], pros: ["Best-in-class odor control", "Large waste drawer", "Excellent app"], cons: ["Expensive", "Large footprint"], bestFor: ["Multi-cat households", "Owners who want the best"], amazonUrl: "https://www.amazon.com/dp/B0BG4NP272?tag=smartpetguide-20", imageUrl: "", reviewCount: 12500, category: "litterBox", weight: 3.6, warranty: "1 year" },
+      { id: "leos-loo-too", name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "App control", "Voice control (Alexa/Google)", "Safety sensors", "Quiet operation"], pros: ["UV sterilization built-in", "Voice assistant compatible", "Quieter than competitors"], cons: ["Smaller waste drawer", "App can be buggy"], bestFor: ["Single-cat homes", "Tech enthusiasts"], amazonUrl: "https://www.amazon.com/dp/B0BXFLBM4C?tag=smartpetguide-20", imageUrl: "", reviewCount: 5800, category: "litterBox", weight: 2.8, warranty: "1 year" },
+      { id: "catlink-young", name: "CATLINK Young Pro", brand: "CATLINK", price: 399, rating: 4.1, features: ["App control", "Multi-cat recognition", "Weight sensors", "Safety protection", "13L waste bin"], pros: ["Multi-cat recognition by weight", "Large waste container", "Great value"], cons: ["Complex setup", "App translations imperfect"], bestFor: ["Multi-cat homes on a budget", "Data-driven owners"], amazonUrl: "https://www.amazon.com/dp/B0C7LXNKV3?tag=smartpetguide-20", imageUrl: "", reviewCount: 3400, category: "litterBox", weight: 3.0, warranty: "1 year" },
+      { id: "elspet-pro", name: "Elspet Pro Self-Cleaning", brand: "Elspet", price: 349, rating: 4.0, features: ["App control", "Odor neutralizer", "Safety sensors", "Quiet motor", "Easy disassembly"], pros: ["Affordable mid-range", "Easy to clean", "Good safety features"], cons: ["Newer brand", "App less polished"], bestFor: ["Value seekers", "1-2 cats"], amazonUrl: "https://www.amazon.com/dp/B0CBKNRYP7?tag=smartpetguide-20", imageUrl: "", reviewCount: 2100, category: "litterBox", weight: 2.5, warranty: "18 months" },
+      { id: "petsafe-scoopfree", name: "PetSafe ScoopFree Smart", brand: "PetSafe", price: 299, rating: 4.2, features: ["Crystal litter system", "App alerts", "Disposable trays", "Health monitoring", "Motion sensors"], pros: ["Affordable entry price", "Disposable trays = easy", "Health tracking"], cons: ["Proprietary trays costly", "Crystal litter not for all"], bestFor: ["Budget-conscious", "First-time owners"], amazonUrl: "https://www.amazon.com/dp/B0C6LMNV7H?tag=smartpetguide-20", imageUrl: "", reviewCount: 9200, category: "litterBox", weight: 3.2, warranty: "1 year" },
+    ],
+    faqs: [
+      { q: "Are self-cleaning litter boxes worth it?", a: "Yes, if you value your time and want better odor control. A quality self-cleaning box like the Litter-Robot 4 can reduce scooping to once every 1-2 weeks and significantly cut litter box odors." },
+      { q: "How often do you need to empty a self-cleaning litter box?", a: "Most self-cleaning boxes need the waste drawer emptied every 5-7 days for a single cat, or every 2-3 days for multiple cats." },
+      { q: "Do self-cleaning litter boxes work with clumping litter?", a: "Yes, almost all self-cleaning litter boxes require clumping litter to function properly. Crystal litter systems like PetSafe ScoopFree are an exception." },
+      { q: "Can a self-cleaning litter box scare my cat?", a: "Some cats are initially nervous about the motor noise and movement. Look for models with safety sensors that pause when a cat is near. Gradual introduction helps — leave it unplugged for the first week." },
+      { q: "What's the best self-cleaning litter box for multiple cats?", a: "The Litter-Robot 4 handles up to 4 cats and has the largest waste drawer. The CATLINK Young Pro can identify individual cats by weight, which is great for multi-cat health monitoring." },
+    ],
+  },
+  "automatic-cat-feeders": {
+    title: "5 Best Automatic Cat Feeders of 2026 — Smart Feeding Solutions",
+    description: "Compare the best automatic pet feeders with app control, cameras, and portion management. WOPET vs Petlibro vs DOGNESS vs PETKIT — which is right for you?",
+    products: [
+      { id: "petlibro-granary", name: "Petlibro Granary Camera Feeder", brand: "Petlibro", price: 139, rating: 4.5, features: ["1080p camera", "App control", "3L/5L options", "Two-way audio", "Night vision", "Motion alerts"], pros: ["Camera + feeder in one", "Excellent app", "Night vision"], cons: ["Smaller capacity", "Premium price"], bestFor: ["Visual check-ins", "Small to medium pets", "Anxious pet parents"], amazonUrl: "https://www.amazon.com/dp/B0CD83LQX7?tag=smartpetguide-20", imageUrl: "", reviewCount: 8700, category: "feeder", weight: 1.8, warranty: "1 year" },
+      { id: "petkit-fresh-element", name: "PETKIT Fresh Element Solo", brand: "PETKIT", price: 129, rating: 4.4, features: ["App control", "4L capacity", "Rotary sealing", "Detachable parts", "Low-food alert"], pros: ["Excellent food freshness", "Easy to clean", "Sleek design"], cons: ["No camera", "Slightly noisy"], bestFor: ["Design-conscious", "Food freshness priority"], amazonUrl: "https://www.amazon.com/dp/B0BX3MSX5T?tag=smartpetguide-20", imageUrl: "", reviewCount: 6100, category: "feeder", weight: 2.0, warranty: "1 year" },
+      { id: "wopet-automatic", name: "WOPET Automatic Feeder", brand: "WOPET", price: 89, rating: 4.3, features: ["App control", "6L capacity", "Voice recording", "Dual power", "10 meals/day"], pros: ["Great value", "Reliable Wi-Fi", "Voice recording"], cons: ["No camera", "App feels dated"], bestFor: ["Budget-minded", "Daily scheduling"], amazonUrl: "https://www.amazon.com/dp/B0BYSF2TLM?tag=smartpetguide-20", imageUrl: "", reviewCount: 15200, category: "feeder", weight: 2.1, warranty: "1 year" },
+      { id: "dogness-mini", name: "DOGNESS Mini Smart Feeder", brand: "DOGNESS", price: 99, rating: 4.2, features: ["App control", "3.5L capacity", "Desiccant bag slot", "Stainless steel bowl", "Anti-clog"], pros: ["Compact design", "Stainless steel bowl", "Anti-clog mechanism"], cons: ["No camera", "Small capacity"], bestFor: ["Small spaces", "Single pet"], amazonUrl: "https://www.amazon.com/dp/B0CCJRQ8HQ?tag=smartpetguide-20", imageUrl: "", reviewCount: 4200, category: "feeder", weight: 1.5, warranty: "1 year" },
+    ],
+    faqs: [
+      { q: "Are automatic pet feeders worth it?", a: "Absolutely — if you work long hours, travel occasionally, or want consistent portion control for your pet. An automatic feeder ensures your pet eats on schedule even when you're not home." },
+      { q: "How long can an automatic feeder last without refilling?", a: "A 4-6L capacity feeder can feed one cat for 15-25 days. Smaller 2-3L feeders last about 7-10 days for a single pet." },
+      { q: "Do I need a feeder with a camera?", a: "A camera is worth the extra cost if you want peace of mind — you can confirm your pet actually ate. The Petlibro Granary combines both at a reasonable price." },
+      { q: "What happens if the power goes out?", a: "Most quality feeders have dual power (AC + battery backup). The WOPET and Petlibro both include battery backup options so your pet won't miss a meal." },
+      { q: "Can automatic feeders handle wet food?", a: "No — almost all dry-food-only. For wet food, look for feeders with ice pack compartments or timed lid-opening designs (a separate niche category)." },
+    ],
+  },
+};
+
+const slug = Astro.params.slug || "self-cleaning-litter-boxes";
+const data = slugMap[slug] || slugMap["self-cleaning-litter-boxes"];
+---
+
+<BaseLayout title={data.title} description={data.description} type="article">
+  <Breadcrumb crumbs={[{ label: "Best Picks", href: "/best/" }, { label: data.title.replace(/^\d+\s/, "") }]} />
+
+  <article>
+    <h1 class="text-3xl font-extrabold text-gray-900 md:text-4xl">{data.title}</h1>
+    <p class="mt-3 text-lg text-gray-500">{data.description}</p>
+
+    <div class="mt-2 flex items-center gap-4 text-sm text-gray-400">
+      <span>Updated: <time datetime="2026-05-20">May 20, 2026</time></span>
+      <span>12 min read</span>
+      <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-500">Advertiser Disclosure</span>
+    </div>
+
+    <section class="mt-8">
+      <h2 class="mb-4 text-xl font-bold">Quick Comparison</h2>
+      <ComparisonTable products={data.products} />
+    </section>
+
+    <section class="mt-10">
+      <h2 class="mb-4 text-xl font-bold">Our Top Picks</h2>
+      <div class="grid gap-6">
+        {data.products.map((p, i) => (
+          <div class="rounded-xl border border-gray-200 p-6">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <div class="flex-shrink-0">
+                <span class="rounded-full bg-primary px-3 py-1 text-sm font-bold text-white">#{i + 1}</span>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-gray-900">{p.name}</h3>
+                <p class="text-sm text-gray-500">by {p.brand} &middot; {"★".repeat(Math.round(p.rating))} ({p.reviewCount.toLocaleString()} reviews)</p>
+                <p class="mt-2 text-2xl font-bold text-primary">${p.price}</p>
+
+                <div class="mt-3 grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <p class="mb-1 text-sm font-semibold text-green-700">Pros</p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                      {p.pros.map((pro) => <li>+ {pro}</li>)}
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="mb-1 text-sm font-semibold text-red-600">Cons</p>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                      {p.cons.map((con) => <li>- {con}</li>)}
+                    </ul>
+                  </div>
+                </div>
+
+                <p class="mt-3 text-sm text-gray-600"><strong>Best for:</strong> {p.bestFor.join(", ")}</p>
+                <a href={p.amazonUrl} target="_blank" rel="nofollow sponsored noopener"
+                   class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-white hover:bg-accent-dark transition-colors">Check Price on Amazon</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="mb-4 text-xl font-bold">How to Choose the Right One</h2>
+      <div class="prose prose-gray max-w-none">
+        <p>When shopping for {slug.includes("litter") ? "a self-cleaning litter box" : "an automatic pet feeder"}, consider these key factors:</p>
+        <ol class="space-y-3 text-gray-600">
+          <li><strong>Number of pets:</strong> Multi-pet homes need larger capacity and {slug.includes("litter") ? "multi-cat recognition features" : "larger food hoppers"}.</li>
+          <li><strong>App reliability:</strong> A smart device is only as good as its app. Our top picks all have solid app experiences.</li>
+          <li><strong>Maintenance cost:</strong> Factor in {slug.includes("litter") ? "replacement liners, trays, or litter costs" : "cleaning and any proprietary parts"}.</li>
+          <li><strong>Noise level:</strong> If the device sits in your living area, quiet operation matters.</li>
+          <li><strong>Space:</strong> Measure your available space — {slug.includes("litter") ? "some self-cleaning boxes are surprisingly large" : "feeder footprints vary significantly"}.</li>
+        </ol>
+      </div>
+    </section>
+
+    <FAQ items={data.faqs} />
+  </article>
+</BaseLayout>

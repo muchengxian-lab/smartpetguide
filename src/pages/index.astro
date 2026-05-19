@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProductCard from "../components/ProductCard.astro";
+import products from "../data/products.json";
+
+const topPicks = [
+  products.litterBoxes[0],
+  products.feeders[1],
+  products.waterFountains[0],
+  products.gpsTrackers[0],
+];
+---
+
+<BaseLayout
+  title="SmartPetGuide — Best Smart Pet Devices 2026"
+  description="Expert reviews and comparisons of the best automatic pet feeders, self-cleaning litter boxes, smart fountains, pet cameras, and GPS trackers. Make the right choice for your furry friend."
+>
+  <section class="text-center">
+    <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 md:text-5xl">
+      Smart Pet Devices, <span class="text-primary">Honest Reviews</span>
+    </h1>
+    <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-500">
+      We test and compare the best automatic feeders, self-cleaning litter boxes,
+      pet cameras, GPS trackers, and more — so you can buy with confidence.
+    </p>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="mb-6 text-2xl font-bold">Top Picks This Month</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {topPicks.map((product, i) => (
+        <ProductCard product={product} rank={i + 1} />
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-16 grid gap-8 md:grid-cols-3">
+    {[
+      { title: "Automatic Feeders", href: "/best/automatic-cat-feeders/", desc: "Never miss a mealtime — app-controlled feeding on your schedule.", count: products.feeders.length },
+      { title: "Self-Cleaning Litter Boxes", href: "/best/self-cleaning-litter-boxes/", desc: "Say goodbye to scooping — automatic boxes that do the dirty work.", count: products.litterBoxes.length },
+      { title: "Smart Water Fountains", href: "/best/smart-pet-water-fountains/", desc: "Encourage hydration with filtered, flowing water your pet will love.", count: products.waterFountains.length },
+      { title: "Pet Cameras", href: "/best/pet-cameras/", desc: "Check in, toss treats, and talk to your pet from anywhere.", count: 1 },
+      { title: "GPS Trackers", href: "/best/gps-pet-trackers/", desc: "Know where your pet is at all times with real-time GPS tracking.", count: products.gpsTrackers.length },
+      { title: "Buying Guides", href: "/guides/", desc: "Not sure where to start? Our comprehensive guides walk you through it.", count: "5+" },
+    ].map((cat) => (
+      <a href={cat.href} class="group rounded-xl border border-gray-200 p-6 transition-shadow hover:shadow-lg">
+        <h3 class="text-lg font-bold text-gray-900 group-hover:text-primary">{cat.title}</h3>
+        <p class="mt-2 text-sm text-gray-500">{cat.desc}</p>
+        <p class="mt-3 text-xs font-medium text-primary">{cat.count} products reviewed</p>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

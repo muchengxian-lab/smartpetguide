@@ -1,0 +1,111 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  type?: "article" | "product" | "website";
+  image?: string;
+  publishDate?: string;
+  modifiedDate?: string;
+  schema?: string;
+}
+
+const {
+  title,
+  description,
+  type = "website",
+  image = "/images/og-default.jpg",
+  publishDate,
+  modifiedDate,
+  schema,
+} = Astro.props;
+
+const fullTitle = title.includes("SmartPetGuide")
+  ? title
+  : `${title} | SmartPetGuide`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+
+    <title>{fullTitle}</title>
+
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="SmartPetGuide" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+
+    {publishDate && (
+      <meta property="article:published_time" content={publishDate} />
+    )}
+    {modifiedDate && (
+      <meta property="article:modified_time" content={modifiedDate} />
+    )}
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="SmartPetGuide" href="/rss.xml" />
+
+    {schema && <script type="application/ld+json" set:html={schema} />}
+  </head>
+  <body class="bg-white text-gray-900 antialiased">
+    <header class="border-b border-gray-100">
+      <nav
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
+      >
+        <a href="/" class="text-xl font-bold text-primary">SmartPetGuide</a>
+        <div class="flex items-center gap-6 text-sm font-medium">
+          <a href="/best/" class="text-gray-600 hover:text-primary transition-colors">Best Picks</a>
+          <a href="/reviews/" class="text-gray-600 hover:text-primary transition-colors">Reviews</a>
+          <a href="/compare/" class="text-gray-600 hover:text-primary transition-colors">Compare</a>
+          <a href="/guides/" class="text-gray-600 hover:text-primary transition-colors">Guides</a>
+          <a href="/about/" class="text-gray-600 hover:text-primary transition-colors">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="mt-16 border-t border-gray-100 bg-gray-50 py-12">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="grid gap-8 md:grid-cols-3">
+          <div>
+            <p class="text-lg font-bold text-primary">SmartPetGuide</p>
+            <p class="mt-2 text-sm text-gray-500">
+              Helping pet parents choose the best smart devices for their furry family members.
+            </p>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-700">Categories</p>
+            <ul class="mt-2 space-y-1 text-sm text-gray-500">
+              <li><a href="/best/automatic-cat-feeders/" class="hover:text-primary">Automatic Feeders</a></li>
+              <li><a href="/best/self-cleaning-litter-boxes/" class="hover:text-primary">Self-Cleaning Litter Boxes</a></li>
+              <li><a href="/best/smart-pet-water-fountains/" class="hover:text-primary">Smart Water Fountains</a></li>
+              <li><a href="/best/pet-cameras/" class="hover:text-primary">Pet Cameras</a></li>
+              <li><a href="/best/gps-pet-trackers/" class="hover:text-primary">GPS Trackers</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-700">Legal</p>
+            <ul class="mt-2 space-y-1 text-sm text-gray-500">
+              <li><a href="/about/" class="hover:text-primary">About Us</a></li>
+              <li><a href="/privacy/" class="hover:text-primary">Privacy Policy</a></li>
+              <li><a href="/affiliate-disclosure/" class="hover:text-primary">Affiliate Disclosure</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-8 text-center text-xs text-gray-400">
+          As an Amazon Associate, SmartPetGuide earns from qualifying purchases. &copy; {new Date().getFullYear()} SmartPetGuide. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

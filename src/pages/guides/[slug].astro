@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FAQ from "../../components/FAQ.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: "automatic-feeder-buying-guide" } },
+  ];
+}
+
+const guideMap: Record<string, { title: string; description: string; sections: { heading: string; body: string }[]; faqs: { q: string; a: string }[] }> = {
+  "automatic-feeder-buying-guide": {
+    title: "Automatic Pet Feeder Buying Guide 2026 — How to Choose the Right One",
+    description: "Everything you need to know before buying an automatic pet feeder. Camera vs no camera, capacity, app features, power backup, and more.",
+    sections: [
+      { heading: "Capacity: How Big Should Your Feeder Be?", body: "For a single cat, a 3-4L capacity feeder lasts 15-20 days. For dogs or multiple pets, look for 5-6L or larger. If you travel often, bigger is better." },
+      { heading: "Camera vs No Camera", body: "A camera adds $40-60 to the price but provides invaluable peace of mind. You can confirm your pet actually ate, check on them while away, and get motion alerts. For anxious pet parents, it's worth it." },
+      { heading: "App Reliability", body: "The app is the brain of any smart feeder. Look for feeders with well-reviewed apps that support customizable schedules, portion control, and feeding history. Petlibro and PETKIT lead in app quality." },
+      { heading: "Power Backup", body: "Always choose a feeder with dual power (AC + battery backup). A power outage shouldn't mean a missed meal. Most quality models include this feature." },
+      { heading: "Food Type Compatibility", body: "Standard automatic feeders work with dry kibble only. Kibble size matters — check manufacturer specs for maximum kibble diameter. For wet food, you'll need a specialized timed feeder with ice packs." },
+    ],
+    faqs: [
+      { q: "What's the best automatic feeder for a budget?", a: "The WOPET Automatic Feeder at $89 offers excellent value with reliable Wi-Fi, voice recording, and 6L capacity — all the essentials without the premium price." },
+      { q: "Can automatic feeders work for dogs?", a: "Yes — most feeders work for both cats and dogs. For large dogs, choose a feeder with a larger capacity (6L+) and ensure it's sturdy enough not to be knocked over." },
+    ],
+  },
+};
+
+const slug = Astro.params.slug || "automatic-feeder-buying-guide";
+const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
+---
+
+<BaseLayout title={guide.title} description={guide.description} type="article">
+  <Breadcrumb crumbs={[{ label: "Guides", href: "/guides/" }, { label: guide.title }]} />
+
+  <article class="prose prose-gray max-w-none">
+    <h1>{guide.title}</h1>
+    <p class="lead">{guide.description}</p>
+    {guide.sections.map((s) => (
+      <section>
+        <h2>{s.heading}</h2>
+        <p>{s.body}</p>
+      </section>
+    ))}
+  </article>
+
+  <FAQ items={guide.faqs} />
+</BaseLayout>

@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FAQ from "../../components/FAQ.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: "best-feeder-for-french-bulldog" } },
+  ];
+}
+
+const breedMap: Record<string, { title: string; description: string; breed: string; recommendations: { category: string; product: string; reason: string; url: string }[]; tips: string[]; faqs: { q: string; a: string }[] }> = {
+  "best-feeder-for-french-bulldog": {
+    title: "Best Automatic Feeder for French Bulldogs in 2026 — Top Picks",
+    description: "French Bulldogs have unique feeding needs — flat faces, tendency to overeat, and sensitive digestion. We've picked the best feeders that work for your Frenchie.",
+    breed: "French Bulldog",
+    recommendations: [
+      { category: "Best Overall", product: "Petlibro Granary Camera Feeder", reason: "Camera lets you monitor your Frenchie's eating, and the portion control prevents overeating — critical for this obesity-prone breed.", url: "https://www.amazon.com/dp/B0CD83LQX7?tag=smartpetguide-20" },
+      { category: "Best Budget", product: "WOPET Automatic Feeder", reason: "6L capacity and reliable scheduling at an affordable price. Voice recording is great for calling your Frenchie to meals.", url: "https://www.amazon.com/dp/B0BYSF2TLM?tag=smartpetguide-20" },
+      { category: "Best for Portion Control", product: "PETKIT Fresh Element Solo", reason: "Excellent portion accuracy and food freshness system. The app tracks every meal — perfect for weight-managing Frenchies.", url: "https://www.amazon.com/dp/B0BX3MSX5T?tag=smartpetguide-20" },
+    ],
+    tips: ["Frenchies are prone to bloat — use a slow-feed bowl insert even with automatic feeders", "Elevate the feeder slightly to reduce neck strain", "Divide daily food into 3-4 smaller meals rather than 1-2 large ones", "Monitor weight monthly — Frenchies gain weight easily"],
+    faqs: [
+      { q: "Do French Bulldogs need a special automatic feeder?", a: "Not a special feeder, but you do need one with precise portion control. Frenchies are prone to obesity, so accurate portioning is more important than for other breeds." },
+      { q: "Should I elevate my Frenchie's feeder?", a: "Slightly elevating the feeder (4-6 inches) can make eating more comfortable for flat-faced breeds. Some feeders have built-in stands or you can use a separate elevated platform." },
+    ],
+  },
+};
+
+const slug = Astro.params.slug || "best-feeder-for-french-bulldog";
+const data = breedMap[slug] || breedMap["best-feeder-for-french-bulldog"];
+---
+
+<BaseLayout title={data.title} description={data.description} type="article">
+  <Breadcrumb crumbs={[{ label: "Breed-Specific", href: "/breed/" }, { label: data.breed }]} />
+
+  <article>
+    <h1 class="text-3xl font-extrabold text-gray-900 md:text-4xl">{data.title}</h1>
+    <p class="mt-3 text-lg text-gray-500">{data.description}</p>
+
+    <section class="mt-8">
+      <h2 class="mb-4 text-xl font-bold">Our Picks for {data.breed}s</h2>
+      <div class="grid gap-4">
+        {data.recommendations.map((rec) => (
+          <div class="rounded-xl border border-gray-200 p-5">
+            <p class="text-sm font-semibold text-primary">{rec.category}</p>
+            <h3 class="text-lg font-bold text-gray-900">{rec.product}</h3>
+            <p class="mt-1 text-sm text-gray-500">{rec.reason}</p>
+            <a href={rec.url} target="_blank" rel="nofollow sponsored noopener"
+               class="mt-3 inline-block rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-dark">Check Price</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="mt-8">
+      <h2 class="mb-4 text-xl font-bold">{data.breed}-Specific Feeding Tips</h2>
+      <ul class="space-y-2 text-gray-600">
+        {data.tips.map((tip) => <li class="flex gap-2"><span class="text-primary">&#8226;</span> {tip}</li>)}
+      </ul>
+    </section>
+
+    <FAQ items={data.faqs} />
+  </article>
+</BaseLayout>

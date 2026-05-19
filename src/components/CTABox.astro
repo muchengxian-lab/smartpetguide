@@ -1,0 +1,19 @@
+---
+interface Props {
+  text?: string;
+  url?: string;
+  size?: "sm" | "md" | "lg";
+}
+
+const { text = "Check Price on Amazon", url = "#", size = "md" } = Astro.props;
+const sizeClasses = { sm: "px-4 py-2 text-sm", md: "px-6 py-3 text-base", lg: "px-8 py-4 text-lg" };
+---
+
+<a
+  href={url}
+  target="_blank"
+  rel="nofollow sponsored noopener"
+  class={`inline-block rounded-lg bg-accent font-semibold text-white transition-all hover:bg-accent-dark hover:shadow-lg ${sizeClasses[size]}`}
+>
+  {text} →
+</a>
