@@ -138,6 +138,8 @@
 | SVG 占位图先行 | 等 AA 通过后用 SiteStripe 替换真实产品图，避免版权问题 |
 | 纯静态 Astro | 加载速度 <2s，Vercel 免费层，SEO 友好 |
 | 不做主动外链（前3月） | 新站先积累内容，自然获取外链，避免 Google 惩罚 |
+| Forest + Honey 编辑杂志风 | Fraunces字体 + 暖色系，去掉AI感，符合欧美审美 |
+| Fraunces + Atkinson Hyperlegible | 替代 Inter 通用字体，有特色但不失可读性 |
 
 ## 遇到的错误
 | 错误 | 尝试次数 | 解决方案 |
