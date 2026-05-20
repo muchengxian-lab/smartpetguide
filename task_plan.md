@@ -21,26 +21,29 @@
 - [x] 设计站点结构（栏目/分类/导航）
 - [x] 产品数据库 `src/data/products.json`（15款产品，5个品类）
 - [x] 首页 + 关于 + 隐私 + 联盟披露 + 404 + RSS 功能页
-- [x] 首批 10 篇内容发布（2 Best + 4 评测 + 1 对比 + 2 指南 + 1 品种）
+- [x] 首批内容发布（2 Best + 6 评测 + 2 对比 + 2 指南 + 1 品种 = 13 内容页 + 6 功能页 = 19 页）
 - [x] Amazon Associates `smartpetgui0a-20` 提交审核
 - [x] Pinterest 企业账号创建 + 网站验证
 - [x] Reddit `u/Additional_Diver3250` 创建
 - **完成时间：** 2026-05-19（Day 1）
-- **产出：** 15 页面在线，基础设施就绪
+- **产出：** 19 页面在线，基础设施就绪，30 个联盟链接，GitHub 备份完成
+- **2026-05-20 重设计**：Forest + Honey 编辑杂志风，Fraunces + Atkinson Hyperlegible 字体，全站刷新
 
 ### 阶段 2：内容冲刺 1 + 变现激活（Day 2-3）
-- [ ] Amazon Associates 审核状态检查（查邮箱）
 - [ ] GSC sitemap 提交 `sitemap-index.xml`
-- [ ] 喂食器 Best 列表："5 Best Automatic Cat Feeders 2026"
-- [ ] 单品评测 ×3：WOPET / Petlibro Granary / DOGNESS Mini
-- [ ] 喂食器购买指南："Automatic Cat Feeder Buying Guide"
-- [ ] 猫砂盆补齐：Leo's Loo Too 评测、PetSafe ScoopFree 评测
+- [x] 喂食器 Best 列表："5 Best Automatic Cat Feeders 2026"
+- [x] 单品评测 ×3：WOPET / Petlibro Granary / DOGNESS Mini
+- [x] 喂食器购买指南："Automatic Cat Feeder Buying Guide"
+- [x] 猫砂盆补齐：Leo's Loo Too 评测、PetSafe ScoopFree 评测
 - [ ] 喂食器对比："WOPET vs Petlibro：Which Feeder Wins?"
-- [ ] 所有新文章插入联盟链接
+- [x] 所有新文章插入联盟链接
+- [ ] Amazon Associates 审核状态检查（刚 3h，预计 5/21-5/22 出结果）
 - [ ] 用 SiteStripe 替换首页产品图为真实图片（如果 AA 已通过）
+- [x] GitHub 仓库创建 + Git push 备份
+- [x] GitHub CLI 认证配置
 - [ ] Pinterest 发布首批 5 张 Pin 图
-- **状态：** in_progress
-- **目标产出：** 累计 20 篇内容 + 变现链路上线
+- **状态：** in_progress（~70%）
+- **目标产出：** 累计 19 篇内容 + 变现链路上线
 
 ### 阶段 3：饮水机 + 摄像头品类拓展（Day 4-5）
 - [ ] 智能饮水机 Best 列表："5 Best Smart Pet Water Fountains 2026"
@@ -140,12 +143,13 @@
 | 错误 | 尝试次数 | 解决方案 |
 |------|---------|---------|
 | — | — | 阶段 1 顺利无报错 |
+| Amazon Associates 提交仅 3h | — | 等待 24-48h 审核周期，预计 5/21-5/22 出结果 |
 
 ## 里程碑速查
 
 | 里程碑 | 内容数 | UV目标 | 收入目标 | 预计完成 |
 |--------|--------|--------|---------|---------|
-| M1: 基础上线 | 15 | — | — | ✅ Day 1 |
+| M1: 基础上线 | 19 | — | — | ✅ Day 1 |
 | M2: 变现激活 | 20 | — | — | Day 3 |
 | M3: 30篇+双品类 | 30 | 零星 | — | Day 5 |
 | M4: 45篇+全品类 | 45 | 10-30/天 | — | Day 8 |

@@ -6,14 +6,19 @@ interface Props {
 }
 
 const { text = "Check Price on Amazon", url = "#", size = "md" } = Astro.props;
-const sizeClasses = { sm: "px-4 py-2 text-sm", md: "px-6 py-3 text-base", lg: "px-8 py-4 text-lg" };
+const sizeClasses = {
+  sm: "px-5 py-2.5 text-sm",
+  md: "px-7 py-3 text-[15px]",
+  lg: "px-9 py-4 text-lg",
+};
 ---
 
 <a
   href={url}
   target="_blank"
   rel="nofollow sponsored noopener"
-  class={`inline-block rounded-lg bg-accent font-semibold text-white transition-all hover:bg-accent-dark hover:shadow-lg ${sizeClasses[size]}`}
+  class={`inline-flex items-center gap-2 rounded-xl bg-honey font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98] ${sizeClasses[size]}`}
 >
-  {text} →
+  {text}
+  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
 </a>

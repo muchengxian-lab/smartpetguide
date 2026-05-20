@@ -46,19 +46,22 @@
 - Pinterest：企业账号，网站已验证
 - Reddit：u/Additional_Diver3250
 
-### 已发布内容（12 页）
+### 已发布内容（19 页）
 1. 首页 `index.astro` — 最新推荐 + 分类入口
 2. 猫砂盆 Best 列表 — "Best Self-Cleaning Litter Boxes 2026"
 3. 喂食器 Best 列表 — "Best Automatic Cat Feeders 2026"
 4. Litter-Robot 4 评测
 5. Petlibro Granary 评测
-6. WOPET 评测
+6. WOPET Automatic 评测
 7. DOGNESS Mini 评测
-8. Litter-Robot 4 vs Leo's Loo Too 对比
-9. 喂食器购买指南
-10. 猫砂盆购买指南
-11. French Bulldog 品种推荐
-12. 功能页：About / Privacy / Affiliate Disclosure / 404 / RSS
+8. Leo's Loo Too 评测
+9. PetSafe ScoopFree 评测
+10. Litter-Robot 4 vs Leo's Loo Too 对比
+11. Automatic vs Manual Litter Box 对比
+12. 喂食器购买指南
+13. 猫砂盆购买指南
+14. French Bulldog 品种推荐
+15-19. About / Privacy / Affiliate Disclosure / 404 / RSS
 
 ### 产品数据库
 15款产品，5个品类：猫砂盆(5)、喂食器(4)、饮水机(3)、摄像头(2)、GPS(1)
@@ -68,6 +71,21 @@
 - smartpetguide.net 线上可访问，首页加载正常
 - SVG 占位图在部署后正常显示
 - Vercel 部署秒级生效
+- **2026-05-20 重设计**：Forest + Honey 编辑杂志风，Fraunces + Atkinson Hyperlegible 字体
+  - 配色：cream #FDF9F3 / forest #1A3C34 / honey #D4914B / sage #E9EFE8
+  - 首页、评测页、Best列表、对比页、指南页、品种页全部刷新
+  - favicon.svg 已修复
+
+## 设计系统（2026-05-20 重设计）
+| 元素 | 选择 | 理由 |
+|------|------|------|
+| 色调 | Forest + Honey（深绿+琥珀） | 温暖、专业、宠物友好，非AI感 |
+| 标题字体 | Fraunces（Google Fonts） | 有特色的编辑体，温暖不冷漠 |
+| 正文字体 | Atkinson Hyperlegible | 高可读性、独特、非通用字体 |
+| 卡片 | 圆角2xl + 浅色边框 + hover阴影 | 柔和有层次，不僵硬 |
+| 按钮 | 琥珀色圆角 + hover变深 + active微缩放 | 有反馈感，引导点击 |
+| 页脚 | 深绿底白字 | 对比分明，收尾稳重 |
+| 背景纹理 | SVG噪声叠加 opacity 3% | 微妙的纸张质感 |
 
 ## 资源
 - [原始完整计划](C:\Users\Administrator\.claude\plans\lucky-floating-flame.md)

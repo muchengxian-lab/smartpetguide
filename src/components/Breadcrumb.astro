@@ -3,17 +3,19 @@ interface Crumb { label: string; href?: string; }
 const { crumbs }: { crumbs: Crumb[] } = Astro.props;
 ---
 
-<nav aria-label="Breadcrumb" class="mb-6">
-  <ol class="flex items-center gap-1 text-sm text-gray-500">
-    <li><a href="/" class="hover:text-primary">Home</a></li>
+<nav aria-label="Breadcrumb" class="mb-8">
+  <ol class="flex flex-wrap items-center gap-1.5 text-sm text-bark-muted">
+    <li><a href="/" class="transition-colors hover:text-honey">Home</a></li>
     {crumbs.map((crumb, i) => (
       <>
-        <li class="px-1">/</li>
+        <li aria-hidden="true">
+          <svg class="h-3.5 w-3.5 text-bark-muted/40" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </li>
         <li>
           {i === crumbs.length - 1 || !crumb.href ? (
-            <span class="text-gray-900">{crumb.label}</span>
+            <span class="text-forest font-medium">{crumb.label}</span>
           ) : (
-            <a href={crumb.href} class="hover:text-primary">{crumb.label}</a>
+            <a href={crumb.href} class="transition-colors hover:text-honey">{crumb.label}</a>
           )}
         </li>
       </>
@@ -24,12 +26,12 @@ const { crumbs }: { crumbs: Crumb[] } = Astro.props;
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://smartpetguide.com/" },
+  itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://smartpetguide.net/" },
     ...crumbs.filter(c => c.href || true).map((c, i) => ({
       "@type": "ListItem",
       position: i + 2,
       name: c.label,
-      item: c.href ? `https://smartpetguide.com${c.href}` : undefined,
+      item: c.href ? `https://smartpetguide.net${c.href}` : undefined,
     }))],
 })} />
 </nav>

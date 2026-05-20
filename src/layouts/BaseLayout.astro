@@ -55,6 +55,11 @@ const fullTitle = title.includes("SmartPetGuide")
 
     {schema && <script type="application/ld+json" set:html={schema} />}
 
+    <!-- Google Fonts: Fraunces (display) + Atkinson Hyperlegible (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300&display=swap" rel="stylesheet" />
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKYRD8PSCT"></script>
     <script>
@@ -64,57 +69,79 @@ const fullTitle = title.includes("SmartPetGuide")
       gtag('config', 'G-DKYRD8PSCT');
     </script>
   </head>
-  <body class="bg-white text-gray-900 antialiased">
-    <header class="border-b border-gray-100">
-      <nav
-        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
-      >
-        <a href="/" class="text-xl font-bold text-primary">SmartPetGuide</a>
-        <div class="flex items-center gap-6 text-sm font-medium">
-          <a href="/best/" class="text-gray-600 hover:text-primary transition-colors">Best Picks</a>
-          <a href="/reviews/" class="text-gray-600 hover:text-primary transition-colors">Reviews</a>
-          <a href="/compare/" class="text-gray-600 hover:text-primary transition-colors">Compare</a>
-          <a href="/guides/" class="text-gray-600 hover:text-primary transition-colors">Guides</a>
-          <a href="/about/" class="text-gray-600 hover:text-primary transition-colors">About</a>
+  <body class="bg-cream font-body text-bark antialiased selection:bg-honey/30">
+    <!-- Subtle grain texture overlay -->
+    <div class="pointer-events-none fixed inset-0 z-[-1] opacity-[0.03]" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <filter id="noise">
+          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#noise)"/>
+      </svg>
+    </div>
+
+    <header class="sticky top-0 z-50 border-b border-sage-dark/30 bg-cream/95 backdrop-blur-sm">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        <a href="/" class="group flex items-center gap-2">
+          <span class="font-display text-2xl font-bold tracking-tight text-forest">
+            Smart<span class="text-honey">Pet</span>Guide
+          </span>
+        </a>
+        <div class="hidden items-center gap-8 text-[15px] font-medium md:flex">
+          <a href="/best/" class="text-bark-muted decoration-honey/40 underline-offset-4 transition-colors hover:text-forest">Best Picks</a>
+          <a href="/reviews/" class="text-bark-muted decoration-honey/40 underline-offset-4 transition-colors hover:text-forest">Reviews</a>
+          <a href="/compare/" class="text-bark-muted decoration-honey/40 underline-offset-4 transition-colors hover:text-forest">Compare</a>
+          <a href="/guides/" class="text-bark-muted decoration-honey/40 underline-offset-4 transition-colors hover:text-forest">Guides</a>
+          <a href="/about/" class="text-bark-muted decoration-honey/40 underline-offset-4 transition-colors hover:text-forest">About</a>
         </div>
+        <!-- Mobile menu trigger (hidden for now, functional later) -->
+        <button class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-forest md:hidden" aria-label="Menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 5h14M3 10h14M3 15h14"/>
+          </svg>
+          <span>Menu</span>
+        </button>
       </nav>
     </header>
 
-    <main class="mx-auto max-w-6xl px-4 py-8">
+    <main class="mx-auto max-w-6xl px-5 py-12">
       <slot />
     </main>
 
-    <footer class="mt-16 border-t border-gray-100 bg-gray-50 py-12">
-      <div class="mx-auto max-w-6xl px-4">
-        <div class="grid gap-8 md:grid-cols-3">
+    <footer class="mt-20 border-t border-sage-dark/30 bg-forest text-white">
+      <div class="mx-auto max-w-6xl px-5 py-16">
+        <div class="grid gap-12 md:grid-cols-3">
           <div>
-            <p class="text-lg font-bold text-primary">SmartPetGuide</p>
-            <p class="mt-2 text-sm text-gray-500">
-              Helping pet parents choose the best smart devices for their furry family members.
+            <p class="font-display text-xl font-bold">
+              Smart<span class="text-honey-light">Pet</span>Guide
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-white/70">
+              Honest, hands-on reviews of the best smart pet devices. We help pet parents make confident buying decisions for their furry family members.
             </p>
           </div>
           <div>
-            <p class="font-semibold text-gray-700">Categories</p>
-            <ul class="mt-2 space-y-1 text-sm text-gray-500">
-              <li><a href="/best/automatic-cat-feeders/" class="hover:text-primary">Automatic Feeders</a></li>
-              <li><a href="/best/self-cleaning-litter-boxes/" class="hover:text-primary">Self-Cleaning Litter Boxes</a></li>
-              <li><a href="/best/smart-pet-water-fountains/" class="hover:text-primary">Smart Water Fountains</a></li>
-              <li><a href="/best/pet-cameras/" class="hover:text-primary">Pet Cameras</a></li>
-              <li><a href="/best/gps-pet-trackers/" class="hover:text-primary">GPS Trackers</a></li>
+            <p class="font-semibold text-white/90">Browse</p>
+            <ul class="mt-3 space-y-2 text-sm text-white/70">
+              <li><a href="/best/automatic-cat-feeders/" class="transition-colors hover:text-honey-light">Automatic Feeders</a></li>
+              <li><a href="/best/self-cleaning-litter-boxes/" class="transition-colors hover:text-honey-light">Self-Cleaning Litter Boxes</a></li>
+              <li><a href="/best/smart-pet-water-fountains/" class="transition-colors hover:text-honey-light">Smart Water Fountains</a></li>
+              <li><a href="/best/pet-cameras/" class="transition-colors hover:text-honey-light">Pet Cameras</a></li>
+              <li><a href="/best/gps-pet-trackers/" class="transition-colors hover:text-honey-light">GPS Trackers</a></li>
             </ul>
           </div>
           <div>
-            <p class="font-semibold text-gray-700">Legal</p>
-            <ul class="mt-2 space-y-1 text-sm text-gray-500">
-              <li><a href="/about/" class="hover:text-primary">About Us</a></li>
-              <li><a href="/privacy/" class="hover:text-primary">Privacy Policy</a></li>
-              <li><a href="/affiliate-disclosure/" class="hover:text-primary">Affiliate Disclosure</a></li>
+            <p class="font-semibold text-white/90">Info</p>
+            <ul class="mt-3 space-y-2 text-sm text-white/70">
+              <li><a href="/about/" class="transition-colors hover:text-honey-light">About Us</a></li>
+              <li><a href="/privacy/" class="transition-colors hover:text-honey-light">Privacy Policy</a></li>
+              <li><a href="/affiliate-disclosure/" class="transition-colors hover:text-honey-light">Affiliate Disclosure</a></li>
+              <li><a href="/rss.xml" class="transition-colors hover:text-honey-light">RSS Feed</a></li>
             </ul>
           </div>
         </div>
-        <p class="mt-8 text-center text-xs text-gray-400">
+        <div class="mt-12 border-t border-white/10 pt-8 text-center text-xs text-white/50">
           As an Amazon Associate, SmartPetGuide earns from qualifying purchases. &copy; {new Date().getFullYear()} SmartPetGuide. All rights reserved.
-        </p>
+        </div>
       </div>
     </footer>
   </body>

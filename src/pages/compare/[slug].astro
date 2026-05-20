@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import ComparisonTable from "../../components/ComparisonTable.astro";
 import FAQ from "../../components/FAQ.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 
@@ -16,7 +15,7 @@ const compareMap: Record<string, { title: string; description: string; productA:
   "litter-robot-4-vs-leos-loo-too": {
     title: "Litter-Robot 4 vs Leo's Loo Too (2026) — Which Self-Cleaning Box Wins?",
     description: "Head-to-head comparison: Litter-Robot 4 vs Leo's Loo Too. We compare price, odor control, features, app quality, and cat comfort to help you decide.",
-    winner: "Litter-Robot 4 wins on overall quality and odor control, but Leo's Loo Too is the better value at $449 with UV sterilization built in.",
+    winner: "The Litter-Robot 4 edges out the Leo's Loo Too on overall quality, odor control, and app polish — but at $250 more. For most buyers, Leo's Loo Too is the smarter value with UV sterilization and voice control built in.",
     productA: { name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Up to 4 cats", "Carbon filter"], pros: ["Best odor control", "Best app"], cons: ["Expensive"], bestFor: ["Multi-cat homes", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B0BG4NP272?tag=smartpetgui0a-20" },
     productB: { name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "Voice control", "App control", "Safety sensors"], pros: ["UV sterilization", "Quiet"], cons: ["Smaller drawer"], bestFor: ["Single-cat", "Tech lovers"], amazonUrl: "https://www.amazon.com/dp/B0BXFLBM4C?tag=smartpetgui0a-20" },
     comparisonRows: [
@@ -66,42 +65,56 @@ const data = compareMap[slug] || compareMap["litter-robot-4-vs-leos-loo-too"];
   <Breadcrumb crumbs={[{ label: "Compare", href: "/compare/" }, { label: data.productA.name + " vs " + data.productB.name }]} />
 
   <article>
-    <h1 class="text-3xl font-extrabold text-gray-900 md:text-4xl">{data.title}</h1>
-    <p class="mt-3 text-lg text-gray-500">{data.description}</p>
+    <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{data.title}</h1>
+    <p class="mt-3 text-lg leading-relaxed text-bark-muted">{data.description}</p>
 
-    <div class="mt-6 rounded-xl border-2 border-primary bg-blue-50 p-5">
-      <p class="font-bold text-primary">Bottom Line:</p>
-      <p class="mt-1 text-gray-700">{data.winner}</p>
+    <!-- Bottom Line -->
+    <div class="mt-8 rounded-2xl border border-honey/30 bg-honey/5 p-6 md:p-8">
+      <p class="text-sm font-semibold uppercase tracking-wider text-honey">Bottom Line</p>
+      <p class="mt-2 font-display text-lg italic text-forest">"{data.winner}"</p>
     </div>
 
-    <div class="mt-8 grid gap-8 md:grid-cols-2">
-      {[data.productA, data.productB].map((p) => (
-        <div class="rounded-xl border border-gray-200 p-6">
-          <h2 class="text-xl font-bold text-gray-900">{p.name}</h2>
-          <p class="text-sm text-gray-500">by {p.brand}</p>
-          <p class="mt-2 text-3xl font-bold text-primary">${p.price}</p>
-          <div class="mt-3 space-y-2 text-sm">
-            <p class="font-semibold text-green-700">Pros</p>
-            {p.pros.map((pro: string) => <p class="text-gray-600">+ {pro}</p>)}
-            <p class="mt-2 font-semibold text-red-600">Cons</p>
-            {p.cons.map((con: string) => <p class="text-gray-600">- {con}</p>)}
+    <!-- Side by Side Cards -->
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      {[data.productA, data.productB].map((p, idx) => (
+        <div class={`rounded-2xl border p-6 ${idx === 0 ? 'border-forest/20 bg-forest/3' : 'border-sage-dark/30 bg-white'}`}>
+          <h2 class="font-display text-xl font-bold text-forest">{p.name}</h2>
+          <p class="text-sm text-bark-muted">by {p.brand}</p>
+          <p class="mt-2 font-display text-3xl font-bold text-forest">${p.price}</p>
+          <div class="mt-4 space-y-2.5 text-sm">
+            <p class="font-semibold text-green-800">Pros</p>
+            {p.pros.map((pro: string) => <p class="text-green-800/80">&check; {pro}</p>)}
+            <p class="mt-2 font-semibold text-rose-dark/80">Cons</p>
+            {p.cons.map((con: string) => <p class="text-rose-dark/70">&times; {con}</p>)}
           </div>
           <a href={p.amazonUrl} target="_blank" rel="nofollow sponsored noopener"
-             class="mt-4 inline-block w-full rounded-lg bg-accent py-2.5 text-center font-semibold text-white hover:bg-accent-dark">
+             class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-honey py-3 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
             View on Amazon
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
         </div>
       ))}
     </div>
 
-    <div class="mt-8">
-      <h2 class="text-xl font-bold">Feature Comparison</h2>
-      <div class="mt-4 overflow-x-auto rounded-xl border">
+    <!-- Feature Comparison Table -->
+    <div class="mt-10">
+      <h2 class="mb-4 font-display text-xl font-bold text-forest">Feature Comparison</h2>
+      <div class="overflow-x-auto rounded-2xl border border-sage-dark/30">
         <table class="w-full text-sm">
-          <thead><tr class="bg-gray-50"><th class="px-4 py-3 text-left">Feature</th><th class="px-4 py-3">{data.productA.name}</th><th class="px-4 py-3">{data.productB.name}</th></tr></thead>
-          <tbody class="divide-y">
+          <thead>
+            <tr class="bg-sage/60">
+              <th class="px-5 py-3.5 text-left font-semibold text-forest">Feature</th>
+              <th class="px-5 py-3.5 font-semibold text-forest">{data.productA.name}</th>
+              <th class="px-5 py-3.5 font-semibold text-forest">{data.productB.name}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-sage-dark/20">
             {data.comparisonRows.map(([feature, a, b]) => (
-              <tr class="hover:bg-gray-50"><td class="px-4 py-3 font-medium">{feature}</td><td class="px-4 py-3">{a}</td><td class="px-4 py-3">{b}</td></tr>
+              <tr class="bg-white transition-colors hover:bg-sage-light/50">
+                <td class="px-5 py-3.5 font-medium text-bark">{feature}</td>
+                <td class="px-5 py-3.5 text-bark-muted">{a}</td>
+                <td class="px-5 py-3.5 text-bark-muted">{b}</td>
+              </tr>
             ))}
           </tbody>
         </table>

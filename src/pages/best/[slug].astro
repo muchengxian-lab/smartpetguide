@@ -58,52 +58,59 @@ const data = slugMap[slug] || slugMap["self-cleaning-litter-boxes"];
   <Breadcrumb crumbs={[{ label: "Best Picks", href: "/best/" }, { label: data.title.replace(/^\d+\s/, "") }]} />
 
   <article>
-    <h1 class="text-3xl font-extrabold text-gray-900 md:text-4xl">{data.title}</h1>
-    <p class="mt-3 text-lg text-gray-500">{data.description}</p>
+    <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{data.title}</h1>
+    <p class="mt-3 text-lg leading-relaxed text-bark-muted">{data.description}</p>
 
-    <div class="mt-2 flex items-center gap-4 text-sm text-gray-400">
+    <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
       <span>Updated: <time datetime="2026-05-20">May 20, 2026</time></span>
       <span>12 min read</span>
-      <span class="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-500">Advertiser Disclosure</span>
+      <span class="rounded-full bg-sage/70 px-2.5 py-0.5 text-xs font-medium text-forest">Advertiser Disclosure</span>
     </div>
 
-    <section class="mt-8">
-      <h2 class="mb-4 text-xl font-bold">Quick Comparison</h2>
+    <!-- Quick Comparison Table -->
+    <section class="mt-10">
+      <h2 class="mb-4 font-display text-xl font-bold text-forest">Quick Comparison</h2>
       <ComparisonTable products={data.products} />
     </section>
 
-    <section class="mt-10">
-      <h2 class="mb-4 text-xl font-bold">Our Top Picks</h2>
-      <div class="grid gap-6">
+    <!-- Ranked Picks -->
+    <section class="mt-12">
+      <h2 class="mb-5 font-display text-2xl font-bold text-forest">Our Top Picks</h2>
+      <div class="grid gap-5">
         {data.products.map((p, i) => (
-          <div class="rounded-xl border border-gray-200 p-6">
-            <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
-              <div class="flex-shrink-0">
-                <span class="rounded-full bg-primary px-3 py-1 text-sm font-bold text-white">#{i + 1}</span>
+          <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+            <div class="flex flex-col gap-5 sm:flex-row sm:items-start">
+              <div class="shrink-0">
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-forest text-lg font-bold text-white shadow-sm">
+                  {i + 1}
+                </div>
               </div>
               <div class="flex-1">
-                <h3 class="text-xl font-bold text-gray-900">{p.name}</h3>
-                <p class="text-sm text-gray-500">by {p.brand} &middot; {"★".repeat(Math.round(p.rating))} ({p.reviewCount.toLocaleString()} reviews)</p>
-                <p class="mt-2 text-2xl font-bold text-primary">${p.price}</p>
+                <h3 class="font-display text-xl font-semibold text-forest">{p.name}</h3>
+                <p class="text-sm text-bark-muted">by {p.brand} &middot; {"★".repeat(Math.round(p.rating))}<span class="text-bark-muted/50">{"★".repeat(5 - Math.round(p.rating))}</span> ({p.reviewCount.toLocaleString()} reviews)</p>
+                <p class="mt-2 font-display text-2xl font-bold text-forest">${p.price}</p>
 
-                <div class="mt-3 grid gap-4 sm:grid-cols-2">
+                <div class="mt-4 grid gap-4 sm:grid-cols-2">
                   <div>
-                    <p class="mb-1 text-sm font-semibold text-green-700">Pros</p>
-                    <ul class="space-y-1 text-sm text-gray-600">
-                      {p.pros.map((pro) => <li>+ {pro}</li>)}
+                    <p class="mb-1.5 text-sm font-semibold text-green-800">What We Like</p>
+                    <ul class="space-y-1 text-sm text-green-800/80">
+                      {p.pros.map((pro: string) => <li class="flex gap-1.5"><span>+</span> {pro}</li>)}
                     </ul>
                   </div>
                   <div>
-                    <p class="mb-1 text-sm font-semibold text-red-600">Cons</p>
-                    <ul class="space-y-1 text-sm text-gray-600">
-                      {p.cons.map((con) => <li>- {con}</li>)}
+                    <p class="mb-1.5 text-sm font-semibold text-rose-dark/80">Watch Out For</p>
+                    <ul class="space-y-1 text-sm text-rose-dark/70">
+                      {p.cons.map((con: string) => <li class="flex gap-1.5"><span>-</span> {con}</li>)}
                     </ul>
                   </div>
                 </div>
 
-                <p class="mt-3 text-sm text-gray-600"><strong>Best for:</strong> {p.bestFor.join(", ")}</p>
+                <p class="mt-3 text-sm text-bark-muted"><span class="font-semibold text-bark">Best for:</span> {p.bestFor.join(", ")}</p>
                 <a href={p.amazonUrl} target="_blank" rel="nofollow sponsored noopener"
-                   class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-white hover:bg-accent-dark transition-colors">Check Price on Amazon</a>
+                   class="mt-4 inline-flex items-center gap-2 rounded-xl bg-honey px-6 py-2.5 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
+                  View on Amazon
+                  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
               </div>
             </div>
           </div>
@@ -111,16 +118,32 @@ const data = slugMap[slug] || slugMap["self-cleaning-litter-boxes"];
       </div>
     </section>
 
-    <section class="mt-10">
-      <h2 class="mb-4 text-xl font-bold">How to Choose the Right One</h2>
-      <div class="prose prose-gray max-w-none">
-        <p>When shopping for {slug.includes("litter") ? "a self-cleaning litter box" : "an automatic pet feeder"}, consider these key factors:</p>
-        <ol class="space-y-3 text-gray-600">
-          <li><strong>Number of pets:</strong> Multi-pet homes need larger capacity and {slug.includes("litter") ? "multi-cat recognition features" : "larger food hoppers"}.</li>
-          <li><strong>App reliability:</strong> A smart device is only as good as its app. Our top picks all have solid app experiences.</li>
-          <li><strong>Maintenance cost:</strong> Factor in {slug.includes("litter") ? "replacement liners, trays, or litter costs" : "cleaning and any proprietary parts"}.</li>
-          <li><strong>Noise level:</strong> If the device sits in your living area, quiet operation matters.</li>
-          <li><strong>Space:</strong> Measure your available space — {slug.includes("litter") ? "some self-cleaning boxes are surprisingly large" : "feeder footprints vary significantly"}.</li>
+    <!-- How to Choose -->
+    <section class="mt-12 rounded-2xl border border-sage-dark/30 bg-sage-light/50 p-6 md:p-8">
+      <h2 class="font-display text-xl font-bold text-forest">How to Choose the Right One</h2>
+      <div class="mt-4 space-y-3">
+        <p class="text-bark-muted leading-relaxed">When shopping for {slug.includes("litter") ? "a self-cleaning litter box" : "an automatic pet feeder"}, consider these key factors:</p>
+        <ol class="space-y-3 text-bark-muted">
+          <li class="flex gap-3">
+            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">1</span>
+            <span><strong class="text-bark">Number of pets:</strong> Multi-pet homes need larger capacity and {slug.includes("litter") ? "multi-cat recognition features" : "larger food hoppers"}.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">2</span>
+            <span><strong class="text-bark">App reliability:</strong> A smart device is only as good as its app. Our top picks all have solid app experiences.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">3</span>
+            <span><strong class="text-bark">Maintenance cost:</strong> Factor in {slug.includes("litter") ? "replacement liners, trays, or litter costs" : "cleaning and any proprietary parts"}.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">4</span>
+            <span><strong class="text-bark">Noise level:</strong> If the device sits in your living area, quiet operation matters.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">5</span>
+            <span><strong class="text-bark">Space:</strong> Measure your available space — {slug.includes("litter") ? "some self-cleaning boxes are surprisingly large" : "feeder footprints vary significantly"}.</span>
+          </li>
         </ol>
       </div>
     </section>

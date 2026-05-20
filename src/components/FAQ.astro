@@ -13,15 +13,20 @@ const schema = {
 };
 ---
 
-<div class="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-  <h2 class="mb-4 text-xl font-bold text-gray-900">Frequently Asked Questions</h2>
-  <div class="space-y-4">
+<div class="mt-12">
+  <h2 class="mb-6 font-display text-2xl font-bold text-forest">Frequently Asked Questions</h2>
+  <div class="space-y-3">
     {items.map((item) => (
-      <details class="group rounded-lg bg-white p-4 shadow-sm">
-        <summary class="cursor-pointer font-medium text-gray-800 group-open:text-primary">
-          {item.q}
+      <details class="group rounded-xl border border-sage-dark/30 bg-white transition-all duration-200">
+        <summary class="flex cursor-pointer items-center justify-between px-6 py-4 font-semibold text-bark transition-colors group-open:text-forest">
+          <span>{item.q}</span>
+          <svg class="h-5 w-5 shrink-0 text-bark-muted transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
         </summary>
-        <p class="mt-2 text-gray-600 leading-relaxed">{item.a}</p>
+        <div class="px-6 pb-4 pt-1">
+          <p class="text-[15px] leading-relaxed text-bark-muted">{item.a}</p>
+        </div>
       </details>
     ))}
   </div>
