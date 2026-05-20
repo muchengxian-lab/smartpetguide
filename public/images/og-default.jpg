@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#10B981"/>
+  <text x="600" y="300" text-anchor="middle" fill="white" font-size="64" font-family="Arial,sans-serif" font-weight="bold">SmartPetGuide</text>
+  <text x="600" y="380" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="32" font-family="Arial,sans-serif">Best Smart Pet Devices</text>
+</svg>

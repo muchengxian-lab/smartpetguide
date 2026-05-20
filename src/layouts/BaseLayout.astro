@@ -13,7 +13,7 @@ const {
   title,
   description,
   type = "website",
-  image = "/images/og-default.jpg",
+  image = "/images/og-default.svg",
   publishDate,
   modifiedDate,
   schema,
@@ -50,9 +50,19 @@ const fullTitle = title.includes("SmartPetGuide")
     )}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="p:domain_verify" content="a5b6492f32e0327f24c9c713bb4032e3"/>
     <link rel="alternate" type="application/rss+xml" title="SmartPetGuide" href="/rss.xml" />
 
     {schema && <script type="application/ld+json" set:html={schema} />}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKYRD8PSCT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DKYRD8PSCT');
+    </script>
   </head>
   <body class="bg-white text-gray-900 antialiased">
     <header class="border-b border-gray-100">

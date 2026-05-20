@@ -6,6 +6,7 @@ import Breadcrumb from "../../components/Breadcrumb.astro";
 export function getStaticPaths() {
   return [
     { params: { slug: "automatic-feeder-buying-guide" } },
+    { params: { slug: "self-cleaning-litter-box-buying-guide" } },
   ];
 }
 
@@ -23,6 +24,23 @@ const guideMap: Record<string, { title: string; description: string; sections: {
     faqs: [
       { q: "What's the best automatic feeder for a budget?", a: "The WOPET Automatic Feeder at $89 offers excellent value with reliable Wi-Fi, voice recording, and 6L capacity — all the essentials without the premium price." },
       { q: "Can automatic feeders work for dogs?", a: "Yes — most feeders work for both cats and dogs. For large dogs, choose a feeder with a larger capacity (6L+) and ensure it's sturdy enough not to be knocked over." },
+    ],
+  },
+  "self-cleaning-litter-box-buying-guide": {
+    title: "Self-Cleaning Litter Box Buying Guide 2026 — How to Choose",
+    description: "Everything you need to know before buying a self-cleaning litter box: types, key features, sizing, multi-cat considerations, and what to expect at each price point.",
+    sections: [
+      { heading: "How Self-Cleaning Litter Boxes Work", body: "Most automatic litter boxes use a sifting mechanism — a rake or rotating drum separates clumps from clean litter after your cat exits. The waste drops into a sealed drawer below. More advanced models (like the Litter-Robot 4) use a rotating globe for faster cycles and better odor control. The key difference from manual scooping: waste sits in a carbon-filtered drawer instead of an open box, dramatically reducing odors." },
+      { heading: "Sifting vs. Rotating: Which Mechanism Is Better?", body: "Rake-based systems (PetSafe ScoopFree, older models) use a comb that pushes waste into a compartment. They work but can get jammed and are harder to clean. Rotating drum systems (Litter-Robot, Leo's Loo Too) tumble the litter, separating waste more effectively with fewer jams. For reliability, rotating drums are worth the premium." },
+      { heading: "How Many Cats Do You Have?", body: "This is the most important question. Single-cat homes can use almost any model comfortably. Two-cat households should look for larger waste drawers and faster cycle times. For 3+ cats, invest in a Litter-Robot 4 which handles up to 4 cats, or buy two mid-range units. A model rated for 1-2 cats won't keep up with 3+ and you'll be emptying the drawer constantly." },
+      { heading: "Space Requirements", body: "Self-cleaning litter boxes are larger than traditional boxes. The Litter-Robot 4 needs about 2x3 feet of floor space. Measure your intended location before ordering — especially the height, as some globes need clearance to rotate. For tight spaces, the DOGNESS Mini-style compact designs exist but sacrifice waste drawer capacity." },
+      { heading: "Odor Control Features", body: "Look for: carbon filters (replace every 2-3 months), a sealed waste drawer with a tight-fitting lid, and fast cycling after your cat exits. The faster waste is removed from open air, the less odor spreads. UV sterilization (Leo's Loo Too) is a nice bonus but not essential if the basics are done well." },
+      { heading: "Ongoing Costs", body: "Beyond the purchase price, budget for: replacement carbon filters ($15-25 every 3 months), waste drawer liners or crystal litter trays ($30-50/month for proprietary systems), and regular clumping litter. A $699 Litter-Robot may cost $100-150/year in consumables, while a crystal-based system like PetSafe ScoopFree can run $300-400/year in replacement trays." },
+    ],
+    faqs: [
+      { q: "How often do you empty a self-cleaning litter box?", a: "With one cat: every 7-10 days. Two cats: every 5-7 days. Three or more cats: every 2-4 days. Models with larger waste drawers need less frequent emptying." },
+      { q: "Are self-cleaning litter boxes worth the money?", a: "If you have 2+ cats or hate scooping, absolutely. A $699 Litter-Robot 4 used twice daily for 3 years costs about $0.32 per use — reasonable for never scooping again. Budget models at $300-400 still eliminate daily scooping." },
+      { q: "What litter works best in automatic boxes?", a: "Hard-clumping clay litter works best in most models. Avoid lightweight or plant-based litters unless the manufacturer specifically approves them — they can cause sensor errors in rotating drum models." },
     ],
   },
 };

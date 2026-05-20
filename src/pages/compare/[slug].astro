@@ -7,21 +7,54 @@ import Breadcrumb from "../../components/Breadcrumb.astro";
 export function getStaticPaths() {
   return [
     { params: { slug: "litter-robot-4-vs-leos-loo-too" } },
+    { params: { slug: "automatic-vs-manual-litter-box" } },
   ];
 }
 
 const slug = Astro.params.slug || "litter-robot-4-vs-leos-loo-too";
-const compareMap: Record<string, { title: string; description: string; productA: any; productB: any; winner: string; faqs: { q: string; a: string }[] }> = {
+const compareMap: Record<string, { title: string; description: string; productA: any; productB: any; winner: string; comparisonRows: string[][]; faqs: { q: string; a: string }[] }> = {
   "litter-robot-4-vs-leos-loo-too": {
     title: "Litter-Robot 4 vs Leo's Loo Too (2026) — Which Self-Cleaning Box Wins?",
     description: "Head-to-head comparison: Litter-Robot 4 vs Leo's Loo Too. We compare price, odor control, features, app quality, and cat comfort to help you decide.",
     winner: "Litter-Robot 4 wins on overall quality and odor control, but Leo's Loo Too is the better value at $449 with UV sterilization built in.",
-    productA: { name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Up to 4 cats", "Carbon filter"], pros: ["Best odor control", "Best app"], cons: ["Expensive"], bestFor: ["Multi-cat homes", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B0BG4NP272?tag=smartpetguide-20" },
-    productB: { name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "Voice control", "App control", "Safety sensors"], pros: ["UV sterilization", "Quiet"], cons: ["Smaller drawer"], bestFor: ["Single-cat", "Tech lovers"], amazonUrl: "https://www.amazon.com/dp/B0BXFLBM4C?tag=smartpetguide-20" },
+    productA: { name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Up to 4 cats", "Carbon filter"], pros: ["Best odor control", "Best app"], cons: ["Expensive"], bestFor: ["Multi-cat homes", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B0BG4NP272?tag=smartpetgui0a-20" },
+    productB: { name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "Voice control", "App control", "Safety sensors"], pros: ["UV sterilization", "Quiet"], cons: ["Smaller drawer"], bestFor: ["Single-cat", "Tech lovers"], amazonUrl: "https://www.amazon.com/dp/B0BXFLBM4C?tag=smartpetgui0a-20" },
+    comparisonRows: [
+      ["Price", "$699", "$449"],
+      ["Rating", "★★★★½", "★★★★⅓"],
+      ["App Control", "Yes", "Yes"],
+      ["Multi-Cat", "Up to 4", "Up to 2"],
+      ["UV Sterilization", "No", "Yes"],
+      ["Voice Control", "No", "Yes (Alexa/Google)"],
+      ["Warranty", "1 year", "1 year"],
+    ],
     faqs: [
       { q: "Which is quieter — Litter-Robot 4 or Leo's Loo Too?", a: "Leo's Loo Too is noticeably quieter during the cleaning cycle, making it the better choice if the box sits near a bedroom or living area." },
       { q: "Which has better odor control?", a: "The Litter-Robot 4 edges ahead with its superior carbon filter system and fully sealed waste drawer design." },
       { q: "Is UV sterilization in Leo's Loo Too a gimmick?", a: "Not a gimmick — UV-C light does reduce bacteria in the waste drawer, but the Litter-Robot's sealed drawer + carbon filter achieves similar results through different means." },
+    ],
+  },
+  "automatic-vs-manual-litter-box": {
+    title: "Automatic vs Manual Litter Box (2026) — Is a Self-Cleaning Box Worth It?",
+    description: "We compare automatic self-cleaning litter boxes vs traditional manual litter boxes on cost, convenience, odor control, and cat comfort to help you decide if upgrading is worth the money.",
+    winner: "For most cat owners, an automatic litter box is worth the investment — especially if you value time savings and odor control. Budget buyers and single-cat homes on a tight budget can still get great results from a quality manual box with daily scooping.",
+    productA: { name: "Automatic Self-Cleaning Boxes", brand: "Litter-Robot, PetSafe, Leo's Loo", price: "299-699", rating: 4.4, features: ["Automatic cleaning after each use", "Odor control systems", "App/voice control", "Health tracking (some models)"], pros: ["Zero daily scooping", "Excellent odor control", "Health & usage insights", "Great for busy owners", "Multi-cat friendly (high-end models)"], cons: ["High upfront cost ($299-$699)", "Ongoing costs (trays/liners)", "Large footprint", "Some cats need time to adapt", "Power-dependent (most models)"], bestFor: ["Multi-cat households", "Busy professionals", "Those who hate scooping", "Owners who want health tracking"], amazonUrl: "https://www.amazon.com/s?k=self+cleaning+litter+box&tag=smartpetgui0a-20" },
+    productB: { name: "Traditional Manual Boxes", brand: "Various brands", price: "10-50", rating: 4.0, features: ["Simple design (no moving parts)", "Works with any litter type", "No power required", "Available everywhere"], pros: ["Very affordable ($10-$50)", "No electricity needed", "Works with any clumping litter", "Cats instinctively know how to use them", "Zero maintenance parts"], cons: ["Daily scooping required (5 mins/day)", "Odors build up faster", "Messier (scattered litter)", "No health insights", "Need sitter for trips over 2 days"], bestFor: ["Budget-focused owners", "Single cats in large homes", "Those who don't mind scooping", "Backup/secondary box"], amazonUrl: "https://www.amazon.com/s?k=litter+box&tag=smartpetgui0a-20" },
+    comparisonRows: [
+      ["Upfront Cost", "$299-$699", "$10-$50"],
+      ["Yearly Ongoing Cost", "$120-$250 (trays/liners)", "$100-$200 (litter only)"],
+      ["Daily Maintenance", "Check waste drawer (30 sec)", "Scoop twice daily (5 mins)"],
+      ["Odor Control", "Excellent (sealed + carbon)", "Moderate (depends on litter)"],
+      ["Power Required", "Yes (most models)", "No"],
+      ["Cat Adaptation", "Some need 1-2 weeks", "Immediate"],
+      ["Health Tracking", "Yes (most smart models)", "No"],
+      ["Lifespan", "3-5 years", "1-2 years (plastic)"],
+      ["Best For", "Convenience & multi-cat", "Budget & simplicity"],
+    ],
+    faqs: [
+      { q: "How much time does an automatic litter box actually save?", a: "About 30 hours per year. Scooping a manual box takes ~5 minutes per day = 30 hours annually. An automatic box needs the waste drawer emptied once a week (~2 minutes) + deep cleaning monthly (~15 minutes)." },
+      { q: "Will my cat be scared of an automatic litter box?", a: "Most cats adapt within 1-2 weeks. Start by placing the automatic box next to the old one (unplugged), then gradually introduce the cleaning cycle while they're not in the room. Treats near the new box help." },
+      { q: "What's the total cost of ownership difference?", a: "Over 3 years: an automatic box costs $300-$700 upfront + $360-$750 in supplies = $660-$1,450 total. A manual box costs $20-$50 upfront + $450-$600 in litter = $470-$650 total. The automatic box costs $200-$800 more over 3 years — roughly $6-$22/month extra for the convenience." },
     ],
   },
 };
@@ -67,15 +100,7 @@ const data = compareMap[slug] || compareMap["litter-robot-4-vs-leos-loo-too"];
         <table class="w-full text-sm">
           <thead><tr class="bg-gray-50"><th class="px-4 py-3 text-left">Feature</th><th class="px-4 py-3">{data.productA.name}</th><th class="px-4 py-3">{data.productB.name}</th></tr></thead>
           <tbody class="divide-y">
-            {[
-              ["Price", `$${data.productA.price}`, `$${data.productB.price}`],
-              ["Rating", "★".repeat(Math.round(data.productA.rating)), "★".repeat(Math.round(data.productB.rating))],
-              ["App Control", "Yes", "Yes"],
-              ["Multi-Cat", "Up to 4", "Up to 2"],
-              ["UV Sterilization", "No", "Yes"],
-              ["Voice Control", "No", "Yes (Alexa/Google)"],
-              ["Warranty", "1 year", "1 year"],
-            ].map(([feature, a, b]) => (
+            {data.comparisonRows.map(([feature, a, b]) => (
               <tr class="hover:bg-gray-50"><td class="px-4 py-3 font-medium">{feature}</td><td class="px-4 py-3">{a}</td><td class="px-4 py-3">{b}</td></tr>
             ))}
           </tbody>
