@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-阶段 6 — 等待 GSC 数据（阶段 1-5·7-8 已完成）
+阶段 6 — 等待 GSC 数据 + 方向调整（不锈钢饮水机+摄像头优先）
 
 ---
 
@@ -104,12 +104,28 @@
 
 ---
 
-## 选品原则（调研确认）
-1. **关键词先行**：先看用户搜什么，再选产品
+### 阶段 6a：方向微调 — 不锈钢饮水机+摄像头优先
+
+#### Google Trends 验证结果（2026-05-21）
+| 关键词 | Trends 热度 | 行动 |
+|------|------|------|
+| stainless steel cat water fountain | 23 | 🔥🔥 追加 2-3 篇 |
+| best pet camera | 14 | 🔥 追加评测/对比 |
+| gps tracker no monthly fee / camera no subscription | 0 | ❌ 不追加 |
+| automatic feeder for 2 cats | 1 | ❌ 不追加 |
+
+#### 核心教训
+**Amazon 搜索 ≠ Google 搜索。** "no subscription/monthly fee" 是 Amazon 站内搜索词，Google 上几乎为零。选品必须双平台验证。
+
+---
+
+## 选品原则（调研确认 + Trends 验证）
+1. **关键词先行**：Amazon 搜索建议 + Google Trends 双平台验证
 2. **BSR 验证**：只推 Amazon Best Sellers Rank < 50,000 的产品
 3. **评分过滤**：只推 ≥ 3.8 星的产品
 4. **竞争评估**：优先做 Google 首页有小站/Reddit 结果的关键词
-5. **痛点优先**："no subscription"、"no monthly fee"、"for large cats" 等高意图修饰词
+5. **Trends 验证**：Google Trends 热度 > 3 才投入，0 = 不投入
+6. **平台区分**：Amazon 搜索词 ≠ Google 搜索词，选品需双平台验证
 
 ## 里程碑速查
 

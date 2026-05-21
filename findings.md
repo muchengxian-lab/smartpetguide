@@ -14,7 +14,8 @@
 - Amazon 搜索建议 API — 挖掘买家真实搜索词
 - Google SERP 首页分析 — 判断竞争强度
 - Amazon Best Sellers Rank — 验证产品真实销量
-- google-trends-api（npm 包）— 对比搜索趋势
+- Google Trends API — 对比搜索趋势（相对热度 0-100）
+- Google SERP 广告密度 — 验证商业价值（广告多=购买意图强）
 
 ### Amazon 高频搜索修饰词
 | 修饰词 | 出现频率 | 含义 |
@@ -32,10 +33,26 @@
 |--------|---------|---------|
 | best automatic cat feeder | cats.com, Wired, NYTimes | ❌ 巨头垄断 |
 | best self cleaning litter box | cats.com, CNN, Forbes, SprucePets | ❌ 巨头垄断 |
-| best gps dog tracker no monthly fee | Reddit, 小品牌站, Facebook | ✅ 低竞争高需求 |
-| best pet camera no subscription | 小品牌站, Reddit, Wired | ✅ 有空间 |
+| best gps dog tracker no monthly fee | Reddit, 小品牌站, Facebook | ~~低竞争~~ **无搜索量** ❌ |
+| best pet camera no subscription | 小品牌站, Reddit, Wired | ~~有空间~~ **无搜索量** ❌ |
 | stainless steel cat water fountain | Amazon, Reddit, Petlibro | ✅ 电商向，编辑内容少 |
 | best automatic litter box for large cats | cats.com, Reddit, Wired | ⚠️ 细分有机会 |
+
+### Google Trends 搜索量验证（2026-05-21）
+**关键发现：Amazon 搜索 ≠ Google 搜索**
+
+| 关键词 | Trends 热度 | SERP 广告 | 结论 |
+|------|------|------|------|
+| **stainless steel cat water fountain** | **23** | 0 | 🔥🔥 高需求+低竞争 |
+| **best pet camera** | **14** | 0 | 🔥 高需求+可切入 |
+| best automatic cat feeder | 6 | **4 广告** | ⚠️ 有人花钱买流量 |
+| best self cleaning litter box | 5 | 0 | ✅ 稳定需求 |
+| best dog gps tracker | 2 | 0 | ⚠️ 需求弱 |
+| automatic cat feeder for 2 cats | 1 | 0 | ❌ 近零 |
+| **gps dog tracker no monthly fee** | **0** | — | ❌ Google 上没人搜 |
+| **pet camera no subscription** | **0** | — | ❌ Google 上没人搜 |
+
+**核心教训**："no subscription/monthly fee" 是 Amazon 站内搜索词，不是 Google 搜索词。两个平台的用户行为完全不同。Amazon 上的买家在比价，Google 上的用户还在调研。
 
 ---
 
@@ -62,22 +79,24 @@
 
 ---
 
-## 内容优先级（基于调研）
+## 内容优先级（基于调研 + Trends 验证）
 
-### P0 — 高需求 + 低竞争（立即）
-1. Best GPS Dog Trackers Without Monthly Fee — 最大内容缺口
-2. Best Pet Cameras Without Subscription — 大痛点
-3. 强化 Petlibro Granary（BSR #1,173 爆款）
+### P0 — 高需求 + 低竞争（立即追加）
+1. **Stainless Steel Cat Water Fountain**（Trends 热度 23，🔥 远超所有品类词）
+   - 已有 1 篇 Best 列表 → 追加单品评测 ×2 + 对比 + 使用指南
+2. **Pet Camera**（Trends 热度 14，品类最高）
+   - 已有 6 款产品 → 追加评测 ×2 + 对比
+3. 强化 Petlibro Granary（BSR #1,173 爆款，feeder 有 4 广告 = 高转化）
 
 ### P1 — 好需求 + 可差异化
-4. Best Self-Cleaning Litter Boxes for Large Cats
-5. Best Stainless Steel Cat Water Fountains
-6. Automatic Cat Feeder for 2 Cats
+4. Best Self-Cleaning Litter Boxes for Large Cats（Trends 细分词）
+5. Litter-Robot 4 vs 更多竞品对比（对比词转化率高）
 
-### P2 — 后期
-7. Litter-Robot 4 vs 竞品扩展
-8. Hidden Litter Box Furniture
-9. 品种专题扩展
+### P2 — 验证后降级或延后
+6. ~~GPS Dog Trackers Without Monthly Fee~~ → 已做，不追加
+7. ~~Pet Cameras Without Subscription~~ → 已做，不追加
+8. ~~Automatic Cat Feeder for 2 Cats~~ → Trends 仅 1，不追加
+9. Hidden Litter Box Furniture · 品种专题扩展
 
 ---
 

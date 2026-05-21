@@ -317,6 +317,35 @@ Git:       ✅ 干净
 
 ---
 
+## 会话：2026-05-21（Day 4 续2）— Google Trends 搜索量验证
+
+### 完成事项
+- [x] **Google Trends 品类词对比**：pet camera(14) > feeder(6) > litterBox(5) > GPS(2)
+- [x] **Google Trends 长尾词对比**：steel fountain(23) 🔥 >> 其他近零
+- [x] **SERP 广告密度验证**："best automatic cat feeder" 有 4 个广告（高商业价值）
+- [x] **核心发现**："no subscription/monthly fee" 在 Google 上搜索量为零
+  - Amazon 搜索 ≠ Google 搜索，两个平台用户行为完全不同
+  - Amazon 上买家在比价，Google 上用户还在调研阶段
+- [x] **方向调整**：
+  - 不锈钢饮水机 P1→P0（Trends 23，远超所有品类词）
+  - 宠物摄像头追加投入（Trends 14，品类最高）
+  - GPS 暂停追加（Trends 2）
+  - "no subscription" 类内容不再追加（Trends 0）
+- [x] Google Trends API 连接超时 → 改用浏览器直接访问 trends.google.com
+- [x] Google Ads Keyword Planner 需创建账号（$50 预授权）→ 用 SERP 广告密度替代
+
+### 关键调整
+```
+之前                          之后
+P0=GPS无订阅费(Trends 0)  →  降级，已做的不追加
+P0=摄像头无订阅费(Trends 0)→  降级，已做的不追加
+P1=不锈钢饮水机(Trends 23)→  🔥 P0，追加 2-3 篇
+Pet Camera(Trends 14)      →  🔥 追加评测+对比
+GPS 整体(Trends 2)         →  ⚠️ 暂停投入
+```
+
+---
+
 ## 测试结果
 | 测试 | 输入 | 预期结果 | 实际结果 | 状态 |
 |------|------|---------|---------|------|
