@@ -317,7 +317,25 @@ Git:       ✅ 干净
 
 ---
 
-## 会话：2026-05-21（Day 4 续2）— Google Trends 搜索量验证
+## 会话：2026-05-21（Day 4 续2）— AI 搜索调研（Perplexity）
+
+### 完成事项
+- [x] **Perplexity 3 次查询实测**：自动喂食器 / 不锈钢饮水机 / LR4 vs Leo's Loo
+- [x] **核心发现**：AI 100% 引用 Forbes/Wired/CNN/cats.com（DA70+），smartpetguide.net 零出现
+- [x] **产品覆盖问题**：我们的 Petlibro（#1 BSR）和 Pioneer Pet（18,500评）AI 完全不知道
+- [x] **对比文验证**：LR4 vs Leo's Loo Too 的内容方向与 AI 回答一致✅
+- [x] **AI 搜索优化路径明确**：短期传统SEO→中期外链积累→长期AI+Google双渠道
+
+### 关键结论
+```
+AI 搜索（Perplexity/ChatGPT）对流量有影响但新站短期进不去引用池
+当前策略：传统 Google SEO 为主 + Schema/结构化数据打好基础
+进入 AI 引用池 = 被权威站引用 + Reddit 外链 + 时间积累
+```
+
+---
+
+## 会话：2026-05-21（Day 4 续3）— Google Trends 搜索量验证
 
 ### 完成事项
 - [x] **Google Trends 品类词对比**：pet camera(14) > feeder(6) > litterBox(5) > GPS(2)

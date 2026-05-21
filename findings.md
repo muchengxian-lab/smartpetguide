@@ -162,6 +162,35 @@
 - pinterest.com/muchengxian · 5 张 Pin 全部可见
 - 覆盖：GPS/摄像头/猫砂盆对比/猫砂盆Best/喂食器评测
 
+## AI 搜索调研（2026-05-21 · Perplexity 实测）
+
+### 3 次查询结果
+| 查询 | AI 推荐的品牌 | 我们有的产品 | 被引用源 |
+|------|------|------|------|
+| 最好自动喂食器 | PETKIT YumShare | ❌ Petlibro BSR #1,173 未出现 | cats.com, Wired, YouTube |
+| 最好不锈钢饮水机 | Rellaty/Petlibro钢 | ❌ Pioneer Pet 18,500评未出现 | Forbes, Petlibro.com, cats.com |
+| LR4 vs Leo's Loo Too | 观点与我们一致 | ✅ | CNN, Forbes, litterboxlab |
+
+### 核心发现
+- **AI 只认大站**：100% 的引用来自 Forbes/Wired/CNN/cats.com（DA70+），smartpetguide.net 零次出现
+- **产品覆盖 ≠ 能被引用**：我们写过的产品 AI 看不到，因为没有被权威站引用
+- **对比文最有价值**：LR4 vs Leo's Loo Too 的内容方向与 AI 回答一致，说明我们的内容策略是对的
+- **数据独占**：我们的 BSR 数据、3年成本分析、价格对比表 AI 拿不到
+
+### AI 搜索优化路径
+| 阶段 | 时间 | 行动 |
+|------|------|------|
+| 短期 | 0-3月 | Schema+结构化摘要已做 ✅，聚焦传统Google SEO |
+| 中期 | 3-6月 | Reddit外链积累→被其他站引用→进入AI引用池 |
+| 长期 | 6-12月 | 品类权威建立→AI+Google双渠道 |
+
+### 与 Google Trends 验证的联动
+- Google 搜索（文字链接）仍是主力流量来源
+- AI 搜索是新渠道但需要权威信号积累
+- **当前策略：传统 SEO 优先 + AI 优化打好基础（Schema/结构化数据）**
+
+---
+
 ## GEO + Schema 验证（2026-05-21）
 - Rich Results Test 验证通过：
   - 评测页：6/6 valid（Product+Merchant+Article+Breadcrumb+FAQ+Review）

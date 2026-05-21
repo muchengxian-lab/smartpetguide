@@ -76,16 +76,24 @@
 - [ ] 更新所有文章年份标记为 2026
 - [ ] 注册 ShareASale / Impact 联盟平台
 
-### 阶段 7：GEO + Schema 优化 ✅ complete
+### 阶段 7：GEO + Schema + AI 搜索优化 ✅ complete
+
+#### Schema & 结构化数据
 - [x] Article Schema：BaseLayout 自动生成，38 篇内容页全部覆盖
 - [x] Review Schema：11 篇评测页含评分/品牌/价格/产品信息
-- [x] FAQ Schema：已有（FAQ 组件内置 FAQPage）
-- [x] Breadcrumb Schema：已有（Breadcrumb 组件内置 BreadcrumbList）
-- [x] Key Takeaways 组件：评测页/Best列表/对比页均已添加
-- [x] About 页 EEAT 强化：团队故事 + 测试方法 + 透明盈利
-- [x] Rich Results 验证：评测页 6/6 · Best列表 3/3 · About 1/1 全部通过
+- [x] FAQ Schema / Breadcrumb Schema：已有
+- [x] Key Takeaways 组件：评测页/Best列表/对比页
+- [x] About 页 EEAT 强化
+
+#### AI 搜索调研（Perplexity 实测）
+- [x] 3 次查询验证：AI 只引用 Forbes/Wired/CNN 等 DA70+ 大站
+- [x] smartpetguide.net 未被任何 AI 引用（符合新站预期）
+- [x] 结论：Schema + 结构化数据是地基，权威信号才是进入 AI 的关键
+
+#### Rich Results 验证
+- [x] 评测页 6/6 · Best列表 3/3 · About 1/1 全部通过
 - **完成：** 2026-05-21（Day 4）
-- **产出：** 43 页全站 Schema 覆盖
+- **产出：** 43 页全站 Schema · AI 引用路径明确
 
 ### 阶段 8：社交引流 + 外链（首批已完成 ✅，持续进行中）
 - [x] Reddit：4 条评论存活（r/CatAdvice ×3 + r/dogs ×1）
