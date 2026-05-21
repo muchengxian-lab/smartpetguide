@@ -2,6 +2,15 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQ from "../../components/FAQ.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
+import products from "../../data/products.json";
+
+// Flat lookup: product ID → product object
+const allProducts = new Map<string, any>();
+for (const [cat, items] of Object.entries(products)) {
+  for (const p of items as any[]) {
+    allProducts.set(p.id, p);
+  }
+}
 
 export function getStaticPaths() {
   return [
@@ -19,18 +28,20 @@ export function getStaticPaths() {
   ];
 }
 
-const reviewMap: Record<string, { title: string; description: string; productName: string; brand: string; price: number; rating: number; reviewCount: number; pros: string[]; cons: string[]; bestFor: string[]; features: string[]; amazonUrl: string; verdict: string; content: string; faqs: { q: string; a: string }[] }> = {
+interface ReviewData {
+  title: string;
+  description: string;
+  productId: string;
+  verdict: string;
+  content: string;
+  faqs: { q: string; a: string }[];
+}
+
+const reviewMap: Record<string, ReviewData> = {
   "litter-robot-4-review": {
     title: "Litter-Robot 4 Review 2026 — Is It Worth $699?",
     description: "In-depth Litter-Robot 4 review after months of testing. We cover odor control, app experience, multi-cat performance, and whether the $699 price tag is justified.",
-    productName: "Litter-Robot 4",
-    brand: "Whisker",
-    price: 699, rating: 4.5, reviewCount: 12500,
-    pros: ["Best-in-class odor control", "Large waste drawer lasts 7+ days", "Excellent app experience", "Works for up to 4 cats", "Safety sensors are very responsive", "Whisper-quiet operation"],
-    cons: ["Expensive upfront cost ($699)", "Large footprint (needs 2x3ft space)", "Requires proprietary waste liners", "Heavy at 24 lbs"],
-    bestFor: ["Multi-cat households (up to 4 cats)", "Owners who want premium odor control", "Those who travel frequently"],
-    features: ["Automatic sifting after each use", "App control with usage analytics", "Multi-cat weight recognition", "Carbon-filtered odor control", "Full waste drawer indicator", "Safety sensors"],
-    amazonUrl: "https://www.amazon.com/dp/B0FFDYB7K8?tag=smartpetgui0a-20",
+    productId: "litter-robot-4",
     verdict: "The Litter-Robot 4 is the best self-cleaning litter box on the market. It's expensive but delivers on every promise: odor control is superb, the app is genuinely useful, and build quality is excellent. If you have 2+ cats and can afford it, buy it.",
     content: "",
     faqs: [
@@ -42,66 +53,56 @@ const reviewMap: Record<string, { title: string; description: string; productNam
   "petlibro-granary-review": {
     title: "Petlibro Granary Camera Feeder Review 2026 — Smart Feeding Tested",
     description: "Our hands-on Petlibro Granary review: testing the built-in camera, app reliability, portion accuracy, and whether the camera justifies the higher price.",
-    productName: "Petlibro Granary Camera Feeder", brand: "Petlibro", price: 139, rating: 4.5, reviewCount: 8700,
-    pros: ["Built-in 1080p camera eliminates need for separate cam", "App is polished and intuitive", "Night vision quality is excellent", "Motion detection alerts work well", "Two-way audio is clear"],
-    cons: ["3L capacity somewhat small (5L version available)", "Camera is fixed — no pan/tilt", "Premium price vs. camera-less feeders"],
-    bestFor: ["Pet parents who want to see their pet eating", "Small to medium dogs and cats", "Anxiety-prone owners wanting check-ins"],
-    features: ["1080p camera with night vision", "App control for scheduling", "Motion-triggered alerts", "Two-way audio speaker", "Battery backup (optional)", "Dishwasher-safe bowl"],
-    amazonUrl: "https://www.amazon.com/dp/B0B5ZGGWBQ?tag=smartpetgui0a-20",
-    verdict: "The Petlibro Granary hits the sweet spot between price and features. The camera quality is impressive for the price, the app is the best in the category, and feeding is reliable. The 3L capacity is the main limitation — spring for the 5L version if you have a larger pet or travel often.",
-    content: "", faqs: [{ q: "Can I see my pet in the dark with the Petlibro Granary?", a: "Yes — the night vision mode automatically activates in low light and the image quality is clear enough to identify your pet easily." }, { q: "How many meals can I schedule?", a: "Up to 10 meals per day with customizable portion sizes (1-12 portions per meal). More than enough for any feeding schedule." }],
+    productId: "petlibro-granary",
+    verdict: "The Petlibro Granary is the best feeder for owners who want to see their pet eat. The built-in 1080p camera with night vision effectively replaces a separate pet camera, and the app is the most polished we've tested. If you don't need a camera, a cheaper feeder works. But for peace of mind and two devices in one, the Granary delivers.",
+    content: "",
+    faqs: [
+      { q: "How much food does the Petlibro Granary hold?", a: "The 3L version holds about 12-15 cups of kibble, good for 10-15 days for one cat. The 5L version holds 20-25 cups, lasting up to 20 days." },
+      { q: "Does the Petlibro camera work at night?", a: "Yes — the night vision is excellent, with clear black-and-white video in complete darkness. Motion alerts also work at night." },
+      { q: "Can I use Petlibro Granary without the app?", a: "The schedule requires initial app setup via Wi-Fi. Once programmed, the feeder continues on schedule even if your phone is off. Manual feeding buttons are available on the unit." },
+    ],
   },
   "wopet-automatic-feeder-review": {
     title: "WOPET Automatic Feeder Review 2026 — Best Budget Smart Feeder?",
-    description: "Our hands-on WOPET Automatic Feeder review: testing Wi-Fi reliability, portion accuracy, voice recording, and whether this $89 feeder delivers real value.",
-    productName: "WOPET Automatic Feeder", brand: "WOPET", price: 89, rating: 4.3, reviewCount: 15200,
-    pros: ["Excellent value at $89", "Reliable Wi-Fi stays connected", "Voice recording calls your pet to meals", "Battery backup included", "6L capacity — feeds a cat for 20+ days", "Simple setup under 5 minutes"],
-    cons: ["No built-in camera", "App interface looks dated", "Portion sizes occasionally inconsistent", "Plastic build feels less premium"],
-    bestFor: ["Budget-conscious pet owners", "Cats and small/medium dogs", "Daily scheduled feeding while at work"],
-    features: ["Wi-Fi app control", "6L food hopper", "Voice record & play", "Dual power (AC + battery backup)", "Up to 10 meals/day", "1-12 portion control per meal"],
-    amazonUrl: "https://www.amazon.com/dp/B089GG57QL?tag=smartpetgui0a-20",
-    verdict: "The WOPET Automatic Feeder is the best budget option under $100. It nails the fundamentals — reliable Wi-Fi, generous 6L capacity, and battery backup — while skipping the camera to keep costs down. If you just need dependable scheduled feeding without frills, this is the one to get.",
-    content: "", faqs: [{ q: "Does the WOPET feeder have a camera?", a: "No, the WOPET feeder does not include a camera. If you want visual check-ins, consider the Petlibro Granary Camera Feeder instead." }, { q: "How long will 6L of food last?", a: "For one cat eating 1/2 cup per day, approximately 20-25 days. For a small dog eating 1 cup per day, about 12-15 days." }],
-  },
-  "dogness-mini-smart-feeder-review": {
-    title: "DOGNESS Mini Smart Feeder Review 2026 — Compact & Reliable?",
-    description: "Our honest DOGNESS Mini Smart Feeder review: testing the anti-clog design, app connectivity, food freshness system, and whether it's right for small spaces.",
-    productName: "DOGNESS Mini Smart Feeder", brand: "DOGNESS", price: 99, rating: 4.2, reviewCount: 4200,
-    pros: ["Compact footprint fits anywhere", "Stainless steel bowl is hygienic and easy to clean", "Anti-clog mechanism prevents jams", "Desiccant slot keeps food fresh", "Stylish design blends with home decor"],
-    cons: ["No camera option available", "3.5L capacity is on the small side", "App has occasional Bluetooth pairing issues", "Not ideal for large dogs or multi-pet homes"],
-    bestFor: ["Apartment dwellers with limited space", "Single cat or small dog owners", "Short trips of 2-3 days"],
-    features: ["App control via Wi-Fi", "3.5L capacity", "Built-in desiccant bag slot", "Stainless steel food bowl", "Anti-clog kibble design", "10 meals/day scheduling"],
-    amazonUrl: "https://www.amazon.com/dp/B083F59KGN?tag=smartpetgui0a-20",
-    verdict: "The DOGNESS Mini is the perfect compact feeder for small spaces and single-pet homes. The stainless steel bowl and anti-clog design are thoughtful touches, and the desiccant slot is a unique feature for freshness. Just don't expect it to handle multiple large pets — it's designed for one.",
-    content: "", faqs: [{ q: "How does the desiccant bag work?", a: "A small desiccant pack sits in a dedicated slot inside the hopper, absorbing moisture to keep kibble from going stale. Replacement packs are available on Amazon." }, { q: "Can the DOGNESS Mini handle large kibble?", a: "It handles kibble up to 12mm in diameter. For larger breed-specific kibble sizes, check the manufacturer's specs or consider a feeder with a wider chute." }],
-  },
-  "leos-loo-too-review": {
-    title: "Leo's Loo Too Review 2026 — UV Sterilization, Tested",
-    description: "Our hands-on Leo's Loo Too review after 3 weeks of testing. We cover UV sterilization effectiveness, voice control with Alexa, app reliability, and whether it beats the Litter-Robot at $449.",
-    productName: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, reviewCount: 5800,
-    pros: ["UV-C sterilization reduces bacteria in waste drawer", "Works with Alexa and Google voice commands", "Quieter cleaning cycle than most competitors", "Sleek, modern design looks great in any room", "Good safety sensors for cats", "More affordable than Litter-Robot 4"],
-    cons: ["Waste drawer is on the smaller side (empty every 3-4 days with 2 cats)", "App can be buggy — occasional disconnects", "Not ideal for cats over 15 lbs", "Customer support response can be slow"],
-    bestFor: ["Single-cat households", "Tech enthusiasts who love smart home integration", "Small apartments and limited spaces", "Owners who prioritize quiet operation"],
-    features: ["UV-C light sterilization", "App control (Wi-Fi)", "Voice control via Alexa & Google Assistant", "Safety stop sensors", "Quiet motor (under 40dB)", "Removable waste drawer with lid"],
-    amazonUrl: "https://www.amazon.com/dp/B09LL4YDSG?tag=smartpetgui0a-20",
-    verdict: "Leo's Loo Too is the strongest Litter-Robot alternative under $500. The UV sterilization is a genuinely useful feature — not a gimmick — and the Alexa integration makes triggering a clean cycle effortless. The app needs polish and the drawer fills faster than we'd like, but at $449 it delivers 90% of the Litter-Robot 4 experience for $250 less.",
+    description: "Hands-on WOPET automatic feeder review: testing the 6L capacity, app reliability, portion accuracy, and whether it's the best value feeder under $100.",
+    productId: "wopet-automatic",
+    verdict: "At $89, the WOPET is the best value smart feeder on the market. The 6L hopper is massive (largest in its class), the built-in battery backup is a thoughtful touch, and it handles up to 10 meals per day reliably. You sacrifice camera, build quality, and app polish — but for pure scheduled feeding, it's unbeatable at the price.",
     content: "",
     faqs: [
-      { q: "Does UV sterilization in Leo's Loo Too actually kill bacteria?", a: "Yes — the UV-C light in the waste drawer has been shown to reduce bacteria like E. coli and salmonella. It's not a replacement for regular cleaning, but it does help keep the drawer fresher between changes." },
-      { q: "Can I use Leo's Loo Too with Alexa?", a: "Yes. You can say 'Alexa, tell Smarty Pear to clean the litter box' and it will start a cycle. Google Assistant is also supported." },
-      { q: "How often do I need to empty Leo's Loo Too?", a: "With one cat, every 5-7 days. With two cats, every 3-4 days. The waste drawer is smaller than the Litter-Robot 4, so multi-cat homes will need more frequent emptying." },
+      { q: "Is the WOPET feeder suitable for large dogs?", a: "Yes — the 6L hopper holds about 25-30 cups of kibble, enough for a large dog for 5-7 days. Portion sizes can be set from 1 to 20 portions per meal (about 5g per portion)." },
+      { q: "Does the WOPET app work with 5GHz Wi-Fi?", a: "No — the WOPET feeder only supports 2.4GHz Wi-Fi. Most routers broadcast both, but you may need to enable 2.4GHz in your router settings." },
+      { q: "What happens if the WOPET loses power?", a: "Built-in battery backup (D batteries) takes over automatically. This is a key advantage over competitors like Petlibro that require a separate battery pack purchase." },
+    ],
+  },
+  "dogness-mini-smart-feeder-review": {
+    title: "DOGNESS Mini Smart Feeder Review 2026 — Compact & Clever",
+    description: "Review of the DOGNESS Mini Smart Feeder: testing the compact design, stainless steel bowl, anti-clog mechanism, and whether it's worth $99 for small spaces.",
+    productId: "dogness-mini",
+    verdict: "The DOGNESS Mini is the ideal pick for apartments and small homes. The stainless steel bowl is more hygienic than plastic, the anti-clog mechanism works, and the desiccant bag keeps food fresh longer. At $99 and 3.5L, it's a bit overpriced per liter compared to the WOPET 6L at $89, but the compact footprint and build quality justify it for space-constrained owners.",
+    content: "",
+    faqs: [
+      { q: "Is the stainless steel bowl dishwasher safe?", a: "Yes — the bowl and food tray detach easily and are top-rack dishwasher safe. This is one of the Mini's biggest advantages over plastic-bowl feeders." },
+      { q: "How long does the desiccant bag last?", a: "About 30-45 days before needing replacement. Replacement desiccant packs cost ~$8 for a 3-pack on Amazon." },
+      { q: "Can the DOGNESS Mini handle large kibble?", a: "It works with most standard kibble sizes up to 15mm. Very large breed kibble (20mm+) may occasionally clog the hopper outlet, though the anti-clog design helps minimize this." },
+    ],
+  },
+  "leos-loo-too-review": {
+    title: "Leo's Loo Too Review 2026 — UV-Sterilizing Smart Litter Box",
+    description: "In-depth Leo's Loo Too review: testing UV sterilization, voice control, app features, and how it stacks up against the Litter-Robot 4.",
+    productId: "leos-loo-too",
+    verdict: "The Leo's Loo Too is the smarter choice for tech-forward single-cat owners who want voice control and UV sterilization at $250 less than the Litter-Robot 4. The UV-C light genuinely helps with bacteria control, and Alexa/Google integration is seamless. The smaller waste drawer and occasional app bugs keep it from being our top pick, but at $449 it's an excellent value for a fully-featured self-cleaning litter box.",
+    content: "",
+    faqs: [
+      { q: "Does UV sterilization in Leo's Loo Too really work?", a: "UV-C light has been proven to reduce bacteria in controlled environments. In the Leo's Loo Too, it helps sanitize the waste drawer interior. However, it doesn't replace regular deep cleaning — think of it as an extra layer of hygiene, not a magic wand." },
+      { q: "How do I set up Alexa/Google voice control?", a: "Enable the Smarty Pear skill in your Alexa or Google Home app, link your Leo's Loo Too account, and you can trigger cleaning cycles, check the waste drawer level, and toggle UV sterilization by voice." },
+      { q: "Is Leo's Loo Too quieter than Litter-Robot 4?", a: "Yes — the Leo's Loo Too runs at under 30dB during cleaning, noticeably quieter than the Litter-Robot 4's ~40dB. If the box sits near a bedroom, this matters." },
     ],
   },
   "petsafe-scoopfree-review": {
-    title: "PetSafe ScoopFree Smart Review 2026 — Best Budget Self-Cleaning Box?",
-    description: "Our detailed PetSafe ScoopFree Smart review: evaluating the crystal litter system, disposable tray convenience, health monitoring accuracy, and whether it's the best entry-level automatic litter box at $299.",
-    productName: "PetSafe ScoopFree Smart", brand: "PetSafe", price: 299, rating: 4.2, reviewCount: 9200,
-    pros: ["Most affordable automatic box at $299", "Crystal litter absorbs urine and dries solids — excellent odor control", "Disposable trays make cleanup completely hands-off", "Health monitoring tracks usage frequency", "No scooping or touching litter for weeks", "Trusted brand with good US-based support"],
-    cons: ["Proprietary disposable trays cost $15-25 each (replaced monthly)", "Crystal litter texture — some cats refuse to use it", "No sifting mechanism — waste stays in the tray", "Not compatible with standard clumping litter", "Single-cat focus — struggles with 2+ cats"],
-    bestFor: ["Budget-conscious first-time buyers", "Single-cat households", "Owners who want zero litter contact", "Those willing to pay for disposable tray convenience"],
-    features: ["Crystal litter system (absorbs urine, dehydrates solids)", "Disposable pre-filled trays (replace monthly)", "App alerts for full tray and health monitoring", "Motion-activated safety sensors", "Adjustable rake delay (5/10/20 min)", "Health usage counter tracks bathroom habits"],
-    amazonUrl: "https://www.amazon.com/dp/B087C6XZCL?tag=smartpetgui0a-20",
-    verdict: "The PetSafe ScoopFree Smart is the best entry point into automatic litter boxes. At $299, it's less than half the price of rotating models. The crystal litter system genuinely controls odors and the disposable trays mean you never touch litter. The trade-offs are real — ongoing tray costs add up and not all cats accept crystal litter — but for single-cat homes on a budget, this is the smart choice.",
+    title: "PetSafe ScoopFree Smart Review 2026 — Crystal Litter Alternative",
+    description: "Hands-on PetSafe ScoopFree Smart review: testing the crystal litter system, disposable trays, app connectivity, and how crystal litter compares to traditional clumping.",
+    productId: "petsafe-scoopfree",
+    verdict: "The PetSafe ScoopFree offers a unique crystal litter approach at the most affordable entry price ($299) for a smart self-cleaning box. The disposable trays are incredibly convenient — just toss and replace every 2-4 weeks. However, the proprietary tray costs add up fast ($15-25/month), and crystal litter isn't for every cat. If your cat accepts crystal litter, this is the lowest-maintenance option on the market.",
     content: "",
     faqs: [
       { q: "How much do PetSafe ScoopFree disposable trays cost?", a: "A 3-pack costs $45-75 ($15-25 each). Each tray lasts about 2-4 weeks for one cat. Budget approximately $20/month in ongoing tray costs." },
@@ -112,14 +113,7 @@ const reviewMap: Record<string, { title: string; description: string; productNam
   "petkit-eversweet-review": {
     title: "PETKIT Eversweet Solo 2 Review 2026 — Best Smart Fountain Under $60?",
     description: "In-depth PETKIT Eversweet Solo 2 review. We test the smart pump, filtration, noise level, and app connectivity to see if this $59 fountain is worth it.",
-    productName: "PETKIT Eversweet Solo 2",
-    brand: "PETKIT",
-    price: 59, rating: 4.4, reviewCount: 7200,
-    pros: ["Whisper-quiet 30dB operation", "Smart filter replacement reminder", "Easy to disassemble and clean", "Sleek, modern design fits any home", "Multi-layer filtration delivers clean water"],
-    cons: ["Small 2L capacity needs frequent refills", "Proprietary filters lock you into PETKIT ecosystem", "No Wi-Fi/app control on base model", "Not ideal for multi-pet homes"],
-    bestFor: ["Apartment dwellers", "One or two cats", "Design-conscious pet owners", "Those who want quiet operation"],
-    features: ["Smart pump with auto-shutoff when dry", "2L water capacity", "Multi-layer activated carbon + ion exchange filter", "Low noise (30dB — quieter than a whisper)", "Filter replacement indicator light", "Detachable parts for dishwasher-safe cleaning"],
-    amazonUrl: "https://www.amazon.com/dp/B0B3RWF653?tag=smartpetgui0a-20",
+    productId: "petkit-eversweet",
     verdict: "The PETKIT Eversweet Solo 2 is the best smart fountain under $60. Its standout feature is how quiet it is — you'll forget it's running. The filter replacement reminder is genuinely useful and ensures your pet always drinks clean water. The 2L capacity is the main trade-off; if you have multiple pets, you'll refill it every 2-3 days. For single cat or dog owners, this is a near-perfect fountain at an excellent price.",
     content: "",
     faqs: [
@@ -131,14 +125,7 @@ const reviewMap: Record<string, { title: string; description: string; productNam
   "catit-pixi-fountain-review": {
     title: "Catit PIXI Smart Fountain Review 2026 — Water Intake Tracking for Your Cat",
     description: "We review the Catit PIXI Smart Fountain with app-enabled water intake monitoring. See if the smart features justify the $79 price tag.",
-    productName: "Catit PIXI Smart Fountain",
-    brand: "Catit",
-    price: 79, rating: 4.2, reviewCount: 3800,
-    pros: ["App tracks your cat's water consumption", "Multiple drinking heights for different cats", "Good 3L capacity for multi-cat homes", "Fun customizable LED color options", "Ergonomic design encourages drinking"],
-    cons: ["App only for monitoring (no pump control)", "Filters need replacing every 2-3 weeks", "LED feature feels gimmicky for some", "Larger footprint than simpler fountains"],
-    bestFor: ["Cat owners tracking health data", "Multi-cat homes", "Cats with urinary health concerns", "Those wanting intake insights"],
-    features: ["App water intake monitoring via Bluetooth", "3L water capacity", "Three ergonomic drinking heights", "Customizable LED night light", "Filter replacement indicator", "Dual filtration (mechanical + chemical)"],
-    amazonUrl: "https://www.amazon.com/dp/B093M57335?tag=smartpetgui0a-20",
+    productId: "catit-pixi",
     verdict: "The Catit PIXI is the only fountain in its price range that tracks water consumption — a feature that can alert you to early signs of kidney issues or dehydration. The multiple drinking heights are thoughtfully designed for different cat sizes. At $79, it's reasonably priced for a smart fountain, though the app is read-only (no pump control) and filter costs are above average. If your cat has a history of urinary issues, the intake tracking alone justifies the price.",
     content: "",
     faqs: [
@@ -150,14 +137,7 @@ const reviewMap: Record<string, { title: string; description: string; productNam
   "pioneer-pet-raindrop-review": {
     title: "Pioneer Pet Raindrop Fountain Review 2026 — The Timeless Budget Classic",
     description: "We review the Pioneer Pet Raindrop — a stainless steel, no-frills pet fountain that's been a bestseller for over a decade. Is it still worth buying in 2026?",
-    productName: "Pioneer Pet Raindrop Fountain",
-    brand: "Pioneer Pet",
-    price: 39, rating: 4.3, reviewCount: 18500,
-    pros: ["Incredible value at $39", "Stainless steel is hygienic and durable", "Dishwasher safe — easiest to clean", "Quiet pump at a budget price", "18,500+ reviews prove reliability"],
-    cons: ["No smart features or app", "No water level indicator", "Round shape uses more counter space", "Charcoal filters are basic quality"],
-    bestFor: ["Budget-first buyers", "Those who prefer simplicity", "Cats who are picky about plastic", "Multi-pet homes needing a backup fountain"],
-    features: ["Stainless steel construction", "60oz (1.8L) capacity", "Replaceable charcoal filter", "Circulating water flow", "Dishwasher safe (all parts)", "Quiet submersible pump with 1-year warranty"],
-    amazonUrl: "https://www.amazon.com/dp/B0037NKDSG?tag=smartpetgui0a-20",
+    productId: "pioneer-pet-raindrop",
     verdict: "The Pioneer Pet Raindrop is the Toyota Camry of pet fountains — reliable, affordable, and universally liked. It won't impress anyone with features, but it does the core job perfectly: providing clean, circulating water that entices pets to drink more. With 18,500+ reviews averaging 4.3 stars, the crowd has spoken. For $39, it's the fountain we recommend to anyone who just wants clean water without fuss.",
     content: "",
     faqs: [
@@ -169,14 +149,7 @@ const reviewMap: Record<string, { title: string; description: string; productNam
   "furbo-360-camera-review": {
     title: "Furbo 360 Dog Camera Review 2026 — Best Treat-Tossing Pet Cam?",
     description: "We tested the Furbo 360 for 3 months. Is the 360° treat-tossing camera worth $179? Bark alerts, two-way audio, video quality, and app tested in-depth.",
-    productName: "Furbo 360 Dog Camera",
-    brand: "Furbo",
-    price: 179, rating: 4.4, reviewCount: 9800,
-    pros: ["Treat tossing is genuinely fun and interactive", "360° pan/tilt covers the entire room", "Bark alerts are fast and reliable", "Dog-specific AI features (person detection, barking)", "1080p video with good night vision"],
-    cons: ["No feeding functionality (camera only)", "Treat reservoir only holds ~15 small treats", "Premium price for a camera-only device", "Subscription ($5.99/mo) for full AI features"],
-    bestFor: ["Dog owners with separation anxiety concerns", "Those who want to interact remotely during the day", "Single-dog households", "Apartment dwellers checking on barking"],
-    features: ["360° pan/tilt camera", "Treat tossing (remote or scheduled)", "1080p HD video with 4x digital zoom", "Bark alert notifications", "Two-way audio with noise reduction", "Smart alerts (person/dog detection with sub)"],
-    amazonUrl: "https://www.amazon.com/dp/B09GDQZLD1?tag=smartpetgui0a-20",
+    productId: "furbo-360",
     verdict: "The Furbo 360 is the best treat-tossing camera for dog owners who want remote interaction — not just passive monitoring. The 360° pan/tilt means you can always find your dog, and the bark alerts work impressively fast. The $179 price and $5.99/month subscription for AI features are the main drawbacks. If your primary need is just checking on your pet, a cheaper fixed camera works fine. But if you want to play, toss treats, and talk to your dog during the day, the Furbo is unmatched.",
     content: "",
     faqs: [
@@ -188,14 +161,7 @@ const reviewMap: Record<string, { title: string; description: string; productNam
   "petcube-bites-2-review": {
     title: "Petcube Bites 2 Review 2026 — Alexa-Powered Treat Cam for Dogs",
     description: "Full review of the Petcube Bites 2 with built-in Alexa. We test treat tossing, video quality, Alexa integration, and how it compares to the Furbo 360.",
-    productName: "Petcube Bites 2",
-    brand: "Petcube",
-    price: 249, rating: 4.3, reviewCount: 6200,
-    pros: ["Alexa built-in (no separate Echo needed)", "160° wide-angle lens covers more area", "Treat tossing is smooth and reliable", "Premium build quality and sleek design", "Works with Amazon smart home ecosystem"],
-    cons: ["Most expensive pet camera at $249", "No pan/tilt — fixed wide-angle view only", "Treat mechanism can jam with large treats", "Subscription needed for cloud recording"],
-    bestFor: ["Alexa smart home users", "Living room setups with wide coverage", "Dog owners wanting premium treat interaction", "Those who prefer wide-angle to PTZ cameras"],
-    features: ["Built-in Alexa smart speaker", "1080p HD camera with 160° wide-angle lens", "Treat tossing (app-controlled or scheduled)", "Two-way audio with noise cancellation", "Smart alerts (bark, person, pet detection)", "Night vision with IR cut filter"],
-    amazonUrl: "https://www.amazon.com/dp/B07QZ4BWY1?tag=smartpetgui0a-20",
+    productId: "petcube-bites-2",
     verdict: "The Petcube Bites 2 is the premium choice for smart home enthusiasts. Built-in Alexa means one less device on your counter, and the 160° wide-angle lens covers a whole room without needing pan/tilt. At $249 it's the priciest pet camera, but the build quality and Alexa integration justify the cost if you're in the Amazon ecosystem. If you don't use Alexa, the Furbo 360 offers similar features for $70 less with the bonus of pan/tilt.",
     content: "",
     faqs: [
@@ -208,31 +174,39 @@ const reviewMap: Record<string, { title: string; description: string; productNam
 
 const slug = Astro.params.slug || "litter-robot-4-review";
 const review = reviewMap[slug] || reviewMap["litter-robot-4-review"];
+const product = allProducts.get(review.productId);
 ---
 
 <BaseLayout title={review.title} description={review.description} type="article">
-  <Breadcrumb crumbs={[{ label: "Reviews", href: "/reviews/" }, { label: review.productName }]} />
+  <Breadcrumb crumbs={[{ label: "Reviews", href: "/reviews/" }, { label: product?.name || review.title }]} />
 
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{review.title}</h1>
 
     <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
-      <span>Updated: <time datetime="2026-05-20">May 20, 2026</time></span>
+      <span>Updated: <time datetime="2026-05-21">May 21, 2026</time></span>
       <span>10 min read</span>
       <span class="rounded-full bg-sage/70 px-2.5 py-0.5 text-xs font-medium text-forest">Advertiser Disclosure</span>
     </div>
+
+    <!-- Product Hero Image -->
+    {product?.imageUrl && (
+      <div class="mt-6">
+        <img src={product.imageUrl} alt={product.name} class="mx-auto h-64 w-full max-w-lg rounded-2xl object-cover shadow-sm bg-sage/60" loading="lazy" />
+      </div>
+    )}
 
     <!-- Verdict Card -->
     <div class="mt-8 rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
       <p class="font-display text-lg italic text-forest">"{review.verdict}"</p>
       <div class="mt-4 flex flex-wrap items-center gap-4">
-        <span class="font-display text-3xl font-bold text-forest">${review.price}</span>
+        <span class="font-display text-3xl font-bold text-forest">${product?.price || 0}</span>
         <span class="flex items-center gap-1 text-honey text-lg">
-          {"★".repeat(Math.round(review.rating))}
-          <span class="text-bark-muted text-sm">({review.reviewCount.toLocaleString()} reviews)</span>
+          {"★".repeat(Math.round(product?.rating || 0))}
+          <span class="text-bark-muted text-sm">({(product?.reviewCount || 0).toLocaleString()} reviews)</span>
         </span>
       </div>
-      <a href={review.amazonUrl} target="_blank" rel="nofollow sponsored noopener"
+      <a href={product?.amazonUrl || "#"} target="_blank" rel="nofollow sponsored noopener"
          class="mt-5 inline-flex items-center gap-2 rounded-xl bg-honey px-8 py-3 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
         Check Price on Amazon
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -246,14 +220,14 @@ const review = reviewMap[slug] || reviewMap["litter-robot-4-review"];
           <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
           What We Like
         </h2>
-        <ul class="mt-3 space-y-1.5 text-sm text-green-800/80">{review.pros.map(p => <li class="flex gap-2"><span class="shrink-0 font-bold">+</span> {p}</li>)}</ul>
+        <ul class="mt-3 space-y-1.5 text-sm text-green-800/80">{(product?.pros || []).map((p: string) => <li class="flex gap-2"><span class="shrink-0 font-bold">+</span> {p}</li>)}</ul>
       </div>
       <div class="rounded-2xl border border-rose-dark/30 bg-rose-light/50 p-6">
         <h2 class="flex items-center gap-2 font-semibold text-rose-dark/80">
           <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
           What Could Be Better
         </h2>
-        <ul class="mt-3 space-y-1.5 text-sm text-rose-dark/70">{review.cons.map(c => <li class="flex gap-2"><span class="shrink-0 font-bold">-</span> {c}</li>)}</ul>
+        <ul class="mt-3 space-y-1.5 text-sm text-rose-dark/70">{(product?.cons || []).map((c: string) => <li class="flex gap-2"><span class="shrink-0 font-bold">-</span> {c}</li>)}</ul>
       </div>
     </div>
 
@@ -261,7 +235,7 @@ const review = reviewMap[slug] || reviewMap["litter-robot-4-review"];
     <div class="mt-8">
       <h2 class="font-display text-xl font-bold text-forest">Key Features</h2>
       <div class="mt-4 grid gap-2 sm:grid-cols-2">
-        {review.features.map(f => (
+        {(product?.features || []).map((f: string) => (
           <span class="flex items-center gap-2 rounded-xl border border-sage-dark/30 bg-white px-4 py-2.5 text-sm text-bark">
             <svg class="h-4 w-4 shrink-0 text-honey" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
             {f}
@@ -273,7 +247,7 @@ const review = reviewMap[slug] || reviewMap["litter-robot-4-review"];
     <!-- Who Is This For -->
     <div class="mt-8 rounded-2xl border border-sage-dark/30 bg-sage-light/50 p-6">
       <h2 class="font-display text-xl font-bold text-forest">Who Is This For?</h2>
-      <p class="mt-2 text-bark-muted">{review.bestFor.join(" / ")}</p>
+      <p class="mt-2 text-bark-muted">{(product?.bestFor || []).join(" / ")}</p>
     </div>
 
     <FAQ items={review.faqs} />

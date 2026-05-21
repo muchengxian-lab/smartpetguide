@@ -2,6 +2,15 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQ from "../../components/FAQ.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
+import products from "../../data/products.json";
+
+// Flat lookup: product ID → product object
+const allProducts = new Map<string, any>();
+for (const [cat, items] of Object.entries(products)) {
+  for (const p of items as any[]) {
+    allProducts.set(p.id, p);
+  }
+}
 
 export function getStaticPaths() {
   return [
@@ -13,13 +22,26 @@ export function getStaticPaths() {
 }
 
 const slug = Astro.params.slug || "litter-robot-4-vs-leos-loo-too";
-const compareMap: Record<string, { title: string; description: string; productA: any; productB: any; winner: string; comparisonRows: string[][]; faqs: { q: string; a: string }[] }> = {
+
+interface CompareData {
+  title: string;
+  description: string;
+  productAId?: string;
+  productBId?: string;
+  productA?: any;
+  productB?: any;
+  winner: string;
+  comparisonRows: string[][];
+  faqs: { q: string; a: string }[];
+}
+
+const compareMap: Record<string, CompareData> = {
   "litter-robot-4-vs-leos-loo-too": {
     title: "Litter-Robot 4 vs Leo's Loo Too (2026) — Which Self-Cleaning Box Wins?",
     description: "Head-to-head comparison: Litter-Robot 4 vs Leo's Loo Too. We compare price, odor control, features, app quality, and cat comfort to help you decide.",
     winner: "The Litter-Robot 4 edges out the Leo's Loo Too on overall quality, odor control, and app polish — but at $250 more. For most buyers, Leo's Loo Too is the smarter value with UV sterilization and voice control built in.",
-    productA: { name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Up to 4 cats", "Carbon filter"], pros: ["Best odor control", "Best app"], cons: ["Expensive"], bestFor: ["Multi-cat homes", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B0FFDYB7K8?tag=smartpetgui0a-20" },
-    productB: { name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "Voice control", "App control", "Safety sensors"], pros: ["UV sterilization", "Quiet"], cons: ["Smaller drawer"], bestFor: ["Single-cat", "Tech lovers"], amazonUrl: "https://www.amazon.com/dp/B09LL4YDSG?tag=smartpetgui0a-20" },
+    productAId: "litter-robot-4",
+    productBId: "leos-loo-too",
     comparisonRows: [
       ["Price", "$699", "$449"],
       ["Rating", "★★★★½", "★★★★⅓"],
@@ -62,8 +84,8 @@ const compareMap: Record<string, { title: string; description: string; productA:
     title: "WOPET vs Petlibro Granary (2026) — Which Automatic Feeder Is Right for You?",
     description: "WOPET Automatic Feeder vs Petlibro Granary Camera Feeder head-to-head. We compare price, camera, capacity, app quality, and overall value to help you choose the best smart feeder.",
     winner: "The Petlibro Granary wins if you want the built-in 1080p camera and a polished app experience — it's two devices in one. But the WOPET is the smarter value at $50 less, with a larger 6L hopper and proven reliability. Budget-conscious buyers get more for their money with WOPET; anxious pet parents who want visual check-ins should pay the premium for Petlibro.",
-    productA: { name: "WOPET Automatic Feeder", brand: "WOPET", price: 89, rating: 4.3, features: ["App control", "6L capacity", "Voice recording", "Dual power", "10 meals/day"], pros: ["$50 cheaper than Petlibro", "Larger 6L hopper", "Battery backup included", "Voice recording for pets"], cons: ["No camera", "App feels dated", "Portion sizes vary slightly"], bestFor: ["Budget-minded owners", "Large dogs needing big portions", "Reliability-first buyers"], amazonUrl: "https://www.amazon.com/dp/B089GG57QL?tag=smartpetgui0a-20" },
-    productB: { name: "Petlibro Granary", brand: "Petlibro", price: 139, rating: 4.5, features: ["1080p camera", "App control", "3L/5L options", "Two-way audio", "Night vision", "Motion alerts"], pros: ["1080p cam = two devices in one", "Polished app experience", "Night vision quality", "Motion detection alerts"], cons: ["$50 more than WOPET", "Smaller capacity (3L/5L)", "No pan/tilt on camera"], bestFor: ["Pet parents wanting visual checks", "Separation anxiety management", "Small to medium pets"], amazonUrl: "https://www.amazon.com/dp/B0B5ZGGWBQ?tag=smartpetgui0a-20" },
+    productAId: "wopet-automatic",
+    productBId: "petlibro-granary",
     comparisonRows: [
       ["Price", "$89", "$139"],
       ["Rating", "★★★★⅓ (4.3)", "★★★★½ (4.5)"],
@@ -87,8 +109,8 @@ const compareMap: Record<string, { title: string; description: string; productA:
     title: "Furbo 360 vs Petcube Bites 2 (2026) — Best Treat-Tossing Pet Camera?",
     description: "Furbo 360 vs Petcube Bites 2 head-to-head comparison. We compare treat tossing, video quality, smart home features, subscription costs, and overall value to help you decide.",
     winner: "The Furbo 360 wins for most dog owners — its 360° pan/tilt means you can always find your dog, it costs $70 less, and its dog-specific AI features (bark alerts, person detection) are genuinely useful. The Petcube Bites 2 is better for Alexa households who want a premium, all-in-one smart home device with room-filling wide-angle coverage. If you don't use Alexa, save $70 and get the Furbo.",
-    productA: { name: "Furbo 360", brand: "Furbo", price: 179, rating: 4.4, features: ["360° pan/tilt", "Treat tossing", "1080p", "Bark alerts", "Two-way audio"], pros: ["360° coverage (follows dog)", "$70 cheaper than Petcube", "Best bark alerts", "Dog-specific AI"], cons: ["No Alexa built-in", "Smaller treat reservoir", "$5.99/mo sub for AI"], bestFor: ["Dog owners", "Active pets", "Value-focused buyers"], amazonUrl: "https://www.amazon.com/dp/B09GDQZLD1?tag=smartpetgui0a-20" },
-    productB: { name: "Petcube Bites 2", brand: "Petcube", price: 249, rating: 4.3, features: ["Alexa built-in", "Treat tossing", "1080p", "160° wide angle", "Two-way audio"], pros: ["Alexa included = 1 less device", "160° wide-angle covers room", "Premium build quality", "Sleek home decor look"], cons: ["$70 more than Furbo", "No pan/tilt (fixed view)", "Large treats jam mechanism"], bestFor: ["Alexa smart homes", "Living room setups", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B07QZ4BWY1?tag=smartpetgui0a-20" },
+    productAId: "furbo-360",
+    productBId: "petcube-bites-2",
     comparisonRows: [
       ["Price", "$179", "$249"],
       ["Rating", "★★★★½ (4.4)", "★★★★⅓ (4.3)"],
@@ -109,10 +131,14 @@ const compareMap: Record<string, { title: string; description: string; productA:
 };
 
 const data = compareMap[slug] || compareMap["litter-robot-4-vs-leos-loo-too"];
+
+// Get products from products.json, or use inline data for generic comparisons
+const productA = data.productAId ? allProducts.get(data.productAId) : data.productA;
+const productB = data.productBId ? allProducts.get(data.productBId) : data.productB;
 ---
 
 <BaseLayout title={data.title} description={data.description} type="article">
-  <Breadcrumb crumbs={[{ label: "Compare", href: "/compare/" }, { label: data.productA.name + " vs " + data.productB.name }]} />
+  <Breadcrumb crumbs={[{ label: "Compare", href: "/compare/" }, { label: productA.name + " vs " + productB.name }]} />
 
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{data.title}</h1>
@@ -126,11 +152,15 @@ const data = compareMap[slug] || compareMap["litter-robot-4-vs-leos-loo-too"];
 
     <!-- Side by Side Cards -->
     <div class="mt-10 grid gap-6 md:grid-cols-2">
-      {[data.productA, data.productB].map((p, idx) => (
+      {[productA, productB].map((p, idx) => (
         <div class={`rounded-2xl border p-6 ${idx === 0 ? 'border-forest/20 bg-forest/3' : 'border-sage-dark/30 bg-white'}`}>
+          <!-- Product image -->
+          {p.imageUrl && (
+            <img src={p.imageUrl} alt={p.name} class="mb-4 h-48 w-full rounded-xl object-cover bg-sage/60" loading="lazy" />
+          )}
           <h2 class="font-display text-xl font-bold text-forest">{p.name}</h2>
           <p class="text-sm text-bark-muted">by {p.brand}</p>
-          <p class="mt-2 font-display text-3xl font-bold text-forest">${p.price}</p>
+          <p class="mt-2 font-display text-3xl font-bold text-forest">{typeof p.price === 'number' ? '$' + p.price : p.price}</p>
           <div class="mt-4 space-y-2.5 text-sm">
             <p class="font-semibold text-green-800">Pros</p>
             {p.pros.map((pro: string) => <p class="text-green-800/80">&check; {pro}</p>)}
@@ -154,8 +184,8 @@ const data = compareMap[slug] || compareMap["litter-robot-4-vs-leos-loo-too"];
           <thead>
             <tr class="bg-sage/60">
               <th class="px-5 py-3.5 text-left font-semibold text-forest">Feature</th>
-              <th class="px-5 py-3.5 font-semibold text-forest">{data.productA.name}</th>
-              <th class="px-5 py-3.5 font-semibold text-forest">{data.productB.name}</th>
+              <th class="px-5 py-3.5 font-semibold text-forest">{productA.name}</th>
+              <th class="px-5 py-3.5 font-semibold text-forest">{productB.name}</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-sage-dark/20">

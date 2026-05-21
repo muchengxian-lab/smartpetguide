@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import ProductCard from "../../components/ProductCard.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import FAQ from "../../components/FAQ.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
+import products from "../../data/products.json";
 
 export function getStaticPaths() {
   return [
@@ -14,17 +14,22 @@ export function getStaticPaths() {
   ];
 }
 
-const slugMap: Record<string, { title: string; description: string; products: any[]; faqs: { q: string; a: string }[] }> = {
+// Map category keys from products.json to slugs
+const categoryMap: Record<string, keyof typeof products> = {
+  "self-cleaning-litter-boxes": "litterBoxes",
+  "automatic-cat-feeders": "feeders",
+  "smart-pet-water-fountains": "waterFountains",
+  "pet-cameras": "cameras",
+};
+
+const slug = Astro.params.slug || "self-cleaning-litter-boxes";
+const categoryKey = categoryMap[slug] || "litterBoxes";
+const allProducts = products[categoryKey];
+
+const titleMap: Record<string, { title: string; description: string; faqs: { q: string; a: string }[] }> = {
   "self-cleaning-litter-boxes": {
     title: "5 Best Self-Cleaning Litter Boxes of 2026 — Tested & Reviewed",
     description: "We tested the top automatic litter boxes to find the best for odor control, multi-cat homes, and budget. Litter-Robot vs Leo's Loo vs PetSafe and more.",
-    products: [
-      { id: "litter-robot-4", name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Multi-cat compatible", "Odor control", "Waste drawer indicator", "4 cat capacity"], pros: ["Best-in-class odor control", "Large waste drawer", "Excellent app"], cons: ["Expensive", "Large footprint"], bestFor: ["Multi-cat households", "Owners who want the best"], amazonUrl: "https://www.amazon.com/dp/B0BG4NP272?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 12500, category: "litterBox", weight: 3.6, warranty: "1 year" },
-      { id: "leos-loo-too", name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "App control", "Voice control (Alexa/Google)", "Safety sensors", "Quiet operation"], pros: ["UV sterilization built-in", "Voice assistant compatible", "Quieter than competitors"], cons: ["Smaller waste drawer", "App can be buggy"], bestFor: ["Single-cat homes", "Tech enthusiasts"], amazonUrl: "https://www.amazon.com/dp/B0BXFLBM4C?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 5800, category: "litterBox", weight: 2.8, warranty: "1 year" },
-      { id: "catlink-young", name: "CATLINK Young Pro", brand: "CATLINK", price: 399, rating: 4.1, features: ["App control", "Multi-cat recognition", "Weight sensors", "Safety protection", "13L waste bin"], pros: ["Multi-cat recognition by weight", "Large waste container", "Great value"], cons: ["Complex setup", "App translations imperfect"], bestFor: ["Multi-cat homes on a budget", "Data-driven owners"], amazonUrl: "https://www.amazon.com/dp/B0C7LXNKV3?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 3400, category: "litterBox", weight: 3.0, warranty: "1 year" },
-      { id: "elspet-pro", name: "Elspet Pro Self-Cleaning", brand: "Elspet", price: 349, rating: 4.0, features: ["App control", "Odor neutralizer", "Safety sensors", "Quiet motor", "Easy disassembly"], pros: ["Affordable mid-range", "Easy to clean", "Good safety features"], cons: ["Newer brand", "App less polished"], bestFor: ["Value seekers", "1-2 cats"], amazonUrl: "https://www.amazon.com/dp/B0CBKNRYP7?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 2100, category: "litterBox", weight: 2.5, warranty: "18 months" },
-      { id: "petsafe-scoopfree", name: "PetSafe ScoopFree Smart", brand: "PetSafe", price: 299, rating: 4.2, features: ["Crystal litter system", "App alerts", "Disposable trays", "Health monitoring", "Motion sensors"], pros: ["Affordable entry price", "Disposable trays = easy", "Health tracking"], cons: ["Proprietary trays costly", "Crystal litter not for all"], bestFor: ["Budget-conscious", "First-time owners"], amazonUrl: "https://www.amazon.com/dp/B0C6LMNV7H?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 9200, category: "litterBox", weight: 3.2, warranty: "1 year" },
-    ],
     faqs: [
       { q: "Are self-cleaning litter boxes worth it?", a: "Yes, if you value your time and want better odor control. A quality self-cleaning box like the Litter-Robot 4 can reduce scooping to once every 1-2 weeks and significantly cut litter box odors." },
       { q: "How often do you need to empty a self-cleaning litter box?", a: "Most self-cleaning boxes need the waste drawer emptied every 5-7 days for a single cat, or every 2-3 days for multiple cats." },
@@ -36,12 +41,6 @@ const slugMap: Record<string, { title: string; description: string; products: an
   "automatic-cat-feeders": {
     title: "5 Best Automatic Cat Feeders of 2026 — Smart Feeding Solutions",
     description: "Compare the best automatic pet feeders with app control, cameras, and portion management. WOPET vs Petlibro vs DOGNESS vs PETKIT — which is right for you?",
-    products: [
-      { id: "petlibro-granary", name: "Petlibro Granary Camera Feeder", brand: "Petlibro", price: 139, rating: 4.5, features: ["1080p camera", "App control", "3L/5L options", "Two-way audio", "Night vision", "Motion alerts"], pros: ["Camera + feeder in one", "Excellent app", "Night vision"], cons: ["Smaller capacity", "Premium price"], bestFor: ["Visual check-ins", "Small to medium pets", "Anxious pet parents"], amazonUrl: "https://www.amazon.com/dp/B0CD83LQX7?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 8700, category: "feeder", weight: 1.8, warranty: "1 year" },
-      { id: "petkit-fresh-element", name: "PETKIT Fresh Element Solo", brand: "PETKIT", price: 129, rating: 4.4, features: ["App control", "4L capacity", "Rotary sealing", "Detachable parts", "Low-food alert"], pros: ["Excellent food freshness", "Easy to clean", "Sleek design"], cons: ["No camera", "Slightly noisy"], bestFor: ["Design-conscious", "Food freshness priority"], amazonUrl: "https://www.amazon.com/dp/B0BX3MSX5T?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 6100, category: "feeder", weight: 2.0, warranty: "1 year" },
-      { id: "wopet-automatic", name: "WOPET Automatic Feeder", brand: "WOPET", price: 89, rating: 4.3, features: ["App control", "6L capacity", "Voice recording", "Dual power", "10 meals/day"], pros: ["Great value", "Reliable Wi-Fi", "Voice recording"], cons: ["No camera", "App feels dated"], bestFor: ["Budget-minded", "Daily scheduling"], amazonUrl: "https://www.amazon.com/dp/B0BYSF2TLM?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 15200, category: "feeder", weight: 2.1, warranty: "1 year" },
-      { id: "dogness-mini", name: "DOGNESS Mini Smart Feeder", brand: "DOGNESS", price: 99, rating: 4.2, features: ["App control", "3.5L capacity", "Desiccant bag slot", "Stainless steel bowl", "Anti-clog"], pros: ["Compact design", "Stainless steel bowl", "Anti-clog mechanism"], cons: ["No camera", "Small capacity"], bestFor: ["Small spaces", "Single pet"], amazonUrl: "https://www.amazon.com/dp/B0CCJRQ8HQ?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 4200, category: "feeder", weight: 1.5, warranty: "1 year" },
-    ],
     faqs: [
       { q: "Are automatic pet feeders worth it?", a: "Absolutely — if you work long hours, travel occasionally, or want consistent portion control for your pet. An automatic feeder ensures your pet eats on schedule even when you're not home." },
       { q: "How long can an automatic feeder last without refilling?", a: "A 4-6L capacity feeder can feed one cat for 15-25 days. Smaller 2-3L feeders last about 7-10 days for a single pet." },
@@ -53,30 +52,16 @@ const slugMap: Record<string, { title: string; description: string; products: an
   "smart-pet-water-fountains": {
     title: "5 Best Smart Pet Water Fountains of 2026 — Tested & Reviewed",
     description: "We tested the top smart water fountains for cats and dogs. From the budget Pioneer Pet to the app-controlled Catit PIXI, find the best fountain for your pet.",
-    products: [
-      { id: "petkit-eversweet", name: "PETKIT Eversweet Solo 2", brand: "PETKIT", price: 59, rating: 4.4, features: ["Smart pump", "2L capacity", "Multi-layer filtration", "Low noise (30dB)", "Filter reminder"], pros: ["Whisper-quiet at 30dB", "Smart filter alerts", "Easy to disassemble and clean", "Sleek modern design"], cons: ["Small 2L capacity", "Proprietary filters", "No Wi-Fi on base model"], bestFor: ["Single cat/dog", "Quiet homes", "Design-focused buyers"], amazonUrl: "https://www.amazon.com/dp/B0BX3MQSP9?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 7200, category: "fountain", weight: 1.0, warranty: "1 year" },
-      { id: "catit-pixi", name: "Catit PIXI Smart Fountain", brand: "Catit", price: 79, rating: 4.2, features: ["App monitoring", "3L capacity", "Ergonomic drinking heights", "Filter indicator", "Customizable LED"], pros: ["Tracks water intake via app", "Multiple drinking heights", "Good 3L capacity", "LED adds personality"], cons: ["App is monitoring only", "Filters need frequent changes", "LED is gimmicky for some"], bestFor: ["Health-tracking owners", "Multi-cat homes", "Cats with urinary issues"], amazonUrl: "https://www.amazon.com/dp/B0C1GCPR9N?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 3800, category: "fountain", weight: 1.3, warranty: "1 year" },
-      { id: "dogness-fountain", name: "DOGNESS Wi-Fi Smart Fountain", brand: "DOGNESS", price: 69, rating: 4.1, features: ["App control", "2.5L capacity", "Filter replacement alerts", "5-stage filtration", "Quiet pump"], pros: ["5-stage filtration quality", "App filter alerts useful", "Under 25dB operation", "Good value at $69"], cons: ["App connection finicky", "Smaller reservoir", "Proprietary filters"], bestFor: ["App-centric owners", "Single pets", "Filtration quality priority"], amazonUrl: "https://www.amazon.com/dp/B0CCJTTLS3?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 1500, category: "fountain", weight: 1.1, warranty: "1 year" },
-      { id: "homerunpet-wireless", name: "Homerunpet Wireless Fountain", brand: "Homerunpet", price: 45, rating: 4.2, features: ["Battery-powered pump", "2L capacity", "Motion sensor", "Multi-layer filter", "USB-C charging"], pros: ["Totally wireless (no cords)", "Motion sensor saves battery", "USB-C rechargeable", "Great price at $45"], cons: ["Small 2L capacity", "Weekly charging needed", "Newer brand"], bestFor: ["Cord-free setups", "Small apartments", "Budget smart buyers"], amazonUrl: "https://www.amazon.com/dp/B0CBFTQYKZ?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 2800, category: "fountain", weight: 0.8, warranty: "1 year" },
-      { id: "pioneer-pet-raindrop", name: "Pioneer Pet Raindrop", brand: "Pioneer Pet", price: 39, rating: 4.3, features: ["Stainless steel", "60oz capacity", "Charcoal filter", "Circulating flow", "Dishwasher safe"], pros: ["Incredible value at $39", "Stainless steel = hygienic", "Dishwasher safe", "18,500+ reviews"], cons: ["No smart features", "No water level indicator", "Round shape uses space"], bestFor: ["Budget buyers", "Simplicity lovers", "Picky cats (steel > plastic)"], amazonUrl: "https://www.amazon.com/dp/B0002DK4W6?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 18500, category: "fountain", weight: 1.0, warranty: "1 year" },
-    ],
     faqs: [
       { q: "Are smart water fountains really better than a bowl?", a: "Yes — moving water stays fresher, filters remove impurities, and pets instinctively prefer running water. Vets recommend fountains to increase water intake, which helps prevent urinary and kidney issues." },
       { q: "How often should I clean a pet water fountain?", a: "Deep clean weekly (dishwasher safe models make this easy). Replace filters every 2-4 weeks. If you notice slime or biofilm sooner, clean it immediately." },
       { q: "Is a smart fountain with an app worth it?", a: "If your cat has a history of urinary issues, the intake tracking on the Catit PIXI can provide valuable health insights. Otherwise, a non-smart fountain like the Pioneer Pet Raindrop does the job just as well." },
-      { q: "Which fountain is best for multiple pets?", a: "The Catit PIXI (3L) and DOGNESS (2.5L) offer the best capacity for multi-pet homes. Avoid 2L models unless you're fine refilling every other day." },
+      { q: "Which fountain is best for multiple pets?", a: "The Catit PIXI (3L) offers the best capacity for multi-pet homes. Avoid 2L models unless you're fine refilling every other day." },
     ],
   },
   "pet-cameras": {
     title: "5 Best Pet Cameras of 2026 — Treat-Tossing, Monitoring & More",
     description: "We tested the best pet cameras with treat tossing, two-way audio, and smart alerts. Furbo vs Petcube vs budget options — find the right pet cam for your home.",
-    products: [
-      { id: "furbo-360", name: "Furbo 360 Dog Camera", brand: "Furbo", price: 179, rating: 4.4, features: ["360° pan/tilt", "Treat tossing", "1080p camera", "Bark alert", "Two-way audio"], pros: ["360° coverage whole room", "Treat tossing is a hit", "Fast bark alerts", "Dog-specific AI features"], cons: ["No feeding (camera only)", "Subscription for AI ($5.99/mo)", "Small treat reservoir"], bestFor: ["Dog owners with anxiety concerns", "Remote interaction needs", "Single-dog homes"], amazonUrl: "https://www.amazon.com/dp/B0CCRNMRP2?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 9800, category: "camera", weight: 1.2, warranty: "1 year" },
-      { id: "petcube-bites-2", name: "Petcube Bites 2", brand: "Petcube", price: 249, rating: 4.3, features: ["1080p camera", "Treat tossing", "Alexa built-in", "160° wide angle", "Two-way audio"], pros: ["Alexa built right in", "160° wide-angle covers room", "Premium build quality", "Smooth treat tossing"], cons: ["Most expensive at $249", "No pan/tilt", "Treat jams with large treats"], bestFor: ["Alexa smart home users", "Living room setups", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B0B8XSNGXM?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 6200, category: "camera", weight: 1.0, warranty: "1 year" },
-      { id: "petkit-p2", name: "PETKIT P2 Smart Camera", brand: "PETKIT", price: 159, rating: 4.3, features: ["360° pan/tilt", "Treat tossing", "Laser toy", "1080p camera", "Pet AI recognition"], pros: ["Built-in laser toy for play", "Pet face/behavior AI", "360° pan/tilt coverage", "Treat + laser interaction"], cons: ["AI needs subscription", "App has learning curve", "Laser drains treat battery"], bestFor: ["Interactive play enthusiasts", "Cats and dogs", "Tech-forward owners"], amazonUrl: "https://www.amazon.com/dp/B0CK2PQX4G?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 3100, category: "camera", weight: 1.1, warranty: "1 year" },
-      { id: "eufy-pet-cam", name: "eufy Security Pet Camera", brand: "eufy", price: 129, rating: 4.2, features: ["2K resolution", "360° pan/tilt", "Motion tracking", "Two-way audio", "Local storage"], pros: ["No subscription needed", "Sharper 2K video", "Local SD card storage", "Auto motion tracking"], cons: ["No treat tossing", "Not pet-specific features", "App less polished"], bestFor: ["Privacy-conscious owners", "No subscription buyers", "General monitoring"], amazonUrl: "https://www.amazon.com/dp/B0BRQXFJL2?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 3400, category: "camera", weight: 0.8, warranty: "1 year" },
-      { id: "wopet-camera", name: "WOPET Smart Pet Camera", brand: "WOPET", price: 99, rating: 4.0, features: ["1080p camera", "Treat tossing", "Two-way audio", "Night vision", "App control"], pros: ["Cheapest treat cam at $99", "Night vision is decent", "Simple app experience", "Good entry-level option"], cons: ["No pan/tilt", "Treat mech less reliable", "Build feels cheaper"], bestFor: ["Budget treat camera buyers", "First-time pet cam owners", "Single-room monitoring"], amazonUrl: "https://www.amazon.com/dp/B0CJT9FXLN?tag=smartpetgui0a-20", imageUrl: "", reviewCount: 2800, category: "camera", weight: 0.9, warranty: "1 year" },
-    ],
     faqs: [
       { q: "Are pet cameras worth it?", a: "Yes — if you work outside the home or travel. A pet camera gives peace of mind and treat-tossing models let you interact with your pet remotely. Basic cameras start at $30, but treat-tossing models ($99+) add genuine value for dog owners." },
       { q: "Do pet cameras need a subscription?", a: "Some do for advanced features. Furbo charges $5.99/month for AI alerts and cloud recording. eufy has no subscription (local storage). Most basic live streaming works without a subscription." },
@@ -86,19 +71,19 @@ const slugMap: Record<string, { title: string; description: string; products: an
   },
 };
 
-const slug = Astro.params.slug || "self-cleaning-litter-boxes";
-const data = slugMap[slug] || slugMap["self-cleaning-litter-boxes"];
+const pageData = titleMap[slug] || titleMap["self-cleaning-litter-boxes"];
+const isLitterBox = slug.includes("litter");
 ---
 
-<BaseLayout title={data.title} description={data.description} type="article">
-  <Breadcrumb crumbs={[{ label: "Best Picks", href: "/best/" }, { label: data.title.replace(/^\d+\s/, "") }]} />
+<BaseLayout title={pageData.title} description={pageData.description} type="article">
+  <Breadcrumb crumbs={[{ label: "Best Picks", href: "/best/" }, { label: pageData.title.replace(/^\d+\s/, "") }]} />
 
   <article>
-    <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{data.title}</h1>
-    <p class="mt-3 text-lg leading-relaxed text-bark-muted">{data.description}</p>
+    <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{pageData.title}</h1>
+    <p class="mt-3 text-lg leading-relaxed text-bark-muted">{pageData.description}</p>
 
     <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
-      <span>Updated: <time datetime="2026-05-20">May 20, 2026</time></span>
+      <span>Updated: <time datetime="2026-05-21">May 21, 2026</time></span>
       <span>12 min read</span>
       <span class="rounded-full bg-sage/70 px-2.5 py-0.5 text-xs font-medium text-forest">Advertiser Disclosure</span>
     </div>
@@ -106,14 +91,14 @@ const data = slugMap[slug] || slugMap["self-cleaning-litter-boxes"];
     <!-- Quick Comparison Table -->
     <section class="mt-10">
       <h2 class="mb-4 font-display text-xl font-bold text-forest">Quick Comparison</h2>
-      <ComparisonTable products={data.products} />
+      <ComparisonTable products={allProducts} />
     </section>
 
     <!-- Ranked Picks -->
     <section class="mt-12">
       <h2 class="mb-5 font-display text-2xl font-bold text-forest">Our Top Picks</h2>
       <div class="grid gap-5">
-        {data.products.map((p, i) => (
+        {allProducts.map((p, i) => (
           <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
             <div class="flex flex-col gap-5 sm:flex-row sm:items-start">
               <div class="shrink-0">
@@ -122,31 +107,39 @@ const data = slugMap[slug] || slugMap["self-cleaning-litter-boxes"];
                 </div>
               </div>
               <div class="flex-1">
-                <h3 class="font-display text-xl font-semibold text-forest">{p.name}</h3>
-                <p class="text-sm text-bark-muted">by {p.brand} &middot; {"★".repeat(Math.round(p.rating))}<span class="text-bark-muted/50">{"★".repeat(5 - Math.round(p.rating))}</span> ({p.reviewCount.toLocaleString()} reviews)</p>
-                <p class="mt-2 font-display text-2xl font-bold text-forest">${p.price}</p>
-
-                <div class="mt-4 grid gap-4 sm:grid-cols-2">
-                  <div>
-                    <p class="mb-1.5 text-sm font-semibold text-green-800">What We Like</p>
-                    <ul class="space-y-1 text-sm text-green-800/80">
-                      {p.pros.map((pro: string) => <li class="flex gap-1.5"><span>+</span> {pro}</li>)}
-                    </ul>
+                <div class="flex flex-col gap-4 sm:flex-row">
+                  <!-- Product image -->
+                  <div class="shrink-0">
+                    <img src={p.imageUrl} alt={p.name} class="h-40 w-40 rounded-xl object-cover bg-sage/60" loading="lazy" />
                   </div>
-                  <div>
-                    <p class="mb-1.5 text-sm font-semibold text-rose-dark/80">Watch Out For</p>
-                    <ul class="space-y-1 text-sm text-rose-dark/70">
-                      {p.cons.map((con: string) => <li class="flex gap-1.5"><span>-</span> {con}</li>)}
-                    </ul>
+                  <div class="flex-1">
+                    <h3 class="font-display text-xl font-semibold text-forest">{p.name}</h3>
+                    <p class="text-sm text-bark-muted">by {p.brand} &middot; {"★".repeat(Math.round(p.rating))}<span class="text-bark-muted/50">{"★".repeat(5 - Math.round(p.rating))}</span> ({p.reviewCount.toLocaleString()} reviews)</p>
+                    <p class="mt-1 font-display text-2xl font-bold text-forest">${p.price}</p>
+
+                    <div class="mt-3 grid gap-4 sm:grid-cols-2">
+                      <div>
+                        <p class="mb-1.5 text-sm font-semibold text-green-800">What We Like</p>
+                        <ul class="space-y-1 text-sm text-green-800/80">
+                          {p.pros.map((pro: string) => <li class="flex gap-1.5"><span>+</span> {pro}</li>)}
+                        </ul>
+                      </div>
+                      <div>
+                        <p class="mb-1.5 text-sm font-semibold text-rose-dark/80">Watch Out For</p>
+                        <ul class="space-y-1 text-sm text-rose-dark/70">
+                          {p.cons.map((con: string) => <li class="flex gap-1.5"><span>-</span> {con}</li>)}
+                        </ul>
+                      </div>
+                    </div>
+
+                    <p class="mt-3 text-sm text-bark-muted"><span class="font-semibold text-bark">Best for:</span> {p.bestFor.join(", ")}</p>
+                    <a href={p.amazonUrl} target="_blank" rel="nofollow sponsored noopener"
+                       class="mt-4 inline-flex items-center gap-2 rounded-xl bg-honey px-6 py-2.5 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
+                      View on Amazon
+                      <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
                   </div>
                 </div>
-
-                <p class="mt-3 text-sm text-bark-muted"><span class="font-semibold text-bark">Best for:</span> {p.bestFor.join(", ")}</p>
-                <a href={p.amazonUrl} target="_blank" rel="nofollow sponsored noopener"
-                   class="mt-4 inline-flex items-center gap-2 rounded-xl bg-honey px-6 py-2.5 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
-                  View on Amazon
-                  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </a>
               </div>
             </div>
           </div>
@@ -158,32 +151,32 @@ const data = slugMap[slug] || slugMap["self-cleaning-litter-boxes"];
     <section class="mt-12 rounded-2xl border border-sage-dark/30 bg-sage-light/50 p-6 md:p-8">
       <h2 class="font-display text-xl font-bold text-forest">How to Choose the Right One</h2>
       <div class="mt-4 space-y-3">
-        <p class="text-bark-muted leading-relaxed">When shopping for {slug.includes("litter") ? "a self-cleaning litter box" : "an automatic pet feeder"}, consider these key factors:</p>
+        <p class="text-bark-muted leading-relaxed">When shopping for {isLitterBox ? "a self-cleaning litter box" : slug.includes("feeder") ? "an automatic pet feeder" : slug.includes("fountain") ? "a pet water fountain" : "a pet camera"}, consider these key factors:</p>
         <ol class="space-y-3 text-bark-muted">
           <li class="flex gap-3">
             <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">1</span>
-            <span><strong class="text-bark">Number of pets:</strong> Multi-pet homes need larger capacity and {slug.includes("litter") ? "multi-cat recognition features" : "larger food hoppers"}.</span>
+            <span><strong class="text-bark">Number of pets:</strong> Multi-pet homes need {isLitterBox ? "multi-cat recognition features and larger waste drawers" : slug.includes("feeder") ? "larger food hoppers (6L+)" : slug.includes("fountain") ? "larger capacity (3L+)" : "wider coverage and treat capacity"}.</span>
           </li>
           <li class="flex gap-3">
             <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">2</span>
-            <span><strong class="text-bark">App reliability:</strong> A smart device is only as good as its app. Our top picks all have solid app experiences.</span>
+            <span><strong class="text-bark">App reliability:</strong> A smart device is only as good as its app. All our top picks have solid app experiences with responsive support teams.</span>
           </li>
           <li class="flex gap-3">
             <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">3</span>
-            <span><strong class="text-bark">Maintenance cost:</strong> Factor in {slug.includes("litter") ? "replacement liners, trays, or litter costs" : "cleaning and any proprietary parts"}.</span>
+            <span><strong class="text-bark">Maintenance cost:</strong> Factor in {isLitterBox ? "replacement liners, trays, or litter costs" : slug.includes("feeder") ? "cleaning and replacement parts" : slug.includes("fountain") ? "replacement filters every 2-4 weeks" : "optional subscription fees for AI features"}.</span>
           </li>
           <li class="flex gap-3">
             <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">4</span>
-            <span><strong class="text-bark">Noise level:</strong> If the device sits in your living area, quiet operation matters.</span>
+            <span><strong class="text-bark">Noise level:</strong> If the device sits in your living area, quiet operation matters. All our picks operate at acceptable noise levels.</span>
           </li>
           <li class="flex gap-3">
             <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">5</span>
-            <span><strong class="text-bark">Space:</strong> Measure your available space — {slug.includes("litter") ? "some self-cleaning boxes are surprisingly large" : "feeder footprints vary significantly"}.</span>
+            <span><strong class="text-bark">Space & footprint:</strong> Measure your available space — {isLitterBox ? "self-cleaning boxes are larger than traditional litter boxes" : slug.includes("feeder") ? "feeders need stable counter/floor space" : slug.includes("fountain") ? "fountains need stable flat surfaces near outlets" : "cameras need a clear view across the room"}.</span>
           </li>
         </ol>
       </div>
     </section>
 
-    <FAQ items={data.faqs} />
+    <FAQ items={pageData.faqs} />
   </article>
 </BaseLayout>
