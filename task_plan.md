@@ -31,19 +31,20 @@
 - [x] 摄像头 Best + 评测 ×2 + 对比 + 指南
 - [x] 404 修复（vercel.json + 4 个分类索引页）
 - [x] 24 个假 ASIN 替换为真实 Amazon 链接
-- [x] 产品配图：19/21 款替换为 Amazon 高清原图
-- [x] 架构重构：products.json 为唯一数据源，所有页面引用统一数据
+- [x] 产品配图：18/18 款全部替换为 Amazon 高清原图
+- [x] 架构重构：products.json 为唯一数据源，best/reviews/compare/breed 全部引用
 - [x] 关键词调研：Amazon 搜索建议 + Google SERP 分析 + BSR 验证
+- [x] 产品清理：删 Whistle Switch + PETKIT P2 + DOGNESS Fountain（21→18 款）
 - **完成：** 2026-05-21（Day 3 续）
-- **产出：** 33 页在线，21 款产品
+- **产出：** 33 页在线，18 款产品
 
 ### 阶段 4：关键词驱动内容冲刺（Day 4-7）
 
-#### 产品调整
-- [ ] 删 Whistle Switch（BSR #270,865 + 3.0⭐，差评滞销）
-- [ ] 删 PETKIT P2（2016 年已下架）
-- [ ] 删 DOGNESS Fountain（Amazon 全站点无此产品）
-- [ ] 找替代品：GPS 追踪器（换 Tractive 为主推）、摄像头（找 Amazon 在售品）
+#### 产品调整 ✅
+- [x] 删 Whistle Switch（BSR #270,865 + 3.0⭐，差评滞销）
+- [x] 删 PETKIT P2（2016 年已下架）
+- [x] 删 DOGNESS Fountain（Amazon 全站点无此产品）
+- [x] 21 → 18 款产品，GPS 追踪器暂留 Tractive 单品
 
 #### P0 内容（高需求 + 低竞争）
 - [ ] **"Best GPS Dog Trackers Without Monthly Fee 2026"** — 最大内容缺口

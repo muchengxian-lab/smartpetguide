@@ -2,6 +2,15 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQ from "../../components/FAQ.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
+import products from "../../data/products.json";
+
+// Flat lookup: product ID → product object
+const allProducts = new Map<string, any>();
+for (const [, items] of Object.entries(products)) {
+  for (const p of items as any[]) {
+    allProducts.set(p.id, p);
+  }
+}
 
 export function getStaticPaths() {
   return [
@@ -9,15 +18,30 @@ export function getStaticPaths() {
   ];
 }
 
-const breedMap: Record<string, { title: string; description: string; breed: string; recommendations: { category: string; product: string; reason: string; url: string }[]; tips: string[]; faqs: { q: string; a: string }[] }> = {
+interface Recommendation {
+  category: string;
+  productId: string;
+  reason: string;
+}
+
+interface BreedData {
+  title: string;
+  description: string;
+  breed: string;
+  recommendations: Recommendation[];
+  tips: string[];
+  faqs: { q: string; a: string }[];
+}
+
+const breedMap: Record<string, BreedData> = {
   "best-feeder-for-french-bulldog": {
     title: "Best Automatic Feeder for French Bulldogs in 2026 — Top Picks",
     description: "French Bulldogs have unique feeding needs — flat faces, tendency to overeat, and sensitive digestion. We've picked the best feeders that work for your Frenchie.",
     breed: "French Bulldog",
     recommendations: [
-      { category: "Best Overall", product: "Petlibro Granary Camera Feeder", reason: "Camera lets you monitor your Frenchie's eating, and the portion control prevents overeating — critical for this obesity-prone breed.", url: "https://www.amazon.com/dp/B0CD83LQX7?tag=smartpetgui0a-20" },
-      { category: "Best Budget", product: "WOPET Automatic Feeder", reason: "6L capacity and reliable scheduling at an affordable price. Voice recording is great for calling your Frenchie to meals.", url: "https://www.amazon.com/dp/B0BYSF2TLM?tag=smartpetgui0a-20" },
-      { category: "Best for Portion Control", product: "PETKIT Fresh Element Solo", reason: "Excellent portion accuracy and food freshness system. The app tracks every meal — perfect for weight-managing Frenchies.", url: "https://www.amazon.com/dp/B0BX3MSX5T?tag=smartpetgui0a-20" },
+      { category: "Best Overall", productId: "petlibro-granary", reason: "Camera lets you monitor your Frenchie's eating, and the portion control prevents overeating — critical for this obesity-prone breed." },
+      { category: "Best Budget", productId: "wopet-automatic", reason: "6L capacity and reliable scheduling at an affordable price. Voice recording is great for calling your Frenchie to meals." },
+      { category: "Best for Portion Control", productId: "petkit-fresh-element", reason: "Excellent portion accuracy and food freshness system. The app tracks every meal — perfect for weight-managing Frenchies." },
     ],
     tips: ["Frenchies are prone to bloat — use a slow-feed bowl insert even with automatic feeders", "Elevate the feeder slightly to reduce neck strain", "Divide daily food into 3-4 smaller meals rather than 1-2 large ones", "Monitor weight monthly — Frenchies gain weight easily"],
     faqs: [
@@ -42,18 +66,21 @@ const data = breedMap[slug] || breedMap["best-feeder-for-french-bulldog"];
     <section class="mt-10">
       <h2 class="mb-5 font-display text-2xl font-bold text-forest">Our Picks for {data.breed}s</h2>
       <div class="grid gap-4">
-        {data.recommendations.map((rec) => (
-          <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-            <span class="inline-block rounded-full bg-forest/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-forest">{rec.category}</span>
-            <h3 class="mt-2 font-display text-lg font-semibold text-forest">{rec.product}</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-bark-muted">{rec.reason}</p>
-            <a href={rec.url} target="_blank" rel="nofollow sponsored noopener"
-               class="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-honey px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
-              Check Price
-              <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </a>
-          </div>
-        ))}
+        {data.recommendations.map((rec) => {
+          const product = allProducts.get(rec.productId);
+          return (
+            <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+              <span class="inline-block rounded-full bg-forest/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-forest">{rec.category}</span>
+              <h3 class="mt-2 font-display text-lg font-semibold text-forest">{product?.name || rec.productId}</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-bark-muted">{rec.reason}</p>
+              <a href={product?.amazonUrl || "#"} target="_blank" rel="nofollow sponsored noopener"
+                 class="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-honey px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
+                Check Price
+                <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          );
+        })}
       </div>
     </section>
 

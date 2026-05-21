@@ -52,10 +52,11 @@
 | Petcube Bites 2 | #204,272 | 4.0⭐ | ❌ 卖不动 |
 | Whistle Switch | #270,865 | 3.0⭐ | ❌❌ 差评+滞销 |
 
-### 产品调整决策
-- **删** Whistle Switch（BSR 270K + 3.0星，推它浪费流量）
-- **删** PETKIT P2（2016 年已下架，Amazon 搜不到）
-- **删** DOGNESS Fountain（所有 Amazon 站点无此产品）
+### 产品调整决策（已完成 2026-05-21）
+- [x] **删** Whistle Switch（BSR 270K + 3.0星，推它浪费流量）
+- [x] **删** PETKIT P2（2016 年已下架，Amazon 搜不到）
+- [x] **删** DOGNESS Fountain（所有 Amazon 站点无此产品）
+- [x] 21 → 18 款产品，5 个品类
 - **降级** Leo's Loo Too、Petcube Bites 2（对比文保留，不单写评测）
 - **集中火力** Petlibro Granary + Litter-Robot 4
 
