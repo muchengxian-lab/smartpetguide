@@ -280,12 +280,12 @@ Git:       ✅ 干净
 - [x] `agent-browser` 调研 r/dogs r/CatAdvice 相关帖子
 - [x] 找到 3 个高匹配度 GPS 追踪器帖子
 - [x] 起草 3 条回复文案（GPS追踪器 + 自动喂食器）
-- ⚠️ **待手动发布**：u/Additional_Diver3250 需先攒 ~10 karma
+- ✅ **已发布**：4 条评论存活（r/CatAdvice ×3 + r/dogs ×1），2 条被 spam 移除
 
 ### Pinterest 社交引流
 - [x] 登录验证成功
-- [x] 规划 5 张 Pin 图方案（Canva 模板 + 尺寸 + 配色）
-- ⚠️ **待手动制作**：Canva 制图后上传
+- [x] 规划 5 张 Pin 图方案
+- ✅ **已发布**：5 张 Pin 上线（pinterest.com/muchengxian）
 
 ### 当前状态
 - **43 页在线** | **24 款产品** | **M5 达成** | **社交待手动完成**

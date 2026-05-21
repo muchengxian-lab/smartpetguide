@@ -101,7 +101,7 @@
 
 ## 视觉/浏览器发现
 <!-- 关键：每执行2次查看/浏览器操作后必须更新此部分 -->
-- smartpetguide.net 线上可访问，33 页正常
+- smartpetguide.net 线上可访问，43 页正常
 - 产品图片替换为 Amazon 高清原图后，文章视觉效果大幅提升
 - best 列表页产品图 160×160 在卡片内显示正常
 - 评测页 hero image 400px 宽在移动端自适应良好
@@ -133,17 +133,16 @@
 
 ## 社交引流发现（2026-05-21）
 
-### Reddit
-- r/dogs 有多个 GPS 追踪器讨论帖（"subscription ridiculous" 匹配度极高）
-- u/Additional_Diver3250 需先攒 ~10 karma 才能在主流子版块发帖
-- 回复中嵌入链接在宠物类子版块比较自然（推荐型回复）
-- Old Reddit (old.reddit.com) 比新版更适合自动化
+### Reddit（4 条评论已发布）
+- 4 条存活：r/CatAdvice 猫砂盆×2 + 水碗×1，r/dogs GPS×1
+- 2 条被 spam 移除（喂食器帖 + 猫砂盆选购帖）
+- 新号风控：连发带外链评论触发，需控制频率（< 2条/天）
+- Old Reddit 比新版更适合自动化回复
 
-### Pinterest
-- Pin 创建 UI 是动态 React 组件，自动化困难
-- 推荐方案：Canva 手动制图 → 手动上传
-- 最佳尺寸：1080×1920px，Forest+Honey 配色
-- 5 张 Pin 覆盖：GPS/摄像头/猫砂盆/喂食器 核心品类
+### Pinterest（5 张 Pin 已发布）
+- pinterest.com/muchengxian · Smart Pet Devices 图板
+- Pin 覆盖：GPS追踪器/摄像头/猫砂盆对比/猫砂盆Best/喂食器评测
+- 手动制图+上传比自动化更高效·Canva 免费模板
 
 ---
 *每次调研后更新此文件*

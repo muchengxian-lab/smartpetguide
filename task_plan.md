@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-阶段 6/8 — 等待 GSC 数据 + 社交引流（手动）
+阶段 6 — 等待 GSC 数据 + 首轮优化（社交引流已完成）
 
 ---
 
@@ -46,24 +46,15 @@
 - [x] 删 DOGNESS Fountain（Amazon 全站点无此产品）
 - [x] 21 → 18 款产品，GPS 追踪器暂留 Tractive 单品
 
-#### P0 内容（高需求 + 低竞争）
-- [ ] **"Best GPS Dog Trackers Without Monthly Fee 2026"** — 最大内容缺口
-  - 主推 Tractive GPS (#1 seller)，辅推无订阅费替代品
-  - Amazon 搜索建议反复出现 "no monthly fee" "no subscription"
-- [ ] **"Best Pet Cameras Without Subscription 2026"** — 大痛点
-  - 主推 eufy（本地存储，无订阅费），辅推其他无订阅费摄像头
-- [ ] **Petlibro Granary 评测增强** — BSR #1,173 爆款
-  - 已有基础评测，加长 + 加对比 + 加使用场景
+#### P0 内容（高需求 + 低竞争）✅
+- [x] **"Best GPS Dog Trackers Without Monthly Fee 2026"** — 最大内容缺口
+- [x] **"Best Pet Cameras Without Subscription 2026"** — 大痛点
+- [x] **Petlibro Granary 评测增强** — BSR #1,173 爆款
 
-#### P1 内容（好需求 + 可差异化）
-- [ ] **"Best Self-Cleaning Litter Boxes for Large Cats 2026"**
-  - Google 首页有 Reddit 结果 = 内容未被满足
-  - 主推 Litter-Robot 4 + CATLINK Young Pro
-- [ ] **"Best Stainless Steel Cat Water Fountains 2026"**
-  - Amazon 建议超多 "stainless steel" 变体
-  - 主推 Pioneer Pet Raindrop + PETKIT Eversweet
-- [ ] **"Best Automatic Cat Feeders for 2 Cats 2026"**
-  - Amazon 搜索高频需求
+#### P1 内容（好需求 + 可差异化）✅
+- [x] **"Best Self-Cleaning Litter Boxes for Large Cats 2026"**
+- [x] **"Best Stainless Steel Cat Water Fountains 2026"**
+- [x] **"Best Automatic Cat Feeders for 2 Cats 2026"**
 
 #### 目标
 累计 **38 页**（+5 篇新内容）✅ 已达成
@@ -75,16 +66,15 @@
 - [x] Furbo vs eufy 对比（有订阅 vs 无订阅）
 - [x] 品种专题 ×2：Golden Retriever / Multiple Cats
 - [x] GPS 购买指南
-- [ ] Pinterest 首批 5 张 Pin 图 → 方案已出，手动制图
+- [x] Pinterest 首批 5 张 Pin 图 → 已发布（pinterest.com/muchengxian）
 - **完成：** 2026-05-21（Day 4）
-- **产出：** 43 页在线，24 款产品
+- **产出：** 43 页在线，24 款产品，社交引流已启动
 
-### 阶段 6：数据分析 + 第一轮优化（Day 11-14）
+### 阶段 6：数据分析 + 第一轮优化（Day 11-14）⏳ 等待 GSC 数据
 - [ ] GSC 数据分析：哪些文章有展示？哪些词在涨？
 - [ ] 对展示 > 50 的文章做第二轮优化
 - [ ] 更新所有文章年份标记为 2026
 - [ ] 注册 ShareASale / Impact 联盟平台
-- [ ] Reddit 首次社区互动（r/pets, r/cats）
 
 ### 阶段 7：GEO + AI 引擎优化（Day 15-18）
 - [ ] Review / Article / FAQ Schema 标记
@@ -92,13 +82,11 @@
 - [ ] FAQ Section 完善：每篇 ≥5 个 FAQ
 - [ ] About 页面强化 EEAT
 
-### 阶段 8：社交引流 + 外链（与 6-7 并行）
-- [x] Reddit 帖子调研（找到 3 个高匹配帖）
-- [x] Reddit 回复文案（GPS 追踪器 ×2 + 喂食器 ×1）
-- [x] Pinterest 5 张 Pin 方案（Canva 模板/尺寸/配色）
-- [ ] Pinterest 手动制图 + 上传（待用户操作）
-- [ ] Reddit 手动回复（u/Additional_Diver3250 需先攒 karma）
+### 阶段 8：社交引流 + 外链（首批已完成 ✅，持续进行中）
+- [x] Reddit：4 条评论存活（r/CatAdvice ×3 + r/dogs ×1）
+- [x] Pinterest：5 张 Pin 发布（pinterest.com/muchengxian）
 - [ ] Medium 交叉发布 2-3 篇
+- [ ] 持续：Pinterest 每周 1-2 张新 Pin · Reddit 每周 2-3 条回复
 
 ### 阶段 9：多语言（Day 26-30）
 - [ ] 西班牙语 + 德语子目录 /es/ /de/
