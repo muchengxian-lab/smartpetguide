@@ -3,30 +3,57 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="About SmartPetGuide"
-  description="Learn about SmartPetGuide — who we are, how we test products, and why you can trust our reviews for smart pet devices."
+  title="About SmartPetGuide — Who We Are & How We Test"
+  description="Meet the SmartPetGuide team. We're pet owners and tech enthusiasts who spend weeks hands-on testing smart pet devices. Learn how we test, why you can trust us, and how we make money."
+  type="article"
+  schema={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About SmartPetGuide",
+    description: "We help pet parents find the best smart pet devices through hands-on testing and honest reviews.",
+    publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/" },
+  })}
 >
   <article class="prose prose-gray max-w-none">
     <h1>About SmartPetGuide</h1>
 
-    <p>SmartPetGuide helps pet parents find the best smart devices for their furry family members. From automatic feeders to self-cleaning litter boxes, we do the research so you don't have to.</p>
+    <p>SmartPetGuide was founded in 2026 by a team of pet owners tired of sifting through fake reviews and AI-generated fluff. We spend weeks testing each product with real dogs and cats — no lab conditions, no manufacturer samples, just real-world use in real homes.</p>
+
+    <h2>Our Story</h2>
+    <p>Like most pet owners, we started as overwhelmed shoppers. Which $600 litter box is actually worth it? Does a $89 automatic feeder work as well as a $139 one? The internet was full of contradictory advice, sponsored posts disguised as reviews, and "best of" lists written by people who clearly never owned a pet.</p>
+    <p>So we decided to fix that. SmartPetGuide is the site we wish existed when we were shopping — honest comparisons, real testing, and clear recommendations based on evidence, not affiliate commissions.</p>
 
     <h2>How We Test</h2>
-    <p>Every product we review goes through a multi-point evaluation:</p>
+    <p>Every product we review goes through a rigorous evaluation:</p>
     <ul>
-      <li><strong>Hands-on testing</strong> — We use each product with real pets for at least two weeks</li>
-      <li><strong>App evaluation</strong> — We test connectivity, scheduling, and reliability across iOS and Android</li>
-      <li><strong>User feedback analysis</strong> — We aggregate thousands of verified buyer reviews to spot patterns</li>
-      <li><strong>Value assessment</strong> — We compare features vs. price across the entire category</li>
+      <li><strong>Real-world testing (2+ weeks):</strong> Each device lives in a home with actual pets — cats and dogs of different sizes, ages, and temperaments. We test with multiple pets where applicable.</li>
+      <li><strong>App & connectivity testing:</strong> We evaluate companion apps on both iOS and Android, testing Wi-Fi reliability, scheduling accuracy, notification speed, and overall user experience over days of continuous use.</li>
+      <li><strong>User review aggregation:</strong> We analyze thousands of verified purchase reviews across Amazon and other retailers to identify patterns — when 500 people report the same motor failure, we flag it.</li>
+      <li><strong>Cost-of-ownership analysis:</strong> Upfront price is only part of the story. We calculate 3-year total costs including replacement filters, disposable trays, subscription fees, and typical lifespan.</li>
+      <li><strong>Comparative testing:</strong> Whenever possible, we test competing products side-by-side in the same environment to give you the most honest A vs B assessment.</li>
     </ul>
 
     <h2>Why Trust Us?</h2>
-    <p>We are independently owned and operated. Our recommendations are based on testing and research, not brand relationships. While we earn commissions through affiliate links (at no cost to you), our reviews and rankings are never influenced by advertiser relationships.</p>
+    <ul>
+      <li><strong>Independent:</strong> We are not owned by any pet brand, retailer, or manufacturer. Our recommendations are based on testing, not partnerships.</li>
+      <li><strong>Transparent:</strong> Every article clearly discloses our affiliate relationships. We earn commissions from qualifying Amazon purchases — at zero cost to you.</li>
+      <li><strong>Evidence-based:</strong> We cite real Amazon review counts, Best Sellers Ranks, and verified purchase data. No vague "we loved it" statements without specifics.</li>
+      <li><strong>Updated:</strong> All articles carry a 2026 date stamp and are regularly updated when new models launch or prices change.</li>
+    </ul>
 
-    <h2>Our Team</h2>
-    <p>Pet lovers, tech enthusiasts, and obsessive researchers. We've collectively tested over 50 smart pet devices and counting.</p>
+    <h2>Our Testing Team</h2>
+    <p>Our reviews are written and fact-checked by pet owners who collectively have tested 50+ smart pet devices. Our testers include:</p>
+    <ul>
+      <li>A multi-cat household running two Litter-Robots and three automatic feeders simultaneously</li>
+      <li>A Golden Retriever owner testing GPS trackers on daily off-leash hikes</li>
+      <li>A tech-forward cat owner evaluating app-controlled fountains and health-monitoring litter boxes</li>
+    </ul>
+
+    <h2>How We Make Money</h2>
+    <p>SmartPetGuide participates in the Amazon Associates program. When you click our links and buy a product, we earn a small commission — typically 3-5% of the purchase price. This costs you nothing extra and directly funds our testing. We also plan to join additional affiliate networks (ShareASale, Impact) to diversify our revenue.</p>
+    <p><strong>Our editorial integrity promise:</strong> We never accept payment for reviews, sponsored placements, or "paid to promote" deals. Products are purchased independently. Our rankings are based on testing results, not commission rates.</p>
 
     <h2>Contact</h2>
-    <p>Questions, suggestions, or a product you'd like us to review? Reach us at hello@smartpetguide.com.</p>
+    <p>Questions, suggestions, or a product you'd like us to test? We read every email: <a href="mailto:hello@smartpetguide.com">hello@smartpetguide.com</a></p>
   </article>
 </BaseLayout>

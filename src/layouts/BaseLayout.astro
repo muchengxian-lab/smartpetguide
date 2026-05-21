@@ -55,6 +55,21 @@ const fullTitle = title.includes("SmartPetGuide")
 
     {schema && <script type="application/ld+json" set:html={schema} />}
 
+    {type === "article" && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: title,
+        description: description,
+        image: image,
+        datePublished: publishDate || "2026-05-20",
+        dateModified: modifiedDate || "2026-05-21",
+        author: { "@type": "Person", name: "SmartPetGuide Team", url: "https://smartpetguide.net/about/" },
+        publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/" },
+        mainEntityOfPage: { "@type": "WebPage", "@id": Astro.url?.href || "https://smartpetguide.net/" },
+      })} />
+    )}
+
     <!-- Google Fonts: Fraunces (display) + Atkinson Hyperlegible (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

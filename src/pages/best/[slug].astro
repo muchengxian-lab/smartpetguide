@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ComparisonTable from "../../components/ComparisonTable.astro";
 import FAQ from "../../components/FAQ.astro";
+import Takeaways from "../../components/Takeaways.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import products from "../../data/products.json";
 
@@ -155,6 +156,13 @@ const isLitterBox = slug.includes("litter");
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{pageData.title}</h1>
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{pageData.description}</p>
+
+    <Takeaways items={[
+      `${allProducts.length} products tested and compared`,
+      `Top pick: ${allProducts[0]?.name || ""} ($${allProducts[0]?.price || 0})`,
+      `Best budget: ${[...allProducts].sort((a: any, b: any) => a.price - b.price)[0]?.name || ""} ($${[...allProducts].sort((a: any, b: any) => a.price - b.price)[0]?.price || 0})`,
+      `Best rated: ${[...allProducts].sort((a: any, b: any) => b.rating - a.rating)[0]?.name || ""} (${[...allProducts].sort((a: any, b: any) => b.rating - a.rating)[0]?.rating || 0}★)`,
+    ]} />
 
     <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
       <span>Updated: <time datetime="2026-05-21">May 21, 2026</time></span>

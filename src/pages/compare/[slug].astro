@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQ from "../../components/FAQ.astro";
+import Takeaways from "../../components/Takeaways.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import products from "../../data/products.json";
 
@@ -190,6 +191,13 @@ const productB = data.productBId ? allProducts.get(data.productBId) : data.produ
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{data.title}</h1>
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{data.description}</p>
+
+    <Takeaways items={[
+      `Winner: ${data.winner.substring(0, 100)}...`,
+      `${productA.name} — $${productA.price} | ${productA.rating}★`,
+      `${productB.name} — ${typeof productB.price === 'number' ? '$' + productB.price : productB.price} | ${productB.rating}★`,
+      `${data.comparisonRows.length} features compared head-to-head`,
+    ]} />
 
     <!-- Bottom Line -->
     <div class="mt-8 rounded-2xl border border-honey/30 bg-honey/5 p-6 md:p-8">
