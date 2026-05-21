@@ -126,8 +126,37 @@
 | M8: 规模化 | 150+ | 500-1000/天 | Month 2-3 |
 | M9: 广告变现 | 200+ | 1000-3000/天 | Month 4-6 |
 
-## 注意事项
+## 关键问题
+1. GSC 数据何时出现展示/点击？（sitemap 已提交 2026-05-21，通常 3-7 天）
+2. 第一批 33 篇文章在 GSC 表现如何？哪些词有展示？
+3. Amazon 第一条佣金何时产生？（AA 已通过，链接全部真实 ASIN）
+4. 是否需要根据 GSC 数据调整阶段 4 内容方向？
+
+## 已做决策
+| 决策 | 理由 |
+|------|------|
+| 域名选 smartpetguide.net | .com 被占，.net 语义清晰 |
+| 猫砂盆+喂食器优先 | 猫砂盆佣金高($50-100/单)，喂食器搜索量大 |
+| 纯静态 Astro 5 | <2s 加载，Vercel 免费，SEO 友好 |
+| products.json 单一数据源 | 改一处全站同步，杜绝假 ASIN |
+| Forest + Honey 编辑风 | Fraunces+Atkinson Hyperlegible，去 AI 感 |
+| 选品=关键词先行+BSR+评分 | 调研确认的方法论，避免无效内容 |
+| 新站不打品类大词 | 从长尾痛点切入，等权重积累后再攻品类词 |
+| 所有 ASIN 必须真实 | Day 3 发现全部占位 ASIN 无效，逐个验证替换 |
+
+## 遇到的错误
+| 错误 | 尝试次数 | 解决方案 |
+|------|---------|---------|
+| vercel.json 路由导致全站子页面 404 | 1 | cleanUrls: true + trailingSlash: false |
+| 分类导航页 404（best/reviews/compare/guides） | 1 | 创建 4 个 index.astro |
+| 24 个占位 ASIN 全部无效 | 1 | 浏览器逐个访问 Amazon 验证真实 ASIN |
+| 架构重构后 breed 页残留 3 个假 ASIN | 1 | 改为从 products.json 按 productId 引用 |
+| JSON 删除产品后尾逗号语法错误 | 1 | 检查 JSON 数组末尾逗号 |
+
+## 备注
 - GSC 数据是判断内容方向的最重要依据，每 3 天检查一次
 - 如果某个品类文章在 2 周内零展示，立即调整方向
 - 产品有变动时只改 products.json，全站自动同步
 - 新加产品前必须验证 BSR + Amazon 在售状态 + 评分 ≥ 3.8
+- 每完成一个阶段更新状态：pending → in_progress → complete
+- 决策前重新读取此计划（注意力操纵）

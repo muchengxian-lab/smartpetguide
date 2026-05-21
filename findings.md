@@ -87,6 +87,27 @@
 - Reddit 频繁出现在长尾词 SERP = 内容未被专业站满足的信号
 - Amazon 搜索建议是真实买家意图的最佳来源
 
+## 遇到的问题
+| 问题 | 解决方案 |
+|------|---------|
+| Astro 静态输出 index.html 结构，Vercel 默认路由不匹配 | 用 cleanUrls: true 替代自定义 routes |
+| 全部 Amazon 占位 ASIN 为无效编号 | 浏览器逐个访问商品页提取真实 ASIN |
+| 产品图占位 SVG，文章无配图 | Playwright 从 Amazon 提取高清原图（_AC_SL1500_） |
+| 多个页面各自硬编码产品数据（假 ASIN + 空图片） | 重构为 products.json 单一数据源 |
+| Amazon Associates 图片 widget URL 不可用 | 改用 m.media-amazon.com 直链 |
+| DOGNESS/Whistle Switch/PETKIT P2 不在 Amazon 销售或已下架 | 删除出产品库，只保留有真实 ASIN 的产品 |
+| Google 搜索建议 API 被 Playwright 当作下载拦截 | Amazon 搜索建议 API 可用作主要数据源 |
+| JSON 编辑后尾逗号导致构建失败 | 删除数组末尾元素后检查逗号 |
+
+## 视觉/浏览器发现
+<!-- 关键：每执行2次查看/浏览器操作后必须更新此部分 -->
+- smartpetguide.net 线上可访问，33 页正常
+- 产品图片替换为 Amazon 高清原图后，文章视觉效果大幅提升
+- best 列表页产品图 160×160 在卡片内显示正常
+- 评测页 hero image 400px 宽在移动端自适应良好
+- 对比页双卡 + 图片布局在桌面端并排、移动端堆叠
+- Amazon 商品页结构稳定，#landingImage + data-old-hires 可可靠提取图片
+
 ## 技术栈
 | 决策 | 理由 |
 |------|------|
