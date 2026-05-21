@@ -457,6 +457,16 @@ GPS 整体(Trends 2)         →  ⚠️ 暂停投入
 | 摄像头 | Furbo vs Petcube / Furbo vs eufy / **xpai vs eufy** (新) |
 | GPS | — |
 
+### GSC 检查
+- 效果/索引数据仍在处理中
+- site: 搜索 3 页已索引（首页 + Petlibro 评测 + 猫砂盆指南）
+- Petlibro 评测 5/21 14:00 被收录（3 天新站正常速度）
+
+### 下一步
+- 等 GSC 数据（预计还需 1-2 天）
+- 可补喂食器对比（目前仅 1 篇）
+- Pinterest 新 Pin + Reddit 持续
+
 ---
 ## 五问重启检查
 | 问题 | 答案 |
