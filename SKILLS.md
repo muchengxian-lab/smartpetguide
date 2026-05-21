@@ -8,6 +8,9 @@
 | `frontend-design` | 前端设计（Forest+Honey 编辑风） | ✅ 内置 |
 | `agent-browser` | 浏览器自动化（Amazon 调研/页面验证） | ✅ |
 | `seo-content-optimizer` | SEO 内容优化（关键词/可读性/竞品） | ✅ |
+| `article-content` | 长文写作（评测/指南/列表） | ✅ 新装 |
+| `copywriting` | 短文案（标题/CTA/转化文案） | ✅ 新装 |
+| `affiliate-marketing` | 联盟营销策略（佣金/转化） | ✅ 新装 |
 | `verify` | 代码变更验证（改完即验） | ✅ 内置 |
 | `run` | 启动开发服务器 | ✅ 内置 |
 | `simplify` | 代码审查/重构/质量检查 | ✅ 内置 |
@@ -22,8 +25,11 @@
 ### 阶段 4-5：内容冲刺
 ```
 写文章前  → seo-content-optimizer（关键词分析）
-调研产品  → agent-browser（Amazon 搜索/BSR/图片提取）
+写文章    → article-content（长文评测/指南/列表）
+写标题    → copywriting（标题/CTA/转化文案）
+调研产品  → agent-browser（Amazon 搜索/BSR）
 写完验证  → verify（构建 + 页面抽查）
+变现策略  → affiliate-marketing（佣金/转化优化）
 规划管理  → planning-with-files-zh（更新 task_plan.md）
 ```
 
