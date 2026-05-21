@@ -317,6 +317,39 @@ Git:       ✅ 干净
 
 ---
 
+## 会话：2026-05-21（Day 4 续4）— 不锈钢饮水机 + 摄像头内容追加
+
+### 完成事项
+- [x] **YEAPAW 不锈钢饮水机评测**（pumpless，$93，Trends 验证 P0）
+- [x] **KittySpout 不锈钢饮水机评测**（dishwasher safe，$50）
+- [x] **xpai 4K 摄像头评测**（4K+64GB，$43，no subscription）
+- [x] **Honey Tour 机器人摄像头评测**（drives around，4.7★，$160）
+- [x] 6 页面抽查验证：全部 OK（H1+图片+链接+Takeaways+Schema）
+- [x] Vercel 部署（dpl_5JP2gdV1b7fG67pQ4yEKtuoQMdXy）
+
+### 产出：43 → **47 页** | 24 款产品不变
+
+### 不锈钢饮水机覆盖
+| 页面 | 类型 |
+|------|------|
+| /best/stainless-steel-cat-fountains/ | Best 列表（3 产品） |
+| /reviews/pioneer-pet-raindrop-review/ | 评测（已有） |
+| /reviews/yeapaw-steel-fountain-review/ | 评测（新） |
+| /reviews/kittyspout-steel-fountain-review/ | 评测（新） |
+
+### 摄像头覆盖
+| 页面 | 类型 |
+|------|------|
+| /best/pet-cameras/ | Best 列表（6 产品） |
+| /best/pet-cameras-no-subscription/ | 无订阅费专项 |
+| /reviews/furbo-360-camera-review/ | 评测（已有） |
+| /reviews/petcube-bites-2-review/ | 评测（已有） |
+| /reviews/eufy-pet-cam/ | 无评测页但有产品数据 |
+| /reviews/xpai-4k-camera-review/ | 评测（新） |
+| /reviews/honeytour-robot-camera-review/ | 评测（新） |
+
+---
+
 ## 会话：2026-05-21（Day 4 续2）— AI 搜索调研（Perplexity）
 
 ### 完成事项
@@ -404,11 +437,11 @@ GPS 整体(Trends 2)         →  ⚠️ 暂停投入
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 阶段 1-5·7-8 完成（43页/24产品/M1-M6达成），阶段 6 等待 GSC 数据 |
-| 我要去哪里？ | 等待 GSC 数据 → 阶段 6 数据分析；或冲内容冲 50 页；或阶段 9 多语言 |
+| 我在哪里？ | 阶段 1-5·7-8 完成（47页/24产品/M1-M6达成），方向已基于 Trends 验证调整，等待 GSC 数据 |
+| 我要去哪里？ | 等 GSC 数据 → 阶段 6 数据分析；或冲内容冲 50 页；或阶段 9 多语言 |
 | 目标是什么？ | 日均 UV 3000-10000，月收入 $500-2000（12个月） |
-| 我学到了什么？ | Schema 用 Google Rich Results 验证比猜测靠谱；新号 Reddit 连发带链接易被锁；Pinterest 手动比自动化高效 |
-| 我做了什么？ | Day 3-4: 阶段 1→5 + 阶段 7 GEO + 阶段 8 社交，43 页 + 24 产品 + Schema 全覆盖 + Reddit 4条 + Pinterest 5张 |
+| 我学到了什么？ | Amazon搜索≠Google搜索必须双验证；Schema 用 Rich Results 验证靠谱；AI搜索只认大站；不锈钢饮水机(Trends 23)远超预期 |
+| 我做了什么？ | Day 3-4: 阶段 1→5 + 阶段 7 GEO+AI + 阶段 8 社交 + 方向调整 + 47 页上线 |
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*

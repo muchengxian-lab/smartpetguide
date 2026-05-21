@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-阶段 6 — 等待 GSC 数据 + 方向调整（不锈钢饮水机+摄像头优先）
+阶段 6 持续中 — 方向调整完成，4 篇新评测已上线，等待 GSC
 
 ---
 
@@ -114,13 +114,16 @@
 
 ### 阶段 6a：方向微调 — 不锈钢饮水机+摄像头优先
 
-#### Google Trends 验证结果（2026-05-21）
-| 关键词 | Trends 热度 | 行动 |
-|------|------|------|
-| stainless steel cat water fountain | 23 | 🔥🔥 追加 2-3 篇 |
-| best pet camera | 14 | 🔥 追加评测/对比 |
-| gps tracker no monthly fee / camera no subscription | 0 | ❌ 不追加 |
-| automatic feeder for 2 cats | 1 | ❌ 不追加 |
+#### Google Trends 验证 + 内容追加（2026-05-21）
+| 关键词 | Trends 热度 | 行动 | 状态 |
+|------|------|------|------|
+| stainless steel cat water fountain | 23 | 追加 2 篇评测 | ✅ YEAPAW + KittySpout |
+| best pet camera | 14 | 追加 2 篇评测 | ✅ xpai 4K + Honey Tour |
+| gps tracker no monthly fee | 0 | 不追加 | ✅ 已降级 |
+| pet camera no subscription | 0 | 不追加 | ✅ 已降级 |
+| automatic feeder for 2 cats | 1 | 不追加 | ✅ 已降级 |
+
+#### 产出：43 → **47 页**（+4 篇评测）
 
 #### 核心教训
 **Amazon 搜索 ≠ Google 搜索。** "no subscription/monthly fee" 是 Amazon 站内搜索词，Google 上几乎为零。选品必须双平台验证。
