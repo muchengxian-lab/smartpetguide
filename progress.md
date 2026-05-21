@@ -434,14 +434,38 @@ GPS 整体(Trends 2)         →  ⚠️ 暂停投入
 | 2026-05-21 | Reddit 0 textarea（无法评论） | — | 新号 0 karma，需手动攒分后发布 |
 | 2026-05-21 | Pinterest 动态 UI 无 Create Pin 按钮 | — | 待用户手动 Canva 制图后上传 |
 
+---
+
+## 会话：2026-05-22（Day 5）— 50 页里程碑
+
+### 完成事项
+- [x] **不锈钢饮水机对比**：Pioneer Pet Raindrop vs YEAPAW（$39 经典 vs $93 泵免）
+- [x] **预算摄像头对比**：xpai 4K vs eufy（$43 4K vs $129 2K，均无订阅）
+- [x] **智能饮水机对比**：PETKIT Eversweet vs Catit PIXI（$59 30dB vs $79 3 高度）
+- [x] 构建 3.60s，0 错误，50 页全通过
+- [x] Vercel 部署 (dpl_4z2mU3ubS5Wv84ai5ewPSDMkUoz6)
+- [x] 3 页浏览器验证：H1+图片+对比表+FAQ+Amazon 链接全部正常
+
+### 产出：47 → **50 页** | 24 款产品不变 | 对比文 6 → 9
+
+### 对比文覆盖
+| 品类 | 对比文 |
+|------|--------|
+| 猫砂盆 | LR4 vs Leo's Loo / LR4 vs PetSafe / Auto vs Manual |
+| 喂食器 | WOPET vs Petlibro |
+| 饮水机 | **Pioneer Pet vs YEAPAW** (新) / **PETKIT vs Catit PIXI** (新) |
+| 摄像头 | Furbo vs Petcube / Furbo vs eufy / **xpai vs eufy** (新) |
+| GPS | — |
+
+---
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 阶段 1-5·7-8 完成（47页/24产品/M1-M6达成），方向已基于 Trends 验证调整，等待 GSC 数据 |
-| 我要去哪里？ | 等 GSC 数据 → 阶段 6 数据分析；或冲内容冲 50 页；或阶段 9 多语言 |
+| 我在哪里？ | 阶段 1-5·7 完成，6b 刚完成，**50 页在线**，等待 GSC 数据 |
+| 我要去哪里？ | 等 GSC 数据 → 阶段 6 数据分析；或阶段 8 社交持续；或阶段 9 多语言 |
 | 目标是什么？ | 日均 UV 3000-10000，月收入 $500-2000（12个月） |
-| 我学到了什么？ | Amazon搜索≠Google搜索必须双验证；Schema 用 Rich Results 验证靠谱；AI搜索只认大站；不锈钢饮水机(Trends 23)远超预期 |
-| 我做了什么？ | Day 3-4: 阶段 1→5 + 阶段 7 GEO+AI + 阶段 8 社交 + 方向调整 + 47 页上线 |
+| 我学到了什么？ | 对比文转化率最高；不锈钢饮水机(Trends 23)是最大内容机会；3 篇对比快速冲 50 页 |
+| 我做了什么？ | Day 5: 3 篇对比文（Pioneer Pet vs YEAPAW / xpai vs eufy / PETKIT vs Catit PIXI）+ 50 页里程碑 |
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*

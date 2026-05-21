@@ -120,10 +120,10 @@
 
 ## 视觉/浏览器发现
 <!-- 关键：每执行2次查看/浏览器操作后必须更新此部分 -->
-- smartpetguide.net 线上可访问，47 页正常
+- smartpetguide.net 线上可访问，**50 页**正常
+- 新增 3 篇对比文：Pioneer Pet vs YEAPAW / xpai vs eufy / PETKIT vs Catit PIXI
+- 对比文从 6 → 9 篇，覆盖全部 5 个品类
 - 产品图片替换为 Amazon 高清原图后，文章视觉效果大幅提升
-- best 列表页产品图 160×160 在卡片内显示正常
-- 评测页 hero image 400px 宽在移动端自适应良好
 - 对比页双卡 + 图片布局在桌面端并排、移动端堆叠
 - Amazon 商品页结构稳定，#landingImage + data-old-hires 可可靠提取图片
 
