@@ -139,10 +139,19 @@
 - 新号风控：连发带外链评论触发，需控制频率（< 2条/天）
 - Old Reddit 比新版更适合自动化回复
 
-### Pinterest（5 张 Pin 已发布）
-- pinterest.com/muchengxian · Smart Pet Devices 图板
-- Pin 覆盖：GPS追踪器/摄像头/猫砂盆对比/猫砂盆Best/喂食器评测
-- 手动制图+上传比自动化更高效·Canva 免费模板
+### Pinterest（5 张 Pin 已发布，已验证）
+- pinterest.com/muchengxian · 5 张 Pin 全部可见
+- 覆盖：GPS/摄像头/猫砂盆对比/猫砂盆Best/喂食器评测
+
+## GEO + Schema 验证（2026-05-21）
+- Rich Results Test 验证通过：
+  - 评测页：6/6 valid（Product+Merchant+Article+Breadcrumb+FAQ+Review）
+  - Best 列表：3/3 valid（Article+Breadcrumb+FAQ）
+  - About 页：1/1 valid（Article）
+- Review Schema 需含 itemReviewed → Product(name+description+brand+offers) 才通过
+- FAQ + Breadcrumb Schema 早就有了，无需改动
+- Key Takeaways 组件放在评测/Best/对比页 h1 之后效果最佳
+- About 页 EEAT 信号：团队描述+测试方法+透明盈利+AboutPage Schema
 
 ---
 *每次调研后更新此文件*

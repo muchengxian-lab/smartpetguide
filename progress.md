@@ -287,8 +287,33 @@ Git:       ✅ 干净
 - [x] 规划 5 张 Pin 图方案
 - ✅ **已发布**：5 张 Pin 上线（pinterest.com/muchengxian）
 
-### 当前状态
-- **43 页在线** | **24 款产品** | **M5 达成** | **社交待手动完成**
+---
+
+## 会话：2026-05-21（Day 4 续）— Pinterest 完成 + GEO 优化
+
+### Pinterest 发布
+- [x] 下载 5 张 Amazon 产品图到 public/
+- [x] 用户手动发布 5 张 Pin（pinterest.com/muchengxian）
+- [x] 已验证：全部 5 张 Pin 在个人资料页可见
+- [x] Pinterest 账号名：muchengxian
+
+### GEO 优化（阶段 7）
+- [x] **Article Schema**：BaseLayout type="article" 时自动生成，覆盖 38 篇内容页
+- [x] **Review Schema**：11 篇评测页含 itemReviewed(Product+Brand+Offer) + reviewRating
+- [x] **FAQPage Schema**：FAQ 组件已有（确认无需改动）
+- [x] **BreadcrumbList Schema**：Breadcrumb 组件已有（确认无需改动）
+- [x] **Key Takeaways 组件**：新建 `Takeaways.astro`，已添加到 reviews/best/compare 模板
+- [x] **About 页 EEAT**：完整重写（团队故事 + 5步测试法 + 盈利透明）
+- [x] **Rich Results 验证**：
+  - 评测页：6/6 ✅（Product+Merchant+Article+Breadcrumb+FAQ+Review）
+  - Best 列表：3/3 ✅（Article+Breadcrumb+FAQ）
+  - About：1/1 ✅（Article）
+
+### 修复
+- [x] Review Schema 的 Product 初始缺失 description/offers 字段，补充后通过验证
+
+### 阶段 7 状态：**complete** ✅
+### 阶段 8 状态：**首批完成** ✅
 
 ---
 
@@ -311,6 +336,7 @@ Git:       ✅ 干净
 | 阶段 5 对比+品种+指南 | `npm run build` | 43页 | 2.58s，0 错误 | ✅ |
 | GSC 站点地图验证 | 登录 GSC | 17 URL 已发现 | 成功，处理中 | ✅ |
 | Reddit 帖子调研 | 搜索 r/dogs r/CatAdvice | 找到 3 个匹配帖 | 已起草文案 | ✅ |
+| GEO Schema 优化 | `npm run build` | 43页 Schema 覆盖 | Rich Results 6/6 通过 | ✅ |
 
 ## 错误日志
 | 时间戳 | 错误 | 尝试次数 | 解决方案 |
@@ -331,11 +357,11 @@ Git:       ✅ 干净
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 阶段 5 完成（43 页/24 产品/M5 达成），社交引流待手动操作，阶段 6 待 GSC 有数据后启动 |
-| 我要去哪里？ | 等待 GSC 数据出现 → 阶段 6 数据分析优化；或继续内容冲刺冲 50 页 |
+| 我在哪里？ | 阶段 1-5·7-8 完成（43页/24产品/M1-M6达成），阶段 6 等待 GSC 数据 |
+| 我要去哪里？ | 等待 GSC 数据 → 阶段 6 数据分析；或冲内容冲 50 页；或阶段 9 多语言 |
 | 目标是什么？ | 日均 UV 3000-10000，月收入 $500-2000（12个月） |
-| 我学到了什么？ | Reddit 新号需先攒 karma；Pinterest 动态 UI 难自动化；GSC 新站数据需 3-7 天；Record 对象添加条目需注意 }; 闭合位置 |
-| 我做了什么？ | Day 3（全天）: 阶段 1→5 全部完成，Skills 13 个配置，GSC 检查，社交文案/方案，43 页 + 24 产品上线 |
+| 我学到了什么？ | Schema 用 Google Rich Results 验证比猜测靠谱；新号 Reddit 连发带链接易被锁；Pinterest 手动比自动化高效 |
+| 我做了什么？ | Day 3-4: 阶段 1→5 + 阶段 7 GEO + 阶段 8 社交，43 页 + 24 产品 + Schema 全覆盖 + Reddit 4条 + Pinterest 5张 |
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*

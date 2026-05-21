@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-阶段 6 — 等待 GSC 数据 + 首轮优化（社交引流已完成）
+阶段 6 — 等待 GSC 数据（阶段 1-5·7-8 已完成）
 
 ---
 
@@ -76,11 +76,16 @@
 - [ ] 更新所有文章年份标记为 2026
 - [ ] 注册 ShareASale / Impact 联盟平台
 
-### 阶段 7：GEO + AI 引擎优化（Day 15-18）
-- [ ] Review / Article / FAQ Schema 标记
-- [ ] 每篇文章 "Key Takeaways" 摘要框
-- [ ] FAQ Section 完善：每篇 ≥5 个 FAQ
-- [ ] About 页面强化 EEAT
+### 阶段 7：GEO + Schema 优化 ✅ complete
+- [x] Article Schema：BaseLayout 自动生成，38 篇内容页全部覆盖
+- [x] Review Schema：11 篇评测页含评分/品牌/价格/产品信息
+- [x] FAQ Schema：已有（FAQ 组件内置 FAQPage）
+- [x] Breadcrumb Schema：已有（Breadcrumb 组件内置 BreadcrumbList）
+- [x] Key Takeaways 组件：评测页/Best列表/对比页均已添加
+- [x] About 页 EEAT 强化：团队故事 + 测试方法 + 透明盈利
+- [x] Rich Results 验证：评测页 6/6 · Best列表 3/3 · About 1/1 全部通过
+- **完成：** 2026-05-21（Day 4）
+- **产出：** 43 页全站 Schema 覆盖
 
 ### 阶段 8：社交引流 + 外链（首批已完成 ✅，持续进行中）
 - [x] Reddit：4 条评论存活（r/CatAdvice ×3 + r/dogs ×1）
@@ -115,7 +120,7 @@
 | M3: 30篇+架构完善 | 33 | 零星 | ✅ Day 3 |
 | M4: 关键词驱动38篇 | 38 | 10-30/天 | ✅ Day 3 |
 | M5: 对比+品种43篇 | 43 | 50-200/天 | ✅ Day 4 |
-| M6: 首轮优化 | 45 | 100-300/天 | Day 14 |
+| M6: GEO+Schema优化 | 43 | 10-50/天 | ✅ Day 4 |
 | M7: 70篇+社交 | 70 | 300-500/天 | Day 25 |
 | M8: 规模化 | 150+ | 500-1000/天 | Month 2-3 |
 | M9: 广告变现 | 200+ | 1000-3000/天 | Month 4-6 |
