@@ -5,16 +5,23 @@ import FAQ from "../../components/FAQ.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import products from "../../data/products.json";
 
+// Flat product lookup
+const allProductMap = new Map<string, any>();
+for (const [, items] of Object.entries(products)) {
+  for (const p of items as any[]) allProductMap.set(p.id, p);
+}
+
 export function getStaticPaths() {
   return [
     { params: { slug: "self-cleaning-litter-boxes" } },
     { params: { slug: "automatic-cat-feeders" } },
     { params: { slug: "smart-pet-water-fountains" } },
     { params: { slug: "pet-cameras" } },
+    { params: { slug: "gps-trackers-no-monthly-fee" } },
+    { params: { slug: "pet-cameras-no-subscription" } },
   ];
 }
 
-// Map category keys from products.json to slugs
 const categoryMap: Record<string, keyof typeof products> = {
   "self-cleaning-litter-boxes": "litterBoxes",
   "automatic-cat-feeders": "feeders",
@@ -22,9 +29,18 @@ const categoryMap: Record<string, keyof typeof products> = {
   "pet-cameras": "cameras",
 };
 
+// Custom product lists for curated pages
+const customLists: Record<string, string[]> = {
+  "gps-trackers-no-monthly-fee": ["tractive-gps", "nofee-gps-tracker", "aorkuler-gps"],
+  "pet-cameras-no-subscription": ["eufy-pet-cam", "xpai-4k-camera", "honeytour-robot-cam", "furbo-360"],
+};
+
 const slug = Astro.params.slug || "self-cleaning-litter-boxes";
-const categoryKey = categoryMap[slug] || "litterBoxes";
-const allProducts = products[categoryKey];
+const categoryKey = categoryMap[slug];
+
+const allProducts = categoryKey
+  ? products[categoryKey]
+  : (customLists[slug] || []).map((id: string) => allProductMap.get(id)).filter(Boolean);
 
 const titleMap: Record<string, { title: string; description: string; faqs: { q: string; a: string }[] }> = {
   "self-cleaning-litter-boxes": {
@@ -67,6 +83,28 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
       { q: "Do pet cameras need a subscription?", a: "Some do for advanced features. Furbo charges $5.99/month for AI alerts and cloud recording. eufy has no subscription (local storage). Most basic live streaming works without a subscription." },
       { q: "Can pet cameras help with separation anxiety?", a: "Many owners report improvement. Being able to see, talk to, and toss treats to your dog during the day helps anxious pets feel connected. However, severe anxiety still requires training." },
       { q: "Which treats work in a treat-tossing camera?", a: "Small, round, dry treats (~1cm diameter). Large or irregular treats jam the mechanism. Furbo sells compatible treats, but most small training treats work in any brand's dispenser." },
+    ],
+  },
+  "gps-trackers-no-monthly-fee": {
+    title: "Best GPS Dog Trackers Without Monthly Fee 2026 — No Subscription Picks",
+    description: "Tired of subscription fees? We found the best GPS dog trackers with no monthly fees. Compare truly subscription-free trackers from Aorkuler, budget no-fee options, and the best cellular tracker for those okay with a small fee.",
+    faqs: [
+      { q: "Are there really GPS dog trackers with no monthly fee?", a: "Yes — but they use different technology. Truly no-fee trackers like Aorkuler use radio frequency (RF) instead of cellular networks, limiting range to 3-5 miles. Bluetooth trackers like Apple AirTag have no fees but no real-time GPS. For unlimited-range GPS, cellular trackers like Tractive charge $5-13/month." },
+      { q: "What's the range of a no-subscription GPS tracker?", a: "RF-based trackers like Aorkuler have a 3-5 mile range through open terrain. This is perfect for hiking and rural areas but won't help if your dog escapes and runs 10+ miles. For unlimited range, you need a cellular GPS tracker with a subscription." },
+      { q: "Can I use an Apple AirTag as a dog GPS tracker?", a: "AirTags can work for dogs in urban/suburban areas because they ping off nearby iPhones (billions of devices). But they are NOT real GPS trackers — they show the last seen location, not live tracking. They're a budget supplement, not a replacement for a dedicated GPS tracker." },
+      { q: "Which no-subscription tracker is best for hiking?", a: "The Aorkuler GPS Tracker at $229 is the best choice for off-grid adventures. It works without cell signal, doesn't need a phone, and the handheld controller shows your dog's direction and distance up to 3.5 miles away." },
+      { q: "Why do most GPS trackers charge a monthly fee?", a: "Cellular GPS trackers need a SIM card and data plan to transmit your dog's location via cell towers — just like a phone. The subscription covers this cellular data. No-fee trackers skip the cellular network entirely, using radio signals or Bluetooth instead." },
+    ],
+  },
+  "pet-cameras-no-subscription": {
+    title: "Best Pet Cameras Without Subscription 2026 — No Monthly Fees",
+    description: "Don't want another monthly bill? We found the best pet cameras with no subscription required. Local storage, free AI features, and zero monthly fees — compare eufy, xpai 4K, Honey Tour robot, and more.",
+    faqs: [
+      { q: "Do all pet cameras require a subscription?", a: "No — many cameras work fine without a subscription. The eufy Pet Camera stores video locally on an SD card, xpai has 64GB built-in storage, and Honey Tour robot has no subscription at all. Even Furbo's basic features (live view, treat tossing) work without paying." },
+      { q: "What features do I lose without a subscription?", a: "Typically cloud recording, AI-powered alerts (person/pet detection), and activity summaries require a subscription. But live streaming, two-way audio, treat tossing, and local recording usually work without one. Check each model's free-vs-paid feature list." },
+      { q: "Can I use a regular security camera as a pet camera?", a: "Yes — many of the best 'no subscription' pet cameras are actually security cameras that work great for pets. The xpai 4K and eufy Indoor Cam both have pan/tilt, two-way audio, and pet detection — sometimes at half the price of 'pet-specific' cameras." },
+      { q: "Which no-subscription camera is best for treat tossing?", a: "The Furbo 360 at $179 allows treat tossing without a subscription (only AI alerts need the $5.99/month plan). For truly zero-fee treat tossing, there are limited options — most treat cameras tie advanced features to subscriptions." },
+      { q: "Is local storage better than cloud storage for pet cameras?", a: "For privacy, yes — local SD card storage means your video never leaves your home. For convenience, cloud storage lets you check footage from anywhere. The eufy and xpai both use local storage, making them ideal no-subscription choices." },
     ],
   },
 };
