@@ -415,23 +415,6 @@
       "category": "tracker",
       "weight": 0.15,
       "warranty": "1 year"
-    },
-    {
-      "id": "tractive-gps",
-      "name": "Tractive GPS Dog LTE",
-      "brand": "Tractive",
-      "price": 49,
-      "amazonUrl": "https://www.amazon.com/dp/B0D6Z4L6BW?tag=smartpetgui0a-20",
-      "imageUrl": "https://m.media-amazon.com/images/I/81-GYvLKAJL._AC_SL1500_.jpg",
-      "rating": 4.1,
-      "reviewCount": 8900,
-      "features": ["Live GPS tracking", "Virtual fence", "Activity monitoring", "Worldwide coverage", "Waterproof"],
-      "pros": ["Works globally (170+ countries)", "Lowest upfront cost", "Virtual fence works well", "Lightweight design"],
-      "cons": ["Subscription required ($5-13/mo)", "Battery lasts 2-5 days", "Less durable than premium options"],
-      "bestFor": ["Budget-conscious trackers", "Travel with pets", "Cats and small dogs"],
-      "category": "tracker",
-      "weight": 0.026,
-      "warranty": "2 years"
     }
   ]
 }
