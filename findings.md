@@ -1,96 +1,107 @@
 # 发现与决策
 
-## 需求
-- 英文为主的宠物智能设备评测/推荐内容站
-- 联盟营销（Amazon Associates）+ 广告变现
-- 碎片化时间操作，每天 1-3 小时
-
-## 研究发现
-
-### 市场数据
+## 市场数据
 - Pet Tech 全球市场 $7.5B → $18B（CAGR 19%）
 - Google Trends 2026：智能宠物设备搜索量 5 年持续上涨
-- 猫砂盆品类佣金最高：$50-100/单（Litter-Robot 等 $500+ 产品）
-- 自动喂食器搜索量最大：月搜 8,000+（"best automatic cat feeder"）
-
-### 竞品分析
-- 大站占据品类大词（KD 35-38），新站需从长尾品种词（KD 5-8）切入
-- 对比词（"A vs B"）流量精准、竞争低，转化率最高
-- 品种推荐词零竞争："best feeder for French Bulldog"（月搜 200，KD 5）
-
-### 关键词数据（关键发现）
-| 层级 | 例子 | 月搜量 | KD | 策略 |
-|------|------|--------|-----|------|
-| 品类大词 | "best automatic cat feeder" | 8,000 | 35 | 第4月做 |
-| 对比词 | "Furbo vs Petcube" | 1,500 | 18 | 第2月做 |
-| 长尾品种词 | "best feeder for french bulldog" | 200 | 5 | 第1周就做 |
-
-## 技术决策
-| 决策 | 理由 |
-|------|------|
-| Astro 5 纯静态生成 | 加载速度 <2s，Vercel 免费层，SEO 友好 |
-| Tailwind CSS v3 | 轻量，快速开发，无需额外 CSS 框架 |
-| 产品数据集中 `products.json` | 15款产品参数统一管理，组件化引用 |
-| SVG 占位图 → SiteStripe 替换 | 避免版权风险，AA 通过后立即替换 |
-| 子目录多语言（/es/, /de/） | 比子域名更利于主域权重积累 |
-| 不做主动外链前3个月 | 新站先积累内容质量，避免 Google 惩罚 |
-
-## 当前状态（2026-05-20）
-
-### 基础设施
-- 域名：smartpetguide.net（阿里云, A 记录 → 76.76.21.21）
-- 部署：Vercel 静态，HTTPS 自动签发
-- GA4：G-DKYRD8PSCT ✅
-- GSC：域名已验证，sitemap 待 DNS 刷新后提交
-- Amazon Associates：smartpetgui0a-20（2026-05-20 提交，审核中 ~3h，预计 24-48h 出结果）
-- Pinterest：企业账号，网站已验证
-- Reddit：u/Additional_Diver3250
-
-### 已发布内容（19 页）
-1. 首页 `index.astro` — 最新推荐 + 分类入口
-2. 猫砂盆 Best 列表 — "Best Self-Cleaning Litter Boxes 2026"
-3. 喂食器 Best 列表 — "Best Automatic Cat Feeders 2026"
-4. Litter-Robot 4 评测
-5. Petlibro Granary 评测
-6. WOPET Automatic 评测
-7. DOGNESS Mini 评测
-8. Leo's Loo Too 评测
-9. PetSafe ScoopFree 评测
-10. Litter-Robot 4 vs Leo's Loo Too 对比
-11. Automatic vs Manual Litter Box 对比
-12. 喂食器购买指南
-13. 猫砂盆购买指南
-14. French Bulldog 品种推荐
-15-19. About / Privacy / Affiliate Disclosure / 404 / RSS
-
-### 产品数据库
-15款产品，5个品类：猫砂盆(5)、喂食器(4)、饮水机(3)、摄像头(2)、GPS(1)
-
-## 视觉/浏览器发现
-<!-- 关键：每执行2次查看/浏览器操作后必须更新此部分 -->
-- smartpetguide.net 线上可访问，首页加载正常
-- SVG 占位图在部署后正常显示
-- Vercel 部署秒级生效
-- **2026-05-20 重设计**：Forest + Honey 编辑杂志风，Fraunces + Atkinson Hyperlegible 字体
-  - 配色：cream #FDF9F3 / forest #1A3C34 / honey #D4914B / sage #E9EFE8
-  - 首页、评测页、Best列表、对比页、指南页、品种页全部刷新
-  - favicon.svg 已修复
-
-## 设计系统（2026-05-20 重设计）
-| 元素 | 选择 | 理由 |
-|------|------|------|
-| 色调 | Forest + Honey（深绿+琥珀） | 温暖、专业、宠物友好，非AI感 |
-| 标题字体 | Fraunces（Google Fonts） | 有特色的编辑体，温暖不冷漠 |
-| 正文字体 | Atkinson Hyperlegible | 高可读性、独特、非通用字体 |
-| 卡片 | 圆角2xl + 浅色边框 + hover阴影 | 柔和有层次，不僵硬 |
-| 按钮 | 琥珀色圆角 + hover变深 + active微缩放 | 有反馈感，引导点击 |
-| 页脚 | 深绿底白字 | 对比分明，收尾稳重 |
-| 背景纹理 | SVG噪声叠加 opacity 3% | 微妙的纸张质感 |
-
-## 资源
-- [原始完整计划](C:\Users\Administrator\.claude\plans\lucky-floating-flame.md)
-- [项目记忆](C:\Users\Administrator\.claude\projects\C--Users-Administrator\memory\smartpetguide_project.md)
+- 猫砂盆品类佣金最高：$50-100/单
+- 自动喂食器搜索量最大
 
 ---
-*每执行2次查看/浏览器/搜索操作后更新此文件*
-*防止视觉信息丢失*
+
+## 关键词调研（2026-05-21）
+
+### 方法
+- Amazon 搜索建议 API — 挖掘买家真实搜索词
+- Google SERP 首页分析 — 判断竞争强度
+- Amazon Best Sellers Rank — 验证产品真实销量
+- google-trends-api（npm 包）— 对比搜索趋势
+
+### Amazon 高频搜索修饰词
+| 修饰词 | 出现频率 | 含义 |
+|--------|---------|------|
+| no subscription / no monthly fee | ★★★★★ | GPS+摄像头最大痛点 |
+| with camera | ★★★★ | 喂食器刚需 |
+| stainless steel | ★★★★ | 饮水机材质焦虑 |
+| for multiple cats / large cats | ★★★ | 猫砂盆细分 |
+| wireless / cordless | ★★★ | 饮水机便利性 |
+| no filter | ★★ | 饮水机成本痛点 |
+| open top | ★★ | 猫砂盆新趋势 |
+
+### Google SERP 竞争分析
+| 关键词 | 首页竞争 | 机会判断 |
+|--------|---------|---------|
+| best automatic cat feeder | cats.com, Wired, NYTimes | ❌ 巨头垄断 |
+| best self cleaning litter box | cats.com, CNN, Forbes, SprucePets | ❌ 巨头垄断 |
+| best gps dog tracker no monthly fee | Reddit, 小品牌站, Facebook | ✅ 低竞争高需求 |
+| best pet camera no subscription | 小品牌站, Reddit, Wired | ✅ 有空间 |
+| stainless steel cat water fountain | Amazon, Reddit, Petlibro | ✅ 电商向，编辑内容少 |
+| best automatic litter box for large cats | cats.com, Reddit, Wired | ⚠️ 细分有机会 |
+
+---
+
+## 产品健康度（Amazon BSR 实测 2026-05-21）
+
+| 产品 | BSR | 评分 | 判断 |
+|------|-----|------|------|
+| Petlibro Granary | #1,173 | 4.2⭐ | 🔥🔥🔥 爆款 |
+| Litter-Robot 4 | #4,116 | 4.6⭐ | 🔥🔥 大单品 |
+| PETKIT Eversweet | #10,986 | 4.2⭐ | 🔥 表现好 |
+| WOPET Feeder | #25,252 | 4.3⭐ | ✅ 尚可 |
+| Catit PIXI | #77,196 | 3.9⭐ | ⚠️ 偏弱 |
+| Leo's Loo Too | #172,242 | 3.9⭐ | ❌ 卖不动 |
+| Petcube Bites 2 | #204,272 | 4.0⭐ | ❌ 卖不动 |
+| Whistle Switch | #270,865 | 3.0⭐ | ❌❌ 差评+滞销 |
+
+### 产品调整决策
+- **删** Whistle Switch（BSR 270K + 3.0星，推它浪费流量）
+- **删** PETKIT P2（2016 年已下架，Amazon 搜不到）
+- **删** DOGNESS Fountain（所有 Amazon 站点无此产品）
+- **降级** Leo's Loo Too、Petcube Bites 2（对比文保留，不单写评测）
+- **集中火力** Petlibro Granary + Litter-Robot 4
+
+---
+
+## 内容优先级（基于调研）
+
+### P0 — 高需求 + 低竞争（立即）
+1. Best GPS Dog Trackers Without Monthly Fee — 最大内容缺口
+2. Best Pet Cameras Without Subscription — 大痛点
+3. 强化 Petlibro Granary（BSR #1,173 爆款）
+
+### P1 — 好需求 + 可差异化
+4. Best Self-Cleaning Litter Boxes for Large Cats
+5. Best Stainless Steel Cat Water Fountains
+6. Automatic Cat Feeder for 2 Cats
+
+### P2 — 后期
+7. Litter-Robot 4 vs 竞品扩展
+8. Hidden Litter Box Furniture
+9. 品种专题扩展
+
+---
+
+## 竞品分析
+- 大站（cats.com, Wired, CNN, Forbes）占据品类大词
+- 新站策略：打细分长尾 + 对比词 + "无订阅费"等痛点词
+- Reddit 频繁出现在长尾词 SERP = 内容未被专业站满足的信号
+- Amazon 搜索建议是真实买家意图的最佳来源
+
+## 技术栈
+| 决策 | 理由 |
+|------|------|
+| Astro 5 纯静态 | <2s 加载，Vercel 免费，SEO 友好 |
+| Tailwind CSS v3 | 轻量快速 |
+| products.json 单一数据源 | 改一处全站同步 |
+| Amazon m.media-amazon.com 图片 | AA 合规，高清 |
+| Playwright + Amazon API | 关键词调研零成本 |
+| google-trends-api | 趋势对比 |
+
+## 设计系统
+| 元素 | 选择 |
+|------|------|
+| 色调 | Forest #1A3C34 + Honey #D4914B |
+| 标题 | Fraunces |
+| 正文 | Atkinson Hyperlegible |
+
+---
+*每次调研后更新此文件*

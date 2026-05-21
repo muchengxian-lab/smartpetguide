@@ -224,23 +224,6 @@
       "category": "fountain",
       "weight": 0.8,
       "warranty": "1 year"
-    },
-    {
-      "id": "dogness-fountain",
-      "name": "DOGNESS Wi-Fi Smart Fountain",
-      "brand": "DOGNESS",
-      "price": 69,
-      "amazonUrl": "https://www.amazon.com/s?k=DOGNESS+WiFi+Smart+Pet+Fountain&tag=smartpetgui0a-20",
-      "imageUrl": "/images/products/dogness-fountain.svg",
-      "rating": 4.1,
-      "reviewCount": 1500,
-      "features": ["App control", "2.5L capacity", "Filter replacement alerts", "5-stage filtration", "Quiet pump"],
-      "pros": ["App filter alerts are useful", "5-stage filtration system", "Quiet operation (under 25dB)", "Sleek design"],
-      "cons": ["App connection can be finicky", "Smaller reservoir", "Filters are proprietary"],
-      "bestFor": ["App-centric owners", "Single pets", "Those wanting filtration quality"],
-      "category": "fountain",
-      "weight": 1.1,
-      "warranty": "1 year"
     }
   ],
   "cameras": [
@@ -311,43 +294,9 @@
       "category": "camera",
       "weight": 0.9,
       "warranty": "1 year"
-    },
-    {
-      "id": "petkit-p2",
-      "name": "PETKIT P2 Smart Camera",
-      "brand": "PETKIT",
-      "price": 159,
-      "amazonUrl": "https://www.amazon.com/s?k=PETKIT+P2+Smart+Pet+Camera&tag=smartpetgui0a-20",
-      "imageUrl": "/images/products/petkit-camera.svg",
-      "rating": 4.3,
-      "reviewCount": 3100,
-      "features": ["360° pan/tilt", "Treat tossing", "1080p camera", "Laser toy", "Two-way audio", "Pet recognition AI"],
-      "pros": ["Built-in laser toy for play", "Pet AI recognition (faces/behavior)", "360° full coverage", "Treat + laser = dual interaction"],
-      "cons": ["Laser drains battery on treat mode", "AI features need subscription", "App is feature-heavy (learning curve)"],
-      "bestFor": ["Interactive play enthusiasts", "Tech-forward owners", "Cats and dogs"],
-      "category": "camera",
-      "weight": 1.1,
-      "warranty": "1 year"
     }
   ],
   "gpsTrackers": [
-    {
-      "id": "whistle-switch",
-      "name": "Whistle Switch",
-      "brand": "Whistle",
-      "price": 99,
-      "amazonUrl": "https://www.amazon.com/dp/B09H12CJRT?tag=smartpetgui0a-20",
-      "imageUrl": "https://m.media-amazon.com/images/I/71M2NAdBN5L._AC_SL1500_.jpg",
-      "rating": 4.3,
-      "reviewCount": 5600,
-      "features": ["GPS + Wi-Fi tracking", "Health monitoring", "Activity goals", "Escape alerts", "Waterproof"],
-      "pros": ["Combined GPS + health tracking", "Fast escape alerts", "Waterproof design", "Good battery life (7-14 days)"],
-      "cons": ["Monthly subscription required ($9.95)", "Bulky for small dogs/cats", "AT&T network only"],
-      "bestFor": ["Active dogs", "Escape-prone pets", "Health-conscious owners"],
-      "category": "tracker",
-      "weight": 0.03,
-      "warranty": "1 year"
-    },
     {
       "id": "tractive-gps",
       "name": "Tractive GPS Dog LTE",

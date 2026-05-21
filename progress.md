@@ -140,8 +140,52 @@
 
 ---
 
-### 阶段 4-10
-- **状态：** pending
+---
+
+## 会话：2026-05-21（Day 3 续3）— 产品配图 + 架构重构
+
+### 完成事项
+- [x] **产品配图**：Playwright 浏览器逐个访问 Amazon 商品页提取 19 款产品高清图（`_AC_SL1500_`）
+- [x] **10 个新 ASIN 发现**：WOPET Feeder、Petlibro Granary、PETKIT Fresh Element、Catit PIXI、Pioneer Pet Raindrop、Homerunpet、WOPET Camera、Whistle Switch、Tractive GPS、Elspet Pro
+- [x] **架构重构**：3 个动态路由文件改从 products.json 引用数据
+  - `best/[slug].astro`：删除硬编码假 ASIN 产品数组，按品类从 products.json 取
+  - `reviews/[slug].astro`：按 productId 引用，文章顶部加产品首图（hero image）
+  - `compare/[slug].astro`：按 productId 引用，对比卡片内加产品图
+- [x] **products.json = 唯一数据源**：改一处全站同步
+- [x] 2 款产品仍为 SVG（DOGNESS Fountain 不在 Amazon、PETKIT P2 已下架）
+- [x] Vercel 部署成功（dpl_HYQ8t2GtyPJ2LSYuYT9tFkqAZkVo）
+
+### 架构改进
+```
+之前: 3 个页面各自硬编码产品数据（假 ASIN、空图片）
+之后: products.json 改一次 → 全站自动同步
+```
+
+---
+
+## 会话：2026-05-21（Day 3 续4）— 关键词调研 + 计划重整
+
+### 完成事项
+- [x] **Amazon 搜索建议调研**：20 个种子词，覆盖 5 个品类
+  - 发现高频修饰词：no subscription, with camera, stainless steel, for multiple cats, wireless
+- [x] **Google SERP 竞争分析**：6 个高潜力关键词首页分析
+  - "best gps dog tracker no monthly fee" → 低竞争高需求 ✅
+  - "pet camera no subscription" → 小品牌占位，有空间 ✅
+  - 品类大词被 cats.com/Wired/CNN 垄断 ❌
+- [x] **Amazon BSR 产品健康度验证**：10 款产品 BSR 实测
+  - Petlibro Granary #1,173 🔥 | Whistle Switch #270,865 ❌
+- [x] **安装 google-trends-api** npm 包
+- [x] **重写 task_plan.md**：阶段 4 从"GPS+健康监测"调整为"关键词驱动内容冲刺"
+- [x] **重写 findings.md**：所有调研数据入库
+
+### 关键发现
+- **"no subscription/monthly fee"** 是 GPS+摄像头最大痛点，竞争低
+- **Whistle Switch** 该删（BSR 270K + 3.0星）
+- **Petlibro Granary** 是爆款（BSR #1,173），应重点推
+- 新站打不过品类大词，必须从长尾痛点切入
+
+### 当前状态
+- **33 页在线** | **21 款产品**（3 款待删除） | **阶段 4 待启动**
 
 ---
 
@@ -157,6 +201,8 @@
 | WOPET vs Petlibro 构建 | `npm run build` | 19页构建 | 2.30s，0 错误 | ✅ |
 | 阶段 3 构建 | `npm run build` | 29页构建 | 2.43s，0 错误 | ✅ |
 | ASIN 修复 + 索引页构建 | `npm run build` | 33页构建 | ~2.5s，0 错误 | ✅ |
+| 产品配图 + 架构重构 | `npm run build` | 33页构建 | 2.31s，0 错误 | ✅ |
+| 关键词调研 + 计划重整 | — | — | findings.md/task_plan.md 已更新 | ✅ |
 
 ## 错误日志
 | 时间戳 | 错误 | 尝试次数 | 解决方案 |
@@ -172,11 +218,11 @@
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 阶段 3 已完成，阶段 4 GPS+健康监测+品种专题 待启动 |
-| 我要去哪里？ | 阶段 4 → GPS追踪器 + 健康监测 + 品种专题（~15篇，目标45页） |
+| 我在哪里？ | 阶段 3 完成，阶段 4 待启动（计划已基于关键词调研重整） |
+| 我要去哪里？ | 阶段 4 → 关键词驱动内容冲刺（P0: GPS无订阅费 + 摄像头无订阅费 + Petlibro强化） |
 | 目标是什么？ | 日均 UV 3000-10000，月收入 $500-2000（12个月） |
-| 我学到了什么？ | Vercel cleanUrls 匹配 Astro 目录输出；Amazon ASIN 不能编造必须逐个验证；分类索引页是动态路由的补充 |
-| 我做了什么？ | Day 3 续: 修复404 + 创建4个分类索引页 + 替换24个假ASIN + Git提交 |
+| 我学到了什么？ | 选品必须关键词先行+BSR验证；Amazon搜索建议是真实需求最佳来源；新站打不过品类大词必须从长尾痛点切入 |
+| 我做了什么？ | Day 3 续: 产品配图替换 + 架构重构为单一数据源 + 完整关键词调研 + 计划重整 |
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*
