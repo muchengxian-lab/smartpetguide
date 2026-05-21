@@ -18,6 +18,8 @@ export function getStaticPaths() {
     { params: { slug: "automatic-vs-manual-litter-box" } },
     { params: { slug: "wopet-vs-petlibro" } },
     { params: { slug: "furbo-vs-petcube" } },
+    { params: { slug: "litter-robot-4-vs-petsafe-scoopfree" } },
+    { params: { slug: "furbo-vs-eufy" } },
   ];
 }
 
@@ -126,6 +128,51 @@ const compareMap: Record<string, CompareData> = {
       { q: "Which camera has better treat tossing?", a: "Both work well with small, round treats. The Petcube holds slightly more treats (~20 vs ~15), but the Furbo's tossing is slightly more reliable. Neither is a decisive winner on treats alone." },
       { q: "Is built-in Alexa in the Petcube really useful?", a: "If you already use Alexa for smart home control, yes — the Bites 2 replaces a separate Echo Dot. You can ask it to play music, set timers, control lights, and more, all while serving as your pet camera. If you're not an Alexa user, this feature adds cost without benefit." },
       { q: "Which has better video quality — Furbo or Petcube?", a: "Both are 1080p with solid night vision. The Furbo's 360° pan/tilt gives you more viewing flexibility. The Petcube's 160° wide angle covers more area at once but you can't move it. For active pets that roam, Furbo wins. For pets that stay in one spot, Petcube's wide angle is cleaner." },
+    ],
+  },
+  "litter-robot-4-vs-petsafe-scoopfree": {
+    title: "Litter-Robot 4 vs PetSafe ScoopFree (2026) — Sifting vs Crystal, Which Wins?",
+    description: "Litter-Robot 4 vs PetSafe ScoopFree head-to-head. We compare sifting vs crystal litter systems, cost over time, odor control, and which self-cleaning box is right for your cat.",
+    winner: "The Litter-Robot 4 wins on long-term value and cat comfort despite a higher upfront cost. Over 3 years, the ScoopFree's proprietary crystal tray costs ($15-25/month) add up to $540-900 — nearly matching the LR4's $699 price. The LR4's sifting system works with any clumping litter, gives you more flexibility, and most cats prefer traditional litter texture. Get the ScoopFree only if you specifically want crystal litter's low-dust benefits or need the lowest entry price.",
+    productAId: "litter-robot-4",
+    productBId: "petsafe-scoopfree",
+    comparisonRows: [
+      ["Price", "$699", "$299"],
+      ["Rating", "★★★★½ (4.5)", "★★★★⅕ (4.2)"],
+      ["Litter Type", "Any clumping litter", "Crystal litter only"],
+      ["3-Year Total Cost", "$699 + $200 supplies = ~$900", "$299 + $540-900 trays = ~$840-1,200"],
+      ["Odor Control", "Carbon filter + sealed drawer", "Crystal absorption + disposable tray"],
+      ["Multi-Cat", "Up to 4 cats", "Best for 1-2 cats"],
+      ["Cleaning Mechanism", "Rotating sifting globe", "Rake with disposable tray"],
+      ["Warranty", "1 year", "1 year"],
+    ],
+    faqs: [
+      { q: "Which is cheaper over time — Litter-Robot 4 or PetSafe ScoopFree?", a: "Surprisingly, the $699 Litter-Robot 4 can be cheaper over 3 years. The LR4 uses regular clumping litter (~$10-15/month), while ScoopFree requires proprietary crystal trays at $15-25 each lasting 2-4 weeks ($20-40/month). Over 3 years: LR4 ~$900-1,200 total, ScoopFree ~$840-1,500 total depending on tray usage." },
+      { q: "Is crystal litter better than clumping litter?", a: "Crystal litter excels at odor absorption and produces less dust — great for cats with respiratory issues. However, some cats dislike the texture and refuse to use it. Clumping litter feels more natural to cats and the LR4's sifting system handles it perfectly. If your cat is picky, the LR4 is the safer choice." },
+      { q: "Which is easier to maintain — LR4 or ScoopFree?", a: "The ScoopFree wins on simplicity — just swap the disposable tray every 2-4 weeks. No scooping, no cleaning the globe. The LR4 requires emptying the waste drawer weekly and occasional deep cleaning of the globe. For 'set it and forget it' convenience, ScoopFree is easier. For long-term cost and flexibility, LR4 is better." },
+    ],
+  },
+  "furbo-vs-eufy": {
+    title: "Furbo 360 vs eufy Pet Camera (2026) — Subscription or No Subscription?",
+    description: "Furbo 360 vs eufy Security Pet Camera head-to-head. Treat tossing with subscription vs local storage with zero fees — which pet camera offers the best value in 2026?",
+    winner: "The eufy Pet Camera wins for value-focused buyers who don't need treat tossing — 2K resolution, local SD storage, no subscription, and $50 less upfront. The Furbo 360 wins if you want to interact with your dog remotely via treat tossing, 360° tracking, and dog-specific bark alerts. For monitoring only, save $50 and skip the subscription with eufy. For interactive play and separation anxiety management, Furbo is worth the premium.",
+    productAId: "furbo-360",
+    productBId: "eufy-pet-cam",
+    comparisonRows: [
+      ["Price", "$179", "$129"],
+      ["Resolution", "1080p", "2K (sharper)"],
+      ["Camera Movement", "360° Pan/Tilt", "360° Pan/Tilt"],
+      ["Treat Tossing", "Yes (~15 treats)", "No"],
+      ["Storage", "Cloud (sub required)", "Local SD card (free)"],
+      ["Subscription", "$5.99/mo (Furbo Nanny)", "None needed"],
+      ["Bark Alerts", "Yes (dog-specific AI)", "General motion only"],
+      ["Best For", "Interactive dog owners", "Monitoring + privacy"],
+      ["Warranty", "1 year", "1 year"],
+    ],
+    faqs: [
+      { q: "Can Furbo 360 work without a subscription?", a: "Yes — basic features like live streaming, treat tossing, two-way audio, and bark alerts work without paying. The $5.99/month Furbo Nanny subscription adds AI person detection, dog activity summaries, and cloud video recording. For most owners, the free tier is sufficient." },
+      { q: "Does the eufy camera have any hidden fees?", a: "No — the eufy stores all footage locally on a microSD card (up to 128GB, sold separately for ~$15). There's no cloud subscription option at all. The app is free. You pay once for the hardware and that's it." },
+      { q: "Which is better for checking on a dog during the workday?", a: "The Furbo 360 is better for active interaction — you can toss treats, track the dog's movement around the room, and get instant bark alerts. The eufy is better for passive monitoring — sharper 2K video, no subscription anxiety, and reliable local recording. If your goal is to calm an anxious dog, Furbo's treat tossing is a game-changer." },
     ],
   },
 };

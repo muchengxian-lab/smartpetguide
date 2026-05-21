@@ -9,6 +9,7 @@ export function getStaticPaths() {
     { params: { slug: "self-cleaning-litter-box-buying-guide" } },
     { params: { slug: "smart-water-fountain-buying-guide" } },
     { params: { slug: "pet-camera-buying-guide" } },
+    { params: { slug: "gps-pet-tracker-buying-guide" } },
   ];
 }
 
@@ -74,7 +75,24 @@ const guideMap: Record<string, { title: string; description: string; sections: {
     faqs: [
       { q: "Can I use a regular security camera as a pet camera?", a: "Yes, but you'll miss pet-specific features like treat tossing, bark alerts, and pet activity summaries. A $40 Wyze Cam covers basic monitoring, but won't let you interact with your pet." },
       { q: "Do pet cameras need Wi-Fi?", a: "Yes — all smart pet cameras require a 2.4GHz Wi-Fi connection for live streaming and treat tossing. Most also support 5GHz. Without Wi-Fi, you can't access the camera remotely." },
-      { q: "Can pet cameras work for cats?", a: "Absolutely. While treat-tossing cameras are marketed toward dogs, cats can enjoy treat tossing too. The PETKIT P2's laser toy makes it especially popular for cat owners." },
+      { q: "Can pet cameras work for cats?", a: "Absolutely. While treat-tossing cameras are marketed toward dogs, cats can enjoy treat tossing too. The Furbo 360 and WOPET camera both work for cats, and the Honey Tour robot camera is especially fun — cats love chasing it around the house." },
+    ],
+  },
+  "gps-pet-tracker-buying-guide": {
+    title: "GPS Pet Tracker Buying Guide 2026 — How to Choose the Right One",
+    description: "Everything you need to know before buying a GPS pet tracker. Subscription vs no subscription, range, battery life, collar compatibility, and more — explained in plain English.",
+    sections: [
+      { heading: "Subscription vs No Subscription: The Biggest Decision", body: "Most GPS trackers charge a monthly fee ($5-13/month) for cellular service to transmit your pet's location. This gives you unlimited range — you can track your dog from anywhere with cell coverage. No-subscription trackers use radio frequency (RF) or Bluetooth, limiting range to 3-5 miles but saving you $60-150/year. Choose cellular if your dog might wander far; choose no-subscription if you're on a budget and your dog stays within a few miles." },
+      { heading: "Range: How Far Can It Track?", body: "Cellular GPS trackers (Tractive, Whistle) work anywhere with cell coverage — across town or across the country. RF-based trackers (Aorkuler) have a 3-5 mile range in open terrain, less in urban areas. Bluetooth trackers (AirTag) only work within ~30 feet of an iPhone. For escape-prone dogs in rural areas, cellular GPS is worth the subscription." },
+      { heading: "Battery Life: Days vs Weeks", body: "Battery life ranges from 1-2 days (budget trackers) to 7-14 days (premium models). Frequent charging is the #1 complaint among GPS tracker owners. Look for trackers with at least 5 days of battery life unless you're diligent about daily charging. The Tractive GPS averages 2-5 days, while premium options can last a week or more." },
+      { heading: "Collar Compatibility & Size", body: "Most GPS trackers attach to any collar via a clip or sleeve. Weight matters for small pets — lightweight trackers (under 1 oz) are comfortable for cats and small dogs. For large breeds, durability matters more than weight. The Tractive GPS at 0.9 oz works for most pets, while bulkier trackers may be uncomfortable for cats." },
+      { heading: "Water Resistance", body: "Dogs swim, roll in puddles, and run in the rain. Any GPS tracker you buy should be at least IP67 water-resistant (protected against immersion in 1 meter of water for 30 minutes). All our recommended trackers meet this standard, but always check before buying budget models." },
+    ],
+    faqs: [
+      { q: "Is a GPS tracker worth the monthly fee?", a: "For escape-prone dogs or outdoor cats, absolutely. The average cost of a lost pet (shelter fees, vet bills, lost wages searching) far exceeds the $60-150/year subscription. For indoor-only pets, a Bluetooth tracker or microchip may be sufficient." },
+      { q: "Can I use an Apple AirTag instead of a GPS tracker?", a: "AirTags work as a budget supplement for dogs in urban/suburban areas where iPhones are everywhere. But they are NOT real-time GPS trackers — they show the last location an iPhone detected your pet, which could be minutes or hours old. For reliable tracking, a dedicated GPS tracker is worth the investment." },
+      { q: "Do GPS trackers work for cats?", a: "Yes — but choose lightweight models (under 1 oz) with a breakaway collar attachment. Cats are more sensitive to collar weight and may try to remove bulky trackers. The Tractive GPS and budget no-fee trackers both work for cats with an appropriate collar." },
+      { q: "What's the difference between GPS and Bluetooth trackers?", a: "GPS uses satellites to pinpoint your pet's location anywhere in the world. Bluetooth trackers only work within short range (~30-100 feet) of your phone or a network of other devices. GPS gives you true real-time tracking; Bluetooth is for finding a pet that's nearby but hidden (like under the bed or in the backyard)." },
     ],
   },
 };

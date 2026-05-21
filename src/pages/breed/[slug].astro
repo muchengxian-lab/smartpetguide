@@ -15,6 +15,8 @@ for (const [, items] of Object.entries(products)) {
 export function getStaticPaths() {
   return [
     { params: { slug: "best-feeder-for-french-bulldog" } },
+    { params: { slug: "best-devices-for-golden-retrievers" } },
+    { params: { slug: "best-devices-for-multiple-cats" } },
   ];
 }
 
@@ -47,6 +49,40 @@ const breedMap: Record<string, BreedData> = {
     faqs: [
       { q: "Do French Bulldogs need a special automatic feeder?", a: "Not a special feeder, but you do need one with precise portion control. Frenchies are prone to obesity, so accurate portioning is more important than for other breeds." },
       { q: "Should I elevate my Frenchie's feeder?", a: "Slightly elevating the feeder (4-6 inches) can make eating more comfortable for flat-faced breeds. Some feeders have built-in stands or you can use a separate elevated platform." },
+    ],
+  },
+  "best-devices-for-golden-retrievers": {
+    title: "Best Smart Devices for Golden Retrievers 2026 — GPS, Feeders & Cameras",
+    description: "Golden Retrievers are active, food-motivated, and prone to hip issues. We've picked the best GPS trackers, smart feeders, and pet cameras specifically for Goldens.",
+    breed: "Golden Retriever",
+    recommendations: [
+      { category: "Best GPS Tracker", productId: "tractive-gps", reason: "Goldens love to run — the Tractive GPS gives you real-time location tracking with a virtual fence, so you'll know instantly if your Golden wanders off. Works in 170+ countries for adventure-loving dogs." },
+      { category: "Best Feeder", productId: "wopet-automatic", reason: "Goldens are notorious over-eaters. The WOPET's 6L hopper handles large portions for big dogs, and the 10 meals/day scheduling helps prevent bloat by splitting meals into smaller portions throughout the day." },
+      { category: "Best Camera", productId: "furbo-360", reason: "Goldens are people-dogs who hate being alone. The Furbo 360 lets you toss treats and talk to your Golden during the day — the 360° pan/tilt follows them around the room, and bark alerts let you know if they're stressed." },
+      { category: "Best Fountain", productId: "pioneer-pet-raindrop", reason: "Active Goldens need hydration. The Pioneer Pet Raindrop's stainless steel design is durable and hygienic — and at $39, it's a no-brainer add-on. The circulating water encourages drinking after long walks." },
+    ],
+    tips: ["Goldens are prone to bloat (GDV) — use slow-feed bowls and split meals into 3-4 portions daily", "Exercise before meals, not after — reduces bloat risk", "Goldens shed heavily — consider a robot vacuum as a companion smart device", "Start joint supplements early — Goldens are predisposed to hip dysplasia", "GPS tracker is the #1 smart device for Goldens — their friendly nature means they may follow strangers"],
+    faqs: [
+      { q: "Do Golden Retrievers really need a GPS tracker?", a: "Yes — Goldens are friendly to a fault and will happily follow strangers, other dogs, or interesting smells. Their strong prey drive and love of exploration make them one of the breeds most likely to wander. A GPS tracker is cheap insurance against a lost dog." },
+      { q: "What size feeder does a Golden Retriever need?", a: "Goldens eat 2-4 cups of kibble per day. A 6L feeder (like the WOPET) holds 25-30 cups — enough for 7-10 days. Avoid small 3L feeders designed for cats. Look for feeders with large kibble compatibility (Goldens eat larger kibble than cats)." },
+      { q: "Are smart devices worth it for senior Golden Retrievers?", a: "Yes — senior Goldens especially benefit from GPS trackers (mobility issues increase lost dog risk), orthopedic beds with temperature monitoring, and cameras to check for signs of distress during the day. Health-focused trackers like Tractive's activity monitoring can alert you to decreased mobility." },
+    ],
+  },
+  "best-devices-for-multiple-cats": {
+    title: "Best Smart Devices for Multiple Cats 2026 — Multi-Cat Home Essentials",
+    description: "Managing a multi-cat household? We've picked the best self-cleaning litter boxes, water fountains, and automatic feeders that actually work for 2+ cats.",
+    breed: "Multiple Cat",
+    recommendations: [
+      { category: "Best Litter Box", productId: "litter-robot-4", reason: "The only self-cleaning box rated for up to 4 cats. Its large waste drawer handles the output of multiple cats for 5-7 days, and the weight-based cat recognition tells you which cat used the box — essential for multi-cat health monitoring." },
+      { category: "Best Budget Litter Box", productId: "catlink-young", reason: "At $399, the CATLINK handles multiple cats at a lower price point. Individual cat weight recognition helps you track each cat's bathroom habits — early warning for UTIs or kidney issues that are common in multi-cat stress situations." },
+      { category: "Best Fountain", productId: "catit-pixi", reason: "The 3L capacity and multiple drinking heights accommodate cats of different sizes. The water intake tracking via app helps you monitor total household consumption — decreased drinking can signal illness in one of your cats." },
+      { category: "Best Feeder", productId: "petlibro-granary", reason: "The Petlibro Granary with dual tray splitter lets you feed two cats from separate bowls simultaneously. The camera confirms both cats ate — critical when one cat might be blocking the other from food." },
+    ],
+    tips: ["Rule of N+1: Have one more litter box than cats (3 cats = 4 boxes). Even with a Litter-Robot, keep at least one manual backup box", "Separate feeding stations: Place feeders in different rooms to prevent resource guarding", "Multiple water sources: Put fountains on each floor of your home", "Monitor individual cats: Choose devices with weight recognition to track per-cat health data", "Quiet operation matters more: Multiple devices running simultaneously multiply noise — choose low-dB models"],
+    faqs: [
+      { q: "How many litter boxes do I need for multiple cats?", a: "The standard rule is N+1 (one more box than cats). A single Litter-Robot 4 can replace 2-3 regular boxes because it cleans after every use — meaning it's always fresh for the next cat. For 3+ cats, we recommend one Litter-Robot plus one manual backup box." },
+      { q: "Can one automatic feeder serve multiple cats?", a: "Yes — but you need a feeder with dual trays or a splitter accessory (Petlibro sells one for $25). The bigger issue is preventing one cat from eating the other's food. Feeders with camera and weight sensors help, but microchip-activated feeders are the gold standard for multi-cat portion control." },
+      { q: "Do I need multiple water fountains for multiple cats?", a: "Not necessarily — one large 3L fountain can serve 2-3 cats. Place it in a neutral location (not near food or litter boxes). If you have a multi-story home, put one fountain per floor. Cats prefer drinking away from their food source, so separate the fountain from the feeding station." },
     ],
   },
 };
