@@ -7,6 +7,8 @@ export function getStaticPaths() {
   return [
     { params: { slug: "litter-robot-4-vs-leos-loo-too" } },
     { params: { slug: "automatic-vs-manual-litter-box" } },
+    { params: { slug: "wopet-vs-petlibro" } },
+    { params: { slug: "furbo-vs-petcube" } },
   ];
 }
 
@@ -16,8 +18,8 @@ const compareMap: Record<string, { title: string; description: string; productA:
     title: "Litter-Robot 4 vs Leo's Loo Too (2026) — Which Self-Cleaning Box Wins?",
     description: "Head-to-head comparison: Litter-Robot 4 vs Leo's Loo Too. We compare price, odor control, features, app quality, and cat comfort to help you decide.",
     winner: "The Litter-Robot 4 edges out the Leo's Loo Too on overall quality, odor control, and app polish — but at $250 more. For most buyers, Leo's Loo Too is the smarter value with UV sterilization and voice control built in.",
-    productA: { name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Up to 4 cats", "Carbon filter"], pros: ["Best odor control", "Best app"], cons: ["Expensive"], bestFor: ["Multi-cat homes", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B0BG4NP272?tag=smartpetgui0a-20" },
-    productB: { name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "Voice control", "App control", "Safety sensors"], pros: ["UV sterilization", "Quiet"], cons: ["Smaller drawer"], bestFor: ["Single-cat", "Tech lovers"], amazonUrl: "https://www.amazon.com/dp/B0BXFLBM4C?tag=smartpetgui0a-20" },
+    productA: { name: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, features: ["Automatic sifting", "App control", "Up to 4 cats", "Carbon filter"], pros: ["Best odor control", "Best app"], cons: ["Expensive"], bestFor: ["Multi-cat homes", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B0FFDYB7K8?tag=smartpetgui0a-20" },
+    productB: { name: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, features: ["UV sterilization", "Voice control", "App control", "Safety sensors"], pros: ["UV sterilization", "Quiet"], cons: ["Smaller drawer"], bestFor: ["Single-cat", "Tech lovers"], amazonUrl: "https://www.amazon.com/dp/B09LL4YDSG?tag=smartpetgui0a-20" },
     comparisonRows: [
       ["Price", "$699", "$449"],
       ["Rating", "★★★★½", "★★★★⅓"],
@@ -54,6 +56,54 @@ const compareMap: Record<string, { title: string; description: string; productA:
       { q: "How much time does an automatic litter box actually save?", a: "About 30 hours per year. Scooping a manual box takes ~5 minutes per day = 30 hours annually. An automatic box needs the waste drawer emptied once a week (~2 minutes) + deep cleaning monthly (~15 minutes)." },
       { q: "Will my cat be scared of an automatic litter box?", a: "Most cats adapt within 1-2 weeks. Start by placing the automatic box next to the old one (unplugged), then gradually introduce the cleaning cycle while they're not in the room. Treats near the new box help." },
       { q: "What's the total cost of ownership difference?", a: "Over 3 years: an automatic box costs $300-$700 upfront + $360-$750 in supplies = $660-$1,450 total. A manual box costs $20-$50 upfront + $450-$600 in litter = $470-$650 total. The automatic box costs $200-$800 more over 3 years — roughly $6-$22/month extra for the convenience." },
+    ],
+  },
+  "wopet-vs-petlibro": {
+    title: "WOPET vs Petlibro Granary (2026) — Which Automatic Feeder Is Right for You?",
+    description: "WOPET Automatic Feeder vs Petlibro Granary Camera Feeder head-to-head. We compare price, camera, capacity, app quality, and overall value to help you choose the best smart feeder.",
+    winner: "The Petlibro Granary wins if you want the built-in 1080p camera and a polished app experience — it's two devices in one. But the WOPET is the smarter value at $50 less, with a larger 6L hopper and proven reliability. Budget-conscious buyers get more for their money with WOPET; anxious pet parents who want visual check-ins should pay the premium for Petlibro.",
+    productA: { name: "WOPET Automatic Feeder", brand: "WOPET", price: 89, rating: 4.3, features: ["App control", "6L capacity", "Voice recording", "Dual power", "10 meals/day"], pros: ["$50 cheaper than Petlibro", "Larger 6L hopper", "Battery backup included", "Voice recording for pets"], cons: ["No camera", "App feels dated", "Portion sizes vary slightly"], bestFor: ["Budget-minded owners", "Large dogs needing big portions", "Reliability-first buyers"], amazonUrl: "https://www.amazon.com/dp/B0D4V57SGW?tag=smartpetgui0a-20" },
+    productB: { name: "Petlibro Granary", brand: "Petlibro", price: 139, rating: 4.5, features: ["1080p camera", "App control", "3L/5L options", "Two-way audio", "Night vision", "Motion alerts"], pros: ["1080p cam = two devices in one", "Polished app experience", "Night vision quality", "Motion detection alerts"], cons: ["$50 more than WOPET", "Smaller capacity (3L/5L)", "No pan/tilt on camera"], bestFor: ["Pet parents wanting visual checks", "Separation anxiety management", "Small to medium pets"], amazonUrl: "https://www.amazon.com/s?k=Petlibro+Granary+Camera+Feeder+PL-AF203&tag=smartpetgui0a-20" },
+    comparisonRows: [
+      ["Price", "$89", "$139"],
+      ["Rating", "★★★★⅓ (4.3)", "★★★★½ (4.5)"],
+      ["Camera", "No", "1080p + Night Vision"],
+      ["Two-Way Audio", "Voice recording only", "Yes"],
+      ["Capacity", "6L", "3L or 5L"],
+      ["Meals Per Day", "Up to 10", "Up to 10"],
+      ["Battery Backup", "Yes (built-in)", "No (sold separately)"],
+      ["App Polish", "Functional but dated", "Excellent"],
+      ["Motion Alerts", "No", "Yes"],
+      ["Warranty", "1 year", "1 year"],
+    ],
+    faqs: [
+      { q: "Is the Petlibro camera worth the extra $50?", a: "If you check on your pet during the day, absolutely. The 1080p camera with night vision effectively replaces a separate pet camera ($30-$100). You're getting a feeder + camera bundle, which is cheaper than buying both separately." },
+      { q: "Which feeder is better for large dogs?", a: "The WOPET wins for large dogs with its 6L hopper (vs Petlibro's 5L max). That's about 25-30 cups of kibble, enough for a large dog for 5-7 days. The WOPET also handles larger portion sizes better at 10 meals/day." },
+      { q: "Can both feeders work without Wi-Fi?", a: "Both require initial Wi-Fi setup for scheduling, but both will continue feeding on their programmed schedule even if Wi-Fi drops. The WOPET has a slight edge with built-in battery backup for power outages; Petlibro requires a separate battery pack." },
+      { q: "Which app is easier to use?", a: "Petlibro's app is noticeably more polished — intuitive scheduling, clear camera feed, and responsive alerts. WOPET's app works reliably but the interface feels older and navigation is less intuitive. Neither is a dealbreaker, but Petlibro's UX is clearly ahead." },
+    ],
+  },
+  "furbo-vs-petcube": {
+    title: "Furbo 360 vs Petcube Bites 2 (2026) — Best Treat-Tossing Pet Camera?",
+    description: "Furbo 360 vs Petcube Bites 2 head-to-head comparison. We compare treat tossing, video quality, smart home features, subscription costs, and overall value to help you decide.",
+    winner: "The Furbo 360 wins for most dog owners — its 360° pan/tilt means you can always find your dog, it costs $70 less, and its dog-specific AI features (bark alerts, person detection) are genuinely useful. The Petcube Bites 2 is better for Alexa households who want a premium, all-in-one smart home device with room-filling wide-angle coverage. If you don't use Alexa, save $70 and get the Furbo.",
+    productA: { name: "Furbo 360", brand: "Furbo", price: 179, rating: 4.4, features: ["360° pan/tilt", "Treat tossing", "1080p", "Bark alerts", "Two-way audio"], pros: ["360° coverage (follows dog)", "$70 cheaper than Petcube", "Best bark alerts", "Dog-specific AI"], cons: ["No Alexa built-in", "Smaller treat reservoir", "$5.99/mo sub for AI"], bestFor: ["Dog owners", "Active pets", "Value-focused buyers"], amazonUrl: "https://www.amazon.com/dp/B09GDQZLD1?tag=smartpetgui0a-20" },
+    productB: { name: "Petcube Bites 2", brand: "Petcube", price: 249, rating: 4.3, features: ["Alexa built-in", "Treat tossing", "1080p", "160° wide angle", "Two-way audio"], pros: ["Alexa included = 1 less device", "160° wide-angle covers room", "Premium build quality", "Sleek home decor look"], cons: ["$70 more than Furbo", "No pan/tilt (fixed view)", "Large treats jam mechanism"], bestFor: ["Alexa smart homes", "Living room setups", "Premium buyers"], amazonUrl: "https://www.amazon.com/dp/B07QZ4BWY1?tag=smartpetgui0a-20" },
+    comparisonRows: [
+      ["Price", "$179", "$249"],
+      ["Rating", "★★★★½ (4.4)", "★★★★⅓ (4.3)"],
+      ["Camera Type", "360° Pan/Tilt", "Fixed 160° Wide-Angle"],
+      ["Treat Tossing", "Yes (~15 treats)", "Yes (~20 treats)"],
+      ["Smart Assistant", "Works with Alexa", "Alexa Built-In"],
+      ["Bark Alerts", "Yes (dog-specific AI)", "Yes (general)"],
+      ["Night Vision", "1080p IR", "1080p IR"],
+      ["Subscription", "$5.99/mo (Furbo Nanny)", "$5.99/mo (Petcube Care)"],
+      ["Warranty", "1 year", "1 year"],
+    ],
+    faqs: [
+      { q: "Which camera has better treat tossing?", a: "Both work well with small, round treats. The Petcube holds slightly more treats (~20 vs ~15), but the Furbo's tossing is slightly more reliable. Neither is a decisive winner on treats alone." },
+      { q: "Is built-in Alexa in the Petcube really useful?", a: "If you already use Alexa for smart home control, yes — the Bites 2 replaces a separate Echo Dot. You can ask it to play music, set timers, control lights, and more, all while serving as your pet camera. If you're not an Alexa user, this feature adds cost without benefit." },
+      { q: "Which has better video quality — Furbo or Petcube?", a: "Both are 1080p with solid night vision. The Furbo's 360° pan/tilt gives you more viewing flexibility. The Petcube's 160° wide angle covers more area at once but you can't move it. For active pets that roam, Furbo wins. For pets that stay in one spot, Petcube's wide angle is cleaner." },
     ],
   },
 };

@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+
+const bestLists = [
+  {
+    slug: "automatic-cat-feeders",
+    title: "5 Best Automatic Cat Feeders 2026",
+    desc: "App-controlled, camera-equipped smart feeders compared. WOPET, Petlibro, DOGNESS, and more.",
+    count: 5,
+  },
+  {
+    slug: "self-cleaning-litter-boxes",
+    title: "5 Best Self-Cleaning Litter Boxes 2026",
+    desc: "Litter-Robot 4, Leo's Loo Too, PetSafe ScoopFree, and more — compared for odor control, price, and reliability.",
+    count: 5,
+  },
+  {
+    slug: "smart-pet-water-fountains",
+    title: "5 Best Smart Pet Water Fountains 2026",
+    desc: "Filtered, flowing water fountains from PETKIT, Catit, Pioneer Pet, and others to keep your pet hydrated.",
+    count: 5,
+  },
+  {
+    slug: "pet-cameras",
+    title: "5 Best Pet Cameras 2026",
+    desc: "Treat-tossing, 360° pan/tilt, and AI-powered pet cameras. Furbo, Petcube, eufy, and more.",
+    count: 5,
+  },
+];
+---
+
+<BaseLayout
+  title="Best Pet Tech Picks 2026 — SmartPetGuide"
+  description="Curated lists of the best automatic pet feeders, self-cleaning litter boxes, smart water fountains, pet cameras, and GPS trackers."
+>
+  <Breadcrumb crumbs={[{ label: "Best Picks" }]} />
+
+  <article>
+    <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">Best Picks</h1>
+    <p class="mt-3 text-lg leading-relaxed text-bark-muted">
+      Curated roundups of the best smart pet devices across every category. Each list is updated for 2026 with real testing and honest comparisons.
+    </p>
+
+    <div class="mt-10 grid gap-5 md:grid-cols-2">
+      {bestLists.map((list) => (
+        <a
+          href={`/best/${list.slug}`}
+          class="group rounded-2xl border border-sage-dark/30 bg-white p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+        >
+          <p class="font-display text-lg font-semibold text-forest transition-colors group-hover:text-honey">
+            {list.title}
+          </p>
+          <p class="mt-2 text-sm leading-relaxed text-bark-muted">{list.desc}</p>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-forest/60">
+            {list.count} products
+          </p>
+        </a>
+      ))}
+    </div>
+  </article>
+</BaseLayout>

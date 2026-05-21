@@ -7,6 +7,8 @@ export function getStaticPaths() {
   return [
     { params: { slug: "automatic-feeder-buying-guide" } },
     { params: { slug: "self-cleaning-litter-box-buying-guide" } },
+    { params: { slug: "smart-water-fountain-buying-guide" } },
+    { params: { slug: "pet-camera-buying-guide" } },
   ];
 }
 
@@ -41,6 +43,38 @@ const guideMap: Record<string, { title: string; description: string; sections: {
       { q: "How often do you empty a self-cleaning litter box?", a: "With one cat: every 7-10 days. Two cats: every 5-7 days. Three or more cats: every 2-4 days. Models with larger waste drawers need less frequent emptying." },
       { q: "Are self-cleaning litter boxes worth the money?", a: "If you have 2+ cats or hate scooping, absolutely. A $699 Litter-Robot 4 used twice daily for 3 years costs about $0.32 per use — reasonable for never scooping again. Budget models at $300-400 still eliminate daily scooping." },
       { q: "What litter works best in automatic boxes?", a: "Hard-clumping clay litter works best in most models. Avoid lightweight or plant-based litters unless the manufacturer specifically approves them — they can cause sensor errors in rotating drum models." },
+    ],
+  },
+  "smart-water-fountain-buying-guide": {
+    title: "Smart Pet Water Fountain Buying Guide 2026 — How to Choose",
+    description: "Learn what to look for in a smart pet water fountain: filtration systems, capacity, noise levels, smart features vs simplicity, and maintenance costs.",
+    sections: [
+      { heading: "Filtration: The Most Important Feature", body: "A good fountain needs multi-layer filtration — at minimum, a mechanical pre-filter to catch hair and debris, plus an activated carbon filter to remove odors and impurities. Premium models add ion-exchange resin for water softening. Replace filters every 2-4 weeks; budget about $5-10/month." },
+      { heading: "Material: Stainless Steel vs Plastic vs Ceramic", body: "Stainless steel is the gold standard — it's naturally antimicrobial, dishwasher safe, and doesn't develop micro-scratches that harbor bacteria. Plastic is lighter and cheaper but can cause chin acne in some cats. Ceramic is attractive and hygienic but heavy and breakable." },
+      { heading: "Capacity: Match It to Your Pet Household", body: "2L is enough for one cat for about 2-3 days. 3L+ is recommended for multi-pet homes. A fountain that runs dry can burn out the pump, so larger is generally better. Smart models with water level indicators help prevent this." },
+      { heading: "Smart vs Simple: Do You Need an App?", body: "Most fountain apps offer filter replacement reminders and water level monitoring. The Catit PIXI adds water intake tracking — valuable if your cat has urinary health concerns. For most owners, a basic model with a filter indicator light does the job, and the money saved can go toward better filters." },
+      { heading: "Noise and Pump Quality", body: "Look for fountains rated under 35dB for quiet operation. The pump is the component most likely to fail — choose brands with replaceable pumps (sold separately) and 1+ year warranties. Ceramic and stainless steel models dampen pump vibration better than plastic." },
+    ],
+    faqs: [
+      { q: "Do cats really drink more from fountains?", a: "Yes — cats instinctively prefer moving water over still water. Many owners report their cats drink significantly more after switching to a fountain, which is beneficial for kidney and urinary health." },
+      { q: "How often should I change the water?", a: "Top off daily and do a full water change every 3-5 days, even if there's water left. Bacteria can build up in standing water, even with filtration. Deep clean weekly." },
+      { q: "Can I use a water fountain for both cats and dogs?", a: "Yes — choose a fountain with a generous basin or dual drinking areas. Larger dogs appreciate fountains with higher flow rates and wider drinking surfaces." },
+    ],
+  },
+  "pet-camera-buying-guide": {
+    title: "Pet Camera Buying Guide 2026 — Treat Cams, Monitoring & More",
+    description: "How to choose the right pet camera: treat tossing vs monitoring only, pan/tilt vs wide-angle, subscription costs, night vision, and smart home integration.",
+    sections: [
+      { heading: "Treat Tossing vs Monitoring Only", body: "Cameras split into two categories. Treat-tossing cameras ($99-$249) let you interact remotely — rewarding your pet, redirecting barking, and building connection. Monitoring-only cameras ($30-$129) are simpler and cheaper. If you're a dog owner who works outside the home, treat tossing is worth the premium. For cats or general security, a basic pan/tilt camera works fine." },
+      { heading: "Pan/Tilt vs Fixed Wide-Angle", body: "360° pan/tilt cameras (Furbo, eufy) let you scan the whole room and follow your pet. Fixed wide-angle cameras (Petcube Bites 2, 160°) cover a broad area without moving parts. Pan/tilt is better for active pets that move around; wide-angle is better if you know where your pet stays." },
+      { heading: "Subscription Costs: The Hidden Expense", body: "Many pet cameras charge monthly for advanced features. Furbo Nanny: $5.99/month (AI alerts, cloud recording). Petcube Care: $5.99/month (cloud storage). PETKIT P2 AI: $3.99/month. The eufy Pet Cam is the standout with local SD storage and zero monthly fees. Factor subscription costs into your purchase decision — over 2 years, a $99 camera with a $6/month subscription costs more than a $199 camera with no subscription." },
+      { heading: "Night Vision and Video Quality", body: "1080p is the standard (adequate for most homes). The eufy stands out with 2K resolution for sharper detail. Night vision is essential if you check on your pet after dark — all our recommended models include IR night vision with at least 10-15ft range." },
+      { heading: "Smart Home Integration", body: "The Petcube Bites 2 has Alexa built in (no separate Echo needed). Furbo works with Alexa for treat tossing via voice command. General security cameras (eufy) integrate with Google Home and Alexa but lack pet-specific features. If you already use Alexa, the Petcube saves you a countertop device." },
+    ],
+    faqs: [
+      { q: "Can I use a regular security camera as a pet camera?", a: "Yes, but you'll miss pet-specific features like treat tossing, bark alerts, and pet activity summaries. A $40 Wyze Cam covers basic monitoring, but won't let you interact with your pet." },
+      { q: "Do pet cameras need Wi-Fi?", a: "Yes — all smart pet cameras require a 2.4GHz Wi-Fi connection for live streaming and treat tossing. Most also support 5GHz. Without Wi-Fi, you can't access the camera remotely." },
+      { q: "Can pet cameras work for cats?", a: "Absolutely. While treat-tossing cameras are marketed toward dogs, cats can enjoy treat tossing too. The PETKIT P2's laser toy makes it especially popular for cat owners." },
     ],
   },
 };

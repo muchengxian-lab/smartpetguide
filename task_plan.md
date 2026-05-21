@@ -45,19 +45,20 @@
 - **状态：** in_progress（~70%）
 - **目标产出：** 累计 19 篇内容 + 变现链路上线
 
-### 阶段 3：饮水机 + 摄像头品类拓展（Day 4-5）
-- [ ] 智能饮水机 Best 列表："5 Best Smart Pet Water Fountains 2026"
-- [ ] 单品评测 ×3：Petkit Eversweet / Catit Flower / Pioneer Pet Raindrop
-- [ ] 饮水机购买指南
-- [ ] 宠物摄像头 Best 列表："5 Best Pet Cameras 2026"
-- [ ] 单品评测 ×2：Furbo / Petcube Bites 2
-- [ ] 摄像头对比："Furbo vs Petcube：Best Dog Camera Comparison"
-- [ ] 摄像头购买指南
-- [ ] 所有文章插入联盟链接
+### 阶段 3：饮水机 + 摄像头品类拓展（Day 4-5）✅ complete
+- [x] 智能饮水机 Best 列表："5 Best Smart Pet Water Fountains 2026"
+- [x] 单品评测 ×3：Petkit Eversweet / Catit PIXI / Pioneer Pet Raindrop
+- [x] 饮水机购买指南
+- [x] 宠物摄像头 Best 列表："5 Best Pet Cameras 2026"
+- [x] 单品评测 ×2：Furbo / Petcube Bites 2
+- [x] 摄像头对比："Furbo vs Petcube：Best Dog Camera Comparison"
+- [x] 摄像头购买指南
+- [x] 所有文章嵌入联盟链接
 - [ ] Pinterest 第二批 5 张 Pin 图
 - [ ] Reddit 首次社区互动（r/pets, r/cats 回答问题，自然引用）
-- **状态：** pending
-- **目标产出：** 累计 30 篇内容
+- **完成时间：** 2026-05-21（Day 3）
+- **状态：** complete
+- **实际产出：** 累计 29 篇内容（+10 篇新内容）
 
 ### 阶段 4：GPS + 健康监测 + 品种专题（Day 6-8）
 - [ ] GPS 追踪器 Best 列表

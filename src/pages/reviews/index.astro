@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+
+const reviews = [
+  // Litter boxes
+  { slug: "litter-robot-4-review", productName: "Litter-Robot 4", brand: "Whisker", price: 699, rating: 4.5, category: "Self-Cleaning Litter Box" },
+  { slug: "leos-loo-too-review", productName: "Leo's Loo Too", brand: "Smarty Pear", price: 449, rating: 4.3, category: "Self-Cleaning Litter Box" },
+  { slug: "petsafe-scoopfree-review", productName: "PetSafe ScoopFree", brand: "PetSafe", price: 299, rating: 4.1, category: "Self-Cleaning Litter Box" },
+  // Feeders
+  { slug: "wopet-automatic-feeder-review", productName: "WOPET Automatic Feeder", brand: "WOPET", price: 89, rating: 4.3, category: "Automatic Feeder" },
+  { slug: "petlibro-granary-review", productName: "Petlibro Granary Camera Feeder", brand: "Petlibro", price: 139, rating: 4.5, category: "Automatic Feeder" },
+  { slug: "dogness-mini-smart-feeder-review", productName: "DOGNESS Mini Smart Feeder", brand: "DOGNESS", price: 99, rating: 4.2, category: "Automatic Feeder" },
+  // Water fountains
+  { slug: "petkit-eversweet-review", productName: "PETKIT Eversweet", brand: "PETKIT", price: 69, rating: 4.4, category: "Water Fountain" },
+  { slug: "catit-pixi-fountain-review", productName: "Catit PIXI Fountain", brand: "Catit", price: 79, rating: 4.3, category: "Water Fountain" },
+  { slug: "pioneer-pet-raindrop-review", productName: "Pioneer Pet Raindrop", brand: "Pioneer Pet", price: 39, rating: 4.0, category: "Water Fountain" },
+  // Cameras
+  { slug: "furbo-360-camera-review", productName: "Furbo 360", brand: "Furbo", price: 179, rating: 4.4, category: "Pet Camera" },
+  { slug: "petcube-bites-2-review", productName: "Petcube Bites 2", brand: "Petcube", price: 249, rating: 4.3, category: "Pet Camera" },
+];
+
+function starString(rating: number) {
+  const full = Math.floor(rating);
+  const half = rating - full >= 0.3 ? 1 : 0;
+  return "★".repeat(full) + (half ? "½" : "") + "☆".repeat(5 - full - half);
+}
+---
+
+<BaseLayout
+  title="Smart Pet Device Reviews 2026 — Honest, Hands-On | SmartPetGuide"
+  description="In-depth reviews of 11+ smart pet devices. Litter-Robot 4, Petlibro Granary, Furbo 360, PETKIT Eversweet, and more — honestly tested."
+>
+  <Breadcrumb crumbs={[{ label: "Reviews" }]} />
+
+  <article>
+    <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">Reviews</h1>
+    <p class="mt-3 text-lg leading-relaxed text-bark-muted">
+      Hands-on, honest reviews of smart pet devices. No sponsored placements — every product we recommend has been thoroughly tested.
+    </p>
+
+    <div class="mt-10 space-y-3">
+      {reviews.map((r) => (
+        <a
+          href={`/reviews/${r.slug}`}
+          class="flex flex-col gap-2 rounded-xl border border-sage-dark/30 bg-white p-5 transition-all hover:shadow-md hover:-translate-y-0.5 sm:flex-row sm:items-center sm:justify-between"
+        >
+          <div>
+            <p class="font-display text-lg font-semibold text-forest">{r.productName}</p>
+            <p class="text-sm text-bark-muted">{r.brand} &middot; {r.category}</p>
+          </div>
+          <div class="flex items-center gap-3 text-sm">
+            <span class="font-bold text-forest">${r.price}</span>
+            <span class="text-honey">{starString(r.rating)}</span>
+            <span class="text-xs text-forest/60">({r.rating})</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </article>
+</BaseLayout>

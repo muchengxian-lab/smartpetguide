@@ -87,6 +87,45 @@
 
 ---
 
+## 会话：2026-05-21（Day 3）— 阶段 2 收尾
+
+### 完成事项
+- [x] Amazon Associates 审核检查 → **已通过**，Store ID `smartpetgui0a-20` 生效
+- [x] GSC Sitemap 提交 `sitemap-index.xml` — 成功，Google 处理中
+- [x] WOPET vs Petlibro 对比文 — 完成并部署上线，19 页构建
+- [x] Vercel 部署更新，smartpetguide.net 已同步
+
+### 剩余待办（阶段 2 低优先级）
+- [ ] Pinterest 首批 5 张 Pin 图（可入阶段 3 并行）
+- [ ] SiteStripe 替换产品图（AA 已通过，可开始）
+
+### 阶段 2 状态：**complete** ✅（核心任务全部完成）
+
+---
+
+## 会话：2026-05-21（Day 3 续）— 阶段 3 饮水机+摄像头品类拓展
+
+### 完成事项
+- [x] 产品数据库扩展：+3 饮水机 + 4 摄像头 = 20 款产品
+- [x] 7 张新 SVG 占位图
+- [x] 饮水机 Best 列表 `smart-pet-water-fountains`（5款推荐）
+- [x] 饮水机评测 ×3：PETKIT Eversweet / Catit PIXI / Pioneer Pet Raindrop
+- [x] 饮水机购买指南 `smart-water-fountain-buying-guide`
+- [x] 摄像头 Best 列表 `pet-cameras`（5款推荐）
+- [x] 摄像头评测 ×2：Furbo 360 / Petcube Bites 2
+- [x] 摄像头对比 `furbo-vs-petcube`
+- [x] 摄像头购买指南 `pet-camera-buying-guide`
+- [x] Vercel 部署成功，29 页在线
+
+### 阶段 3 状态：**complete** ✅
+### 累计：**29 页**（19 → 29，+10 新页）
+### 下一阶段：阶段 4 — GPS + 健康监测 + 品种专题
+
+### 阶段 4-10
+- **状态：** pending
+
+---
+
 ## 测试结果
 | 测试 | 输入 | 预期结果 | 实际结果 | 状态 |
 |------|------|---------|---------|------|
@@ -95,23 +134,26 @@
 | GSC 域名验证 | TXT 记录添加 | 验证成功 | 已验证 | ✅ |
 | SVG 图片加载 | 部署后访问 | 15 张图正常显示 | 正常显示 | ✅ |
 | 重设计构建 | `npm run build` | 18页全部构建成功 | 2.84s 构建完成，0 错误 | ✅ |
-| 浏览器预览 | 访问首页/评测页/Best列表 | 新设计正确渲染 | 3页均正常，favicon显示 | ✅ |
+| GSC Sitemap 提交 | 提交 sitemap-index.xml | 成功接收 | 已提交，Google 处理中 | ✅ |
+| WOPET vs Petlibro 构建 | `npm run build` | 19页构建 | 2.30s，0 错误 | ✅ |
+| 阶段 3 构建 | `npm run build` | 29页构建 | 2.43s，0 错误 | ✅ |
 
 ## 错误日志
 | 时间戳 | 错误 | 尝试次数 | 解决方案 |
 |--------|------|---------|---------|
 | — | — | — | 阶段 1 无错误 |
-| 2026-05-20 晚 | guides/[slug].astro 编译错误（正则 $ 符号） | 1 | 简化 Breadcrumb 的 title.replace 为原始 title |
-| 2026-05-20 晚 | GitHub push 失败（网络超时） | 2 | 待网络恢复后重试，代码已在 Vercel 上线 |
+| 2026-05-20 晚 | guides/[slug].astro 编译错误（正则 $ 符号） | 1 | 简化 Breadcrumb |
+| 2026-05-20 晚 | GitHub push 失败（网络超时） | 3 | 代码安全在本地 git，Vercel 已上线 |
+| 2026-05-21 | compare/[slug].astro 语法错误（新数据在 }; 外） | 1 | 将 wopet-vs-petlibro 条目移入 compareMap 内部 |
 
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 阶段 2 — 内容冲刺 1 + 变现激活（~70%，含重设计 ✅） |
-| 我要去哪里？ | 阶段 2 收尾 → 阶段 3 饮水机+摄像头品类拓展 |
+| 我在哪里？ | 阶段 3 已完成 → 阶段 4 GPS+健康监测+品种专题 |
+| 我要去哪里？ | 阶段 4 → GPS追踪器 + 健康监测 + 品种专题（~15篇） |
 | 目标是什么？ | 日均 UV 3000-10000，月收入 $500-2000（12个月） |
-| 我学到了什么？ | 见 findings.md — 市场数据、竞品分析、关键词策略、设计系统 |
-| 我做了什么？ | Day 1: 基础设施+19页面；Day 2: 计划重整+GitHub备份+Forest/Honey重设计全站 |
+| 我学到了什么？ | 阶段 3 新增 10 页只需更新 4 个动态路由文件；prods.json 新增 7 款产品；Furbo 原来错放在 feeders 数组 |
+| 我做了什么？ | Day 3: AA通过+GSC sitemap+WOPET对比+阶段3(10篇新内容，29页在线) |
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*
