@@ -119,7 +119,26 @@
 
 ### 阶段 3 状态：**complete** ✅
 ### 累计：**29 页**（19 → 29，+10 新页）
-### 下一阶段：阶段 4 — GPS + 健康监测 + 品种专题
+
+---
+
+## 会话：2026-05-21（Day 3 续2）— Bug 修复 + 排查
+
+### 完成事项
+- [x] **修复全站 404**：vercel.json 路由错误，Astro 输出 `directory/index.html` 但 Vercel 映射到 `/$1.html`，改为 `cleanUrls: true, trailingSlash: false`
+- [x] **创建 4 个分类索引页**：`best/index.astro`、`reviews/index.astro`、`compare/index.astro`、`guides/index.astro`，解决导航栏链接 404
+- [x] **替换全部 24 个假 ASIN**：`products.json`（21 个）+ `reviews/[slug].astro`（11 个）+ `compare/[slug].astro`（8 个），12 个确认真实 ASIN，9 个用搜索 URL 兜底
+- [x] Vercel 重新部署成功（dpl_4yYP2yBQQe8yT8nm7xci7xfAHjWM）
+- [x] Git commit + push（71306d9）
+
+### 页面数修正：29 → **33 页**
+- +4 分类索引页（Best Picks / Reviews / Compare / Guides）
+
+### 关键教训
+- **Vercel + Astro 路由配置**：Astro 构建输出 `foo/index.html`，Vercel `cleanUrls: true` 自动匹配 `/foo` → `/foo/index.html`，不需要自定义 routes
+- **Amazon ASIN 不能瞎编**：所有占位 ASIN 都是无效的，必须逐个搜索真实产品
+
+---
 
 ### 阶段 4-10
 - **状态：** pending
@@ -137,6 +156,7 @@
 | GSC Sitemap 提交 | 提交 sitemap-index.xml | 成功接收 | 已提交，Google 处理中 | ✅ |
 | WOPET vs Petlibro 构建 | `npm run build` | 19页构建 | 2.30s，0 错误 | ✅ |
 | 阶段 3 构建 | `npm run build` | 29页构建 | 2.43s，0 错误 | ✅ |
+| ASIN 修复 + 索引页构建 | `npm run build` | 33页构建 | ~2.5s，0 错误 | ✅ |
 
 ## 错误日志
 | 时间戳 | 错误 | 尝试次数 | 解决方案 |
@@ -145,15 +165,18 @@
 | 2026-05-20 晚 | guides/[slug].astro 编译错误（正则 $ 符号） | 1 | 简化 Breadcrumb |
 | 2026-05-20 晚 | GitHub push 失败（网络超时） | 3 | 代码安全在本地 git，Vercel 已上线 |
 | 2026-05-21 | compare/[slug].astro 语法错误（新数据在 }; 外） | 1 | 将 wopet-vs-petlibro 条目移入 compareMap 内部 |
+| 2026-05-21 | 全站子页面 404 | 1 | vercel.json 路由重写规则错误，改为 cleanUrls + trailingSlash |
+| 2026-05-21 | 分类导航页 404（best/reviews/compare/guides） | 1 | 创建 4 个 index.astro 分类索引页 |
+| 2026-05-21 | Amazon 链接找不到产品 | 1 | 所有 ASIN 为假占位符，逐个搜索真实 ASIN 替换 |
 
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 阶段 3 已完成 → 阶段 4 GPS+健康监测+品种专题 |
-| 我要去哪里？ | 阶段 4 → GPS追踪器 + 健康监测 + 品种专题（~15篇） |
+| 我在哪里？ | 阶段 3 已完成，阶段 4 GPS+健康监测+品种专题 待启动 |
+| 我要去哪里？ | 阶段 4 → GPS追踪器 + 健康监测 + 品种专题（~15篇，目标45页） |
 | 目标是什么？ | 日均 UV 3000-10000，月收入 $500-2000（12个月） |
-| 我学到了什么？ | 阶段 3 新增 10 页只需更新 4 个动态路由文件；prods.json 新增 7 款产品；Furbo 原来错放在 feeders 数组 |
-| 我做了什么？ | Day 3: AA通过+GSC sitemap+WOPET对比+阶段3(10篇新内容，29页在线) |
+| 我学到了什么？ | Vercel cleanUrls 匹配 Astro 目录输出；Amazon ASIN 不能编造必须逐个验证；分类索引页是动态路由的补充 |
+| 我做了什么？ | Day 3 续: 修复404 + 创建4个分类索引页 + 替换24个假ASIN + Git提交 |
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*
