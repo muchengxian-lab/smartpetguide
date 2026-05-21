@@ -19,6 +19,9 @@ export function getStaticPaths() {
     { params: { slug: "pet-cameras" } },
     { params: { slug: "gps-trackers-no-monthly-fee" } },
     { params: { slug: "pet-cameras-no-subscription" } },
+    { params: { slug: "litter-boxes-for-large-cats" } },
+    { params: { slug: "stainless-steel-cat-fountains" } },
+    { params: { slug: "automatic-feeders-for-2-cats" } },
   ];
 }
 
@@ -33,6 +36,9 @@ const categoryMap: Record<string, keyof typeof products> = {
 const customLists: Record<string, string[]> = {
   "gps-trackers-no-monthly-fee": ["tractive-gps", "nofee-gps-tracker", "aorkuler-gps"],
   "pet-cameras-no-subscription": ["eufy-pet-cam", "xpai-4k-camera", "honeytour-robot-cam", "furbo-360"],
+  "litter-boxes-for-large-cats": ["litter-robot-4", "catlink-young", "petsafe-scoopfree", "elspet-pro"],
+  "stainless-steel-cat-fountains": ["pioneer-pet-raindrop", "yeapaw-steel-fountain", "kittyspout-steel"],
+  "automatic-feeders-for-2-cats": ["petlibro-granary", "wopet-automatic", "petkit-fresh-element", "dogness-mini"],
 };
 
 const slug = Astro.params.slug || "self-cleaning-litter-boxes";
@@ -105,6 +111,36 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
       { q: "Can I use a regular security camera as a pet camera?", a: "Yes — many of the best 'no subscription' pet cameras are actually security cameras that work great for pets. The xpai 4K and eufy Indoor Cam both have pan/tilt, two-way audio, and pet detection — sometimes at half the price of 'pet-specific' cameras." },
       { q: "Which no-subscription camera is best for treat tossing?", a: "The Furbo 360 at $179 allows treat tossing without a subscription (only AI alerts need the $5.99/month plan). For truly zero-fee treat tossing, there are limited options — most treat cameras tie advanced features to subscriptions." },
       { q: "Is local storage better than cloud storage for pet cameras?", a: "For privacy, yes — local SD card storage means your video never leaves your home. For convenience, cloud storage lets you check footage from anywhere. The eufy and xpai both use local storage, making them ideal no-subscription choices." },
+    ],
+  },
+  "litter-boxes-for-large-cats": {
+    title: "Best Self-Cleaning Litter Boxes for Large Cats 2026 — Roomy Picks",
+    description: "Large cats need bigger litter boxes. We tested the best self-cleaning litter boxes with extra room for Maine Coons, Ragdolls, and other big breeds — plus multi-cat households.",
+    faqs: [
+      { q: "What size litter box does a large cat need?", a: "A large cat (15+ lbs) needs a litter box at least 22-24 inches long and 18+ inches wide. Standard automatic boxes often have 15-16 inch openings which can be cramped. The Litter-Robot 4 and CATLINK Young Pro have the roomiest interiors we've tested for big cats." },
+      { q: "Can Maine Coons use automatic litter boxes?", a: "Yes — but only the largest models. The Litter-Robot 4 has the widest opening (15.75 inches) and internal space of any automatic box we've tested. The CATLINK Young Pro also works well. Avoid compact models like Leo's Loo Too for cats over 15 lbs." },
+      { q: "How many litter boxes do I need for multiple large cats?", a: "The rule is N+1 (one more box than cats). For two large cats, you'd want 3 boxes. However, a single Litter-Robot 4 can serve 2-3 cats effectively because it cleans after every use — reducing the need for multiple boxes." },
+      { q: "Do large cats need special litter in automatic boxes?", a: "Standard clumping litter works for most large cats in automatic boxes. However, some large cats produce more waste — look for litters with strong clumping action and consider changing the waste drawer liner more frequently." },
+    ],
+  },
+  "stainless-steel-cat-fountains": {
+    title: "Best Stainless Steel Cat Water Fountains 2026 — Hygienic & Quiet",
+    description: "Stainless steel fountains are more hygienic than plastic — no micro-scratches for bacteria to hide in. We compare the best steel fountains from Pioneer Pet, YEAPAW, KittySpout, and more.",
+    faqs: [
+      { q: "Why is stainless steel better than plastic for pet fountains?", a: "Plastic develops micro-scratches over time that harbor bacteria, even with regular cleaning. Stainless steel is non-porous, resists bacterial growth, and is naturally more hygienic. It also doesn't leach chemicals and is easier to clean — most steel fountains are dishwasher safe." },
+      { q: "Are stainless steel fountains louder than plastic ones?", a: "No — the noise level depends on the pump and water flow design, not the material. The Pioneer Pet Raindrop is one of the quietest fountains available despite being all steel. Pumpless designs like YEAPAW are virtually silent." },
+      { q: "How do I clean a stainless steel cat fountain?", a: "Most steel fountains are dishwasher safe (top rack). For daily maintenance, rinse the bowl and refill with fresh water. Deep clean weekly: disassemble, run through dishwasher or hand wash with mild soap, and replace the filter every 2-4 weeks." },
+      { q: "Do stainless steel fountains cost more?", a: "Budget steel fountains like Pioneer Pet Raindrop start at $39 — actually cheaper than many plastic smart fountains. Premium steel options like YEAPAW ($93) cost more due to pumpless wireless design. Overall, steel fountains are competitive on price." },
+    ],
+  },
+  "automatic-feeders-for-2-cats": {
+    title: "Best Automatic Cat Feeders for 2 Cats 2026 — Dual Feeding Solutions",
+    description: "Feeding two cats with one automatic feeder? We found the best options for multi-cat homes — dual trays, large capacity, and portion splitting that actually works.",
+    faqs: [
+      { q: "Can two cats share one automatic feeder?", a: "Yes — but you need the right setup. Feeders with dual trays (like Petlibro Granary with splitter) let each cat eat from their own bowl. Large-capacity feeders (6L+) can hold enough for two cats for a week. Camera feeders let you confirm both cats actually ate." },
+      { q: "How do I stop one cat from eating the other's food?", a: "Microchip-activated feeders are the gold standard but expensive ($150-250). For budget solutions, use a feeder with a splitter tray (Petlibro sells one) placed in different spots, or schedule meals when you're home to supervise. Some feeders let you dispense small portions frequently to prevent food guarding." },
+      { q: "What capacity feeder do I need for 2 cats?", a: "For two cats eating 1/2 cup each per day: a 4L feeder lasts about 10-12 days, a 6L feeder lasts 15-18 days. The WOPET 6L at $89 is the best value for dual-cat capacity." },
+      { q: "Should I get one feeder or two for my cats?", a: "One large feeder works for most two-cat homes and saves money. Two small feeders are better if your cats eat different foods, need different portion sizes, or tend to fight over food. The Petlibro Granary with splitter is a good middle ground." },
     ],
   },
 };

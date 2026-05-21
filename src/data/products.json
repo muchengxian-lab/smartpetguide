@@ -224,6 +224,40 @@
       "category": "fountain",
       "weight": 0.8,
       "warranty": "1 year"
+    },
+    {
+      "id": "yeapaw-steel-fountain",
+      "name": "YEAPAW Stainless Steel Fountain",
+      "brand": "YEAPAW",
+      "price": 93,
+      "amazonUrl": "https://www.amazon.com/dp/B0G9177T67?tag=smartpetgui0a-20",
+      "imageUrl": "https://m.media-amazon.com/images/I/71z4mT9wBXL._AC_SL1500_.jpg",
+      "rating": 4.3,
+      "reviewCount": 1200,
+      "features": ["Stainless steel buckets & bowl", "Pumpless design", "2.5L capacity", "Wireless", "Ultra-quiet"],
+      "pros": ["100% stainless steel (no plastic contact)", "Pumpless = virtually silent", "Wireless design", "Easy to disassemble and clean"],
+      "cons": ["Expensive at $93", "Small 2.5L capacity", "Newer brand"],
+      "bestFor": ["Hygiene-focused owners", "Quiet homes", "Cats who prefer steel over plastic"],
+      "category": "fountain",
+      "weight": 1.5,
+      "warranty": "1 year"
+    },
+    {
+      "id": "kittyspout-steel",
+      "name": "KittySpout Stainless Steel Fountain",
+      "brand": "KittySpout",
+      "price": 50,
+      "amazonUrl": "https://www.amazon.com/dp/B0D5DS439M?tag=smartpetgui0a-20",
+      "imageUrl": "https://m.media-amazon.com/images/I/51QoDNga2BL._AC_SL1080_.jpg",
+      "rating": 4.3,
+      "reviewCount": 800,
+      "features": ["Stainless steel body", "Quiet pump", "Dishwasher safe", "Circulating flow", "Replaceable filter"],
+      "pros": ["Affordable at $50", "Fully dishwasher safe", "Good middle-ground capacity", "Solid 4.3★ rating"],
+      "cons": ["Wired (not cordless)", "Basic filtration", "No smart features"],
+      "bestFor": ["Mid-budget buyers", "Dishwasher owners", "Simplicity-first buyers"],
+      "category": "fountain",
+      "weight": 1.2,
+      "warranty": "1 year"
     }
   ],
   "cameras": [
