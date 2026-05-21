@@ -211,6 +211,87 @@ Git:       ✅ 干净
 
 ---
 
+## 会话：2026-05-21（Day 3 续6）— 阶段 4 P0 + P1 内容冲刺
+
+### 完成事项
+- [x] **P0-1: Best GPS Dog Trackers Without Monthly Fee**（+2 GPS 产品，3 款推荐）
+- [x] **P0-2: Best Pet Cameras Without Subscription**（+2 摄像头产品，4 款推荐）
+- [x] **P0-3: Petlibro Granary 评测增强**（BSR #1,173 爆款强调）
+- [x] **P1-1: Best Litter Boxes for Large Cats**（LR4 + CATLINK + PetSafe + Elspet）
+- [x] **P1-2: Best Stainless Steel Cat Water Fountains**（+2 不锈钢产品，3 款推荐）
+- [x] **P1-3: Best Automatic Feeders for 2 Cats**（Petlibro + WOPET + PETKIT + DOGNESS）
+- [x] 18 → 24 款产品（+6 款新产品）
+- [x] best/[slug].astro 支持自定义产品列表（curated lists）
+- [x] Vercel 部署（dpl_5zGo5TvEtzpSeYCtN34xoV8ampbF → dpl_G9v8NSpahEkaRDqg6yNHLeXbtXxR）
+- [x] 修复 tractive-gps 重复条目 + JSON 尾逗号错误
+
+### 阶段 4 状态：**complete** ✅
+### 累计：33 → **38 页** | 18 → **24 款产品**
+
+---
+
+## 会话：2026-05-21（Day 3 续7）— Skills 配置
+
+### 完成事项
+- [x] 安装 `seo-content-optimizer`（302 installs）— SEO 关键词优化
+- [x] 安装 `article-content`（680 installs）— 长文评测/指南写作
+- [x] 安装 `copywriting`（1.2K installs）— 标题/CTA 转化文案
+- [x] 安装 `affiliate-marketing`（812 installs）— 联盟营销策略
+- [x] 创建 `SKILLS.md` — 13 个 Skills 的阶段映射使用规范
+- [x] Git commit + push（1a5c919 → 5f32675）
+
+### 已配置 13 个 Skills
+`planning-with-files-zh` `seo-content-optimizer` `article-content` `copywriting` `affiliate-marketing` `agent-browser` `frontend-design` `verify` `run` `simplify` `review` `micro-saas-launcher` `news-monitor`
+
+---
+
+## 会话：2026-05-21（Day 3 续8）— 阶段 5 对比文 + 品种拓展
+
+### 完成事项
+- [x] **LR4 vs PetSafe ScoopFree 对比**（sifting vs crystal，3年总成本对比）
+- [x] **Furbo vs eufy 对比**（订阅 vs 无订阅，treat tossing vs 本地存储）
+- [x] **Golden Retriever 品种专题**（GPS + feeder + camera + fountain 推荐）
+- [x] **Multiple Cats 品种专题**（litter box + fountain + feeder + N+1 规则）
+- [x] **GPS 追踪器购买指南**（订阅 vs 无订阅/范围/电池/防水）
+- [x] 修复 PETKIT P2 残留引用
+- [x] Vercel 部署（dpl_8HoQshYHQFxxEFuxmadLHyw3sGQQ）
+
+### 阶段 5 状态：**complete** ✅
+### 累计：38 → **43 页** | 24 款产品
+
+### 里程碑
+| M1 | M2 | M3 | M4 | **M5** |
+|------|------|------|------|------|
+| ✅ | ✅ | ✅ | ✅ | ✅ |
+
+---
+
+## 会话：2026-05-21（Day 3 续9）— GSC 数据检查 + 社交引流
+
+### GSC 数据
+- [x] Playwright 浏览器登录 GSC → 效果/索引/站点地图 3 个页面全部查看
+- **站点地图**：✅ 成功，17 个 URL 已发现，上次读取 2026-05-21
+- **效果数据**：⏳ 正在处理（预计 1-3 天）
+- **索引编制**：⏳ 正在处理
+- **site: 搜索**：仅首页被索引（正常，新站 2 天）
+- [x] 手动请求索引 GPS no-fee 页面
+
+### Reddit 社交引流
+- [x] `agent-browser` 调研 r/dogs r/CatAdvice 相关帖子
+- [x] 找到 3 个高匹配度 GPS 追踪器帖子
+- [x] 起草 3 条回复文案（GPS追踪器 + 自动喂食器）
+- ⚠️ **待手动发布**：u/Additional_Diver3250 需先攒 ~10 karma
+
+### Pinterest 社交引流
+- [x] 登录验证成功
+- [x] 规划 5 张 Pin 图方案（Canva 模板 + 尺寸 + 配色）
+- ⚠️ **待手动制作**：Canva 制图后上传
+
+### 当前状态
+- **43 页在线** | **24 款产品** | **M5 达成** | **社交待手动完成**
+
+---
+
 ## 测试结果
 | 测试 | 输入 | 预期结果 | 实际结果 | 状态 |
 |------|------|---------|---------|------|
@@ -226,6 +307,10 @@ Git:       ✅ 干净
 | 产品配图 + 架构重构 | `npm run build` | 33页构建 | 2.31s，0 错误 | ✅ |
 | 关键词调研 + 计划重整 | — | — | findings.md/task_plan.md 已更新 | ✅ |
 | 项目审计 + 偏移修复 | `npm run build` | 33页，0偏移 | 2.59s，0 错误 | ✅ |
+| 阶段 4 P0+P1 内容 | `npm run build` | 38页 | 2.57s，0 错误 | ✅ |
+| 阶段 5 对比+品种+指南 | `npm run build` | 43页 | 2.58s，0 错误 | ✅ |
+| GSC 站点地图验证 | 登录 GSC | 17 URL 已发现 | 成功，处理中 | ✅ |
+| Reddit 帖子调研 | 搜索 r/dogs r/CatAdvice | 找到 3 个匹配帖 | 已起草文案 | ✅ |
 
 ## 错误日志
 | 时间戳 | 错误 | 尝试次数 | 解决方案 |
@@ -237,15 +322,20 @@ Git:       ✅ 干净
 | 2026-05-21 | 全站子页面 404 | 1 | vercel.json 路由重写规则错误，改为 cleanUrls + trailingSlash |
 | 2026-05-21 | 分类导航页 404（best/reviews/compare/guides） | 1 | 创建 4 个 index.astro 分类索引页 |
 | 2026-05-21 | Amazon 链接找不到产品 | 1 | 所有 ASIN 为假占位符，逐个搜索真实 ASIN 替换 |
+| 2026-05-21 | 新增对象条目掉到 Record }; 闭合后 | 3 | 编辑时替换 new_string 包含了闭合};需拆分 |
+| 2026-05-21 | JSON 数组末尾逗号（删除产品后） | 2 | products.json 删除尾元素后去掉尾逗号 |
+| 2026-05-21 | tractive-gps 产品重复 | 1 | 编辑新增 GPS 产品时原条目被保留导致重复 |
+| 2026-05-21 | Reddit 0 textarea（无法评论） | — | 新号 0 karma，需手动攒分后发布 |
+| 2026-05-21 | Pinterest 动态 UI 无 Create Pin 按钮 | — | 待用户手动 Canva 制图后上传 |
 
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 阶段 3 完成，阶段 4 待启动（5个阶段全部对齐，数字无偏移） |
-| 我要去哪里？ | 阶段 4 → P0: GPS无订阅费追踪器 + 摄像头无订阅费 + Petlibro评测强化 |
+| 我在哪里？ | 阶段 5 完成（43 页/24 产品/M5 达成），社交引流待手动操作，阶段 6 待 GSC 有数据后启动 |
+| 我要去哪里？ | 等待 GSC 数据出现 → 阶段 6 数据分析优化；或继续内容冲刺冲 50 页 |
 | 目标是什么？ | 日均 UV 3000-10000，月收入 $500-2000（12个月） |
-| 我学到了什么？ | 选品=关键词先行+BSR验证+评分过滤；Amazon搜索建议是需求最佳来源；数据源统一避免假ASIN再生 |
-| 我做了什么？ | Day 3: 基础搭建+变现激活+品类拓展+Bug修复+配图+架构重构+关键词调研+计划重整+项目审计 |
+| 我学到了什么？ | Reddit 新号需先攒 karma；Pinterest 动态 UI 难自动化；GSC 新站数据需 3-7 天；Record 对象添加条目需注意 }; 闭合位置 |
+| 我做了什么？ | Day 3（全天）: 阶段 1→5 全部完成，Skills 13 个配置，GSC 检查，社交文案/方案，43 页 + 24 产品上线 |
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*

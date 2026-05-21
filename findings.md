@@ -125,5 +125,25 @@
 | 标题 | Fraunces |
 | 正文 | Atkinson Hyperlegible |
 
+## GSC 数据（2026-05-21）
+- 站点地图：✅ 成功提交，17 URL 已发现
+- 效果数据：⏳ 处理中，预计 1-3 天
+- 索引：仅首页，43 页等待爬取
+- 结论：完全正常，新域名需 1-4 周完整索引
+
+## 社交引流发现（2026-05-21）
+
+### Reddit
+- r/dogs 有多个 GPS 追踪器讨论帖（"subscription ridiculous" 匹配度极高）
+- u/Additional_Diver3250 需先攒 ~10 karma 才能在主流子版块发帖
+- 回复中嵌入链接在宠物类子版块比较自然（推荐型回复）
+- Old Reddit (old.reddit.com) 比新版更适合自动化
+
+### Pinterest
+- Pin 创建 UI 是动态 React 组件，自动化困难
+- 推荐方案：Canva 手动制图 → 手动上传
+- 最佳尺寸：1080×1920px，Forest+Honey 配色
+- 5 张 Pin 覆盖：GPS/摄像头/猫砂盆/喂食器 核心品类
+
 ---
 *每次调研后更新此文件*
