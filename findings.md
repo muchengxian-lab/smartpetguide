@@ -165,7 +165,11 @@
 
 ### Pinterest
 - 5 张 Pin 已发布（5/21）
-- 今日尝试创建新 Pin：图片已上传 + 表单已填写，可能存为草稿，需手动发布确认
+- **2 张新 Pin 已发布（5/22）**：
+  - Stainless Steel Cat Water Fountains — Why Steel Beats Plastic → /best/stainless-steel-cat-fountains/
+  - Best Pet Cameras With NO Subscription 2026 → /best/pet-cameras-no-subscription/
+- 累计 **7 张 Pin**，覆盖 5 品类
+- 1 张草稿待确认（Petlibro 喂食器对比图）
 
 ## AI 搜索调研（2026-05-21 · Perplexity 实测）
 
