@@ -135,7 +135,8 @@
 - **目标**：养号后月均 1K-5K PV
 
 #### 辅助渠道
-- [ ] **Flipboard**：一次性设置 RSS 自动同步（1-2h，零维护）
+- [x] **Flipboard**：注册账号+Magazine创建，RSS 自动同步需邮件申请发布者权限 → **暂时搁置**
+- [x] **RSS 重写**：6 条目→50+条目，域名 .com→.net，描述 300+ 字
 - [ ] **Medium**：改写 3-5 篇主站文章，设 canonical 回流（每周 1-2 篇）
 - [ ] **Quora**：每周回答 3-5 个宠物智能设备问题（3-6 月复利）
 - [ ] **Product Hunt**：一次性 Launch"Wirecutter for Pet Tech"拿 backlink
