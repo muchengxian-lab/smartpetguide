@@ -552,24 +552,35 @@ GPS 整体(Trends 2)         →  ⚠️ 暂停投入
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 51 页在线，三线引流全部启动，GSC 数据等待中 |
-| 我要去哪里？ | Pinterest 100+ Pin、FB 养号 1 周后可推广、Reddit 养号 2 周 |
+| 我在哪里？ | 70 页 M7 达标，三线引流全部启动，GSC 数据等待中 |
+| 我要去哪里？ | M8: 150 页规模化；Pinterest 100+ Pin；FB/Reddit 养号后推广 |
 | 目标是什么？ | 日均 UV 3K-10K，月收入 $500-2K（12 个月） |
-| 我学到了什么？ | Pinterest 是最安全稳定的引流渠道；Reddit 自动化=必死；Facebook Groups 零风险高转化 |
-| 我做了什么？ | 今天：1 篇对比（51页）+ 引流调研 + Pinterest 第1轮9Pin + FB 8群入群 + Reddit 新号 |
+| 我学到了什么？ | 1)Pinterest 最安全稳定 2)Reddit 自动化=必死 3)FB Groups 零风险 4)Hemingway Grade 8 是关键写作基准 |
+| 我做了什么？ | 内容冲刺 51→70 页；引流三线启动；Pinterest 7→16 Pin；21 篇评测 Grade 8 达标 |
 
 ---
-## 今日产出汇总（2026-05-22）
+## 今日产出汇总（2026-05-22，Day 5）
 
 | 类型 | 详情 |
 |------|------|
-| 内容 | +1 对比文（Petlibro vs PETKIT），50→**51 页** |
-| 调研 | 8 渠道引流调研报告（traffic-research.md，631行，19来源） |
-| Pinterest | 24 产品图 + 41 Pin 计划 + 第 1 轮 9 个 Best 列表 Pin 发布（7→**16**） |
-| Facebook | 加入 8 个群组（6猫+2狗），开始养号观察 |
-| Reddit | 旧号全废（10条移除），新号 `honest_pet_reviews` 注册 |
-| GSC | 数据仍处理中，site: 搜索 3 页已索引 |
-| Git | 8 次提交，全部推送 |
+| **内容冲刺** | 51→**70 页**（+19篇）：评测×6 + 品种×4 + 指南×8 + 对比×1 |
+| **质量优化** | 21 篇评测 verdict 全部重写为 Hemingway Grade 8 风格 |
+| **引流调研** | 8 渠道深度调研（traffic-research.md，19 来源验证） |
+| **策略确定** | 三线并进：Pinterest 提频 + Facebook Groups + Reddit 养号 |
+| **Pinterest** | 24 产品图 + 41 Pin 计划 + 第 1 轮 9 个 Best Pin（7→**16**） |
+| **Facebook** | 8 群组入群（6猫+2狗），养号观察期 |
+| **Reddit** | 旧号 `Additional_Diver3250` 全废（10条移除），新号 `honest_pet_reviews` Day 1 |
+| **GSC** | 数据仍处理中，site: 搜索 3 页已索引 |
+| **Amazon AA** | 29 次点击，$0 佣金（确认全部为测试点击） |
+| **Git** | 14 次提交，全部推送 |
+
+### 里程碑进度
+```
+M1 ██ Day 1 ✅    M2 ██ Day 3 ✅    M3 ██ Day 3 ✅
+M4 ██ Day 3 ✅    M5 ██ Day 4 ✅    M6 ██ Day 4 ✅
+M7 ██ Day 5 ✅ 刚达标              
+M8 ░░ Month 2-3     M9 ░░ Month 4-6
+```
 
 ---
 | 我要去哪里？ | 等 GSC 数据 → 阶段 6 数据分析；或阶段 8 社交持续；或阶段 9 多语言 |
