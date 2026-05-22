@@ -211,4 +211,29 @@
 - About 页 EEAT 信号：团队描述+测试方法+透明盈利+AboutPage Schema
 
 ---
+
+## 引流渠道调研（2026-05-22 · 完整报告见 traffic-research.md）
+
+### 核心结论：三线并进
+
+| 线 | 渠道 | 优先级 | 风险 | 目标 PV |
+|----|------|--------|------|---------|
+| 1 | Pinterest 提频 | P0 | 极低 | 2-3 月后 2K-10K/月 |
+| 2 | Facebook Groups | P0 | 低 | 1 月后 500-3K/月 |
+| 3 | Reddit 新号养号 | P1 | 高 | 养号 2 周后 1K-5K/月 |
+
+### 关键数据
+- Pinterest：96% 搜索不带品牌名，Pin 生命周期 6-12 月，ROAS 高于 FB/IG 30%
+- Facebook Groups：案例 30 天零广告费获取 12 个客户
+- Reddit：转化率 2-3x vs 社交媒体，但必须 90/10 法则
+- TikTok：affiliate 互动率 5.2%（vs IG 2.0%），faceless 模式月入可达 $30-40K
+- Medium：主要价值 canonical 借用 DA95 域名权威为主站"拉票"
+- Quora：74% 流量来自 Google，回答可持续引流 3-5 年
+
+### 已确认的教训
+- Reddit 自动化发帖 100% 被检测 · 旧号 10 条全部移除
+- 新号 Day 1 放链接 = 必死
+- Pinterest 7 Pin 全部存活，是目前最安全渠道
+
+---
 *每次调研后更新此文件*

@@ -496,6 +496,28 @@ GPS 整体(Trends 2)         →  ⚠️ 暂停投入
 ### 产出：50 → **51 页** | 对比文 9 → **10** | Pinterest 5 → **7** | Reddit 4 → **7**
 
 ---
+
+## 会话：2026-05-22 #3 — 引流渠道调研 + 策略确定
+
+### 完成事项
+- [x] **8 渠道全面调研**：Pinterest/Facebook Groups/Reddit/TikTok/Medium/Quora/Flipboard/Product Hunt
+- [x] 19 个来源数据验证（WebFetch 抓取真实案例）
+- [x] 三线并进策略确定：Pinterest 提频 + Facebook Groups + Reddit 养号
+- [x] 0-30 天逐周行动方案（详细到每天）
+- [x] 资源需求清单（账号/素材/工具/时间）
+- [x] 旧账号复盘：Additional_Diver3250 封号根因分析
+- [x] **阶段 8 社交引流从松散计划升级为系统化三线策略**
+- [x] 完整报告保存至 traffic-research.md
+
+### 策略变更
+| 旧策略 | 新策略 | 理由 |
+|--------|--------|------|
+| 单推 Reddit+Pinterest | 三线并进（Pin+FB+Reddit） | 分散风险，多渠道复利 |
+| Reddit 自动化 Playwright | 手动养号 2 周 | 自动化 100% 被检测 |
+| Pinterest 每周 1-2 Pin | 每天 3-5 Pin | 量变到质变，100+ Pin 才见规模 |
+| 无 Facebook 布局 | P0 立即入群 | 宠物群组天然匹配，风险最低 |
+
+---
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
