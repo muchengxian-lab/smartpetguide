@@ -17,6 +17,10 @@ export function getStaticPaths() {
     { params: { slug: "best-feeder-for-french-bulldog" } },
     { params: { slug: "best-devices-for-golden-retrievers" } },
     { params: { slug: "best-devices-for-multiple-cats" } },
+    { params: { slug: "best-devices-for-labrador-retrievers" } },
+    { params: { slug: "best-devices-for-german-shepherds" } },
+    { params: { slug: "best-devices-for-senior-cats" } },
+    { params: { slug: "best-devices-for-small-dogs" } },
   ];
 }
 
@@ -83,6 +87,70 @@ const breedMap: Record<string, BreedData> = {
       { q: "How many litter boxes do I need for multiple cats?", a: "The standard rule is N+1 (one more box than cats). A single Litter-Robot 4 can replace 2-3 regular boxes because it cleans after every use — meaning it's always fresh for the next cat. For 3+ cats, we recommend one Litter-Robot plus one manual backup box." },
       { q: "Can one automatic feeder serve multiple cats?", a: "Yes — but you need a feeder with dual trays or a splitter accessory (Petlibro sells one for $25). The bigger issue is preventing one cat from eating the other's food. Feeders with camera and weight sensors help, but microchip-activated feeders are the gold standard for multi-cat portion control." },
       { q: "Do I need multiple water fountains for multiple cats?", a: "Not necessarily — one large 3L fountain can serve 2-3 cats. Place it in a neutral location (not near food or litter boxes). If you have a multi-story home, put one fountain per floor. Cats prefer drinking away from their food source, so separate the fountain from the feeding station." },
+    ],
+  },
+  "best-devices-for-labrador-retrievers": {
+    title: "Best Smart Devices for Labrador Retrievers 2026 — GPS, Feeders & More",
+    description: "Labs are America's most popular dog — food-obsessed, water-loving, and endlessly energetic. We've picked the best GPS trackers, smart feeders, and cameras that work for this iconic breed.",
+    breed: "Labrador Retriever",
+    recommendations: [
+      { category: "Best GPS Tracker", productId: "tractive-gps", reason: "Labs will follow a scent for miles — and swim across a lake while doing it. The Tractive GPS LTE is waterproof, works in 170+ countries, and has a virtual fence to alert you the moment your Lab wanders too far. The activity monitor also tracks if your Lab is getting enough daily exercise." },
+      { category: "Best Feeder", productId: "wopet-automatic", reason: "Labs are legendary over-eaters who will eat themselves into obesity. The WOPET's 6L hopper handles large portions, and 10 meals/day scheduling lets you split food into small, frequent meals — reducing the risk of bloat (GDV), which Labs are prone to." },
+      { category: "Best Camera", productId: "furbo-360", reason: "Labs are prone to separation anxiety and destructive chewing when bored. The Furbo 360's treat tossing keeps them engaged, and the bark alerts tell you if your Lab is stressed. The 360° pan/tilt tracks their movement around the room." },
+    ],
+    tips: ["Labs are the #1 breed for obesity — use precise portion control, not free-feeding", "Split meals into 3-4 portions daily to reduce bloat (GDV) risk — Labs have deep chests", "Waterproof GPS is essential — Labs will swim with their tracker on", "Provide plenty of chew toys alongside smart devices — bored Labs destroy furniture", "Exercise before meals, not after — wait 1 hour after eating before heavy activity"],
+    faqs: [
+      { q: "Do Labrador Retrievers really need a GPS tracker?", a: "Yes — Labs are scent-driven and will follow interesting smells without looking up. They're also water dogs who may swim far from shore. A waterproof GPS tracker like the Tractive is the #1 smart device for Lab owners." },
+      { q: "What's the best feeder for a food-obsessed Lab?", a: "A feeder with precise portion control and slow-feed capability. The WOPET at $89 handles large portions with 10 meals/day scheduling. Add a slow-feed bowl insert to physically slow down eating. Never free-feed a Lab — they lack the 'full' signal that other breeds have." },
+      { q: "Are pet cameras useful for Labs?", a: "Very — Labs are prone to separation anxiety and may destroy furniture, shoes, or walls when anxious. A camera with two-way audio lets you check in and talk to your dog. The Furbo 360's treat tossing is especially effective for Labs (they'll do anything for food)." },
+    ],
+  },
+  "best-devices-for-german-shepherds": {
+    title: "Best Smart Devices for German Shepherds 2026 — Tech for Working Dogs",
+    description: "German Shepherds are intelligent working dogs with high exercise needs and strong protective instincts. We've picked the best GPS trackers, smart feeders, and cameras for GSDs.",
+    breed: "German Shepherd",
+    recommendations: [
+      { category: "Best GPS Tracker", productId: "aorkuler-gps", reason: "GSDs are often trained for off-leash work, hiking, and protection — where cell coverage may be spotty. The Aorkuler's radio-based tracking works without cell towers and shows real-time direction and distance. The handheld controller is great for training sessions in remote areas." },
+      { category: "Best Feeder", productId: "petkit-fresh-element", reason: "GSDs have sensitive stomachs and are prone to digestive issues. The PETKIT's rotary sealing system keeps kibble fresher longer, and the 4L capacity handles a large dog's meals. Precise portioning helps prevent bloat — a serious risk in deep-chested breeds like GSDs." },
+      { category: "Best Camera", productId: "eufy-pet-cam", reason: "GSDs are prone to separation anxiety due to their strong pack bonding. The eufy's 2K resolution with 360° pan/tilt auto-tracking follows your dog around the room, and local SD storage means no monthly fees — important for multi-device working dog households." },
+    ],
+    tips: ["GSDs are #2 on the bloat risk list — split meals into 3+ portions and use slow-feed bowls", "Mental stimulation matters as much as physical exercise — puzzle feeders are great complements to smart feeders", "GSDs bond intensely with one person — a camera with two-way audio helps ease separation anxiety", "Track exercise metrics — GSDs need 1-2 hours of daily activity. The Tractive's activity monitor tracks this", "Joint health starts early — elevated feeders reduce neck strain as GSDs age"],
+    faqs: [
+      { q: "What's the most important smart device for a German Shepherd?", a: "A GPS tracker — GSDs are high-energy working dogs who need off-leash exercise. Their protective nature also means they may chase perceived threats. Knowing exactly where your GSD is at all times gives peace of mind whether you're hiking or in your backyard." },
+      { q: "Do German Shepherds need a special type of feeder?", a: "They need large-kibble compatibility and precise portion control. GSDs eat 3-5 cups daily and are at high risk for bloat (GDV). Choose a feeder that splits portions into 3-4 small meals rather than 1-2 large ones. Elevate the feeder 6-12 inches to reduce neck strain." },
+      { q: "Are smart devices good for working GSDs (police, service, protection)?", a: "Yes — GPS trackers are essential for working dogs who may be deployed off-leash. Activity tracking helps handlers monitor fitness and fatigue. Cameras in kennels or crates let handlers check on dogs during rest periods. The Aorkuler is especially suited for working scenarios with its no-phone-needed handheld controller." },
+    ],
+  },
+  "best-devices-for-senior-cats": {
+    title: "Best Smart Devices for Senior Cats 2026 — Health Monitoring & Comfort",
+    description: "Senior cats (7+ years) need different things: easier access, health tracking, and quiet operation. We've picked the best smart devices designed with older cats in mind.",
+    breed: "Senior Cat",
+    recommendations: [
+      { category: "Best Litter Box", productId: "petsafe-scoopfree", reason: "Senior cats may have arthritis or mobility issues making it hard to climb into tall litter boxes. The PetSafe ScoopFree has a low entry height, and the crystal litter system means fewer deep cleans — less stress for older cats. Disposable trays mean you never have to scrub." },
+      { category: "Best Fountain", productId: "pioneer-pet-raindrop", reason: "Senior cats are prone to kidney disease and dehydration. The Pioneer Pet Raindrop's gentle, quiet water flow encourages drinking without scaring older cats. Stainless steel is hygienic and the low profile is easy for arthritic cats to reach. At $39 with 18,500+ reviews, it's proven and trusted." },
+      { category: "Best Feeder", productId: "petlibro-granary", reason: "The Petlibro Granary's built-in camera lets you confirm your senior cat is eating regularly — decreased appetite is often the first sign of illness in older cats. Motion alerts tell you when your cat approaches the feeder, and you can check in remotely to ensure they're eating." },
+    ],
+    tips: ["Senior cats need 30-50% more water intake than young cats — a fountain is the most important smart device you can buy", "Choose low-entry litter boxes — arthritis makes climbing difficult", "Position food, water, and litter on the same floor — stairs become challenging after age 10", "Monitor weight weekly — unexplained weight loss is the #1 warning sign in senior cats", "Choose quieter devices — older cats are more easily startled by motor noise"],
+    faqs: [
+      { q: "What's the most important smart device for a senior cat?", a: "A water fountain. Senior cats are at high risk for kidney disease and dehydration is the #1 contributor. Cats instinctively drink more from running water, and a fountain increases daily water intake by 30-50% compared to a still bowl. Stainless steel is best because it's more hygienic." },
+      { q: "Do senior cats need automatic litter boxes?", a: "Yes — but choose carefully. Senior cats may have arthritis and need a low entry height. The PetSafe ScoopFree is ideal ($299, low profile, disposable trays). Avoid tall boxes like the CATLINK that require climbing. The automatic cleaning also means less stress from a dirty box — senior cats may refuse to use a soiled box." },
+      { q: "How can I tell if my senior cat is using smart devices properly?", a: "Cameras are game-changers for senior cat monitoring. The Petlibro Granary's camera shows if your cat is eating normally. Weight-tracking litter boxes (Litter-Robot 4, CATLINK) log each visit — a sudden change in bathroom frequency can signal UTIs, kidney issues, or diabetes. Set up motion alerts so you're notified of unusual activity patterns." },
+    ],
+  },
+  "best-devices-for-small-dogs": {
+    title: "Best Smart Devices for Small Dogs 2026 — Compact, Quiet & Safe",
+    description: "Small dogs (under 20 lbs) need devices sized for their tiny bodies — not just mini versions of big-dog gear. We've picked the best compact feeders, fountains, and cameras for Chihuahuas, Yorkies, Pugs, and other small breeds.",
+    breed: "Small Dog",
+    recommendations: [
+      { category: "Best Feeder", productId: "dogness-mini", reason: "Small dogs need tiny, precise portions — most large feeders dispense portions that are too big. The DOGNESS Mini's 3.5L hopper and anti-clog design handle small kibble perfectly. The stainless steel bowl is hygienic and compact, fitting in small apartments." },
+      { category: "Best Fountain", productId: "petkit-eversweet", reason: "Small dogs can be intimidated by large, noisy fountains. The PETKIT Eversweet runs at just 30dB (whisper-quiet) and has a low drinking height accessible to toy breeds. The 2L capacity is plenty for dogs under 20 lbs." },
+      { category: "Best Camera", productId: "xpai-4k-camera", reason: "Small dogs are often apartment dwellers whose owners work long hours. The xpai 4K at just $43 with 64GB built-in storage and 4K resolution lets you check on your tiny companion without a subscription. The pan/tilt covers the whole room — find your small dog even if they're hiding under furniture." },
+    ],
+    tips: ["Small dogs have tiny stomachs — feed 3-4 micro-meals daily rather than 1-2 regular meals", "Portion sizes matter more for small dogs — a 10% overfeed for a Chihuahua is proportionally huge", "Choose quiet motors — small breeds are often more noise-sensitive than large breeds", "Low drinking heights are essential — toy breeds can't reach tall fountains", "Small dogs are prone to dental issues — dry food from automated feeders should be supplemented with dental chews"],
+    faqs: [
+      { q: "Do small dogs really need smart devices?", a: "Yes — but for different reasons than large dogs. Small dogs are typically indoor/apartment dogs whose owners work full-time. A camera and automatic feeder combination ensures they're fed on schedule and you can check in during the day. Small dogs are also more likely to be stolen — a GPS tracker provides peace of mind." },
+      { q: "What feeder capacity do I need for a small dog?", a: "Small dogs (under 20 lbs) eat 1/2 to 1 cup per day. A 3-4L feeder holds 15-20 cups — enough for 2-3 weeks. You don't need a 6L feeder designed for large breeds. The DOGNESS Mini at 3.5L is the right size. Make sure the feeder can dispense portions as small as 1/8 cup." },
+      { q: "Are GPS trackers too bulky for small dogs?", a: "Some are. The Tractive GPS LTE weighs just 26g (under 1 oz) and works for dogs as small as 8 lbs. The Aorkuler at 150g is too heavy for toy breeds. For dogs under 5 lbs, even the lightest GPS trackers may be uncomfortable — consider a Bluetooth tile tracker for very small dogs." },
     ],
   },
 };
