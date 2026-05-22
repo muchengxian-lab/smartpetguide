@@ -24,6 +24,7 @@ export function getStaticPaths() {
     { params: { slug: "pioneer-pet-vs-yeapaw" } },
     { params: { slug: "xpai-vs-eufy" } },
     { params: { slug: "petkit-eversweet-vs-catit-pixi" } },
+    { params: { slug: "petlibro-vs-petkit" } },
   ];
 }
 
@@ -252,6 +253,32 @@ const compareMap: Record<string, CompareData> = {
       { q: "Is the Catit PIXI's water intake tracking useful?", a: "For health-conscious owners, yes — the PIXI's app estimates how much your cat drinks based on pump activity and water level changes. This can help detect early signs of kidney issues or diabetes, which are common in older cats. However, it's an estimate, not a precise measurement. If your cat has health concerns, it's a valuable extra layer of monitoring." },
       { q: "Which has cheaper long-term filter costs?", a: "PETKIT's multi-layer filters cost about $25-35/year (replacing every 4-6 weeks). Catit PIXI's filters run $40-55/year. Over 3 years, that's roughly a $45-60 difference — enough to nearly buy another PETKIT fountain. However, both are far cheaper than the cost of treating a dehydrated cat's urinary issues." },
       { q: "Do cats prefer one fountain over the other?", a: "The Catit PIXI has a unique advantage: 3 different drinking heights (stream, pool, and waterfall) that accommodate kittens, adult cats, and seniors in one fountain. The PETKIT's single-stream design is simpler. Most cats will drink from either, but multi-cat homes with cats of different sizes will find the PIXI's ergonomic design more universally accessible." },
+    ],
+  },
+  "petlibro-vs-petkit": {
+    title: "Petlibro Granary vs PETKIT Fresh Element (2026) — Camera Feeder or Freshness First?",
+    description: "Petlibro Granary Camera Feeder vs PETKIT Fresh Element Solo head-to-head. We compare camera capability, food freshness, app experience, capacity, and which $130-140 smart feeder is the right pick for your pet.",
+    winner: "The Petlibro Granary wins for anxious pet parents who want to see their cat eating — the built-in 1080p camera with night vision and motion alerts effectively replaces a separate pet camera ($30-100 value). But the PETKIT Fresh Element wins on food preservation with its superior rotary sealing system, easier disassembly for cleaning, and more reliable kibble dispensing. At just $10 apart, this isn't about price — it's about whether you value visual check-ins (Petlibro) or food freshness and cleaning ease (PETKIT).",
+    productAId: "petlibro-granary",
+    productBId: "petkit-fresh-element",
+    comparisonRows: [
+      ["Price", "$139", "$129"],
+      ["Rating", "★★★★½ (4.5)", "★★★★⅖ (4.4)"],
+      ["Reviews", "8,700+", "6,100+"],
+      ["Camera", "1080p + Night Vision + Motion Alerts", "None"],
+      ["Two-Way Audio", "Yes", "No"],
+      ["Capacity", "3L or 5L", "4L"],
+      ["Food Preservation", "Standard hopper + desiccant", "Rotary sealing system (superior)"],
+      ["Meals Per Day", "Up to 10", "Up to 10"],
+      ["Cleaning", "Hopper and bowl detach", "Fully detachable, dishwasher-safe"],
+      ["Battery Backup", "No (sold separately)", "No (sold separately)"],
+      ["Warranty", "1 year", "1 year"],
+    ],
+    faqs: [
+      { q: "Is the Petlibro camera worth sacrificing food freshness?", a: "For most owners, yes — the camera is genuinely useful. You can confirm your pet ate, check food levels remotely, and get motion alerts if your pet approaches the feeder. However, the PETKIT's rotary seal really does keep kibble fresher longer, especially in humid climates. If you live in a dry climate and want visual peace of mind, Petlibro. If you live somewhere humid and care most about food quality, PETKIT." },
+      { q: "Which feeder is easier to clean?", a: "The PETKIT Fresh Element is noticeably easier to clean. Its hopper, bowl, and internal components all detach completely and many parts are dishwasher-safe. The Petlibro's camera module makes disassembly slightly more involved — you need to be careful around the lens. If deep cleaning is a priority, PETKIT wins." },
+      { q: "Which app is better — Petlibro or PETKIT?", a: "Both apps are solid, but Petlibro's is more polished and camera-focused — the live feed loads fast and motion alerts are reliable. PETKIT's app is functional but feels more utilitarian, with good feeding logs and low-food alerts. For the camera experience, Petlibro wins. For pure feeding management, they're comparable." },
+      { q: "Can either feeder handle large kibble?", a: "Both handle standard dry kibble up to about 15mm. The PETKIT's rotary mechanism can occasionally jam with irregularly shaped or very large kibble. The Petlibro's gravity-fed design is slightly more forgiving with odd-shaped kibble. If your pet eats large or irregular kibble, Petlibro is the safer bet." },
     ],
   },
 };
