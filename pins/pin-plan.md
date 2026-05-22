@@ -11,17 +11,68 @@
 
 ## 第 1 轮：Best 列表页（9 Pin — 最高 ROI）
 
-| # | 图片 | 标题 | 链接 |
-|---|------|------|------|
-| 1 | petlibro-granary.jpg | 10 Best Automatic Cat Feeders Tested & Reviewed (2026) | https://smartpetguide.net/best/automatic-cat-feeders/ |
-| 2 | litter-robot-4.jpg | 7 Best Self-Cleaning Litter Boxes — Real BSR Data & Owner Reviews | https://smartpetguide.net/best/self-cleaning-litter-boxes/ |
-| 3 | pioneer-pet-raindrop.jpg | Best Stainless Steel Cat Water Fountains — Why Steel Beats Plastic | https://smartpetguide.net/best/stainless-steel-cat-fountains/ |
-| 4 | xpai-4k-camera.jpg | Best Pet Cameras of 2026 — 4K, Night Vision & No Subscription Picks | https://smartpetguide.net/best/pet-cameras/ |
-| 5 | eufy-pet-cam.jpg | 5 Pet Cameras With NO Monthly Fee — Save $100+/Year | https://smartpetguide.net/best/pet-cameras-no-subscription/ |
-| 6 | nofee-gps-tracker.jpg | GPS Dog Trackers Without Monthly Fees — 3 Picks That Actually Work | https://smartpetguide.net/best/gps-trackers-no-monthly-fee/ |
-| 7 | litter-robot-4.jpg | Best Self-Cleaning Litter Boxes for Large Cats — Fits 15+ lb Breeds | https://smartpetguide.net/best/litter-boxes-for-large-cats/ |
-| 8 | petkit-eversweet.jpg | Best Smart Pet Water Fountains — App-Controlled Hydration for Cats & Dogs | https://smartpetguide.net/best/smart-pet-water-fountains/ |
-| 9 | wopet-feeder.jpg | Best Automatic Cat Feeders for 2 Cats — Dual-Pet Feeding Solutions | https://smartpetguide.net/best/automatic-feeders-for-2-cats/ |
+### Pin 1
+- **图片**：`petlibro-granary.jpg`
+- **标题**：10 Best Automatic Cat Feeders Tested & Reviewed (2026)
+- **描述**：From the $89 WOPET to the Petlibro Granary with 1080p camera — we tested and ranked every automatic feeder using real Amazon BSR data and verified reviews. Which one fits your cat and budget?
+- **链接**：https://smartpetguide.net/best/automatic-cat-feeders/
+- **标签**：automatic cat feeder, smart pet feeder, cat feeding, pet tech, best pet products
+
+### Pin 2
+- **图片**：`litter-robot-4.jpg`
+- **标题**：7 Best Self-Cleaning Litter Boxes — Real BSR Data & Owner Reviews
+- **描述**：Tired of scooping? We analyzed 7 self-cleaning litter boxes using verified Amazon rankings. Litter-Robot 4 ($699), PetSafe ScoopFree ($299), and more — find out which one actually works for your setup.
+- **链接**：https://smartpetguide.net/best/self-cleaning-litter-boxes/
+- **标签**：self cleaning litter box, automatic litter box, cat litter box, smart home pet, cat products
+
+### Pin 3
+- **图片**：`pioneer-pet-raindrop.jpg`
+- **标题**：Best Stainless Steel Cat Water Fountains — Why Steel Beats Plastic
+- **描述**：Plastic fountains get slimy and hard to clean. Stainless steel is more hygienic, dishwasher-safe, and cats prefer the taste. Pioneer Pet Raindrop ($39, 18,500+ reviews) vs YEAPAW ($93, pumpless) — top 3 picks compared.
+- **链接**：https://smartpetguide.net/best/stainless-steel-cat-fountains/
+- **标签**：cat water fountain, stainless steel fountain, cat health, pet hydration, cat drinking fountain
+
+### Pin 4
+- **图片**：`xpai-4k-camera.jpg`
+- **标题**：Best Pet Cameras of 2026 — 4K, Night Vision & No-Fee Picks
+- **描述**：Check on your pet without paying monthly fees. From the $43 xpai 4K (64GB built-in storage) to the Furbo 360 with treat tossing — 5 best pet cameras for every budget.
+- **链接**：https://smartpetguide.net/best/pet-cameras/
+- **标签**：pet camera, dog camera, pet monitoring, home security pet, pet tech gadgets
+
+### Pin 5
+- **图片**：`eufy-pet-cam.jpg`
+- **标题**：5 Pet Cameras With NO Monthly Fee — Save $100+/Year
+- **描述**：Why pay $6-10/month for cloud storage? These 5 pet cameras store footage locally with zero subscription fees. xpai 4K ($43), eufy ($129), and more tested picks.
+- **链接**：https://smartpetguide.net/best/pet-cameras-no-subscription/
+- **标签**：no subscription pet camera, budget pet camera, pet monitoring, dog camera, smart home
+
+### Pin 6
+- **图片**：`nofee-gps-tracker.jpg`
+- **标题**：GPS Dog Trackers Without Monthly Fees That Actually Work
+- **描述**：Most GPS trackers lock you into $5-15/month subscriptions. We found 3 alternatives that work without recurring fees — including the Aorkuler with handheld controller for off-grid adventures.
+- **链接**：https://smartpetguide.net/best/gps-trackers-no-monthly-fee/
+- **标签**：GPS dog tracker, no monthly fee, dog safety, pet tracker, dog products
+
+### Pin 7
+- **图片**：`litter-robot-4.jpg`
+- **标题**：Best Self-Cleaning Litter Boxes for Large Cats (15+ lb Breeds)
+- **描述**：Most automatic litter boxes are too small for Maine Coons, Ragdolls, and other big breeds. We found the 4 best options with spacious interiors and sturdy construction that won't scare large cats.
+- **链接**：https://smartpetguide.net/best/litter-boxes-for-large-cats/
+- **标签**：large cat litter box, Maine Coon, automatic litter box, big cat products, self cleaning litter box
+
+### Pin 8
+- **图片**：`petkit-eversweet.jpg`
+- **标题**：Best Smart Pet Water Fountains — App Hydration Tracking
+- **描述**：Smart fountains that track how much your cat drinks, send filter replacement alerts, and run whisper-quiet. PETKIT Eversweet (30dB!) vs Catit PIXI vs Homerunpet — full comparison.
+- **链接**：https://smartpetguide.net/best/smart-pet-water-fountains/
+- **标签**：smart pet fountain, cat hydration, pet health monitor, pet tech, cat drinking fountain
+
+### Pin 9
+- **图片**：`wopet-feeder.jpg`
+- **标题**：Best Automatic Feeders for 2 Cats — Stop Food Theft
+- **描述**：Got two cats with different diets? These automatic feeders handle multi-pet feeding with separate schedules, portion control, and even camera monitoring so you know who ate what.
+- **链接**：https://smartpetguide.net/best/automatic-feeders-for-2-cats/
+- **标签**：multi cat feeder, automatic cat feeder, two cats feeding, pet feeding station, cat products
 
 ### 变体标题（第 1 轮完成后追加）
 - "Top-Rated Automatic Cat Feeders According to 50,000+ Amazon Reviews"
@@ -166,64 +217,6 @@
 | Tractive GPS | tractive-gps.jpg |
 | No-Fee GPS Tracker | nofee-gps-tracker.jpg |
 | Aorkuler GPS | aorkuler-gps.jpg |
-
----
-
-## 快速操作（今日第 1 轮）
-
-1. 打开 pinterest.com → 登录 SmartPetGuide 账号
-2. 点 + → 创建 Pin → 拖拽图片
-3. 复制 paste 对应的标题、描述、链接
-4. 选图板（按品类分：Feeders / Litter Boxes / Fountains / Cameras / GPS）
-5. 每个 Pin 加 3-5 个标签
-6. 每个品类选择已有图板，如没有则新建
-
-### 今日 9 个 Pin 的描述文案
-
-**Pin 1** — 10 Best Automatic Cat Feeders Tested & Reviewed (2026)
-> From the $89 WOPET to the Petlibro Granary with 1080p camera — we tested and ranked every automatic feeder using real Amazon BSR data and verified reviews. Which one fits your cat and budget?
-> 🔗 https://smartpetguide.net/best/automatic-cat-feeders/
-> #automaticcatfeeder #petfeeding #smartpetproducts
-
-**Pin 2** — 7 Best Self-Cleaning Litter Boxes (Real BSR Data)
-> Tired of scooping? We analyzed 7 self-cleaning litter boxes using verified Amazon rankings. Litter-Robot 4 ($699), PetSafe ScoopFree ($299), and more — find out which one actually works for your setup.
-> 🔗 https://smartpetguide.net/best/self-cleaning-litter-boxes/
-> #selfcleaninglitterbox #catproducts #smarthomepet
-
-**Pin 3** — Best Stainless Steel Cat Water Fountains — Steel vs Plastic
-> Plastic fountains get slimy and hard to clean. Stainless steel is more hygienic, dishwasher-safe, and cats prefer the taste. Pioneer Pet Raindrop ($39, 18,500+ reviews) vs YEAPAW ($93, pumpless) — we break down the top 3.
-> 🔗 https://smartpetguide.net/best/stainless-steel-cat-fountains/
-> #catwaterfountain #stainlesssteel #cathealth
-
-**Pin 4** — Best Pet Cameras of 2026 — 4K, Night Vision & No-Fee Picks
-> Check on your pet without paying monthly fees. From the $43 xpai 4K (64GB built-in storage) to the Furbo 360 with treat tossing — here are the 5 best pet cameras for every budget.
-> 🔗 https://smartpetguide.net/best/pet-cameras/
-> #petcamera #dogcamera #petmonitoring
-
-**Pin 5** — 5 Pet Cameras With NO Monthly Fee — Save $100+/Year
-> Why pay $6-10/month for cloud storage? These 5 pet cameras store footage locally with zero subscription fees. xpai 4K ($43), eufy ($129), and more tested picks.
-> 🔗 https://smartpetguide.net/best/pet-cameras-no-subscription/
-> #nosubscription #petcamera #budgetpettech
-
-**Pin 6** — GPS Dog Trackers Without Monthly Fees That Actually Work
-> Most GPS trackers lock you into $5-15/month subscriptions. We found 3 alternatives that work without recurring fees — including the Aorkuler with handheld controller for off-grid adventures.
-> 🔗 https://smartpetguide.net/best/gps-trackers-no-monthly-fee/
-> #gpsdogtracker #nomonthlyfee #dogproducts
-
-**Pin 7** — Best Self-Cleaning Litter Boxes for Large Cats (15+ lb Breeds)
-> Most automatic litter boxes are too small for Maine Coons, Ragdolls, and other big breeds. We found the 4 best options with spacious interiors and sturdy construction that won't scare large cats.
-> 🔗 https://smartpetguide.net/best/litter-boxes-for-large-cats/
-> #largecat #mainecoon #automaticlitterbox
-
-**Pin 8** — Best Smart Pet Water Fountains — App Hydration Tracking
-> Smart fountains that track how much your cat drinks, send filter replacement alerts, and run whisper-quiet. PETKIT Eversweet (30dB!) vs Catit PIXI vs Homerunpet — full comparison.
-> 🔗 https://smartpetguide.net/best/smart-pet-water-fountains/
-> #smartpetfountain #cathealth #pettech
-
-**Pin 9** — Best Automatic Feeders for 2 Cats — Stop Food Theft
-> Got two cats with different diets? These automatic feeders handle multi-pet feeding with separate schedules, portion control, and even camera monitoring so you know who ate what.
-> 🔗 https://smartpetguide.net/best/automatic-feeders-for-2-cats/
-> #multicatfeeding #automaticfeeder #twocats
 
 ---
 
