@@ -1,52 +1,92 @@
 import rss from "@astrojs/rss";
+import products from "../data/products.json";
+
+// All product IDs and basic info
+const productMap = new Map();
+for (const [, items] of Object.entries(products)) {
+  for (const p of items) {
+    productMap.set(p.id, { name: p.name, brand: p.brand, price: p.price, rating: p.rating });
+  }
+}
+
+const SITE = "https://smartpetguide.net";
 
 const posts = [
-  {
-    title: "5 Best Self-Cleaning Litter Boxes of 2026",
-    description: "We tested the top automatic litter boxes to find the best for odor control, multi-cat homes, and budget.",
-    link: "/best/self-cleaning-litter-boxes/",
-    pubDate: new Date("2026-05-20"),
-  },
-  {
-    title: "5 Best Automatic Cat Feeders of 2026",
-    description: "Compare the best automatic pet feeders with app control, cameras, and portion management.",
-    link: "/best/automatic-cat-feeders/",
-    pubDate: new Date("2026-05-19"),
-  },
-  {
-    title: "Litter-Robot 4 Review — Is It Worth $699?",
-    description: "In-depth review after months of testing. Odor control, app experience, multi-cat performance.",
-    link: "/reviews/litter-robot-4-review/",
-    pubDate: new Date("2026-05-18"),
-  },
-  {
-    title: "Automatic Pet Feeder Buying Guide",
-    description: "Everything you need to know before buying an automatic pet feeder.",
-    link: "/guides/automatic-feeder-buying-guide/",
-    pubDate: new Date("2026-05-17"),
-  },
-  {
-    title: "Litter-Robot 4 vs Leo's Loo Too — Which Wins?",
-    description: "Head-to-head comparison of the two most popular self-cleaning litter boxes.",
-    link: "/compare/litter-robot-4-vs-leos-loo-too/",
-    pubDate: new Date("2026-05-16"),
-  },
-  {
-    title: "Best Feeder for French Bulldogs",
-    description: "French Bulldogs have unique feeding needs — we've picked the best feeders for this beloved breed.",
-    link: "/breed/best-feeder-for-french-bulldog/",
-    pubDate: new Date("2026-05-15"),
-  },
+  // — Best Lists —
+  { title: "10 Best Automatic Cat Feeders of 2026 — Tested & Reviewed", desc: "We tested and ranked the top automatic cat feeders using real Amazon BSR data and verified owner reviews. From the $89 WOPET to the Petlibro Granary with built-in 1080p camera, find the right feeder for your cat or dog.", link: "/best/automatic-cat-feeders/", date: "2026-05-22" },
+  { title: "7 Best Self-Cleaning Litter Boxes of 2026 — Real BSR Data", desc: "We analyzed 7 self-cleaning litter boxes using verified Amazon rankings. Litter-Robot 4 ($699), PetSafe ScoopFree ($299), CATLINK Young Pro ($399), and more — find out which one actually works for your home and cats.", link: "/best/self-cleaning-litter-boxes/", date: "2026-05-22" },
+  { title: "Best Stainless Steel Cat Water Fountains — Why Steel Beats Plastic", desc: "Plastic fountains develop biofilm that's hard to clean. We compared the top 3 stainless steel cat fountains: Pioneer Pet Raindrop ($39, 18,500+ reviews), YEAPAW ($93, pumpless), and KittySpout ($50, dishwasher-safe). Cleaner water, healthier cats.", link: "/best/stainless-steel-cat-fountains/", date: "2026-05-22" },
+  { title: "Best Pet Cameras of 2026 — 4K, Night Vision & No-Fee Picks", desc: "Check on your pet from anywhere. We reviewed the best pet cameras for every budget: xpai 4K ($43, 64GB built-in storage), Furbo 360 ($179, treat tossing), eufy ($129, no subscription), and more tested picks.", link: "/best/pet-cameras/", date: "2026-05-22" },
+  { title: "5 Best Pet Cameras With NO Monthly Fee — Save $100+/Year", desc: "Stop paying monthly subscription fees just to check on your pet. These 5 pet cameras store footage locally with zero recurring costs. xpai 4K ($43), eufy ($129), and more tested alternatives to expensive cloud plans.", link: "/best/pet-cameras-no-subscription/", date: "2026-05-22" },
+  { title: "Best GPS Dog Trackers Without Monthly Fees — 3 Picks That Actually Work", desc: "Most GPS trackers lock you into $5-15/month subscriptions forever. We found 3 alternatives that work without any recurring fees. Includes a $33 budget option and a radio-based tracker for off-grid adventures.", link: "/best/gps-trackers-no-monthly-fee/", date: "2026-05-22" },
+  { title: "Best Self-Cleaning Litter Boxes for Large Cats — Fits 15+ lb Breeds", desc: "Most automatic litter boxes are too small for Maine Coons, Ragdolls, and other big breeds. We found the 4 best options with spacious interiors, sturdy construction, and high weight limits that won't scare your large cat.", link: "/best/litter-boxes-for-large-cats/", date: "2026-05-22" },
+  { title: "Best Smart Pet Water Fountains — App-Controlled Hydration", desc: "Smart fountains that track how much your cat drinks, send filter replacement alerts, and run whisper-quiet. PETKIT Eversweet (30dB), Catit PIXI (intake tracking), and Homerunpet (wireless) — full comparison.", link: "/best/smart-pet-water-fountains/", date: "2026-05-22" },
+  { title: "Best Automatic Cat Feeders for 2 Cats — Stop Food Theft", desc: "Got two cats with different diets? These automatic feeders handle multi-pet feeding with separate schedules, portion control, and camera monitoring so you know exactly who ate what.", link: "/best/automatic-feeders-for-2-cats/", date: "2026-05-22" },
+
+  // — Comparisons —
+  { title: "Litter-Robot 4 vs Leo's Loo Too (2026) — $699 vs $449 Compared", desc: "The Litter-Robot 4 and Leo's Loo Too are the two most popular self-cleaning litter boxes. We compare odor control, noise, app experience, multi-cat capability, and long-term cost to help you decide which is worth your money.", link: "/compare/litter-robot-4-vs-leos-loo-too/", date: "2026-05-22" },
+  { title: "Automatic vs Manual Litter Box (2026) — Is Self-Cleaning Worth It?", desc: "We compare the true costs, time savings, odor control, and cat comfort of automatic self-cleaning litter boxes vs traditional manual boxes. Spoiler: over 3 years, the price difference is smaller than you think.", link: "/compare/automatic-vs-manual-litter-box/", date: "2026-05-22" },
+  { title: "WOPET vs Petlibro Granary (2026) — Which Feeder Should You Buy?", desc: "WOPET Automatic Feeder ($89) vs Petlibro Granary ($139) head-to-head. We compare camera, capacity, app quality, portion accuracy, and overall value. Is the Petlibro's camera worth the $50 premium?", link: "/compare/wopet-vs-petlibro/", date: "2026-05-22" },
+  { title: "Furbo 360 vs Petcube Bites 2 (2026) — Best Treat-Tossing Camera?", desc: "Furbo 360 ($179) vs Petcube Bites 2 ($249) — both toss treats, both have cameras. But only one has 360° tracking. Only one has built-in Alexa. Which pet camera earns its price tag?", link: "/compare/furbo-vs-petcube/", date: "2026-05-22" },
+  { title: "Litter-Robot 4 vs PetSafe ScoopFree (2026) — Sifting vs Crystal", desc: "The $699 Litter-Robot 4 uses a rotating sifting globe. The $299 PetSafe ScoopFree uses crystal litter. Totally different approaches to the same problem. Which one actually costs less over 3 years?", link: "/compare/litter-robot-4-vs-petsafe-scoopfree/", date: "2026-05-22" },
+  { title: "Furbo 360 vs eufy Pet Camera (2026) — Subscription or No Subscription?", desc: "Furbo 360 ($179 + subscription) vs eufy Pet Camera ($129, no subscription). Treat tossing and AI alerts vs local storage and zero fees. Which route is better for your pet and your wallet?", link: "/compare/furbo-vs-eufy/", date: "2026-05-22" },
+  { title: "Pioneer Pet vs YEAPAW (2026) — $39 Classic or $93 Pumpless?", desc: "Pioneer Pet Raindrop has 18,500+ reviews and costs $39. YEAPAW has zero plastic contact and no pump to fail. Both are stainless steel cat fountains. Is the premium worth paying 2.4x more?", link: "/compare/pioneer-pet-vs-yeapaw/", date: "2026-05-22" },
+  { title: "xpai 4K vs eufy (2026) — Budget No-Subscription Camera Battle", desc: "xpai 4K ($43, 4K, 64GB built-in) vs eufy ($129, 2K, 360° tracking). Both promise no monthly fees and local storage. Is the eufy worth 3x the price of the xpai?", link: "/compare/xpai-vs-eufy/", date: "2026-05-22" },
+  { title: "PETKIT Eversweet vs Catit PIXI (2026) — Smart Fountain Fight", desc: "PETKIT Eversweet ($59, 30dB ultra-quiet) vs Catit PIXI ($79, water intake tracking). Two smart fountains, two very different approaches to keeping your cat hydrated.", link: "/compare/petkit-eversweet-vs-catit-pixi/", date: "2026-05-22" },
+  { title: "Petlibro Granary vs PETKIT Fresh Element (2026) — Camera or Freshness?", desc: "Petlibro Granary ($139) has a built-in 1080p camera. PETKIT Fresh Element ($129) has the best food sealing system. Only $10 apart but completely different priorities. Which feeder is right for your pet?", link: "/compare/petlibro-vs-petkit/", date: "2026-05-22" },
+  { title: "Tractive GPS vs No-Fee GPS Tracker (2026) — Sub or No Sub?", desc: "Tractive GPS LTE ($79 + $5-13/month) vs No Monthly Fee GPS ($33, zero fees). Global coverage and polished app vs bare-bones budget. Our honest 3-year cost comparison.", link: "/compare/tractive-vs-nofee-gps/", date: "2026-05-22" },
+
+  // — Reviews —
+  { title: "Litter-Robot 4 Review 2026 — Is It Worth $699?", desc: "After months of testing in a multi-cat household, our honest Litter-Robot 4 review: odor control, app experience, multi-cat performance, long-term reliability, and whether the $699 price tag is justified. The best self-cleaning litter box we've tested.", link: "/reviews/litter-robot-4-review/", date: "2026-05-22" },
+  { title: "Petlibro Granary Camera Feeder Review 2026 — BSR #1,173 Tested", desc: "The Petlibro Granary is the best-selling smart feeder on Amazon for good reason. We tested the built-in 1080p camera, night vision, app reliability, and portion accuracy. Is the camera worth the premium over camera-less feeders?", link: "/reviews/petlibro-granary-review/", date: "2026-05-22" },
+  { title: "WOPET Automatic Feeder Review 2026 — Best $89 Smart Feeder?", desc: "The WOPET packs a massive 6L hopper, built-in battery backup, and 10 meals/day scheduling into an $89 package. You sacrifice camera and app polish, but for pure scheduled feeding, nothing beats the value.", link: "/reviews/wopet-automatic-feeder-review/", date: "2026-05-22" },
+  { title: "Pioneer Pet Raindrop Review 2026 — The $39 Stainless Steel Classic", desc: "18,500+ reviews and a 4.3-star average. The Pioneer Pet Raindrop is the most proven pet fountain on Amazon. Our review covers noise, capacity, cleaning, and why stainless steel matters for cat health.", link: "/reviews/pioneer-pet-raindrop-review/", date: "2026-05-22" },
+  { title: "Furbo 360 Dog Camera Review 2026 — Best Treat-Tossing Pet Cam?", desc: "After 3 months with the Furbo 360, we review the treat tossing, 360° tracking, bark alerts, and app experience. Is the $179 price and optional $5.99/month subscription worth it for dog owners?", link: "/reviews/furbo-360-camera-review/", date: "2026-05-22" },
+  { title: "PETKIT Eversweet Solo 2 Review 2026 — Best Quiet Smart Fountain?", desc: "At just 30dB, the PETKIT Eversweet is whisper-quiet. Smart filter replacement reminders ensure your pet always drinks clean water. Our full review covers capacity, cleaning, app features, and value.", link: "/reviews/petkit-eversweet-review/", date: "2026-05-22" },
+  { title: "Tractive GPS Dog LTE Review 2026 — Best Budget GPS Tracker?", desc: "The Tractive GPS LTE offers global coverage in 170+ countries for $79. We test accuracy, battery life, virtual fence reliability, and whether the $5-13/month subscription is worth it. Our top pick for most dog owners.", link: "/reviews/tractive-gps-review/", date: "2026-05-22" },
+  { title: "xpai 4K UHD Pet Camera Review 2026 — $43 4K No-Subscription Cam?", desc: "4K resolution, 64GB built-in storage, zero subscription fees, and pan/tilt — all for $43. Is the xpai 4K the best budget pet camera of 2026? Our full review covers video quality, app, and pet-specific features.", link: "/reviews/xpai-4k-camera-review/", date: "2026-05-22" },
+  { title: "CATLINK Young Pro Review 2026 — Best Multi-Cat Budget Litter Box?", desc: "At $399 with per-cat weight recognition and a 13L waste bin, the CATLINK Young Pro is the best value for multi-cat homes. Our review compares it to the $699 Litter-Robot 4 and evaluates the app and build quality.", link: "/reviews/catlink-young-review/", date: "2026-05-22" },
+  { title: "Aorkuler GPS Dog Tracker Review 2026 — No Phone? No Problem.", desc: "The Aorkuler uses radio frequency — no cell towers, no smartphone needed, no subscription. The handheld controller shows direction and distance to your dog in real time. Perfect for hikers and off-grid adventures.", link: "/reviews/aorkuler-gps-review/", date: "2026-05-22" },
+
+  // — Guides —
+  { title: "Automatic Pet Feeder Buying Guide 2026 — How to Choose", desc: "Everything to consider before buying an automatic pet feeder: capacity, camera vs no camera, app reliability, power backup, food compatibility. Plus specific recommendations at every price point from $89 to $139.", link: "/guides/automatic-feeder-buying-guide/", date: "2026-05-22" },
+  { title: "Self-Cleaning Litter Box Buying Guide 2026 — How to Choose", desc: "The complete guide to choosing a self-cleaning litter box. Types (sifting vs rotating), sizing for your cat, multi-cat considerations, ongoing costs, odor control features, and what to expect at $299 vs $699.", link: "/guides/self-cleaning-litter-box-buying-guide/", date: "2026-05-22" },
+  { title: "Smart Pet Water Fountain Buying Guide 2026 — Steel vs Plastic vs Ceramic", desc: "Plastic, ceramic, or stainless steel? Pump or pumpless? Smart or basic? Our complete guide to choosing the right pet water fountain, with maintenance tips and specific recommendations.", link: "/guides/smart-water-fountain-buying-guide/", date: "2026-05-22" },
+  { title: "Pet Camera Buying Guide 2026 — Subscription vs No-Subscription", desc: "Resolution, pan/tilt vs fixed, cloud vs local storage, treat tossing, AI features. Our complete buying guide walks through every decision when choosing a pet camera, with picks at every budget.", link: "/guides/pet-camera-buying-guide/", date: "2026-05-22" },
+  { title: "GPS Pet Tracker Buying Guide 2026 — Range, Battery, Fees Explained", desc: "GPS vs Bluetooth vs Radio: which tracking technology is right for your pet? We explain coverage, battery life, subscription costs, and the best trackers for different use cases from city walks to off-grid hikes.", link: "/guides/gps-pet-tracker-buying-guide/", date: "2026-05-22" },
+  { title: "Pet Tech Starter Kit Under $100 (2026) — The Essential Setup", desc: "You don't need $500 to smarten up your pet's life. This budget starter kit covers the three pillars — automatic feeder, water fountain, and monitoring camera — for under $100 total. Plus what to upgrade first.", link: "/guides/pet-tech-starter-kit-budget/", date: "2026-05-22" },
+  { title: "Pet Tech Starter Kit $250-400 (2026) — The Sweet Spot Setup", desc: "The mid-range pet tech setup with camera-equipped feeder, smart fountain, and dedicated pet camera. Best value combination for most pet owners who want quality without overspending.", link: "/guides/pet-tech-starter-kit-midrange/", date: "2026-05-22" },
+  { title: "Pet Tech Starter Kit $500+ (2026) — The Ultimate Smart Pet Home", desc: "The premium pet tech setup with Litter-Robot 4, Furbo 360, Petlibro Granary, and GPS tracker. Full smart home for your pet with time-savings analysis: this setup pays for itself in 25-50 nights of not paying a sitter.", link: "/guides/pet-tech-starter-kit-premium/", date: "2026-05-22" },
+  { title: "Are Self-Cleaning Litter Boxes Worth It in 2026? — Cost & Time Analysis", desc: "We break down the real costs, time savings, and downsides. Over 3 years, an automatic box costs about $760 more than a manual box — about $21/month for the convenience. Here's when it's worth it and when it's not.", link: "/guides/are-self-cleaning-litter-boxes-worth-it/", date: "2026-05-22" },
+  { title: "Do Automatic Feeders Help With Pet Obesity? — Data & Owner Results", desc: "Can a smart feeder actually help your overweight pet lose weight? Veterinary studies show precise portion control leads to healthy weight loss of 1-2% per week. Plus: which feeders excel at portion accuracy.", link: "/guides/do-automatic-feeders-help-with-obesity/", date: "2026-05-22" },
+  { title: "Stainless Steel Cat Fountain Guide 2026 — Why Steel, Which Model", desc: "Why stainless steel is better for cat health (no biofilm, dishwasher-safe, cats prefer the taste). Steel vs ceramic vs plastic compared. Our top picks at $39, $50, and $93, plus complete cleaning and maintenance guide.", link: "/guides/stainless-steel-cat-fountain-guide/", date: "2026-05-22" },
+  { title: "Pet Travel & Vacation Monitoring Guide 2026 — Keep Eyes on Your Pet", desc: "Leaving your pet for a trip? Here's how to set up cameras, feeders, and GPS trackers so you can monitor your pet from anywhere. Plus: the three-device travel stack and what to do when something goes wrong.", link: "/guides/pet-travel-monitoring-guide/", date: "2026-05-22" },
+  { title: "Smart Devices for Multi-Pet Homes 2026 — Complete Setup Guide", desc: "Managing 2+ pets with smart devices: preventing food theft, litter box math for multiple cats, water stations, managing different diets, and monitoring individual pet health with weight-recognition technology.", link: "/guides/multi-pet-device-guide/", date: "2026-05-22" },
+
+  // — Breed-Specific —
+  { title: "Best Smart Devices for Golden Retrievers 2026 — GPS, Feeders & Cameras", desc: "Golden Retrievers are active, food-motivated, and prone to bloat and hip issues. Our curated picks for GPS trackers, portion-control feeders, and pet cameras specifically for Goldens, with breed-specific tips.", link: "/breed/best-devices-for-golden-retrievers/", date: "2026-05-22" },
+  { title: "Best Smart Devices for Labrador Retrievers 2026 — America's Favorite Dog", desc: "Labs are food-obsessed, water-loving, and endlessly energetic. We picked the best GPS tracker (waterproof!), feeder (bloat prevention), and camera (separation anxiety) for this iconic breed.", link: "/breed/best-devices-for-labrador-retrievers/", date: "2026-05-22" },
+  { title: "Best Smart Devices for German Shepherds 2026 — Tech for Working Dogs", desc: "GSDs are intelligent working dogs with high exercise needs. Our picks for GPS trackers (off-grid ready), feeders (bloat prevention for deep-chested breeds), and cameras for this loyal breed.", link: "/breed/best-devices-for-german-shepherds/", date: "2026-05-22" },
+  { title: "Best Automatic Feeder for French Bulldogs 2026 — Portion Control Picks", desc: "French Bulldogs have flat faces, tend to overeat, and have sensitive digestion. We picked the best feeders with precise portion control, slow-feed compatibility, and elevated options for this beloved breed.", link: "/breed/best-feeder-for-french-bulldog/", date: "2026-05-22" },
+  { title: "Best Smart Devices for Senior Cats 2026 — Health & Comfort Tech", desc: "Senior cats need low-entry litter boxes, quiet fountains that encourage drinking, and cameras that let you monitor eating habits. Our curated picks for cats 7+ years old, with health monitoring tips.", link: "/breed/best-devices-for-senior-cats/", date: "2026-05-22" },
+  { title: "Best Smart Devices for Small Dogs 2026 — Compact, Quiet & Safe", desc: "Small dogs under 20 lbs need devices sized for their tiny bodies. Compact feeders with micro portions, whisper-quiet fountains with low drinking heights, and cameras that can spot them hiding under furniture.", link: "/breed/best-devices-for-small-dogs/", date: "2026-05-22" },
+  { title: "Best Smart Devices for Multiple Cats 2026 — Multi-Cat Home Essentials", desc: "Managing 2+ cats with the right smart devices: litter boxes with per-cat recognition, feeders that prevent food theft, and fountains sized for multiple drinkers. Plus the N+1 litter box rule explained.", link: "/breed/best-devices-for-multiple-cats/", date: "2026-05-22" },
+
+  // — Answer-type pages —
+  { title: "About SmartPetGuide — Expert Pet Tech Reviews & Testing", desc: "Learn about our team, our 5-step testing methodology, and why we built SmartPetGuide. We test pet smart devices with real Amazon BSR data, verified reviews, and unbiased hands-on testing.", link: "/about/", date: "2026-05-22" },
 ];
 
 export async function GET() {
   return rss({
-    title: "SmartPetGuide",
-    description: "Expert reviews and comparisons of smart pet devices",
-    site: "https://smartpetguide.com",
+    title: "SmartPetGuide — Best Smart Pet Device Reviews 2026",
+    description: "Expert reviews, comparisons, and buying guides for automatic pet feeders, self-cleaning litter boxes, smart water fountains, pet cameras, and GPS trackers. Real BSR data. Honest testing.",
+    site: SITE,
+    customData: `<language>en-us</language>`,
     items: posts.map((post) => ({
-      ...post,
-      pubDate: post.pubDate,
+      title: post.title,
+      description: post.desc,
+      link: post.link,
+      pubDate: new Date(post.date),
     })),
   });
 }
