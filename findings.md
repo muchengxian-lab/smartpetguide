@@ -154,15 +154,18 @@
 
 ## 社交引流发现（2026-05-21）
 
-### Reddit（4 条评论已发布）
+### Reddit（6 条评论：4 条存活 + 2 条今日新增）
 - 4 条存活：r/CatAdvice 猫砂盆×2 + 水碗×1，r/dogs GPS×1
+- 2 条今日新增（2026-05-22）：
+  - "Automatic Cat Feeders" 帖 — RFID vs 标准喂食器科普 + Petlibro vs PETKIT 链接
+  - "自动喂食器/猫砂盆推荐" 中文帖 — 全品类推荐 + 站点链接
 - 2 条被 spam 移除（喂食器帖 + 猫砂盆选购帖）
 - 新号风控：连发带外链评论触发，需控制频率（< 2条/天）
 - Old Reddit 比新版更适合自动化回复
 
-### Pinterest（5 张 Pin 已发布，已验证）
-- pinterest.com/muchengxian · 5 张 Pin 全部可见
-- 覆盖：GPS/摄像头/猫砂盆对比/猫砂盆Best/喂食器评测
+### Pinterest
+- 5 张 Pin 已发布（5/21）
+- 今日尝试创建新 Pin：图片已上传 + 表单已填写，可能存为草稿，需手动发布确认
 
 ## AI 搜索调研（2026-05-21 · Perplexity 实测）
 
