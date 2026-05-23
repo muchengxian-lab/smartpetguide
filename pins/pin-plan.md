@@ -83,54 +83,237 @@
 
 ## 第 2 轮：高优先级对比文（9 Pin — 高转化意图）
 
-| # | 图片 | 标题 | 链接 |
-|---|------|------|------|
-| 10 | petlibro-granary.jpg | Petlibro Granary vs PETKIT Fresh Element — Camera or Freshness? | https://smartpetguide.net/compare/petlibro-vs-petkit/ |
-| 11 | pioneer-pet-raindrop.jpg | Pioneer Pet vs YEAPAW — $39 Classic or $93 Pumpless Fountain? | https://smartpetguide.net/compare/pioneer-pet-vs-yeapaw/ |
-| 12 | xpai-4k-camera.jpg | xpai 4K vs eufy — Best Budget No-Subscription Pet Camera? | https://smartpetguide.net/compare/xpai-vs-eufy/ |
-| 13 | petkit-eversweet.jpg | PETKIT Eversweet vs Catit PIXI — Which Smart Fountain Wins? | https://smartpetguide.net/compare/petkit-eversweet-vs-catit-pixi/ |
-| 14 | litter-robot-4.jpg | Litter-Robot 4 vs Leo's Loo Too — $699 vs $449 Honest Comparison | https://smartpetguide.net/compare/litter-robot-4-vs-leos-loo-too/ |
-| 15 | litter-robot-4.jpg | Litter-Robot 4 vs PetSafe ScoopFree — Sifting vs Crystal Litter | https://smartpetguide.net/compare/litter-robot-4-vs-petsafe-scoopfree/ |
-| 16 | furbo-360.jpg | Furbo 360 vs eufy — Subscription Pet Camera or Go Fee-Free? | https://smartpetguide.net/compare/furbo-vs-eufy/ |
-| 17 | wopet-feeder.jpg | WOPET vs Petlibro — $89 vs $139 Automatic Feeder Showdown | https://smartpetguide.net/compare/wopet-vs-petlibro/ |
-| 18 | litter-robot-4.jpg | Automatic vs Manual Litter Box — Is a $699 Robot Worth It? | https://smartpetguide.net/compare/automatic-vs-manual-litter-box/ |
+### Pin 10
+- **图片**：`petlibro-granary.jpg`
+- **标题**：Petlibro Granary vs PETKIT Fresh Element — Camera or Freshness?
+- **描述**：Two top smart feeders face off. Petlibro Granary ($139) has a built-in 1080p camera with night vision. PETKIT Fresh Element ($129) has a rotary sealing system that keeps kibble fresher longer. Only $10 apart, completely different priorities. Which one fits your pet?
+- **链接**：https://smartpetguide.net/compare/petlibro-vs-petkit/
+- **标签**：automatic pet feeder, smart feeder comparison, cat feeder, Petlibro vs PETKIT, pet tech
+
+### Pin 11
+- **图片**：`pioneer-pet-raindrop.jpg`
+- **标题**：Pioneer Pet vs YEAPAW — $39 Classic or $93 Pumpless Fountain?
+- **描述**：The $39 Pioneer Pet Raindrop has 18,500+ reviews and a proven track record. The $93 YEAPAW has zero plastic contact and a pumpless design. Both are stainless steel. Is the premium worth 2.4x the price? Our honest comparison.
+- **链接**：https://smartpetguide.net/compare/pioneer-pet-vs-yeapaw/
+- **标签**：cat water fountain, stainless steel fountain, Pioneer Pet, YEAPAW, pet hydration
+
+### Pin 12
+- **图片**：`xpai-4k-camera.jpg`
+- **标题**：xpai 4K vs eufy — Best Budget No-Subscription Pet Camera?
+- **描述**：Both promise zero monthly fees and local storage. xpai 4K is $43 with 64GB built-in. eufy costs $129 but adds 360° auto-tracking. Is 4K at $43 too good to be true? See which budget camera wins.
+- **链接**：https://smartpetguide.net/compare/xpai-vs-eufy/
+- **标签**：no subscription pet camera, budget pet camera, xpai camera, eufy camera, pet monitoring
+
+### Pin 13
+- **图片**：`petkit-eversweet.jpg`
+- **标题**：PETKIT Eversweet vs Catit PIXI — Which Smart Fountain Wins?
+- **描述**：PETKIT runs at a whisper-quiet 30dB for $59. Catit PIXI tracks your cat's water intake for $79. Two smart fountains with very different approaches to keeping cats hydrated. Full feature comparison.
+- **链接**：https://smartpetguide.net/compare/petkit-eversweet-vs-catit-pixi/
+- **标签**：smart pet fountain, cat hydration, PETKIT, Catit PIXI, pet health monitor
+
+### Pin 14
+- **图片**：`litter-robot-4.jpg`
+- **标题**：Litter-Robot 4 vs Leo's Loo Too — $699 vs $449 Compared
+- **描述**：The two most popular self-cleaning litter boxes go head to head. LR4 has best-in-class odor control and handles 4 cats. Leo's Loo Too has UV sterilization and Alexa at $250 less. Which gives you more for your money?
+- **链接**：https://smartpetguide.net/compare/litter-robot-4-vs-leos-loo-too/
+- **标签**：self cleaning litter box, Litter Robot 4, Leo's Loo Too, automatic litter box, cat products
+
+### Pin 15
+- **图片**：`litter-robot-4.jpg`
+- **标题**：Litter-Robot 4 vs PetSafe ScoopFree — Sifting vs Crystal
+- **描述**：$699 rotating sifter vs $299 crystal litter system. Totally different technologies for the same problem. Over 3 years, the cheaper option might actually cost more. Our honest cost breakdown.
+- **链接**：https://smartpetguide.net/compare/litter-robot-4-vs-petsafe-scoopfree/
+- **标签**：Litter Robot, PetSafe ScoopFree, automatic litter box, cat litter box, pet tech comparison
+
+### Pin 16
+- **图片**：`furbo-360.jpg`
+- **标题**：Furbo 360 vs eufy — Subscription or No Subscription Pet Camera?
+- **描述**：Furbo 360 ($179) tosses treats and tracks your dog with 360° rotation. eufy ($129) gives you 2K video and local storage with zero fees. Treat interaction vs no subscription — which matters more?
+- **链接**：https://smartpetguide.net/compare/furbo-vs-eufy/
+- **标签**：pet camera comparison, Furbo 360, eufy camera, dog camera, pet monitoring
+
+### Pin 17
+- **图片**：`wopet-feeder.jpg`
+- **标题**：WOPET vs Petlibro — $89 vs $139 Automatic Feeder Showdown
+- **描述**：WOPET has a massive 6L hopper, battery backup, and costs $89. Petlibro adds a 1080p camera with night vision for $139. Is the camera worth $50 more? See which feeder wins for your setup.
+- **链接**：https://smartpetguide.net/compare/wopet-vs-petlibro/
+- **标签**：automatic cat feeder, WOPET feeder, Petlibro Granary, smart feeder, pet feeding
+
+### Pin 18
+- **图片**：`litter-robot-4.jpg`
+- **标题**：Automatic vs Manual Litter Box — Is a $699 Robot Worth It?
+- **描述**：We break down the real cost difference over 3 years. An automatic box saves about 30 hours of scooping per year. The price gap is smaller than you think. Our honest time vs money analysis.
+- **链接**：https://smartpetguide.net/compare/automatic-vs-manual-litter-box/
+- **标签**：self cleaning litter box, manual vs automatic, cat litter box, pet care, time saving
 
 ---
 
 ## 第 3 轮：高流量单品评测（15 Pin — 购买决策）
 
-| # | 图片 | 标题 | 链接 |
-|---|------|------|------|
-| 19 | petlibro-granary.jpg | Petlibro Granary Review — Best Camera Feeder of 2026? | https://smartpetguide.net/reviews/petlibro-granary-review/ |
-| 20 | litter-robot-4.jpg | Litter-Robot 4 Review — 6 Months With the $699 Self-Cleaning Box | https://smartpetguide.net/reviews/litter-robot-4-review/ |
-| 21 | pioneer-pet-raindrop.jpg | Pioneer Pet Raindrop Review — The $39 Stainless Steel Classic | https://smartpetguide.net/reviews/pioneer-pet-raindrop-review/ |
-| 22 | yeapaw-steel-fountain.jpg | YEAPAW Steel Fountain Review — Pumpless, Silent, Worth $93? | https://smartpetguide.net/reviews/yeapaw-steel-fountain-review/ |
-| 23 | kittyspout-steel.jpg | KittySpout Review — The $50 Dishwasher-Safe Steel Fountain | https://smartpetguide.net/reviews/kittyspout-steel-fountain-review/ |
-| 24 | furbo-360.jpg | Furbo 360 Review — Best Treat-Tossing Dog Camera? | https://smartpetguide.net/reviews/furbo-360-camera-review/ |
-| 25 | xpai-4k-camera.jpg | xpai 4K Camera Review — $43 4K Pet Cam With No Subscription? | https://smartpetguide.net/reviews/xpai-4k-camera-review/ |
-| 26 | honeytour-robot-cam.jpg | Honey Tour Robot Camera Review — A Pet Cam That Drives Around? | https://smartpetguide.net/reviews/honeytour-robot-camera-review/ |
-| 27 | wopet-feeder.jpg | WOPET Automatic Feeder Review — Best Budget Smart Feeder? | https://smartpetguide.net/reviews/wopet-automatic-feeder-review/ |
-| 28 | petkit-fresh-element.jpg | PETKIT Fresh Element Review — The Food Freshness Champion | https://smartpetguide.net/reviews/petkit-fresh-element-review/ |
-| 29 | petkit-eversweet.jpg | PETKIT Eversweet Review — The 30dB Ultra-Quiet Smart Fountain | https://smartpetguide.net/reviews/petkit-eversweet-review/ |
-| 30 | petsafe-scoopfree.jpg | PetSafe ScoopFree Review — $299 Crystal Litter Auto Box Tested | https://smartpetguide.net/reviews/petsafe-scoopfree-review/ |
-| 31 | leos-loo-too.jpg | Leo's Loo Too Review — UV Sterilization + Alexa, Worth It? | https://smartpetguide.net/reviews/leos-loo-too-review/ |
-| 32 | eufy-pet-cam.jpg | eufy Pet Camera Review — 2K, No Subscription, 360° Tracking | https://smartpetguide.net/reviews/eufy-pet-cam-review/ |
-| 33 | catit-pixi.jpg | Catit PIXI Fountain Review — Smart Hydration Tracking for Cats | https://smartpetguide.net/reviews/catit-pixi-fountain-review/ |
+### Pin 19
+- **图片**：`petlibro-granary.jpg`
+- **标题**：Petlibro Granary Review — Best Camera Feeder of 2026?
+- **描述**：BSR #1,173 best-seller with built-in 1080p camera and night vision. We tested the app, portion accuracy, and camera quality. Is this $139 feeder worth the hype? Our honest review.
+- **链接**：https://smartpetguide.net/reviews/petlibro-granary-review/
+- **标签**：Petlibro Granary review, camera feeder, automatic pet feeder, smart feeder, pet tech review
+
+### Pin 20
+- **图片**：`litter-robot-4.jpg`
+- **标题**：Litter-Robot 4 Review — 6 Months With the $699 Self-Cleaning Box
+- **描述**：After 6 months in a multi-cat home, our honest assessment. How well does the odor control hold up? Is the app actually useful? Is per-cat weight recognition reliable? The definitive 2026 review.
+- **链接**：https://smartpetguide.net/reviews/litter-robot-4-review/
+- **标签**：Litter Robot 4 review, self cleaning litter box, automatic litter box, cat products, pet tech
+
+### Pin 21
+- **图片**：`pioneer-pet-raindrop.jpg`
+- **标题**：Pioneer Pet Raindrop Review — The $39 Stainless Steel Classic
+- **描述**：18,500+ reviews and a 4.3-star average. Dishwasher-safe stainless steel. Whisper-quiet pump. Is this the most proven pet fountain on Amazon? Our full review of the budget classic.
+- **链接**：https://smartpetguide.net/reviews/pioneer-pet-raindrop-review/
+- **标签**：Pioneer Pet Raindrop, stainless steel cat fountain, cat water fountain, budget pet fountain, pet hydration
+
+### Pin 22
+- **图片**：`yeapaw-steel-fountain.jpg`
+- **标题**：YEAPAW Steel Fountain Review — Pumpless, Silent, Worth $93?
+- **描述**：Zero plastic contact. No pump to clean or replace. Near-silent operation. The most innovative cat fountain we tested. But at $93, is it worth 2x the price of the Pioneer Pet? Our verdict.
+- **链接**：https://smartpetguide.net/reviews/yeapaw-steel-fountain-review/
+- **标签**：YEAPAW fountain, pumpless cat fountain, stainless steel fountain, cat hydration, premium pet products
+
+### Pin 23
+- **图片**：`kittyspout-steel.jpg`
+- **标题**：KittySpout Review — The $50 Dishwasher-Safe Steel Fountain
+- **描述**：Fully dishwasher-safe. Solid stainless steel build. Quiet pump. At $50, the KittySpout hits the sweet spot between the $39 Pioneer Pet and $93 YEAPAW. Our full review.
+- **链接**：https://smartpetguide.net/reviews/kittyspout-steel-fountain-review/
+- **标签**：KittySpout fountain, stainless steel cat fountain, dishwasher safe, pet fountain review, cat products
+
+### Pin 24
+- **图片**：`furbo-360.jpg`
+- **标题**：Furbo 360 Review — Best Treat-Tossing Dog Camera?
+- **描述**：We tested the Furbo 360 for 3 months. Treat tossing, 360° tracking, bark alerts, and two-way audio. Is the $179 price and optional subscription worth it for your dog? Honest review.
+- **链接**：https://smartpetguide.net/reviews/furbo-360-camera-review/
+- **标签**：Furbo 360 review, dog camera, treat tossing camera, pet monitoring, pet tech
+
+### Pin 25
+- **图片**：`xpai-4k-camera.jpg`
+- **标题**：xpai 4K Camera Review — $43 4K Pet Cam With No Subscription?
+- **描述**：4K resolution. 64GB built-in storage. Pan and tilt. Zero monthly fees. All for $43. Is the xpai 4K the best budget pet camera or too good to be true? Our hands-on review.
+- **链接**：https://smartpetguide.net/reviews/xpai-4k-camera-review/
+- **标签**：xpai 4K camera, budget pet camera, no subscription camera, pet monitoring, 4K security camera
+
+### Pin 26
+- **图片**：`honeytour-robot-cam.jpg`
+- **标题**：Honey Tour Robot Camera Review — A Pet Cam That Drives Around?
+- **描述**：This camera actually drives around your house to find your pet. 4.7-star rating, 1080p video, no subscription. Is the robot pet camera the future or a gimmick? Full review.
+- **链接**：https://smartpetguide.net/reviews/honeytour-robot-camera-review/
+- **标签**：Honey Tour robot, movable pet camera, pet robot, innovative pet tech, cat camera
+
+### Pin 27
+- **图片**：`wopet-feeder.jpg`
+- **标题**：WOPET Automatic Feeder Review — Best Budget Smart Feeder?
+- **描述**：$89 buys you a massive 6L hopper, 10 meals per day, battery backup, and voice recording. You sacrifice camera and app polish. But for pure scheduled feeding, does anything beat this value?
+- **链接**：https://smartpetguide.net/reviews/wopet-automatic-feeder-review/
+- **标签**：WOPET feeder, budget automatic feeder, smart pet feeder, cat feeder, dog feeder
+
+### Pin 28
+- **图片**：`petkit-fresh-element.jpg`
+- **标题**：PETKIT Fresh Element Review — The Food Freshness Champion
+- **描述**：Rotary sealing system keeps kibble fresh longer than any competitor. Easy to disassemble and clean. Reliable Wi-Fi and precise portioning. Is this the best feeder for food-quality purists?
+- **链接**：https://smartpetguide.net/reviews/petkit-fresh-element-review/
+- **标签**：PETKIT Fresh Element, automatic feeder review, food freshness, smart pet feeder, pet tech
+
+### Pin 29
+- **图片**：`petkit-eversweet.jpg`
+- **标题**：PETKIT Eversweet Review — The 30dB Ultra-Quiet Smart Fountain
+- **描述**：Whisper-quiet at 30dB. Smart filter replacement reminders. Clean, modern design. 7,200+ reviews at 4.4 stars. Our full review of the best smart fountain under $60.
+- **链接**：https://smartpetguide.net/reviews/petkit-eversweet-review/
+- **标签**：PETKIT Eversweet, quiet cat fountain, smart water fountain, pet hydration, cat products
+
+### Pin 30
+- **图片**：`petsafe-scoopfree.jpg`
+- **标题**：PetSafe ScoopFree Review — $299 Crystal Litter Auto Box
+- **描述**：Uses crystal litter and disposable trays instead of clumping litter. The lowest-maintenance automatic box we tested. Just swap the tray every 2-4 weeks. Is the convenience worth the ongoing tray cost?
+- **链接**：https://smartpetguide.net/reviews/petsafe-scoopfree-review/
+- **标签**：PetSafe ScoopFree, crystal litter box, automatic litter box, low maintenance, cat products
+
+### Pin 31
+- **图片**：`leos-loo-too.jpg`
+- **标题**：Leo's Loo Too Review — UV Sterilization + Alexa, Worth It?
+- **描述**：UV-C light kills bacteria in the waste drawer. Voice control via Alexa and Google. $250 less than the Litter-Robot 4. Our full review of the most tech-forward litter box.
+- **链接**：https://smartpetguide.net/reviews/leos-loo-too-review/
+- **标签**：Leo's Loo Too, UV sterilization litter box, smart litter box, Alexa pet, cat products
+
+### Pin 32
+- **图片**：`eufy-pet-cam.jpg`
+- **标题**：eufy Pet Camera Review — 2K, No Subscription, 360° Tracking
+- **描述**：Sharper 2K video, 360° pan/tilt with auto motion tracking, local SD storage, no subscription ever. Is the eufy the best value pet camera for privacy-conscious owners? Full review.
+- **链接**：https://smartpetguide.net/reviews/eufy-pet-cam-review/
+- **标签**：eufy pet camera, no subscription camera, 2K pet camera, pet monitoring, local storage camera
+
+### Pin 33
+- **图片**：`catit-pixi.jpg`
+- **标题**：Catit PIXI Fountain Review — Smart Hydration Tracking for Cats
+- **描述**：The only fountain that tracks how much your cat drinks. Three ergonomic drinking heights for kittens, adults, and seniors. App-connected health monitoring. Our review of the smartest cat fountain.
+- **链接**：https://smartpetguide.net/reviews/catit-pixi-fountain-review/
+- **标签**：Catit PIXI, water intake tracking, smart cat fountain, pet health, cat hydration
 
 ---
 
 ## 第 4 轮：购买指南 + 品种专题（8 Pin）
 
-| # | 图片 | 标题 | 链接 |
-|---|------|------|------|
-| 34 | wopet-feeder.jpg | How to Choose an Automatic Pet Feeder — Complete Buying Guide | https://smartpetguide.net/guides/automatic-feeder-buying-guide/ |
-| 35 | litter-robot-4.jpg | Self-Cleaning Litter Box Buying Guide — What to Know Before You Buy | https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/ |
-| 36 | pioneer-pet-raindrop.jpg | Smart Water Fountain Buying Guide — Steel vs Plastic vs Ceramic | https://smartpetguide.net/guides/smart-water-fountain-buying-guide/ |
-| 37 | furbo-360.jpg | Pet Camera Buying Guide — Subscription vs No-Subscription, Resolution & More | https://smartpetguide.net/guides/pet-camera-buying-guide/ |
-| 38 | tractive-gps.jpg | GPS Pet Tracker Buying Guide — Range, Battery, Fees Explained | https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/ |
-| 39 | dogness-mini.jpg | Best Smart Pet Devices for Golden Retrievers | https://smartpetguide.net/breed/best-devices-for-golden-retrievers/ |
-| 40 | catlink-young.jpg | Best Smart Pet Devices for Multiple Cats | https://smartpetguide.net/breed/best-devices-for-multiple-cats/ |
-| 41 | dogness-mini.jpg | Best Automatic Feeder for French Bulldogs | https://smartpetguide.net/breed/best-feeder-for-french-bulldog/ |
+### Pin 34
+- **图片**：`wopet-feeder.jpg`
+- **标题**：How to Choose an Automatic Pet Feeder — Complete Buying Guide
+- **描述**：Camera or no camera? What capacity do you need? Is battery backup important? Our complete buyer's guide walks through every decision, with picks at each price point from $89 to $139.
+- **链接**：https://smartpetguide.net/guides/automatic-feeder-buying-guide/
+- **标签**：automatic pet feeder guide, pet feeder buying guide, smart feeder, cat feeder, dog feeder
+
+### Pin 35
+- **图片**：`litter-robot-4.jpg`
+- **标题**：Self-Cleaning Litter Box Buying Guide — What to Know Before You Buy
+- **描述**：Sifting vs rotating vs crystal. Size requirements. Multi-cat considerations. Ongoing costs explained. Everything to know before spending $300-$700 on an automatic litter box.
+- **链接**：https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/
+- **标签**：litter box buying guide, self cleaning litter box, automatic litter box, cat care, pet products
+
+### Pin 36
+- **图片**：`pioneer-pet-raindrop.jpg`
+- **标题**：Smart Water Fountain Buying Guide — Steel vs Plastic vs Ceramic
+- **描述**：Stainless steel stays cleaner longer and is dishwasher-safe. Plastic is cheap but develops biofilm. Ceramic looks nice but breaks easily. Our complete fountain material guide with top picks.
+- **链接**：https://smartpetguide.net/guides/smart-water-fountain-buying-guide/
+- **标签**：cat water fountain guide, stainless steel vs plastic, pet hydration, fountain buying guide, cat health
+
+### Pin 37
+- **图片**：`furbo-360.jpg`
+- **标题**：Pet Camera Buying Guide — Subscription vs No-Subscription
+- **描述**：Resolution, pan/tilt vs fixed, cloud vs local storage, treat tossing, AI features. Our complete buyer's guide with picks for every budget from $43 to $249.
+- **链接**：https://smartpetguide.net/guides/pet-camera-buying-guide/
+- **标签**：pet camera guide, security camera for pets, dog camera, cat camera, pet monitoring
+
+### Pin 38
+- **图片**：`tractive-gps.jpg`
+- **标题**：GPS Pet Tracker Buying Guide — Range, Battery, Fees Explained
+- **描述**：GPS vs Bluetooth vs Radio — which tracking tech fits your dog? Subscription costs compared over 3 years. Battery life expectations. Coverage maps. Our complete guide to choosing the right tracker.
+- **链接**：https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/
+- **标签**：GPS dog tracker guide, pet tracker, dog safety, no subscription tracker, outdoor dog gear
+
+### Pin 39
+- **图片**：`dogness-mini.jpg`
+- **标题**：Best Smart Pet Devices for Golden Retrievers
+- **描述**：Goldens are active, food-motivated, and prone to bloat. We picked the best GPS tracker (waterproof!), portion-control feeder, and camera for America's third most popular breed.
+- **链接**：https://smartpetguide.net/breed/best-devices-for-golden-retrievers/
+- **标签**：Golden Retriever, smart pet devices, dog products, GPS tracker, breed specific pet gear
+
+### Pin 40
+- **图片**：`catlink-young.jpg`
+- **标题**：Best Smart Pet Devices for Multiple Cats
+- **描述**：Managing 2+ cats? We picked devices with per-cat recognition, large waste bins, and food-theft prevention. The complete multi-cat smart home setup.
+- **链接**：https://smartpetguide.net/breed/best-devices-for-multiple-cats/
+- **标签**：multiple cats, multi-cat household, automatic litter box, cat products, pet tech
+
+### Pin 41
+- **图片**：`dogness-mini.jpg`
+- **标题**：Best Automatic Feeder for French Bulldogs
+- **描述**：Frenchies need precise portion control (prone to obesity), slow feeding (flat faces), and elevated bowls (neck comfort). Our curated picks for this beloved breed.
+- **链接**：https://smartpetguide.net/breed/best-feeder-for-french-bulldog/
+- **标签**：French Bulldog, automatic feeder, portion control, flat-faced breed, dog products
 
 ---
 
