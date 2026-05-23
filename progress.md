@@ -621,7 +621,7 @@ Medium     █░░░░░░░░░  1 篇（可追加 2-3 篇）
 | **GSC** | 效果信号出现（全 0），site: ~5 结果（3 唯一页面） |
 | **Amazon AA** | 29 次点击，$0 佣金（全部为测试点击） |
 | **RSS** | 重写：.com→.net，6→50+条目，300+字描述 |
-| **Medium** | 首篇发布：Petlibro Granary 评测，canonical 已设 ✅ |
+| **Medium** | 3 篇上线：Petlibro 评测+不锈钢饮水机+无订阅摄像头，canonical 全部验证 ✅ |
 | **Flipboard** | 账号+Magazine 创建，RSS 同步需邮件申请 → 搁置 |
 | **Git** | 17 次提交，全部推送 |
 
