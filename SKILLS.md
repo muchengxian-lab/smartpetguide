@@ -17,6 +17,10 @@
 | `review` | PR 审查 | ✅ 内置 |
 | `micro-saas-launcher` | 商业策略/规模化 | ✅ 内置 |
 | `news-monitor` | 行业动态监测 | ✅ 内置 |
+| `baoyu-imagine` | AI 图片生成（Pin 图/社交图/OG 图） | ✅ 新装 |
+| `image-optimization` | 图片压缩/WebP/SEO 优化 | ✅ 新装 |
+| `baoyu-infographic` | 信息图生成（Pinterest 引流） | ✅ 新装 |
+| `baoyu-translate` | 多语言翻译（精翻/快翻/校对） | ✅ 新装 |
 
 ---
 
@@ -49,22 +53,22 @@ Schema   → 手动编写（Review/Article/FAQ）
 
 ### 阶段 8：社交引流
 ```
-Pinterest → 手动设计 Pin 图
+Pinterest → baoyu-imagine（Pin 图生成）+ baoyu-infographic（信息图）
 Reddit   → agent-browser（浏览社区/发布）
 Medium   → 手动交叉发布
 ```
 
 ### 阶段 9：多语言
 ```
-翻译     → 手动（Claude 翻译初稿 + 人工校对）
+翻译     → baoyu-translate（精翻模式，保持术语一致性）
 前端调整 → frontend-design（语言切换 UI）
 ```
 
 ### 阶段 10：规模化
 ```
-商业策略 → micro-saas-launcher
-行业趋势 → news-monitor
+商业策略 → validate-idea（模式验证）
 内容生产 → seo-content-optimizer + agent-browser
+图片优化 → image-optimization（WebP/压缩/LCP）
 ```
 
 ---
