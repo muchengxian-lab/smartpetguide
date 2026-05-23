@@ -198,6 +198,16 @@
 - AI 搜索是新渠道但需要权威信号积累
 - **当前策略：传统 SEO 优先 + AI 优化打好基础（Schema/结构化数据）**
 
+### Medium 首发（2026-05-23）
+- Petlibro Granary 评测通过 Import 工具发布到 Medium
+- canonical 正确指向 smartpetguide.net（已验证）
+- 后续可追加 2-3 篇
+
+### GSC 首次真实数据（2026-05-23）
+- 1 点击 / 4 曝光 / CTR 25% / 平均排名 1
+- 首次确认 Google 在展示 smartpetguide.net
+- 查询词和页面明细待出（比汇总晚 1-3 天）
+
 ---
 
 ## GEO + Schema 验证（2026-05-21）

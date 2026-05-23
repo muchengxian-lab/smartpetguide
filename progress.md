@@ -567,14 +567,44 @@ GPS 整体(Trends 2)         →  ⚠️ 暂停投入
 - [ ] 第 2 周起自然提及博客
 
 ---
+
+## 会话：2026-05-23（Day 6）— 等数据+推广
+
+### 完成事项
+- [x] **GSC 第 3 次检查**：首次真实流量 — 1 点击 / 4 曝光 / CTR 25% / 平均排名 1
+- [x] **Pinterest 第 2 轮**：9 个对比文 Pin 发布（16→**25 Pin**）
+- [x] **Pin 格式统一**：41 Pin 全改为自包含块（图片+标题+描述+链接+标签）
+- [x] **Medium 首发**：Petlibro Granary 评测导入发布，canonical ✅
+- [x] **速度优化**：28KB HTML + 外部 CDN 图片，无性能问题
+- [x] **FB 日常**：养号 D2，点赞+纯文字回复
+- [x] **Reddit 日常**：`honest_pet_reviews` Day 2，点赞+评论
+- [x] **site:搜索**：4 唯一页面（+Aorkuler 评测首次被索引）
+
+### 产出
+| 类型 | 变化 |
+|------|------|
+| Pinterest | 16 → **25 Pin** |
+| Medium | 0 → **1 篇**（canonical 回流） |
+| GSC | 全 0 → **1 点击 / 4 曝光** |
+| Google 索引 | 3 → **4 唯一页面** |
+
+### 三线状态
+```
+Pinterest  ████░░░░░░  25/100 Pin
+Facebook   ██░░░░░░░░  8 群养号 D2（D7 可推广）
+Reddit     █░░░░░░░░░  Day 2（D15 可推广）
+Medium     █░░░░░░░░░  1 篇（可追加 2-3 篇）
+```
+
+---
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 70 页 M7 达标，三线引流启动，GSC 信号出现，Flipboard 搁置 |
-| 我要去哪里？ | Pinterest 第 2 轮 Pin → 等 GSC 数据 → 根据反馈决定内容方向 |
+| 我在哪里？ | 70 页 M7，25 Pin，Medium 1 篇，GSC 首次真实流量，FB/Reddit 养号中 |
+| 我要去哪里？ | Pinterest 第 3 轮 15 Pin → 等 GSC 查询词明细 → Medium 追加 2-3 篇 |
 | 目标是什么？ | 日均 UV 3K-10K，月收入 $500-2K（12 个月） |
-| 我学到了什么？ | 1)Pinterest 最安全 2)Reddit 自动化=必死 3)FB 零风险 4)Hemingway Grade 8 是关键 5)Flipboard 需要邮件申请发布者 |
-| 我做了什么？ | 51→70 页 + 21 篇 Grade 8 + RSS 重写 + 引流三线启动 + GSC 2 次检查 |
+| 我学到了什么？ | 1)Pinterest 最安全 2)Reddit 自动化=必死 3)FB 零风险 4)Grade 8 是关键 5)Medium 导入+canonical 是零成本的外链策略 |
+| 我做了什么？ | 70 页 + 25 Pin + Medium 首发 + RSS 重写 + 三线养号 + GSC 3 次检查 + Grade 8 全部评测 |
 
 ---
 ## 今日产出汇总（2026-05-22，Day 5）
