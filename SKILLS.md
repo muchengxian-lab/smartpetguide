@@ -14,9 +14,6 @@
 | `verify` | 代码变更验证（改完即验） | ✅ 内置 |
 | `run` | 启动开发服务器 | ✅ 内置 |
 | `simplify` | 代码审查/重构/质量检查 | ✅ 内置 |
-| `review` | PR 审查 | ✅ 内置 |
-| `micro-saas-launcher` | 商业策略/规模化 | ✅ 内置 |
-| `news-monitor` | 行业动态监测 | ✅ 内置 |
 | `baoyu-imagine` | AI 图片生成（Pin 图/社交图/OG 图） | ✅ 新装 |
 | `image-optimization` | 图片压缩/WebP/SEO 优化 | ✅ 新装 |
 | `baoyu-infographic` | 信息图生成（Pinterest 引流） | ✅ 新装 |
