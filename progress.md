@@ -597,14 +597,70 @@ Medium     █░░░░░░░░░  1 篇（可追加 2-3 篇）
 ```
 
 ---
+
+## 会话：2026-05-23（Day 6）— 等数据+推广 完整记录
+
+### 上午
+- [x] **GSC 第 3 次检查**：首次真实流量 — 1 点击 / 4 曝光 / CTR 25% / 平均排名 1
+- [x] **site:搜索**：4 唯一页面（+Aorkuler 评测）
+- [x] **Pinterest 第 2 轮**：9 个对比文 Pin（16→**25 Pin**）
+- [x] **Pin 格式统一**：41 Pin 全改为自包含块
+- [x] **Medium 首发**：Petlibro Granary 评测导入 + canonical ✅
+- [x] **FB 日常**：养号 D2，点赞+纯文字回复
+- [x] **Reddit 日常**：`honest_pet_reviews` Day 2
+
+### 下午
+- [x] **AI 引用深度调研**：4 大引擎算法对比 + 案例 + 5 因子权重
+- [x] **robots.txt**：GPTBot/PerplexityBot/Google-Extended/CCBot/anthropic-ai 白名单
+- [x] **Author/Publisher sameAs**：Pinterest+Medium+Flipboard 跨平台品牌一致性
+- [x] **66 个 H2 问题式标题**：13 篇指南全覆盖（+2.8× AI 引用率）
+- [x] **22 个 `<dfn>` 定义标签**：关键术语标记（+57% AI 吸收率）
+- [x] **Guide 模板可见日期**：May 24, 2026
+- [x] **Medium 追加 2 篇**：不锈钢饮水机+无订阅摄像头，canonical 验证 ✅
+- [x] **速度检查**：28KB HTML + 外部 CDN 图片，无性能问题
+
+### 产出
+| 类型 | 变化 |
+|------|------|
+| Pinterest | 16 → **25 Pin** |
+| Medium | 0 → **3 篇**（canonical 全部验证） |
+| GSC | 全 0 → **1 点击 / 4 曝光** |
+| Google 索引 | 3 → **4 唯一页面** |
+| AI 爬虫 | 0 → **6 bot 白名单** |
+| H2 标题 | 陈述式 → **66 个问题式** |
+| dfn 标签 | 0 → **22 个** |
+| Author Schema | 基本 → **sameAs 跨平台** |
+
+### GEO 优化全栈验证
+| 优化 | 验证 |
+|------|------|
+| robots.txt | ✅ 6 bots |
+| Author sameAs | ✅ Pinterest + Medium |
+| Publisher sameAs | ✅ Pinterest + Medium + Flipboard |
+| H2 问题式标题 | ✅ 66 个 |
+| dfn 定义标签 | ✅ 22 个已渲染 |
+| Guide 日期 | ✅ 2026-05-24 |
+| Schema 类型 | ✅ Article+Breadcrumb+FAQ+Review 4 种 |
+| Medium canonical | ✅ 3 篇全正确 |
+
+### 三线状态
+```
+Pinterest  ████░░░░░░  25/100 Pin
+Facebook   ██░░░░░░░░  8 群养号 D3（D7 可推广）
+Reddit     █░░░░░░░░░  Day 3（D15 可推广）
+Medium     ███░░░░░░░  3 篇 canonical
+GEO       ████████░░  全栈优化完成
+```
+
+---
 ## 五问重启检查
 | 问题 | 答案 |
 |------|------|
-| 我在哪里？ | 70 页 M7，25 Pin，Medium 1 篇，GSC 首次真实流量，FB/Reddit 养号中 |
-| 我要去哪里？ | Pinterest 第 3 轮 15 Pin → 等 GSC 查询词明细 → Medium 追加 2-3 篇 |
+| 我在哪里？ | 70 页 M7，25 Pin，Medium 3 篇，GSC 首次流量，GEO 全栈完成 |
+| 我要去哪里？ | M8 规模化 + Pinterest 第 3 轮 + 等 GSC 查询词 + FB/Reddit 继续养号 |
 | 目标是什么？ | 日均 UV 3K-10K，月收入 $500-2K（12 个月） |
-| 我学到了什么？ | 1)Pinterest 最安全 2)Reddit 自动化=必死 3)FB 零风险 4)Grade 8 是关键 5)Medium 导入+canonical 是零成本的外链策略 |
-| 我做了什么？ | 70 页 + 25 Pin + Medium 首发 + RSS 重写 + 三线养号 + GSC 3 次检查 + Grade 8 全部评测 |
+| 我学到了什么？ | AI 引用 ≠ SEO 排名；小站可通过 GEO 独立获胜；只有 6% 营销人在做 |
+| 我做了什么？ | 70 页 + 25 Pin + 3 Medium + GEO 全栈 + RSS + 三线 + GSC 3 次 |
 
 ---
 ## 今日产出汇总（2026-05-22，Day 5）

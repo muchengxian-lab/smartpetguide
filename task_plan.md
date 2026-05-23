@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-**70 页在线（M7 达标）** | Pinterest 16 Pin 冷启动 | FB 8 群养号中 | Reddit `honest_pet_reviews` Day 1 | 21 篇评测 Grade 8 | GSC 等待中
+**70 页在线（M7 达标）** | Pinterest 25 Pin | Medium 3 篇 | FB 8 群养号 D3 | Reddit `honest_pet_reviews` D3 | 21 篇 Grade 8 | GEO 全栈优化完成 | GSC 首次真实流量
 
 ---
 
@@ -179,6 +179,28 @@
 
 #### 核心教训
 **Amazon 搜索 ≠ Google 搜索。** "no subscription/monthly fee" 是 Amazon 站内搜索词，Google 上几乎为零。选品必须双平台验证。
+
+### 阶段 6c：GEO 全栈优化 ✅ complete
+
+#### AI 引用深度调研（2026-05-23）
+- 四大引擎对比：ChatGPT/Perplexity/Google AIO/Gemini 引用算法差异
+- 真实案例：Growth Pro 0→82 引用（11 个月，133% 流量增长）
+- 关键因子：对比内容 +55% / 统计数据 +62% / 问题式 H2 +2.8× / dfn 定义 +57%
+
+#### 优化实施
+| 优化 | 效果 | 状态 |
+|------|------|------|
+| robots.txt AI 爬虫白名单 | 6 bot（GPTBot/PerplexityBot/Google-Extended/CCBot/anthropic-ai） | ✅ |
+| Author/Publisher sameAs | Pinterest+Medium+Flipboard 跨平台品牌一致性 | ✅ |
+| 66 个 H2 问题式标题 | +2.8× AI 引用率 | ✅ 13 篇指南全覆盖 |
+| 22 个 `<dfn>` 定义标签 | +57% AI 吸收率 | ✅ 关键术语已标记 |
+| Guide 可见日期 | 内容新鲜度信号 | ✅ May 24, 2026 |
+| Medium 3 篇 canonical | DA95 域名权威回流 | ✅ Trends Top 3 方向 |
+| Pinterest 25 Pin | 品牌信号积累 | ✅ 进行中 |
+
+#### GSC 首次真实数据
+- 1 点击 / 4 曝光 / CTR 25% / 平均排名 1
+- site: 搜索 4 唯一页面（+Aorkuler 评测）
 
 ---
 
