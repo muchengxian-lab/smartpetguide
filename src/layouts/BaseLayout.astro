@@ -64,8 +64,8 @@ const fullTitle = title.includes("SmartPetGuide")
         image: image,
         datePublished: publishDate || "2026-05-20",
         dateModified: modifiedDate || "2026-05-21",
-        author: { "@type": "Person", name: "SmartPetGuide Team", url: "https://smartpetguide.net/about/" },
-        publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/" },
+        author: { "@type": "Person", name: "SmartPetGuide Team", url: "https://smartpetguide.net/about/", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/"] },
+        publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/", sameAs: ["https://www.pinterest.com/muchengxian/", "https://medium.com/@muchengxian", "https://flipboard.com/@755g287"] },
         mainEntityOfPage: { "@type": "WebPage", "@id": Astro.url?.href || "https://smartpetguide.net/" },
       })} />
     )}
