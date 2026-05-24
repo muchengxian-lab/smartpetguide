@@ -742,5 +742,61 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 | 我学到了什么？ | GSC 数据含自身测试噪音，Pinterest Best 列表 > 对比文 |
 | 我做了什么？ | CTA 补齐 + Skills 优化 + Awin 注册 + 数据初探 |
 
+## 会话：2026-05-24（Day 6 续）— 客户研究（customer-research）
+
+### 完成事项
+- [x] **customer-research skill 安装**：`coreyhaines31/marketingskills@customer-research`（36K installs）
+- [x] **Amazon VOC 挖掘**：3/5 产品成功抓取（PETLIBRO/PETKIT/WOPET），38 条评论，5 组 VOC Gold 原话
+- [x] **Reddit 社区挖掘**：6 子版块 57 次搜索，覆盖全部 5 品类，10 个内容缺口识别
+- [x] **综合分析报告**：`customer-research/synthesis-report.md`，三角验证（Amazon+Reddit+Trends）
+- [x] **产品库声誉审计**：WOPET 口碑翻车需诚实标注，缺 Eufy/Wyze/SureFeed/Owlet 4 款
+- [x] **CTA 升级方案**：3 条基于 VOC 的 CTA 替换文案
+- [x] **findings.md 更新**
+
+### 核心发现
+1. 不锈钢饮水机 = Trends 23 + Reddit 共识 + Amazon 好评 → 最大机会
+2. 可靠性 > 一切（WiFi 断连 = 一票否决，双平台验证）
+3. 订阅费愤怒 = 跨品类转化杠杆
+4. "Worth It" $/月拆解是转化关键
+5. WOPET 需诚实标注风险，不能一味推
+
+### 产出文件
+| 文件 | 内容 |
+|------|------|
+| `customer-research/amazon-voc-raw.md` | Amazon 评论 VOC 原始数据 |
+| `customer-research/reddit-raw.md` | Reddit 社区挖掘原始数据 |
+| `customer-research/synthesis-report.md` | 综合分析 + 行动清单 |
+
+---
+## 会话：2026-05-24（Day 6）— 技术优化 + 外链获取
+
+### 完成事项
+- [x] **尾部斜杠 canonical 修复**：BaseLayout 加 `link rel=canonical` + Schema @id 同步去斜杠 → 已上线
+- [x] **内部链接审计**：4 个索引页补齐 + breed 索引页新建 → 31→0 孤岛页面
+- [x] **图片性能优化**：4 模板加 `decoding="async"` + `width/height` + hero 图 `fetchpriority="high"`
+- [x] **GitHub Profile**：muchengxian-lab/muchengxian-lab README 含链接 → DA92
+- [x] **Product Hunt**：排期 5/27（周二）发布 → DA90+
+- [x] **Indie Hackers**：产品页 + 帖子上线 → DA72
+- [x] **baoyu-imagine** 跳过（无 API Key）
+- [x] 时间线校正：M7=Day 4，今天=Day 6
+
+### 外链进度
+| # | 站点 | DA | 类型 | 状态 |
+|---|------|-----|------|------|
+| 1 | Product Hunt | 90+ | dofollow | ✅ 5/27 发布 |
+| 2 | Indie Hackers | 72 | dofollow | ✅ 已上线 |
+| 3 | GitHub | 92 | nofollow | ✅ 待 push |
+| 4 | BetaList | 65 | dofollow | 待做 |
+| 5 | The Cat Site | 48 | dofollow | 待做 |
+| 6 | Dog Forums | 45 | dofollow | 待做 |
+| 7 | Reddit | 91 | nofollow | 养号后 |
+
+### Git 提交
+- `61d9ae1` canonical 标签修复
+- `6da32e3` 内部链接审计
+- `d374519` 图片性能优化
+- `606fee3` 外链执行计划
+- `3403470` Day 6 项目文件更新
+
 ---
 *每个阶段完成后或遇到错误时更新此文件*

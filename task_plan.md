@@ -232,6 +232,18 @@
 - Day 1=5/19, Day 2=5/20, Day 3=5/21, Day 4=5/22, Day 5=5/23, **Day 6=5/24**
 - M7 达标 = Day 4（非 Day 5），提前达标；阶段 5 = Day 4（5/22）
 
+#### 技术优化（Day 6 后续）
+- [x] **尾部斜杠 canonical 修复**：BaseLayout 添加 canonical 标签 + Schema @id 同步去斜杠
+- [x] **内部链接审计**：5 个分类索引页全部更新（reviews 11→21, compare 4→11, guides 4→13, best 4→9, breed 新增）
+- [x] **图片性能优化**：全部产品图添加 decoding="async" + width/height + 评测 hero 图 fetchpriority="high"
+
+#### 外链获取（Day 6）
+- [x] **GitHub Profile**：muchengxian-lab 创建，README 含 smartpetguide.net 链接
+- [x] **Product Hunt**：5/27（周二）排期发布，DA90+ dofollow
+- [x] **Indie Hackers**：产品页+帖子已上线，DA72 dofollow
+- [ ] BetaList / The Cat Site / Dog Forums / Reddit Profile 待后续推进
+- **当前：3/7 外链完成，含 2 个高价值 dofollow**
+
 ---
 
 ## 内容结构（70 页）
