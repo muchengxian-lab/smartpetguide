@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-**70 页在线（M7 达标）** | Pinterest 25 Pin | Medium 3 篇 | FB 8 群养号 D3 | Reddit `honest_pet_reviews` D3 | 21 篇 Grade 8 | GEO 全栈优化完成 | Awin 注册审核中 | 底部 CTA 补齐 | Skills 14 个精准配置
+**Day 6（5/24）** | 70 页在线（M7） | Pinterest 25 Pin（Best 11pv > 对比 4pv） | Medium 3 篇 | FB 8 群养号 D3 | Reddit `honest_pet_reviews` 养号 D3 | 21 篇 Grade 8 | GEO 全栈完成 | Awin 审核中 | CTA 底部补齐 | 14 Skills 精准配置 | GSC 1点击/4曝光（自身测试数据）
 
 ---
 
@@ -38,7 +38,7 @@
 - **完成：** 2026-05-21（Day 3 续）
 - **产出：** 33 页在线，18 款产品
 
-### 阶段 4：关键词驱动内容冲刺（Day 4-7）
+### 阶段 4：关键词驱动内容冲刺（Day 3-4）
 
 #### 产品调整 ✅
 - [x] 删 Whistle Switch（BSR #270,865 + 3.0⭐，差评滞销）
@@ -67,7 +67,7 @@
 - [x] 品种专题 ×2：Golden Retriever / Multiple Cats
 - [x] GPS 购买指南
 - [x] Pinterest 首批 5 张 Pin 图 → 已发布（pinterest.com/muchengxian）
-- **完成：** 2026-05-21（Day 4）
+- **完成：** 2026-05-22（Day 4）
 - **产出：** 43 页在线，24 款产品，社交引流已启动
 
 ### 阶段 6：数据分析 + 第一轮优化（Day 11-14）⏳ 等待 GSC 数据
@@ -201,6 +201,36 @@
 #### GSC 首次真实数据
 - 1 点击 / 4 曝光 / CTR 25% / 平均排名 1
 - site: 搜索 4 唯一页面（+Aorkuler 评测）
+- **注意：** 疑似自身测试数据（site:搜索+页面验证产生的曝光和点击），非真实用户流量
+
+### 阶段 6d：Day 6 — CTA 补齐 + Skills 优化 + Awin 注册 + 数据初探 ✅ complete
+
+#### CTA 底部补齐（2026-05-24）
+- [x] 评测页底部 CTA（21 页，FAQ 后加"Ready to try...?"+ Amazon 按钮）
+- [x] 对比页底部 CTA（11 页，双产品并排按钮）
+- [x] Best 列表底部 CTA（9 页，Top Pick 推荐按钮）
+- **每页从 1 个链接提升到 2-3 个转化点**
+
+#### Skills 优化
+- [x] baoyu-image-gen（废弃）→ baoyu-imagine 替换
+- [x] 新增 image-optimization（图片压缩/WebP）
+- [x] 清理 4 个无用 skill（review/micro-saas-launcher/news-monitor/baoyu-image-gen）
+- [x] 激活 affiliate-marketing 联盟策略审查
+- [x] 总计 14 个精准 Skills
+
+#### Awin 联盟注册
+- [x] 自助注册完成（4 步：Account Setup → Promotional Type → Promotional Space → Verification）
+- [x] 账号：muchengxian@gmail.com / SmartPetGuide
+- [ ] 审核中，等待 Awin 邮件回复
+
+#### GSC + Pinterest 数据初探（Day 6）
+- GSC：1点击/4曝光（评估为自身测试流量），索引仍在处理中
+- Pinterest：Best列表11pv > 对比文4pv（~3x），0保存0点击，5月浏览
+- **结论：尚无可靠真实流量数据，等 1-2 周数据沉淀**
+
+#### 时间线校正
+- Day 1=5/19, Day 2=5/20, Day 3=5/21, Day 4=5/22, Day 5=5/23, **Day 6=5/24**
+- M7 达标 = Day 4（非 Day 5），提前达标；阶段 5 = Day 4（5/22）
 
 ---
 
@@ -239,7 +269,7 @@
 | M4: 关键词驱动38篇 | 38 | 10-30/天 | ✅ Day 3 |
 | M5: 对比+品种43篇 | 43 | 50-200/天 | ✅ Day 4 |
 | M6: GEO+Schema优化 | 43 | 10-50/天 | ✅ Day 4 |
-| M7: 70篇+社交三线 | 70 | 300-500/天 | ✅ Day 5（提前达标） |
+| M7: 70篇+社交三线 | 70 | 300-500/天 | ✅ Day 4（提前达标） |
 | M8: 规模化 | 150+ | 500-1000/天 | Month 2-3 |
 | M9: 广告变现 | 200+ | 1000-3000/天 | Month 4-6 |
 

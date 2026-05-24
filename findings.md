@@ -296,5 +296,36 @@
 - 新号 Day 1 放链接 = 必死
 - Pinterest 7 Pin 全部存活，是目前最安全渠道
 
+## Day 6（5/24）数据初探
+
+### GSC 数据评估
+- 1 点击 / 4 曝光 / 4 页面出数据
+- **评估为自身测试流量**：site:smartpetguide.net 搜索 + 页面 URL 检查产生的曝光
+- 索引报告仍在"处理中"
+- 数据延迟 ≥2 天，5/22+ 数据未到
+
+### Pinterest 早期信号
+| 发现 | 数据 |
+|------|------|
+| Best 列表 Pin 浏览量 | ~11/Pin（3 天） |
+| 对比文 Pin 浏览量 | ~4/Pin |
+| Best vs 对比 | **~3:1** |
+| 保存/点击 | 全部为 0 |
+| 月浏览量 | 5 |
+
+- Best 列表类型在 Pinterest 算法中曝光优于对比文
+- 零互动对 3 天新 Pin 属正常
+
+### Awin 联盟入驻
+- ShareASale 已被 Awin 收购合并
+- 自助注册路径：ui.awin.com/publisher-signup/
+- 4 步流程：Account Setup → Promotional Type → Promotional Space → Verification
+- 需 reCAPTCHA 手动验证
+- 注册后 1 个工作日邮件联系
+
+### 时间线校正
+- Day 1=5/19 正确，M7 达标=Day 4（5/22，非 Day 5）
+- 阶段 4 完成于 Day 3（5/21），非 Day 4-7
+
 ---
 *每次调研后更新此文件*
