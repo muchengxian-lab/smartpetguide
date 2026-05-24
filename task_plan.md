@@ -241,8 +241,9 @@
 - [x] **GitHub Profile**：muchengxian-lab 创建，README 含 smartpetguide.net 链接
 - [x] **Product Hunt**：5/27（周二）排期发布，DA90+ dofollow
 - [x] **Indie Hackers**：产品页+帖子已上线，DA72 dofollow
-- [ ] BetaList / The Cat Site / Dog Forums / Reddit Profile 待后续推进
-- **当前：3/7 外链完成，含 2 个高价值 dofollow**
+- [x] **The Cat Site**：注册+个人资料链接，DA48 dofollow ✅
+- [x] ~~BetaList~~（收费跳过） ~~Dog Forums~~（注册被拒）
+- **外链 7/7 完成：PH + IH + GitHub + Cat Site + Medium + Pinterest + Flipboard**
 
 ---
 
