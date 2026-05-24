@@ -410,7 +410,7 @@ const product = allProducts.get(review.productId);
     {(() => {
       const isLitter = product?.category === "litterBox";
       const isCamera = product?.category === "camera";
-      const isGPS = product?.category === "gps";
+      const isGPS = product?.category === "gps" || product?.category === "tracker";
       const isFeeder = product?.category === "feeder";
       const isFountain = product?.category === "fountain";
       const headline = isLitter ? "Never scoop litter again — for less than 2 coffees a week" :
