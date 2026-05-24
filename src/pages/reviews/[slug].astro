@@ -77,12 +77,13 @@ const reviewMap: Record<string, ReviewData> = {
     title: "WOPET Automatic Feeder Review 2026 — Best Budget Smart Feeder?",
     description: "Hands-on WOPET automatic feeder review: testing the 6L capacity, app reliability, portion accuracy, and whether it's the best value feeder under $100.",
     productId: "wopet-automatic",
-    verdict: "The WOPET Automatic Feeder is the best value you'll find in a smart feeder. At $89, it does the core job — reliable scheduled feeding — as well as feeders that cost $50 more. The 6L hopper is the largest in this price range, holding enough kibble for a large dog for over a week. The built-in battery backup keeps meals on schedule even during power outages, which is a thoughtful feature at this price. It handles up to 10 meals per day without jamming. What do you give up for the lower price? There's no camera, the app feels dated, and the plastic build isn't as premium as the PETKIT or Petlibro. But none of those things affect the core job of feeding your pet on time. If you want a camera or a more polished app, spend the extra $50 on the Petlibro Granary. If you just want your pet fed on schedule without spending a lot, the WOPET is the one to buy.",
+    verdict: "The WOPET Automatic Feeder is the best value under $100 for a smart feeder — but it comes with a reliability caveat you need to know. At $89, the hardware is solid: 6L hopper (largest in class), built-in battery backup for power outages, and up to 10 meals per day. Most owners get years of trouble-free use. However, a significant minority of Amazon reviewers and Reddit users report WiFi disconnection issues and occasional jamming with large kibble after several months. The app is functional but dated, and some users report connectivity problems when switching between 2.4GHz networks. Here's the bottom line: if reliability is your absolute top priority and you can't tolerate any risk of a missed meal, spend the extra $50 on the Petlibro Granary. If you accept the small risk in exchange for the best hardware specs at this price, the WOPET is a great buy. Either way, always set up battery backup and test WiFi connectivity for the first week.",
     content: "",
     faqs: [
       { q: "Is the WOPET feeder suitable for large dogs?", a: "Yes — the 6L hopper holds about 25-30 cups of kibble, enough for a large dog for 5-7 days. Portion sizes can be set from 1 to 20 portions per meal (about 5g per portion)." },
       { q: "Does the WOPET app work with 5GHz Wi-Fi?", a: "No — the WOPET feeder only supports 2.4GHz Wi-Fi. Most routers broadcast both, but you may need to enable 2.4GHz in your router settings." },
       { q: "What happens if the WOPET loses power?", a: "Built-in battery backup (D batteries) takes over automatically. This is a key advantage over competitors like Petlibro that require a separate battery pack purchase." },
+      { q: "Does the WOPET feeder disconnect from WiFi often?", a: "Some users report occasional WiFi disconnections, especially with 2.4GHz networks that switch channels. When WiFi drops, the feeder continues its programmed schedule — it will NOT skip meals. However, you won't be able to remotely trigger an extra feeding or change the schedule until it reconnects. We recommend testing WiFi stability for the first week and setting up battery backup as a failsafe." },
     ],
   },
   "dogness-mini-smart-feeder-review": {
@@ -348,7 +349,12 @@ const product = allProducts.get(review.productId);
     <div class="mt-8 rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
       <p class="font-display text-lg italic text-forest">"{review.verdict}"</p>
       <div class="mt-4 flex flex-wrap items-center gap-4">
-        <span class="font-display text-3xl font-bold text-forest">${product?.price || 0}</span>
+        <div>
+          <span class="font-display text-3xl font-bold text-forest">${product?.price || 0}</span>
+          {product?.price && (
+            <p class="text-sm text-bark-muted">About <strong class="text-forest">${Math.round(product.price / 36)}/mo</strong> over 3 years</p>
+          )}
+        </div>
         <span class="flex items-center gap-1 text-honey text-lg">
           {"★".repeat(Math.round(product?.rating || 0))}
           <span class="text-bark-muted text-sm">({(product?.reviewCount || 0).toLocaleString()} reviews)</span>
@@ -401,8 +407,20 @@ const product = allProducts.get(review.productId);
     <FAQ items={review.faqs} />
 
     <!-- Bottom CTA -->
-    <div class="mt-10 rounded-2xl border border-honey/40 bg-gradient-to-br from-honey/5 to-cream p-6 text-center md:p-8">
-      <p class="font-display text-xl font-bold text-forest">Ready to try the {product?.name || "product"}?</p>
+    {(() => {
+      const isLitter = product?.category === "litterBox";
+      const isCamera = product?.category === "camera";
+      const isGPS = product?.category === "gps";
+      const isFeeder = product?.category === "feeder";
+      const isFountain = product?.category === "fountain";
+      const headline = isLitter ? "Never scoop litter again — for less than 2 coffees a week" :
+                       isCamera ? "Stop wondering what your pet is doing when you're away" :
+                       isGPS ? "Know exactly where your pet is, any time, anywhere" :
+                       isFeeder ? "Never worry about your pet going hungry when you work late" :
+                       isFountain ? "The fountain that keeps your pet hydrated and healthy" :
+                       `Ready to try the ${product?.name || "product"}?`;
+      return (<div class="mt-10 rounded-2xl border border-honey/40 bg-gradient-to-br from-honey/5 to-cream p-6 text-center md:p-8">
+      <p class="font-display text-xl font-bold text-forest">{headline}</p>
       <p class="mt-2 text-bark-muted">Get the best price on Amazon with free shipping and returns.</p>
       <a href={product?.amazonUrl || "#"} target="_blank" rel="nofollow sponsored noopener"
          class="mt-5 inline-flex items-center gap-2 rounded-xl bg-honey px-8 py-3 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
@@ -410,7 +428,7 @@ const product = allProducts.get(review.productId);
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
       <p class="mt-3 text-xs text-bark-muted/70">As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure/" class="underline">Learn more</a></p>
-    </div>
+    </div>)})()}
   </article>
 
   <script type="application/ld+json" set:html={JSON.stringify({
