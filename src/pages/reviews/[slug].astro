@@ -332,7 +332,7 @@ const product = allProducts.get(review.productId);
     <!-- Product Hero Image -->
     {product?.imageUrl && (
       <div class="mt-6">
-        <img src={product.imageUrl} alt={product.name} class="mx-auto h-64 w-full max-w-lg rounded-2xl object-cover shadow-sm bg-sage/60" loading="lazy" />
+        <img src={product.imageUrl} alt={product.name} class="mx-auto h-64 w-full max-w-lg rounded-2xl object-cover shadow-sm bg-sage/60" width="800" height="256" loading="eager" decoding="async" fetchpriority="high" />
       </div>
     )}
 

@@ -342,7 +342,7 @@ const productB = data.productBId ? allProducts.get(data.productBId) : data.produ
         <div class={`rounded-2xl border p-6 ${idx === 0 ? 'border-forest/20 bg-forest/3' : 'border-sage-dark/30 bg-white'}`}>
           <!-- Product image -->
           {p.imageUrl && (
-            <img src={p.imageUrl} alt={p.name} class="mb-4 h-48 w-full rounded-xl object-cover bg-sage/60" loading="lazy" />
+            <img src={p.imageUrl} alt={p.name} class="mb-4 h-48 w-full rounded-xl object-cover bg-sage/60" width="400" height="192" loading="lazy" decoding="async" />
           )}
           <h2 class="font-display text-xl font-bold text-forest">{p.name}</h2>
           <p class="text-sm text-bark-muted">by {p.brand}</p>

@@ -192,7 +192,7 @@ const isLitterBox = slug.includes("litter");
                 <div class="flex flex-col gap-4 sm:flex-row">
                   <!-- Product image -->
                   <div class="shrink-0">
-                    <img src={p.imageUrl} alt={p.name} class="h-40 w-40 rounded-xl object-cover bg-sage/60" loading="lazy" />
+                    <img src={p.imageUrl} alt={p.name} class="h-40 w-40 rounded-xl object-cover bg-sage/60" width="160" height="160" loading="lazy" decoding="async" />
                   </div>
                   <div class="flex-1">
                     <h3 class="font-display text-xl font-semibold text-forest">{p.name}</h3>
