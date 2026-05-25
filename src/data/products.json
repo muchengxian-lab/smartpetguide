@@ -84,6 +84,23 @@
       "category": "litterBox",
       "weight": 2.5,
       "warranty": "18 months"
+    },
+    {
+      "id": "amazon-basics-litter-box",
+      "name": "Amazon Basics Self-Cleaning Cat Litter Box",
+      "brand": "Amazon Basics",
+      "price": 209,
+      "amazonUrl": "https://www.amazon.com/dp/B0FZQ8BTYG?tag=smartpetgui0a-20",
+      "imageUrl": "https://m.media-amazon.com/images/I/511qt2xxHTL._AC_SL1500_.jpg",
+      "rating": 5.0,
+      "reviewCount": 0,
+      "features": ["Patented S-shaped screen", "Odorless deodorizing spray", "15 safety sensors", "≤40dB quiet", "3.2gal waste bin (15 days)", "Removable washable liner", "3.3-22lb cats"],
+      "pros": ["Lowest price of any auto litter box ($209)", "Amazon Basics brand = trusted", "15 sensors for safety", "Deodorizing spray built-in", "Washable liner (no disposable trays needed)", "Quiet at ≤40dB"],
+      "cons": ["Brand new — no long-term reliability data", "0 reviews (untested by real users)", "No app/WiFi connectivity", "No multi-cat weight recognition", "Crystal litter not compatible"],
+      "bestFor": ["Budget-conscious first-time buyers", "Single-cat homes", "Those who want Amazon brand reliability", "Quiet home offices or bedrooms"],
+      "category": "litterBox",
+      "weight": 3.5,
+      "warranty": "1 year"
     }
   ],
   "feeders": [

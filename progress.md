@@ -799,4 +799,212 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 - `3403470` Day 6 项目文件更新
 
 ---
+
+## 会话：2026-05-25（Day 7）— 策略重整：良辰美案例分析驱动
+
+### 背景
+用户观看抖音视频「光羽的平行世界」采访 AI 建站者良辰美（300+网站、年入$200K+），要求深度评估真实性并提取对 SmartPetGuide 的项目经验。
+
+### 分析结论
+详见 [findings.md](findings.md) 良辰美案例对照分析章节。
+
+核心发现：
+- 良辰美故事真实度 ~60%（人设夸大、手段灰色，但内核可信）
+- SmartPetGuide 和良辰美路径本质不同（精品单站 vs 概率数量游戏）
+- 可迁移的 5 个经验 + 绝不能学的 3 个坑
+
+### 策略调整
+
+| 停止 | 启动/加强 |
+|------|----------|
+| ❌ 等数据 1-2 周 | ✅ 恢复内容生产，每周 5-8 篇 |
+| ❌ 全部 A 级打磨 | ✅ 内容分级（A 20% / B 50% / C 30%） |
+| ❌ FB+Reddit 长时间养号 | ✅ 压缩到 15min/天 |
+| ❌ Medium 追加文章 | ✅ 暂停，3 篇够 |
+| ❌ Quora/TikTok 启动 | ✅ 无限期推迟 |
+| — | ✅ 建立新品速报栏目（Amazon New Releases） |
+| — | ✅ Pinterest 保持每周 2-3 轮发布 |
+
+### 文件更新
+- [x] **task_plan.md**：新增阶段 6e 策略重整章节
+- [x] **findings.md**：新增良辰美案例对照分析章节
+- [x] **progress.md**：本日志
+- [x] **项目记忆**：smartpetguide_project.md 同步更新
+
+### 修订后的本周行动（5/25-5/31）
+| 优先级 | 行动 | 频次 |
+|:------:|------|------|
+| 1 | B 级内容生产 | 每天 1-2 篇 |
+| 2 | C 级内容快速覆盖 | 每 2 天 1 篇 |
+| 3 | Amazon New Releases 监控 | 每周 2 次 |
+| 4 | Pinterest 第 3-4 轮 Pin | 每周 3 次 |
+| 5 | Product Hunt Launch | 5/27（周二） |
+| 6 | FB + Reddit 养号 | 每天 15min |
+
+### 关键原则
+- **不要在第 5 个站就停下来** → 70 篇不是终点，是起点
+- **精品单站 ≠ 只做内容不做量** → 分级效率 > 全 A 级打磨
+- **良辰美的黑帽手段绝不学** → 不碰评论外链、AI 全自动、灰色矩阵
+- **但要学他的节奏** → 不停、不等、持续产出
+
+---
+
+## 会话：2026-05-25（Day 7 续）— 下周选题调研
+
+### 完成事项
+- [x] **全站内容覆盖审计**：逐产品/逐品类核对待评测/对比/指南覆盖
+- [x] **内容缺口识别**：3 款产品缺评测 + 场景指南缺口 + 长尾词缺口
+- [x] **8 篇选题确定**（3评测+3指南+2长尾），写入 task_plan.md 阶段 6e
+- [x] **每日排期**：周一至周六的产出节奏规划
+
+### 内容缺口发现
+
+| 缺口类型 | 详情 |
+|----------|------|
+| 缺评测 | PETKIT Fresh Element（喂食器）/ Homerunpet Wireless（饮水机）/ eufy（摄像头） |
+| 缺对比 | CATLINK vs Elspet / KittySpout vs Pioneer Pet / WOPET Camera vs xpai |
+| 缺场景指南 | 公寓/成本分析/新手入门 |
+| 长尾词空白 | 不锈钢vs塑料安全性 / 普通摄像头替代宠物摄像头 |
+
+### 下周选题（70 → 78 页）
+
+| # | 标题 | 类型 | 等级 | 选题理由 |
+|---|------|------|:--:|------|
+| 1 | PETKIT Fresh Element Solo Review 2026 | 评测 | B | 补喂食器缺口，旋转密封保鲜差异化 |
+| 2 | Homerunpet Wireless Fountain Review 2026 | 评测 | B | 补饮水机缺口，$45最低价无线智能 |
+| 3 | eufy Security Pet Camera Review 2026 | 评测 | B | 已有2篇对比指向它，缺独立评测 |
+| 4 | Smart Pet Devices for Apartment Living 2026 | 指南 | A | 噪音+空间+无线场景覆盖 |
+| 5 | The True Cost: Subscription vs One-Time (3-Year) | 指南 | A | VOC"订阅费愤怒"转化杠杆 |
+| 6 | First Smart Pet Device? Beginner's Guide 2026 | 指南 | A | 买家旅程入口，新用户着陆页 |
+| 7 | Stainless Steel vs Plastic Cat Fountains | 长尾 | C | Reddit+Amazon反复讨论，挂钩Trends 23 |
+| 8 | Can Regular Security Camera Work as Pet Camera? | 长尾 | C | Reddit高频问题，xpai处于重叠区 |
+
+### 每日节奏
+| 日期 | 重点 |
+|------|------|
+| ~~5/26 周一~~ → **5/25 周一** | ✅ PETKIT评测 + Homerunpet评测（2篇B级）已完成 |
+| **5/26 周二**（调整） | eufy评测（B级）+ Product Hunt 发布准备 |
+| **5/27 周三** | Product Hunt Launch + 公寓指南（A级） |
+| 5/28 周四 | 订阅成本分析（A级） |
+| 5/29 周五 | 新手入门指南（A级） |
+| 5/30 周六 | 不锈钢vs塑料 + 安全摄像头替代（2篇C级） |
+| 5/31 周日 | Pinterest R3 + 下周选题预研 |
+
+---
+
+## 会话：2026-05-25（Day 7 续2）— 周一任务完成 + GSC 数据交叉验证
+
+### 完成事项
+- [x] **PETKIT Fresh Element Solo 评测**：喂食器第 4 篇，补缺口，旋转密封保鲜差异化
+- [x] **Homerunpet Wireless Fountain 评测**：饮水机第 6 篇，补缺口，$45 最低价无线智能
+- [x] 构建 0 错误，Vercel 部署成功，70→72 页
+- [x] **GSC 数据交叉验证**：24h 逐时数据 + 3 个月数据对照，确认大部分曝光为测试噪音
+
+### GSC 交叉验证结论
+
+| 数据 | 原始值 | 验证后 |
+|------|:--:|:--:|
+| 3 个月总曝光 | 7 | ~5-6（首页部分 site: 残留，其余无测试证据） |
+| 3 个月总点击 | 1 | 1（猫砂盆指南，大概率真实） |
+| 24h 曝光 | 5 | ~4-5（经查操作日志，5/24 晚 8-9 点无测试活动） |
+| 24h 点击 | 0 | 0 |
+
+**修正：5/24 晚 8-9 点 4 次曝光不能确认是测试噪音，操作日志中该时段无 site: 搜索记录。**
+
+**核心结论：数据量太小，不能做方向判断。继续写内容。**
+
+### 每日节奏（日期已修正：5/25=周一）
+
+| 日期 | 任务 | 状态 |
+|------|------|:--:|
+| 5/25 周一 | PETKIT 评测 + Homerunpet 评测（2篇B级） | ✅ |
+| 5/26 周二 | eufy 评测 + Product Hunt 发布准备 | |
+| 5/27 周三 | Product Hunt Launch + 公寓指南（A级） | |
+
+### 更新文件
+- [x] smartpetguide_project.md：内容72页、GSC验证数据、本周进度表、明日任务
+- [x] progress.md：本日志
+- [x] 评测代码：reviews/[slug].astro 新增 2 个条目
+
+---
+
+## 会话：2026-05-25（Day 7 续3）— 冷启动 Skills 安装 + Pinterest 全面优化
+
+### Skills 安装
+- [x] `cold-start-strategy` (782 installs) — 冷启动策略框架，适配到内容站场景
+- [x] `pinterest-posts` (817 installs) — Pinterest 创建与优化指南
+- [x] `traffic-analysis` (803 installs) — 流量分析框架
+- [x] 三个 Skills 全部试用完成
+
+### Skills 试用结论
+| Skill | 对内容站实用性 | 关键收获 |
+|------|:--:|------|
+| cold-start-strategy | 🟡 需自行适配 | 框架偏 SaaS，确认 Pinterest+Reddit+PH 三渠道 |
+| pinterest-posts | 🟢 直接可用 | Alt text +123% 点击、Board SEO 是排名因子、220-232 字符描述最优 |
+| traffic-analysis | 🔴 当前用不上 | 要有流量数据才有分析价值，Month 3 后再用 |
+
+### Pinterest 全面优化
+- [x] **创建 5 个公开 Board**（含关键词名称 + 描述）
+- [x] **25 个 Pin 全部归类**到对应 Board
+- [x] **删除 1 个空板**「Smart Pet Devices 2026」
+- [x] **第 1 轮 9 个 Best Pin 文案优化**：Title + Description（200-232字符）+ Alt text
+- [x] 确认「Products you tagged」为系统自动生成，无需手动操作
+
+### Pinterest 诊断发现
+- **修复前**：0 个 Board，25 Pin 散落，0 保存 0 点击，139 月浏览
+- **根因**：无 Board = Pinterest 算法不理解内容主题，无法推荐
+- **修复后**：5 Board SEO + 25 Pin 归类 + 9 Pin 文案优化
+
+### 今日新增经验
+- Board SEO 是 Pin 排名的前置条件，必须先建 Board
+- Alt text 是最被低估的优化杠杆（+123% 点击，几乎所有新手都忽略）
+- 空 Board 对 SEO 无任何价值，应立即删除
+- Pinterest 自动生成「Products you tagged」不影响任何东西
+
+### 更新文件
+- [x] smartpetguide_project.md：Pinterest 状态、Skills 清单、经验总结、明日任务
+- [x] progress.md：本日志
+- [x] smartpetguide_skills.md：更新至 17 个 Skills
+
+### 明日任务（5/26 周二）
+| 优先级 | 任务 |
+|:------:|------|
+| 1 | eufy Security Pet Camera 评测（第 24 款最后缺评测的产品） |
+| 2 | Product Hunt Launch 准备（文案 + 截图） |
+| 3 | FB + Reddit 养号 15min |
+| 4 | 可选：第 2 轮对比文 Pin 文案优化 |
+
+---
+
+## 会话：2026-05-25（Day 7 续4）— Amazon New Releases 扫描 + 新品抢发
+
+### Amazon New Releases 扫描发现
+- [x] 扫描 3 个品类（喂食器/猫砂盆/饮水机）最新品
+- [x] **最大发现：Amazon Basics Self-Cleaning Cat Litter Box**
+  - $209.99，Amazon 自有品牌，0 评论，全新上架
+  - S 形筛网专利、15 传感器、除臭喷雾、≤40dB
+  - $490 低于 LR4、$90 低于 PetSafe ScoopFree
+  - 0 评论 = 内容真空，先发优势窗口
+- [x] 其他发现：自动湿粮喂食器、KittySpout 4L 升级版、Sarpaws 无线饮水机
+
+### Amazon Basics 新品抢发
+- [x] 产品入库：products.json 新增 `amazon-basics-litter-box`（第 26 款）
+- [x] 评测上线：B+ 级，完整 Schema + 5 FAQ + 多产品对比锚点
+- [x] 自动集成到 `/best/self-cleaning-litter-boxes/`（品类自动渲染）
+- [x] GSC 手动请求索引（通过浏览器操作）
+- [x] Pinterest Pin 发布（纯产品图 + 文案 + Alt text）
+- [x] 构建部署：73→74 页，0 错误
+
+### 策略验证
+- Amazon Basics 就是 SmartPetGuide 的「心动小镇时刻」——新品 0 评论 + 大品牌 + 破坏性定价
+- 内容分级 B+ 在时间压力下是最优解：完整 Schema + FAQ，不做 Grade 8 精雕
+- 产品库单一数据源架构优势：加一款产品 → 评测+Best列表+RSS 全自动同步
+
+### 更新文件
+- [x] products.json：第 26 款产品
+- [x] reviews/[slug].astro：新增 amazon-basics-litter-box-review
+- [x] smartpetguide_project.md：73 页、本周进度追加
+- [x] progress.md：本日志
+
+---
 *每个阶段完成后或遇到错误时更新此文件*
