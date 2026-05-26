@@ -1007,4 +1007,42 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 - [x] progress.md：本日志
 
 ---
+
+## 会话：2026-05-26（Day 8）— eufy评测 + Product Hunt核实 + GSC排查 + Pinterest全面收尾
+
+### 完成事项
+- [x] **eufy Security Pet Camera 评测**：评测线全部补齐（25/26产品），74页
+- [x] **GSC 索引问题排查**：1个重定向错误（`/best/gps-trackers-no-monthly-fee/`），5/21抓取遗留，5/24已修复
+- [x] **GSC 数据检查**：16曝光/1点击/6.2%CTR/平均排名4.3，曝光翻倍但点击停滞
+- [x] **Awin 审核未通过**：模板拒信，新站正常，等有流量再申请
+- [x] **Product Hunt 核实**：已定时 5/27 12:01AM PDT，全部素材正确
+- [x] **Pinterest 第2轮9对比Pin优化**：3个补发(Pin10/11/15)+6个Description/Alt升级
+- [x] **Pinterest 5个早期Pin补优化**：Description+Alt text全部补齐
+- [x] **Pinterest 第3轮4评测Pin发布**：Petlibro+LR4+Pioneer Pet+Furbo
+- [x] **删除空板** Best Smart Pet Devices
+- [x] **Pinterest全优化完成**：5Board+29Pin，全部Title/Desc/Alt/Board到位
+
+### Pinterest 最终状态
+| Board | Pin数 | 优化 |
+|------|:--:|:--:|
+| Self-Cleaning Litter Boxes | 8 | ✅ |
+| Automatic Cat Feeders | 5 | ✅ |
+| Pet Water Fountains | 5 | ✅ |
+| Pet Cameras & GPS | 6 | ✅ |
+| **合计** | **29** | **全部到位** |
+
+### GSC 索引状态
+- 已索引：5页 | 重定向错误：1 | 排队中：63 | 已抓取待索引：5
+
+### 更新文件
+- [x] reviews/[slug].astro：新增 eufy-pet-camera-review
+- [x] smartpetguide_project.md：74页/Pinterest/Pin状态/本周进度
+- [x] progress.md：本日志
+
+### 明日任务（5/27 周三）
+1. Product Hunt 自动发布（检查结果）
+2. Apartment Living 指南（A级）
+3. Pinterest 第3轮续 Pin 21-25
+
+---
 *每个阶段完成后或遇到错误时更新此文件*

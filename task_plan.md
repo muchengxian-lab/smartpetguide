@@ -357,12 +357,12 @@
 
 | 日期 | 重点 | 产出 | 状态 |
 |------|------|------|:--:|
-| 周一 5/25 | PETKIT Fresh Element 评测 + Homerunpet 评测 | 2 篇 B 级 | ✅ |
-| 周二 5/26 | eufy 评测 + Product Hunt 发布准备 | 1 篇 B 级 | |
+| 周一 5/25 | PETKIT 评测 + Homerunpet 评测 + Amazon Basics 评测 | 3 篇 | ✅ |
+| 周二 5/26 | eufy 评测 + Pinterest 收尾 | 1 篇 + Pin 优化 | ✅ |
 | 周三 5/27 | **Product Hunt Launch** + 公寓指南（A级） | 1 篇 A 级 + PH | |
 | 周四 5/28 | 订阅成本分析（A级） | 1 篇 A 级 | |
 | 周五 5/29 | 新手入门指南（A级） | 1 篇 A 级 | |
-| 周六 5/30 | 不锈钢vs塑料 + 安全摄像头替代（C级）+ Pinterest R3 | 2 篇 C 级 + Pin | |
+| 周六 5/30 | 不锈钢vs塑料 + 摄像头替代（C级）+ Pinterest R3续 | 2 篇 C 级 + Pin | |
 | 周日 5/31 | 休息 + Amazon New Releases 监控 | 调研下周选题 | |
 
 #### 关键原则
