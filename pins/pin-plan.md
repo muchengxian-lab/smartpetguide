@@ -11,10 +11,26 @@
 - 字体：Segoe UI / Arial，标题 44-52px Bold，Badge 26px，特性标签 20px
 - 每个产品 1 个基础 Pin + 1-2 个变体（不同标题角度/不同产品图）
 
-## Pin 描述规范
-- 描述 3-5 句，包含具体数字（价格、评分、年限）、痛点钩子、差异化亮点
-- 链接统一带 UTM：`?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4`
-- 标签 4-5 个，品类词 + 痛点词 + 品牌词
+## Pin 优化原则（Day 7 pinterest-posts Skill + 实战验证，每条必检）
+
+| # | 原则 | 原因 |
+|------|------|------|
+| 1 | **痛点开头** | 第一句话必须击中痛点（"Furbo costs $395 over 3 years" 而非 "We reviewed cameras"） |
+| 2 | **CTA 结尾 `→ Save for later 📌`** | 引导保存，提升 Pin 权重 |
+| 3 | **Alt text** | 可访问性 + Pinterest SEO（提升 123% 点击、Board SEO 是排名因子） |
+| 4 | **描述 220-232 字符** | Pinterest 最优截断长度（R3 实测） |
+| 5 | **图片文字叠加** | 纯产品图→带标题卡片，提升停留和点击 |
+| 6 | **UTM 参数** | `?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r{N}` 追踪流量 |
+
+## Pin 内容清单（7 字段，每 Pin 必填）
+
+- **图片**：`pins_with_text/{文件名}.jpg`（文字已叠加）
+- **备用原图**：`images/{文件名}.jpg`（无文字版本，用于快速生成变体）
+- **标题**：50-60 字符，含具体数字或痛点词
+- **描述**：3-5 句，痛点开头→具体数字→差异化→CTA（220-232 字符）→ `→ Save for later 📌`
+- **链接**：含 UTM 参数
+- **Alt text**：英文，描述图片内容 + 含关键词
+- **标签**：4-5 个，品类词 + 痛点词 + 品牌词
 
 ---
 
