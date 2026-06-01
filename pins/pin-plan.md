@@ -1,11 +1,20 @@
 # SmartPetGuide Pinterest Pin 内容计划
 
-> 目标：100+ Pin | 每天 3-5 个 | 图片：C:/Users/Administrator/smartpetguide/pins/images/
+> 目标：100+ Pin | 每天 3-5 个 | 图片：`pins/pins_with_text/`（带文字叠层，1000×1500）
+> 活跃 Pin：45（R1 9 + R2 9 + R3 15 + R4 8 + 4.5轮 4）
 
 ## 设计规范
 - 尺寸：1000×1500 竖版（Pinterest 推荐 2:3）
-- 模板：Canva（产品图 + 标题大字 + 品牌色 Forest/Honey）
+- 工具：HTML 模板 + Playwright 截图 → `pins_with_text/`
+- 配色：Forest #1A3C34（Header 背景）+ Honey #D4914B（Badge / CTA 按钮）+ Cream #F5F0EB（页面底色）
+- 结构：顶部品牌条（SmartPetGuide + 标题 + 金色标签 Badge）→ 中段产品图（880×760, 白底圆角阴影）→ 底部特性列表 + CTA 按钮
+- 字体：Segoe UI / Arial，标题 44-52px Bold，Badge 26px，特性标签 20px
 - 每个产品 1 个基础 Pin + 1-2 个变体（不同标题角度/不同产品图）
+
+## Pin 描述规范
+- 描述 3-5 句，包含具体数字（价格、评分、年限）、痛点钩子、差异化亮点
+- 链接统一带 UTM：`?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4`
+- 标签 4-5 个，品类词 + 痛点词 + 品牌词
 
 ---
 
