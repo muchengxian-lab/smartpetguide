@@ -556,16 +556,17 @@ SmartPetGuide 对应的目标：
 ## Vercel GitHub 自动部署（2026-06-01，Day 13）
 
 ### 发现
-- Vercel 项目未连接 GitHub，每次依赖 CLI 手动部署
-- 导致多个 Git push 未自动上线（Day 8-12 的 commit 未部署）
+- Vercel 项目未连接 GitHub，之前依赖 CLI 手动部署（最后一次：`8d131b9` Day 8）
+- 今天 Day 13 的 8 个 commit 推送到 GitHub 后未自动部署，~1 小时后才发现
+- 5/29-5/31 期间无代码提交，不存在积压
 
 ### 修复
 - Vercel Settings → Git → 连接 `muchengxian-lab/smartpetguide`
-- 现在每次 `git push` 自动触发 Vercel 构建部署
+- 现在每次 `git push` 自动触发 Vercel 构建部署（已验证 3 次自动部署成功）
 
 ### 教训
 - 项目初始化后第一件事：确认 CI/CD 自动部署已接通
-- 定期检查 Deployments 页面确认最新 commit 已上线
+- 变更部署配置后立刻验证线上是否生效（响应头、新增内容）
 
 ---
 *每次调研后更新此文件*

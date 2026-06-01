@@ -1361,7 +1361,8 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 - [x] Root cause: sitemap 生成 `/page/`，Vercel 配置 `trailingSlash: false` 导致 301
 - [x] 修复: `astro.config.mjs` 添加 `trailingSlash: "never"` → 全站 URL 统一无斜杠
 - [x] **发现站点在 Vercel 而非 Netlify**（此前记错）→ 删除误创建的 `netlify.toml`
-- [x] Vercel 未连接 GitHub（手动 CLI 部署）→ 连接 `muchengxian-lab/smartpetguide` → 自动部署就绪
+- [x] Vercel 未连接 GitHub（之前通过 CLI 手动部署，最后一次 Day 8）→ 连接后今天 8 个 commit 自动部署
+- [x] 注：5/29-5/31 无代码提交，不存在"Day 8-12 积压"，仅今天 ~1 小时部署延迟
 
 ### 增量内链加固
 - [x] **Review 模板**：FAQ 下方新增"Explore More"区块，按品类链回 Best列表/购买指南/对比页 → 25 个 review 页面全部增强
