@@ -281,59 +281,75 @@
 ## 第 4 轮：购买指南 + 品种专题（8 Pin）
 
 ### Pin 34
-- **图片**：`pins_with_text/pin34-feeder-guide.jpg`
+- **图片**：`pins_with_text/pin34-feeder-guide.jpg`（文字已叠加）
+- **备用原图**：`images/wopet-feeder.jpg`
 - **标题**：How to Choose an Automatic Pet Feeder — Complete Buying Guide
-- **描述**：Camera or no camera? What capacity do you need? Is battery backup important? Our complete buyer's guide walks through every decision, with picks at each price point from $89 to $139.
+- **描述**：Camera or no camera? What capacity for your pet? Is battery backup a must? Our complete buyer's guide walks through every decision with real product picks at each price point — from the $89 WOPET (6L, reliable basics) to the $139 Petlibro Granary (1080p camera with night vision). Plus: kibble size compatibility, app reliability rankings, and the one feature 80% of buyers overlook. → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/automatic-feeder-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Automatic pet feeder buying guide infographic with product comparison and capacity recommendations
 - **标签**：automatic pet feeder guide, pet feeder buying guide, smart feeder, cat feeder, dog feeder
 
 ### Pin 35
-- **图片**：`pins_with_text/pin35-litter-box-guide.jpg`
+- **图片**：`pins_with_text/pin35-litter-box-guide.jpg`（文字已叠加）
+- **备用原图**：`images/litter-robot-4.jpg`
 - **标题**：Self-Cleaning Litter Box Buying Guide — What to Know Before You Buy
-- **描述**：Sifting vs rotating vs crystal. Size requirements. Multi-cat considerations. Ongoing costs explained. Everything to know before spending $300-$700 on an automatic litter box.
+- **描述**：Sifting vs rotating vs crystal — three completely different technologies, one goal. We compare the Litter-Robot 4 ($699, rotating globe, handles 4 cats), Leo's Loo Too ($449, UV sterilization), and PetSafe ScoopFree ($299, crystal litter). Size requirements for your space. Multi-cat considerations. The real ongoing costs (filters, trays, litter) that make a $299 box cost more than a $699 one over 3 years. → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Self-cleaning litter box buying guide comparing sifting, rotating, and crystal technologies with pricing
 - **标签**：litter box buying guide, self cleaning litter box, automatic litter box, cat care, pet products
 
 ### Pin 36
-- **图片**：`pins_with_text/pin36-fountain-guide.jpg`
+- **图片**：`pins_with_text/pin36-fountain-guide.jpg`（文字已叠加）
+- **备用原图**：`images/pioneer-pet-raindrop.jpg`
 - **标题**：Smart Water Fountain Buying Guide — Steel vs Plastic vs Ceramic
-- **描述**：Stainless steel stays cleaner longer and is dishwasher-safe. Plastic is cheap but develops biofilm. Ceramic looks nice but breaks easily. Our complete fountain material guide with top picks.
+- **描述**：The material of your cat's fountain directly affects their health. Stainless steel ($39-93) is dishwasher-safe, non-porous, and lasts 5+ years. Plastic ($20-40) develops bacteria-harboring scratches within months. Ceramic ($50-80) is pretty but breaks easily. We compare all three on hygiene, durability, taste, and real long-term cost — plus filtration types (charcoal, ion-exchange, multi-layer), noise ratings, and our top pick for every budget. → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/smart-water-fountain-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Cat water fountain buying guide showing stainless steel, plastic, and ceramic fountain comparison
 - **标签**：cat water fountain guide, stainless steel vs plastic, pet hydration, fountain buying guide, cat health
 
 ### Pin 37
-- **图片**：`pins_with_text/pin37-camera-guide.jpg`
+- **图片**：`pins_with_text/pin37-camera-guide.jpg`（文字已叠加）
+- **备用原图**：`images/furbo-360.jpg`
 - **标题**：Pet Camera Buying Guide — Subscription vs No-Subscription
-- **描述**：Resolution, pan/tilt vs fixed, cloud vs local storage, treat tossing, AI features. Our complete buyer's guide with picks for every budget from $43 to $249.
+- **描述**：A $179 Furbo 360 actually costs $395 over 3 years once you add cloud subscription. Meanwhile, the xpai 4K ($43) and eufy Security ($129) store everything locally with zero monthly fees. We compare resolution (1080p vs 2K vs 4K), pan/tilt vs fixed, cloud vs local storage, treat tossing, AI barking alerts, and night vision. Picks at every budget: $35 Wyze Cam to $249 Petcube Bites 2. Plus: the $0 old-phone trick that works as a pet camera today. → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/pet-camera-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Pet camera buying guide comparing subscription vs no-subscription cameras with 3-year cost breakdown
 - **标签**：pet camera guide, security camera for pets, dog camera, cat camera, pet monitoring
 
 ### Pin 38
-- **图片**：`pins_with_text/pin38-gps-guide.jpg`
+- **图片**：`pins_with_text/pin38-gps-guide.jpg`（文字已叠加）
+- **备用原图**：`images/tractive-gps.jpg`
 - **标题**：GPS Pet Tracker Buying Guide — Range, Battery, Fees Explained
-- **描述**：GPS vs Bluetooth vs Radio — which tracking tech fits your dog? Subscription costs compared over 3 years. Battery life expectations. Coverage maps. Our complete guide to choosing the right tracker.
+- **描述**：GPS vs Bluetooth vs Radio — which tracking tech actually fits your dog's lifestyle? Cellular GPS (Tractive, $79 + $5-13/month) works nationwide but locks you into a subscription. Radio-based (Aorkuler, $229 one-time) has limited 3.5-mile range but zero monthly fees. Bluetooth trackers ($33 No-Fee GPS) are city-only. We compare 3-year costs, battery life expectations, coverage maps, and waterproof ratings. Plus: the breed-specific chart showing which dogs actually need GPS. → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：GPS pet tracker buying guide comparing cellular, radio, and Bluetooth trackers with cost breakdown
 - **标签**：GPS dog tracker guide, pet tracker, dog safety, no subscription tracker, outdoor dog gear
 
 ### Pin 39
-- **图片**：`pins_with_text/pin39-golden-retriever.jpg`
+- **图片**：`pins_with_text/pin39-golden-retriever.jpg`（文字已叠加）
+- **备用原图**：`images/dogness-mini.jpg`
 - **标题**：Best Smart Pet Devices for Golden Retrievers
-- **描述**：Goldens are active, food-motivated, and prone to bloat. We picked the best GPS tracker (waterproof!), portion-control feeder, and camera for America's third most popular breed.
+- **描述**：Goldens are active, food-motivated, and prone to bloat — their smart device needs are unique. A waterproof GPS tracker (they WILL jump in every pond), a portion-control slow feeder (gulping leads to bloat), and a wide-angle pet camera for your always-moving dog. Our complete breed-specific setup covering the #3 most popular dog in America, handpicked from 26 products in our database. → Save for later 📌
 - **链接**：https://smartpetguide.net/breed/best-devices-for-golden-retrievers/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Golden Retriever smart pet devices guide with GPS tracker, slow feeder, and pet camera picks
 - **标签**：Golden Retriever, smart pet devices, dog products, GPS tracker, breed specific pet gear
 
 ### Pin 40
-- **图片**：`pins_with_text/pin40-multi-cat.jpg`
+- **图片**：`pins_with_text/pin40-multi-cat.jpg`（文字已叠加）
+- **备用原图**：`images/catlink-young.jpg`
 - **标题**：Best Smart Pet Devices for Multiple Cats
-- **描述**：Managing 2+ cats? We picked devices with per-cat recognition, large waste bins, and food-theft prevention. The complete multi-cat smart home setup.
+- **描述**：Managing 2+ cats means per-cat recognition, large waste bins, and food-theft prevention become non-negotiable. We picked the top devices for multi-cat households: litter boxes with individual weight tracking (CATLINK Young, Litter-Robot 4), feeders that prevent one cat from stealing another's meal, and fountains large enough for everyone. The complete smart home setup for harmonious multi-cat living. → Save for later 📌
 - **链接**：https://smartpetguide.net/breed/best-devices-for-multiple-cats/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Multi-cat household smart pet device guide with per-cat recognition litter boxes and food-theft prevention feeders
 - **标签**：multiple cats, multi-cat household, automatic litter box, cat products, pet tech
 
 ### Pin 41
-- **图片**：`pins_with_text/pin41-french-bulldog.jpg`
+- **图片**：`pins_with_text/pin41-french-bulldog.jpg`（文字已叠加）
+- **备用原图**：`images/dogness-mini.jpg`
 - **标题**：Best Automatic Feeder for French Bulldogs
-- **描述**：Frenchies need precise portion control (prone to obesity), slow feeding (flat faces), and elevated bowls (neck comfort). Our curated picks for this beloved breed.
+- **描述**：Frenchies need precise portion control (prone to obesity — 1 extra pound is serious on a compact frame), slow feeding to prevent choking (those flat faces make gulping dangerous), and elevated bowls for neck and joint comfort. We curated our top feeder picks specifically for brachycephalic breeds, with slow-feed modes, measured portions, and the right bowl height. Every pick works for Frenchies, Bostons, and Pugs too. → Save for later 📌
 - **链接**：https://smartpetguide.net/breed/best-feeder-for-french-bulldog/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：French Bulldog automatic feeder guide with slow-feed and portion control features for flat-faced breeds
 - **标签**：French Bulldog, automatic feeder, portion control, flat-faced breed, dog products
 
 ---
@@ -341,31 +357,39 @@
 ## 第 4.5 轮：新内容 Pin（2026-06-01）
 
 ### Pin 42
-- **图片**：`pins_with_text/pin42-cleaning.jpg`
+- **图片**：`pins_with_text/pin42-cleaning.jpg`（文字已叠加）
+- **备用原图**：`images/pioneer-pet-raindrop.jpg`
 - **标题**：How to Clean a Cat Water Fountain — Step-by-Step Guide
-- **描述**：Don't just rinse the bowl — 90% of harmful biofilm lives inside the pump where you can't see it. Our complete guide covers cleaning frequency (single vs multi-cat), the step-by-step pump disassembly method that most owners skip, material-specific tips for stainless steel, plastic, and ceramic, plus the 5 most common mistakes. Includes a quick-reference cleaning schedule and dishwasher-safe fountain picks.
+- **描述**：Don't just rinse the bowl — 90% of harmful biofilm lives inside the pump where you can't see it. Our complete cleaning guide covers the right frequency (single vs multi-cat), the 8-step pump disassembly method that extends pump life from 1 to 3 years, material-specific deep-cleaning tips for stainless steel (dishwasher-safe!), plastic (replace every 18 months), and ceramic, plus the 5 most common mistakes that make fountains dirtier. Includes a printable quick-reference cleaning schedule and our dishwasher-safe fountain picks (Pioneer Pet $39, KittySpout $50, YEAPAW $93). → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Cat water fountain cleaning step-by-step guide showing pump disassembly and cleaning schedule
 - **标签**：cat water fountain cleaning, pet fountain maintenance, cat health, pet hygiene, stainless steel fountain
 
 ### Pin 43
-- **图片**：`pins_with_text/pin43-camera.jpg`
+- **图片**：`pins_with_text/pin43-camera.jpg`（文字已叠加）
+- **备用原图**：`images/xpai-4k-camera.jpg`
 - **标题**：5 Pet Cameras With Zero Monthly Fees — Best No-Subscription Picks
-- **描述**：Furbo 360 costs $395 over 3 years after adding cloud subscription fees. The xpai 4K ($43, 4K resolution) and eufy Security ($129, auto-tracking) each cost less than one year of Furbo's subscription. We compared all 5 no-subscription pet cameras head-to-head: video quality, night vision, local storage options, pan/tilt, and app experience. Plus: a 3-year cost calculator and the 2 features you actually lose without cloud.
+- **描述**：Furbo 360 costs $395 over 3 years — $179 for the camera plus $216 in cloud subscription fees. Meanwhile, the xpai 4K ($43 total, 4K resolution, 64GB built-in) and eufy Security ($129 total, 2K, 360° auto-tracking) cost less than one year of Furbo's subscription. We compared all 5 no-subscription cameras on video quality, night vision, local storage options, pan/tilt, motion tracking, and app experience. Includes a 3-year cost calculator and the honest breakdown of which 2 features you lose without cloud (and why they usually don't matter). → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/best-pet-camera-no-subscription/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Pet cameras without subscription comparison showing 5 no-fee picks with 3-year cost savings
 - **标签**：no subscription pet camera, budget pet camera, xpai 4K, eufy camera, pet monitoring no fees
 
 ### Pin 44
-- **图片**：`pins_with_text/pin44-steel-vs-plastic.jpg`
+- **图片**：`pins_with_text/pin44-steel-vs-plastic.jpg`（文字已叠加）
+- **备用原图**：`images/pioneer-pet-raindrop.jpg`
 - **标题**：Stainless Steel vs Plastic Cat Fountains — The Truth About Bacteria
-- **描述**：Plastic fountains ($25) develop microscopic scratches within months — those scratches permanently harbor biofilm that makes cats stop drinking. Stainless steel ($39-93) is non-porous, dishwasher-safe, and lasts 5+ years. We break down the health risks (chin acne, chemical leaching, UTIs from water avoidance), compare the real 5-year cost (steel actually saves $61), and give you a simple decision framework. Includes ceramic as the third option and our top 3 steel picks.
+- **描述**：Plastic fountains ($25) develop microscopic scratches within months — those scratches permanently harbor biofilm that makes cats stop drinking. Stainless steel ($39-93) is non-porous, naturally antimicrobial, dishwasher-safe, and lasts 5+ years. We break down the health risks (feline chin acne, chemical leaching from BPA-free plastics, UTIs from water avoidance), compare the real 5-year cost (steel saves $61 — 3 plastic replacements cost more than 1 steel fountain), and give you a simple "which material for my cat?" decision framework. Includes ceramic as the third option and our top 3 steel picks at each price point. → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/stainless-steel-vs-plastic-fountains/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Stainless steel vs plastic cat fountain comparison showing hygiene, cost, and health risks
 - **标签**：cat water fountain, stainless steel vs plastic, cat health, biofilm, pet fountain comparison
 
 ### Pin 45
-- **图片**：`pins_with_text/pin45-cleaning-v2.jpg`
+- **图片**：`pins_with_text/pin45-cleaning-v2.jpg`（文字已叠加）
+- **备用原图**：`images/pioneer-pet-raindrop.jpg`
 - **标题**：Cat Fountain Cleaning — The Step Most Owners Skip
-- **描述**：You're scrubbing the bowl but the pump is where 90% of bacteria colonies live. Open it up — the impeller shaft is likely wrapped in hair and slime that slows the motor and circulates bacteria through your cat's water. This step-by-step pump cleaning guide takes 5 minutes, extends pump life from 1 to 3 years, and makes the water taste clean enough that your cat actually wants to drink it. Plus: how to tell if your fountain needs immediate cleaning (5 warning signs your cat notices before you do).
+- **描述**：You're scrubbing the bowl carefully but the pump is where 90% of bacteria colonies breed — and most owners have never opened it. The impeller shaft gets wrapped in hair and slime that slows the motor, reduces water flow, and circulates bacteria through your cat's entire water supply. This 5-minute pump cleaning guide walks through disassembly (most pumps snap open), impeller cleaning with a cotton swab, and reassembly. Extends pump life from 1 year to 3+ years. Plus: 5 warning signs your fountain needs immediate cleaning that your cat notices before you do (reduced drinking, sputtering pump, pink slime). → Save for later 📌
 - **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **Alt text**：Cat fountain pump cleaning guide showing impeller disassembly and common bacteria buildup warning signs
 - **标签**：cat fountain cleaning, pump maintenance, pet fountain, cat health, biofilm removal
 
 ---
