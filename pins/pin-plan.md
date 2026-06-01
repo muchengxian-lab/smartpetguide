@@ -334,30 +334,30 @@
 ### Pin 42
 - **图片**：`pins_with_text/pin42-cleaning.jpg`
 - **标题**：How to Clean a Cat Water Fountain — Step-by-Step Guide
-- **描述**：Most owners only rinse the bowl but forget the pump — where 90% of biofilm hides. Our complete cleaning guide covers stainless steel vs plastic vs ceramic, how often to clean, the 5 most common mistakes, and a checklist. Clean fountain = healthier cat.
-- **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/
+- **描述**：Don't just rinse the bowl — 90% of harmful biofilm lives inside the pump where you can't see it. Our complete guide covers cleaning frequency (single vs multi-cat), the step-by-step pump disassembly method that most owners skip, material-specific tips for stainless steel, plastic, and ceramic, plus the 5 most common mistakes. Includes a quick-reference cleaning schedule and dishwasher-safe fountain picks.
+- **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：cat water fountain cleaning, pet fountain maintenance, cat health, pet hygiene, stainless steel fountain
 
 ### Pin 43
 - **图片**：`pins_with_text/pin43-camera.jpg`
 - **标题**：5 Pet Cameras With Zero Monthly Fees — Best No-Subscription Picks
-- **描述**：Furbo costs $348 over 3 years with subscription. Our top 5 picks — xpai 4K ($43), eufy ($129), Honeytour Robot ($59) — cost less upfront than Furbo's 3-year subscription alone. Plus: what features you actually lose with no subscription.
-- **链接**：https://smartpetguide.net/guides/best-pet-camera-no-subscription/
+- **描述**：Furbo 360 costs $395 over 3 years after adding cloud subscription fees. The xpai 4K ($43, 4K resolution) and eufy Security ($129, auto-tracking) each cost less than one year of Furbo's subscription. We compared all 5 no-subscription pet cameras head-to-head: video quality, night vision, local storage options, pan/tilt, and app experience. Plus: a 3-year cost calculator and the 2 features you actually lose without cloud.
+- **链接**：https://smartpetguide.net/guides/best-pet-camera-no-subscription/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：no subscription pet camera, budget pet camera, xpai 4K, eufy camera, pet monitoring no fees
 
 ### Pin 44
 - **图片**：`pins_with_text/pin44-steel-vs-plastic.jpg`
 - **标题**：Stainless Steel vs Plastic Cat Fountains — The Truth About Bacteria
-- **描述**：Plastic fountains cost $25 but need replacing every 18 months. Steel costs $39 and lasts 5+ years. Over 5 years, steel is $61 cheaper — plus no biofilm, no chin acne, and dishwasher-safe. Full comparison with health risks and a decision guide.
-- **链接**：https://smartpetguide.net/guides/stainless-steel-vs-plastic-fountains/
+- **描述**：Plastic fountains ($25) develop microscopic scratches within months — those scratches permanently harbor biofilm that makes cats stop drinking. Stainless steel ($39-93) is non-porous, dishwasher-safe, and lasts 5+ years. We break down the health risks (chin acne, chemical leaching, UTIs from water avoidance), compare the real 5-year cost (steel actually saves $61), and give you a simple decision framework. Includes ceramic as the third option and our top 3 steel picks.
+- **链接**：https://smartpetguide.net/guides/stainless-steel-vs-plastic-fountains/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：cat water fountain, stainless steel vs plastic, cat health, biofilm, pet fountain comparison
 
 ### Pin 45
 - **图片**：`pins_with_text/pin45-cleaning-v2.jpg`
-- **标题**：How to Clean a Cat Water Fountain — The Step Most Owners Skip
-- **描述**：You're cleaning the bowl but forgetting the pump — where 90% of bacteria lives. Our step-by-step guide: how often, what to use, 5 common mistakes, and which fountains are dishwasher-safe for easy weekly cleaning.
-- **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/
-- **标签**：cat fountain cleaning, pet fountain maintenance, cat health, stainless steel fountain, biofilm removal
+- **标题**：Cat Fountain Cleaning — The Step Most Owners Skip
+- **描述**：You're scrubbing the bowl but the pump is where 90% of bacteria colonies live. Open it up — the impeller shaft is likely wrapped in hair and slime that slows the motor and circulates bacteria through your cat's water. This step-by-step pump cleaning guide takes 5 minutes, extends pump life from 1 to 3 years, and makes the water taste clean enough that your cat actually wants to drink it. Plus: how to tell if your fountain needs immediate cleaning (5 warning signs your cat notices before you do).
+- **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
+- **标签**：cat fountain cleaning, pump maintenance, pet fountain, cat health, biofilm removal
 
 ---
  
