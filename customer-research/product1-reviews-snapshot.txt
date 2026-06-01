@@ -1,0 +1,68 @@
+- generic
+  - link "scubaguy" [ref=e360]
+    - StaticText "scubaguy"
+  - generic
+    - StaticText "5 星（最高 5 星）"
+  - link "Game-Changing Feeder — Reliable, Easy to Use, and My Cat Loves It!" [ref=e361]
+    - heading "Game-Changing Feeder — Reliable, Easy to Use, and My Cat Loves It!" [level=5, ref=e404]
+  - StaticText "2025年11月25日在美国发布评论"
+  - link "颜色: 黑色尺寸: 3 公升 - 有無線網絡" [ref=e362]
+    - StaticText "颜色: 黑色尺寸: 3 公升 - 有無線網絡"
+  - link "已确认购买" [ref=e504]
+  - generic
+    - paragraph
+      - StaticText "The PETLIBRO Automatic Cat Feeder has been an absolute lifesaver. Setup was quick, the 5G WiFi connection is solid, and the app makes scheduling feedings incredibly simple. I love being able to check in and adjust portions from anywhere — perfect for busy days or when I’m away."
+    - paragraph
+    - paragraph
+      - StaticText "The feeder dispenses food accurately every time, and the portion control is super helpful for keeping my cat on a consistent routine. The design is sleek, quiet, and the food tank holds plenty without taking up much space. My cat immediately took to it and now waits by the feeder right before each scheduled meal!"
+    - paragraph
+    - paragraph
+      - StaticText "The voice recording feature is a fun bonus, and the reliability gives me total peace of mind. If you want a high-quality, smart feeder that truly makes life easier for both you and your pet, this one is a winner. Highly recommend!"
+  - StaticText "3 位使用者认为此评论有用"
+  - generic [ref=e405] clickable [cursor:pointer]
+    - button "有用" [ref=e505]
+      - StaticText "提交"
+  - button "举报评论" [ref=e406]
+    - StaticText "举报"
+  - link "将评论翻译成中文" [ref=e407]
+- link "scubaguy" [ref=e360]
+  - StaticText "scubaguy"
+- StaticText "2025年11月25日在美国发布评论"
+- link "颜色: 黑色尺寸: 3 公升 - 有無線網絡" [ref=e362]
+  - StaticText "颜色: 黑色尺寸: 3 公升 - 有無線網絡"
+- link "已确认购买" [ref=e504]
+- generic
+  - paragraph
+    - StaticText "The PETLIBRO Automatic Cat Feeder has been an absolute lifesaver. Setup was quick, the 5G WiFi connection is solid, and the app makes scheduling feedings incredibly simple. I love being able to check in and adjust portions from anywhere — perfect for busy days or when I’m away."
+  - paragraph
+  - paragraph
+    - StaticText "The feeder dispenses food accurately every time, and the portion control is super helpful for keeping my cat on a consistent routine. The design is sleek, quiet, and the food tank holds plenty without taking up much space. My cat immediately took to it and now waits by the feeder right before each scheduled meal!"
+  - paragraph
+  - paragraph
+    - StaticText "The voice recording feature is a fun bonus, and the reliability gives me total peace of mind. If you want a high-quality, smart feeder that truly makes life easier for both you and your pet, this one is a winner. Highly recommend!"
+- generic [ref=e405] clickable [cursor:pointer]
+  - button "有用" [ref=e505]
+    - StaticText "提交"
+- button "举报评论" [ref=e406]
+  - StaticText "举报"
+- link "将评论翻译成中文" [ref=e407]
+- StaticText "scubaguy"
+- StaticText "5 星（最高 5 星）"
+- paragraph
+  - StaticText "The PETLIBRO Automatic Cat Feeder has been an absolute lifesaver. Setup was quick, the 5G WiFi connection is solid, and the app makes scheduling feedings incredibly simple. I love being able to check in and adjust portions from anywhere — perfect for busy days or when I’m away."
+- paragraph
+- paragraph
+  - StaticText "The feeder dispenses food accurately every time, and the portion control is super helpful for keeping my cat on a consistent routine. The design is sleek, quiet, and the food tank holds plenty without taking up much space. My cat immediately took to it and now waits by the feeder right before each scheduled meal!"
+- paragraph
+- paragraph
+  - StaticText "The voice recording feature is a fun bonus, and the reliability gives me total peace of mind. If you want a high-quality, smart feeder that truly makes life easier for both you and your pet, this one is a winner. Highly recommend!"
+- button "有用" [ref=e505]
+  - StaticText "提交"
+- paragraph
+  - StaticText "The PETLIBRO Automatic Cat Feeder has been an absolute lifesaver. Setup was quick, the 5G WiFi connection is solid, and the app makes scheduling feedings incredibly simple. I love being able to check in and adjust portions from anywhere — perfect for busy days or when I’m away."
+- paragraph
+- paragraph
+  - StaticText "The feeder dispenses food accurately every time, and the portion control is super helpful for keeping my cat on a consistent routine. The design is sleek, quiet, and the food tank holds plenty without taking up much space. My cat immediately took to it and now waits by the feeder right before each scheduled meal!"
+- paragraph
+- paragraph
+  - StaticText "The voice recording feature is a fun bonus, and the reliability gives me total peace of mind. If you want a high-quality, smart feeder that truly makes life easier for both you and your pet, this one is a winner. Highly recommend!"

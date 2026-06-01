@@ -463,6 +463,65 @@ const product = allProducts.get(review.productId);
 
     <FAQ items={review.faqs} />
 
+    <!-- Related Content -->
+    {(() => {
+      const isLitter = product?.category === "litterBox";
+      const isCamera = product?.category === "camera";
+      const isGPS = product?.category === "gps" || product?.category === "tracker";
+      const isFeeder = product?.category === "feeder";
+      const isFountain = product?.category === "fountain";
+      const links: { label: string; href: string }[] = [];
+      if (isLitter) {
+        links.push({ label: "Best Self-Cleaning Litter Boxes", href: "/best/self-cleaning-litter-boxes/" });
+        links.push({ label: "Self-Cleaning Litter Box Buying Guide", href: "/guides/self-cleaning-litter-box-buying-guide/" });
+        if (slug === "litter-robot-4-review") links.push({ label: "Litter-Robot 4 vs Leo's Loo Too", href: "/compare/litter-robot-4-vs-leos-loo-too/" });
+        if (slug === "leos-loo-too-review") links.push({ label: "Litter-Robot 4 vs Leo's Loo Too", href: "/compare/litter-robot-4-vs-leos-loo-too/" });
+        if (slug === "petsafe-scoopfree-review") links.push({ label: "Litter-Robot 4 vs PetSafe ScoopFree", href: "/compare/litter-robot-4-vs-petsafe-scoopfree/" });
+        if (slug === "amazon-basics-litter-box-review") links.push({ label: "Automatic vs Manual Litter Box", href: "/compare/automatic-vs-manual-litter-box/" });
+      }
+      if (isFeeder) {
+        links.push({ label: "Best Automatic Cat Feeders", href: "/best/automatic-cat-feeders/" });
+        links.push({ label: "Automatic Feeder Buying Guide", href: "/guides/automatic-feeder-buying-guide/" });
+        if (slug === "petlibro-granary-review") links.push({ label: "WOPET vs Petlibro Compared", href: "/compare/wopet-vs-petlibro/" });
+        if (slug === "petkit-fresh-element-review") links.push({ label: "Petlibro vs PETKIT Compared", href: "/compare/petlibro-vs-petkit/" });
+        if (slug === "dogness-mini-smart-feeder-review") links.push({ label: "Best Feeders for 2 Cats", href: "/best/automatic-feeders-for-2-cats/" });
+      }
+      if (isFountain) {
+        links.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
+        links.push({ label: "How to Clean a Cat Water Fountain", href: "/guides/how-to-clean-cat-water-fountain/" });
+        links.push({ label: "Smart Water Fountain Buying Guide", href: "/guides/smart-water-fountain-buying-guide/" });
+        if (slug === "pioneer-pet-raindrop-review") links.push({ label: "Pioneer Pet vs YEAPAW Compared", href: "/compare/pioneer-pet-vs-yeapaw/" });
+        if (slug === "yeapaw-steel-fountain-review") links.push({ label: "Pioneer Pet vs YEAPAW Compared", href: "/compare/pioneer-pet-vs-yeapaw/" });
+        if (slug === "petkit-eversweet-review") links.push({ label: "PETKIT vs Catit PIXI Compared", href: "/compare/petkit-eversweet-vs-catit-pixi/" });
+        if (slug === "catit-pixi-fountain-review") links.push({ label: "PETKIT vs Catit PIXI Compared", href: "/compare/petkit-eversweet-vs-catit-pixi/" });
+        links.push({ label: "Stainless Steel Fountain Guide", href: "/guides/stainless-steel-cat-fountain-guide/" });
+      }
+      if (isCamera) {
+        links.push({ label: "Best Pet Cameras of 2026", href: "/best/pet-cameras/" });
+        links.push({ label: "Pet Cameras With No Subscription", href: "/best/pet-cameras-no-subscription/" });
+        links.push({ label: "Pet Camera Buying Guide", href: "/guides/pet-camera-buying-guide/" });
+        if (slug === "furbo-360-camera-review") links.push({ label: "Furbo vs eufy Compared", href: "/compare/furbo-vs-eufy/" });
+        if (slug === "eufy-pet-camera-review") links.push({ label: "Furbo vs eufy Compared", href: "/compare/furbo-vs-eufy/" });
+        if (slug === "xpai-4k-camera-review") links.push({ label: "xpai vs eufy Compared", href: "/compare/xpai-vs-eufy/" });
+      }
+      if (isGPS) {
+        links.push({ label: "GPS Trackers Without Monthly Fees", href: "/best/gps-trackers-no-monthly-fee/" });
+        links.push({ label: "GPS Pet Tracker Buying Guide", href: "/guides/gps-pet-tracker-buying-guide/" });
+        if (slug === "tractive-gps-review") links.push({ label: "Tractive vs No-Fee GPS Compared", href: "/compare/tractive-vs-nofee-gps/" });
+      }
+      if (links.length === 0) return null;
+      return (
+        <div class="mt-8 rounded-xl border border-sage-dark/30 bg-cream/50 p-6">
+          <p class="text-sm font-bold uppercase tracking-wide text-bark-muted">Explore More</p>
+          <ul class="mt-3 space-y-2">
+            {links.map(l => (
+              <li><a href={l.href} class="text-forest underline decoration-sage-dark/50 underline-offset-2 hover:text-forest-dark">{l.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      );
+    })()}
+
     <!-- Bottom CTA -->
     {(() => {
       const isLitter = product?.category === "litterBox";
