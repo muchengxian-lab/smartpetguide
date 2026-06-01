@@ -332,28 +332,28 @@
 ## 第 4.5 轮：新内容 Pin（2026-06-01）
 
 ### Pin 42
-- **图片**：`pioneer-pet-raindrop.jpg`
+- **图片**：`pins_with_text/pin42-cleaning.jpg`
 - **标题**：How to Clean a Cat Water Fountain — Step-by-Step Guide
 - **描述**：Most owners only rinse the bowl but forget the pump — where 90% of biofilm hides. Our complete cleaning guide covers stainless steel vs plastic vs ceramic, how often to clean, the 5 most common mistakes, and a checklist. Clean fountain = healthier cat.
 - **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/
 - **标签**：cat water fountain cleaning, pet fountain maintenance, cat health, pet hygiene, stainless steel fountain
 
 ### Pin 43
-- **图片**：`xpai-4k-camera.jpg`
+- **图片**：`pins_with_text/pin43-camera.jpg`
 - **标题**：5 Pet Cameras With Zero Monthly Fees — Best No-Subscription Picks
 - **描述**：Furbo costs $348 over 3 years with subscription. Our top 5 picks — xpai 4K ($43), eufy ($129), Honeytour Robot ($59) — cost less upfront than Furbo's 3-year subscription alone. Plus: what features you actually lose with no subscription.
 - **链接**：https://smartpetguide.net/guides/best-pet-camera-no-subscription/
 - **标签**：no subscription pet camera, budget pet camera, xpai 4K, eufy camera, pet monitoring no fees
 
 ### Pin 44
-- **图片**：`pioneer-pet-raindrop.jpg`
+- **图片**：`pins_with_text/pin44-steel-vs-plastic.jpg`
 - **标题**：Stainless Steel vs Plastic Cat Fountains — The Truth About Bacteria
 - **描述**：Plastic fountains cost $25 but need replacing every 18 months. Steel costs $39 and lasts 5+ years. Over 5 years, steel is $61 cheaper — plus no biofilm, no chin acne, and dishwasher-safe. Full comparison with health risks and a decision guide.
 - **链接**：https://smartpetguide.net/guides/stainless-steel-vs-plastic-fountains/
 - **标签**：cat water fountain, stainless steel vs plastic, cat health, biofilm, pet fountain comparison
 
 ### Pin 45
-- **图片**：`xpai-4k-camera.jpg`
+- **图片**：`pins_with_text/pin45-cleaning-v2.jpg`
 - **标题**：How to Clean a Cat Water Fountain — The Step Most Owners Skip
 - **描述**：You're cleaning the bowl but forgetting the pump — where 90% of bacteria lives. Our step-by-step guide: how often, what to use, 5 common mistakes, and which fountains are dishwasher-safe for easy weekly cleaning.
 - **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/
