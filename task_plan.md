@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-**Day 7（5/25）** | 70 页在线（M7） | Pinterest 25 Pin | Medium 3 篇 | FB 8 群养号 D4 | Reddit 养号 D4 | GEO 全栈完成 | Awin 审核中 | CTA 底部补齐 | **策略已调整：边等边建，不再被动等数据**
+**Day 11（5/29）** | 81 页在线 | Pinterest 40 Pin | 外链 8 个引用域名 | Blogarama+AllTop 已申请 | EEAT 全站修正完成 | **边等边建，本周 14 篇完成**
 
 ---
 
@@ -359,10 +359,15 @@
 |------|------|------|:--:|
 | 周一 5/25 | PETKIT 评测 + Homerunpet 评测 + Amazon Basics 评测 | 3 篇 | ✅ |
 | 周二 5/26 | eufy 评测 + Pinterest 收尾 | 1 篇 + Pin 优化 | ✅ |
-| 周三 5/27 | **Product Hunt Launch** + 公寓指南（A级） | 1 篇 A 级 + PH | |
-| 周四 5/28 | 订阅成本分析（A级） | 1 篇 A 级 | |
+| 周三 5/27 | PH检查 + 公寓指南（A级）+ Pinterest R3 Pin 22-27 + 双平台数据 + Pin 28-33优化 + UTM补全 + 养号D7 | 1篇A级+5Pin+6Pin优化+14UTM+数据分析 | ✅ |
+| 周四 5/28 | 订阅成本+A级+饮水机C级+Pin图优化+Bloagarama外链 | 2篇+6图+1外链+养号 | ✅ |
+| 周五 5/29 | 3 篇指南 + EEAT全站修正 + 养号 + 数据补检 | 3 篇 + EEAT + 养号 + GSC + Amazon | ✅ |
+| 周六 5/30 | Amazon NR扫描 + GSC检查 + 外链目录 + 养号 | 数据 + 外链 + 养号 | ✅ |
+| 周日 5/31 | 选题调研 + Semrush KD | 下周选题 | |
+
+**✅ 本周 14 篇完成！（10/10 原计划 + 4 追加）**
 | 周五 5/29 | 新手入门指南（A级） | 1 篇 A 级 | |
-| 周六 5/30 | 不锈钢vs塑料 + 摄像头替代（C级）+ Pinterest R3续 | 2 篇 C 级 + Pin | |
+| 周六 5/30 | Amazon NR + 养号（手动完成） | 数据检查 + 养号 | ✅ |
 | 周日 5/31 | 休息 + Amazon New Releases 监控 | 调研下周选题 | |
 
 #### 关键原则
@@ -446,3 +451,209 @@
 - 新加产品前必须验证 BSR + Amazon 在售状态 + 评分 ≥ 3.8
 - 每完成一个阶段更新状态：pending → in_progress → complete
 - 决策前重新读取此计划（注意力操纵）
+
+---
+
+## 阶段 11：生财有术经验驱动的策略调整（Day 9，5/27 新增）
+
+### 调整 1：资源重新分配
+
+| 维度 | 旧分配 | 新分配 | 行动 |
+|------|:--:|:--:|------|
+| 内容生产 | ~70% | **75%** | 保持节奏，B/C 级控 1h 内 |
+| 外链建设 | ~1% | **20%** | 每周固定 1-2h，系统推进 |
+| 技术优化 | ~29% | **5%** | 停止过度打磨 Schema/CWV |
+
+### 调整 2：外链建设周计划
+
+**每周固定任务（1-2 小时）：**
+
+| 周次 | 类型 | 具体行动 | 目标数 |
+|------|------|------|:--:|
+| **Week 1**（5/28-6/3） | 目录提交 | 搜索 "pet blog directory" + "pet website directory"，提交 smartpetguide.net | 15-20 |
+| **Week 2**（6/4-6/10） | 竞品外链分析 | 用免费工具查 pawsomeadvice.com 的 357 个引用域名，筛选可复制的 | 30 个目标 |
+| **Week 3**（6/11-6/17） | 资源页外链 | 搜 "pet resources" + "cat resources" + "dog resources" site:.edu，找可提交的资源页 | 10-15 |
+| **Week 4**（6/18-6/24） | Guest Post 调研 | 搜 "write for us" + pet/cat/dog，整理可投稿的博客列表 | 10-15 |
+| **持续** | HARO/Qwoted | 注册 HARO，每周回复 2-3 条宠物相关记者提问 | 每周 2-3 |
+
+### 调整 3：KD<20 选题策略
+
+**现有内容 KD 评估（估算）：**
+
+| 内容类型 | 数量 | 估计 KD | 策略 |
+|------|:--:|:--:|------|
+| Best 列表 | 9 篇 | 50-80 | ❌ 暂停新建，已有内容等权重积累 |
+| 对比文 | 11 篇 | 25-50 | 🟡 不再新建，已有的有价值 |
+| 单品评测 | 25 篇 | 10-30 | ✅ 新品速报继续做（KD 低的时间窗口） |
+| 购买指南 | 5 篇 | 30-55 | 🟡 谨慎新开 |
+| 场景化指南 | 5 篇 | 10-25 | ✅ 优先做（信息型长尾，KD 低） |
+| 品种专题 | 7 篇 | 5-20 | ✅ C 级快速出 |
+| C 级长尾 | 0 篇 | 5-15 | 🔴 **最大缺口！立即补** |
+
+**本周剩余选题 KD 复审（Semrush 实测）：**
+
+| # | 选题 | 实测 KD | 建议 |
+|---|------|:--:|------|
+| 6 | The True Cost: Subscription vs One-Time | ~15-25 | ✅ 信息型低竞争，"No Fee"角度已验证 |
+| 7 | First Smart Pet Device? Beginner's Guide | ~20-35 | 🟡 可做，但优先做完 KD 更低的 |
+| 8 | Stainless Steel vs Plastic Cat Fountains | ~15-25 | ✅ 长尾高转化，挂钩 9.9K 搜索量大词 |
+| 9 | Can Regular Security Camera Work as Pet Camera? | ~10-20 | ✅ Reddit 高频问题 |
+
+**新增 KD<20 选题池（Semrush 实测 + 备选）：**
+
+| 选题 | 类型 | 实测 KD | 月搜索量 | 理由 |
+|------|------|:--:|:--:|------|
+| How to Clean a Cat Water Fountain | C 级指南 | **12%** | 140 | ✅ Semrush 实测最低 KD |
+| How to Clean a Stainless Steel Cat Fountain | C 级指南 | ~5-10 | — | 上一题的变体，Reddit 高频 |
+| Why Does My Cat Not Use the Water Fountain? | C 级指南 | ~5-10 | — | 搜索量稳定，0 竞争 |
+| How to Introduce Cat to Automatic Litter Box | C 级指南 | ~5-10 | — | 新手高频问题 |
+| How Long Does Crystal Litter Last vs Clumping? | C 级指南 | ~5-10 | — | PetSafe ScoopFree 相关内容 |
+| Pet Camera Placement Guide | C 级指南 | ~5-10 | — | 场景化，挂钩已有产品 |
+| Best Quiet Automatic Litter Box for Bedrooms | B 级 Best | ~10-20 | — | 公寓角度二次利用 |
+| WiFi vs Non-WiFi Pet Feeder Comparison | B 级对比 | ~10-15 | — | 覆盖所有喂食器产品 |
+
+**现有内容 KD 分级（Semrush 实测）：**
+
+| KD 范围 | 数量 | 策略 |
+|:--:|:--:|------|
+| **KD 40-55** | 2 篇 Best 列表 | ❌ 不动。等 DA 到 15+ 再优化 |
+| **KD 30-40** | 1 篇 Best（不锈钢饮水机 9.9K） | 🟡 重点优化对象，6 个月内最可能出成绩的大词 |
+| **KD 20-30** | ~4 篇（LR4 评测等） | 🟡 继续做新品评测，自然积累 |
+| **KD 10-20** | ~5 篇（无订阅摄像头等） | ✅ 优先推广到 Pinterest |
+| **KD <10** | 大量长尾页面 | ✅ 批量生产 C 级
+
+### 本次调整的核心原则
+
+1. **外链不再等**——从今天开始，每周都有外链任务
+2. **KD 优先于话题热度**——一个 KD 5 的长尾词比一个 KD 60 的热词对现在的我们更有价值
+3. **技术优化刹车**——Schema/CWV 够用就行，不再花时间打磨
+4. **确认耐心是对的**——即使最快的工具站也要 8 个月爆发，我们 Month 5 能见到第一笔钱就是正常速度
+
+---
+
+## 日常/周期任务清单（Day 9 起执行）
+
+### 🔴 每日任务（~2h）
+
+| 任务 | 时间 | 说明 |
+|------|:--:|------|
+| **FB + Reddit 养号** | 15min | FB：8 群浏览/点赞/回复。Reddit：honest_pet_reviews 浏览/评论。D15 前不推广 |
+| **内容生产** | 1-1.5h | A 级 2-3h（每周最多 2 篇）/ B 级 1-1.5h / C 级 30min。按周计划选题推进 |
+| **Pinterest Pin 发布** | 10min | 当天有排 Pin 时执行。按 pin-plan.md 顺序发布 |
+
+### 🟡 每周任务（~5h）
+
+| 任务 | 时间 | 频次 | 说明 |
+|------|:--:|:--:|------|
+| **Amazon New Releases 扫描** | 30min | **每周 2 次**（周三+周六） | 扫 Pet Supplies > Cats/Dogs 新品。触发条件：BSR<10K + 评论<100 → 48h 内出 B 级评测 |
+| **外链建设** | 1-2h | **每周 1 次** | 按 4 阶段计划：Week1 目录提交 → Week2 竞品外链分析 → Week3 资源页 → Week4 Guest Post 调研 |
+| **Pinterest 数据分析** | 10min | **每周 1 次**（周六） | 看 analytics.pinterest.com：浏览/点击/收藏/出站点击。重点关注出站点击是否破 0 |
+| **GSC 数据检查** | 10min | **每周 2 次**（周三+周六） | 核心看：索引页数变化。索引从 5→10→20 是唯一重要的 KPI。曝光/点击目前太小不用细看 |
+
+### 🟢 每月任务（~2h）
+
+| 任务 | 时间 | 说明 |
+|------|:--:|------|
+| **GSC 深度分析** | 30min | 每月 1 号。导出查询词报告，对比上月，找出曝光增长最快的页面和新增查询词 |
+| **Pinterest 月度分析** | 15min | 看按月趋势：浏览增长曲线、点击率变化、Board 排名变化 |
+| **Semrush KD 复查** | 30min | 每月 1 次。免费版 10 次查询：复查已有内容 KD + 检查新选题 KD。重点关注哪些词的 KD 在下降 |
+| **选题池更新** | 30min | 汇总 Amazon New Releases + Reddit 高频问题 + Semrush 低 KD 词，更新下周选题 |
+| **外链进度回顾** | 15min | 检查本月新增外链数、引用域名数。目标：每月 +10-20 外链 |
+
+### 🔵 每篇新文章发布后（5min）
+
+| 任务 | 说明 |
+|------|------|
+| **GSC 请求索引** | URL Inspection → Request Indexing |
+| **Pinterest Pin 排期** | 如果是评测/对比/Best，同步加入 pin-plan.md |
+| **内部链接检查** | 新文章是否被相关页面引用（分类索引页/其他评测） |
+
+### 数据看板一览
+
+| 渠道 | 地址 | 核心 KPI | 当前值 |
+|------|------|------|:--:|
+| GSC | search.google.com → smartpetguide.net | 索引页数 | 5 |
+| Pinterest | analytics.pinterest.com | 出站点击 | 0 |
+| Semrush | semrush.com → Domain Overview | Authority Score | 0 |
+| 本地 | task_plan.md 本周进度表 | 周产出篇数 | 5/9 ✅ |
+
+### 每日时间预算
+
+```
+周一至周五：~2h/天
+  15min  养号（FB + Reddit）
+  90min  内容生产（B 级或 C 级）
+  10min  Pin 发布（如有排期）
+   5min  新文章后索引请求
+
+周六：~3h
+  30min  Amazon New Releases 扫描
+  90min  内容生产（通常 C 级 ×2）
+  30min  GSC + Pinterest 数据检查
+  30min  外链建设
+
+周日：休息（或补进度）
+```
+
+### 什么时候调整这套节奏？
+
+| 触发条件 | 调整方向 |
+|------|------|
+| 月自然点击 > 100 | GSC 检查升级为每周 3 次，开始做查询词分析 |
+| Pinterest 出站点击 > 10/周 | 发布频率从每周 2-3 轮升级到每天 1-2 Pin |
+| 索引 > 30 页 | 开始优化已有内容的标题/描述/内部链接 |
+| Authority Score > 5 | 可以开始做 KD 20-30 的对比文 |
+| 月佣金 > $100 | 复盘哪些文章在产生收入，多写同类内容 |
+| 月流量 > 1,000 PV | 注册 GA4 增强型电商追踪，精确归因佣金来源 |
+
+---
+
+## 阶段 12：EEAT 审计经验 + 81 页后的策略拐点（Day 11，5/29 新增）
+
+### EEAT 审计发现
+
+第三方审计发现 3 个主要风险：
+1. 全站 60+ 处"tested/hands-on"措辞与研究方法论不符（实际是 research-backed 而非 physical testing）
+2. 缺失作者署名和 EEAT 信号
+3. 邮箱域名不一致 + 文档日期滞后
+
+### 已完成修正
+
+| 修正项 | 改动范围 | 完成 |
+|------|:--:|:--:|
+| 措辞统一 | tested/hands-on → research-backed/analyzed | ✅ 全站 0 残留 |
+| 作者署名 | Footer + 评测页：Written by SmartPetGuide editorial team | ✅ |
+| 数据来源 | 评测页：Data sourced from Amazon.com as of May 2026 | ✅ |
+| 邮箱修正 | hello@smartpetguide.com → .net | ✅ |
+| 文件日期 | task_plan.md 标题：Day 7/70页 → Day 11/81页 | ✅ |
+
+### 81 页后的策略拐点
+
+**之前（Week 1-2）：拼量**
+- 目标：快速铺内容，建立内容骨架
+- 节奏：每天 2-3 篇，A/B/C 分级
+- 结果：81 页，覆盖全部品类
+
+**之后（Week 3-4+）：做深 + 做信任**
+- Top 20 页面优先证据化
+- 每篇新文章从 Day 1 就带 EEAT 签名
+- 不再追求页数增长，追求单页质量
+
+### 新文章 EEAT SOP（每篇必带）
+
+| 元素 | 位置 | 格式 |
+|------|------|------|
+| 作者署名 | 文章底部 | Written by the SmartPetGuide research team |
+| 更新日期 | 文章顶部 | Updated: Month DD, 2026 |
+| 数据来源 | 评测页 CTA 区域 | Data sourced from Amazon.com as of [Month] 2026 |
+| 联盟披露 | CTA 按钮下方 | As an Amazon Associate, we earn from qualifying purchases |
+
+### Month 2 策略重心
+
+| 维度 | Week 1-2（已完成） | Week 3-4（新） |
+|------|:--:|:--:|
+| 内容 | 堆页数 70→81 | 做深 + 证据化 Top 20 |
+| 外链 | 启动（0→8） | 加速（8→20+） |
+| EEAT | 无 | ✅ 全站达标 |
+| Pinterest | 自然 Pin R1-R3 | R4 启动 |
+| 数据 | GSC 观望 | 开始关注索引变化趋势 |

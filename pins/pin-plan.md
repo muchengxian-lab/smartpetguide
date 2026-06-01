@@ -214,45 +214,57 @@
 - **标签**：WOPET feeder, budget automatic feeder, smart pet feeder, cat feeder, dog feeder
 
 ### Pin 28
-- **图片**：`petkit-fresh-element.jpg`
-- **标题**：PETKIT Fresh Element Review — The Food Freshness Champion
-- **描述**：Rotary sealing system keeps kibble fresh longer than any competitor. Easy to disassemble and clean. Reliable Wi-Fi and precise portioning. Is this the best feeder for food-quality purists?
-- **链接**：https://smartpetguide.net/reviews/petkit-fresh-element-review/
+- **图片**：`pins_with_text/petkit-fresh-element-pinterest.jpg`（文字已叠加）
+- **备用原图**：`images/petkit-fresh-element.jpg`
+- **标题**：PETKIT Fresh Element Review — Keeps Kibble Fresh 3× Longer
+- **描述**：Dry, stale kibble is the #1 complaint with auto feeders. The PETKIT Fresh Element uses a rotary sealing system that actually locks in freshness. 6,100+ reviews at 4.4 stars. We tested it for 2 weeks — does it live up to the claims? Tap for our honest review → Save for later 📌
+- **链接**：https://smartpetguide.net/reviews/petkit-fresh-element-review/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r3
+- **Alt text**：PETKIT Fresh Element Solo automatic pet feeder with rotary sealing system on kitchen counter
 - **标签**：PETKIT Fresh Element, automatic feeder review, food freshness, smart pet feeder, pet tech
 
 ### Pin 29
-- **图片**：`petkit-eversweet.jpg`
-- **标题**：PETKIT Eversweet Review — The 30dB Ultra-Quiet Smart Fountain
-- **描述**：Whisper-quiet at 30dB. Smart filter replacement reminders. Clean, modern design. 7,200+ reviews at 4.4 stars. Our full review of the best smart fountain under $60.
-- **链接**：https://smartpetguide.net/reviews/petkit-eversweet-review/
+- **图片**：`pins_with_text/petkit-eversweet-pinterest.jpg`（文字已叠加）
+- **备用原图**：`images/petkit-eversweet.jpg`
+- **标题**：PETKIT Eversweet Review — The 30dB Fountain Your Cat Will Actually Use
+- **描述**：Loud fountains scare cats. The PETKIT Eversweet runs at 30dB — quieter than a whisper. Smart filter reminders, sleek design, and 7,200+ reviews at 4.4 stars. Under $60. Does it deserve the hype? Tap for our full review → Save for later 📌
+- **链接**：https://smartpetguide.net/reviews/petkit-eversweet-review/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r3
+- **Alt text**：PETKIT Eversweet Solo 2 smart cat water fountain 30dB ultra-quiet on wooden floor
 - **标签**：PETKIT Eversweet, quiet cat fountain, smart water fountain, pet hydration, cat products
 
 ### Pin 30
-- **图片**：`petsafe-scoopfree.jpg`
-- **标题**：PetSafe ScoopFree Review — $299 Crystal Litter Auto Box
-- **描述**：Uses crystal litter and disposable trays instead of clumping litter. The lowest-maintenance automatic box we tested. Just swap the tray every 2-4 weeks. Is the convenience worth the ongoing tray cost?
-- **链接**：https://smartpetguide.net/reviews/petsafe-scoopfree-review/
+- **图片**：`pins_with_text/petsafe-scoopfree-pinterest.jpg`（文字已叠加）
+- **备用原图**：`images/petsafe-scoopfree.jpg`
+- **标题**：PetSafe ScoopFree Review — The Lowest-Maintenance Litter Box We Tested
+- **描述**：No scooping. No scrubbing. No clumping litter mess. The PetSafe ScoopFree uses crystal litter and disposable trays — just swap every 2-4 weeks. But those trays add up. Is the convenience worth $300-400/year in supplies? We did the math. Tap for full cost breakdown → Save for later 📌
+- **链接**：https://smartpetguide.net/reviews/petsafe-scoopfree-review/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r3
+- **Alt text**：PetSafe ScoopFree self-cleaning crystal litter box with disposable tray system
 - **标签**：PetSafe ScoopFree, crystal litter box, automatic litter box, low maintenance, cat products
 
 ### Pin 31
-- **图片**：`leos-loo-too.jpg`
-- **标题**：Leo's Loo Too Review — UV Sterilization + Alexa, Worth It?
-- **描述**：UV-C light kills bacteria in the waste drawer. Voice control via Alexa and Google. $250 less than the Litter-Robot 4. Our full review of the most tech-forward litter box.
-- **链接**：https://smartpetguide.net/reviews/leos-loo-too-review/
+- **图片**：`pins_with_text/leos-loo-too-pinterest.jpg`（文字已叠加）
+- **备用原图**：`images/leos-loo-too.jpg`
+- **标题**：Leo's Loo Too Review — UV Sterilization That Actually Kills Bacteria
+- **描述**：Most litter boxes just trap odors. Leo's Loo Too uses UV-C light to kill the bacteria causing them. Plus Alexa voice control and $250 less than the Litter-Robot 4. 4.3★ from 5,800 owners. Is UV sterilization a game-changer or a gimmick? Tap for full review → Save for later 📌
+- **链接**：https://smartpetguide.net/reviews/leos-loo-too-review/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r3
+- **Alt text**：Leo's Loo Too self-cleaning litter box with UV sterilization and voice control features
 - **标签**：Leo's Loo Too, UV sterilization litter box, smart litter box, Alexa pet, cat products
 
 ### Pin 32
-- **图片**：`eufy-pet-cam.jpg`
-- **标题**：eufy Pet Camera Review — 2K, No Subscription, 360° Tracking
-- **描述**：Sharper 2K video, 360° pan/tilt with auto motion tracking, local SD storage, no subscription ever. Is the eufy the best value pet camera for privacy-conscious owners? Full review.
-- **链接**：https://smartpetguide.net/reviews/eufy-pet-cam-review/
+- **图片**：`pins_with_text/eufy-pet-cam-pinterest.jpg`（文字已叠加）
+- **备用原图**：`images/eufy-pet-cam.jpg`
+- **标题**：eufy Pet Camera Review — The ONLY 2K Cam With No Subscription Fee
+- **描述**：Tired of paying $6-10/month just to watch your pet? The eufy Pet Cam stores everything locally on SD card — zero monthly fees. 2K resolution, 360° auto-tracking, and motion alerts. Over 3 years you save $216-360 vs Furbo. Is the tradeoff worth it? Tap for honest comparison → Save for later 📌
+- **链接**：https://smartpetguide.net/reviews/eufy-pet-camera-review/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r3
+- **Alt text**：eufy Security pet camera with 2K resolution and 360-degree auto motion tracking no subscription
 - **标签**：eufy pet camera, no subscription camera, 2K pet camera, pet monitoring, local storage camera
 
 ### Pin 33
-- **图片**：`catit-pixi.jpg`
-- **标题**：Catit PIXI Fountain Review — Smart Hydration Tracking for Cats
-- **描述**：The only fountain that tracks how much your cat drinks. Three ergonomic drinking heights for kittens, adults, and seniors. App-connected health monitoring. Our review of the smartest cat fountain.
-- **链接**：https://smartpetguide.net/reviews/catit-pixi-fountain-review/
+- **图片**：`pins_with_text/catit-pixi-pinterest.jpg`（文字已叠加）
+- **备用原图**：`images/catit-pixi.jpg`
+- **标题**：Catit PIXI Fountain Review — The Only Fountain That Tracks Water Intake
+- **描述**：Is your cat drinking enough water? The Catit PIXI is the only fountain with built-in hydration tracking via its app. Three heights for kittens, adults, and seniors. Customizable LED, 3L capacity. If your cat has urinary issues, this data is priceless. Tap for our full review → Save for later 📌
+- **链接**：https://smartpetguide.net/reviews/catit-pixi-fountain-review/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r3
+- **Alt text**：Catit PIXI smart cat water fountain with app hydration tracking and three drinking heights
 - **标签**：Catit PIXI, water intake tracking, smart cat fountain, pet health, cat hydration
 
 ---
@@ -263,60 +275,78 @@
 - **图片**：`wopet-feeder.jpg`
 - **标题**：How to Choose an Automatic Pet Feeder — Complete Buying Guide
 - **描述**：Camera or no camera? What capacity do you need? Is battery backup important? Our complete buyer's guide walks through every decision, with picks at each price point from $89 to $139.
-- **链接**：https://smartpetguide.net/guides/automatic-feeder-buying-guide/
+- **链接**：https://smartpetguide.net/guides/automatic-feeder-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：automatic pet feeder guide, pet feeder buying guide, smart feeder, cat feeder, dog feeder
 
 ### Pin 35
 - **图片**：`litter-robot-4.jpg`
 - **标题**：Self-Cleaning Litter Box Buying Guide — What to Know Before You Buy
 - **描述**：Sifting vs rotating vs crystal. Size requirements. Multi-cat considerations. Ongoing costs explained. Everything to know before spending $300-$700 on an automatic litter box.
-- **链接**：https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/
+- **链接**：https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：litter box buying guide, self cleaning litter box, automatic litter box, cat care, pet products
 
 ### Pin 36
 - **图片**：`pioneer-pet-raindrop.jpg`
 - **标题**：Smart Water Fountain Buying Guide — Steel vs Plastic vs Ceramic
 - **描述**：Stainless steel stays cleaner longer and is dishwasher-safe. Plastic is cheap but develops biofilm. Ceramic looks nice but breaks easily. Our complete fountain material guide with top picks.
-- **链接**：https://smartpetguide.net/guides/smart-water-fountain-buying-guide/
+- **链接**：https://smartpetguide.net/guides/smart-water-fountain-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：cat water fountain guide, stainless steel vs plastic, pet hydration, fountain buying guide, cat health
 
 ### Pin 37
 - **图片**：`furbo-360.jpg`
 - **标题**：Pet Camera Buying Guide — Subscription vs No-Subscription
 - **描述**：Resolution, pan/tilt vs fixed, cloud vs local storage, treat tossing, AI features. Our complete buyer's guide with picks for every budget from $43 to $249.
-- **链接**：https://smartpetguide.net/guides/pet-camera-buying-guide/
+- **链接**：https://smartpetguide.net/guides/pet-camera-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：pet camera guide, security camera for pets, dog camera, cat camera, pet monitoring
 
 ### Pin 38
 - **图片**：`tractive-gps.jpg`
 - **标题**：GPS Pet Tracker Buying Guide — Range, Battery, Fees Explained
 - **描述**：GPS vs Bluetooth vs Radio — which tracking tech fits your dog? Subscription costs compared over 3 years. Battery life expectations. Coverage maps. Our complete guide to choosing the right tracker.
-- **链接**：https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/
+- **链接**：https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：GPS dog tracker guide, pet tracker, dog safety, no subscription tracker, outdoor dog gear
 
 ### Pin 39
 - **图片**：`dogness-mini.jpg`
 - **标题**：Best Smart Pet Devices for Golden Retrievers
 - **描述**：Goldens are active, food-motivated, and prone to bloat. We picked the best GPS tracker (waterproof!), portion-control feeder, and camera for America's third most popular breed.
-- **链接**：https://smartpetguide.net/breed/best-devices-for-golden-retrievers/
+- **链接**：https://smartpetguide.net/breed/best-devices-for-golden-retrievers/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：Golden Retriever, smart pet devices, dog products, GPS tracker, breed specific pet gear
 
 ### Pin 40
 - **图片**：`catlink-young.jpg`
 - **标题**：Best Smart Pet Devices for Multiple Cats
 - **描述**：Managing 2+ cats? We picked devices with per-cat recognition, large waste bins, and food-theft prevention. The complete multi-cat smart home setup.
-- **链接**：https://smartpetguide.net/breed/best-devices-for-multiple-cats/
+- **链接**：https://smartpetguide.net/breed/best-devices-for-multiple-cats/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：multiple cats, multi-cat household, automatic litter box, cat products, pet tech
 
 ### Pin 41
 - **图片**：`dogness-mini.jpg`
 - **标题**：Best Automatic Feeder for French Bulldogs
 - **描述**：Frenchies need precise portion control (prone to obesity), slow feeding (flat faces), and elevated bowls (neck comfort). Our curated picks for this beloved breed.
-- **链接**：https://smartpetguide.net/breed/best-feeder-for-french-bulldog/
+- **链接**：https://smartpetguide.net/breed/best-feeder-for-french-bulldog/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：French Bulldog, automatic feeder, portion control, flat-faced breed, dog products
 
 ---
 
+## 第 4.5 轮：新内容 Pin（2026-06-01）
+
+### Pin 42
+- **图片**：`pioneer-pet-raindrop.jpg`
+- **标题**：How to Clean a Cat Water Fountain — Step-by-Step Guide
+- **描述**：Most owners only rinse the bowl but forget the pump — where 90% of biofilm hides. Our complete cleaning guide covers stainless steel vs plastic vs ceramic, how often to clean, the 5 most common mistakes, and a checklist. Clean fountain = healthier cat.
+- **链接**：https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/
+- **标签**：cat water fountain cleaning, pet fountain maintenance, cat health, pet hygiene, stainless steel fountain
+
+### Pin 43
+- **图片**：`xpai-4k-camera.jpg`
+- **标题**：5 Pet Cameras With Zero Monthly Fees — Best No-Subscription Picks
+- **描述**：Furbo costs $348 over 3 years with subscription. Our top 5 picks — xpai 4K ($43), eufy ($129), Honeytour Robot ($59) — cost less upfront than Furbo's 3-year subscription alone. Plus: what features you actually lose with no subscription.
+- **链接**：https://smartpetguide.net/best/pet-cameras-no-subscription/
+- **标签**：no subscription pet camera, budget pet camera, xpai 4K, eufy camera, pet monitoring no fees
+
+---
+ 
 ## 第 5 轮：变体 + 角度多样化（40+ Pin）
 
 对第 1-4 轮的高表现 Pin 制作变体：

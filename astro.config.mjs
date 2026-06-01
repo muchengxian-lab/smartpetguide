@@ -5,4 +5,5 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://smartpetguide.net",
   integrations: [tailwind(), sitemap()],
+  trailingSlash: "never",
 });

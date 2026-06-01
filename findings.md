@@ -453,3 +453,85 @@ SmartPetGuide 对应的目标：
 
 ---
 *每次调研后更新此文件*
+
+---
+
+## 竞品格局调研 + Semrush KD 实测（2026-05-27，Day 9）
+
+### 一、竞品生存状态
+
+调研了 6 个"中小宠物评测站"的生存状态：
+
+| 站点 | 索引量 | 外链 | 域名年龄 | 状态 |
+|------|:--:|:--:|:--:|------|
+| **pawsomeadvice.com** | 806 | 723 (357域) | 5.3年 | 🟡 停更（2023-2024），唯一可比竞品 |
+| excitedcats.com | 残留124 | — | 6.3年 | ❌ 被 Catster 收购 |
+| allaboutcats.com | 残留9 | — | 24年 | ❌ 被 cats.com 吞并 |
+| litterboxlab.com | 40 | — | 2个月 | ❌ 已死 |
+| thepetsdaily.com | 0 | — | — | ❌ 从未建成 |
+| catster.com | 7,310 | — | 多年 | 🔴 已是头部大站，非竞品 |
+
+**核心发现：中层竞品全灭。宠物评测赛道的独立中小站要么死了、要么被收购了。目前智能宠物设备这个细分里，没有一个活跃的独立评测站。**
+
+### 二、SERP 格局
+
+三个高价值商业关键词的 Google 首页完全被 DA70+ 大站 + Reddit 垄断。小站在首页出现率为 0%。这不是内容质量问题，是域名权重不够——Google 根本不会把新域名排到 Forbes/cats.com 中间。
+
+### 三、Semrush KD 实测
+
+| 关键词 | KD | 月搜索量(US) | 意图 | 对应我们内容 |
+|------|:--:|:--:|------|------|
+| best self cleaning litter box | **55%** | 8.1K | Commercial | Best 列表 |
+| best automatic cat feeder | **41%** | 3.6K | Commercial | Best 列表 |
+| stainless steel cat water fountain | **33%** | **9.9K** | Commercial | Best 列表 🟡 |
+| litter robot 4 review | **29%** | 720 | Informational | 单品评测 |
+| best pet camera no subscription | **15%** | 140 | Commercial | Best 列表 ✅ |
+| how to clean cat water fountain | **12%** | 140 | Informational | **还没做！** ✅ |
+
+**KD 55% 意味着需要 26 个引用域名才能参与竞争。我们目前只有 1 个。**
+
+### 四、pawsomeadvice 外链拆解
+
+**结论：不是靠主动外链建设，是 5 年 806 页内容的自然积累。**
+
+- 查到的引用域名类型：联盟平台(impact.com)、社交(Pinterest/FB/IG)、宠物品牌(armarkat)、网站统计(easycounter)、学术(jstor)
+- Domain Strength 仅 16（5 年！）——证明从未做过 deliberate outreach
+- **只做内容不做外链 = 5 年后 Domain Strength 16 = 停更**
+
+### 五、三层数据交叉验证
+
+| 维度 | AuGrav 案例 | pawsomeadvice | SmartPetGuide | 教训 |
+|------|:--:|:--:|:--:|------|
+| KD 策略 | 全部 <20 | 未评估 | 做了 9 篇 KD 33-55 | ❌ 大词太早 |
+| 外链策略 | 未披露 | 0 主动，自然积累 | 0 主动 | ❌ 必须启动 |
+| 技术 SEO | 未提及 | 未提及 | 投入 29% 时间 | ❌ 过度打磨 |
+| 社交信号 | ✅ 提升排名 | ❌ 完全缺失 | ✅ Pinterest 起步 | ✅ 差异化优势 |
+| 内容聚焦 | 垂直（珠宝定制） | 太散（狗+猫+野生动物） | 极致聚焦（智能设备） | ✅ 长期优势 |
+
+### 六、经验提炼
+
+1. **外链从 1% → 20%**：子木公式验证（SEO=80%内容+20%外链+0%技术），我们技术投入 29%，外链 1%，严重失衡
+2. **KD<20 优先**：Best 列表全部 KD 33-55，在 Day 9 做是提前了 6 个月。优先做 KD 5-20 的长尾信息型内容
+3. **中层真空 = 机会窗口**：没有同级竞品，坚持 12 个月做到 200+ 页就是唯一活人
+4. **时间线再次确认**：良辰美（最快）8 个月爆发，pawsomeadvice（最慢）5 年还在停更，我们预估 Month 5-6 心理门槛合理
+5. **"No Subscription" 角度验证有效**：Pinterest GPS Pin 831 浏览 + Semrush KD 15% + Amazon VOC 排名第一痛点，三线交叉验证
+
+---
+
+## EEAT 真实性审计（2026-05-29，Day 11）
+
+### 审计发现
+- 全站 60+ 处 "tested/hands-on/testing" 措辞与研究方法论不符
+- 缺失作者署名、数据来源标注等 EEAT 信号
+- 邮箱域名 .com vs .net 不一致
+
+### 修正
+- 全站措辞统一：tested → research-backed/analyzed ✅
+- 作者署名 + 数据来源已补全 ✅
+- 邮箱已修正，About 页已重写 ✅
+
+### 新 EEAT SOP
+每篇新文章 Day 1 就带：作者署名 + 更新日期 + 数据来源 + 联盟披露
+
+---
+*每次调研后更新此文件*

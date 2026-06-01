@@ -51,8 +51,8 @@ const allProducts = categoryKey
 
 const titleMap: Record<string, { title: string; description: string; faqs: { q: string; a: string }[] }> = {
   "self-cleaning-litter-boxes": {
-    title: "5 Best Self-Cleaning Litter Boxes of 2026 — Tested & Reviewed",
-    description: "We tested the top automatic litter boxes to find the best for odor control, multi-cat homes, and budget. Litter-Robot vs Leo's Loo vs PetSafe and more.",
+    title: "6 Best Self-Cleaning Litter Boxes of 2026 — Researched & Reviewed",
+    description: "We analyzed thousands of verified owner reviews to find the best automatic litter boxes for odor control, multi-cat homes, and budget. Litter-Robot vs Leo's Loo vs PetSafe and more.",
     faqs: [
       { q: "Are self-cleaning litter boxes worth it?", a: "Yes, if you value your time and want better odor control. A quality self-cleaning box like the Litter-Robot 4 can reduce scooping to once every 1-2 weeks and significantly cut litter box odors." },
       { q: "How often do you need to empty a self-cleaning litter box?", a: "Most self-cleaning boxes need the waste drawer emptied every 5-7 days for a single cat, or every 2-3 days for multiple cats." },
@@ -73,8 +73,8 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
     ],
   },
   "smart-pet-water-fountains": {
-    title: "5 Best Smart Pet Water Fountains of 2026 — Tested & Reviewed",
-    description: "We tested the top smart water fountains for cats and dogs. From the budget Pioneer Pet to the app-controlled Catit PIXI, find the best fountain for your pet.",
+    title: "5 Best Smart Pet Water Fountains of 2026 — Researched & Reviewed",
+    description: "We analyzed the top smart water fountains for cats and dogs. From the budget Pioneer Pet to the app-controlled Catit PIXI, find the best fountain for your pet.",
     faqs: [
       { q: "Are smart water fountains really better than a bowl?", a: "Yes — moving water stays fresher, filters remove impurities, and pets instinctively prefer running water. Vets recommend fountains to increase water intake, which helps prevent urinary and kidney issues." },
       { q: "How often should I clean a pet water fountain?", a: "Deep clean weekly (dishwasher safe models make this easy). Replace filters every 2-4 weeks. If you notice slime or biofilm sooner, clean it immediately." },
@@ -84,7 +84,7 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
   },
   "pet-cameras": {
     title: "5 Best Pet Cameras of 2026 — Treat-Tossing, Monitoring & More",
-    description: "We tested the best pet cameras with treat tossing, two-way audio, and smart alerts. Furbo vs Petcube vs budget options — find the right pet cam for your home.",
+    description: "We analyzed the best pet cameras with treat tossing, two-way audio, and smart alerts. Furbo vs Petcube vs budget options — find the right pet cam for your home.",
     faqs: [
       { q: "Are pet cameras worth it?", a: "Yes — if you work outside the home or travel. A pet camera gives peace of mind and treat-tossing models let you interact with your pet remotely. Basic cameras start at $30, but treat-tossing models ($99+) add genuine value for dog owners." },
       { q: "Do pet cameras need a subscription?", a: "Some do for advanced features. Furbo charges $5.99/month for AI alerts and cloud recording. eufy has no subscription (local storage). Most basic live streaming works without a subscription." },
@@ -116,10 +116,10 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
   },
   "litter-boxes-for-large-cats": {
     title: "Best Self-Cleaning Litter Boxes for Large Cats 2026 — Roomy Picks",
-    description: "Large cats need bigger litter boxes. We tested the best self-cleaning litter boxes with extra room for Maine Coons, Ragdolls, and other big breeds — plus multi-cat households.",
+    description: "Large cats need bigger litter boxes. We analyzed the best self-cleaning litter boxes with extra room for Maine Coons, Ragdolls, and other big breeds — plus multi-cat households.",
     faqs: [
-      { q: "What size litter box does a large cat need?", a: "A large cat (15+ lbs) needs a litter box at least 22-24 inches long and 18+ inches wide. Standard automatic boxes often have 15-16 inch openings which can be cramped. The Litter-Robot 4 and CATLINK Young Pro have the roomiest interiors we've tested for big cats." },
-      { q: "Can Maine Coons use automatic litter boxes?", a: "Yes — but only the largest models. The Litter-Robot 4 has the widest opening (15.75 inches) and internal space of any automatic box we've tested. The CATLINK Young Pro also works well. Avoid compact models like Leo's Loo Too for cats over 15 lbs." },
+      { q: "What size litter box does a large cat need?", a: "A large cat (15+ lbs) needs a litter box at least 22-24 inches long and 18+ inches wide. Standard automatic boxes often have 15-16 inch openings which can be cramped. The Litter-Robot 4 and CATLINK Young Pro have the roomiest interiors we've identified for big cats." },
+      { q: "Can Maine Coons use automatic litter boxes?", a: "Yes — but only the largest models. The Litter-Robot 4 has the widest opening (15.75 inches) and internal space of any automatic box we've reviewed. The CATLINK Young Pro also works well. Avoid compact models like Leo's Loo Too for cats over 15 lbs." },
       { q: "How many litter boxes do I need for multiple large cats?", a: "The rule is N+1 (one more box than cats). For two large cats, you'd want 3 boxes. However, a single Litter-Robot 4 can serve 2-3 cats effectively because it cleans after every use — reducing the need for multiple boxes." },
       { q: "Do large cats need special litter in automatic boxes?", a: "Standard clumping litter works for most large cats in automatic boxes. However, some large cats produce more waste — look for litters with strong clumping action and consider changing the waste drawer liner more frequently." },
     ],
@@ -158,7 +158,7 @@ const isLitterBox = slug.includes("litter");
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{pageData.description}</p>
 
     <Takeaways items={[
-      `${allProducts.length} products tested and compared`,
+      `${allProducts.length} products researched and compared`,
       `Top pick: ${allProducts[0]?.name || ""} ($${allProducts[0]?.price || 0})`,
       `Best budget: ${[...allProducts].sort((a: any, b: any) => a.price - b.price)[0]?.name || ""} ($${[...allProducts].sort((a: any, b: any) => a.price - b.price)[0]?.price || 0})`,
       `Best rated: ${[...allProducts].sort((a: any, b: any) => b.rating - a.rating)[0]?.name || ""} (${[...allProducts].sort((a: any, b: any) => b.rating - a.rating)[0]?.rating || 0}★)`,
