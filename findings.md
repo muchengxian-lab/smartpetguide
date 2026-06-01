@@ -534,4 +534,38 @@ SmartPetGuide 对应的目标：
 每篇新文章 Day 1 就带：作者署名 + 更新日期 + 数据来源 + 联盟披露
 
 ---
+
+## GSC 索引问题：尾部斜杠重定向（2026-06-01，Day 13）
+
+### 发现
+- GSC 报告 4 个重定向错误 + 3 个自动重定向页面
+- 根本原因：Astro 默认生成带斜杠 URL (`/page/`)，Vercel 配置 `trailingSlash: false` → 浏览器请求 `/page/` 时 Vercel 301 重定向到 `/page`
+- Googlebot 看到 301 即标记为"重定向错误"
+
+### 修复
+- `astro.config.mjs` 添加 `trailingSlash: "never"` — 全站 URL 统一无斜杠
+- Sitemap 同步更新为无斜杠 URL
+- 同时发现站点在 Vercel 而非 Netlify（之前凭假设记错）
+
+### 教训
+- 新站 Day 10-14 必做：GSC 索引报告检查 + 尾部斜杠统一
+- 部署相关操作前先验证平台（读 `server` 响应头，不是凭记忆）
+
+---
+
+## Vercel GitHub 自动部署（2026-06-01，Day 13）
+
+### 发现
+- Vercel 项目未连接 GitHub，每次依赖 CLI 手动部署
+- 导致多个 Git push 未自动上线（Day 8-12 的 commit 未部署）
+
+### 修复
+- Vercel Settings → Git → 连接 `muchengxian-lab/smartpetguide`
+- 现在每次 `git push` 自动触发 Vercel 构建部署
+
+### 教训
+- 项目初始化后第一件事：确认 CI/CD 自动部署已接通
+- 定期检查 Deployments 页面确认最新 commit 已上线
+
+---
 *每次调研后更新此文件*

@@ -1354,24 +1354,45 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 
 ---
 
-## 会话：2026-06-01（Day 13 续）— 增量内链加固
+## 会话：2026-06-01（Day 13 续）— 增量内链加固 + 部署修复 + 文章迁移
 
-### 改动
+### GSC 索引问题修复
+- [x] 诊断：4 个重定向错误 + 3 个自动重定向 = 尾部斜杠不匹配
+- [x] Root cause: sitemap 生成 `/page/`，Vercel 配置 `trailingSlash: false` 导致 301
+- [x] 修复: `astro.config.mjs` 添加 `trailingSlash: "never"` → 全站 URL 统一无斜杠
+- [x] **发现站点在 Vercel 而非 Netlify**（此前记错）→ 删除误创建的 `netlify.toml`
+- [x] Vercel 未连接 GitHub（手动 CLI 部署）→ 连接 `muchengxian-lab/smartpetguide` → 自动部署就绪
+
+### 增量内链加固
 - [x] **Review 模板**：FAQ 下方新增"Explore More"区块，按品类链回 Best列表/购买指南/对比页 → 25 个 review 页面全部增强
-- [x] **Guide 模板**：FAQ 下方新增"Related Resources"区块 → 覆盖主要 guide 页面
+- [x] **Guide 模板**：FAQ 下方新增"Related Resources"区块 → 覆盖 20 个 guide 页面
 - [x] **正文内链**：cleaning guide 链回 best fountains；subscription guide 链回 no-sub cameras + GPS trackers
 - [x] **4 个 GSC 报错页面**全部获得内链输入
-- [x] 构建验证通过（81 页，25 review + 19 guide 均含新增区块）
 
-### 部署状态
-- [x] Git push 成功
-- [ ] Netlify 自动部署确认（需检查 Dashboard 或授权 CLI）
+### 2 篇新文章迁移
+- [x] 发现问题：文章写入 `src/content/articles/` 但站点无此路由 → 404
+- [x] 清洗指南 → 更新 `/guides/how-to-clean-cat-water-fountain`（7节+4FAQ）
+- [x] 摄像头推荐 → 新建 `/guides/best-pet-camera-no-subscription`（6节+4FAQ）
+- [x] Guides 索引页同步更新
+- [x] 删除无效 `src/content/articles/` 目录
+
+### 部署
+- [x] Vercel GitHub 自动部署接通
+- [x] 全部改动已上线（82 页）
+- [x] 4 个 GSC 重定向错误验证修复已点击
+
+### 更新文件
+- [x] `astro.config.mjs` — trailingSlash: "never"
+- [x] `src/pages/reviews/[slug].astro` — Explore More 区块
+- [x] `src/pages/guides/[slug].astro` — Related Resources + 迁移2篇 + 新增1篇
+- [x] `src/pages/guides/index.astro` — 新增摄像头指南索引
+- [x] `pins/pin-plan.md` — Pin 42-43
+- [x] `smartpetguide_project.md` — 部署信息更正
+- [x] `progress.md` — 本日志
 
 ### 待用户操作
-- [ ] **Netlify 部署确认**（打开 Dashboard 检查最新 deploy 状态）
 - [ ] Pinterest R4 10 Pin 手动发布
 - [ ] FB + Reddit 养号 15min
-- [ ] GSC 验证修复（重定向错误页点击"验证修复"）
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*
