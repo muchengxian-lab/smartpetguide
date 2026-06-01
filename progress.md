@@ -1348,7 +1348,8 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 - [x] progress.md（本日志）
 
 ### 待用户操作
-- [ ] Pinterest R4 10 Pin 手动发布
+- [x] Pinterest Pin 42-45 已发布 ✅
+- [ ] Pinterest Pin 34-41 待发布（明后天）
 - [ ] FB + Reddit 养号 15min
 - [ ] Manta/Hotfrog/Crunchbase 手动提交
 
@@ -1392,7 +1393,8 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 - [x] `progress.md` — 本日志
 
 ### 待用户操作
-- [ ] Pinterest R4 10 Pin 手动发布
+- [x] Pinterest Pin 42-45 已发布 ✅
+- [ ] Pinterest Pin 34-41 待发布（明后天分两批）
 - [ ] FB + Reddit 养号 15min
 
 ---
