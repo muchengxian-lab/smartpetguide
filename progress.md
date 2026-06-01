@@ -1353,7 +1353,25 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 - [ ] Manta/Hotfrog/Crunchbase 手动提交
 
 ---
-*每个阶段完成后或遇到错误时更新此文件*
+
+## 会话：2026-06-01（Day 13 续）— 增量内链加固
+
+### 改动
+- [x] **Review 模板**：FAQ 下方新增"Explore More"区块，按品类链回 Best列表/购买指南/对比页 → 25 个 review 页面全部增强
+- [x] **Guide 模板**：FAQ 下方新增"Related Resources"区块 → 覆盖主要 guide 页面
+- [x] **正文内链**：cleaning guide 链回 best fountains；subscription guide 链回 no-sub cameras + GPS trackers
+- [x] **4 个 GSC 报错页面**全部获得内链输入
+- [x] 构建验证通过（81 页，25 review + 19 guide 均含新增区块）
+
+### 部署状态
+- [x] Git push 成功
+- [ ] Netlify 自动部署确认（需检查 Dashboard 或授权 CLI）
+
+### 待用户操作
+- [ ] **Netlify 部署确认**（打开 Dashboard 检查最新 deploy 状态）
+- [ ] Pinterest R4 10 Pin 手动发布
+- [ ] FB + Reddit 养号 15min
+- [ ] GSC 验证修复（重定向错误页点击"验证修复"）
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*
