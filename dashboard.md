@@ -1,6 +1,6 @@
 # SmartPetGuide 任务仪表盘
 
-**最后更新：2026-06-01（Day 13 EOD）**
+**最后更新：2026-06-01（Day 13）**
 **Git：~80 commits**
 
 ---
@@ -50,7 +50,8 @@
 | ⏳ | **Blogarama** | 审核中 |
 | ⏳ | **AllTop** | 邮件已发，审核中 |
 | P2 | **Reddit Profile** | 6/4 解禁后加 |
-| P2 | **Manta/Hotfrog/Crunchbase** | 需手动注册 |
+| ✅ | **Crunchbase** | DA91，已提交 |
+| P2 | **Manta/Hotfrog** | Manta Cloudflare拦截 / Hotfrog需手动注册 |
 
 ---
 
@@ -73,10 +74,11 @@
 | GSC 曝光 (3月) | 4 | **34** | +750% |
 | GSC 点击 | 1 | **1** | — |
 | 平均排名 | — | **16.8** | 第2页 |
-| Pinterest Pin | 9 | **40** | +31 |
-| 外链引用域名 | 1 | **8** | +7 |
+| Pinterest Pin | 9 | **44**（40旧+4新） | +35 |
+| Pinterest 月浏览 | 5 | **1,737** | +346x |
+| 外链引用域名 | 1 | **10** | +9 |
 | Amazon 佣金 | $0 | $0 | — |
-| 本周内容 | — | 2 篇 | Week 3 节奏 |
+| 本周内容 | — | 3 篇 | Week 3 节奏 |
 
 ---
 

@@ -364,7 +364,7 @@
 | 周五 5/29 | 3 篇指南 + EEAT全站修正 + 养号 + 数据补检 | 3 篇 + EEAT + 养号 + GSC + Amazon | ✅ |
 | 周六 5/30 | Amazon NR扫描 + GSC检查 + 外链目录 + 养号 | 数据 + 外链 + 养号 | ✅ |
 | 周日 5/31 | 休息 | — | ✅ |
-| 周一 6/1 | Semrush KD复查 + 2篇内容 + GSC trailingSlash修复 + 内链加固 + Vercel连接 + 文章迁移 | Day 13 全栈日 | ✅ |
+| 周一 6/1 | 3篇内容 + GSC修复 + 内链加固 + Vercel部署 + Pin图12张 + 外链Crunchbase/Hotfrog + Pinterest数据分析 | Day 13 全栈日 | ✅ |
 
 **✅ Week 2 收尾 + Week 3 启动：2 篇新内容 + GSC 修复 + 内链加固 + 部署自动化**
 

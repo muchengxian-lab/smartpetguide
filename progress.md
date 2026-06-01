@@ -1309,7 +1309,7 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 
 ---
 
-## 会话：2026-06-01（Day 13 周一）— 新周启动，Semrush KD + 2 篇内容
+## 会话：2026-06-01（Day 13 周一 EOD）— 全栈日：内容+修复+内链+部署+Pin图+外链+Pinterest数据
 
 ### Semrush KD 复查（10 次额度）
 | 关键词 | 月搜索量 | KD% | 难度 |
@@ -1320,82 +1320,55 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 | best automatic cat feeder | 3.6K | 41% | Possible |
 | cat water fountain | 40.5K | 50% | Difficult |
 | gps dog tracker | 2.9K | 61% | Difficult（需 105 RD） |
-| petkit review | 20 | n/a | 量太低 |
-| petlibro granary review | 20 | n/a | 量太低 |
 
-### 内容生产
-- [x] **How to Clean a Cat Water Fountain (Complete Guide 2026)** — KD 12%, informational, ~1700字
-- [x] **Best Pet Camera Without Subscription 2026 (5 Picks)** — KD 15%, commercial, ~1800字
-- 两篇均含：作者署名 + 数据来源 + 联盟披露 + 更新日期
-
-### 本周选题（8 篇）
-1. ✅ How to Clean a Cat Water Fountain — KD 12%
-2. ✅ Best Pet Camera No Subscription 2026 — KD 15%
-3. Stainless Steel vs Plastic Cat Fountain — 待写
-4. Cat Fountain Maintenance Schedule — 待写
-5. Budget Smart Pet Devices Under $50 — 待写
-6. Smart Pet Device Privacy & Security — 待写
-7. First Smart Pet Device Decision Framework — 待写
-8. Multi-Cat Water Fountain Guide — 待写
-
-### Pinterest
-- [x] R4 Pin 34-43 描述就绪（10 Pin）
-- [ ] 等待手动发布到 Pinterest
-
-### 更新文件
-- [x] pin-plan.md（+Pin 42-43）
-- [x] smartpetguide_project.md（数据 + 下次任务）
-- [x] progress.md（本日志）
-
-### 待用户操作
-- [x] Pinterest Pin 42-45 已发布 ✅
-- [ ] Pinterest Pin 34-41 待发布（明后天）
-- [ ] FB + Reddit 养号 15min
-- [ ] Manta/Hotfrog/Crunchbase 手动提交
-
----
-
-## 会话：2026-06-01（Day 13 续）— 增量内链加固 + 部署修复 + 文章迁移
+### 内容生产（3 篇）
+1. ✅ How to Clean a Cat Water Fountain — KD 12%, 7节+4FAQ, → `/guides/how-to-clean-cat-water-fountain`
+2. ✅ Best Pet Camera No Subscription 2026 — KD 15%, 6节+4FAQ, → `/guides/best-pet-camera-no-subscription`（新建）
+3. ✅ Stainless Steel vs Plastic Cat Fountains — KD 33, 8节+4FAQ, → `/guides/stainless-steel-vs-plastic-fountains`（重写）
 
 ### GSC 索引问题修复
-- [x] 诊断：4 个重定向错误 + 3 个自动重定向 = 尾部斜杠不匹配
-- [x] Root cause: sitemap 生成 `/page/`，Vercel 配置 `trailingSlash: false` 导致 301
-- [x] 修复: `astro.config.mjs` 添加 `trailingSlash: "never"` → 全站 URL 统一无斜杠
-- [x] **发现站点在 Vercel 而非 Netlify**（此前记错）→ 删除误创建的 `netlify.toml`
-- [x] Vercel 未连接 GitHub（之前通过 CLI 手动部署，最后一次 Day 8）→ 连接后今天 8 个 commit 自动部署
-- [x] 注：5/29-5/31 无代码提交，不存在"Day 8-12 积压"，仅今天 ~1 小时部署延迟
+- [x] 4 个重定向错误：尾部斜杠不匹配（sitemap `/page/` vs Vercel `trailingSlash: false`）
+- [x] `astro.config.mjs` 添加 `trailingSlash: "never"` → 全站 URL 统一
+- [x] 验证修复已点击
 
 ### 增量内链加固
-- [x] **Review 模板**：FAQ 下方新增"Explore More"区块，按品类链回 Best列表/购买指南/对比页 → 25 个 review 页面全部增强
-- [x] **Guide 模板**：FAQ 下方新增"Related Resources"区块 → 覆盖 20 个 guide 页面
-- [x] **正文内链**：cleaning guide 链回 best fountains；subscription guide 链回 no-sub cameras + GPS trackers
-- [x] **4 个 GSC 报错页面**全部获得内链输入
+- [x] **Review 模板**："Explore More"区块（25 页）
+- [x] **Guide 模板**："Related Resources"区块（20 页）
+- [x] **正文内链**：3 处跨页面链接
+- [x] 4 个 GSC 报错页面全部获得内链输入
 
-### 2 篇新文章迁移
-- [x] 发现问题：文章写入 `src/content/articles/` 但站点无此路由 → 404
-- [x] 清洗指南 → 更新 `/guides/how-to-clean-cat-water-fountain`（7节+4FAQ）
-- [x] 摄像头推荐 → 新建 `/guides/best-pet-camera-no-subscription`（6节+4FAQ）
-- [x] Guides 索引页同步更新
-- [x] 删除无效 `src/content/articles/` 目录
+### 部署修复
+- [x] 发现站点在 **Vercel** 而非 Netlify
+- [x] Vercel 连接 GitHub `muchengxian-lab/smartpetguide` → 自动部署就绪
+- [x] 82 页全部上线
 
-### 部署
-- [x] Vercel GitHub 自动部署接通
-- [x] 全部改动已上线（82 页）
-- [x] 4 个 GSC 重定向错误验证修复已点击
+### Pin 图生成（12 张）
+- [x] Pin 34-41：R4 购买指南 + 品种专题（8张）
+- [x] Pin 42-45：新内容 Pin（4张）
+- [x] 全 12 张 Alt text 改为视觉式描述（颜色+产品+标题+标签）
+- [x] pin-plan.md：头部固化 6 条优化原则 + 7 字段清单
+- [x] Pin 42-45 已手动发布
 
-### 更新文件
-- [x] `astro.config.mjs` — trailingSlash: "never"
-- [x] `src/pages/reviews/[slug].astro` — Explore More 区块
-- [x] `src/pages/guides/[slug].astro` — Related Resources + 迁移2篇 + 新增1篇
-- [x] `src/pages/guides/index.astro` — 新增摄像头指南索引
-- [x] `pins/pin-plan.md` — Pin 42-43
-- [x] `smartpetguide_project.md` — 部署信息更正
-- [x] `progress.md` — 本日志
+### 外链
+- [x] Crunchbase 提交 ✅（DA91）
+- [x] Hotfrog 提交 ✅（DA56）
+- [x] Manta 被 Cloudflare 拦截
+
+### Pinterest 数据（5/19-6/1）
+| 指标 | Day 10 | Day 13 | 变化 |
+|------|:--:|:--:|------|
+| 浏览 | 1,065 | 1,737 | +63% |
+| 参与度 | 0 | 1 | 首次 |
+| 出站点击 | 0 | 0 | — |
+| 保存 | 0 | 0 | — |
 
 ### 待用户操作
-- [x] Pinterest Pin 42-45 已发布 ✅
-- [ ] Pinterest Pin 34-41 待发布（明后天分两批）
+- [ ] Pinterest Pin 34-41 发布（明后天分两批）
 - [ ] FB + Reddit 养号 15min
+
+### Git
+- 17 commits today，全部推送
+- 修改文件：astro.config.mjs, reviews/guides/best模板, guides索引, pin-plan.md, findings.md, dashboard.md, task_plan.md, progress.md
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*
