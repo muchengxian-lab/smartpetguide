@@ -272,56 +272,56 @@
 ## 第 4 轮：购买指南 + 品种专题（8 Pin）
 
 ### Pin 34
-- **图片**：`wopet-feeder.jpg`
+- **图片**：`pins_with_text/pin34-feeder-guide.jpg`
 - **标题**：How to Choose an Automatic Pet Feeder — Complete Buying Guide
 - **描述**：Camera or no camera? What capacity do you need? Is battery backup important? Our complete buyer's guide walks through every decision, with picks at each price point from $89 to $139.
 - **链接**：https://smartpetguide.net/guides/automatic-feeder-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：automatic pet feeder guide, pet feeder buying guide, smart feeder, cat feeder, dog feeder
 
 ### Pin 35
-- **图片**：`litter-robot-4.jpg`
+- **图片**：`pins_with_text/pin35-litter-box-guide.jpg`
 - **标题**：Self-Cleaning Litter Box Buying Guide — What to Know Before You Buy
 - **描述**：Sifting vs rotating vs crystal. Size requirements. Multi-cat considerations. Ongoing costs explained. Everything to know before spending $300-$700 on an automatic litter box.
 - **链接**：https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：litter box buying guide, self cleaning litter box, automatic litter box, cat care, pet products
 
 ### Pin 36
-- **图片**：`pioneer-pet-raindrop.jpg`
+- **图片**：`pins_with_text/pin36-fountain-guide.jpg`
 - **标题**：Smart Water Fountain Buying Guide — Steel vs Plastic vs Ceramic
 - **描述**：Stainless steel stays cleaner longer and is dishwasher-safe. Plastic is cheap but develops biofilm. Ceramic looks nice but breaks easily. Our complete fountain material guide with top picks.
 - **链接**：https://smartpetguide.net/guides/smart-water-fountain-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：cat water fountain guide, stainless steel vs plastic, pet hydration, fountain buying guide, cat health
 
 ### Pin 37
-- **图片**：`furbo-360.jpg`
+- **图片**：`pins_with_text/pin37-camera-guide.jpg`
 - **标题**：Pet Camera Buying Guide — Subscription vs No-Subscription
 - **描述**：Resolution, pan/tilt vs fixed, cloud vs local storage, treat tossing, AI features. Our complete buyer's guide with picks for every budget from $43 to $249.
 - **链接**：https://smartpetguide.net/guides/pet-camera-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：pet camera guide, security camera for pets, dog camera, cat camera, pet monitoring
 
 ### Pin 38
-- **图片**：`tractive-gps.jpg`
+- **图片**：`pins_with_text/pin38-gps-guide.jpg`
 - **标题**：GPS Pet Tracker Buying Guide — Range, Battery, Fees Explained
 - **描述**：GPS vs Bluetooth vs Radio — which tracking tech fits your dog? Subscription costs compared over 3 years. Battery life expectations. Coverage maps. Our complete guide to choosing the right tracker.
 - **链接**：https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：GPS dog tracker guide, pet tracker, dog safety, no subscription tracker, outdoor dog gear
 
 ### Pin 39
-- **图片**：`dogness-mini.jpg`
+- **图片**：`pins_with_text/pin39-golden-retriever.jpg`
 - **标题**：Best Smart Pet Devices for Golden Retrievers
 - **描述**：Goldens are active, food-motivated, and prone to bloat. We picked the best GPS tracker (waterproof!), portion-control feeder, and camera for America's third most popular breed.
 - **链接**：https://smartpetguide.net/breed/best-devices-for-golden-retrievers/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：Golden Retriever, smart pet devices, dog products, GPS tracker, breed specific pet gear
 
 ### Pin 40
-- **图片**：`catlink-young.jpg`
+- **图片**：`pins_with_text/pin40-multi-cat.jpg`
 - **标题**：Best Smart Pet Devices for Multiple Cats
 - **描述**：Managing 2+ cats? We picked devices with per-cat recognition, large waste bins, and food-theft prevention. The complete multi-cat smart home setup.
 - **链接**：https://smartpetguide.net/breed/best-devices-for-multiple-cats/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
 - **标签**：multiple cats, multi-cat household, automatic litter box, cat products, pet tech
 
 ### Pin 41
-- **图片**：`dogness-mini.jpg`
+- **图片**：`pins_with_text/pin41-french-bulldog.jpg`
 - **标题**：Best Automatic Feeder for French Bulldogs
 - **描述**：Frenchies need precise portion control (prone to obesity), slow feeding (flat faces), and elevated bowls (neck comfort). Our curated picks for this beloved breed.
 - **链接**：https://smartpetguide.net/breed/best-feeder-for-french-bulldog/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r4
