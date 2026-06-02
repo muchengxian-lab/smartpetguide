@@ -410,9 +410,41 @@
 
 ---
  
-## 第 5 轮：变体 + 角度多样化（40+ Pin）
+## 第 5 轮：变体 + 角度多样化（Pin 46-49 — 6/2 发布）
 
 对第 1-4 轮的高表现 Pin 制作变体：
+
+### Pin 46
+- **图片**：`wopet-feeder.jpg`
+- **标题**：Stop Wasting Money on the Wrong Smart Pet Device — Here's Where to Start
+- **描述**：Most first-time buyers waste $100+ on features they never use. A $39 fountain that makes cats drink 50% more water. A $43 camera with 4K video and zero subscription. Start with one device that solves your biggest problem, not five you don't need.
+- **链接**：https://smartpetguide.net/guides/first-smart-pet-device-guide/
+- **标签**：first smart pet device, beginner pet tech guide, budget pet devices, smart pet starter, pet tech tips
+
+### Pin 47
+- **图片**：`xpai-4k-camera.jpg`
+- **标题**：2026 Pet Camera Guide — What the Big Sites Won't Tell You About Subscriptions
+- **描述**：Furbo 360 costs $395 over 3 years after subscription. eufy costs $129 total. xpai costs $43 total. The big review sites skip the long-term math because they earn from affiliate links either way. We did the 3-year cost analysis on every camera.
+- **链接**：https://smartpetguide.net/guides/pet-camera-buying-guide/
+- **标签**：pet camera guide, no subscription camera, pet camera comparison, Furbo vs eufy, pet monitoring cost
+
+### Pin 48
+- **图片**：`petlibro-granary.jpg`
+- **标题**：Automatic Feeder vs Manual Feeding — What 50,000+ Reviews Actually Tell Us
+- **描述**：Free-feeding leads to overeating in 60%+ of pets. Most owners overestimate portions by 20-30% when scooping manually. Automatic feeders don't just save time — they eliminate the guessing that causes pet obesity. Here's what the data shows.
+- **链接**：https://smartpetguide.net/guides/do-automatic-feeders-help-with-obesity/
+- **标签**：automatic feeder benefits, pet obesity prevention, portion control feeder, smart pet feeder, pet health
+
+### Pin 49
+- **图片**：`pioneer-pet-raindrop.jpg`
+- **标题**：The Under-$50 Pet Tech Setup That Actually Works — 3 Devices, $82 Total
+- **描述**：$39 Pioneer Pet Raindrop (18,500+ reviews, stainless steel). $43 xpai 4K camera (no subscription, built-in 64GB storage). That's it — hydration and monitoring covered for less than a dinner out. What you need first, what to skip, and what to buy next.
+- **链接**：https://smartpetguide.net/guides/best-pet-tech-under-50/
+- **标签**：budget pet devices, cheap pet camera, affordable cat fountain, pet tech under $50, smart pet starter kit
+
+---
+
+## 第 5 轮续：变体 + 角度多样化（40+ Pin）
 
 ### 标题变体角度
 - "We Tested X [Product] for 6 Months — Here's the Truth"
