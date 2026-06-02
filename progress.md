@@ -1370,5 +1370,49 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 - 17 commits today，全部推送
 - 修改文件：astro.config.mjs, reviews/guides/best模板, guides索引, pin-plan.md, findings.md, dashboard.md, task_plan.md, progress.md
 
+## 会话：2026-06-02（Day 14 周二）— 2篇指南 + Pin R4 收尾
+
+### 完成事项
+- [x] **Smart Pet Device Maintenance Schedule 2026**（C 级指南）— 7 节日常/周/月保养排期，覆盖喂食器/饮水机/猫砂盆/摄像头
+- [x] **Best Smart Pet Devices Under $50 2026**（C 级指南）— 6 节预算精选，KD ~5-10，跨品类推荐
+- [x] Vercel 部署：84 页在线
+- [x] **Pin 34-37 发布**：R4 购买指南 + 品种专题 4 Pin（GPS Guide / Camera Guide / Golden Retriever / Multi-Cat）
+- [x] **Pinterest R4 收尾**：12/12 Pin 全部完成，活跃 Pin 49
+- [x] **Pinterest 头像更新**：品牌头像 400×400（SP + SMARTPETGUIDE，Forest/Gold 配色）
+- [x] **回退 R5 过早 Pin**：Pin 46-49 生成后回退（今天应该是 R4 收尾，不是 R5）
+- [x] **guides/index.astro 补卡**：2 篇新指南卡片（修复遗漏）
+- [x] **vercel.json 301 重定向回退**：cleanUrls 308 优先级更高，301 规则无效
+
+### 产出
+| 类型 | 变化 |
+|------|------|
+| 内容 | 82 → **84 页** |
+| Pinterest | 44 → **49 活跃 Pin**（R4 完成） |
+| Git | ~4 commits（2 guides + pin revert + avatar + index fix） |
+
+### 本周进度（6/2-6/6）
+| # | 选题 | 类型 | 状态 |
+|---|------|------|:--:|
+| 1 | Pet Device Maintenance Schedule | C级 | ✅ 6/2 |
+| 2 | Best Smart Pet Devices Under $50 | C级 | ✅ 6/2 |
+| 3 | Feeder Portion Size Guide | C级 | ⏳ 6/3 |
+| 4 | Fountain Filter Guide | C级 | ⏳ 6/4 |
+| 5 | Litter Box Introduction Guide | B级 | ⏳ 6/5 |
+| 6-8 | 待选题调研 | — | ⏳ |
+
+### 关键提醒
+- **6/4（周四）= Reddit D14 解禁**，可在"求推荐"帖中放链接
+- **FB Groups 养号已到期**（5/29），可在回复中自然提及博客
+- **GSC 下次检查**：6/3（周三），核心看索引数是否突破 12
+- **外链**：Blogarama/AllTop 仍审核中，本周继续目录提交
+
+### 更新文件
+- [x] guides/[slug].astro：新增 2 篇指南
+- [x] guides/index.astro：补 2 张新卡片 🔊
+- [x] dashboard.md：数据同步
+- [x] task_plan.md：页数/指南列表更新
+- [x] progress.md：本日志
+- [x] smartpetguide_project.md：记忆文件已更新
+
 ---
 *每个阶段完成后或遇到错误时更新此文件*
