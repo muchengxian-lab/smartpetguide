@@ -366,9 +366,9 @@
 | 周日 5/31 | 休息 | — | ✅ |
 | 周一 6/1 | 3篇内容 + GSC修复 + 内链加固 + Vercel部署 + Pin图12张 + 外链Crunchbase/Hotfrog + Pinterest数据分析 | Day 13 全栈日 | ✅ |
 | 周二 6/2 | 2篇指南（Maintenance + Under $50）+ Pin 34-37发布 + 头像更新 | 2 篇 + 4 Pin | ✅ |
-| 周三 6/3 | Feeder Portion Size Guide (KD<5) + Pin 38-39 + GSC 检查 + Reddit D14 解禁准备 | 1 篇 + 2 Pin + 数据 | ⏳ |
-| 周四 6/4 | 🔥 Reddit D14 解禁 + Fountain Filter Guide (KD<10) + 外链提交 | 1 篇 + 外链 | ⏳ |
-| 周五 6/5 | Litter Box Introduction Guide (KD 15-20) + Amazon NR 扫描 | 1 篇 + 数据 | ⏳ |
+| 周三 6/3 | Feeder Portion Size Guide + 🔴 PH措辞修正+外链排查+Affiliate披露+兽医免责（审计 Day 1） + GSC 检查 | 1 篇 + 审计整改 | ⏳ |
+| 周四 6/4 | 🔥 Reddit D14 解禁 + 🔴 How We Research页+不推荐产品页（审计 Day 2）+ 外链提交 | 2 新页 + 外链 + 解禁 | ⏳ |
+| 周五 6/5 | 🔴 核心评测增强+邮件订阅（审计 Day 3）+ Amazon NR 扫描 | 信任增强 + 邮件 | ⏳ |
 | 周六 6/6 | 周复盘 + Pinterest 数据周检 + GSC 检查 + 项目文件同步 | 数据 + 同步 | ⏳ |
 
 **✅ Week 3 进行中：2 篇新指南（Day 14）+ Pin R4 收尾，本周 5-8 篇目标**
@@ -660,3 +660,65 @@
 | EEAT | 无 | ✅ 全站达标 |
 | Pinterest | 自然 Pin R1-R3 | R4 启动 |
 | 数据 | GSC 观望 | 开始关注索引变化趋势 |
+
+---
+
+## 阶段 13：第三方审计整改（Day 14，6/2 新增）
+
+审计来源：外部审查报告（仅公开页面），3 个 P0 + 4 个 P1 问题
+核心结论：信任证据不足是最大风险，需建"方法论透明化"体系
+
+### 执行计划（3 天，约 11h）
+
+#### Day 1（6/3 周三）— 快速修复 2h
+
+| # | 任务 | 类型 | 预计 |
+|---|------|:--:|:--:|
+| 1 | Product Hunt 页面措辞修正：删 "hands-on" / "tested with real pets"，改为 "research-backed" | P0 | 20min |
+| 2 | 外链平台排查：Indie Hackers / Crunchbase / Hotfrog 等是否也有旧措辞 | P0 | 10min |
+| 3 | 评测页顶部加信任行：`How we review: analyzing verified owner data — learn more` | P1 | 30min |
+| 4 | BaseLayout 加兽医免责："not veterinary advice — consult your vet" | P1 | 20min |
+| 5 | 全站 CTA 区域 affiliate 披露确认 | P1 | 20min |
+
+#### Day 2（6/4 周四）— 信任基础设施 3h
+
+| # | 任务 | 类型 | 预计 |
+|---|------|:--:|:--:|
+| 1 | 新建 "How We Research & Evaluate" 公开页 | P0 | 2h |
+| 2 | 新建 "Products We Don't Recommend" 页面 | P0 | 1h |
+
+How We Research 页内容结构：
+- 方法论：聚合 verified purchase reviews > 单人单次测试
+- 评分维度：可靠性/易用性/App 稳定性/清洁/宠物接受度/售后/性价比
+- 数据来源：Amazon verified reviews + BSR + 制造商规格
+- 更新频率：每季度重检
+- 透明声明：不买产品做物理测试，但读每条 verified review
+
+不推荐页面：列出被我们评估后排除的产品 + 原因（Whistle Switch / PETKIT P2 等）
+
+#### Day 3（6/5 周五）— 核心评测增强 + 邮件 6h
+
+| # | 任务 | 类型 | 预计 |
+|---|------|:--:|:--:|
+| 1 | 3-5 篇核心评测信任增强（Amazon 真实用户原话板块） | P0 | 3h |
+| 2 | 邮件订阅接入（ConvertKit/Buttondown free tier） | P1 | 3h |
+
+核心评测增强每篇加：
+- "What Verified Owners Actually Say" 板块（正面+负面原话引用）
+- 常见故障/投诉频率统计
+- 数据采集日期标注
+
+邮件订阅：
+- Footer 表单（全站自动出现）+ 2-3 封欢迎序列 + 3 篇高流量文章底部内容升级
+
+### 整改优先级总览
+
+| 优先级 | 事项 | 耗时 | 阻塞 |
+|:--:|------|:--:|------|
+| 🔴 P0 | PH 措辞 + 外链排查 | 30min | 合规 |
+| 🔴 P0 | How We Research + 不推荐页 | 3h | 信任基础 |
+| 🔴 P0 | 核心评测增强 | 3h | 转化率 |
+| 🟡 P1 | Affiliate 披露强化 | 30min | 合规 |
+| 🟡 P1 | 兽医免责 | 20min | 合规 |
+| 🟡 P1 | 邮件订阅 | 3h | 用户留存 |
+| ⚪ P2 | 饮水机品类做深 | 融入 P0 | 长期优势 |

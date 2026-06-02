@@ -1,5 +1,121 @@
 # 发现与决策
 
+## 第三方审计整改计划（2026-06-02）
+
+审计来源：`Codex/2026-06-02/smartpetguide-ai-report-generator` 项目审查报告第4节
+审计范围：仅公开页面（Product Hunt + smartpetguide.net），未做代码/站点内部审计
+
+### P0-1：Product Hunt 页面措辞与站内矛盾 🔴
+
+**问题**：PH 页面写 "70+ hands-on reviews" / "tested every product with real pets"，但站内已在 Day 11 EEAT 审计中全部改为 "research-backed" / "analyzed by reviewing verified owner data"。两个地方的承诺不一致，如果 Google 或用户交叉验证会发现矛盾。
+
+**整改**：
+- [ ] 立即更新 Product Hunt 页面描述，与站内一致：改为 "research-backed reviews" / "analyzed from verified Amazon owner data"
+- [ ] 检查 Indie Hackers / Crunchbase / Hotfrog 等其他外链平台的描述是否也有 "hands-on" / "tested" 措辞
+
+**时间**：30 分钟
+
+---
+
+### P0-2：信任证据墙缺失 🔴
+
+**问题**：审计指出每篇评测没有实测照片、视频、测试日期、评分维度。用户会将其视为普通 affiliate 站而非可信评测源。
+
+**我们做不到的**（诚实面对）：
+- 没有真实产品，无法拍摄实测照片/视频
+- 审计要求的"test with real pets"在当前阶段不可行
+
+**我们能做的**：
+- [ ] **新建 "How We Research" 公开页**（替代当前的 About 页 methodology 段落）
+  - 明确说明：我们通过分析 Amazon 已验证购买者评论（verified purchase reviews）、BSR 排名趋势、制造商规格对比来做评测
+  - 说明为什么用这个方式：聚合 500+ 条真实用户反馈 > 单人单次测试
+  - 透明写出：我们不买产品做物理测试，但我们读每条 verified review
+- [ ] **评测页底部数据来源强化**：当前有 "Data sourced from Amazon.com"，扩展为具体数据点（review count / BSR / avg rating / 数据采集日期）
+- [ ] **建一个"不推荐"页面**：列出我们评估后不推荐的产品及原因（比推荐列表更能建立信任）
+- [ ] **选 3-5 篇核心评测**（LR4/Petlibro/Pioneer Pet），增加"What 500+ Owners Actually Say"板块，引用 Amazon verified review 中的真实用户原话
+
+**时间**：How We Research 页 2h + 不推荐页 1h + 核心评测增强 3h = 6h
+
+---
+
+### P1-1：Affiliate 披露不够显眼 🟡
+
+**问题**：有独立的 affiliate-disclosure 页面，但不是每篇文章顶部/购买按钮旁都标注。
+
+**整改**：
+- [ ] **CTA 按钮下方统一加注**：已有（"As an Amazon Associate, we earn from qualifying purchases"），确认全部 84 页覆盖
+- [ ] **评测页顶部加一行小字**："💡 How we review: We analyze verified owner reviews and product specs — [learn more](/about)"，同时起到披露+信任+内链三作用
+- [ ] **对比页/ Best 列表同理**
+
+**时间**：1h（模板改 4 个文件，全站自动同步）
+
+---
+
+### P1-2：邮件订阅缺失 🟡
+
+**问题**：没有任何方式把一次性 SEO 流量转化为可复访用户。
+
+**整改**：
+- [ ] **Footer 加 ConvertKit/Buttondown 订阅表单**（免费 tier 足够，< 1000 subscribers 不花钱）
+  - 文案："Get the latest smart pet device picks — no spam, just the good stuff"
+  - 放在 footer CTA 区域，全站自动出现
+- [ ] **创建欢迎邮件序列**（2-3 封）：Welcome → Best Starter Devices → When to Upgrade
+- [ ] **在 3 篇高流量潜力文章底部加内容升级**（checklist/PDF → 换邮箱）
+
+**时间**：注册+嵌入 1h + 邮件序列 2h = 3h
+
+---
+
+### P1-3：医疗/健康建议免责 🟡
+
+**问题**：GPS 健康追踪、猫砂盆监测等页面可能触及宠物健康建议边界。
+
+**整改**：
+- [ ] **BaseLayout footer 加 veterinary disclaimer**："This site provides product research, not veterinary advice. Consult your vet for health concerns."
+- [ ] **健康相关页面**（GPS/猫砂盆/饮水机）评测正文中遇到健康声明时加 "...according to owner reports, not veterinary diagnosis"
+
+**时间**：30 分钟
+
+---
+
+### P2-1：品类聚焦建议 ⚪
+
+**问题**：审计建议锁定 1 个品类打穿，但我们已经是 5 品类 84 页。
+
+**实际情况**：已经铺开了，回不去。但可以选择**哪个品类做深做证据化**。
+
+**策略**：
+- 选**不锈钢饮水机**作为"信任墙示范品类"（Trends 23，KD 33，已有 6 产品+3 对比+3 指南）
+- 先把这 12 个页面的信任证据补齐，形成可复制的样板
+- 其他 4 个品类维持现状，不追加新内容
+
+**时间**：融入 P0-2 的 3-5 篇核心评测增强中
+
+---
+
+## 整改优先级总结
+
+| 优先级 | 事项 | 预计耗时 | 阻塞什么 |
+|:--:|------|:--:|------|
+| 🔴 P0 | PH 页面措辞修正 + 外链平台排查 | 30min | 合规+信任一致性 |
+| 🔴 P0 | How We Research 页 + 不推荐页 + 核心评测增强 | 6h | 站内信任基础 |
+| 🟡 P1 | Affiliate 披露强化 | 1h | 合规 |
+| 🟡 P1 | 邮件订阅 | 3h | 用户留存 |
+| 🟡 P1 | 兽医免责 | 30min | 合规 |
+| ⚪ P2 | 饮水机品类做深 | 融入 P0-2 | 长期竞争优势 |
+
+**总计：约 11 小时，建议分 3 天执行。**
+
+### 执行顺序
+
+| 天 | 任务 | 耗时 |
+|:--:|------|:--:|
+| 6/3 | PH 措辞修正 + Affiliate 披露强化 + 兽医免责 | 2h |
+| 6/4 | How We Research 页 + 不推荐页 | 3h |
+| 6/5 | 3-5 篇核心评测信任增强 + 邮件订阅 | 6h |
+
+---
+
 ## 市场数据
 - Pet Tech 全球市场 $7.5B → $18B（CAGR 19%）
 - Google Trends 2026：智能宠物设备搜索量 5 年持续上涨
