@@ -1,7 +1,7 @@
 # SmartPetGuide Pinterest Pin 内容计划
 
 > 目标：100+ Pin | 每天 3-5 个 | 图片：`pins/pins_with_text/`（带文字叠层，1000×1500）
-> 活跃 Pin：45（R1 9 + R2 9 + R3 15 + R4 8 + 4.5轮 4）
+> 活跃 Pin：49（R1 9 + R2 9 + R3 15 + R4 12 + 4.5轮 4）
 
 ## 设计规范
 - 尺寸：1000×1500 竖版（Pinterest 推荐 2:3）
