@@ -366,9 +366,9 @@
 | 周日 5/31 | 休息 | — | ✅ |
 | 周一 6/1 | 3篇内容 + GSC修复 + 内链加固 + Vercel部署 + Pin图12张 + 外链Crunchbase/Hotfrog + Pinterest数据分析 | Day 13 全栈日 | ✅ |
 | 周二 6/2 | 2篇指南（Maintenance + Under $50）+ Pin 34-37发布 + 头像更新 | 2 篇 + 4 Pin | ✅ |
-| 周三 6/3 | Feeder Portion Size Guide + 🔴 PH措辞修正+外链排查+Affiliate披露+兽医免责（审计 Day 1） + GSC 检查 | 1 篇 + 审计整改 | ⏳ |
-| 周四 6/4 | 🔥 Reddit D14 解禁 + 🔴 How We Research页+不推荐产品页（审计 Day 2）+ 外链提交 | 2 新页 + 外链 + 解禁 | ⏳ |
-| 周五 6/5 | 🔴 核心评测增强+邮件订阅（审计 Day 3）+ Amazon NR 扫描 | 信任增强 + 邮件 | ⏳ |
+| 周三 6/3 | Feeder Portion Size Guide + 🔴 PH措辞修正+外链排查+Affiliate披露+兽医免责（审计 Day 1） + GSC 检查 | 1 篇 + 审计 5 项 + 数据 | ⏳ |
+| 周四 6/4 | 🔥 Reddit D14 解禁 + Fountain Filter Guide + 🔴 How We Research页+不推荐产品页（审计 Day 2）+ 外链提交 | 1 篇 + 2 新页 + 外链 + 解禁 | ⏳ |
+| 周五 6/5 | Litter Box Introduction Guide + Amazon NR 扫描 + 🔴 核心评测增强+邮件订阅（审计 Day 3） | 1 篇 + 信任增强 + 邮件 | ⏳ |
 | 周六 6/6 | 周复盘 + Pinterest 数据周检 + GSC 检查 + 项目文件同步 | 数据 + 同步 | ⏳ |
 
 **✅ Week 3 进行中：2 篇新指南（Day 14）+ Pin R4 收尾，本周 5-8 篇目标**
@@ -670,22 +670,34 @@
 
 ### 执行计划（3 天，约 11h）
 
-#### Day 1（6/3 周三）— 快速修复 2h
+#### Day 1（6/3 周三）— 内容 1 篇 + 快速修复 5 项 2h
 
 | # | 任务 | 类型 | 预计 |
 |---|------|:--:|:--:|
-| 1 | Product Hunt 页面措辞修正：删 "hands-on" / "tested with real pets"，改为 "research-backed" | P0 | 20min |
-| 2 | 外链平台排查：Indie Hackers / Crunchbase / Hotfrog 等是否也有旧措辞 | P0 | 10min |
-| 3 | 评测页顶部加信任行：`How we review: analyzing verified owner data — learn more` | P1 | 30min |
-| 4 | BaseLayout 加兽医免责："not veterinary advice — consult your vet" | P1 | 20min |
+| — | **Feeder Portion Size Guide**（KD<5，C 级指南） | 内容 | 30min |
+| 1 | Product Hunt 页面措辞修正 | P0 | 20min |
+| 2 | 外链平台排查 | P0 | 10min |
+| 3 | 评测页顶部加信任行 | P1 | 30min |
+| 4 | BaseLayout 加兽医免责 | P1 | 20min |
 | 5 | 全站 CTA 区域 affiliate 披露确认 | P1 | 20min |
 
-#### Day 2（6/4 周四）— 信任基础设施 3h
+#### Day 2（6/4 周四）— 内容 1 篇 + 信任基础设施 + Reddit 解禁 4h
 
 | # | 任务 | 类型 | 预计 |
 |---|------|:--:|:--:|
+| — | **Fountain Filter Guide**（KD<10，C 级指南） | 内容 | 30min |
+| — | 🔥 **Reddit D14 解禁**：首次在推荐帖放链接 | 社交 | 30min |
 | 1 | 新建 "How We Research & Evaluate" 公开页 | P0 | 2h |
 | 2 | 新建 "Products We Don't Recommend" 页面 | P0 | 1h |
+
+#### Day 3（6/5 周五）— 内容 1 篇 + 评测增强 + 邮件 + NR 扫描 7h
+
+| # | 任务 | 类型 | 预计 |
+|---|------|:--:|:--:|
+| — | **Litter Box Introduction Guide**（KD 15-20，B 级指南） | 内容 | 1h |
+| — | **Amazon New Releases 扫描** | 数据 | 20min |
+| 1 | 3-5 篇核心评测信任增强 | P0 | 3h |
+| 2 | 邮件订阅接入 | P1 | 3h |
 
 How We Research 页内容结构：
 - 方法论：聚合 verified purchase reviews > 单人单次测试
