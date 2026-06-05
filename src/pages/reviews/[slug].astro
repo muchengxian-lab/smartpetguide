@@ -375,7 +375,7 @@ const review = reviewMap[slug] || reviewMap["litter-robot-4-review"];
 const product = allProducts.get(review.productId);
 ---
 
-<BaseLayout title={review.title} description={review.description} type="article">
+<BaseLayout title={review.title} description={review.description} type="article" publishDate="2026-05-20" modifiedDate="2026-06-03">
   <Breadcrumb crumbs={[{ label: "Reviews", href: "/reviews/" }, { label: product?.name || review.title }]} />
 
   <article>
@@ -386,6 +386,9 @@ const product = allProducts.get(review.productId);
       <span>10 min read</span>
       <span class="rounded-full bg-sage/70 px-2.5 py-0.5 text-xs font-medium text-forest">Advertiser Disclosure</span>
     </div>
+
+    <!-- Trust line -->
+    <p class="mt-4 text-sm text-bark-muted/80 italic">How we review: We analyze verified owner reviews and product specs — <a href="/about/" class="underline decoration-honey/50 hover:text-honey">learn more about our research process</a></p>
 
     <!-- Product Hero Image -->
     {product?.imageUrl && (

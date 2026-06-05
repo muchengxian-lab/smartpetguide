@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-**Day 14（6/2）** | 84 页在线 | Pinterest 49 Pin | 外链 10 个引用域名 | R4 12/12 完成 | Week 3 慢写中
+**Day 15（6/3）** | 85 页在线 | Pinterest 51 Pin | 外链 10 个引用域名 | R4 全部完成 | 审计 Day 1 完成
 
 ---
 
@@ -366,12 +366,12 @@
 | 周日 5/31 | 休息 | — | ✅ |
 | 周一 6/1 | 3篇内容 + GSC修复 + 内链加固 + Vercel部署 + Pin图12张 + 外链Crunchbase/Hotfrog + Pinterest数据分析 | Day 13 全栈日 | ✅ |
 | 周二 6/2 | 2篇指南（Maintenance + Under $50）+ Pin 34-37发布 + 头像更新 | 2 篇 + 4 Pin | ✅ |
-| 周三 6/3 | Feeder Portion Size Guide + 🔴 PH措辞修正+外链排查+Affiliate披露+兽医免责（审计 Day 1） + GSC 检查 | 1 篇 + 审计 5 项 + 数据 | ⏳ |
-| 周四 6/4 | 🔥 Reddit D14 解禁 + Fountain Filter Guide + 🔴 How We Research页+不推荐产品页（审计 Day 2）+ 外链提交 | 1 篇 + 2 新页 + 外链 + 解禁 | ⏳ |
-| 周五 6/5 | Litter Box Introduction Guide + Amazon NR 扫描 + 🔴 核心评测增强+邮件订阅（审计 Day 3） | 1 篇 + 信任增强 + 邮件 | ⏳ |
+| 周三 6/3 | ✅ Feeder Portion Size Guide + ✅ PH措辞修正+外链排查+Affiliate披露+兽医免责（审计 Day 1）+ ✅ GSC 检查 + ✅ P0坏链修复+移动导航+信任声明 | 1 篇 + 审计 + 数据 + P0×3 | ✅ |
+| 周四 6/4 | 🔥 Reddit D14 解禁 + Fountain Filter Guide + 🔴 How We Research页+不推荐产品页（审计 Day 2）+ 🔗 外链 Week 2 + 🟡 P1-2 Schema日期 + P1-4 FAQ HTML修复 | 1 篇 + 2 新页 + 外链 + 解禁 + P1×2 | ⏳ |
+| 周五 6/5 | Litter Box Introduction Guide + Amazon NR 扫描 + 🔴 核心评测增强+邮件订阅（审计 Day 3）+ 🟡 P1-1 OG图片 + P1-3 Review Schema评分 | 1 篇 + 信任增强 + 邮件 + P1×2 | ⏳ |
 | 周六 6/6 | 周复盘 + Pinterest 数据周检 + GSC 检查 + 项目文件同步 | 数据 + 同步 | ⏳ |
 
-**✅ Week 3 进行中：2 篇新指南（Day 14）+ Pin R4 收尾，本周 5-8 篇目标**
+**✅ Week 3 进行中：3 篇新指南（Day 14 两篇 + Day 15 一篇）+ Pin R4 全部完成 + 审计 Day 1 完成，本周 5-8 篇目标**
 
 #### 关键原则
 - **不要在第 5 个站就停下来** → SmartPetGuide 才 70 篇，远没到该停的阶段
@@ -388,10 +388,10 @@
 | 评测（Reviews） | 25 | 猫砂盆×6 / 喂食器×4 / 饮水机×6 / 摄像头×6 / GPS×3 |
 | 对比（Compare） | 11 | 猫砂盆×3 / 喂食器×2 / 饮水机×2 / 摄像头×3 / GPS×1 |
 | Best 列表 | 9 | 全品类覆盖 + 细分专题 |
-| 指南（Guides） | 25 | 5 购买指南 + 5 场景化 + 3 Starter Kit + 3 长尾 + 4 保养/预算 + 3 其他 |
+| 指南（Guides） | 26 | 5 购买指南 + 5 场景化 + 3 Starter Kit + 3 长尾 + 4 保养/预算 + 1 份量 + 3 其他 |
 | 品种（Breed） | 7 | 法斗/金毛/拉布拉多/德牧/多猫/老猫/小狗 |
 | 信息页 | 9 | 首页/关于/隐私/联盟披露/分类索引×4/404 |
-| **总计** | **84** | **全品类全覆盖** |
+| **总计** | **85** | **全品类全覆盖** |
 
 ### 质量指标
 - Hemingway Grade 8（全部 21 篇评测已达标）
@@ -473,7 +473,7 @@
 
 | 周次 | 类型 | 具体行动 | 目标数 |
 |------|------|------|:--:|
-| **Week 1**（5/28-6/3） | 目录提交 | 搜索 "pet blog directory" + "pet website directory"，提交 smartpetguide.net | 15-20 |
+| **Week 1**（5/28-6/3） | 目录提交 | Blogarama✅ AllTop❌ Crunchbase✅ Hotfrog❌ Manta❌ = **8 外链完成** | 15-20 → 8（免费目录大多已死） |
 | **Week 2**（6/4-6/10） | 竞品外链分析 | 用免费工具查 pawsomeadvice.com 的 357 个引用域名，筛选可复制的 | 30 个目标 |
 | **Week 3**（6/11-6/17） | 资源页外链 | 搜 "pet resources" + "cat resources" + "dog resources" site:.edu，找可提交的资源页 | 10-15 |
 | **Week 4**（6/18-6/24） | Guest Post 调研 | 搜 "write for us" + pet/cat/dog，整理可投稿的博客列表 | 10-15 |
@@ -670,16 +670,16 @@
 
 ### 执行计划（3 天，约 11h）
 
-#### Day 1（6/3 周三）— 内容 1 篇 + 快速修复 5 项 2h
+#### Day 1（6/3 周三）— 内容 1 篇 + 快速修复 5 项 2h ✅
 
 | # | 任务 | 类型 | 预计 |
 |---|------|:--:|:--:|
-| — | **Feeder Portion Size Guide**（KD<5，C 级指南） | 内容 | 30min |
-| 1 | Product Hunt 页面措辞修正 | P0 | 20min |
-| 2 | 外链平台排查 | P0 | 10min |
-| 3 | 评测页顶部加信任行 | P1 | 30min |
-| 4 | BaseLayout 加兽医免责 | P1 | 20min |
-| 5 | 全站 CTA 区域 affiliate 披露确认 | P1 | 20min |
+| — | **Feeder Portion Size Guide**（KD<5，C 级指南） | 内容 | ✅ |
+| 1 | Product Hunt 页面措辞修正 | P0 | ✅ |
+| 2 | 外链平台排查 | P0 | ✅ |
+| 3 | 评测页顶部加信任行 | P1 | ✅ |
+| 4 | BaseLayout 加兽医免责 | P1 | ✅ |
+| 5 | 全站 CTA 区域 affiliate 披露确认 | P1 | ✅ |
 
 #### Day 2（6/4 周四）— 内容 1 篇 + 信任基础设施 + Reddit 解禁 4h
 

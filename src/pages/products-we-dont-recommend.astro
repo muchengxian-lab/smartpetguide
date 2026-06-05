@@ -1,0 +1,93 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+
+const excludedProducts = [
+  {
+    name: "Whistle Switch",
+    category: "GPS Tracker",
+    reason: "Amazon Best Sellers Rank #270,865 (effectively no sales volume) and 3.0-star average rating across a small number of reviews. The combination of low sales and poor reviews suggests a product that neither sells nor satisfies. We cannot recommend a GPS tracker with this track record when alternatives like Tractive and Aorkuler have thousands of verified positive reviews.",
+    price: "$69",
+    alternative: "Tractive GPS LTE ($79) or No-Fee GPS ($33) for budget-conscious buyers",
+  },
+  {
+    name: "PETKIT P2 Smart Fountain",
+    category: "Water Fountain",
+    reason: "This model was discontinued by PETKIT in 2016 and is no longer available on Amazon or through official retail channels. It appeared in some older best-of lists online but cannot be purchased new. We removed it from our database to avoid recommending a product you can't actually buy.",
+    price: "N/A (discontinued)",
+    alternative: "PETKIT Eversweet Solo 2 ($59) — the current-generation replacement with quieter pump and better filtration",
+  },
+  {
+    name: "DOGNESS Smart Fountain",
+    category: "Water Fountain",
+    reason: "We were unable to verify this product's existence across any Amazon marketplace (US, UK, CA, DE). It appears to have been listed by a third-party reseller at some point but is not currently available from DOGNESS or any authorized retailer. We removed it from our database to avoid dead-end product links.",
+    price: "Unknown",
+    alternative: "DOGNESS Mini Smart Feeder ($99) — the brand's actual flagship product, which we do recommend for small spaces",
+  },
+  {
+    name: "Petcube Bites 2",
+    category: "Pet Camera",
+    reason: "Amazon BSR #204,272 with a 4.0-star average. While the hardware is capable (treat tossing, 1080p, Alexa built-in), the $249 price is difficult to justify when the Furbo 360 offers equivalent treat-tossing at $179 and the eufy Pet Cam provides 2K resolution with zero subscription fees at $129. The Petcube's value proposition weakens further when you add its optional cloud subscription. We still include it in our Furbo vs Petcube comparison for reference, but we don't recommend it as a standalone pick.",
+    price: "$249",
+    alternative: "Furbo 360 ($179) for treat tossing or eufy Pet Cam ($129) for no-subscription monitoring",
+  },
+  {
+    name: "Leo's Loo Too",
+    category: "Self-Cleaning Litter Box",
+    reason: "Leo's Loo Too is NOT excluded entirely — we include it in our Best list and recommend it as the best value for tech-loving cat owners. However, it narrowly loses to the Litter-Robot 4 as our overall top pick. Its smaller waste drawer (more frequent emptying), occasional app connectivity hiccups, and shorter track record keep it from the #1 spot. We list it here for transparency: it's a close second, not a bad product.",
+    price: "$449",
+    alternative: "Litter-Robot 4 ($699) for best-in-class odor control, or Amazon Basics Litter Box ($209) for budget-conscious buyers",
+  },
+];
+---
+
+<BaseLayout
+  title="Products We Don't Recommend — And Why | SmartPetGuide"
+  description="Smart pet devices we evaluated and chose NOT to recommend, with specific reasons for each decision. Discontinued products, poor performers, and better alternatives."
+  type="article"
+  publishDate="2026-06-04"
+  modifiedDate="2026-06-04"
+>
+  <Breadcrumb crumbs={[{ label: "Products We Don't Recommend" }]} />
+
+  <article>
+    <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">Products We Don't Recommend</h1>
+    <p class="mt-3 text-lg leading-relaxed text-bark-muted">
+      A list of smart pet devices we evaluated and chose not to recommend — with clear reasons for each decision. A good "no" is as valuable as a good "yes."
+    </p>
+
+    <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
+      <span>Published: <time datetime="2026-06-04">June 4, 2026</time></span>
+      <span>5 min read</span>
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {excludedProducts.map((p) => (
+        <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
+          <div class="flex flex-wrap items-center gap-3">
+            <h2 class="font-display text-xl font-bold text-forest">{p.name}</h2>
+            <span class="rounded-full bg-sage/70 px-3 py-0.5 text-xs font-medium text-forest">{p.category}</span>
+            <span class="text-sm text-bark-muted">{p.price}</span>
+          </div>
+          <p class="mt-4 leading-relaxed text-bark-muted">{p.reason}</p>
+          <div class="mt-4 rounded-xl border border-honey/30 bg-honey/5 p-4">
+            <p class="text-sm"><span class="font-semibold text-forest">Better alternative:</span> <span class="text-bark-muted">{p.alternative}</span></p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 rounded-2xl border border-sage-dark/30 bg-cream/50 p-6 md:p-8">
+      <h2 class="font-display text-xl font-bold text-forest">Our Exclusion Criteria</h2>
+      <p class="mt-3 leading-relaxed text-bark-muted">We evaluate a product for exclusion when it meets one or more of these conditions:</p>
+      <ul class="mt-4 space-y-2 text-sm text-bark-muted">
+        <li class="flex items-start gap-2"><span class="text-forest font-bold">1.</span> <strong>Discontinued or unavailable</strong> — cannot be purchased new from authorized retailers</li>
+        <li class="flex items-start gap-2"><span class="text-forest font-bold">2.</span> <strong>Poor sales volume</strong> — Amazon BSR above 100,000 in its primary category, indicating negligible real-world usage</li>
+        <li class="flex items-start gap-2"><span class="text-forest font-bold">3.</span> <strong>Below-average owner satisfaction</strong> — average rating below 3.8 stars with a meaningful number of reviews</li>
+        <li class="flex items-start gap-2"><span class="text-forest font-bold">4.</span> <strong>Uncompetitive value</strong> — a clearly better alternative exists at a similar or lower price</li>
+        <li class="flex items-start gap-2"><span class="text-forest font-bold">5.</span> <strong>Pattern of critical failures</strong> — verified reviews consistently report the same serious problem (e.g., WiFi disconnection, pump failure, safety concern)</li>
+      </ul>
+      <p class="mt-4 text-sm text-bark-muted/70">This page is updated quarterly along with the rest of our content. If a product improves or a new alternative emerges, we'll revise our assessment. <a href="/how-we-research/" class="text-forest underline decoration-honey/50 hover:text-honey">See our full research methodology</a>.</p>
+    </div>
+  </article>
+</BaseLayout>

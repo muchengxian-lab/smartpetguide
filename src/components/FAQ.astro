@@ -8,7 +8,7 @@ const schema = {
   mainEntity: items.map((item) => ({
     "@type": "Question",
     name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
+    acceptedAnswer: { "@type": "Answer", text: item.a.replace(/<[^>]*>/g, "") },
   })),
 };
 ---
@@ -25,7 +25,7 @@ const schema = {
           </svg>
         </summary>
         <div class="px-6 pb-4 pt-1">
-          <p class="text-[15px] leading-relaxed text-bark-muted">{item.a}</p>
+          <p class="text-[15px] leading-relaxed text-bark-muted" set:html={item.a} />
         </div>
       </details>
     ))}

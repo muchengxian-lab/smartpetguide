@@ -150,12 +150,15 @@ const pageData = titleMap[slug] || titleMap["self-cleaning-litter-boxes"];
 const isLitterBox = slug.includes("litter");
 ---
 
-<BaseLayout title={pageData.title} description={pageData.description} type="article">
+<BaseLayout title={pageData.title} description={pageData.description} type="article" publishDate="2026-05-20" modifiedDate="2026-06-03">
   <Breadcrumb crumbs={[{ label: "Best Picks", href: "/best/" }, { label: pageData.title.replace(/^\d+\s/, "") }]} />
 
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{pageData.title}</h1>
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{pageData.description}</p>
+
+    <!-- Trust line -->
+    <p class="mt-3 text-sm text-bark-muted/80 italic">How we pick: We analyze verified owner reviews and product specs — <a href="/about/" class="underline decoration-honey/50 hover:text-honey">learn more about our research process</a></p>
 
     <Takeaways items={[
       `${allProducts.length} products researched and compared`,

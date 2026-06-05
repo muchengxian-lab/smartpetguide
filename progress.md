@@ -1415,5 +1415,92 @@ M8 ░░ Month 2-3     M9 ░░ Month 4-6
 - [x] progress.md：本日志
 - [x] smartpetguide_project.md：记忆文件已更新
 
+## 会话：2026-06-03（Day 15 周三）— 内容生产 + 审计 Day 1
+
+### 完成事项
+- [x] **Feeder Portion Size Guide**（C 级指南，KD<5）— 6 节 + 3 FAQ + Related Resources，已部署上线
+- [x] **信任行**：评测/对比/Best 三模板顶部加 "How we review" 信任行，链接到 About 页
+- [x] **兽医免责**：BaseLayout Footer 加 "not veterinary advice" 免责声明
+- [x] **Affiliate 披露确认**：三模板 + Footer 全覆盖，无需额外修改
+- [x] **Product Hunt 措辞修正**：hands-on → research-backed（手动编辑完成）
+- [x] **Indie Hackers 措辞修正**：hands-on → data-backed（手动编辑完成）
+- [x] **外链平台排查**：PH 🔴 / IH 🔴 / Crunchbase ✅ / Hotfrog ⚠️ 四站完成
+- [x] **Vercel 部署**：85 页在线，0 错误
+- [x] **GSC 检查**：索引 12（持平），67 排队，0 已抓取未索引；Catit PIXI 排名 5.0
+- [x] **Blogarama 收录确认**：RSS 自动抓取，外链引用域名 10→11
+- [x] **AllTop 排查**：站点已死/大改版，从外链计划移除
+
+### 产出
+| 类型 | 变化 |
+|------|------|
+| 内容 | 84 → **85 页** |
+| Pinterest | 49 → **51 Pin**（Pin 38-39） |
+
+### 本周进度（6/2-6/6）
+| # | 选题 | 类型 | 状态 |
+|---|------|------|:--:|
+| 1 | Pet Device Maintenance Schedule | C级 | ✅ 6/2 |
+| 2 | Best Smart Pet Devices Under $50 | C级 | ✅ 6/2 |
+| 3 | Feeder Portion Size Guide | C级 | ✅ 6/3 |
+| 4 | Fountain Filter Guide | C级 | ⏳ 6/4 |
+| 5 | Litter Box Introduction Guide | B级 | ⏳ 6/5 |
+| — | 审计 Day 1（信任行+兽医免责+披露+外链排查） | — | ✅ 6/3 |
+| — | 审计 Day 2（How We Research+不推荐页） | — | ⏳ 6/4 |
+| — | 审计 Day 3（核心评测增强+邮件订阅） | — | ⏳ 6/5 |
+
+---
+## 会话：2026-06-03（Day 15 续）— P0 紧急修复（第三方审计驱动）
+
+### 背景
+Codex 审查报告发现 3 个 P0 + 多个 P1 问题，晚上紧急修复。
+
+### 完成事项
+- [x] **P0-1：8 个内部坏链修复**（92 处引用）
+  - Footer `/best/gps-pet-trackers/` → `/best/gps-trackers-no-monthly-fee/`
+  - 首页 `/best/gps-pet-trackers/` 修正 + camera count 1→`products.cameras.length`
+  - `reviews/index.astro`：`eufy-pet-cam-review` → `eufy-pet-camera-review`，`homerunpet-wireless-fountain-review` → `homerunpet-wireless-review`，PETKIT 价格 69→59
+  - `best/index.astro`：4 个错误 slug 修正 + 1 个重复 GPS 条目合并
+  - `compare/index.astro`：`petkit-vs-catit-pixi` → `petkit-eversweet-vs-catit-pixi`
+  - 验证：全部旧链接 404，新链接 200
+- [x] **P0-2：首页 trust bar 措辞修正**
+  - "100% Independently purchased" → "25 Products researched & compared"
+  - "30+ Verified owner reviews analyzed" → "500+ Verified owner reviews analyzed"
+- [x] **P0-3：移动端主导航实现**
+  - hamburger 菜单（6 链接）+ `aria-expanded`/`aria-controls`
+  - 菜单/关闭图标切换
+- [x] **Blogarama 收录确认**，AllTop 排查（已死）
+- [x] Vercel 部署验证：85 页，全链接验证通过
+
+### 修复文件
+- [x] BaseLayout.astro：footer GPS 链接 + 移动导航
+- [x] index.astro：GPS 链接 + camera count + trust bar
+- [x] reviews/index.astro：3 个错误 slug/价格
+- [x] best/index.astro：4 个错误 slug + 1 个重复条目
+- [x] compare/index.astro：1 个错误 slug
+
+### 审查报告剩余排期
+| 问题 | 排期 |
+|------|:--:|
+| P1-2 Schema 日期 + P1-4 FAQ HTML | 6/4 |
+| P1-1 OG图片 + P1-3 Review Schema | 6/5 |
+| P2-1 数据漂移 + P2-2 内容Registry | 长期 |
+
+### 下次会话任务（6/4 周四）
+1. Fountain Filter Guide（KD<10）
+2. 🔥 Reddit D14 解禁
+3. How We Research 页 + 不推荐产品页（审计 Day 2）
+4. 🔗 竞品外链分析（Week 2）
+5. 🟡 P1-2 Schema 日期 + P1-4 FAQ HTML 修复
+6. Pinterest Pin 40-41（需你操作）
+
+### 更新文件
+- [x] guides/[slug].astro：新增 feeder-portion-size-guide + related resources
+- [x] guides/index.astro：新卡片
+- [x] reviews/[slug].astro：信任行
+- [x] best/[slug].astro：信任行
+- [x] compare/[slug].astro：信任行
+- [x] BaseLayout.astro：兽医免责
+- [x] 全项目文件同步
+
 ---
 *每个阶段完成后或遇到错误时更新此文件*

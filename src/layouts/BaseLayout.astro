@@ -64,8 +64,8 @@ const fullTitle = title.includes("SmartPetGuide")
         headline: title,
         description: description,
         image: image,
-        datePublished: publishDate || "2026-05-20",
-        dateModified: modifiedDate || "2026-05-21",
+        ...(publishDate && { datePublished: publishDate }),
+        ...(modifiedDate && { dateModified: modifiedDate }),
         author: { "@type": "Person", name: "SmartPetGuide Team", url: "https://smartpetguide.net/about/", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/"] },
         publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/", sameAs: ["https://www.pinterest.com/muchengxian/", "https://medium.com/@muchengxian", "https://flipboard.com/@755g287"] },
         mainEntityOfPage: { "@type": "WebPage", "@id": (Astro.url?.href || "https://smartpetguide.net/").replace(/\/$/, "") },
@@ -112,15 +112,47 @@ const fullTitle = title.includes("SmartPetGuide")
           <a href="/breed/" class="text-bark-muted decoration-honey/40 underline-offset-4 transition-colors hover:text-forest">Breeds</a>
           <a href="/about/" class="text-bark-muted decoration-honey/40 underline-offset-4 transition-colors hover:text-forest">About</a>
         </div>
-        <!-- Mobile menu trigger (hidden for now, functional later) -->
-        <button class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-forest md:hidden" aria-label="Menu">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+        <!-- Mobile menu trigger -->
+        <button id="mobile-menu-btn" class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-forest md:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="menu-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 5h14M3 10h14M3 15h14"/>
           </svg>
-          <span>Menu</span>
+          <svg id="close-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" class="hidden">
+            <path d="M5 5l10 10M15 5L5 15"/>
+          </svg>
+          <span id="menu-label">Menu</span>
         </button>
       </nav>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden border-t border-sage-dark/30 bg-cream md:hidden" role="navigation" aria-label="Mobile navigation">
+        <div class="mx-auto max-w-6xl px-5 py-4 flex flex-col gap-3">
+          <a href="/best/" class="block rounded-lg px-3 py-2 text-[15px] font-medium text-bark-muted hover:bg-sage/40 hover:text-forest">Best Picks</a>
+          <a href="/reviews/" class="block rounded-lg px-3 py-2 text-[15px] font-medium text-bark-muted hover:bg-sage/40 hover:text-forest">Reviews</a>
+          <a href="/compare/" class="block rounded-lg px-3 py-2 text-[15px] font-medium text-bark-muted hover:bg-sage/40 hover:text-forest">Compare</a>
+          <a href="/guides/" class="block rounded-lg px-3 py-2 text-[15px] font-medium text-bark-muted hover:bg-sage/40 hover:text-forest">Guides</a>
+          <a href="/breed/" class="block rounded-lg px-3 py-2 text-[15px] font-medium text-bark-muted hover:bg-sage/40 hover:text-forest">Breeds</a>
+          <a href="/about/" class="block rounded-lg px-3 py-2 text-[15px] font-medium text-bark-muted hover:bg-sage/40 hover:text-forest">About</a>
+        </div>
+      </div>
     </header>
+
+    <script>
+      (function() {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const label = document.getElementById('menu-label');
+        if (!btn || !menu) return;
+        btn.addEventListener('click', () => {
+          const open = menu.classList.toggle('hidden');
+          btn.setAttribute('aria-expanded', String(!open));
+          icon.classList.toggle('hidden', !open);
+          closeIcon.classList.toggle('hidden', open);
+          label.textContent = open ? 'Menu' : 'Close';
+        });
+      })();
+    </script>
 
     <main class="mx-auto max-w-6xl px-5 py-12">
       <slot />
@@ -144,7 +176,7 @@ const fullTitle = title.includes("SmartPetGuide")
               <li><a href="/best/self-cleaning-litter-boxes/" class="transition-colors hover:text-honey-light">Self-Cleaning Litter Boxes</a></li>
               <li><a href="/best/smart-pet-water-fountains/" class="transition-colors hover:text-honey-light">Smart Water Fountains</a></li>
               <li><a href="/best/pet-cameras/" class="transition-colors hover:text-honey-light">Pet Cameras</a></li>
-              <li><a href="/best/gps-pet-trackers/" class="transition-colors hover:text-honey-light">GPS Trackers</a></li>
+              <li><a href="/best/gps-trackers-no-monthly-fee/" class="transition-colors hover:text-honey-light">GPS Trackers</a></li>
             </ul>
           </div>
           <div>
@@ -153,6 +185,8 @@ const fullTitle = title.includes("SmartPetGuide")
               <li><a href="/about/" class="transition-colors hover:text-honey-light">About Us</a></li>
               <li><a href="/privacy/" class="transition-colors hover:text-honey-light">Privacy Policy</a></li>
               <li><a href="/affiliate-disclosure/" class="transition-colors hover:text-honey-light">Affiliate Disclosure</a></li>
+              <li><a href="/how-we-research/" class="transition-colors hover:text-honey-light">How We Research</a></li>
+              <li><a href="/products-we-dont-recommend/" class="transition-colors hover:text-honey-light">Products We Don't Recommend</a></li>
               <li><a href="/rss.xml" class="transition-colors hover:text-honey-light">RSS Feed</a></li>
             </ul>
           </div>
@@ -160,6 +194,7 @@ const fullTitle = title.includes("SmartPetGuide")
         <div class="mt-12 border-t border-white/10 pt-8 text-center text-xs text-white/50">
           <p>All content researched and written by the SmartPetGuide editorial team. Published {new Date().getFullYear()}.</p>
           <p class="mt-1">As an Amazon Associate, SmartPetGuide earns from qualifying purchases. &copy; {new Date().getFullYear()} SmartPetGuide. All rights reserved.</p>
+          <p class="mt-2 text-white/40">This site provides product research and recommendations, not veterinary advice. Consult your veterinarian for pet health concerns.</p>
         </div>
       </div>
     </footer>

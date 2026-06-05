@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+---
+
+<BaseLayout
+  title="How We Research & Evaluate Smart Pet Devices | SmartPetGuide"
+  description="Our research methodology: how we analyze smart pet devices using verified owner reviews, marketplace data, and product specifications to give you unbiased recommendations."
+  type="article"
+  publishDate="2026-06-04"
+  modifiedDate="2026-06-04"
+>
+  <Breadcrumb crumbs={[{ label: "How We Research" }]} />
+
+  <article>
+    <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">How We Research & Evaluate</h1>
+    <p class="mt-3 text-lg leading-relaxed text-bark-muted">
+      Our approach to reviewing smart pet devices — what we do, what we don't do, and why our method works for helping you make a confident purchase decision.
+    </p>
+
+    <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
+      <span>Published: <time datetime="2026-06-04">June 4, 2026</time></span>
+      <span>6 min read</span>
+    </div>
+
+    <!-- Core methodology -->
+    <section class="mt-10 space-y-8">
+      <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
+        <h2 class="font-display text-xl font-bold text-forest">Our Core Approach: Aggregate Verified Owner Data, Not Single Opinions</h2>
+        <p class="mt-3 leading-relaxed text-bark-muted">We don't buy every product and test it in a lab. Instead, we do something we believe is <strong>more useful for real buyers</strong>: we aggregate hundreds of verified purchase reviews from actual owners who've used these devices for weeks, months, and years in real homes with real pets. One person's two-week test tells you whether a product works in their specific setup with their specific cat. Aggregating 500+ verified reviews across different homes, different cats, different water hardness levels, and different usage patterns tells you whether a product works across the board — and what breaks, when, and for whom.</p>
+        <p class="mt-3 leading-relaxed text-bark-muted">This approach has a specific advantage over individual testing: <strong>sample size beats sample depth.</strong> A single tester might miss a WiFi disconnection issue that affects 15% of owners. A single tester can't tell you whether a pump fails at month 8 or month 24. Verified owner reviews, analyzed systematically across hundreds of data points, surface these patterns.</p>
+      </div>
+
+      <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
+        <h2 class="font-display text-xl font-bold text-forest">What We Analyze for Every Product</h2>
+        <p class="mt-3 leading-relaxed text-bark-muted">Every product goes through the same seven-dimension evaluation. Not every product scores high on every dimension — and that's the point. We tell you which products excel where, so you can match the right device to your specific needs.</p>
+        <dl class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="rounded-xl border border-sage-dark/20 bg-cream/50 p-4">
+            <dt class="font-semibold text-forest">1. Reliability</dt>
+            <dd class="mt-1 text-sm text-bark-muted">Does it work consistently? What's the failure rate? We look for patterns in verified reviews: WiFi drops, pump failures, jam frequency, app crashes. A product with a 15% complaint rate on a critical function is flagged regardless of its feature list.</dd>
+          </div>
+          <div class="rounded-xl border border-sage-dark/20 bg-cream/50 p-4">
+            <dt class="font-semibold text-forest">2. Ease of Use</dt>
+            <dd class="mt-1 text-sm text-bark-muted">Setup complexity, daily operation, app intuitiveness, cleaning difficulty. If a feeder takes 45 minutes to configure or a fountain requires tools to disassemble for cleaning, we tell you.</dd>
+          </div>
+          <div class="rounded-xl border border-sage-dark/20 bg-cream/50 p-4">
+            <dt class="font-semibold text-forest">3. App & Connectivity</dt>
+            <dd class="mt-1 text-sm text-bark-muted">For smart devices, the app is the product. We evaluate app stability, notification reliability, update frequency, and whether the app adds real value or is just a gimmick.</dd>
+          </div>
+          <div class="rounded-xl border border-sage-dark/20 bg-cream/50 p-4">
+            <dt class="font-semibold text-forest">4. Cleaning & Maintenance</dt>
+            <dd class="mt-1 text-sm text-bark-muted">How hard is it to keep clean? Dishwasher-safe parts? Proprietary consumables that lock you in? We calculate real ongoing costs: filters, trays, liners, replacement parts.</dd>
+          </div>
+          <div class="rounded-xl border border-sage-dark/20 bg-cream/50 p-4">
+            <dt class="font-semibold text-forest">5. Pet Acceptance</dt>
+            <dd class="mt-1 text-sm text-bark-muted">The best device is worthless if your pet won't use it. We analyze owner reports on adaptation time, fear reactions, size comfort, and noise sensitivity across different breeds and personalities.</dd>
+          </div>
+          <div class="rounded-xl border border-sage-dark/20 bg-cream/50 p-4">
+            <dt class="font-semibold text-forest">6. Customer Support & Warranty</dt>
+            <dd class="mt-1 text-sm text-bark-muted">When things go wrong, does the company respond? We track warranty length, support responsiveness, replacement part availability, and whether the company stands behind their product or disappears after the sale.</dd>
+          </div>
+          <div class="rounded-xl border border-sage-dark/20 bg-cream/50 p-4 md:col-span-2">
+            <dt class="font-semibold text-forest">7. Value Over Time</dt>
+            <dd class="mt-1 text-sm text-bark-muted">Price is day one. Value is year three. We calculate 3-year total cost of ownership for every product: purchase price + consumables + expected replacement parts + subscription fees. A $299 litter box that costs $400/year in proprietary trays may cost more over 3 years than a $699 model that uses standard clumping litter. We do that math for you.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
+        <h2 class="font-display text-xl font-bold text-forest">Our Data Sources</h2>
+        <p class="mt-3 leading-relaxed text-bark-muted">We combine three types of data to form our recommendations:</p>
+        <ul class="mt-4 space-y-3 text-sm text-bark-muted">
+          <li class="flex gap-3">
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">1</span>
+            <span><strong>Verified Purchase Reviews</strong> — Amazon verified reviews are the core of our analysis. We focus on 3- and 4-star reviews (the most honest), 1-star reviews (to identify failure patterns), and reviews from owners who've used the product for 3+ months. We don't cherry-pick positive reviews.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">2</span>
+            <span><strong>Marketplace Data</strong> — Amazon Best Sellers Rank (BSR), rating distributions, review velocity, and price history. BSR tells us what real buyers are actually choosing, not what marketing budgets promote.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-forest text-xs font-bold text-white">3</span>
+            <span><strong>Manufacturer Specifications</strong> — Product documentation, spec sheets, and official compatibility guides. We verify manufacturer claims against what owners actually report.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
+        <h2 class="font-display text-xl font-bold text-forest">What We Don't Do (And Why)</h2>
+        <ul class="mt-4 space-y-3 text-sm text-bark-muted">
+          <li class="flex gap-2"><span class="font-bold text-forest">We don't buy and physically test every product.</span> Testing one unit tells you about one unit. We analyze hundreds of real owner experiences instead. This approach catches long-term reliability patterns that a two-week hands-on test cannot.</li>
+          <li class="flex gap-2"><span class="font-bold text-forest">We don't accept sponsored placements.</span> No brand pays us for inclusion, ranking, or favorable treatment. Our recommendations are based solely on our analysis of owner data and product specs. If a product is on our site, it's because our research supports it.</li>
+          <li class="flex gap-2"><span class="font-bold text-forest">We don't claim to be veterinarians.</span> Our content is product research, not medical advice. We highlight features that may help you monitor your pet's habits, but we never suggest a device can diagnose or treat health conditions.</li>
+          <li class="flex gap-2"><span class="font-bold text-forest">We don't publish reviews for products we can't verify.</span> If a product has too few verified reviews for meaningful analysis (typically under 50), we don't recommend it — even if the specs look good on paper.</li>
+        </ul>
+      </div>
+
+      <div class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
+        <h2 class="font-display text-xl font-bold text-forest">How Often We Update Our Content</h2>
+        <p class="mt-3 leading-relaxed text-bark-muted">The smart pet device market moves fast — new products launch, prices change, firmware updates fix old bugs and sometimes introduce new ones. We revisit our core commercial pages (Best lists, reviews, comparisons) <strong>every quarter</strong> to check:</p>
+        <ul class="mt-3 space-y-2 text-sm text-bark-muted">
+          <li class="flex items-start gap-2"><span class="text-forest">&#10003;</span> Ratings and review counts on Amazon</li>
+          <li class="flex items-start gap-2"><span class="text-forest">&#10003;</span> Price changes and new model releases</li>
+          <li class="flex items-start gap-2"><span class="text-forest">&#10003;</span> New verified-review patterns (recent quality issues or improvements)</li>
+          <li class="flex items-start gap-2"><span class="text-forest">&#10003;</span> New competing products that deserve inclusion</li>
+        </ul>
+        <p class="mt-3 leading-relaxed text-bark-muted">Each page shows its last updated date. If a page is more than 3 months old without an update, we're actively working on refreshing it.</p>
+      </div>
+
+      <div class="rounded-2xl border border-honey/30 bg-honey/5 p-6 shadow-sm md:p-8">
+        <h2 class="font-display text-xl font-bold text-forest">Transparency: How We Make Money</h2>
+        <p class="mt-3 leading-relaxed text-bark-muted">SmartPetGuide is free to read. We earn money through the Amazon Associates program: when you click a product link on our site and make a purchase, we receive a small commission at <strong>no extra cost to you</strong>. This does not influence our product selection or ranking. We recommend products based on our seven-dimension evaluation, not on commission rates. Products we don't recommend are either excluded from the site or listed on our <a href="/products-we-dont-recommend/" class="text-forest underline decoration-honey/50 hover:text-honey">Products We Don't Recommend</a> page with our reasons.</p>
+        <p class="mt-3 text-sm text-bark-muted/70">If you have questions about our methodology, reach us at <a href="mailto:hello@smartpetguide.net" class="text-forest underline">hello@smartpetguide.net</a>.</p>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
