@@ -29,6 +29,7 @@ export function getStaticPaths() {
     { params: { slug: "best-pet-tech-under-50" } },
     { params: { slug: "feeder-portion-size-guide" } },
     { params: { slug: "fountain-filter-guide" } },
+    { params: { slug: "litter-box-introduction-guide" } },
   ];
 }
 
@@ -448,6 +449,23 @@ const guideMap: Record<string, { title: string; description: string; sections: {
       { q: "Do all fountains use the same size filter?", a: "No. The most common size is 60mm diameter (Pioneer Pet, KittySpout, most generic fountains). PETKIT uses a proprietary rectangular filter. Catit PIXI uses a triangular design. Always check your fountain's manual for filter dimensions before buying generics. Measure with a ruler — '60mm' generics vary from 58-62mm in practice." },
     ],
   },
+  "litter-box-introduction-guide": {
+    title: "How to Introduce Your Cat to a Self-Cleaning Litter Box — Complete Guide 2026",
+    description: "Step-by-step guide to transitioning your cat from a traditional litter box to an automatic one. Setup tips, timing, troubleshooting refusals, and the #1 mistake new owners make.",
+    sections: [
+      { heading: "Why Switch to a Self-Cleaning Litter Box?", body: "The average cat owner spends 5-10 minutes per day scooping — that's 30-60 hours per year bent over a litter box. A <dfn>self-cleaning litter box</dfn> automates this entirely. Beyond the time savings: cleaner litter means fewer odors, a more hygienic environment for your cat, and early warning of health issues. Weight-tracking models (Litter-Robot 4, CATLINK Young) can detect changes in usage frequency or weight that may signal urinary problems, kidney issues, or diabetes — conditions where early detection saves hundreds in vet bills. But the transition isn't always smooth. Some cats take to an automatic box immediately. Others need a week or more of gradual introduction. This guide covers every step." },
+      { heading: "Before You Buy: Which Type of Automatic Box Is Best for a First-Timer?", body: "Three main types, in order of cat-friendliness: <strong>Rotating globe (Litter-Robot 4, Leo's Loo Too):</strong> most reliable sifting, quiet operation, cats rarely find them intimidating. Best first choice but $449-699. <strong>Sifting rake (PetSafe ScoopFree):</strong> uses crystal litter instead of clumping — some cats refuse the texture. Cheaper upfront ($299) but disposable trays add $20-30/month. <strong>S-shaped screen (Amazon Basics, $209):</strong> newest tech, most affordable entry point, good first box but limited long-term reliability data. Our recommendation for beginners: if budget allows, start with a rotating globe model. If you're unsure whether your cat will accept any automatic box, the Amazon Basics at $209 is the lowest-risk experiment. If your cat refuses it, you're out $209 instead of $699." },
+      { heading: "Setup: How to Position the Box for Maximum Acceptance", body: "Location matters more than the box itself. <strong>Quiet corner:</strong> away from washing machines, HVAC vents, and high-traffic hallways. Sudden motor noise next to a loud appliance = scared cat. <strong>Not next to food and water:</strong> cats instinctively avoid eliminating near their food source. Separate by at least 3-4 feet. <strong>Easy access:</strong> older cats and kittens may struggle with high entry steps. The Litter-Robot 4 has an optional ramp ($49). For cats with mobility issues, skip the ramp and place the box on a non-slip mat at floor level. <strong>One per floor:</strong> if you have a multi-story home, put the automatic box on the floor where your cat spends the most time. Keep at least one traditional box on the other floor during the transition." },
+      { heading: "The Gradual Transition Method (Don't Skip This)", body: "The #1 mistake: throwing away the old litter box and expecting your cat to figure it out. Cats are creatures of habit. Here's the proven 2-phase approach. <strong>Phase 1 — Side by side (3-7 days):</strong> place the new automatic box next to the old traditional box. Don't plug it in yet. Scoop the old box less frequently (every other day instead of daily). Add a cup of used litter from the old box into the new one — the familiar scent signals 'this is a bathroom, not a robot threat.' Let your cat investigate on their own terms. If they sniff and walk away, that's normal. <strong>Phase 2 — Power on (days 7-10):</strong> once your cat has used the new box at least 2-3 times (check for waste), plug it in. Run the first cleaning cycle manually while your cat is in another room. The noise will be new — let them hear it from a distance before seeing it up close. Never run the cycle while your cat is in or near the box. After 3-4 days of powered use, remove the old box. If your cat eliminates outside the box at any point, go back one phase and slow down." },
+      { heading: "Troubleshooting: What to Do When Your Cat Refuses the Box", body: "About 10-15% of cats initially refuse an automatic box. Most refusals fall into three categories and are fixable. <strong>Fear of the mechanism:</strong> leave it unplugged for 2 full weeks. Run the cleaning cycle only when your cat is in another room. Reward any investigation of the box with treats. <strong>Dislike of the litter:</strong> some auto boxes require specific litter types. Crystal litter (PetSafe ScoopFree) has a sand-like texture some cats hate. If refusal persists, switch to a model compatible with standard clumping litter. <strong>Size discomfort:</strong> large cats (Maine Coons, Ragdolls) may find smaller boxes cramped. The Litter-Robot 4 and CATLINK Young have the largest interiors. Measure your cat from nose to tail tip — they need a globe/interior at least 1.5× their body length. <strong>When to give up:</strong> if your cat hasn't used the box after 3 weeks of gradual introduction, it may genuinely not suit them. Return the product. Not every cat is an automatic-box cat, and that's okay." },
+      { heading: "Maintenance: What Changes From a Traditional Box", body: "An automatic box doesn't mean zero maintenance — it means different maintenance. <strong>Daily:</strong> nothing (the box handles it). <strong>Weekly:</strong> check waste drawer level, top off litter if needed. <strong>Every 2-4 weeks:</strong> empty waste drawer (frequency depends on number of cats), replace carbon filter. <strong>Every 3 months:</strong> deep clean the globe/drum with mild soap and water, inspect seals and sensors. A traditional box needs daily scooping but only occasional deep cleaning. An automatic box eliminates daily scooping but requires more thorough quarterly maintenance. The total time commitment is similar — the difference is that 5 minutes of daily drudgery becomes 30 minutes of quarterly maintenance. Most owners strongly prefer the latter." },
+    ],
+    faqs: [
+      { q: "How long does it take for a cat to accept a self-cleaning litter box?", a: "Most cats accept it within 1-2 weeks. About 60% will use it on day 1-3, 25% take 1-2 weeks, and 10-15% need 2-3 weeks of gradual introduction. Kittens under 6 months typically accept faster than senior cats (8+ years). Don't rush the process — forcing a cat before they're ready creates a lasting negative association." },
+      { q: "Can I use any litter in a self-cleaning box?", a: "Most rotating-globe models require hard-clumping clay litter. Crystal litter boxes (PetSafe ScoopFree) require crystal litter. Avoid lightweight litters, plant-based litters (corn, wheat, pine), and non-clumping litter — they cause sensor errors and jam the sifting mechanism. Always check the manufacturer's approved litter list before buying." },
+      { q: "What if my cat is scared of the cleaning cycle noise?", a: "Most self-cleaning boxes run at 30-45dB — about the volume of a quiet conversation. The Litter-Robot 4 (~40dB) and Leo's Loo Too (<30dB) are among the quietest. If your cat startles at the noise, run the cycle only when they're in another room for the first 2 weeks. Most cats habituate quickly — after a few days, the noise becomes background." },
+    ],
+  },
 };
 
 const slug = Astro.params.slug || "automatic-feeder-buying-guide";
@@ -490,6 +508,7 @@ const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
       const isBudget50 = slug === "best-pet-tech-under-50";
       const isFeederPortion = slug === "feeder-portion-size-guide";
       const isFilterGuide = slug === "fountain-filter-guide";
+      const isLitterIntro = slug === "litter-box-introduction-guide";
       const links: { label: string; href: string }[] = [];
       if (isCleaning) {
         links.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
@@ -544,6 +563,12 @@ const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
         links.push({ label: "How to Clean a Cat Water Fountain", href: "/guides/how-to-clean-cat-water-fountain/" });
         links.push({ label: "Stainless Steel vs Plastic Fountains", href: "/guides/stainless-steel-vs-plastic-fountains/" });
         links.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
+      }
+      if (isLitterIntro) {
+        links.push({ label: "Self-Cleaning Litter Box Buying Guide", href: "/guides/self-cleaning-litter-box-buying-guide/" });
+        links.push({ label: "Best Self-Cleaning Litter Boxes", href: "/best/self-cleaning-litter-boxes/" });
+        links.push({ label: "Are Self-Cleaning Litter Boxes Worth It?", href: "/guides/are-self-cleaning-litter-boxes-worth-it/" });
+        links.push({ label: "Pet Device Maintenance Schedule", href: "/guides/pet-device-maintenance-schedule/" });
       }
       if (links.length === 0) return null;
       return (

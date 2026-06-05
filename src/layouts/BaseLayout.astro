@@ -22,6 +22,10 @@ const {
 const fullTitle = title.includes("SmartPetGuide")
   ? title
   : `${title} | SmartPetGuide`;
+
+const ogImage = image.startsWith("http")
+  ? image
+  : new URL(image, Astro.site).href;
 ---
 
 <!doctype html>
@@ -36,11 +40,12 @@ const fullTitle = title.includes("SmartPetGuide")
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content={type} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content="SmartPetGuide" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <link rel="canonical" href={Astro.url.href.replace(/\/$/, "")} />
 
@@ -63,7 +68,7 @@ const fullTitle = title.includes("SmartPetGuide")
         "@type": "Article",
         headline: title,
         description: description,
-        image: image,
+        image: ogImage,
         ...(publishDate && { datePublished: publishDate }),
         ...(modifiedDate && { dateModified: modifiedDate }),
         author: { "@type": "Person", name: "SmartPetGuide Team", url: "https://smartpetguide.net/about/", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/"] },
