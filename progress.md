@@ -1503,4 +1503,52 @@ Codex 审查报告发现 3 个 P0 + 多个 P1 问题，晚上紧急修复。
 - [x] 全项目文件同步
 
 ---
+## 会话：2026-06-04~05（Day 16）— 审计 Day 2&3 + P1×4 + 评测增强 + 竞品分析
+
+### 完成事项
+- [x] **Fountain Filter Guide**（C 级，KD<10）+ **Litter Box Introduction Guide**（B 级，KD 15-20）
+- [x] **How We Research & Evaluate 页** + **Products We Don't Recommend 页**（审计 Day 2）
+- [x] **P1-2** Schema 日期去掉默认值 + **P1-4** FAQ HTML `set:html` 修复
+- [x] **P1-1** OG/Twitter 图片绝对 URL + **P1-3** Review Schema AggregateRating 替代 reviewRating
+- [x] **3 篇核心评测增强** — LR4/Petlibro/Pioneer Pet 加 What Verified Owners Say
+- [x] **竞品外链分析** — pawsomeadvice 357 域拆解，Blogarama 收录，AllTop 移除
+- [x] **Amazon NR 扫描** — 无智能设备新品
+- [x] Vercel 部署：89 页，全验证通过
+
+### 审查报告 P0/P1 修复进度
+| 问题 | 状态 | 日期 |
+|------|:--:|------|
+| P0-1 坏链 / P0-2 信任 / P0-3 移动端 | ✅ | Day 15 |
+| P1-2 Schema日期 / P1-4 FAQ HTML | ✅ | Day 16 |
+| P1-1 OG图片 / P1-3 Review Schema | ✅ | Day 16 |
+| P1-5 兽医 / P1-6 Amazon合规 | ✅ | Day 15 |
+| P2-1 数据漂移 | 🟡 | 部分修复 |
+
+### 下次会话（6/6 周五）
+1. 周复盘 + Pinterest/GSC 数据
+2. 项目文件同步
+3. 品类 OG 分享图
+
+---
+## Week 3 收盘（2026-06-06 周六）
+
+### 数据
+- GSC：索引 12，1 点击/25 曝光，Catit PIXI 排名 5.0
+- Pinterest：51 Pin，月浏览 2,367（+36% from 1,737），出站点击 0，收藏 0
+- Top Board：猫砂盆 585 / 饮水机 577 / 喂食器 482
+- Top Pin：GPS 无订阅费 198 / 不锈钢饮水机 137 / 无订阅摄像头 135
+
+### 本周产出
+- 内容：5 篇新指南 + 2 个新信息页（89 页）
+- 审查修复：P0 3/3 + P1 4/4 全部完成
+- 评测增强：3 篇 What Owners Say
+- 外链：竞品分析 + Blogarama 收录（11 域）
+- Pinterest：R4 完成（51 Pin）
+
+### 下周方向
+1. 恢复内容生产 + 新选题调研
+2. 外链 Week 3：资源页 outreach
+3. 品类 OG 分享图
+
+---
 *每个阶段完成后或遇到错误时更新此文件*

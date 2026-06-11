@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Pin Generator</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+.pin { width:1000px; height:1500px; background:#F5F0EB; font-family:'Segoe UI',Arial,sans-serif; overflow:hidden; display:flex; flex-direction:column; margin-bottom:40px; }
+.header { background:#1A3C34; color:white; padding:32px 40px 24px; }
+.brand { font-size:22px; font-weight:400; letter-spacing:1px; opacity:0.8; }
+.title { font-size:42px; font-weight:700; line-height:1.15; margin-top:8px; margin-bottom:14px; }
+.badge { display:inline-block; background:#D4914B; color:white; padding:6px 16px; border-radius:20px; font-size:22px; font-weight:600; }
+.img-area { flex:1; background:white; display:flex; align-items:center; justify-content:center; margin:20px 30px; border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.08); overflow:hidden; }
+.img-area img { width:880px; height:760px; object-fit:contain; }
+.icon-block { text-align:center; color:#1A3C34; }
+.icon-block .emoji { font-size:120px; display:block; margin-bottom:16px; }
+.icon-block .label { font-size:32px; font-weight:700; }
+.features { display:flex; flex-wrap:wrap; gap:10px; padding:10px 30px 16px; justify-content:center; }
+.tag { background:white; border:1.5px solid #1A3C34; color:#1A3C34; padding:8px 16px; border-radius:20px; font-size:20px; font-weight:600; }
+.cta { background:#1A3C34; color:white; text-align:center; padding:18px 40px; margin:0 40px 30px; border-radius:30px; font-size:24px; font-weight:700; }
+.bar { height:8px; background:#D4914B; }
+</style></head><body>
+<div id="pins"></div>
+<script>
+const PINS = [
+  { id:"pin46", img:'<img src="images/pioneer-pet-raindrop.jpg">', title:"Fountain Filter Replacement Guide", badge:"Save $40/Year", tags:["Charcoal vs Ion-Exchange","When to Replace","Generic vs Branded","3-Year Cost"], cta:"Read the Guide" },
+  { id:"pin47", img:'<img src="images/litter-robot-4.jpg">', title:"Introduce Your Cat to a Self-Cleaning Box", badge:"Step-by-Step Guide", tags:["First-Time Setup","Transition Method","Troubleshooting","Best Box for Beginners"], cta:"Read the Guide" },
+  { id:"pin48", img:'<div class="icon-block"><span class="emoji">🔍</span><span class="label">How We Research</span></div>', title:"How We Research & Evaluate", badge:"Our Methodology", tags:["7-Point Evaluation","500+ Reviews Analyzed","No Sponsored Picks","Quarterly Updates"], cta:"See Our Process" },
+  { id:"pin49", img:'<div class="icon-block"><span class="emoji">🚫</span><span class="label">Products We Skip</span></div>', title:"Products We Don't Recommend", badge:"And Why", tags:["Discontinued Models","Poor Performers","Better Alternatives","Honest Reasons"], cta:"See the List" },
+  { id:"pin50", img:'<img src="images/wopet-feeder.jpg">', title:"Feeder Portion Size Guide", badge:"Feed with Confidence", tags:["Grams by Weight","Kibble Calculator","Weight Loss Portions","Accuracy Test"], cta:"Read the Guide" },
+  { id:"pin51", img:'<img src="images/nofee-gps-tracker.jpg">', title:"We Found 3 GPS Trackers With Zero Monthly Fees", badge:"Save $100+/Year", tags:["No Subscription Ever","3.5-Mile Range","One-Time Purchase","Verified Owner Picks"], cta:"Compare Trackers" },
+  { id:"pin52", img:'<img src="images/pioneer-pet-raindrop.jpg">', title:"Your Cat's Plastic Fountain Could Be Making Them Sick", badge:"Switch to Steel", tags:["No Biofilm Buildup","Dishwasher-Safe","No Chin Acne","Lasts 5+ Years"], cta:"See Steel Picks" },
+  { id:"pin53", img:'<img src="images/xpai-4k-camera.jpg">', title:"Stop Paying $10/Month Just to Watch Your Dog Sleep", badge:"No Fees, No Catch", tags:["4K for $43","Built-in 64GB Storage","360° Pan & Tilt","Zero Cloud Costs"], cta:"See No-Fee Picks" },
+];
+const container = document.getElementById('pins');
+PINS.forEach(p => {
+  const div = document.createElement('div');
+  div.className = 'pin'; div.id = p.id;
+  div.innerHTML = `
+    <div class="header"><div class="brand">SMARTPETGUIDE</div><div class="title">${p.title}</div><div class="badge">${p.badge}</div></div>
+    <div class="img-area">${p.img}</div>
+    <div class="features">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    <div class="cta">${p.cta} &#8594;</div>
+    <div class="bar"></div>`;
+  container.appendChild(div);
+});
+// Resolve image paths relative to pins/
+document.querySelectorAll('img').forEach(img => {
+  if (!img.src.startsWith('http')) img.src = img.getAttribute('src');
+});
+</script>
+</body></html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1000px; height: 1500px;
+    background: #F5F0EB;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .header {
+    background: #1A3C34; color: white;
+    padding: 32px 40px 24px;
+  }
+  .header .brand { font-size: 22px; font-weight: 400; letter-spacing: 1px; opacity: 0.8; }
+  .header .title { font-size: 44px; font-weight: 700; line-height: 1.15; margin-top: 8px; margin-bottom: 14px; }
+  .header .badge {
+    display: inline-block; background: #D4914B; color: white;
+    padding: 6px 16px; border-radius: 20px;
+    font-size: 22px; font-weight: 600; letter-spacing: 0.5px;
+  }
+  .image-area {
+    flex: 1; background: white;
+    display: flex; align-items: center; justify-content: center;
+    margin: 20px 30px; border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden; position: relative;
+  }
+  .image-area img {
+    width: 880px; height: 760px; object-fit: contain;
+  }
+  .image-area .icon-placeholder {
+    text-align: center; color: #1A3C34;
+  }
+  .image-area .icon-placeholder .emoji { font-size: 120px; display: block; margin-bottom: 16px; }
+  .image-area .icon-placeholder .label { font-size: 32px; font-weight: 700; }
+  .features {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    padding: 10px 30px 16px; justify-content: center;
+  }
+  .features .tag {
+    background: white; border: 1.5px solid #1A3C34;
+    color: #1A3C34; padding: 8px 16px; border-radius: 20px;
+    font-size: 20px; font-weight: 600;
+  }
+  .cta {
+    background: #1A3C34; color: white; text-align: center;
+    padding: 18px 40px; margin: 0 40px 30px; border-radius: 30px;
+    font-size: 24px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .cta .arrow { font-size: 28px; }
+  .footer-bar {
+    height: 8px; background: #D4914B;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="brand">SMARTPETGUIDE</div>
+  <div class="title">{{TITLE}}</div>
+  <div class="badge">{{BADGE}}</div>
+</div>
+<div class="image-area">
+  {{IMAGE}}
+</div>
+<div class="features">
+  {{TAGS}}
+</div>
+<div class="cta">
+  {{CTA}} <span class="arrow">&#8594;</span>
+</div>
+<div class="footer-bar"></div>
+</body>
+</html>

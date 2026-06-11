@@ -30,6 +30,7 @@ export function getStaticPaths() {
     { params: { slug: "feeder-portion-size-guide" } },
     { params: { slug: "fountain-filter-guide" } },
     { params: { slug: "litter-box-introduction-guide" } },
+    { params: { slug: "wet-food-automatic-feeder-guide" } },
   ];
 }
 
@@ -466,6 +467,22 @@ const guideMap: Record<string, { title: string; description: string; sections: {
       { q: "What if my cat is scared of the cleaning cycle noise?", a: "Most self-cleaning boxes run at 30-45dB — about the volume of a quiet conversation. The Litter-Robot 4 (~40dB) and Leo's Loo Too (<30dB) are among the quietest. If your cat startles at the noise, run the cycle only when they're in another room for the first 2 weeks. Most cats habituate quickly — after a few days, the noise becomes background." },
     ],
   },
+  "wet-food-automatic-feeder-guide": {
+    title: "Can an Automatic Feeder Handle Wet Food? — Complete Guide 2026",
+    description: "Why most smart feeders only work with dry kibble, the new wet food feeder options for 2026, and how to combine automated dry feeding with manual wet meals for the best of both.",
+    sections: [
+      { heading: "Why Don't Most Automatic Feeders Work With Wet Food?", body: "The answer is simple: <strong>wet food spoils at room temperature within 2-4 hours.</strong> A standard <dfn>automatic pet feeder</dfn> stores food in a hopper for days or weeks at room temperature — fine for dry kibble (shelf-stable for months), dangerous for wet food (bacteria growth within hours). Wet food also clogs the dispensing mechanism. Kibble flows through a rotating auger or gravity chute. Wet food sticks, clumps, and rots inside the mechanism. Even 'semi-moist' foods cause problems — they're wet enough to breed bacteria but not moist enough to flow through the dispenser. The few feeders that claim 'wet food compatible' typically mean you can place a single pre-portioned wet meal in a compartment that opens at a scheduled time — not that the hopper stores wet food for a week." },
+      { heading: "The New Generation: 2026 Wet Food Feeders", body: "CES 2026 introduced the first generation of purpose-built wet food feeders. <strong>PETKIT Yumshare Daily Feast ($149 estimated):</strong> stores up to 7 days of pre-portioned wet food in refrigerated compartments. Each meal is sealed and cooled, then opened on schedule. Built-in UVC sanitization between servings. NFC freshness tracking monitors temperature history. This is the first 'set it and forget it' wet food solution. <strong>Petlibro Polar Wet Food Feeder ($129 estimated):</strong> keeps wet food refrigerated for up to 3 days. Antibacterial stainless steel plate. Designed for short trips (weekend away) rather than full-week automation. <strong>The catch:</strong> both are new (limited reviews), more expensive than dry feeders, and require pre-portioning meals into compartments (you still need to prep once a week). If your cat needs wet food for hydration or medical reasons, these are game-changers. If you're just looking for convenience, a traditional dry feeder is still the simpler choice." },
+      { heading: "The Hybrid Approach: Dry Feeder + Manual Wet Meals", body: "Most cat owners don't need a dedicated wet food robot. A simpler approach that costs less and gives you the best of both: <strong>Use a dry automatic feeder for breakfast and lunch.</strong> Set it to dispense measured portions of high-quality kibble 2-3 times during the day while you're at work. <strong>Serve wet food manually for dinner.</strong> This is the meal you're home for. Wet food provides hydration (cats get 70-80% of their water from food in the wild) and the ritual of a 'real meal' strengthens your bond with your cat. <strong>Total setup cost:</strong> $89-139 for a dry feeder + $30-50/month for wet food. A dedicated wet food robot costs $129-149 and you still need to buy the wet food. The hybrid approach gives you 80% of the convenience for 50% of the cost. Our recommended dry feeders for this setup: Petlibro Granary ($139, with camera to confirm your cat ate) for monitoring, or WOPET ($89, 6L hopper) for pure scheduled feeding." },
+      { heading: "What About Semi-Moist and Freeze-Dried Foods?", body: "<strong>Semi-moist foods</strong> (the soft, chewy kibble-like pieces): technically 'dry' enough for some feeders, but the higher moisture content (25-35% vs 6-10% for dry kibble) makes them stickier and more likely to jam the auger. The WOPET and DOGNESS Mini handle semi-moist better than most because of their wider dispensing channels. Check your feeder's manual — most say 'dry kibble only' and semi-moist voids the warranty. <strong>Freeze-dried raw foods:</strong> these are actually fine in automatic feeders because they're completely dry. They're lightweight though — your portion size settings will need recalibration since 5g of freeze-dried = much more volume than 5g of kibble. <strong>Dehydrated foods:</strong> similar to freeze-dried — they work in feeders but require re-weighing portions because of the density difference." },
+      { heading: "Is Wet Food Worth the Extra Effort?", body: "Veterinarians consistently recommend wet food over dry for three reasons: <strong>hydration</strong> (cats have a low thirst drive and are designed to get water from prey), <strong>protein quality</strong> (wet foods typically have higher animal protein and fewer carbohydrates than kibble), and <strong>urinary health</strong> (the added moisture helps prevent crystal formation and UTIs, especially in male cats). Dry food's advantages are convenience, cost ($0.50-1.50/day vs $1.50-3.00/day for wet), and compatibility with automation. Our take: if your cat has no urinary issues and drinks well from a fountain, a high-quality dry food in an automatic feeder is a perfectly healthy choice. If your cat has had UTIs, is male, is elderly, or doesn't drink much — prioritize wet food, even if it means less automation. A stainless steel fountain ($39 Pioneer Pet) paired with dry food can bridge the hydration gap for healthy cats." },
+    ],
+    faqs: [
+      { q: "Can I put wet food in my WOPET or Petlibro feeder?", a: "No — these are designed for dry kibble only. Wet food will clog the dispensing mechanism, breed bacteria in the hopper, and void your warranty. If you need automated wet food feeding, look at the new PETKIT Yumshare or Petlibro Polar (2026 models) which are purpose-built for wet food with refrigeration." },
+      { q: "How long can wet food sit out in a feeder?", a: "2-4 hours maximum at room temperature, per FDA guidelines. After 4 hours, bacteria growth reaches unsafe levels. This is why traditional hopper-style feeders can't handle wet food — they store food at room temperature for days. Refrigerated wet food feeders solve this by keeping sealed compartments cold until meal time." },
+      { q: "Is it OK to feed my cat only dry food from an automatic feeder?", a: "For most healthy cats, yes — if they drink enough water. Add a stainless steel water fountain ($39-93) to encourage hydration. Monitor for signs of inadequate water intake: small, hard stools, infrequent urination, or dark/concentrated urine. If your cat has a history of urinary issues, is male, or is elderly, supplement dry food with at least one wet meal per day." },
+    ],
+  },
 };
 
 const slug = Astro.params.slug || "automatic-feeder-buying-guide";
@@ -509,6 +526,7 @@ const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
       const isFeederPortion = slug === "feeder-portion-size-guide";
       const isFilterGuide = slug === "fountain-filter-guide";
       const isLitterIntro = slug === "litter-box-introduction-guide";
+      const isWetFood = slug === "wet-food-automatic-feeder-guide";
       const links: { label: string; href: string }[] = [];
       if (isCleaning) {
         links.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
@@ -569,6 +587,12 @@ const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
         links.push({ label: "Best Self-Cleaning Litter Boxes", href: "/best/self-cleaning-litter-boxes/" });
         links.push({ label: "Are Self-Cleaning Litter Boxes Worth It?", href: "/guides/are-self-cleaning-litter-boxes-worth-it/" });
         links.push({ label: "Pet Device Maintenance Schedule", href: "/guides/pet-device-maintenance-schedule/" });
+      }
+      if (isWetFood) {
+        links.push({ label: "Automatic Feeder Buying Guide", href: "/guides/automatic-feeder-buying-guide/" });
+        links.push({ label: "Feeder Portion Size Guide", href: "/guides/feeder-portion-size-guide/" });
+        links.push({ label: "Best Automatic Cat Feeders", href: "/best/automatic-cat-feeders/" });
+        links.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
       }
       if (links.length === 0) return null;
       return (

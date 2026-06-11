@@ -1,6 +1,23 @@
 {
   "litterBoxes": [
     {
+      "id": "litter-robot-5",
+      "name": "Litter-Robot 5",
+      "brand": "Whisker",
+      "price": 799,
+      "amazonUrl": "https://www.amazon.com/s?k=litter+robot+5&tag=smartpetgui0a-20",
+      "imageUrl": "https://m.media-amazon.com/images/I/71lWemNCaBL._AC_SL1500_.jpg",
+      "rating": 4.6,
+      "reviewCount": 850,
+      "features": ["WasteID #1 vs #2 detection", "Full-color LCD screen", "QuietSift under 55dB", "5-cat weight recognition", "Works on carpet"],
+      "pros": ["WasteID health tracking", "Larger interior than LR4", "No carpet kit needed", "Up to 5 cats"],
+      "cons": ["$799 price", "WiFi 2.4GHz only", "New, fewer reviews than LR4"],
+      "bestFor": ["Multi-cat households", "Health-conscious owners", "Large cat breeds"],
+      "category": "litterBox",
+      "weight": 4.1,
+      "warranty": "1 year"
+    },
+    {
       "id": "litter-robot-4",
       "name": "Litter-Robot 4",
       "brand": "Whisker",

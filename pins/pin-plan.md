@@ -1,7 +1,7 @@
 # SmartPetGuide Pinterest Pin 内容计划
 
 > 目标：100+ Pin | 每天 3-5 个 | 图片：`pins/pins_with_text/`（带文字叠层，1000×1500）
-> 活跃 Pin：49（R1 9 + R2 9 + R3 15 + R4 12 + 4.5轮 4）
+> 活跃 Pin：51，R5 8 张待发布（5 新内容 + 3 变体）
 
 ## 设计规范
 - 尺寸：1000×1500 竖版（Pinterest 推荐 2:3）
@@ -410,23 +410,74 @@
 
 ---
  
-## 第 5 轮：变体 + 角度多样化（40+ Pin）
+## 第 5 轮：新内容 + 高表现变体（8 Pin）
 
-对第 1-4 轮的高表现 Pin 制作变体：
+> 设计规范：Forest #1A3C34 header + Honey #D4914B badge + Cream #F5F0EB bg + 白底产品图 + 标签 + CTA 按钮
+> 图片：`pins_with_text/pin46.jpg` ~ `pin53.jpg`（Python Pillow 批量生成）
 
-### 标题变体角度
-- "We Tested X [Product] for 6 Months — Here's the Truth"
-- "X vs Y vs Z — Which [Product] Actually Wins?"
-- "The [Number] [Products] That Survived Our Testing"
-- "Stop Wasting Money on [Problem] — Try These Instead"
-- "[Year] [Category] Guide — What the Big Sites Won't Tell You"
+### Pin 46 — Fountain Filter Guide（新内容）
+- **图片**：`pins_with_text/pin46.jpg`
+- **标题**：Fountain Filter Replacement Guide
+- **描述**：Most fountain owners overpay 2x on filters by buying branded instead of generic. Our guide breaks down charcoal vs ion-exchange, real replacement schedules, and the simple $3 switch that saves $40/year. Plus: what happens to your pump when you skip changes. → Save for later 📌
+- **链接**：https://smartpetguide.net/guides/fountain-filter-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
+- **Alt text**：Green pin card with Pioneer Pet Raindrop fountain, "Fountain Filter Replacement Guide" title, "Save $40/Year" badge, and four tags: Charcoal vs Ion-Exchange, When to Replace, Generic vs Branded, 3-Year Cost
+- **标签**：cat fountain filter, pet fountain maintenance, charcoal filter, save money pet care, water fountain guide
 
-### 视觉变体
-- 纯产品图 + 文字叠加
-- 产品对比并排图
-- Infographic 风格（数据/评分/价格对比）
-- Before/After 效果图
-- 生活场景图（猫/狗 + 产品）
+### Pin 47 — Litter Box Introduction Guide（新内容）
+- **图片**：`pins_with_text/pin47.jpg`
+- **标题**：How to Introduce Your Cat to a Self-Cleaning Litter Box
+- **描述**：Throwing away the old box and expecting your cat to figure it out is the #1 mistake new owners make. Our 2-phase transition method works for 85%+ of cats. Includes troubleshooting for scared cats, large breeds, and crystal litter refusal. → Save for later 📌
+- **链接**：https://smartpetguide.net/guides/litter-box-introduction-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
+- **Alt text**：Green pin card with Litter-Robot 4, "Introduce Your Cat to a Self-Cleaning Box" title, "Step-by-Step Guide" badge, and four tags: First-Time Setup, Transition Method, Troubleshooting Tips, Best Box for Beginners
+- **标签**：cat litter box introduction, self cleaning litter box transition, automatic litter box guide, new cat owner, cat care
+
+### Pin 48 — How We Research（新内容）
+- **图片**：`pins_with_text/pin48.jpg`
+- **标题**：How We Research & Evaluate Smart Pet Devices
+- **描述**：We don't buy every product. We do something more useful: aggregate hundreds of verified owner reviews across real homes. 7-point evaluation covering reliability, ease of use, app quality, cleaning, pet acceptance, support, and 3-year value. No sponsored placements. Ever. → Save for later 📌
+- **链接**：https://smartpetguide.net/how-we-research/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
+- **Alt text**：Green pin card with magnifying glass icon, "How We Research & Evaluate" title, "Our Methodology" badge, and four tags: 7-Point Evaluation, 500+ Reviews Analyzed, No Sponsored Picks, Updated Quarterly
+- **标签**：product review methodology, how we review, honest pet reviews, research methodology, affiliate transparency
+
+### Pin 49 — Products We Don't Recommend（新内容）
+- **图片**：`pins_with_text/pin49.jpg`
+- **标题**：Products We Don't Recommend — And Why
+- **描述**：A good "no" is as valuable as a good "yes." We list the smart pet devices we evaluated and rejected: discontinued models, poor performers, uncompetitive prices. Each with specific reasons and better alternatives. Transparency builds trust. → Save for later 📌
+- **链接**：https://smartpetguide.net/products-we-dont-recommend/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
+- **Alt text**：Green pin card with prohibited symbol icon, "Products We Don't Recommend" title, "And Why" badge, and four tags: Discontinued Models, Poor Performers, Better Alternatives, Honest Reasons
+- **标签**：products not recommended, honest product reviews, what not to buy, pet product warnings, affiliate transparency
+
+### Pin 50 — Feeder Portion Size Guide（新内容）
+- **图片**：`pins_with_text/pin50.jpg`
+- **标题**：Automatic Feeder Portion Size Guide — Feed with Confidence
+- **描述**：One "portion" on your feeder could be 5g or 10g depending on the brand. Our guide gives exact gram recommendations by pet weight, a 5-step weight loss adjustment method, and the simple kitchen-scale test to check if your feeder actually dispenses what it claims. → Save for later 📌
+- **链接**：https://smartpetguide.net/guides/feeder-portion-size-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
+- **Alt text**：Green pin card with WOPET automatic feeder, "Feeder Portion Size Guide" title, "Feed with Confidence" badge, and four tags: Grams by Weight, Kibble Calculator, Weight Loss Portions, Accuracy Test
+- **标签**：automatic feeder portions, pet feeding guide, kibble portion size, cat feeding calculator, dog feeding portions
+
+### Pin 51 — GPS 无订阅费（变体，基于原 Pin 6：198 浏览）
+- **图片**：`pins_with_text/pin51.jpg`
+- **标题**：3 GPS Trackers With Zero Monthly Fees — Save $100+/Year
+- **描述**：Tractive charges $5-13/month forever. Aorkuler and No-Fee GPS are one-time purchases. Over 3 years, the subscription-free options save $180-468. We tested all three for range, battery life, and real-world reliability. Your dog doesn't need a monthly bill. → Save for later 📌
+- **链接**：https://smartpetguide.net/best/gps-trackers-no-monthly-fee/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
+- **Alt text**：Green pin card with GPS tracker device, "3 GPS Trackers With Zero Monthly Fees" title, "Save $100+/Year" badge, and four tags: No Subscription Ever, 3.5-Mile Range, One-Time Purchase, Verified Owner Picks
+- **标签**：GPS dog tracker no subscription, no monthly fee GPS, Aorkuler, dog tracker, pet safety
+
+### Pin 52 — 不锈钢饮水机（变体，基于原 Pin 3：137 浏览）
+- **图片**：`pins_with_text/pin52.jpg`
+- **标题**：Your Cat's Plastic Fountain Could Be Making Them Sick
+- **描述**：Plastic fountains develop micro-scratches within months — those scratches permanently harbor biofilm that causes chin acne and makes cats stop drinking. Stainless steel ($39-93) is non-porous, dishwasher-safe, lasts 5+ years, and cats prefer the taste. 3 top steel picks compared. → Save for later 📌
+- **链接**：https://smartpetguide.net/best/stainless-steel-cat-fountains/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
+- **Alt text**：Green pin card with Pioneer Pet stainless steel fountain, "Your Cat's Plastic Fountain Could Be Making Them Sick" title, "Switch to Steel" badge, and four tags: No Biofilm Buildup, Dishwasher-Safe, No Chin Acne, Lasts 5+ Years
+- **标签**：stainless steel cat fountain, plastic vs steel fountain, cat chin acne, cat health, pet fountain
+
+### Pin 53 — 无订阅摄像头（变体，基于原 Pin 5：135 浏览）
+- **图片**：`pins_with_text/pin53.jpg`
+- **标题**：Stop Paying $10/Month Just to Watch Your Dog Sleep
+- **描述**：Furbo costs $395 over 3 years with cloud subscription. The xpai 4K costs $43 total with 64GB built-in storage and zero monthly fees. 4K resolution, 360° pan/tilt, motion tracking — all for less than one month of Furbo's subscription. We compared all 5 no-fee cameras. → Save for later 📌
+- **链接**：https://smartpetguide.net/best/pet-cameras-no-subscription/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
+- **Alt text**：Green pin card with xpai 4K camera, "Stop Paying $10/Month Just to Watch Your Dog Sleep" title, "No Fees, No Catch" badge, and four tags: 4K for $43, Built-in 64GB Storage, 360-degree Pan and Tilt, Zero Cloud Costs
+- **标签**：no subscription pet camera, xpai 4K, budget pet camera, pet monitoring no fees, local storage camera
 
 ---
 
@@ -436,9 +487,8 @@
 |----|------|---------|------|------|
 | Week 1 | 第 1-2 轮 | 18 | 25 | 每天 3-4 个 |
 | Week 2 | 第 3 轮 | 15 | 40 | 每天 3-4 个 |
-| Week 3 | 第 4 轮 | 8 | 48 | 每天 2-3 个 |
-| Week 4 | 第 5 轮变体 | 20 | 68 | 每天 3-4 个 |
-| Month 2+ | 持续追加变体 | 40+ | 100+ | 每天 3-5 个 |
+| Week 3 | 第 4-4.5 轮 | 8+4 | 51 | 每天 2-3 个 |
+| Week 4 | 第 5 轮 | 8 | 59 | 每天 2-3 个 |
 
 ---
 
