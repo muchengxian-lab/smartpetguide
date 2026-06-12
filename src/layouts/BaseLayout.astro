@@ -80,7 +80,7 @@ const ogImage = image.startsWith("http")
     <!-- Google Fonts: Fraunces (display) + Atkinson Hyperlegible (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&display=optional" rel="stylesheet" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKYRD8PSCT"></script>
@@ -92,11 +92,11 @@ const ogImage = image.startsWith("http")
     </script>
   </head>
   <body class="bg-cream font-body text-bark antialiased selection:bg-honey/30">
-    <!-- Subtle grain texture overlay -->
-    <div class="pointer-events-none fixed inset-0 z-[-1] opacity-[0.03]" aria-hidden="true">
+    <!-- Subtle grain texture overlay (desktop only to save mobile GPU) -->
+    <div class="pointer-events-none fixed inset-0 z-[-1] opacity-[0.03] hidden md:block" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <filter id="noise">
-          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="1" stitchTiles="stitch"/>
         </filter>
         <rect width="100%" height="100%" filter="url(#noise)"/>
       </svg>
