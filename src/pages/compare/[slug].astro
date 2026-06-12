@@ -15,6 +15,7 @@ for (const [cat, items] of Object.entries(products)) {
 
 export function getStaticPaths() {
   return [
+    { params: { slug: "litter-robot-5-vs-litter-robot-4" } },
     { params: { slug: "litter-robot-4-vs-leos-loo-too" } },
     { params: { slug: "automatic-vs-manual-litter-box" } },
     { params: { slug: "wopet-vs-petlibro" } },
@@ -44,6 +45,31 @@ interface CompareData {
 }
 
 const compareMap: Record<string, CompareData> = {
+  "litter-robot-5-vs-litter-robot-4": {
+    title: "Litter-Robot 5 vs Litter-Robot 4 (2026) — Should You Upgrade?",
+    description: "Head-to-head comparison: Litter-Robot 5 vs Litter-Robot 4. WasteID health tracking, larger interior, LCD screen — is the $799 upgrade worth $100 more than the proven $699 LR4?",
+    productAId: "litter-robot-5",
+    productBId: "litter-robot-4",
+    winner: "The Litter-Robot 5 wins for new buyers — the $100 premium over the LR4 buys WasteID health tracking, a larger globe, a readable LCD screen, carpet-friendly design, and a platform that will receive firmware updates for years. The LR4 wins for budget-conscious buyers or anyone upgrading from an older model — it's still an excellent box at $699 with 12,500+ reviews and proven long-term reliability. If you have a cat with health concerns (diabetes, kidney disease, FLUTD), the WasteID #1 vs #2 tracking alone justifies the LR5. If you have healthy cats and just want to stop scooping, the LR4 at $100 less is the smarter buy.",
+    comparisonRows: [
+      ["Price", "$799", "$699"],
+      ["Health Tracking", "WasteID: #1 vs #2 detection", "Weight tracking only"],
+      ["Screen", "Full-color LCD display", "LED light bar only"],
+      ["Interior Size", "Larger globe, more headroom", "Standard globe"],
+      ["Cat Capacity", "Up to 5 cats by weight", "Up to 4 cats by weight"],
+      ["Carpet Use", "Built-in carpet compatibility", "Requires $30 carpet tray kit"],
+      ["Noise Level", "Under 55 dB (QuietSift)", "~40 dB"],
+      ["Warranty", "1 year", "1 year"],
+      ["Reviews", "850+ (new model)", "12,500+ (proven)"],
+      ["Best For", "Health-conscious / multi-cat homes", "Budget / proven reliability"],
+    ],
+    faqs: [
+      { q: "Is WasteID on the LR5 actually useful?", a: "If your cat has diabetes, kidney disease, or FLUTD — yes, extremely useful. Knowing whether your cat is peeing more or less than normal is an early warning system for these conditions. For healthy cats, WasteID is a nice-to-have, not a must-have. Whisker claims ~70% accuracy distinguishing #1 from #2, improving with firmware updates." },
+      { q: "Should I upgrade from LR4 to LR5?", a: "Only if: (1) your cat has health issues that WasteID would help track, (2) your large cat seems cramped in the LR4, or (3) you really want the LCD screen and carpet compatibility. If your LR4 works fine and your cat is healthy, the upgrade isn't compelling — the core experience (auto-sifting, odor control, app alerts) is very similar." },
+      { q: "Which one is quieter?", a: "The LR4 runs at ~40dB. The LR5 is rated 'under 55dB' for its QuietSift mode. In practice, both are quiet enough that you won't notice them over household background noise. The LR4 is technically quieter, but the difference is negligible in real-world use." },
+      { q: "Does the LR5 require proprietary supplies like the LR4?", a: "Neither requires proprietary litter — both work with any clay-clumping litter. Both use carbon filters ($25/pack) and waste drawer liners. The LR5's LitterHopper accessory is not backward-compatible with the LR4, and the LR4's LitterHopper doesn't work with the LR5. If you're invested in LR4 accessories, upgrading means replacing those too." },
+    ],
+  },
   "litter-robot-4-vs-leos-loo-too": {
     title: "Litter-Robot 4 vs Leo's Loo Too (2026) — Which Self-Cleaning Box Wins?",
     description: "Head-to-head comparison: Litter-Robot 4 vs Leo's Loo Too. We compare price, odor control, features, app quality, and cat comfort to help you decide.",

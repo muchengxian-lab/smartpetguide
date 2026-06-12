@@ -47,22 +47,20 @@ PINS = [
         "cta": "Read the Guide",
     },
     {
-        "id": "pin48", "img": None,  # icon-based
+        "id": "pin48", "img": "litter-robot-4.jpg",
         "brand": "SMARTPETGUIDE",
         "title": "How We Research\n& Evaluate",
         "badge": "Our Methodology",
         "tags": ["7-Point Evaluation", "500+ Reviews Analyzed", "No Sponsored Picks", "Updated Quarterly"],
         "cta": "See Our Process",
-        "icon": "🔍",
     },
     {
-        "id": "pin49", "img": None,
+        "id": "pin49", "img": "pioneer-pet-raindrop.jpg",
         "brand": "SMARTPETGUIDE",
         "title": "Products We\nDon't Recommend",
         "badge": "And Why",
         "tags": ["Discontinued Models", "Poor Performers", "Better Alternatives", "Honest Reasons"],
         "cta": "See the List",
-        "icon": "🚫",
     },
     {
         "id": "pin50", "img": "wopet-feeder.jpg",
