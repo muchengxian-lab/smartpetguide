@@ -16,6 +16,7 @@ for (const [cat, items] of Object.entries(products)) {
 export function getStaticPaths() {
   return [
     { params: { slug: "litter-robot-5-vs-litter-robot-4" } },
+    { params: { slug: "litter-robot-5-vs-leos-loo-too" } },
     { params: { slug: "litter-robot-4-vs-leos-loo-too" } },
     { params: { slug: "automatic-vs-manual-litter-box" } },
     { params: { slug: "wopet-vs-petlibro" } },
@@ -68,6 +69,29 @@ const compareMap: Record<string, CompareData> = {
       { q: "Should I upgrade from LR4 to LR5?", a: "Only if: (1) your cat has health issues that WasteID would help track, (2) your large cat seems cramped in the LR4, or (3) you really want the LCD screen and carpet compatibility. If your LR4 works fine and your cat is healthy, the upgrade isn't compelling — the core experience (auto-sifting, odor control, app alerts) is very similar." },
       { q: "Which one is quieter?", a: "The LR4 runs at ~40dB. The LR5 is rated 'under 55dB' for its QuietSift mode. In practice, both are quiet enough that you won't notice them over household background noise. The LR4 is technically quieter, but the difference is negligible in real-world use." },
       { q: "Does the LR5 require proprietary supplies like the LR4?", a: "Neither requires proprietary litter — both work with any clay-clumping litter. Both use carbon filters ($25/pack) and waste drawer liners. The LR5's LitterHopper accessory is not backward-compatible with the LR4, and the LR4's LitterHopper doesn't work with the LR5. If you're invested in LR4 accessories, upgrading means replacing those too." },
+    ],
+  },
+  "litter-robot-5-vs-leos-loo-too": {
+    title: "Litter-Robot 5 vs Leo's Loo Too (2026) — $799 Smarts vs $449 Value",
+    description: "Head-to-head: Litter-Robot 5 ($799, WasteID + LCD) vs Leo's Loo Too ($449, UV sterilization + Alexa). $350 price gap, completely different approaches to a cleaner litter box.",
+    productAId: "litter-robot-5",
+    productBId: "leos-loo-too",
+    winner: "The Litter-Robot 5 wins on technology and health tracking — WasteID distinguishes #1 from #2, the LCD screen is genuinely useful, and the larger globe fits big cats better. The Leo's Loo Too wins on value and quiet operation — at $449 it's $350 less while still offering UV sterilization, Alexa voice control, and 5,800+ proven reviews. For health-conscious multi-cat homes with budget flexibility, the LR5 is the better long-term investment. For tech-loving owners who want the most features per dollar, the Leo's Loo Too is the smarter buy. You won't regret either — the choice is between cutting-edge health tracking (LR5) and proven value with smart home integration (Leo's Loo Too).",
+    comparisonRows: [
+      ["Price", "$799", "$449"],
+      ["Key Tech", "WasteID #1 vs #2 detection", "UV-C sterilization + Alexa/Google"],
+      ["Screen", "Full-color LCD", "LED indicators only"],
+      ["Noise Level", "Under 55 dB", "Under 30 dB"],
+      ["Cat Capacity", "Up to 5 cats by weight", "1-2 cats comfortably"],
+      ["Warranty", "1 year", "1 year"],
+      ["Reviews", "850+ (new model)", "5,800+ (proven)"],
+      ["Best For", "Health tracking / multi-cat", "Value / smart home fans"],
+    ],
+    faqs: [
+      { q: "Is the LR5 worth $350 more than Leo's Loo Too?", a: "If you have a cat with health concerns (diabetes, kidney issues, FLUTD) — yes, WasteID tracking alone could catch problems early enough to justify the difference in one avoided emergency vet visit. If you have healthy cats and just want to stop scooping, the Leo's Loo Too at $449 gives you 90% of the experience for 56% of the price." },
+      { q: "Which one is better for multiple cats?", a: "The LR5 handles up to 5 cats with individual weight recognition. The Leo's Loo Too is best for 1-2 cats — the smaller waste drawer fills faster and the app doesn't distinguish between cats as precisely. For 3+ cats, the LR5 or the Litter-Robot 4 are better choices." },
+      { q: "Does UV sterilization in Leo's Loo Too actually work?", a: "UV-C light has been proven to reduce bacteria in controlled environments. In practice, it helps keep the waste drawer interior cleaner between deep cleans. It's a genuine feature, not a gimmick — but it doesn't replace regular cleaning. The LR5 approaches the same problem differently with WasteID — by optimizing cycle timing based on waste type, it minimizes the time waste sits exposed." },
+      { q: "Which app is better?", a: "The Whisker app (LR5) is more polished with better data visualization — weight trends, WasteID logs, and visit history are clear and actionable. The Smarty Pear app (Leo's Loo Too) is functional but occasionally has connection hiccups and offers less detailed health data. If you're a data-driven pet owner, the Whisker app adds more value." },
     ],
   },
   "litter-robot-4-vs-leos-loo-too": {

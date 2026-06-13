@@ -49,6 +49,13 @@ const ogImage = image.startsWith("http")
 
     <link rel="canonical" href={Astro.url.href.replace(/\/$/, "")} />
 
+    <!-- Inline critical CSS for above-the-fold to avoid render-blocking -->
+    <style>
+      body{background:#F5F0EB;font-family:Atkinson Hyperlegible,Arial,sans-serif;color:#2C2420;margin:0}
+      .header-sticky{position:sticky;top:0;z-index:50;background:rgba(245,240,235,.95)}
+      h1{font-family:Fraunces,Georgia,serif;color:#1A3C34;font-size:2rem;font-weight:700}
+    </style>
+
     {publishDate && (
       <meta property="article:published_time" content={publishDate} />
     )}

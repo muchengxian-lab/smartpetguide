@@ -31,6 +31,7 @@ export function getStaticPaths() {
     { params: { slug: "fountain-filter-guide" } },
     { params: { slug: "litter-box-introduction-guide" } },
     { params: { slug: "wet-food-automatic-feeder-guide" } },
+    { params: { slug: "pet-camera-placement-guide" } },
   ];
 }
 
@@ -483,6 +484,22 @@ const guideMap: Record<string, { title: string; description: string; sections: {
       { q: "Is it OK to feed my cat only dry food from an automatic feeder?", a: "For most healthy cats, yes — if they drink enough water. Add a stainless steel water fountain ($39-93) to encourage hydration. Monitor for signs of inadequate water intake: small, hard stools, infrequent urination, or dark/concentrated urine. If your cat has a history of urinary issues, is male, or is elderly, supplement dry food with at least one wet meal per day." },
     ],
   },
+  "pet-camera-placement-guide": {
+    title: "Pet Camera Placement Guide 2026 — Where to Mount for the Best View",
+    description: "Optimal camera placement for pet monitoring: height, angle, power, WiFi range, and room-specific tips for covering feeding areas, litter boxes, and favorite napping spots.",
+    sections: [
+      { heading: "Why Camera Placement Matters More Than Camera Specs", body: "A $43 xpai 4K in the right spot will capture more useful footage than a $249 Petcube Bites 2 in the wrong spot. <dfn>Pet camera placement</dfn> determines three things: what you can see (coverage), whether your pet triggers motion alerts (sensitivity), and whether the camera stays connected (WiFi stability). Get placement wrong and you'll get false alerts from ceiling fans, footage of an empty room, or a camera that disconnects whenever someone uses the microwave. Get it right and you'll know exactly what your pet is doing, every time." },
+      { heading: "Height and Angle: The Eye-Level Rule", body: "Mount the camera at <strong>pet eye level</strong> — typically 12-18 inches from the floor for cats and small dogs, 24-30 inches for large dogs. A camera mounted at human eye level (5-6 feet) captures mostly backs and tails. The ideal setup: place the camera on a shelf or low table so it looks across the room, not down from above. <strong>Angle:</strong> aim for a slight downward tilt of 5-10 degrees to capture the floor area where your pet moves. Too steep and you only see a small circle of floor. Too flat and your pet walks out of frame. Test by placing a treat or toy where your pet usually hangs out — if it's centered in the frame, you're set." },
+      { heading: "Power and WiFi: The 10-Foot Rule", body: "Most pet cameras use 5-6 foot power cords. Before drilling holes, <strong>measure the distance from the outlet to your ideal mount point.</strong> If the cord can't reach, you have three options: use a flat extension cord tucked under a rug, reposition the camera closer to an outlet, or choose a battery-powered option (few exist — the Homerunpet wireless fountain camera is one exception). <strong>WiFi:</strong> cameras within 15-20 feet of your router with a clear line of sight will have the most stable connection. Walls, especially concrete or brick, cut WiFi range significantly. If your camera drops out frequently, it's probably too far from the router — move it closer or add a WiFi extender ($15-25). The 2.4GHz band penetrates walls better than 5GHz — most pet cameras only support 2.4GHz anyway." },
+      { heading: "Room-by-Room Placement Guide", body: "<strong>Living room:</strong> the most common placement. Aim for a corner that gives you a wide view of the main floor area. Avoid pointing at windows — backlight makes your pet a silhouette. If you have a pan/tilt camera (xpai 4K, eufy), a corner mount lets you scan the entire room. <strong>Kitchen/feeding area:</strong> point the camera directly at the food bowls from 3-4 feet away. This gives you the clearest view of whether your pet ate. The Petlibro Granary's built-in camera is designed for exactly this angle. <strong>Near the litter box:</strong> don't point the camera INTO the box — that's unsettling for both you and your cat. Instead, angle it to capture the approach path and entrance. You'll know which cat visited and when without watching them do their business. <strong>Bedroom/nap spots:</strong> a wide-angle camera on a nightstand or dresser, angled toward the bed or pet bed. The eufy's 360-degree auto-tracking is ideal here — it follows your pet as they move around the room." },
+      { heading: "Common Placement Mistakes to Avoid", body: "<strong>Pointing at windows:</strong> backlight ruins the image and motion alerts trigger every time sunlight shifts. Face the camera into the room, not toward windows. <strong>Too close to HVAC vents:</strong> the temperature change triggers motion alerts on sensitive cameras. Keep at least 5 feet from vents. <strong>Behind glass:</strong> night vision IR lights reflect off glass, creating a white glare that blinds the camera. If you must shoot through a window (e.g., watching the yard), disable night vision and IR. <strong>In direct sunlight:</strong> overheats the camera and creates harsh shadows. Indirect light is best. <strong>Too close to WiFi-disrupting appliances:</strong> microwaves, cordless phones, and baby monitors operate on 2.4GHz and can cause intermittent disconnections. Keep your camera at least 6 feet from these devices." },
+    ],
+    faqs: [
+      { q: "How many pet cameras do I need?", a: "One camera covers roughly 300-400 square feet with a wide-angle lens. Most apartments need 1 camera (living area). Two-story homes typically need 2 (one per floor). Multi-pet homes benefit from 2 cameras: one at the feeding area (did everyone eat?) and one in the main living space (what are they doing all day?)." },
+      { q: "Can I use a regular security camera instead of a pet camera?", a: "Yes — a Wyze Cam v4 ($35) or TP-Link Tapo C120 ($30) works fine for basic monitoring. You'll get live streaming, night vision, and motion alerts. What you won't get: treat tossing, pet-specific AI alerts (barking/meowing), or pet activity summaries. For basic 'is my dog on the couch?' monitoring, a security camera is perfectly adequate. See our guide on <a href='/guides/security-camera-as-pet-camera/'>using security cameras for pets</a>." },
+      { q: "Should I hide the camera or let my pet see it?", a: "Most pets ignore cameras after the first day. If your pet is curious or anxious about a new object, place the camera at a slightly higher angle where it's less noticeable. Treat-tossing cameras (Furbo, Petcube) should be visible so your pet knows where treats come from. Never hide a camera in a way that could fall or be knocked over — secure all mounts." },
+    ],
+  },
 };
 
 const slug = Astro.params.slug || "automatic-feeder-buying-guide";
@@ -527,6 +544,7 @@ const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
       const isFilterGuide = slug === "fountain-filter-guide";
       const isLitterIntro = slug === "litter-box-introduction-guide";
       const isWetFood = slug === "wet-food-automatic-feeder-guide";
+      const isCameraPlacement = slug === "pet-camera-placement-guide";
       const links: { label: string; href: string }[] = [];
       if (isCleaning) {
         links.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
@@ -593,6 +611,12 @@ const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
         links.push({ label: "Feeder Portion Size Guide", href: "/guides/feeder-portion-size-guide/" });
         links.push({ label: "Best Automatic Cat Feeders", href: "/best/automatic-cat-feeders/" });
         links.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
+      }
+      if (isCameraPlacement) {
+        links.push({ label: "Pet Camera Buying Guide", href: "/guides/pet-camera-buying-guide/" });
+        links.push({ label: "Best Pet Cameras", href: "/best/pet-cameras/" });
+        links.push({ label: "Best Pet Cameras Without Subscription", href: "/best/pet-cameras-no-subscription/" });
+        links.push({ label: "Can a Security Camera Work as a Pet Camera?", href: "/guides/security-camera-as-pet-camera/" });
       }
       if (links.length === 0) return null;
       return (

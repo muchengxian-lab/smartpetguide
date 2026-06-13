@@ -1591,6 +1591,11 @@ Codex 审查报告发现 3 个 P0 + 多个 P1 问题，晚上紧急修复。
 | GSC 点击 | 1 → **3** |
 | 外链 outreach | 0 → **4 封已发** |
 
+- [x] **性能优化** — PageSpeed 手机 83→86，桌面 97→99
+  - SVG 噪音纹理移动端隐藏 + numOctaves 3→1
+  - Google Fonts 字重精简 + preload 非阻塞加载
+  - 内联关键 CSS 消除白屏渲染阻塞
+
 ### 下次任务（Week 5）
 1. 品牌 outreach 回复跟进
 2. GSC + Pinterest 数据周检
