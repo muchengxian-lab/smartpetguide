@@ -22,6 +22,14 @@ def get_font(size, bold=True):
 
 PINS = [
     {
+        "id": "pin56", "img": "litter-robot-4.jpg",
+        "brand": "SMARTPETGUIDE",
+        "title": "Litter-Robot 5 vs\nPetSafe ScoopFree",
+        "badge": "$799 vs $299",
+        "tags": ["Rotating Globe vs Crystal", "3-Year Cost Match", "Disposable Trays", "14 Comparisons"],
+        "cta": "See Who Wins",
+    },
+    {
         "id": "pin54", "img": "litter-robot-4.jpg",
         "brand": "SMARTPETGUIDE",
         "title": "Litter-Robot 5 vs\nLeo's Loo Too",
