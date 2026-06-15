@@ -211,5 +211,18 @@ const ogImage = image.startsWith("http")
         </div>
       </div>
     </footer>
+    <!-- GA4 affiliate outbound click tracking -->
+    <script>
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href*="amazon.com"]');
+        if (!link) return;
+        var product = link.closest('[data-product]')?.dataset?.product || link.textContent.trim().substring(0, 80);
+        gtag('event', 'affiliate_click', {
+          event_category: 'outbound',
+          event_label: product,
+          link_url: link.href,
+        });
+      });
+    </script>
   </body>
 </html>

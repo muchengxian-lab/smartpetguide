@@ -453,7 +453,7 @@ const product = allProducts.get(review.productId);
       </div>
       <a href={product?.amazonUrl || "#"} target="_blank" rel="nofollow sponsored noopener"
          class="mt-5 inline-flex items-center gap-2 rounded-xl bg-honey px-8 py-3 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
-        Check Price on Amazon
+        Check Latest Price on Amazon
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
     </div>
@@ -591,13 +591,13 @@ const product = allProducts.get(review.productId);
                        `Ready to try the ${product?.name || "product"}?`;
       return (<div class="mt-10 rounded-2xl border border-honey/40 bg-gradient-to-br from-honey/5 to-cream p-6 text-center md:p-8">
       <p class="font-display text-xl font-bold text-forest">{headline}</p>
-      <p class="mt-2 text-bark-muted">Get the best price on Amazon with free shipping and returns.</p>
+      <p class="mt-2 text-bark-muted">Click to check the latest price on Amazon — prices update frequently.</p>
       <a href={product?.amazonUrl || "#"} target="_blank" rel="nofollow sponsored noopener"
          class="mt-5 inline-flex items-center gap-2 rounded-xl bg-honey px-8 py-3 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
-        Check Price on Amazon
+        Check Latest Price on Amazon
         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
-      <p class="mt-3 text-xs text-bark-muted/70">As an Amazon Associate, we earn from qualifying purchases. Data sourced from Amazon.com as of May 2026. BSR and rating data updated monthly. <a href="/affiliate-disclosure/" class="underline">Learn more</a></p>
+      <p class="mt-3 text-xs text-bark-muted/70">As an Amazon Associate, we earn from qualifying purchases. Prices and availability are subject to change. Last checked: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}. <a href="/affiliate-disclosure/" class="underline">Learn more</a></p>
     </div>)})()}
     <div class="mt-6 border-t border-sage-dark/20 pt-4 text-xs text-bark-muted/60">
       <p>Written by the SmartPetGuide research team. Last updated: <time datetime="2026-05-29">May 29, 2026</time>.</p>
