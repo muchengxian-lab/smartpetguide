@@ -18,6 +18,14 @@
 | `image-optimization` | 图片压缩/WebP/SEO 优化 | ✅ 新装 |
 | `baoyu-infographic` | 信息图生成（Pinterest 引流） | ✅ 新装 |
 | `baoyu-translate` | 多语言翻译（精翻/快翻/校对） | ✅ 新装 |
+| `superpowers` | 完整 SDLC 工作流（规划→执行→审查→TDD→调试） | ✅ 新装 |
+| `claude-mem` | 跨会话持久记忆（SQLite+向量检索） | ✅ 新装 |
+| `cold-start-strategy` | 冷启动策略框架（产品→渠道→节奏） | ✅ |
+| `pinterest-posts` | Pinterest Pin 创建/优化（Board SEO+Alt text） | ✅ |
+| `traffic-analysis` | 流量来源分析/归因/渠道对比 | ✅ |
+| `geo-skills` | GEO 全站审计（22技能：可引用度/品牌/技术/Schema） | ✅ 新装 |
+| `aaron-seo-geo` | 20个SEO+GEO技能（关键词→内容→Schema→审计→监控） | ✅ 新装 |
+| `qwoted-seo-backlinks` | Qwoted PR 外链：搜记者提问→建统计页→写 pitch→提交 | ✅ 6/20 |
 
 ---
 
@@ -32,6 +40,8 @@
 写完验证  → verify（构建 + 页面抽查）
 变现策略  → affiliate-marketing（佣金/转化优化）
 规划管理  → planning-with-files-zh（更新 task_plan.md）
+代码改动  → superpowers:brainstorm → superpowers:write-plan → superpowers:execute-plan（结构化开发）
+记忆持久  → claude-mem（后台自动运行，跨会话记住上下文）
 ```
 
 ### 阶段 6-7：数据分析 + 优化
@@ -73,12 +83,15 @@ Medium   → 手动交叉发布
 ## 调用优先级
 
 1. **开始任何工作前** → `planning-with-files-zh`（读取当前计划）
-2. **写内容/做 SEO 前** → `seo-content-optimizer`
-3. **浏览器操作（Amazon/验证页面）** → `agent-browser`
-4. **设计/UI 调整** → `frontend-design`
-5. **改完代码** → `verify`（构建 + 验证）
-6. **质量检查** → `simplify`
-7. **启动项目** → `run`
+2. **任何代码改动** → `superpowers:brainstorm` → `superpowers:write-plan` → `superpowers:execute-plan`
+3. **写内容/做 SEO 前** → `seo-content-optimizer`
+4. **浏览器操作（Amazon/验证页面）** → `agent-browser`
+5. **设计/UI 调整** → `frontend-design`
+6. **改完代码** → `verify`（构建 + 验证）
+7. **质量检查** → `simplify`
+8. **启动项目** → `run`
+
+> `claude-mem` 在后台自动运行（SessionStart/Stop 钩子），无需手动调用，跨会话自动注入历史上下文。
 
 ## 注意事项
 - 不要在所有阶段同时调用所有 skill，按需调用

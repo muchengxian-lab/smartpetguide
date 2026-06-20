@@ -1,0 +1,51 @@
+# SmartPetGuide — Extended Content for AI
+
+## Site Overview
+
+SmartPetGuide (smartpetguide.net) is a research-backed review site covering smart pet devices. Published 2026. All content researched and written by the SmartPetGuide editorial team. As an Amazon Associate, SmartPetGuide earns from qualifying purchases.
+
+## Research Methodology
+
+We analyze thousands of verified Amazon owner reviews and product specifications. Our recommendations are based on aggregate owner data, not individual testing. We maintain a "Products We Don't Recommend" page for transparency. We never accept payment for placement.
+
+## Product Categories Covered
+
+1. **Self-Cleaning Litter Boxes** (7 reviewed): Litter-Robot 5 ($799), Litter-Robot 4 ($699), Leo's Loo Too ($449), CATLINK Young Pro ($399), Elspet Pro ($349), PetSafe ScoopFree ($299), Amazon Basics ($209)
+2. **Automatic Feeders** (4 reviewed): Petlibro Granary ($139), PETKIT Fresh Element Solo ($129), DOGNESS Mini ($99), WOPET ($89)
+3. **Smart Water Fountains** (6 reviewed): YEAPAW ($93), Catit PIXI ($79), KittySpout ($50), PETKIT Eversweet Solo 2 ($59), Homerunpet Wireless ($45), Pioneer Pet Raindrop ($39)
+4. **Pet Cameras** (6 reviewed): Petcube Bites 2 ($249), Furbo 360 ($179), Honey Tour Robot ($160), eufy Security ($129), WOPET ($99), xpai 4K ($43)
+5. **GPS Trackers** (3 reviewed): Aorkuler ($229), Tractive GPS LTE ($79), No Monthly Fee ($33)
+
+## Top Recommendations
+
+- **Best Overall Litter Box**: Litter-Robot 5 — WasteID health tracking, full-color LCD, larger globe, carpet compatible. $799.
+- **Best Value Litter Box**: Amazon Basics Self-Cleaning — S-shaped screen, 15 safety sensors, washable liner, $209.
+- **Best Feeder**: Petlibro Granary Camera Feeder — built-in 1080p camera, polished app, RFID collar tag. $139.
+- **Best Fountain**: Pioneer Pet Raindrop — stainless steel, dishwasher safe, 18,500+ reviews, $39.
+- **Best Pet Camera**: eufy Security — 2K, 360° auto-tracking, local SD storage, zero subscription, $129.
+- **Best GPS Tracker**: Tractive GPS Dog LTE — global coverage 170+ countries, virtual fence, $79.
+
+## Key Editorial Positions
+
+- "No subscription" is a recurring evaluation criterion across GPS trackers and pet cameras
+- Stainless steel is preferred over plastic for fountains (hygiene, longevity)
+- Multi-cat recognition is a key differentiator for litter boxes
+- All recommendations are budget-tiered (premium, mid-range, budget picks)
+- Transparency about data sources: "Verified owner reviews from Amazon.com, June 2026"
+
+## Site Structure
+
+- /reviews/ — 26 individual product reviews with verdicts, pros/cons, features, owner feedback, FAQs
+- /best/ — 9 curated best-of lists by category and use case
+- /compare/ — 13 head-to-head product comparisons with feature tables
+- /guides/ — 29 buying guides, how-tos, and informational articles
+- /breed/ — 7 breed-specific pet tech guides (French Bulldog, Golden Retriever, etc.)
+- /about/ — Site mission and team
+- /how-we-research/ — Methodology documentation
+- /products-we-dont-recommend/ — Transparency page for products that failed research
+- /affiliate-disclosure/ — Amazon Associates disclosure
+- /privacy/ — Privacy policy
+
+## Schema Coverage
+
+All pages include structured data: Article/Review + FAQPage + BreadcrumbList. Homepage includes Organization schema. Author entity: SmartPetGuide Team (Person). Publisher entity: SmartPetGuide (Organization) with sameAs links to Pinterest, Medium, Flipboard.

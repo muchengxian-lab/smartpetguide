@@ -236,7 +236,7 @@
 
 ## 视觉/浏览器发现
 <!-- 关键：每执行2次查看/浏览器操作后必须更新此部分 -->
-- smartpetguide.net 线上可访问，**50 页**正常
+- smartpetguide.net 线上可访问，**99 页**正常
 - 新增 3 篇对比文：Pioneer Pet vs YEAPAW / xpai vs eufy / PETKIT vs Catit PIXI
 - 对比文从 6 → 9 篇，覆盖全部 5 个品类
 - 产品图片替换为 Amazon 高清原图后，文章视觉效果大幅提升

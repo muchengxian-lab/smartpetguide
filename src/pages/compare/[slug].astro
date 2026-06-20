@@ -29,6 +29,7 @@ export function getStaticPaths() {
     { params: { slug: "petkit-eversweet-vs-catit-pixi" } },
     { params: { slug: "petlibro-vs-petkit" } },
     { params: { slug: "tractive-vs-nofee-gps" } },
+    { params: { slug: "lr5-vs-amazon-basics-cost" } },
   ];
 }
 
@@ -381,6 +382,39 @@ const compareMap: Record<string, CompareData> = {
       { q: "Does the No-Fee tracker really have zero hidden costs?", a: "Yes — there's genuinely no SIM card, no activation fee, no monthly plan. The manufacturer covers the cellular data through their own bulk carrier agreement. The catch: they can change this policy at any time, and the build quality reflects the $33 price point. It's a gamble that pays off if the tracker lasts 2+ years." },
       { q: "Which has better tracking accuracy?", a: "The Tractive is more accurate (2-5 meters vs 5-15 meters) and refreshes more frequently. The Tractive's app also shows location history and activity patterns. The No-Fee tracker gives you 'which block is my dog on' level accuracy. For finding a lost dog in a dense neighborhood, Tractive's precision matters. For 'is my dog still in the backyard,' both work." },
       { q: "Can I put either tracker on a cat?", a: "Both work for cats at similar weights (20-26g). The Tractive is more waterproof (IPX7), which matters for outdoor cats. The No-Fee tracker is lighter (20g) but less durable. For indoor/outdoor cats, the Tractive's global coverage is overkill — the No-Fee tracker at $33 is more sensible if your cat stays in your neighborhood." },
+    ],
+  },
+  "lr5-vs-amazon-basics-cost": {
+    title: "Litter-Robot 5 vs Amazon Basics — 3-Year Cost Breakdown 2026",
+    description: "$799 vs $209 isn't the real price. We calculate the full 3-year cost including litter, filters, replacement parts, and electricity for both the premium Litter-Robot 5 and budget Amazon Basics.",
+    productAId: "litter-robot-5",
+    productBId: "amazon-basics-litter-box",
+    winner: "Over 3 years, the Amazon Basics totals ~$437 vs the Litter-Robot 5's ~$1,049 — a $612 difference. But the LR5's WasteID health tracking, proven 850+ review track record, and larger waste drawer have real value that the numbers alone don't capture. Get the Amazon Basics if budget is your top priority and you have a single healthy cat. Get the Litter-Robot 5 if you have multiple cats, a cat with health concerns, or you want the best automatic litter box experience available in 2026.",
+    comparisonRows: [
+      ["Upfront Price", "$799", "$209"],
+      ["3-Year Litter Cost", "$180-240 ($5-7/month)", "$180-240 ($5-7/month)"],
+      ["3-Year Filters/Bags", "$60-90 (carbon filters, $20-30/year)", "$0 (washable liner, no bags needed)"],
+      ["3-Year Replacement Parts", "$0-50 (under warranty, rare failures)", "$0-50 (1-year warranty, less proven)"],
+      ["3-Year Electricity", "~$15 (~$0.42/month)", "~$15 (~$0.42/month)"],
+      ["3-Year Deodorizer/Spray", "$0 (carbon filter only)", "$20-40 (built-in spray refills, $7-13/year est.)"],
+      ["Total 3-Year Cost", "~$1,049-1,194", "~$424-454"],
+      ["Cost Per Day (3 Years)", "~$0.96-1.09/day", "~$0.39-0.41/day"],
+      ["Cost Per Day (5 Years)", "~$0.60-0.69/day", "~$0.27-0.30/day"],
+      ["Health Tracking", "WasteID: #1 vs #2 detection, per-cat weight ID", "No health tracking"],
+      ["App / WiFi", "Yes — Whisker app, usage logs, alerts", "No — standalone appliance"],
+      ["Screen", "Full-color LCD display", "None — basic LED indicator"],
+      ["Waste Drawer Capacity", "~7-10 days for 1 cat", "~15 days for 1 cat (3.2-gallon bin)"],
+      ["Cat Capacity", "Up to 5 cats by weight", "Up to 2 cats (est., smaller interior)"],
+      ["Noise Level", "Under 55 dB (QuietSift)", "≤40 dB (quieter)"],
+      ["Warranty", "1 year", "1 year"],
+      ["Reviews (Amazon)", "850+ (new model, growing)", "0 (brand new, no track record)"],
+      ["Carpet Use", "Built-in carpet compatibility", "Unknown — not specified"],
+    ],
+    faqs: [
+      { q: "Is the Litter-Robot 5 really worth $590 more than the Amazon Basics?", a: "Over 3 years, the LR5 costs about $612 more total — about $0.56/day extra. For that premium, you get: WasteID health tracking that distinguishes #1 from #2 (potentially catching kidney disease, diabetes, or UTIs early — one avoided emergency vet visit at $500-2,000 pays for the difference), a proven track record (850+ reviews vs 0), WiFi/app connectivity with per-cat weight tracking, and a larger interior for multi-cat homes. If you have one healthy cat and a tight budget, the Amazon Basics is a perfectly rational choice. If you have multiple cats or a cat with health concerns, the LR5's health data could literally save your cat's life — and that's worth $0.56/day." },
+      { q: "What's the biggest hidden cost difference?", a: "The Amazon Basics' built-in deodorizing spray needs refills. Assuming the spray cartridge lasts 2-3 months and costs $5-7, that's $20-40/year extra. The Litter-Robot uses replaceable carbon filters at $20-30/year. Over 3 years, the LR5's filters ($60-90) actually cost more than the Amazon Basics' spray refills ($20-40). But the Amazon Basics' washable liner saves $0 on disposable trays vs the PetSafe ScoopFree ($180-300/year in trays). The real hidden cost of the LR5: once you have WasteID data, you'll never want to go back to a box without health tracking — and that locks you into the premium tier for future purchases." },
+      { q: "Which one is cheaper if it lasts 5 years instead of 3?", a: "The longer both last, the smaller the daily cost difference. At 5 years: LR5 ~$0.60-0.69/day vs Amazon Basics ~$0.27-0.30/day — about $0.35/day difference instead of $0.56/day. But the Amazon Basics has zero long-term reliability data. If the Amazon Basics fails at 18 months (common for first-gen budget electronics), you're buying another box. If the LR5 lasts 5+ years (the LR3/LR4 routinely do), the durability-adjusted cost gap narrows significantly. This is the risk of being an early adopter of an unproven product." },
+      { q: "Does the Amazon Basics actually save money on litter?", a: "Both use standard clumping litter at roughly the same rate — about $5-7/month per cat. No significant difference here. Where the Amazon Basics genuinely saves money: no carbon filter purchases (washable liner), and the built-in deodorizing spray may reduce how often you need to fully dump and replace the litter. But these savings are small ($20-40/year) compared to the $590 upfront price difference. The upfront price is the real savings." },
     ],
   },
 };

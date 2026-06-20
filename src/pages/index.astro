@@ -74,6 +74,21 @@ const categories = [
     </div>
   </section>
 
+  <!-- Organization Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "SmartPetGuide",
+    url: "https://smartpetguide.net/",
+    description: "Research-backed reviews of the best smart pet devices. Based on verified owner data and real-world analysis.",
+    foundingDate: "2026",
+    sameAs: [
+      "https://www.pinterest.com/muchengxian/",
+      "https://medium.com/@muchengxian",
+      "https://flipboard.com/@755g287",
+    ],
+  })} />
+
   <!-- Trust bar -->
   <section class="mt-20 rounded-2xl border border-sage-dark/30 bg-white px-8 py-10 text-center">
     <p class="font-display text-xl font-semibold text-forest">Why Trust Our Reviews?</p>

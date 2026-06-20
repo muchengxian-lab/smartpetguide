@@ -1,0 +1,76 @@
+# SmartPetGuide
+
+> Research-backed reviews of smart pet devices. Based on verified owner data and real-world analysis.
+
+## About
+
+SmartPetGuide provides honest, research-backed reviews of automatic pet feeders, self-cleaning litter boxes, smart water fountains, pet cameras, and GPS trackers. We analyze thousands of verified Amazon reviews to find the best pet tech, with no sponsored placements.
+
+## Key Pages
+
+### Best Lists
+- [7 Best Self-Cleaning Litter Boxes of 2026](https://smartpetguide.net/best/self-cleaning-litter-boxes/) — Researched & reviewed
+- [Best Automatic Cat Feeders](https://smartpetguide.net/best/automatic-cat-feeders/) — Smart feeding for every budget
+- [Best Stainless Steel Cat Fountains](https://smartpetguide.net/best/stainless-steel-cat-fountains/) — Hygienic hydration
+- [Best Smart Pet Fountains](https://smartpetguide.net/best/smart-pet-water-fountains/) — App-connected hydration
+- [Best Pet Cameras](https://smartpetguide.net/best/pet-cameras/) — Check in from anywhere
+- [Best GPS Trackers (No Monthly Fee)](https://smartpetguide.net/best/gps-trackers-no-monthly-fee/) — Real-time tracking
+- [Best Pet Cameras Without Subscription](https://smartpetguide.net/best/pet-cameras-no-subscription/)
+- [Best Automatic Feeders for 2 Cats](https://smartpetguide.net/best/automatic-feeders-for-2-cats/)
+
+### Reviews (26 products)
+- [Litter-Robot 5](https://smartpetguide.net/reviews/litter-robot-5-review/)
+- [Litter-Robot 4](https://smartpetguide.net/reviews/litter-robot-4-review/)
+- [Petlibro Granary Camera Feeder](https://smartpetguide.net/reviews/petlibro-granary-review/)
+- [PetSafe ScoopFree Smart](https://smartpetguide.net/reviews/petsafe-scoopfree-review/)
+- [Leo's Loo Too](https://smartpetguide.net/reviews/leos-loo-too-review/)
+- [CATLINK Young Pro](https://smartpetguide.net/reviews/catlink-young-review/)
+- [Elspet Pro](https://smartpetguide.net/reviews/elspet-pro-review/)
+- [Amazon Basics Self-Cleaning](https://smartpetguide.net/reviews/amazon-basics-litter-box-review/)
+- [Furbo 360 Dog Camera](https://smartpetguide.net/reviews/furbo-360-camera-review/)
+- [Petcube Bites 2](https://smartpetguide.net/reviews/petcube-bites-2-review/)
+- [eufy Security Pet Camera](https://smartpetguide.net/reviews/eufy-pet-camera-review/)
+- [xpai 4K UHD Pet Camera](https://smartpetguide.net/reviews/xpai-4k-camera-review/)
+- [Honey Tour Robot Camera](https://smartpetguide.net/reviews/honeytour-robot-camera-review/)
+- [WOPET Smart Pet Camera](https://smartpetguide.net/reviews/wopet-camera-review/)
+- [PETKIT Eversweet Solo 2](https://smartpetguide.net/reviews/petkit-eversweet-review/)
+- [Catit PIXI Smart Fountain](https://smartpetguide.net/reviews/catit-pixi-fountain-review/)
+- [Pioneer Pet Raindrop](https://smartpetguide.net/reviews/pioneer-pet-raindrop-review/)
+- [YEAPAW Steel Fountain](https://smartpetguide.net/reviews/yeapaw-steel-fountain-review/)
+- [KittySpout Steel Fountain](https://smartpetguide.net/reviews/kittyspout-steel-fountain-review/)
+- [Homerunpet Wireless Fountain](https://smartpetguide.net/reviews/homerunpet-wireless-review/)
+- [WOPET Automatic Feeder](https://smartpetguide.net/reviews/wopet-automatic-feeder-review/)
+- [DOGNESS Mini Smart Feeder](https://smartpetguide.net/reviews/dogness-mini-smart-feeder-review/)
+- [PETKIT Fresh Element Solo](https://smartpetguide.net/reviews/petkit-fresh-element-review/)
+- [Tractive GPS Dog LTE](https://smartpetguide.net/reviews/tractive-gps-review/)
+- [No Monthly Fee GPS Tracker](https://smartpetguide.net/reviews/nofee-gps-tracker-review/)
+- [Aorkuler GPS Dog Tracker](https://smartpetguide.net/reviews/aorkuler-gps-review/)
+
+### Comparisons (13)
+- [Litter-Robot 5 vs 4](https://smartpetguide.net/compare/litter-robot-5-vs-litter-robot-4/)
+- [Litter-Robot 4 vs Leo's Loo Too](https://smartpetguide.net/compare/litter-robot-4-vs-leos-loo-too/)
+- [Automatic vs Manual Litter Box](https://smartpetguide.net/compare/automatic-vs-manual-litter-box/)
+- By category at [Compare](https://smartpetguide.net/compare/)
+
+### Guides (29)
+- [Self-Cleaning Litter Box Buying Guide](https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/)
+- [Automatic Feeder Buying Guide](https://smartpetguide.net/guides/automatic-feeder-buying-guide/)
+- [Smart Water Fountain Buying Guide](https://smartpetguide.net/guides/smart-water-fountain-buying-guide/)
+- [Pet Camera Buying Guide](https://smartpetguide.net/guides/pet-camera-buying-guide/)
+- [GPS Pet Tracker Buying Guide](https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/)
+- [How to Clean a Cat Water Fountain](https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/)
+- [Stainless Steel Cat Fountain Guide](https://smartpetguide.net/guides/stainless-steel-cat-fountain-guide/)
+- By category at [Guides](https://smartpetguide.net/guides/)
+
+### Info
+- [About Us](https://smartpetguide.net/about/)
+- [How We Research](https://smartpetguide.net/how-we-research/)
+- [Products We Don't Recommend](https://smartpetguide.net/products-we-dont-recommend/)
+- [Affiliate Disclosure](https://smartpetguide.net/affiliate-disclosure/)
+- [Privacy Policy](https://smartpetguide.net/privacy/)
+- [RSS Feed](https://smartpetguide.net/rss.xml)
+
+## Optional
+
+- [llms-full.txt](https://smartpetguide.net/llms-full.txt) — Extended content summaries
+- [sitemap-index.xml](https://smartpetguide.net/sitemap-index.xml) — Full page listing

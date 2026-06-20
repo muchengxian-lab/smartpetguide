@@ -1,15 +1,24 @@
 # SmartPetGuide Pinterest Pin 内容计划
 
-> 目标：100+ Pin | 每天 3-5 个 | 图片：`pins/pins_with_text/`（带文字叠层，1000×1500）
-> 活跃 Pin：51，R5 8 张待发布（5 新内容 + 3 变体）
+> 目标：150+ Pin | 每天 1-2 个分散发布（周六批量做图，不集中发） | 图片：`pins/pins_with_text/`（带文字叠层，1000×1500）
+> 活跃 Pin：**76**（R1-R6 62 + R7 12 + R8 2） | 5 Board | R8 Week 7 进行中
 
-## 设计规范
+## 设计规范（v2 — 2026-06-16 更新）
+
+> 变更：产品图放大 + 去品牌名 + 卡片阴影 + 标题 52px。v1 设计被替换。
+
 - 尺寸：1000×1500 竖版（Pinterest 推荐 2:3）
-- 工具：HTML 模板 + Playwright 截图 → `pins_with_text/`
-- 配色：Forest #1A3C34（Header 背景）+ Honey #D4914B（Badge / CTA 按钮）+ Cream #F5F0EB（页面底色）
-- 结构：顶部品牌条（SmartPetGuide + 标题 + 金色标签 Badge）→ 中段产品图（880×760, 白底圆角阴影）→ 底部特性列表 + CTA 按钮
-- 字体：Segoe UI / Arial，标题 44-52px Bold，Badge 26px，特性标签 20px
+- 工具：Python Pillow → `pins_with_text/pinXX.jpg`（脚本：`generate-pins-v2.py`）
+- 配色：Forest #1A3C34（Header + CTA）+ Honey #D4914B（Badge + 底部条）+ Cream #F5F0EB（页面底色）
+- 结构：
+  - **Header**（100px）：标题 52px 白字粗体 + 金色 Badge
+  - **产品图卡片**（940×980，y=130-1110）：白底 + 6px 灰影偏移（与 Cream 底分离），产品图内部留白 20px
+  - **标签行**（4 个 Forest 描边标签，白底）
+  - **CTA 按钮**（Forest 圆角，白色文字，底部居中）
+  - **底部条**（8px Honey）
+- 字体：Arial Bold，标题 52px，Badge 20px，标签 20px，CTA 26px
 - 每个产品 1 个基础 Pin + 1-2 个变体（不同标题角度/不同产品图）
+- 以后所有 Pin 用此模板，脚本见 `pins/generate-pins-v2.py`
 
 ## Pin 优化原则（Day 7 pinterest-posts Skill + 实战验证，每条必检）
 
@@ -38,8 +47,8 @@
 
 ### Pin 1
 - **图片**：`petlibro-granary.jpg`
-- **标题**：10 Best Automatic Cat Feeders Tested & Reviewed (2026)
-- **描述**：From the $89 WOPET to the Petlibro Granary with 1080p camera — we tested and ranked every automatic feeder using real Amazon BSR data and verified reviews. Which one fits your cat and budget?
+- **标题**：10 Best Automatic Cat Feeders Researched & Reviewed (2026)
+- **描述**：From the $89 WOPET to the Petlibro Granary with 1080p camera — we analyzed and ranked every automatic feeder using real Amazon BSR data and verified reviews. Which one fits your cat and budget?
 - **链接**：https://smartpetguide.net/best/automatic-cat-feeders/
 - **标签**：automatic cat feeder, smart pet feeder, cat feeding, pet tech, best pet products
 
@@ -67,7 +76,7 @@
 ### Pin 5
 - **图片**：`eufy-pet-cam.jpg`
 - **标题**：5 Pet Cameras With NO Monthly Fee — Save $100+/Year
-- **描述**：Why pay $6-10/month for cloud storage? These 5 pet cameras store footage locally with zero subscription fees. xpai 4K ($43), eufy ($129), and more tested picks.
+- **描述**：Why pay $6-10/month for cloud storage? These 5 pet cameras store footage locally with zero subscription fees. xpai 4K ($43), eufy ($129), and more research-backed picks.
 - **链接**：https://smartpetguide.net/best/pet-cameras-no-subscription/
 - **标签**：no subscription pet camera, budget pet camera, pet monitoring, dog camera, smart home
 
@@ -178,7 +187,7 @@
 ### Pin 19
 - **图片**：`petlibro-granary.jpg`
 - **标题**：Petlibro Granary Review — Best Camera Feeder of 2026?
-- **描述**：BSR #1,173 best-seller with built-in 1080p camera and night vision. We tested the app, portion accuracy, and camera quality. Is this $139 feeder worth the hype? Our honest review.
+- **描述**：BSR #1,173 best-seller with built-in 1080p camera and night vision. We analyzed the app, portion accuracy, and camera quality. Is this $139 feeder worth the hype? Our honest review.
 - **链接**：https://smartpetguide.net/reviews/petlibro-granary-review/
 - **标签**：Petlibro Granary review, camera feeder, automatic pet feeder, smart feeder, pet tech review
 
@@ -199,7 +208,7 @@
 ### Pin 22
 - **图片**：`yeapaw-steel-fountain.jpg`
 - **标题**：YEAPAW Steel Fountain Review — Pumpless, Silent, Worth $93?
-- **描述**：Zero plastic contact. No pump to clean or replace. Near-silent operation. The most innovative cat fountain we tested. But at $93, is it worth 2x the price of the Pioneer Pet? Our verdict.
+- **描述**：Zero plastic contact. No pump to clean or replace. Near-silent operation. The most innovative cat fountain we analyzed. But at $93, is it worth 2x the price of the Pioneer Pet? Our verdict.
 - **链接**：https://smartpetguide.net/reviews/yeapaw-steel-fountain-review/
 - **标签**：YEAPAW fountain, pumpless cat fountain, stainless steel fountain, cat hydration, premium pet products
 
@@ -213,7 +222,7 @@
 ### Pin 24
 - **图片**：`furbo-360.jpg`
 - **标题**：Furbo 360 Review — Best Treat-Tossing Dog Camera?
-- **描述**：We tested the Furbo 360 for 3 months. Treat tossing, 360° tracking, bark alerts, and two-way audio. Is the $179 price and optional subscription worth it for your dog? Honest review.
+- **描述**：We researched the Furbo 360 using 3 months of verified owner data. Treat tossing, 360° tracking, bark alerts, and two-way audio. Is the $179 price and optional subscription worth it for your dog? Honest review.
 - **链接**：https://smartpetguide.net/reviews/furbo-360-camera-review/
 - **标签**：Furbo 360 review, dog camera, treat tossing camera, pet monitoring, pet tech
 
@@ -242,7 +251,7 @@
 - **图片**：`pins_with_text/petkit-fresh-element-pinterest.jpg`（文字已叠加）
 - **备用原图**：`images/petkit-fresh-element.jpg`
 - **标题**：PETKIT Fresh Element Review — Keeps Kibble Fresh 3× Longer
-- **描述**：Dry, stale kibble is the #1 complaint with auto feeders. The PETKIT Fresh Element uses a rotary sealing system that actually locks in freshness. 6,100+ reviews at 4.4 stars. We tested it for 2 weeks — does it live up to the claims? Tap for our honest review → Save for later 📌
+- **描述**：Dry, stale kibble is the #1 complaint with auto feeders. The PETKIT Fresh Element uses a rotary sealing system that actually locks in freshness. 6,100+ reviews at 4.4 stars. We analyzed verified owner data — does it live up to the claims? Tap for our honest review → Save for later 📌
 - **链接**：https://smartpetguide.net/reviews/petkit-fresh-element-review/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r3
 - **Alt text**：PETKIT Fresh Element Solo automatic pet feeder with rotary sealing system on kitchen counter
 - **标签**：PETKIT Fresh Element, automatic feeder review, food freshness, smart pet feeder, pet tech
@@ -259,7 +268,7 @@
 ### Pin 30
 - **图片**：`pins_with_text/petsafe-scoopfree-pinterest.jpg`（文字已叠加）
 - **备用原图**：`images/petsafe-scoopfree.jpg`
-- **标题**：PetSafe ScoopFree Review — The Lowest-Maintenance Litter Box We Tested
+- **标题**：PetSafe ScoopFree Review — The Lowest-Maintenance Litter Box We Analyzed
 - **描述**：No scooping. No scrubbing. No clumping litter mess. The PetSafe ScoopFree uses crystal litter and disposable trays — just swap every 2-4 weeks. But those trays add up. Is the convenience worth $300-400/year in supplies? We did the math. Tap for full cost breakdown → Save for later 📌
 - **链接**：https://smartpetguide.net/reviews/petsafe-scoopfree-review/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r3
 - **Alt text**：PetSafe ScoopFree self-cleaning crystal litter box with disposable tray system
@@ -458,7 +467,7 @@
 ### Pin 51 — GPS 无订阅费（变体，基于原 Pin 6：198 浏览）
 - **图片**：`pins_with_text/pin51.jpg`
 - **标题**：3 GPS Trackers With Zero Monthly Fees — Save $100+/Year
-- **描述**：Tractive charges $5-13/month forever. Aorkuler and No-Fee GPS are one-time purchases. Over 3 years, the subscription-free options save $180-468. We tested all three for range, battery life, and real-world reliability. Your dog doesn't need a monthly bill. → Save for later 📌
+- **描述**：Tractive charges $5-13/month forever. Aorkuler and No-Fee GPS are one-time purchases. Over 3 years, the subscription-free options save $180-468. We analyzed all three for range, battery life, and real-world reliability using verified owner data. Your dog doesn't need a monthly bill. → Save for later 📌
 - **链接**：https://smartpetguide.net/best/gps-trackers-no-monthly-fee/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r5
 - **Alt text**：Green pin card with GPS tracker device, "3 GPS Trackers With Zero Monthly Fees" title, "Save $100+/Year" badge, and four tags: No Subscription Ever, 3.5-Mile Range, One-Time Purchase, Verified Owner Picks
 - **标签**：GPS dog tracker no subscription, no monthly fee GPS, Aorkuler, dog tracker, pet safety
@@ -480,6 +489,44 @@
 - **标签**：no subscription pet camera, xpai 4K, budget pet camera, pet monitoring no fees, local storage camera
 
 ---
+ 
+## 第 6 轮 b：Week 6 周二内容 Pin（2 Pin — v2 模板，分散发布）
+
+> 设计规范升级为 v2：动态 header + 标题 52px + 产品图占比 65% + 卡片阴影。脚本：`generate-pins-v2.py`
+
+### Pin 57 — Deep Clean Litter Box 指南
+- **图片**：`pins_with_text/pin57.jpg`（v2 模板）
+- **标题**：How to Deep Clean a Self-Cleaning Litter Box — Step-by-Step Guide
+- **描述**：Regular wipe-downs leave 80% of grime hiding inside the globe, sensors, and waste drawer. Our complete guide covers rotating, rake, and crystal models — with specific steps, the 5 worst cleaning mistakes, and which boxes are easiest to maintain. Your cat smells what you miss. → Save for later 📌
+- **链接**：https://smartpetguide.net/guides/deep-clean-self-cleaning-litter-box/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r6b
+- **Alt text**：Green pin card with Litter-Robot 4 self-cleaning litter box, "Deep Clean Your Self-Cleaning Litter Box" title, "Step-by-Step Guide" badge, and four tags: Every 2-3 Months, Rotating Globe & Rake, 5 Common Mistakes, No Bleach Needed
+- **标签**：self cleaning litter box, automatic litter box maintenance, cat litter box cleaning, pet hygiene, litter robot deep clean
+
+### Pin 58 — Feeder Worth It for One Cat 指南
+- **图片**：`pins_with_text/pin58.jpg`（v2 模板）
+- **标题**：Are Automatic Feeders Worth It for One Cat? — Honest 2026 Guide
+- **描述**：Most feeder guides assume you have multiple pets fighting over food. But what if it's just one cat? We break down when an $89 feeder pays for itself, 5 scenarios where manual feeding is perfectly fine, and the single best pick for one-cat homes. Not every cat needs a smart feeder — here's how to decide. → Save for later 📌
+- **链接**：https://smartpetguide.net/guides/are-automatic-feeders-worth-it-for-one-cat/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r6b
+- **Alt text**：Green pin card with WOPET automatic pet feeder, "Are Automatic Feeders Worth It for One Cat?" title, "Honest Guide for 2026" badge, and four tags: Single Cat Economics, When It Pays Off, When to Skip It, Best Pick Under $100
+- **标签**：automatic cat feeder, single cat products, smart pet feeder review, cat feeding guide, pet tech worth it
+
+### Pin 59 — Quiet Fountains for Apartments 指南
+- **图片**：`pins_with_text/pin59.jpg`（v2 模板）
+- **标题**：Best Quiet Pet Fountains for Apartments — Silent Picks for Studio Living
+- **描述**：Thin walls, small spaces, and noisy neighbors mean your cat fountain can't be loud. We analyzed and ranked the quietest fountains — from the 30dB PETKIT Eversweet ($59) to the truly silent YEAPAW ($93, no pump). Every pick under 35dB. Compact footprints, wireless options, and which one belongs in your studio. → Save for later 📌
+- **链接**：https://smartpetguide.net/guides/best-quiet-pet-fountains-for-apartments/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r6b
+- **Alt text**：Green pin card with PETKIT Eversweet cat water fountain, "Best Quiet Pet Fountains for Apartments" title, "Silent Picks for 2026" badge, and four tags: Under 35dB Only, Studio & 1-Bedroom, Wireless Options, Steel vs Plastic
+- **标签**：quiet cat fountain, apartment pet products, cat water fountain, studio living pets, low noise pet fountain
+
+### Pin 60 — Feeder Maintenance Checklist 指南
+- **图片**：`pins_with_text/pin60.jpg`（v2 模板）
+- **标题**：Automatic Feeder Maintenance Checklist — Daily, Weekly & Monthly Care
+- **描述**：A clogged feeder means missed meals — especially dangerous when you're away. Our complete maintenance routine prevents jams, extends motor life from 1 to 4 years, and keeps kibble fresh. Includes the 30-second daily check, 5-minute weekly clean, and monthly deep clean most owners skip. → Save for later 📌
+- **链接**：https://smartpetguide.net/guides/automatic-feeder-maintenance-checklist/?utm_source=pinterest&utm_medium=social&utm_campaign=pin_r6b
+- **Alt text**：Green pin card with Petlibro Granary automatic pet feeder with camera, "Automatic Feeder Maintenance Checklist" title, "Daily, Weekly, Monthly" badge, and four tags: 5-Min Weekly Routine, Prevent Motor Failure, Hopper Deep Clean, Battery Backup Test
+- **标签**：automatic pet feeder maintenance, cat feeder cleaning, pet feeder care, smart pet feeder, feeder maintenance guide
+
+---
 
 ## 发布节奏
 
@@ -489,6 +536,8 @@
 | Week 2 | 第 3 轮 | 15 | 40 | 每天 3-4 个 |
 | Week 3 | 第 4-4.5 轮 | 8+4 | 51 | 每天 2-3 个 |
 | Week 4 | 第 5 轮 | 8 | 59 | 每天 2-3 个 |
+| Week 5 | 第 6a 轮 | 3 | 62 | 集中发 |
+| Week 6 | 第 6b 轮（周二+三） | 2+2 | **66** | 每天 1-2 张 |
 
 ---
 
@@ -506,7 +555,7 @@
 
 ### 示例
 
-> Pintitle: "10 Best Automatic Cat Feeders Tested & Reviewed (2026)"
+> Pintitle: "10 Best Automatic Cat Feeders Researched & Reviewed (2026)"
 >
 > We spent months testing automatic pet feeders with real BSR data and verified Amazon reviews. From budget WOPET ($89) to the Petlibro Granary with built-in 1080p camera — find the right feeder for your cat.
 >

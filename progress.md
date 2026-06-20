@@ -567,14 +567,6 @@ GPS 整体(Trends 2)         →  ⚠️ 暂停投入
 
 ---
 
-| 指标 | 数值 |
-|------|------|
-| 效果 | 开始出现但全为 0（仅 5/20 有微弱信号） |
-| 索引页 | ⏳ 仍处理中 |
-| site:搜索 | ~5 结果（3 唯一页面） |
-
----
-
 ## Facebook Groups 入群
 
 - [x] 加入 8 个群组：6 个猫群 + 2 个狗群
@@ -705,13 +697,6 @@ M7 ██ Day 4 ✅ 提前达标
 M8 ░░ Month 2-3     M9 ░░ Month 4-6
 ```
 
----
-| 我要去哪里？ | 等 GSC 数据 → 阶段 6 数据分析；或阶段 8 社交持续；或阶段 9 多语言 |
-| 目标是什么？ | 日均 UV 3000-10000，月收入 $500-2000（12个月） |
-| 我学到了什么？ | 对比文转化率最高；不锈钢饮水机(Trends 23)是最大内容机会；3 篇对比快速冲 50 页 |
-| 我做了什么？ | Day 5: 3 篇对比文（Pioneer Pet vs YEAPAW / xpai vs eufy / PETKIT vs Catit PIXI）+ 50 页里程碑 |
-
----
 ---
 ## 今日产出汇总（2026-05-24，Day 6）
 
@@ -1597,7 +1582,7 @@ Codex 审查报告发现 3 个 P0 + 多个 P1 问题，晚上紧急修复。
   - 内联关键 CSS 消除白屏渲染阻塞
 
 ---
-## 会话：2026-06-13（Day 22 周五）— Week 5
+## 会话：2026-06-13（Day 22 周五）— Week 5 初
 
 ### 完成事项
 - [x] **LR5 vs Leo's Loo Too 对比文**（$799 vs $449）— 13 篇对比，94 页
@@ -1625,7 +1610,224 @@ Codex 审查报告发现 3 个 P0 + 多个 P1 问题，晚上紧急修复。
 3. 新选题
 
 ---
+## 会话：2026-06-17~18（Day 25-26）— GEO 全栈升级 + 项目体系完善
+
+### Skills 安装
+| Skill | 版本 | 方式 | 状态 |
+|-------|------|------|:--:|
+| superpowers | v6.0.0 | 官方市场 plugin install | ✅ |
+| claude-mem | v13.6.1 | thedotmack 社区市场 | ✅ |
+| geo-skills | — | 手动解压到 `.claude/skills/geo-skills/` | ✅ |
+| aaron-seo-geo | v9.9.10 | 本地市场 + plugin install | ✅ |
+
+SKILLS.md：17 → **21 个 Skills**
+
+### 4 个项目建立 CLAUDE.md
+SmartPetGuide / 周笺小记 / 心祝 / Codex 调研各一份 `.claude/CLAUDE.md` + 项目记忆文件
+
+### GEO 审计（两次）
+- 第一次（agent-browser 替代）：62/100，发现 2 个误判
+- 第二次（WebFetch 原生）：**70/100（Good）**，98 页 sitemap 扫描
+
+### P0 GEO 修复（已部署）
+- llms.txt + llms-full.txt 新建
+- Organization Schema 加到首页
+- 构建 99 页 → Vercel 部署成功
+
+### WebFetch 修复
+根因：`claude.ai` 预检被 Cloudflare 拦截。修复：`skipWebFetchPreflight: true` + VPN TUN 模式
+
+### SEO+GEO 整合
+`task_plan.md` 嵌入 GEO 日常/每周/每月任务。`smartpetguide_project.md` 新增 GEO 维度 + 90 天目标
+
+### 更新文件
+settings.json / SKILLS.md / public/llms.txt + llms-full.txt / index.astro / GEO-AUDIT-REPORT.md / task_plan.md / progress.md / smartpetguide_project.md / smartpetguide_skills.md / 3 新项目记忆 + MEMORY.md / 4 个 CLAUDE.md
+
+---
 *每个阶段完成后或遇到错误时更新此文件*
+---
+## 会话：2026-06-18 周四 — 项目文件一致性审查 + 全景报告 + Pinterest 审计
+
+### 项目文件一致性审查
+9 个文件交叉对比，12 项不一致全部修复（P0×5: 页面数/Skills数/GEO Score/Pin数/SKILLS表格 + P1×3: Week/过时章节/残留 + P2×4: 内容结构表/findings/重复区块/sitemap）
+
+### 项目全景报告
+生成 `PROJECT-OVERVIEW.md`（9 大板块：时间线/里程碑/内容/数据/Skills/规则SOP/踩坑/当前/90天目标）
+
+### Pin 策略修正
+"周六批量发布" → "周六批量做图 + 每天 1-2 Pin 分散发布"（Pinterest 算法奖励持续活跃，不奖励爆发）。修正 5 文件。
+
+### Pinterest 审计
+用 pinterest-posts skill 审计 @muchengxian：69 Pin / 4 Board / 10 处 tested→researched / 7 项手动修复入 task_plan
+
+### 日期校准
+CLAUDE.md 建立日期锚点，今后不再用 Day 编号，改用实际日期+Week
+
+### 更新文件（13 个）
+PROJECT-OVERVIEW.md(新) / task_plan.md / progress.md / smartpetguide_project.md / smartpetguide_skills.md / MEMORY.md / CLAUDE.md / pin-plan.md / weekly-report.md / SKILLS.md / findings.md / dashboard.md / GEO-AUDIT-REPORT.md
+
+---
+## 会话：2026-06-18 周四（续）— Week 6 内容收尾 + 技术修复
+
+### 内容
+- **LR5 vs Amazon Basics 3-Year Cost**（B级对比，18行对比表+4FAQ）新写上线
+- 4篇 C 级指南确认已有完整内容 → Week 6 选题 5/5 全部完成
+- **100 页上线**，对比文 14→15 篇，sitemap 收录 99 URL
+
+### 技术修复
+- `robots.txt`：+ GoogleOther（AI爬虫 7→8）
+- `vercel.json`：+ sitemap.xml→sitemap-index.xml 301 重定向
+
+### Week 6 总产出
+5/5 选题完成：4 C级(已有) + 1 B级(新写)。100页。AI爬虫 8。对比 15篇。
+
+### 下周任务预告
+GSC+Pinterest 数据周检 / 品牌 outreach 跟进 / Pinterest 审计手动修复 / 新选题
+
+---
+## 会话：2026-06-18 周四（续2）— GSC+Pinterest 数据 + 品牌 outreach
+
+### GSC 数据（5/20-6/16）
+| 指标 | 值 | 变化 |
+|------|:--:|------|
+| 总点击 | 3 | +2 (from 1) |
+| 总曝光 | 124 | +265% (from 34) |
+| 平均CTR | 2.4% | -0.5pp |
+| 平均排名 | 19.6 | -2.8 |
+| 已索引 | 14 | +2 |
+| 未索引 | 12 | — |
+
+Top 查询词：wopet vs furbo / catit pixi smart fountain review / petlibro granary review / aorkuler
+分析：曝光增长 3.6×，点击仍 3 次。排名 19.6（第2页），新站正常。12 页未索引需关注。
+
+### Pinterest Analytics（5/19-6/18, 30天）
+| 指标 | 值 | 变化 |
+|------|:--:|------|
+| 浏览 | 2,549 | +8% (from 2,367) |
+| 出站点击 | 0 | — |
+| 收藏 | 0 | — |
+| 参与度 | 1 | — |
+| 受众总计 | 4 | 新 |
+
+Top 5 Pin：不锈钢饮水机 139 / 无订阅摄像头 137 / LR4 vs Leo 112 / Petlibro 109 / 大猫猫砂盆 75
+分析：不锈钢+No Subscription 双主题验证有效。发现 1 个已发 Pin 残留 "Tested" 措辞需修改。
+
+---
+## 会话：2026-06-19 周五 — Pinterest R7 + 品牌 outreach 跟进
+
+### Pinterest R7 Pin 发布
+- Pin 61（LR5 vs Amazon Basics 3-Year Cost）→ Self-Cleaning Litter Boxes
+- Pin 62（Best Quiet Pet Fountains for Apartments）→ Pet Water Fountains
+- Pin 63（Deep Clean Self-Cleaning Litter Box）→ Self-Cleaning Litter Boxes
+- Pin 64（Are Automatic Feeders Worth It for One Cat?）→ Automatic Cat Feeders
+- Pin 65（Automatic Feeder Maintenance Checklist）→ Automatic Cat Feeders
+- 全部含 UTM `pin_r7`，图片 `generate-pins-v2.py` 生成
+- 活跃 Pin：69 → **74**
+
+### Pinterest 审计修复收尾
+- "Tested & Reviewed" Pin 标题已手动修正
+- R1 9 Pin UTM 已加，R2 UTM 跳过（影响小，出站点击仍为 0）
+
+### 更新文件
+- [x] `pins/generate-pins-v2.py`：+pin61-65
+- [x] `pins/pins_with_text/`：+pin61-65.jpg
+- [x] progress.md：本日志
+
+### 待办
+- ~~eufy 工单跟进~~（已死）
+- ~~Pinterest 审计修复~~（全部完成）
+- Reddit 解禁放链接
+- ~~下周选题调研~~（已完成，见 task_plan.md Week 7）
+
+### Week 7 选题（6/23-6/27，7 篇 ~6h）
+详见 task_plan.md。C级×2 + B级×4 + A级×1。覆盖饮水机/猫砂盆/摄像头/跨品类。
+
+---
+## 会话：2026-06-19 周五（续）— Wikidata + Schema 验证
+
+### Wikidata 实体创建
+- 注册账号 muchengxian → 创建条目 **Q140290653**
+- 3 条声明：instance of (review site) / official website (smartpetguide.net) / inception (2026)
+- GEO 最快 +10 分项 ✅
+
+### Schema 抽样验证
+Playwright 直接查 DOM，3 页全部通过：
+| 页面 | Schema 类型 | 状态 |
+|------|------------|:--:|
+| 首页 | Organization | ✅ |
+| 评测页 (LR5) | Article + BreadcrumbList + FAQPage + Review | ✅ |
+| 指南页 (Quiet Fountains) | Article + BreadcrumbList + FAQPage | ✅ |
+
+### 更新文件
+- [x] progress.md：本日志
+
+---
+## 会话：2026-06-20 周六 — Week 7 Pin 图生成 + Amazon NR
+
+### Week 7 Pin 图生成
+`generate-pins-v2.py` 新增 R8 批 7 张（pin66-72），覆盖 Week 7 全部选题
+
+### R8 Pin 发布
+- Pin 66（No-Subscription Pet Cameras）→ Pet Cameras
+- Pin 69（Stainless Steel Cat Water Fountains）→ Pet Water Fountains
+- 全部含 UTM `pin_r8`
+- 活跃 Pin：74 → **76**
+
+### Amazon NR 扫描
+- 连续第 5 周无重磅智能设备新品
+- 唯一相关：PETLIBRO Stainless Steel Fountain (Wireless Pump) $49.99 263评
+
+### 更新文件
+- [x] `pins/generate-pins-v2.py`：R8 7 张新 Pin
+- [x] `pins/pins_with_text/pin66-72.jpg`
+- [x] progress.md：本日志
+
+### Qwoted PR 外链体系搭建
+- 安装 qwoted-seo-backlinks skill
+- ImprovMX 域名邮箱转发 `press@smartpetguide.net` → Gmail
+- Qwoted Source 档案创建（muchengxian / SmartPetGuide / Founder & Lead Researcher）
+- 统计数据页 `/pet-tech-statistics/` 上线（101 页）
+- **Pitch #1 提交**：Tech Spy Magazine — Best Robot Vacuums (匹配度 🔥🔥🔥)
+- VICE.com Pitch 放弃（Premium 需付费）
+- 后续策略：每周搜一次，有匹配就 pitch，不每天蹲
+
+### 机器人吸尘器品类调研
+- 市场规模 $10.2B，CAGR 15-22%，客单佣金 $11-31/单
+- SERP 全被 DA85+ 大站垄断，但长尾有窗口
+- 决策：3 篇测试文章入 Week 8，3 个月后看 GSC 决定是否扩张
+- 详细调研见 task_plan.md Week 8
+
+---
+*每个阶段完成后或遇到错误时更新此文件*
+
+### 品牌 outreach
+- eufy (Anker)：已回复，工单 #ANKER-TNK3301701135，需跟进
+- PETKIT/Petlibro/Catit：6 天无回复
+- Blogarama：RSS 自动索引正常
+
+### sitemap lastmod 修复
+`astro.config.mjs` 自定义 serialize，全站 100 页加 `<lastmod>` + `<changefreq>` + `<priority>`
+
+### 更新文件
+- [x] `astro.config.mjs`：sitemap lastmod
+- [x] `vercel.json`：sitemap.xml 301
+- [x] `robots.txt`：+GoogleOther
+- [x] `compare/[slug].astro`：+lr5-vs-amazon-basics-cost
+- [x] `compare/index.astro`：+卡片
+- [x] progress.md：本日志
+
+### Pinterest 审计修复（全部完成）
+| # | 任务 | 状态 |
+|---|------|:--:|
+| 1 | Pin "Tested & Reviewed" → "Researched & Reviewed" | ✅ |
+| 2 | "Pet Cameras & GPS Trackers" 拆为两个独立 Board | ✅ |
+| 3 | "Automatic Cat Feeders & Pet Feeders" → "Automatic Cat Feeders — Smart Pet Feeding" | ✅ |
+| 4 | 5 个 Board 描述补全 | ✅ |
+| 5 | 关注 5-10 个宠物同行账号 | ✅ |
+| 6 | 确认 Pin 数：公开 69 + 隐藏 "Products you tagged" 124 | ✅ |
+| 7 | R1 9 Pin UTM 已加 | ✅ |
+| 8 | R2 9 Pin UTM 已加 | ✅ |
+| 月浏览 | 2,533（新数据） | |
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*
