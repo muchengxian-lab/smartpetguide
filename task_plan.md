@@ -4,7 +4,7 @@
 日均 UV 3000-10000，月收入 $500-2000（12个月目标）
 
 ## 当前阶段
-**Week 6（6/20 周六收盘）** | **101 页**在线 | Pinterest **76 Pin** / 5 Board / 浏览 2,533 | GSC 14 索引 / 124 曝光 / 3 点击 | Semrush AS 2 / KW 9 / RD 10 | GEO Score 70 | Qwoted Pitch #1 已提交 | Week 6 选题 5/5 ✅ | Pinterest 审计全部完成 ✅
+**Week 6（6/22 周一收盘）** | **101 页**在线 | Pinterest **78 Pin** / 5 Board / 浏览 2,796 | GSC 14 索引 / 130 曝光 / 3 点击 | GA4 165 活跃用户 | AI 爬虫 **12** | 内链重构 ✅ ~100 条 | 技术清障 ✅（尾斜杠/www/AI爬虫） | GEO Score 70 | Qwoted Pitch #1 已提交
 
 **Week 6 选题（6/16-6/20）：** 5/5 ✅
 
@@ -38,29 +38,31 @@
 
 ### 每日节奏
 
-| 日 | 选题 | 工时 |
-|:--:|------|:--:|
-| 周一 | #1 (C) + #2 (C) | 1.25h |
-| 周二 | #3 (B) | 1h |
-| 周三 | #4 (B) | 1h |
-| 周四 | #5 (B) + #6 (B) | 2.5h |
-| 周五 | #7 (A) + 外链 outreach | 2.5h |
-
-### Week 7 GEO 任务
-
-| 日 | 任务 | 说明 | 耗时 |
+| 日 | 内容选题 | GEO/外链 | 总工时 |
 |:--:|------|------|:--:|
-| **每篇新文章** | GEO citation cue | 7 篇新文章发布时加 `Data sourced from Amazon.com, June 2026` | 2min/篇 |
-| **周一** | llms.txt 存活检查 + AI 爬虫审计 | 确认 llms.txt / llms-full.txt 200 OK；检查 robots.txt 8 bot 完整 | 5min |
-| **周日** | Schema 抽样验证 | Rich Results Test 或手动抽查 2-3 页 | 10min |
+| 周一 | #1 (C) + #2 (C) | 🔴 **llms.txt 更新 + llms-full.txt 增强 + Wikidata 补全** | ~2h |
+| 周二 | #3 (B) | 新文章 citation cue | 1h |
+| 周三 | #4 (B) | 新文章 citation cue | 1h |
+| 周四 | #5 (B) + #6 (B) | 新文章 citation cue + verdict | 2.5h |
+| 周五 | #7 (A) | 外链 outreach（HARO注册+首批5 pitch） | 3h |
 
-### Week 7 GEO 待办（嵌入内容流程）
+### 🔴 Week 7 GEO 高优先（周一集中完成，~40min）
+
+| # | 任务 | 说明 | 耗时 |
+|:--:|------|------|:--:|
+| GEO-P0-1 | **llms.txt 内容更新** | 计数修正（对比 13→15 / 指南 29→31）+ URL 全部加尾斜杠 | 5min |
+| GEO-P0-2 | **llms-full.txt 增强** | 加 per-category 覆盖详情 + 最新更新日期 + 方法论段落 | 20min |
+| GEO-P0-3 | **Wikidata 属性补全** | Q140290653 补：official website / inception (2026-05-19) / description / language of work | 15min |
+
+### 🟡 Week 7 GEO 持续任务（嵌入内容流程）
 
 | # | 事项 | 说明 |
 |---|------|------|
-| GEO-1 | 新文章全部加 verdict 段落 | C 级可简短（2-3 句结论），B/A 级需完整 verdict |
-| GEO-2 | 指南页补 citation cue | 现有 31 篇指南逐一加数据来源标注——并入每周日常，每次改 3-5 篇 |
-| GEO-3 | Wikidata 验证 | 7/1 前确认 Q140290653 未被删除/合并 |
+| GEO-P1-1 | 7 篇新文章全部加 citation cue | `Data sourced from Amazon.com, June 2026` |
+| GEO-P1-2 | 新文章全部加 verdict 段落 | C 级 2-3 句结论，B/A 级需完整 verdict |
+| GEO-P1-3 | 指南页 citation cue 分批补 | 每次会话改 3-5 篇，本周目标 ~10 篇 |
+| GEO-P1-4 | Schema 抽样验证（周日） | Rich Results Test 抽查 2-3 页 |
+| GEO-P1-5 | Wikidata 存活验证 | 7/1 前确认 Q140290653 未被删除/合并 |
 
 ---
 
