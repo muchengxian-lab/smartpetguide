@@ -23,4 +23,19 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 Sitemap: https://smartpetguide.net/sitemap-index.xml

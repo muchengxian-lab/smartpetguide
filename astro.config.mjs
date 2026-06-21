@@ -38,5 +38,5 @@ export default defineConfig({
       },
     }),
   ],
-  trailingSlash: "never",
+  trailingSlash: "always",
 });
