@@ -685,4 +685,52 @@ SmartPetGuide 对应的目标：
 - 变更部署配置后立刻验证线上是否生效（响应头、新增内容）
 
 ---
+
+## 内链不对称诊断（2026-06-22，Week 6）
+
+### 发现
+全站内链结构严重不对称：
+
+| 方向 | 状态 | 缺口 |
+|------|:--:|:--:|
+| 评测 → Best/指南/对比 | ✅ Explore More 区块 | 0 |
+| Best → 评测 | ❌ 产品名为纯文本 | ~45 条 |
+| 对比 → 评测 | ❌ 产品名为纯文本 | ~30 条 |
+| 品种 → 评测 | ❌ 产品名为纯文本 | ~25 条 |
+| 指南 → 评测 | ❌ Related Resources 只链 Best/指南 | ~30 条 |
+
+总缺失约 100 条跨类型内链。评测页是核心转化页面，却是入站链接最少的类型。
+
+### 修复
+- `products.json` 新增 `reviewSlug` 字段（26 款产品）
+- Best/对比/品种三模板产品名改为条件链接
+- 抽象对比页无 reviewSlug 自动跳过
+
+---
+
+## 尾斜杠 308 重定向链（2026-06-22，Week 6）
+
+### 发现
+站内导航全部用 `/page/`，但 Astro+Vercel 配置输出 `/page`。每次内链触发 308。101 页 × 8 内链 ≈ 每次全站爬取浪费 800 次请求。属于静默泄漏——不报错不 404，但爬取效率腰斩。
+
+### 修复
+- `astro.config.mjs`：trailingSlash `"never"` → `"always"`
+- `vercel.json`：trailingSlash `false` → `true`
+- Sitemap 自动同步为带斜杠 URL
+
+### 教训
+- Astro 和 Vercel 的 trailingSlash 必须与站内链接格式三方一致
+- 新站应在索引量少时（14 页）修复，过渡代价最小
+
+---
+
+## www 子域名不解析（2026-06-22，Week 6）
+
+### 发现
+`www.smartpetguide.net` 无 DNS 响应。任何带 www 的外链全部丢失。
+
+### 修复
+`vercel.json` 添加 host-based 301 重定向（需 www 子域 DNS 指向 Vercel 才能完全生效）。
+
+---
 *每次调研后更新此文件*

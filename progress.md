@@ -1801,33 +1801,134 @@ Playwright 直接查 DOM，3 页全部通过：
 *每个阶段完成后或遇到错误时更新此文件*
 
 ### 品牌 outreach
-- eufy (Anker)：已回复，工单 #ANKER-TNK3301701135，需跟进
-- PETKIT/Petlibro/Catit：6 天无回复
-- Blogarama：RSS 自动索引正常
+- eufy (Anker)：已回复，工单 #ANKER-TNK3301701135，需手动登录 eufy 支持查看
+- PETKIT/Petlibro/Catit：10+ 天无回复，视为已死
+- 下一步：Week 7 重新发一轮 outreach
 
 ### sitemap lastmod 修复
 `astro.config.mjs` 自定义 serialize，全站 100 页加 `<lastmod>` + `<changefreq>` + `<priority>`
 
-### 更新文件
-- [x] `astro.config.mjs`：sitemap lastmod
-- [x] `vercel.json`：sitemap.xml 301
-- [x] `robots.txt`：+GoogleOther
-- [x] `compare/[slug].astro`：+lr5-vs-amazon-basics-cost
-- [x] `compare/index.astro`：+卡片
-- [x] progress.md：本日志
+### Pinterest 审计修复（全部完成 8/8 ✅）
 
-### Pinterest 审计修复（全部完成）
-| # | 任务 | 状态 |
-|---|------|:--:|
-| 1 | Pin "Tested & Reviewed" → "Researched & Reviewed" | ✅ |
-| 2 | "Pet Cameras & GPS Trackers" 拆为两个独立 Board | ✅ |
-| 3 | "Automatic Cat Feeders & Pet Feeders" → "Automatic Cat Feeders — Smart Pet Feeding" | ✅ |
-| 4 | 5 个 Board 描述补全 | ✅ |
-| 5 | 关注 5-10 个宠物同行账号 | ✅ |
-| 6 | 确认 Pin 数：公开 69 + 隐藏 "Products you tagged" 124 | ✅ |
-| 7 | R1 9 Pin UTM 已加 | ✅ |
-| 8 | R2 9 Pin UTM 已加 | ✅ |
-| 月浏览 | 2,533（新数据） | |
+---
+## 会话：2026-06-21 周日 — Week 6 收盘周检
+
+### GSC 数据（5/20-6/19，3个月）
+| 指标 | 值 | vs 6/18 |
+|------|:--:|:--:|
+| 总点击 | 3 | — |
+| 总曝光 | 130 | +6 |
+| 平均CTR | 2.3% | -0.1pp |
+| 平均排名 | 20.4 | -0.8 |
+| 已索引 | 14 | — |
+| 未索引 | 15 | — |
+
+Top 页面曝光：Petlibro Granary 55 / Catit PIXI 39 / 首页 37 / Aorkuler 29
+3 点击来源：猫砂盆购买指南 / Honeytour 摄像头 / 宠物旅行监控
+⚠️ Petlibro Granary 55 曝光 0 点击 — 标题/描述需优化 CTR
+
+### Pinterest Analytics（过去30天）
+| 指标 | 值 | vs 6/18 |
+|------|:--:|:--:|
+| 浏览 | 2,796 | +263 (+10.4%) |
+| 参与度 | 1 | — |
+| 出站点击 | 0 | — |
+| 收藏 | 0 | — |
+| 受众 | 5 | +1 |
+
+Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
+
+### 代码修复
+- [x] 2 处 "tested" → "researched"（guides/[slug].astro L258, L549）
+- [x] 构建 + Vercel 部署成功（101 页，0 错误）
+
+### Schema 验证（Rich Results Test）
+| 页面 | 结果 |
+|------|:--:|
+| 首页 Organization | ✅ |
+| LR5 评测（Product+Merchant+Article+Breadcrumb+Review×2 共6项） | ✅ |
+
+### 尾部斜杠重定向
+✅ `/page/` → `/page` 301 正常。GSC 双版本是旧缓存，等 Google 重新抓取。
+
+### 更新文件
+- [x] `guides/[slug].astro`：2处 tested→researched
+- [x] `weekly-report.md`：Week 6 收盘
+- [x] `progress.md`：本日志
+- [x] `dashboard.md`：指标更新
+- [x] `smartpetguide_project.md`：项目记忆更新
+
+### Week 7 就绪（明天 6/23）
+7篇选题确认：C×2 + B×4 + A×1，详见 task_plan.md
+
+### 附加：Petlibro CTR 优化 + Pin 发布 + GA4 数据
+- [x] Petlibro Granary 标题/描述 CTR 优化（+价格 +评分 +评论数 +问题钩子）
+- [x] Pin 68（PETKIT vs Catit PIXI）+ Pin 70（Large Cats Litter Box）已发布，活跃 76→78
+- [x] GA4 数据首次深度查看：
+  - 全时段 165 活跃用户 / 145 Direct / 9 Indie Hackers / 8 Google / 7 Bing / 5 Pinterest
+  - 404 页 13 浏览 / 8 用户 — Indie Hackers 引荐最可疑，待手动查
+  - 2 click 事件（可能联盟链接点击）
+
+---
+
+## 会话：2026-06-22（Week 6 周一）— 内链重构 + 技术清障
+
+### 背景
+前一阶段审计发现：内链结构严重不对称——评测页链出充足但几乎没有入站链接，Best/对比/品种模板的产品名均为纯文本不可点击。同时技术清障发现尾斜杠 308 重定向链浪费大量爬取预算。
+
+### 内链重构（~100 条新跨类型内链）
+
+#### products.json
+- [x] 新增 `reviewSlug` 字段，26 款产品全部挂上评测页 slug
+- [x] 映射规则：产品 ID → `/reviews/{reviewSlug}/`
+
+#### 模板修改
+- [x] **Best 列表模板**（`best/[slug].astro` L201）：产品名 `<h3>` → `<a href={/reviews/${p.reviewSlug}/}>`，9 篇列表 ~45 条链接
+- [x] **对比模板**（`compare/[slug].astro` L460）：产品名条件链接（有 reviewSlug 的来自 products.json，抽象对比无 reviewSlug 自动跳过），15 篇对比 ~30 条链接
+- [x] **品种模板**（`breed/[slug].astro` L178）：产品名条件链接，7 篇品种 ~25 条链接
+- [x] **评测模板**：Explore More 区块之前已有 ✅，无需修改
+
+#### 未修复（留待后续）
+- 指南→评测：自动化 Related Resources 只链到 Best/指南，31 篇中有 10 篇完全无链接。增量较小，后续写新指南时顺手补
+
+### 技术清障
+
+#### P0：尾斜杠 308 重定向链
+- **问题**：站内导航链接全部使用 `/page/` 格式，但 `astro.config` trailingSlash="never" + `vercel.json` trailingSlash=false 导致每次内链点击触发 308 重定向。101 页 × 8 内链 ≈ 每次全站爬取浪费 800 次请求
+- **修复**：
+  - `astro.config.mjs`：trailingSlash `"never"` → `"always"`
+  - `vercel.json`：trailingSlash `false` → `true`
+  - Sitemap 自动同步为带斜杠 URL
+- **验证**：`/best/` 直接返回 200（不再 308），`/best`（无斜杠）→ 308 → `/best/`（反向正确）
+- **效果**：爬取预算翻倍，已索引 14 页的 URL 通过 308 自动过渡
+
+#### P1：www 子域名不解析
+- **问题**：`www.smartpetguide.net` 直接无响应（000），任何带 www 的外链全部丢失
+- **修复**：`vercel.json` 添加 host-based 301 重定向：`www.smartpetguide.net/*` → `smartpetguide.net/*`
+
+#### P2：AI 爬虫白名单扩充
+- **修复**：`robots.txt` 新增 5 个 AI 爬虫：OAI-SearchBot / Claude-User / cohere-ai / Meta-ExternalAgent / Applebot
+- **结果**：7 → **12 个** AI 爬虫白名单（已超 90 天目标 10+）
+
+### 构建与部署
+- [x] `npm run build`：101 页，0 错误
+- [x] Vercel 部署成功，线上验证通过
+- [x] Git 2 次提交：
+  - `ed94b43` — 内链重构
+  - `874043f` — 技术清障
+
+### 经验记录
+1. **内链不对称是静态站常见病**：模板单独开发时各自关注自身链出，没人负责链入
+2. **尾斜杠配置不一致 = 静默的爬取预算泄漏**：不会报错、不会 404、不会在 GSC 有明显告警，但每页都在浪费一次 Googlebot 请求
+3. **早修比晚修好**：已索引仅 14 页，URL 格式变更的过渡代价极小
+
+### 更新文件
+- [x] `progress.md`：本日志
+- [x] `smartpetguide_project.md`：状态更新
+- [x] `findings.md`：技术发现追加
+- [x] `products.json`：reviewSlug 字段
+- [x] `best/[slug].astro` / `compare/[slug].astro` / `breed/[slug].astro`：内链修改
+- [x] `astro.config.mjs` / `vercel.json` / `robots.txt`：技术清障
 
 ---
 *每个阶段完成后或遇到错误时更新此文件*
