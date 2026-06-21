@@ -457,7 +457,7 @@ const productB = data.productBId ? allProducts.get(data.productBId) : data.produ
           {p.imageUrl && (
             <img src={p.imageUrl} alt={p.name} class="mb-4 h-48 w-full rounded-xl object-cover bg-sage/60" width="400" height="192" loading="lazy" decoding="async" />
           )}
-          <h2 class="font-display text-xl font-bold text-forest">{p.name}</h2>
+          {p.reviewSlug ? <h2 class="font-display text-xl font-bold text-forest"><a href={`/reviews/${p.reviewSlug}/`} class="hover:text-honey transition-colors">{p.name}</a></h2> : <h2 class="font-display text-xl font-bold text-forest">{p.name}</h2>}
           <p class="text-sm text-bark-muted">by {p.brand}</p>
           <p class="mt-2 font-display text-3xl font-bold text-forest">{typeof p.price === 'number' ? '$' + p.price : p.price}</p>
           {typeof p.price === 'number' && <p class="text-sm text-bark-muted">~${Math.round(p.price / 36)}/mo over 3 years</p>}

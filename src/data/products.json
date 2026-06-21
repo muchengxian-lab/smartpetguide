@@ -9,13 +9,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/71lWemNCaBL._AC_SL1500_.jpg",
       "rating": 4.6,
       "reviewCount": 850,
-      "features": ["WasteID #1 vs #2 detection", "Full-color LCD screen", "QuietSift under 55dB", "5-cat weight recognition", "Works on carpet"],
-      "pros": ["WasteID health tracking", "Larger interior than LR4", "No carpet kit needed", "Up to 5 cats"],
-      "cons": ["$799 price", "WiFi 2.4GHz only", "New, fewer reviews than LR4"],
-      "bestFor": ["Multi-cat households", "Health-conscious owners", "Large cat breeds"],
+      "features": [
+        "WasteID #1 vs #2 detection",
+        "Full-color LCD screen",
+        "QuietSift under 55dB",
+        "5-cat weight recognition",
+        "Works on carpet"
+      ],
+      "pros": [
+        "WasteID health tracking",
+        "Larger interior than LR4",
+        "No carpet kit needed",
+        "Up to 5 cats"
+      ],
+      "cons": [
+        "$799 price",
+        "WiFi 2.4GHz only",
+        "New, fewer reviews than LR4"
+      ],
+      "bestFor": [
+        "Multi-cat households",
+        "Health-conscious owners",
+        "Large cat breeds"
+      ],
       "category": "litterBox",
       "weight": 4.1,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "litter-robot-5-review"
     },
     {
       "id": "litter-robot-4",
@@ -26,13 +46,32 @@
       "imageUrl": "https://m.media-amazon.com/images/I/71lWemNCaBL._AC_SL1500_.jpg",
       "rating": 4.5,
       "reviewCount": 12500,
-      "features": ["Automatic sifting", "App control", "Multi-cat compatible", "Odor control", "Waste drawer indicator"],
-      "pros": ["Best-in-class odor control", "Large waste drawer", "Excellent app", "Works for up to 4 cats"],
-      "cons": ["Expensive", "Large footprint", "Requires proprietary liners"],
-      "bestFor": ["Multi-cat households", "Owners who want the best"],
+      "features": [
+        "Automatic sifting",
+        "App control",
+        "Multi-cat compatible",
+        "Odor control",
+        "Waste drawer indicator"
+      ],
+      "pros": [
+        "Best-in-class odor control",
+        "Large waste drawer",
+        "Excellent app",
+        "Works for up to 4 cats"
+      ],
+      "cons": [
+        "Expensive",
+        "Large footprint",
+        "Requires proprietary liners"
+      ],
+      "bestFor": [
+        "Multi-cat households",
+        "Owners who want the best"
+      ],
       "category": "litterBox",
       "weight": 3.6,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "litter-robot-4-review"
     },
     {
       "id": "leos-loo-too",
@@ -43,13 +82,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61uQYXU8JHL._AC_SL1500_.jpg",
       "rating": 4.3,
       "reviewCount": 5800,
-      "features": ["UV sterilization", "App control", "Voice control (Alexa/Google)", "Safety sensors", "Quiet operation"],
-      "pros": ["UV sterilization built-in", "Works with voice assistants", "Quieter than competitors", "Sleek design"],
-      "cons": ["Smaller waste drawer", "App can be buggy", "Not ideal for large cats"],
-      "bestFor": ["Single-cat homes", "Tech enthusiasts", "Small spaces"],
+      "features": [
+        "UV sterilization",
+        "App control",
+        "Voice control (Alexa/Google)",
+        "Safety sensors",
+        "Quiet operation"
+      ],
+      "pros": [
+        "UV sterilization built-in",
+        "Works with voice assistants",
+        "Quieter than competitors",
+        "Sleek design"
+      ],
+      "cons": [
+        "Smaller waste drawer",
+        "App can be buggy",
+        "Not ideal for large cats"
+      ],
+      "bestFor": [
+        "Single-cat homes",
+        "Tech enthusiasts",
+        "Small spaces"
+      ],
       "category": "litterBox",
       "weight": 2.8,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "leos-loo-too-review"
     },
     {
       "id": "petsafe-scoopfree",
@@ -60,13 +119,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/8120mv8rApL._AC_SL1500_.jpg",
       "rating": 4.2,
       "reviewCount": 9200,
-      "features": ["Crystal litter system", "App alerts", "Disposable trays", "Health monitoring", "Motion sensors"],
-      "pros": ["Affordable entry price", "Crystal litter controls odors", "Disposable trays = easy cleanup", "Health tracking feature"],
-      "cons": ["Proprietary trays are expensive", "Crystal litter not for all cats", "No sifting mechanism"],
-      "bestFor": ["Budget-conscious buyers", "First-time automatic box owners", "Small to medium cats"],
+      "features": [
+        "Crystal litter system",
+        "App alerts",
+        "Disposable trays",
+        "Health monitoring",
+        "Motion sensors"
+      ],
+      "pros": [
+        "Affordable entry price",
+        "Crystal litter controls odors",
+        "Disposable trays = easy cleanup",
+        "Health tracking feature"
+      ],
+      "cons": [
+        "Proprietary trays are expensive",
+        "Crystal litter not for all cats",
+        "No sifting mechanism"
+      ],
+      "bestFor": [
+        "Budget-conscious buyers",
+        "First-time automatic box owners",
+        "Small to medium cats"
+      ],
       "category": "litterBox",
       "weight": 3.2,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "petsafe-scoopfree-review"
     },
     {
       "id": "catlink-young",
@@ -77,13 +156,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61gx2nJZKFL._AC_SL1500_.jpg",
       "rating": 4.1,
       "reviewCount": 3400,
-      "features": ["App control", "Multi-cat recognition", "Weight sensors", "Safety protection", "13L waste bin"],
-      "pros": ["Multi-cat recognition (by weight)", "Large waste container", "Good value for features", "Safety-focused design"],
-      "cons": ["Setup can be complex", "App translations imperfect", "Customer support limited"],
-      "bestFor": ["Multi-cat homes on a budget", "Data-driven pet owners", "Those wanting cat health insights"],
+      "features": [
+        "App control",
+        "Multi-cat recognition",
+        "Weight sensors",
+        "Safety protection",
+        "13L waste bin"
+      ],
+      "pros": [
+        "Multi-cat recognition (by weight)",
+        "Large waste container",
+        "Good value for features",
+        "Safety-focused design"
+      ],
+      "cons": [
+        "Setup can be complex",
+        "App translations imperfect",
+        "Customer support limited"
+      ],
+      "bestFor": [
+        "Multi-cat homes on a budget",
+        "Data-driven pet owners",
+        "Those wanting cat health insights"
+      ],
       "category": "litterBox",
-      "weight": 3.0,
-      "warranty": "1 year"
+      "weight": 3,
+      "warranty": "1 year",
+      "reviewSlug": "catlink-young-review"
     },
     {
       "id": "elspet-pro",
@@ -92,15 +191,35 @@
       "price": 349,
       "amazonUrl": "https://www.amazon.com/dp/B0F6717829?tag=smartpetgui0a-20",
       "imageUrl": "https://m.media-amazon.com/images/I/71JpCmmXu7L._AC_SL1500_.jpg",
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 2100,
-      "features": ["App control", "Odor neutralizer", "Safety sensors", "Quiet motor", "Easy disassembly"],
-      "pros": ["Affordable mid-range option", "Easy to clean", "Good safety features", "Decent odor control"],
-      "cons": ["Newer brand (less track record)", "App less polished", "Smaller community/support"],
-      "bestFor": ["Value seekers", "One or two cats", "First-time buyers"],
+      "features": [
+        "App control",
+        "Odor neutralizer",
+        "Safety sensors",
+        "Quiet motor",
+        "Easy disassembly"
+      ],
+      "pros": [
+        "Affordable mid-range option",
+        "Easy to clean",
+        "Good safety features",
+        "Decent odor control"
+      ],
+      "cons": [
+        "Newer brand (less track record)",
+        "App less polished",
+        "Smaller community/support"
+      ],
+      "bestFor": [
+        "Value seekers",
+        "One or two cats",
+        "First-time buyers"
+      ],
       "category": "litterBox",
       "weight": 2.5,
-      "warranty": "18 months"
+      "warranty": "18 months",
+      "reviewSlug": "elspet-pro-review"
     },
     {
       "id": "amazon-basics-litter-box",
@@ -109,15 +228,42 @@
       "price": 209,
       "amazonUrl": "https://www.amazon.com/dp/B0FZQ8BTYG?tag=smartpetgui0a-20",
       "imageUrl": "https://m.media-amazon.com/images/I/511qt2xxHTL._AC_SL1500_.jpg",
-      "rating": 5.0,
+      "rating": 5,
       "reviewCount": 0,
-      "features": ["Patented S-shaped screen", "Odorless deodorizing spray", "15 safety sensors", "≤40dB quiet", "3.2gal waste bin (15 days)", "Removable washable liner", "3.3-22lb cats"],
-      "pros": ["Lowest price of any auto litter box ($209)", "Amazon Basics brand = trusted", "15 sensors for safety", "Deodorizing spray built-in", "Washable liner (no disposable trays needed)", "Quiet at ≤40dB"],
-      "cons": ["Brand new — no long-term reliability data", "0 reviews (untested by real users)", "No app/WiFi connectivity", "No multi-cat weight recognition", "Crystal litter not compatible"],
-      "bestFor": ["Budget-conscious first-time buyers", "Single-cat homes", "Those who want Amazon brand reliability", "Quiet home offices or bedrooms"],
+      "features": [
+        "Patented S-shaped screen",
+        "Odorless deodorizing spray",
+        "15 safety sensors",
+        "≤40dB quiet",
+        "3.2gal waste bin (15 days)",
+        "Removable washable liner",
+        "3.3-22lb cats"
+      ],
+      "pros": [
+        "Lowest price of any auto litter box ($209)",
+        "Amazon Basics brand = trusted",
+        "15 sensors for safety",
+        "Deodorizing spray built-in",
+        "Washable liner (no disposable trays needed)",
+        "Quiet at ≤40dB"
+      ],
+      "cons": [
+        "Brand new — no long-term reliability data",
+        "0 reviews (untested by real users)",
+        "No app/WiFi connectivity",
+        "No multi-cat weight recognition",
+        "Crystal litter not compatible"
+      ],
+      "bestFor": [
+        "Budget-conscious first-time buyers",
+        "Single-cat homes",
+        "Those who want Amazon brand reliability",
+        "Quiet home offices or bedrooms"
+      ],
       "category": "litterBox",
       "weight": 3.5,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "amazon-basics-litter-box-review"
     }
   ],
   "feeders": [
@@ -130,13 +276,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61ClYCLCmEL._AC_SL1500_.jpg",
       "rating": 4.3,
       "reviewCount": 15200,
-      "features": ["App control", "6L capacity", "Voice recording", "Dual power", "10 meals/day"],
-      "pros": ["Great value for features", "Reliable Wi-Fi connection", "Voice recording for pets", "Battery backup included"],
-      "cons": ["No camera", "App design feels dated", "Portion sizes can be inconsistent"],
-      "bestFor": ["Budget-minded owners", "Dogs and cats", "Daily scheduled feeding"],
+      "features": [
+        "App control",
+        "6L capacity",
+        "Voice recording",
+        "Dual power",
+        "10 meals/day"
+      ],
+      "pros": [
+        "Great value for features",
+        "Reliable Wi-Fi connection",
+        "Voice recording for pets",
+        "Battery backup included"
+      ],
+      "cons": [
+        "No camera",
+        "App design feels dated",
+        "Portion sizes can be inconsistent"
+      ],
+      "bestFor": [
+        "Budget-minded owners",
+        "Dogs and cats",
+        "Daily scheduled feeding"
+      ],
       "category": "feeder",
       "weight": 2.1,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "wopet-automatic-feeder-review"
     },
     {
       "id": "petlibro-granary",
@@ -147,13 +313,34 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61kcCqLmzuL._AC_SL1500_.jpg",
       "rating": 4.5,
       "reviewCount": 8700,
-      "features": ["1080p camera", "App control", "3L/5L options", "Two-way audio", "Night vision", "Motion alerts"],
-      "pros": ["Built-in camera = 2 devices in 1", "Excellent app experience", "Night vision quality", "Motion detection alerts"],
-      "cons": ["Smaller capacity than some", "Premium price point", "Camera-only view (no pan/tilt)"],
-      "bestFor": ["Pet owners who want visual check-ins", "Small to medium pets", "Anxious pet parents"],
+      "features": [
+        "1080p camera",
+        "App control",
+        "3L/5L options",
+        "Two-way audio",
+        "Night vision",
+        "Motion alerts"
+      ],
+      "pros": [
+        "Built-in camera = 2 devices in 1",
+        "Excellent app experience",
+        "Night vision quality",
+        "Motion detection alerts"
+      ],
+      "cons": [
+        "Smaller capacity than some",
+        "Premium price point",
+        "Camera-only view (no pan/tilt)"
+      ],
+      "bestFor": [
+        "Pet owners who want visual check-ins",
+        "Small to medium pets",
+        "Anxious pet parents"
+      ],
       "category": "feeder",
       "weight": 1.8,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "petlibro-granary-review"
     },
     {
       "id": "dogness-mini",
@@ -164,13 +351,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61-Hfz0M2mL._AC_SL1500_.jpg",
       "rating": 4.2,
       "reviewCount": 4200,
-      "features": ["App control", "3.5L capacity", "Desiccant bag slot", "Stainless steel bowl", "Anti-clog design"],
-      "pros": ["Compact and space-saving", "Stainless steel bowl (hygienic)", "Anti-clog mechanism works well", "Desiccant keeps food fresh"],
-      "cons": ["No camera option", "Smaller capacity", "App has occasional connection issues"],
-      "bestFor": ["Small spaces", "Single pet households", "Short trips (2-3 days)"],
+      "features": [
+        "App control",
+        "3.5L capacity",
+        "Desiccant bag slot",
+        "Stainless steel bowl",
+        "Anti-clog design"
+      ],
+      "pros": [
+        "Compact and space-saving",
+        "Stainless steel bowl (hygienic)",
+        "Anti-clog mechanism works well",
+        "Desiccant keeps food fresh"
+      ],
+      "cons": [
+        "No camera option",
+        "Smaller capacity",
+        "App has occasional connection issues"
+      ],
+      "bestFor": [
+        "Small spaces",
+        "Single pet households",
+        "Short trips (2-3 days)"
+      ],
       "category": "feeder",
       "weight": 1.5,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "dogness-mini-smart-feeder-review"
     },
     {
       "id": "petkit-fresh-element",
@@ -181,13 +388,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61jOBxA46zL._AC_SL1500_.jpg",
       "rating": 4.4,
       "reviewCount": 6100,
-      "features": ["App control", "4L capacity", "Rotary sealing", "Detachable parts", "Low-food alert"],
-      "pros": ["Excellent food freshness system", "Easy to disassemble and clean", "Sleek modern design", "Reliable Wi-Fi"],
-      "cons": ["No camera", "Slightly noisy motor", "Only for dry kibble"],
-      "bestFor": ["Design-conscious owners", "Food freshness priority", "Medium dogs and cats"],
+      "features": [
+        "App control",
+        "4L capacity",
+        "Rotary sealing",
+        "Detachable parts",
+        "Low-food alert"
+      ],
+      "pros": [
+        "Excellent food freshness system",
+        "Easy to disassemble and clean",
+        "Sleek modern design",
+        "Reliable Wi-Fi"
+      ],
+      "cons": [
+        "No camera",
+        "Slightly noisy motor",
+        "Only for dry kibble"
+      ],
+      "bestFor": [
+        "Design-conscious owners",
+        "Food freshness priority",
+        "Medium dogs and cats"
+      ],
       "category": "feeder",
-      "weight": 2.0,
-      "warranty": "1 year"
+      "weight": 2,
+      "warranty": "1 year",
+      "reviewSlug": "petkit-fresh-element-review"
     }
   ],
   "waterFountains": [
@@ -200,13 +427,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61LhoZtKrbL._AC_SL1500_.jpg",
       "rating": 4.4,
       "reviewCount": 7200,
-      "features": ["Smart pump", "2L capacity", "Multi-layer filtration", "Low noise (30dB)", "Filter replacement reminder"],
-      "pros": ["Very quiet operation", "Smart filter replacement alerts", "Easy to clean", "Attractive design"],
-      "cons": ["Small capacity (refill often)", "Proprietary filters", "No app for basic model"],
-      "bestFor": ["Apartments/quiet homes", "One or two cats", "Design-focused buyers"],
+      "features": [
+        "Smart pump",
+        "2L capacity",
+        "Multi-layer filtration",
+        "Low noise (30dB)",
+        "Filter replacement reminder"
+      ],
+      "pros": [
+        "Very quiet operation",
+        "Smart filter replacement alerts",
+        "Easy to clean",
+        "Attractive design"
+      ],
+      "cons": [
+        "Small capacity (refill often)",
+        "Proprietary filters",
+        "No app for basic model"
+      ],
+      "bestFor": [
+        "Apartments/quiet homes",
+        "One or two cats",
+        "Design-focused buyers"
+      ],
       "category": "fountain",
-      "weight": 1.0,
-      "warranty": "1 year"
+      "weight": 1,
+      "warranty": "1 year",
+      "reviewSlug": "petkit-eversweet-review"
     },
     {
       "id": "catit-pixi",
@@ -217,13 +464,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/517Cu2Fv22L._AC_SL1500_.jpg",
       "rating": 4.2,
       "reviewCount": 3800,
-      "features": ["App monitoring", "3L capacity", "Ergonomic drinking heights", "Filter indicator", "Customizable LED"],
-      "pros": ["App tracks water intake", "Multiple drinking heights", "Fun LED color options", "Good capacity"],
-      "cons": ["LED feature gimmicky for some", "App only for monitoring", "Filters need frequent replacement"],
-      "bestFor": ["Cat owners tracking health", "Multi-cat homes", "Those wanting intake data"],
+      "features": [
+        "App monitoring",
+        "3L capacity",
+        "Ergonomic drinking heights",
+        "Filter indicator",
+        "Customizable LED"
+      ],
+      "pros": [
+        "App tracks water intake",
+        "Multiple drinking heights",
+        "Fun LED color options",
+        "Good capacity"
+      ],
+      "cons": [
+        "LED feature gimmicky for some",
+        "App only for monitoring",
+        "Filters need frequent replacement"
+      ],
+      "bestFor": [
+        "Cat owners tracking health",
+        "Multi-cat homes",
+        "Those wanting intake data"
+      ],
       "category": "fountain",
       "weight": 1.3,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "catit-pixi-fountain-review"
     },
     {
       "id": "pioneer-pet-raindrop",
@@ -234,13 +501,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61phQqywloL._AC_SL1500_.jpg",
       "rating": 4.3,
       "reviewCount": 18500,
-      "features": ["Stainless steel", "60oz capacity", "Replaceable charcoal filter", "Circulating flow", "Dishwasher safe"],
-      "pros": ["Budget-friendly classic", "Stainless steel (hygienic)", "Dishwasher safe", "Very quiet pump"],
-      "cons": ["No smart features", "No app connectivity", "Round shape uses counter space"],
-      "bestFor": ["Budget-first buyers", "Traditional aesthetic", "Cats who prefer still water"],
+      "features": [
+        "Stainless steel",
+        "60oz capacity",
+        "Replaceable charcoal filter",
+        "Circulating flow",
+        "Dishwasher safe"
+      ],
+      "pros": [
+        "Budget-friendly classic",
+        "Stainless steel (hygienic)",
+        "Dishwasher safe",
+        "Very quiet pump"
+      ],
+      "cons": [
+        "No smart features",
+        "No app connectivity",
+        "Round shape uses counter space"
+      ],
+      "bestFor": [
+        "Budget-first buyers",
+        "Traditional aesthetic",
+        "Cats who prefer still water"
+      ],
       "category": "fountain",
-      "weight": 1.0,
-      "warranty": "1 year"
+      "weight": 1,
+      "warranty": "1 year",
+      "reviewSlug": "pioneer-pet-raindrop-review"
     },
     {
       "id": "homerunpet-wireless",
@@ -251,13 +538,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/51W05+yI4OL._AC_SL1373_.jpg",
       "rating": 4.2,
       "reviewCount": 2800,
-      "features": ["Battery-powered pump", "2L capacity", "Motion sensor", "Multi-layer filter", "USB-C charging"],
-      "pros": ["Wireless (no cords near water)", "Motion sensor saves battery", "USB-C rechargeable", "Very affordable"],
-      "cons": ["Small 2L capacity", "Battery needs weekly charging", "Newer brand (less track record)"],
-      "bestFor": ["Cord-free setups", "Small apartments", "Budget smart fountain buyers"],
+      "features": [
+        "Battery-powered pump",
+        "2L capacity",
+        "Motion sensor",
+        "Multi-layer filter",
+        "USB-C charging"
+      ],
+      "pros": [
+        "Wireless (no cords near water)",
+        "Motion sensor saves battery",
+        "USB-C rechargeable",
+        "Very affordable"
+      ],
+      "cons": [
+        "Small 2L capacity",
+        "Battery needs weekly charging",
+        "Newer brand (less track record)"
+      ],
+      "bestFor": [
+        "Cord-free setups",
+        "Small apartments",
+        "Budget smart fountain buyers"
+      ],
       "category": "fountain",
       "weight": 0.8,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "homerunpet-wireless-review"
     },
     {
       "id": "yeapaw-steel-fountain",
@@ -268,13 +575,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/71z4mT9wBXL._AC_SL1500_.jpg",
       "rating": 4.3,
       "reviewCount": 1200,
-      "features": ["Stainless steel buckets & bowl", "Pumpless design", "2.5L capacity", "Wireless", "Ultra-quiet"],
-      "pros": ["100% stainless steel (no plastic contact)", "Pumpless = virtually silent", "Wireless design", "Easy to disassemble and clean"],
-      "cons": ["Expensive at $93", "Small 2.5L capacity", "Newer brand"],
-      "bestFor": ["Hygiene-focused owners", "Quiet homes", "Cats who prefer steel over plastic"],
+      "features": [
+        "Stainless steel buckets & bowl",
+        "Pumpless design",
+        "2.5L capacity",
+        "Wireless",
+        "Ultra-quiet"
+      ],
+      "pros": [
+        "100% stainless steel (no plastic contact)",
+        "Pumpless = virtually silent",
+        "Wireless design",
+        "Easy to disassemble and clean"
+      ],
+      "cons": [
+        "Expensive at $93",
+        "Small 2.5L capacity",
+        "Newer brand"
+      ],
+      "bestFor": [
+        "Hygiene-focused owners",
+        "Quiet homes",
+        "Cats who prefer steel over plastic"
+      ],
       "category": "fountain",
       "weight": 1.5,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "yeapaw-steel-fountain-review"
     },
     {
       "id": "kittyspout-steel",
@@ -285,13 +612,33 @@
       "imageUrl": "https://m.media-amazon.com/images/I/51QoDNga2BL._AC_SL1080_.jpg",
       "rating": 4.3,
       "reviewCount": 800,
-      "features": ["Stainless steel body", "Quiet pump", "Dishwasher safe", "Circulating flow", "Replaceable filter"],
-      "pros": ["Affordable at $50", "Fully dishwasher safe", "Good middle-ground capacity", "Solid 4.3★ rating"],
-      "cons": ["Wired (not cordless)", "Basic filtration", "No smart features"],
-      "bestFor": ["Mid-budget buyers", "Dishwasher owners", "Simplicity-first buyers"],
+      "features": [
+        "Stainless steel body",
+        "Quiet pump",
+        "Dishwasher safe",
+        "Circulating flow",
+        "Replaceable filter"
+      ],
+      "pros": [
+        "Affordable at $50",
+        "Fully dishwasher safe",
+        "Good middle-ground capacity",
+        "Solid 4.3★ rating"
+      ],
+      "cons": [
+        "Wired (not cordless)",
+        "Basic filtration",
+        "No smart features"
+      ],
+      "bestFor": [
+        "Mid-budget buyers",
+        "Dishwasher owners",
+        "Simplicity-first buyers"
+      ],
       "category": "fountain",
       "weight": 1.2,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "kittyspout-steel-fountain-review"
     }
   ],
   "cameras": [
@@ -304,13 +651,34 @@
       "imageUrl": "https://m.media-amazon.com/images/I/616wRFOTA5L._AC_SL1500_.jpg",
       "rating": 4.4,
       "reviewCount": 9800,
-      "features": ["360° pan/tilt", "Treat tossing", "1080p camera", "Bark alert", "Two-way audio", "Smart alerts"],
-      "pros": ["Treat tossing = interactive fun", "360° view covers whole room", "Bark alerts are reliable", "Dog-specific features"],
-      "cons": ["No feeding schedule (cam only)", "Treat capacity limited", "Premium price for camera-only"],
-      "bestFor": ["Dog owners (especially anxious breeds)", "Those wanting to interact remotely", "Separation anxiety management"],
+      "features": [
+        "360° pan/tilt",
+        "Treat tossing",
+        "1080p camera",
+        "Bark alert",
+        "Two-way audio",
+        "Smart alerts"
+      ],
+      "pros": [
+        "Treat tossing = interactive fun",
+        "360° view covers whole room",
+        "Bark alerts are reliable",
+        "Dog-specific features"
+      ],
+      "cons": [
+        "No feeding schedule (cam only)",
+        "Treat capacity limited",
+        "Premium price for camera-only"
+      ],
+      "bestFor": [
+        "Dog owners (especially anxious breeds)",
+        "Those wanting to interact remotely",
+        "Separation anxiety management"
+      ],
       "category": "camera",
       "weight": 1.2,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "furbo-360-camera-review"
     },
     {
       "id": "petcube-bites-2",
@@ -321,13 +689,34 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61ukxo--8rL._AC_SL1500_.jpg",
       "rating": 4.3,
       "reviewCount": 6200,
-      "features": ["1080p camera", "Treat tossing", "Two-way audio", "160° wide angle", "Alexa built-in", "Smart alerts"],
-      "pros": ["Alexa built right in", "Wide-angle lens covers more", "Treat tossing is a hit with dogs", "Sleek design fits home decor"],
-      "cons": ["Most expensive option ($249)", "No pan/tilt (fixed wide angle)", "Treat mechanism can jam with large treats"],
-      "bestFor": ["Alexa smart home users", "Dog owners wanting treat interaction", "Living room setups"],
+      "features": [
+        "1080p camera",
+        "Treat tossing",
+        "Two-way audio",
+        "160° wide angle",
+        "Alexa built-in",
+        "Smart alerts"
+      ],
+      "pros": [
+        "Alexa built right in",
+        "Wide-angle lens covers more",
+        "Treat tossing is a hit with dogs",
+        "Sleek design fits home decor"
+      ],
+      "cons": [
+        "Most expensive option ($249)",
+        "No pan/tilt (fixed wide angle)",
+        "Treat mechanism can jam with large treats"
+      ],
+      "bestFor": [
+        "Alexa smart home users",
+        "Dog owners wanting treat interaction",
+        "Living room setups"
+      ],
       "category": "camera",
-      "weight": 1.0,
-      "warranty": "1 year"
+      "weight": 1,
+      "warranty": "1 year",
+      "reviewSlug": "petcube-bites-2-review"
     },
     {
       "id": "eufy-pet-cam",
@@ -338,13 +727,34 @@
       "imageUrl": "https://m.media-amazon.com/images/I/51RAiKC4hgL._AC_SL1500_.jpg",
       "rating": 4.2,
       "reviewCount": 3400,
-      "features": ["2K resolution", "360° pan/tilt", "Motion tracking", "Two-way audio", "No subscription needed", "Local storage"],
-      "pros": ["No monthly subscription", "Sharper 2K video", "Local SD card storage", "Auto motion tracking"],
-      "cons": ["No treat tossing", "Not pet-specific features", "App less polished than Furbo"],
-      "bestFor": ["Privacy-conscious owners", "Those avoiding subscriptions", "General monitoring needs"],
+      "features": [
+        "2K resolution",
+        "360° pan/tilt",
+        "Motion tracking",
+        "Two-way audio",
+        "No subscription needed",
+        "Local storage"
+      ],
+      "pros": [
+        "No monthly subscription",
+        "Sharper 2K video",
+        "Local SD card storage",
+        "Auto motion tracking"
+      ],
+      "cons": [
+        "No treat tossing",
+        "Not pet-specific features",
+        "App less polished than Furbo"
+      ],
+      "bestFor": [
+        "Privacy-conscious owners",
+        "Those avoiding subscriptions",
+        "General monitoring needs"
+      ],
       "category": "camera",
       "weight": 0.8,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "eufy-pet-camera-review"
     },
     {
       "id": "wopet-camera",
@@ -353,15 +763,36 @@
       "price": 99,
       "amazonUrl": "https://www.amazon.com/dp/B0CXPMY2YK?tag=smartpetgui0a-20",
       "imageUrl": "https://m.media-amazon.com/images/I/61x4-PP+kcL._AC_SL1500_.jpg",
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 2800,
-      "features": ["1080p camera", "Treat tossing", "Two-way audio", "Night vision", "App control", "Motion alerts"],
-      "pros": ["Most affordable treat camera", "Treat tossing at budget price", "Good night vision", "Decent app"],
-      "cons": ["No pan/tilt", "Treat mechanism less reliable", "Build quality feels cheaper"],
-      "bestFor": ["Budget treat camera buyers", "First-time pet cam owners", "Single-room monitoring"],
+      "features": [
+        "1080p camera",
+        "Treat tossing",
+        "Two-way audio",
+        "Night vision",
+        "App control",
+        "Motion alerts"
+      ],
+      "pros": [
+        "Most affordable treat camera",
+        "Treat tossing at budget price",
+        "Good night vision",
+        "Decent app"
+      ],
+      "cons": [
+        "No pan/tilt",
+        "Treat mechanism less reliable",
+        "Build quality feels cheaper"
+      ],
+      "bestFor": [
+        "Budget treat camera buyers",
+        "First-time pet cam owners",
+        "Single-room monitoring"
+      ],
       "category": "camera",
       "weight": 0.9,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "wopet-camera-review"
     },
     {
       "id": "xpai-4k-camera",
@@ -372,13 +803,36 @@
       "imageUrl": "https://m.media-amazon.com/images/I/71cqbYzeMhL._AC_SL1500_.jpg",
       "rating": 4.4,
       "reviewCount": 1500,
-      "features": ["4K UHD video", "64GB built-in storage", "No subscription", "Pan/tilt", "Two-way audio", "Night vision"],
-      "pros": ["4K resolution at $43 is unbeatable", "64GB built-in storage included", "No subscription — ever", "Works as baby monitor too"],
-      "cons": ["Not pet-specific (general security cam)", "No treat tossing", "App is basic", "Newer brand"],
-      "bestFor": ["Budget-conscious owners", "General pet monitoring", "Those who want 4K quality", "Multi-purpose home use"],
+      "features": [
+        "4K UHD video",
+        "64GB built-in storage",
+        "No subscription",
+        "Pan/tilt",
+        "Two-way audio",
+        "Night vision"
+      ],
+      "pros": [
+        "4K resolution at $43 is unbeatable",
+        "64GB built-in storage included",
+        "No subscription — ever",
+        "Works as baby monitor too"
+      ],
+      "cons": [
+        "Not pet-specific (general security cam)",
+        "No treat tossing",
+        "App is basic",
+        "Newer brand"
+      ],
+      "bestFor": [
+        "Budget-conscious owners",
+        "General pet monitoring",
+        "Those who want 4K quality",
+        "Multi-purpose home use"
+      ],
       "category": "camera",
       "weight": 0.3,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "xpai-4k-camera-review"
     },
     {
       "id": "honeytour-robot-cam",
@@ -389,13 +843,37 @@
       "imageUrl": "https://m.media-amazon.com/images/I/61xbG-Y7M9L._AC_SL1500_.jpg",
       "rating": 4.7,
       "reviewCount": 320,
-      "features": ["Movable robot — drives around", "1080p camera", "App remote control", "Night vision", "Two-way audio", "No subscription"],
-      "pros": ["Actually drives around the house", "Can follow your pet room to room", "Excellent 4.7★ rating", "No subscription required", "Fun interactive experience"],
-      "cons": ["Expensive ($160)", "Small brand (limited support)", "Low review count (new product)", "No treat tossing"],
-      "bestFor": ["Multi-room homes", "Interactive play enthusiasts", "Cat owners (cats love chasing it)", "Tech-forward pet parents"],
+      "features": [
+        "Movable robot — drives around",
+        "1080p camera",
+        "App remote control",
+        "Night vision",
+        "Two-way audio",
+        "No subscription"
+      ],
+      "pros": [
+        "Actually drives around the house",
+        "Can follow your pet room to room",
+        "Excellent 4.7★ rating",
+        "No subscription required",
+        "Fun interactive experience"
+      ],
+      "cons": [
+        "Expensive ($160)",
+        "Small brand (limited support)",
+        "Low review count (new product)",
+        "No treat tossing"
+      ],
+      "bestFor": [
+        "Multi-room homes",
+        "Interactive play enthusiasts",
+        "Cat owners (cats love chasing it)",
+        "Tech-forward pet parents"
+      ],
       "category": "camera",
       "weight": 0.5,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "honeytour-robot-camera-review"
     }
   ],
   "gpsTrackers": [
@@ -406,15 +884,35 @@
       "price": 79,
       "amazonUrl": "https://www.amazon.com/dp/B0D6Z4L6BW?tag=smartpetgui0a-20",
       "imageUrl": "https://m.media-amazon.com/images/I/81-GYvLKAJL._AC_SL1500_.jpg",
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 8900,
-      "features": ["Live GPS tracking", "Virtual fence", "Activity monitoring", "Worldwide coverage", "Waterproof"],
-      "pros": ["Works globally (170+ countries)", "Lowest upfront cost", "Virtual fence works well", "Lightweight design"],
-      "cons": ["Subscription required ($5-13/mo)", "Battery lasts 2-5 days", "Less durable than premium options"],
-      "bestFor": ["Budget-conscious trackers", "Travel with pets", "Cats and small dogs"],
+      "features": [
+        "Live GPS tracking",
+        "Virtual fence",
+        "Activity monitoring",
+        "Worldwide coverage",
+        "Waterproof"
+      ],
+      "pros": [
+        "Works globally (170+ countries)",
+        "Lowest upfront cost",
+        "Virtual fence works well",
+        "Lightweight design"
+      ],
+      "cons": [
+        "Subscription required ($5-13/mo)",
+        "Battery lasts 2-5 days",
+        "Less durable than premium options"
+      ],
+      "bestFor": [
+        "Budget-conscious trackers",
+        "Travel with pets",
+        "Cats and small dogs"
+      ],
       "category": "tracker",
       "weight": 0.026,
-      "warranty": "2 years"
+      "warranty": "2 years",
+      "reviewSlug": "tractive-gps-review"
     },
     {
       "id": "nofee-gps-tracker",
@@ -425,13 +923,35 @@
       "imageUrl": "https://m.media-amazon.com/images/I/717YO0IVoOL._AC_SL1500_.jpg",
       "rating": 4.2,
       "reviewCount": 2100,
-      "features": ["Real-time GPS tracking", "No SIM card needed", "No monthly fee", "Smart collar attachment", "Virtual fence"],
-      "pros": ["Truly no monthly fee", "Incredibly affordable ($33)", "Decent app for the price", "Compact and lightweight"],
-      "cons": ["Limited range vs premium", "Build quality is budget-level", "Battery lasts only 1-2 days", "App has occasional glitches"],
-      "bestFor": ["Budget-first owners", "Those sick of subscriptions", "Small to medium dogs", "Backup tracker"],
+      "features": [
+        "Real-time GPS tracking",
+        "No SIM card needed",
+        "No monthly fee",
+        "Smart collar attachment",
+        "Virtual fence"
+      ],
+      "pros": [
+        "Truly no monthly fee",
+        "Incredibly affordable ($33)",
+        "Decent app for the price",
+        "Compact and lightweight"
+      ],
+      "cons": [
+        "Limited range vs premium",
+        "Build quality is budget-level",
+        "Battery lasts only 1-2 days",
+        "App has occasional glitches"
+      ],
+      "bestFor": [
+        "Budget-first owners",
+        "Those sick of subscriptions",
+        "Small to medium dogs",
+        "Backup tracker"
+      ],
       "category": "tracker",
       "weight": 0.02,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "nofee-gps-tracker-review"
     },
     {
       "id": "aorkuler-gps",
@@ -440,15 +960,38 @@
       "price": 229,
       "amazonUrl": "https://www.amazon.com/dp/B0BJ84HZ83?tag=smartpetgui0a-20",
       "imageUrl": "https://m.media-amazon.com/images/I/51ON3HaJpbL._AC_SL1200_.jpg",
-      "rating": 4.0,
+      "rating": 4,
       "reviewCount": 480,
-      "features": ["No phone required", "No subscription", "3.5 mile range", "Real-time direction & distance", "Built-in display on controller"],
-      "pros": ["Zero subscription — ever", "Works without cell signal", "No phone needed (handheld controller)", "True off-grid capability", "Direction + distance display"],
-      "cons": ["Expensive upfront ($229)", "Limited 3.5 mile range", "Bulky compared to cellular trackers", "Smaller brand (less support)"],
-      "bestFor": ["Off-grid adventures", "Rural areas with poor cell service", "Privacy-conscious owners", "Hiking & camping with dogs"],
+      "features": [
+        "No phone required",
+        "No subscription",
+        "3.5 mile range",
+        "Real-time direction & distance",
+        "Built-in display on controller"
+      ],
+      "pros": [
+        "Zero subscription — ever",
+        "Works without cell signal",
+        "No phone needed (handheld controller)",
+        "True off-grid capability",
+        "Direction + distance display"
+      ],
+      "cons": [
+        "Expensive upfront ($229)",
+        "Limited 3.5 mile range",
+        "Bulky compared to cellular trackers",
+        "Smaller brand (less support)"
+      ],
+      "bestFor": [
+        "Off-grid adventures",
+        "Rural areas with poor cell service",
+        "Privacy-conscious owners",
+        "Hiking & camping with dogs"
+      ],
       "category": "tracker",
       "weight": 0.15,
-      "warranty": "1 year"
+      "warranty": "1 year",
+      "reviewSlug": "aorkuler-gps-review"
     }
   ]
 }

@@ -198,7 +198,7 @@ const isLitterBox = slug.includes("litter");
                     <img src={p.imageUrl} alt={p.name} class="h-40 w-40 rounded-xl object-cover bg-sage/60" width="160" height="160" loading="lazy" decoding="async" />
                   </div>
                   <div class="flex-1">
-                    <h3 class="font-display text-xl font-semibold text-forest">{p.name}</h3>
+                    <h3 class="font-display text-xl font-semibold text-forest"><a href={`/reviews/${p.reviewSlug}/`} class="hover:text-honey transition-colors">{p.name}</a></h3>
                     <p class="text-sm text-bark-muted">by {p.brand} &middot; {"★".repeat(Math.round(p.rating))}<span class="text-bark-muted/50">{"★".repeat(5 - Math.round(p.rating))}</span> ({p.reviewCount.toLocaleString()} reviews)</p>
                     <p class="mt-1 font-display text-2xl font-bold text-forest">${p.price}</p>
 
