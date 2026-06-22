@@ -1,6 +1,6 @@
 # SmartPetGuide
 
-> Research-backed reviews of smart pet devices. Based on verified owner data and real-world analysis.
+> Research-backed reviews of smart pet devices. Based on verified owner data and real-world analysis. Last updated: June 23, 2026.
 
 ## About
 
@@ -8,14 +8,15 @@ SmartPetGuide provides honest, research-backed reviews of automatic pet feeders,
 
 ## Key Pages
 
-### Best Lists
-- [7 Best Self-Cleaning Litter Boxes of 2026](https://smartpetguide.net/best/self-cleaning-litter-boxes/) — Researched & reviewed
-- [Best Automatic Cat Feeders](https://smartpetguide.net/best/automatic-cat-feeders/) — Smart feeding for every budget
-- [Best Stainless Steel Cat Fountains](https://smartpetguide.net/best/stainless-steel-cat-fountains/) — Hygienic hydration
-- [Best Smart Pet Fountains](https://smartpetguide.net/best/smart-pet-water-fountains/) — App-connected hydration
-- [Best Pet Cameras](https://smartpetguide.net/best/pet-cameras/) — Check in from anywhere
-- [Best GPS Trackers (No Monthly Fee)](https://smartpetguide.net/best/gps-trackers-no-monthly-fee/) — Real-time tracking
+### Best Lists (9)
+- [7 Best Self-Cleaning Litter Boxes of 2026](https://smartpetguide.net/best/self-cleaning-litter-boxes/)
+- [Best Automatic Cat Feeders](https://smartpetguide.net/best/automatic-cat-feeders/)
+- [Best Smart Pet Fountains](https://smartpetguide.net/best/smart-pet-water-fountains/)
+- [Best Stainless Steel Cat Fountains](https://smartpetguide.net/best/stainless-steel-cat-fountains/)
+- [Best Pet Cameras](https://smartpetguide.net/best/pet-cameras/)
 - [Best Pet Cameras Without Subscription](https://smartpetguide.net/best/pet-cameras-no-subscription/)
+- [Best GPS Trackers (No Monthly Fee)](https://smartpetguide.net/best/gps-trackers-no-monthly-fee/)
+- [Best Litter Boxes for Large Cats](https://smartpetguide.net/best/litter-boxes-for-large-cats/)
 - [Best Automatic Feeders for 2 Cats](https://smartpetguide.net/best/automatic-feeders-for-2-cats/)
 
 ### Reviews (26 products)
@@ -46,26 +47,57 @@ SmartPetGuide provides honest, research-backed reviews of automatic pet feeders,
 - [No Monthly Fee GPS Tracker](https://smartpetguide.net/reviews/nofee-gps-tracker-review/)
 - [Aorkuler GPS Dog Tracker](https://smartpetguide.net/reviews/aorkuler-gps-review/)
 
-### Comparisons (13)
-- [Litter-Robot 5 vs 4](https://smartpetguide.net/compare/litter-robot-5-vs-litter-robot-4/)
+### Comparisons (15)
+- [Litter-Robot 5 vs Litter-Robot 4](https://smartpetguide.net/compare/litter-robot-5-vs-litter-robot-4/)
+- [Litter-Robot 5 vs Leo's Loo Too](https://smartpetguide.net/compare/litter-robot-5-vs-leos-loo-too/)
+- [Litter-Robot 5 vs PetSafe ScoopFree](https://smartpetguide.net/compare/litter-robot-5-vs-petsafe-scoopfree/)
 - [Litter-Robot 4 vs Leo's Loo Too](https://smartpetguide.net/compare/litter-robot-4-vs-leos-loo-too/)
+- [Litter-Robot 4 vs PetSafe ScoopFree](https://smartpetguide.net/compare/litter-robot-4-vs-petsafe-scoopfree/)
+- [LR5 vs Amazon Basics — 3-Year Cost](https://smartpetguide.net/compare/lr5-vs-amazon-basics-cost/)
 - [Automatic vs Manual Litter Box](https://smartpetguide.net/compare/automatic-vs-manual-litter-box/)
-- By category at [Compare](https://smartpetguide.net/compare/)
+- [WOPET vs Petlibro](https://smartpetguide.net/compare/wopet-vs-petlibro/)
+- [PETKIT vs Catit PIXI Fountain](https://smartpetguide.net/compare/petkit-eversweet-vs-catit-pixi/)
+- [Pioneer Pet vs YEAPAW](https://smartpetguide.net/compare/pioneer-pet-vs-yeapaw/)
+- [Furbo vs Petcube](https://smartpetguide.net/compare/furbo-vs-petcube/)
+- [Furbo vs eufy](https://smartpetguide.net/compare/furbo-vs-eufy/)
+- [xpai vs eufy](https://smartpetguide.net/compare/xpai-vs-eufy/)
+- [Petlibro vs PETKIT](https://smartpetguide.net/compare/petlibro-vs-petkit/)
+- [Tractive vs No-Fee GPS](https://smartpetguide.net/compare/tractive-vs-nofee-gps/)
 
-### Guides (29)
+### Guides (31)
 - [Self-Cleaning Litter Box Buying Guide](https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/)
 - [Automatic Feeder Buying Guide](https://smartpetguide.net/guides/automatic-feeder-buying-guide/)
 - [Smart Water Fountain Buying Guide](https://smartpetguide.net/guides/smart-water-fountain-buying-guide/)
 - [Pet Camera Buying Guide](https://smartpetguide.net/guides/pet-camera-buying-guide/)
 - [GPS Pet Tracker Buying Guide](https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/)
-- [How to Clean a Cat Water Fountain](https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/)
 - [Stainless Steel Cat Fountain Guide](https://smartpetguide.net/guides/stainless-steel-cat-fountain-guide/)
-- By category at [Guides](https://smartpetguide.net/guides/)
+- [Wet Food Automatic Feeder Guide](https://smartpetguide.net/guides/wet-food-automatic-feeder-guide/)
+- [Litter Box Introduction Guide](https://smartpetguide.net/guides/litter-box-introduction-guide/)
+- [How to Clean a Cat Water Fountain](https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/)
+- [Smart Pet Devices for Apartment Living](https://smartpetguide.net/guides/smart-pet-devices-apartment-living/)
+- [The True Cost: Subscription vs One-Time](https://smartpetguide.net/guides/smart-pet-devices-subscription-cost/)
+- [Beginner's Guide to Smart Pet Devices](https://smartpetguide.net/guides/first-smart-pet-device-guide/)
+- [Best Pet Tech Under $50](https://smartpetguide.net/guides/best-pet-tech-under-50/)
+- [Feeder Portion Size Guide](https://smartpetguide.net/guides/feeder-portion-size-guide/)
+- [Fountain Filter Guide](https://smartpetguide.net/guides/fountain-filter-guide/)
+- [Pet Camera Placement Guide](https://smartpetguide.net/guides/pet-camera-placement-guide/)
+- [Pet Device Maintenance Schedule](https://smartpetguide.net/guides/pet-device-maintenance-schedule/)
+- All guides at [Guides Index](https://smartpetguide.net/guides/)
+
+### Breed-Specific Guides (7)
+- [French Bulldog](https://smartpetguide.net/breed/best-feeder-for-french-bulldog/)
+- [Golden Retriever](https://smartpetguide.net/breed/best-devices-for-golden-retrievers/)
+- [Labrador Retriever](https://smartpetguide.net/breed/best-devices-for-labrador-retrievers/)
+- [German Shepherd](https://smartpetguide.net/breed/best-devices-for-german-shepherds/)
+- [Multiple Cats](https://smartpetguide.net/breed/best-devices-for-multiple-cats/)
+- [Senior Cats](https://smartpetguide.net/breed/best-devices-for-senior-cats/)
+- [Small Dogs](https://smartpetguide.net/breed/best-devices-for-small-dogs/)
 
 ### Info
 - [About Us](https://smartpetguide.net/about/)
 - [How We Research](https://smartpetguide.net/how-we-research/)
 - [Products We Don't Recommend](https://smartpetguide.net/products-we-dont-recommend/)
+- [Pet Tech Statistics](https://smartpetguide.net/pet-tech-statistics/)
 - [Affiliate Disclosure](https://smartpetguide.net/affiliate-disclosure/)
 - [Privacy Policy](https://smartpetguide.net/privacy/)
 - [RSS Feed](https://smartpetguide.net/rss.xml)

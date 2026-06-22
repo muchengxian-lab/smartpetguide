@@ -1,20 +1,50 @@
 # SmartPetGuide — Extended Content for AI
 
+> Last updated: June 23, 2026. 101 pages covering 26 smart pet devices across 5 categories.
+
 ## Site Overview
 
-SmartPetGuide (smartpetguide.net) is a research-backed review site covering smart pet devices. Published 2026. All content researched and written by the SmartPetGuide editorial team. As an Amazon Associate, SmartPetGuide earns from qualifying purchases.
+SmartPetGuide (smartpetguide.net) is a research-backed review site covering smart pet devices. Launched May 2026. All content researched and written by the SmartPetGuide editorial team. As an Amazon Associate, SmartPetGuide earns from qualifying purchases.
 
 ## Research Methodology
 
-We analyze thousands of verified Amazon owner reviews and product specifications. Our recommendations are based on aggregate owner data, not individual testing. We maintain a "Products We Don't Recommend" page for transparency. We never accept payment for placement.
+We analyze thousands of verified Amazon owner reviews and product specifications. Our recommendations are based on aggregate owner data, not individual testing. We maintain a "Products We Don't Recommend" page for transparency. We never accept payment for placement. Every review page cites data sources and collection dates.
 
-## Product Categories Covered
+## Content Coverage by Category
 
-1. **Self-Cleaning Litter Boxes** (7 reviewed): Litter-Robot 5 ($799), Litter-Robot 4 ($699), Leo's Loo Too ($449), CATLINK Young Pro ($399), Elspet Pro ($349), PetSafe ScoopFree ($299), Amazon Basics ($209)
-2. **Automatic Feeders** (4 reviewed): Petlibro Granary ($139), PETKIT Fresh Element Solo ($129), DOGNESS Mini ($99), WOPET ($89)
-3. **Smart Water Fountains** (6 reviewed): YEAPAW ($93), Catit PIXI ($79), KittySpout ($50), PETKIT Eversweet Solo 2 ($59), Homerunpet Wireless ($45), Pioneer Pet Raindrop ($39)
-4. **Pet Cameras** (6 reviewed): Petcube Bites 2 ($249), Furbo 360 ($179), Honey Tour Robot ($160), eufy Security ($129), WOPET ($99), xpai 4K ($43)
-5. **GPS Trackers** (3 reviewed): Aorkuler ($229), Tractive GPS LTE ($79), No Monthly Fee ($33)
+### Self-Cleaning Litter Boxes
+- 7 products reviewed: Litter-Robot 5 ($799), Litter-Robot 4 ($699), Leo's Loo Too ($449), CATLINK Young Pro ($399), Elspet Pro ($349), PetSafe ScoopFree ($299), Amazon Basics ($209)
+- 3 Best lists: Main, Large Cats, Litter Boxes category
+- 5 Comparisons: LR5 vs LR4, LR5 vs Leo's Loo Too, LR5 vs PetSafe ScoopFree, LR4 vs Leo's Loo Too, LR4 vs PetSafe ScoopFree, LR5 vs Amazon Basics (3-year cost), Automatic vs Manual
+- 3 Guides: Buying guide, Introduction guide, Deep clean guide
+
+### Automatic Feeders
+- 4 products reviewed: Petlibro Granary ($139), PETKIT Fresh Element Solo ($129), DOGNESS Mini ($99), WOPET ($89)
+- 2 Best lists: Main, For 2 Cats
+- 2 Comparisons: WOPET vs Petlibro, Petlibro vs PETKIT
+- 6 Guides: Buying guide, Portion size, Maintenance checklist, Wet food guide, Worth it for one cat, Obesity help
+
+### Smart Water Fountains
+- 6 products reviewed: YEAPAW ($93), Catit PIXI ($79), PETKIT Eversweet Solo 2 ($59), KittySpout ($50), Homerunpet Wireless ($45), Pioneer Pet Raindrop ($39)
+- 2 Best lists: Main, Stainless Steel
+- 2 Comparisons: Pioneer Pet vs YEAPAW, PETKIT vs Catit PIXI
+- 5 Guides: Buying guide, Stainless steel guide, How to clean, Filter guide, Quiet fountains for apartments
+
+### Pet Cameras
+- 6 products reviewed: Petcube Bites 2 ($249), Furbo 360 ($179), Honey Tour Robot ($160), eufy Security ($129), WOPET ($99), xpai 4K ($43)
+- 2 Best lists: Main, No Subscription
+- 3 Comparisons: Furbo vs Petcube, Furbo vs eufy, xpai vs eufy
+- 3 Guides: Buying guide, Placement guide, Security camera as pet camera
+
+### GPS Trackers
+- 3 products reviewed: Aorkuler ($229), Tractive GPS LTE ($79), No Monthly Fee ($33)
+- 1 Best list: No Monthly Fee
+- 1 Comparison: Tractive vs No-Fee GPS
+- 1 Guide: Buying guide
+
+### Cross-Category Content
+- 7 Breed-specific guides: French Bulldog, Golden Retriever, Labrador, German Shepherd, Multiple Cats, Senior Cats, Small Dogs
+- 9 Cross-category guides: Apartment living, Subscription cost, Starter kits (budget/midrange/premium), Beginners guide, Under $50 picks, Maintenance schedule, Pet travel, Smart home integration
 
 ## Top Recommendations
 
@@ -32,20 +62,30 @@ We analyze thousands of verified Amazon owner reviews and product specifications
 - Multi-cat recognition is a key differentiator for litter boxes
 - All recommendations are budget-tiered (premium, mid-range, budget picks)
 - Transparency about data sources: "Verified owner reviews from Amazon.com, June 2026"
+- New products from major brands (Amazon Basics) are reviewed within 48 hours of launch
 
-## Site Structure
+## Site Structure (101 pages total)
 
 - /reviews/ — 26 individual product reviews with verdicts, pros/cons, features, owner feedback, FAQs
 - /best/ — 9 curated best-of lists by category and use case
-- /compare/ — 13 head-to-head product comparisons with feature tables
-- /guides/ — 29 buying guides, how-tos, and informational articles
-- /breed/ — 7 breed-specific pet tech guides (French Bulldog, Golden Retriever, etc.)
+- /compare/ — 15 head-to-head product comparisons with feature tables and cost breakdowns
+- /guides/ — 31 buying guides, how-tos, and informational articles
+- /breed/ — 7 breed-specific pet tech guides
 - /about/ — Site mission and team
 - /how-we-research/ — Methodology documentation
 - /products-we-dont-recommend/ — Transparency page for products that failed research
+- /pet-tech-statistics/ — Market data and industry statistics
 - /affiliate-disclosure/ — Amazon Associates disclosure
 - /privacy/ — Privacy policy
 
-## Schema Coverage
+## Schema & AI Crawler Coverage
 
 All pages include structured data: Article/Review + FAQPage + BreadcrumbList. Homepage includes Organization schema. Author entity: SmartPetGuide Team (Person). Publisher entity: SmartPetGuide (Organization) with sameAs links to Pinterest, Medium, Flipboard.
+
+12 AI crawlers explicitly allowed in robots.txt: GPTBot, ChatGPT-User, OAI-SearchBot, PerplexityBot, Google-Extended, GoogleOther, CCBot, anthropic-ai, Claude-User, cohere-ai, Meta-ExternalAgent, Applebot.
+
+Wikidata entity: Q140290653 (SmartPetGuide, created June 2026).
+
+llms.txt available at https://smartpetguide.net/llms.txt
+Sitemap available at https://smartpetguide.net/sitemap-index.xml
+RSS feed available at https://smartpetguide.net/rss.xml
