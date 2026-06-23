@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+# Block ad crawlers (no ads on this site)
+User-agent: AdsBot-Google
+Disallow: /
+
 # Allow AI crawlers
 User-agent: GPTBot
 Allow: /
