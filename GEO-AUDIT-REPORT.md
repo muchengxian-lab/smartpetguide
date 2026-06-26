@@ -52,7 +52,7 @@ SmartPetGuide has strong technical GEO infrastructure and comprehensive Schema c
 |---|-------|----------|-----------------|
 | 3 | No citation cues (timestamp + data source) on guides | Medium | Add date-tagged data source line to guide pages. Reviews already have "Data sourced from Amazon.com, June 2026" — extend to guides. |
 | 4 | No Wikipedia / Wikidata entity | ~~Medium~~ | ✅ Fixed 6/19 — Q140290653 created |
-| 5 | sitemap.xml returns 404 | Medium | Create redirect from `/sitemap.xml` → `/sitemap-index.xml`. Some crawlers only check default path. |
+| 5 | sitemap.xml returns 404 | ~~Medium~~ | ✅ Fixed 6/21 — vercel.json redirect `/sitemap.xml` → `/sitemap-index.xml` 308 |
 | 6 | No individual author bio pages | Medium | Review pages author is "SmartPetGuide Team" — create 1-2 named author profiles with credentials for top pages. |
 | 7 | Guides lack verdict/conclusion sentences | Medium | Reviews have strong verdict blocks (confirmed). Guides and compare pages would benefit from similar standalone conclusions. |
 

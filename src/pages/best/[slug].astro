@@ -23,6 +23,7 @@ export function getStaticPaths() {
     { params: { slug: "litter-boxes-for-large-cats" } },
     { params: { slug: "stainless-steel-cat-fountains" } },
     { params: { slug: "automatic-feeders-for-2-cats" } },
+    { params: { slug: "litter-boxes-for-multiple-cats" } },
   ];
 }
 
@@ -40,6 +41,7 @@ const customLists: Record<string, string[]> = {
   "litter-boxes-for-large-cats": ["litter-robot-4", "catlink-young", "petsafe-scoopfree", "elspet-pro"],
   "stainless-steel-cat-fountains": ["pioneer-pet-raindrop", "yeapaw-steel-fountain", "kittyspout-steel"],
   "automatic-feeders-for-2-cats": ["petlibro-granary", "wopet-automatic", "petkit-fresh-element", "dogness-mini"],
+  "litter-boxes-for-multiple-cats": ["litter-robot-5", "litter-robot-4", "catlink-young", "elspet-pro"],
 };
 
 const slug = Astro.params.slug || "self-cleaning-litter-boxes";
@@ -115,8 +117,8 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
     ],
   },
   "litter-boxes-for-large-cats": {
-    title: "Best Self-Cleaning Litter Boxes for Large Cats 2026 — Roomy Picks",
-    description: "Large cats need bigger litter boxes. We analyzed the best self-cleaning litter boxes with extra room for Maine Coons, Ragdolls, and other big breeds — plus multi-cat households.",
+    title: "Best Self-Cleaning Litter Boxes for Large Cats 2026 — Maine Coon to Ragdoll",
+    description: "Large cats (15+ lbs) need bigger litter boxes — most standard automatic boxes are too cramped. We analyzed the roomiest self-cleaning models for Maine Coons, Ragdolls, and other big breeds: Litter-Robot 4 (15.75\" opening), CATLINK Young Pro, PetSafe ScoopFree, Elspet Pro. Data sourced from Amazon.com, June 2026.",
     faqs: [
       { q: "What size litter box does a large cat need?", a: "A large cat (15+ lbs) needs a litter box at least 22-24 inches long and 18+ inches wide. Standard automatic boxes often have 15-16 inch openings which can be cramped. The Litter-Robot 4 and CATLINK Young Pro have the roomiest interiors we've identified for big cats." },
       { q: "Can Maine Coons use automatic litter boxes?", a: "Yes — but only the largest models. The Litter-Robot 4 has the widest opening (15.75 inches) and internal space of any automatic box we've reviewed. The CATLINK Young Pro also works well. Avoid compact models like Leo's Loo Too for cats over 15 lbs." },
@@ -125,8 +127,8 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
     ],
   },
   "stainless-steel-cat-fountains": {
-    title: "Best Stainless Steel Cat Water Fountains 2026 — Hygienic & Quiet",
-    description: "Stainless steel fountains are more hygienic than plastic — no micro-scratches for bacteria to hide in. We compare the best steel fountains from Pioneer Pet, YEAPAW, KittySpout, and more.",
+    title: "Best Stainless Steel Cat Water Fountains 2026 — Why Steel Beats Plastic",
+    description: "Stainless steel fountains prevent biofilm buildup — no micro-scratches for bacteria to hide in. We compare Pioneer Pet Raindrop ($39, 18,500+ reviews), YEAPAW ($93, pumpless + wireless), and KittySpout ($50, dishwasher-safe). Data sourced from Amazon.com, June 2026.",
     faqs: [
       { q: "Why is stainless steel better than plastic for pet fountains?", a: "Plastic develops micro-scratches over time that harbor bacteria, even with regular cleaning. Stainless steel is non-porous, resists bacterial growth, and is naturally more hygienic. It also doesn't leach chemicals and is easier to clean — most steel fountains are dishwasher safe." },
       { q: "Are stainless steel fountains louder than plastic ones?", a: "No — the noise level depends on the pump and water flow design, not the material. The Pioneer Pet Raindrop is one of the quietest fountains available despite being all steel. Pumpless designs like YEAPAW are virtually silent." },
@@ -142,6 +144,16 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
       { q: "How do I stop one cat from eating the other's food?", a: "Microchip-activated feeders are the gold standard but expensive ($150-250). For budget solutions, use a feeder with a splitter tray (Petlibro sells one) placed in different spots, or schedule meals when you're home to supervise. Some feeders let you dispense small portions frequently to prevent food guarding." },
       { q: "What capacity feeder do I need for 2 cats?", a: "For two cats eating 1/2 cup each per day: a 4L feeder lasts about 10-12 days, a 6L feeder lasts 15-18 days. The WOPET 6L at $89 is the best value for dual-cat capacity." },
       { q: "Should I get one feeder or two for my cats?", a: "One large feeder works for most two-cat homes and saves money. Two small feeders are better if your cats eat different foods, need different portion sizes, or tend to fight over food. The Petlibro Granary with splitter is a good middle ground." },
+    ],
+  },
+  "litter-boxes-for-multiple-cats": {
+    title: "Best Self-Cleaning Litter Box for Multiple Cats 2026 — LR5 vs LR4 vs CATLINK",
+    description: "Multiple cats mean multiple litter box users — and fast-filling waste drawers. We compared the best self-cleaning litter boxes for 2-4 cat homes: Litter-Robot 5 ($799, health tracking), Litter-Robot 4 ($699, proven), CATLINK Young Pro ($399, value), and Elspet Pro ($349, budget). Data sourced from Amazon.com, June 2026.",
+    faqs: [
+      { q: "How many self-cleaning litter boxes do I need for multiple cats?", a: "One high-capacity rotating box (Litter-Robot 4 or CATLINK Young Pro) can handle 2-3 cats effectively because it cleans after every use. For 4+ cats, two units are recommended — one box per 2-3 cats. The rule of N+1 (one more box than cats) applies to standard boxes, not self-cleaning ones that cycle after every visit." },
+      { q: "Which automatic litter box has the biggest waste drawer?", a: "The CATLINK Young Pro has a 13L waste drawer — the largest of any  model we've reviewed. It can go 7-10 days between changes for 2 cats. The Litter-Robot 4's drawer lasts about 5-7 days for 2 cats. The Elspet Pro at 6L needs changing every 3-4 days with 2 cats. Drawer size matters more as cat count increases." },
+      { q: "Does weight tracking actually work for multiple cats?", a: "Partially. The Litter-Robot 5's WasteID system distinguishes cats by weight (±0.5 lb) and tracks #1 vs #2 events. But for cats with similar weights (±1 lb apart), it can misidentify. The LR5 has the best multi-cat tracking on the market but it's not perfect. For health monitoring, supplement with a separate scale or regular vet weight checks." },
+      { q: "Can 3 cats share one automatic litter box?", a: "Yes, but only the largest models: Litter-Robot 4/5 and CATLINK Young Pro. With 3 cats, expect to change the waste drawer every 3-5 days and deep-clean the globe monthly. Key sign you need a second box: cats start going outside the box, drawer fills in under 48 hours, or one cat guards/follows another to the box." },
     ],
   },
 };

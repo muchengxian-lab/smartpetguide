@@ -733,4 +733,48 @@ SmartPetGuide 对应的目标：
 `vercel.json` 添加 host-based 301 重定向（需 www 子域 DNS 指向 Vercel 才能完全生效）。
 
 ---
+
+## 满月第三方审计（2026-06-22，Week 6 → Week 7 策略转向）
+
+审计来源：[MONTH-1-THIRD-PARTY-AUDIT.md](MONTH-1-THIRD-PARTY-AUDIT.md)，第三方视角，结合本地项目数据 + 构建验证 + 线上入口响应 + 公开市场信息（APPA/NYPost/WSJ/The Verge/Pew/arXiv） + 既有用户研究。
+
+### 审计核心发现
+
+**SmartPetGuide 第一个月不是"流量增长月"，而是"资产与索引种子月"。** 内容/技术/GEO 超前，索引/外链/社交出站/点击/转化仍在冷启动早期。
+
+评分：内容资产 A- | 技术 SEO A | GEO B+ | EEAT B | 搜索表现 C | 社交流量 C- | 外链权威 C | 商业转化 D | 数据治理 C+ | 合规 C
+
+### P0 风险（6/23 已修复）
+
+1. **隐私页 vs GA4 不一致**：`privacy.astro` 写不用追踪但 `BaseLayout.astro` 加载 GA4 → ✅ 改为真实披露
+2. **外部素材旧口径**：`backlinks/action-plan.md` 和 `pins/pin-plan.md` 残留 hands-on/testing → ✅ 全改 research-backed
+
+### 策略转向：生产驱动 → 分发与验证驱动
+
+- 内容生产维持 5-7 篇/周，但仅围绕 4 个集群（不锈钢饮水机/零订阅摄像头GPS/喂食器可靠性/猫砂盆TCO）
+- 外链 Outreach 升级为每周固定 2-3h（不可挤占）
+- Pinterest KPI 从 Pin 浏览切换为出站点击率
+- GSC KPI 从曝光/点击切换为索引率
+- 取消：死目录提交、无反馈大词 Best、无出站验证 Pin 铺量
+- 暂停：机器人吸尘器仅保留 3 篇测试、Medium 不再追加
+
+### 4 个内容集群（VOC + 市场双验证）
+
+| 集群 | 核心角度 | 验证 |
+|------|------|------|
+| A: Stainless Steel Cat Fountain Hub | 卫生/痤疮/清洁/材质安全 | Trends 23 + Reddit + Amazon |
+| B: No Subscription Camera/GPS TCO Hub | 3年成本，零订阅替代 | VOC #1 + Semrush KD 15 |
+| C: Automatic Feeder Reliability Hub | 断网出粮/卡粮/App稳定性 | VOC #1 购买门槛 |
+| D: Litter Box Worth-It/3-Year Cost Hub | $699→月成本拆解 | Reddit 最高频 + 转化杠杆 |
+
+### 整改记录（6/23）
+
+- [x] privacy.astro GA4 披露修正
+- [x] backlinks/action-plan.md 4 处 hands-on → research-backed
+- [x] pins/pin-plan.md 2 处 hands-on/testing → research-backed/analyzing
+- [x] task_plan.md 日常/周期任务全面重构（新增口径自检 + GA4 看板 + 外链固定 + 出站实验 + 取消清单）
+- [x] task_plan.md 新增阶段 14 满月审计策略调整
+- [x] 构建验证：103 页，0 错误
+
+---
 *每次调研后更新此文件*

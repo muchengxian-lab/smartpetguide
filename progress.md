@@ -1931,4 +1931,357 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] `astro.config.mjs` / `vercel.json` / `robots.txt`：技术清障
 
 ---
+
+## 会话：2026-06-22 周一 — GEO 高优先 + C 级内容 ×2 + Pin 67
+
+### GEO 高优先（~40min）
+
+#### llms.txt 重写
+- [x] 计数修正：Comparisons 13→15 / Guides 29→31
+- [x] 新增 Breed-Specific Guides 独立分区（7 篇）
+- [x] 对比和指南全量列出（不再缩写）
+- [x] 全部 URL 已为带尾斜杠格式
+
+#### llms-full.txt 增强
+- [x] 新增 per-category 覆盖详情（评测数+Best列表数+对比数+指南数）
+- [x] 新增 Last updated: June 23, 2026
+- [x] 新增 AI 爬虫覆盖率段落（12 bot 白名单 + Wikidata 实体）
+- [x] 新增 Cross-Category Content 分类（品种+跨品类指南）
+- [x] 更新计数：对比 13→15 / 指南 29→31 / 总页数 101
+
+#### Wikidata Q140290653 属性补全
+- [x] P571 inception 精度从"年"提升到"日"（19 May 2026）
+- [x] 新增 P407 language of work：Q1860 (English)
+- [x] WebFetch API 验证：4 项属性全部正确 ✅
+
+### 内容生产（C 级 ×2，~75min）
+
+#### #1：5 Best No-Subscription Pet Cameras 2026
+- [x] `/guides/best-no-subscription-cameras/` — 7 节 + 4 FAQ + Related Resources
+- 覆盖：eufy #1 / xpai 4K #2 / Honeytour Robot #3 / Wyze Cam v4 #4 / TP-Link Tapo #5
+- 差异化：纯排名列表格式（vs 现有教育型购买指南）
+- Related Resources：5 条（Best No-Sub / Camera Buying Guide / eufy评测 / xpai评测 / Furbo vs eufy）
+
+#### #2：Smart Home for Pets: Alexa & Google Home Devices 2026
+- [x] `/guides/smart-home-pet-devices/` — 7 节 + 4 FAQ + Related Resources
+- 覆盖：Smart Feeders / Litter Boxes with Voice Control / Fountains / Cameras / Sensors & Add-ons / Complete Alexa Routines
+- Related Resources：5 条（公寓指南 / Best Feeders / Best Cameras / Leo's Loo Too评测 / Petlibro vs PETKIT）
+
+### Pinterest Pin 67 发布
+- [x] Pin 67（Smart Home for Pets: Alexa & Google Home Guide）→ 通过 Pin Builder 发布
+- Pin URL：`pinterest.com/pin/1116963145108729615`
+- 活跃 Pin：**78 → 79**
+
+### 构建与部署
+- [x] `npm run build`：101 → **103 页**，0 错误
+- [x] Vercel 部署成功
+- [x] Git 2 次提交：
+  - `819cf2c` — GEO: llms.txt + llms-full.txt 增强
+  - `ed2f3a7` — C 级内容 #1+#2
+
+### 更新文件
+- [x] `progress.md`：本日志
+- [x] `smartpetguide_project.md`：状态更新
+- [x] `pins/pin-plan.md`：Pin 67 标记已发布
+- [x] `public/llms.txt` / `public/llms-full.txt`：GEO 增强
+- [x] `src/pages/guides/[slug].astro` / `guides/index.astro`：新内容
+
+---
+
+## 会话：2026-06-23（Week 7 周二）— 满月审计 P0 修复 + 策略转向
+
+### 背景
+读取 [MONTH-1-THIRD-PARTY-AUDIT.md](MONTH-1-THIRD-PARTY-AUDIT.md) 满月第三方审计报告。核心诊断：第一个月是"资产与索引种子月"，内容/技术/GEO 超前，索引/外链/社交出站/点击/转化仍在冷启动早期。需要从"生产驱动"切换到"分发与验证驱动"。
+
+### P0 修复（已完成）
+
+- [x] **隐私页 GA4 披露修正**：`privacy.astro` 原写"不使用 cookies/tracking scripts/analytics"，但 `BaseLayout.astro` 实际加载 GA4。改为真实披露：使用 GA4 测量匿名站点使用，不收集个人身份信息。
+- [x] **外部素材口径统一**：
+  - `backlinks/action-plan.md`：4 处 hands-on/testing → research-backed/analyzed/researched
+  - `pins/pin-plan.md`：2 处 hands-on/testing → research-backed/analyzing
+- [x] Grep 验证：两个文件零残留
+
+### 任务体系重构（已完成）
+
+- [x] **task_plan.md 日常/周期任务全面重写**（满月审计修正版）：
+  - 新增"已取消/暂停事项"清单（死目录/无反馈Best/无出站Pin铺量/机器人吸尘器仅保留3篇测试/Medium取消）
+  - 每日任务新增：口径自检（2min）+ Pinterest 出站实验 Pin 替代普通 Pin
+  - 每周任务新增：外链 Outreach 升级为 2-3h 固定不可挤占 + GA4 数据净化 + GSC 曝光 Top 页优化 + 口径一致性周检
+  - 数据看板新增：GA4 affiliate_click/outbound_click + 30 天目标列
+  - 触发条件新增：出站=0 持续 4 周/Pinterest 出站>5/索引<30 持续 4 周
+- [x] **task_plan.md Week 7 每日节奏修正**：嵌入审计驱动紧急行动（GA4看板+GSC优化+出站实验+外链+author profile）
+- [x] **task_plan.md 新增阶段 14**：满月审计策略调整（核心诊断+策略转向表+4集群+风险修复状态+三线运营判断+第二月成功标准）
+- [x] **findings.md 更新**：新增满月审计发现章节
+- [x] **dashboard.md 全面重写**：策略阶段标记 + 本周紧急 + 取消/暂停 + 审计评分列
+- [x] **构建验证**：103 页，0 错误
+
+### 核心策略变更
+
+| 维度 | 旧 | 新 |
+|------|:--:|:--:|
+| 核心目标 | 资产建设（页数+产品+Schema） | 分发验证（索引+外链+点击+佣金） |
+| 时间分配 | 内容70%/外链1%/技术29% | 内容50-60%/外链20-25%/数据15%/技术5% |
+| Pinterest KPI | Pin 浏览数 | 出站点击率 + 保存率 |
+| GSC KPI | 曝光/点击 | 索引率 + 索引页数 |
+| 内容方向 | 全品类铺开 | 4 个集群深耕 |
+| 外链 | 有就行 | 每周 2-3h 固定，质量优先 |
+
+### 更新文件
+- [x] `src/pages/privacy.astro`：GA4 真实披露
+- [x] `backlinks/action-plan.md`：口径修正 4 处
+- [x] `pins/pin-plan.md`：口径修正 2 处
+- [x] `task_plan.md`：日常/周期任务重构 + Week 7 修正 + 阶段 14 新增
+- [x] `findings.md`：满月审计发现章节
+- [x] `dashboard.md`：全面重写
+- [x] `progress.md`：本日志
+
+### 待执行（本周剩余）
+
+| # | 任务 | 状态 |
+|:--:|------|:--:|
+| P1-1 | GA4 基础看板（source/medium + affiliate_click + self-traffic exclusion） | ⏳ |
+| P1-2 | GSC 曝光 Top 6 页轻优化 | ⏳ |
+| P1-3 | Pinterest 12 出站实验 Pin 分批发布 | ⏳ |
+| P1-4 | 外链 Outreach 第 1 轮（Qwoted + 资源页） | ⏳ |
+| P1-5 | Named author profile 创建 | ⏳ |
+| — | Week 7 内容生产（7 篇，围绕 4 个集群） | ⏳ |
+
+---
+## 会话：2026-06-23 周二 — Week 7 Day 1 例行任务
+
+### 项目文件合并
+- [x] **dashboard.md + task_plan.md 合并**：340 行统一任务计划，dashboard.md 归档废弃
+
+### P1-1 GA4 基础看板（代码层面）
+- [x] **outbound_click 事件追踪**：BaseLayout 扩展 click 监听，覆盖 Pinterest/Reddit/Facebook/Medium
+- [x] **自我流量过滤**：`?debug` URL 参数跳过 GA4 追踪
+- [x] 构建验证：103 页，0 错误
+- 🟡 **GA4 admin 需手动登录**：配置 IP 过滤 + 验证 source/medium 报告
+
+### GEO-P0-3 Wikidata Q140290653 验证
+- [x] WebFetch 验证：4 属性全部存在 ✅
+
+### 口径一致性周检
+- [x] **1 处修复**：`alltop-email.txt` "hands-on review site" → "research-backed"
+- [x] src/pages/ 4 处均为合法上下文，pins/ 干净
+
+### GSC 索引请求
+- [x] `/guides/best-no-subscription-cameras/` → 已提交优先抓取队列
+- [x] `/guides/smart-home-pet-devices/` → 已提交优先抓取队列
+- [x] GSC 数据确认：14 已索引，15 未索引，3 点击
+
+### Pinterest 出站实验 Pin #1
+- [x] `generate-pins-v2.py` +pin73_exp1：5 Pet Cameras With Zero Monthly Fees
+- [x] 图片已生成 `pins/pins_with_text/pin73_exp1.jpg`
+- [ ] **待手动发布**（Pinterest reCAPTCHA 阻断自动化）
+
+### 更新文件
+- [x] `task_plan.md`、`dashboard.md`（废弃）、`BaseLayout.astro`、`alltop-email.txt`、`generate-pins-v2.py`、`progress.md`
+
+### 明日（6/24 周三）
+1. B #3 PETKIT vs Catit PIXI 对比
+2. 🔴 外链 Outreach 2-3h
+3. 手动发布 pin73_exp1 + Pinterest 实验 Pin #2
+
+---
+### 会话：2026-06-23 周二（续）— GA4 基础看板完成
+
+### GA4 Admin 配置
+- [x] **数据流确认**：G-DKYRD8PSCT，48h 活跃，增强型衡量已开启（page_view/scroll/outbound_click）
+- [x] **内部流量 IP 规则**：`Self Traffic (My Devices)` — 209.137.178.236/32
+- [x] **数据过滤器激活**：Internal Traffic 过滤器从"测试"→"已启用"
+- [x] **GA4 首页数据**：43 活跃用户 / 41 新用户 / Direct 35(94%) / Organic Search 7 / Organic Social 3
+
+### 项目文件更新
+- [x] `task_plan.md`：P1-1 全部完成 / Pin 80 / P1-3 1/12 / Pin 状态已发布
+- [x] `progress.md`：本日志
+
+---
+## 会话：2026-06-23 周二（续2）— robots.txt 修复 + GSC 抓取统计审查
+
+### robots.txt 修复
+- [x] **根因**：Vercel 域名层 308→www + vercel.json www→apex = 死循环
+- [x] **Vercel Dashboard**：`smartpetguide.net` 从 Redirect 改为直接 Production
+- [x] **vercel.json**：删掉 www 重定向规则
+- [x] **验证**：`curl` → 200 OK | Git: `cf28026`
+
+### AdsBot 封禁
+- [x] **robots.txt**：`AdsBot-Google` → `Disallow: /`（占12%请求，不跑广告）
+- [x] Git: `0eabb34`
+
+### GSC 抓取统计（90天）
+| 指标 | 值 | 判读 |
+|------|:--:|------|
+| 总请求 | 346 | ~3.8/天 |
+| 响应时间 | 91ms | 优秀 |
+| 200 | 56% | 修后预期>85% |
+| 301/404/不可达 | 39% | 修后预期<10% |
+| AdsBot | 12% | 已封 ✅ |
+
+- [x] **索引报告**：12重定向错误为历史遗留（6/12前），0个404 ✅，已点"验证修复"
+
+### 任务文件更新
+- [x] `task_plan.md`：新增每周"GSC设置报告巡检" + 今日修复状态
+- [x] `progress.md`：本日志
+
+---
+## 会话：2026-06-24 周三 — Reddit D33 首次链接回复
+
+### Reddit `honest_pet_reviews` 养号→活跃
+- [x] **里程碑**：5/22 注册，D33 首次带链接回复（原计划 D15，更保守更安全）
+- [x] **首条链接**：r/CatAdvice 2猫除臭帖 → Best Self-Cleaning Litter Boxes，存活 10min+
+- [x] **纯价值回复**：r/dogs 宠物清洁帖（无匹配内容，不挂链接攒声望）
+- [x] **策略确定**：每周 2-3 条带链接 + 3-5 条纯回复
+- [x] **搜索清单**：8 关键词×对应页面，覆盖全 5 品类，用户手动操作
+- [x] `task_plan.md`：Reddit 日常任务更新 + P1-1 修正 + 日期/状态
+
+---
+## 会话：2026-06-24 周三 — Week 7 Day 2 内容+外链
+
+### B #3 PETKIT Eversweet vs Catit PIXI 对比文
+- [x] **已有内容**：slug 和完整数据在 5/22 Day 5 已写（对比文第 3 篇）
+- [x] **GSC 优化**：citation cue 加入描述 + verdict 扩充（"Data sourced from Amazon.com, June 2026"）
+- [x] 构建部署：103 页，0 错误
+
+### 外链 Outreach（第1轮，~2h）
+- [x] **Qwoted 搜索**："pet"搜出3条全要兽医/个人故事，"tech gadget smart"无匹配 → 确认匹配度低
+- [x] **Qwoted 邮件回顾**：收件箱8条通知，0条匹配智能设备
+- [x] **Guest Post 搜索**：找到3个目标 — PetPress.net / PetsAnalysis.com / AnimalPetsBlog.com
+- [x] **邮件起草**：3封角度各不相同（订阅费/3年TCO/多猫家庭），每封附2篇写作样品
+- [x] **发送**：用户已发，使用 press@smartpetguide.net（Gmail SMTP 别名已配置）
+
+### GSC 曝光 Top 6 页优化
+- [x] **Petlibro Granary**（55曝光/0点击）：标题从问句改为利益导向（"8,700+ Owners, #1 Smart Feeder on Amazon"），描述加BSR排名+数据来源
+- [x] 其余5篇（Catit PIXI✅/首页/No-Fee GPS/Aorkuler/WOPET Camera）下次做
+
+### Pinterest 出站实验 Pin #2
+- [x] pin74_exp2.jpg 生成：TCO/订阅费角度 — "The Hidden $500 Cost of Your Pet Camera"
+- [x] 链接到 /guides/smart-pet-devices-subscription-cost/
+
+### 其他
+- [x] **press@smartpetguide.net 配置**：Gmail SMTP 别名 + 应用专用密码
+- [x] `task_plan.md`：今日状态 + P1-3(2/12) + P1-4(第1轮完成)
+- [x] `progress.md`：本日志
+
+### Reddit 待用户操作
+- [x] pin74_exp2 已发布
+- [x] **Reddit 策略降级**：首条链接回复 24h 后被移除（subreddit automod延迟触发），此后 Reddit 只做纯价值回复不挂链接，养到 500+ karma 再尝试
+
+### GSC Top 6 优化（续）
+- [x] **No-Fee GPS**：标题 `$33 and Done?` → `Full GPS, Zero Subscription, $33` + 数据脚注
+- [x] **Aorkuler GPS**：描述 `overkill for most owners?` → `only tracker that works without cell signal` + 数据脚注
+- [x] **WOPET Camera**：标题/描述问句改断言 + 数据脚注
+
+### 项目文件更新
+- [x] `task_plan.md`：今日状态更新 + Reddit 策略降级 + 日常任务调整
+- [x] `progress.md`：本日志
+
+---
+## 会话：2026-06-25 周四 — Week 7 Day 3 内容+EEAT
+
+### B #4 Best Stainless Steel Cat Water Fountains
+- [x] **已有内容**：5/22 日写，categoryMap 3 产品（Pioneer Pet/YEAPAW/KittySpout）
+- [x] **优化**：标题 `Hygienic & Quiet` → `Why Steel Beats Plastic` + citation cue + 4 FAQ 完善
+- [x] 构建部署 ✅
+
+### B #5 Best Litter Box for Large Cats
+- [x] **已有内容**：5/22 日写，categoryMap 4 产品
+- [x] **优化**：标题 `Roomy Picks` → `Maine Coon to Ragdoll` + citation cue
+- [x] 构建部署 ✅
+
+### Pinterest 出站实验 Pin #3
+- [x] pin75_exp3.jpg 生成：避坑/健康角度 — "Is Your Cat's Fountain Making Them Sick?"
+- [x] 链接到 /best/stainless-steel-cat-fountains/
+
+### P1-5 Named author profile（EEAT Schema 加固）
+- [x] **Wikidata Q140290653 挂接**：
+  - BaseLayout Article Schema: Person + Organization sameAs
+  - 首页 Organization Schema: sameAs
+  - 评测页 Review Schema: Person sameAs
+- [x] **名称统一**：全站 "SmartPetGuide Team" → "SmartPetGuide Research Team"（更准确的 EEAT 信号）
+- [x] 构建部署 ✅
+
+### 更新文件
+- [x] `src/pages/best/[slug].astro`：B #4 + B #5 title/desc
+- [x] `src/layouts/BaseLayout.astro`：Schema sameAs + footer
+- [x] `src/pages/index.astro`：Schema sameAs
+- [x] `src/pages/reviews/[slug].astro`：Schema sameAs
+- [x] `pins/generate-pins-v2.py`：+pin75_exp3
+- [x] `task_plan.md`：6/25 状态 + P1-2/3/5 更新
+- [x] `progress.md`：本日志
+
+### 待用户手动
+- [x] 发布 pin75_exp3 ✅
+
+---
+## 会话：2026-06-25 周四（续）— 外链 outreach 回复
+
+### PetPress 回复 — 付费发稿站，放弃
+- [x] **回复内容**：Guest post $250/篇（含5条dofollow），2篇起$200/篇，链接插入$50/条
+- [x] **决策**：不回复。公开标价卖 dofollow 链接 = Google Link Scheme 风险，$250 ROI 极低
+- [x] **经验**：标"Write for Us"的宠物站很多本质是外链农场，下次筛选时优先排除 DA 过低且公开标价的
+- [ ] **等待回复**：PetsAnalysis.com / AnimalPetsBlog.com
+
+---
+## 会话：2026-06-26 周五 — Week 7 收官
+
+### GEO P1-1 + P1-3 citation cue 补全
+- [x] **C #1+#2**：best-no-subscription-cameras + smart-home-pet-devices 描述已加
+- [x] **33 篇指南统一脚注**：`guides/[slug].astro` 模板底部加 `Data sourced from Amazon.com verified purchase reviews as of June 2026`
+- [x] 构建部署 ✅
+
+### B #6 Traveling with Pets? Smart Tech You Actually Need
+- [x] 新写：6 节 + 4 FAQ，覆盖 GPS/摄像头/喂食器/便携设备/不推荐清单/出行检查清单
+- [x] 添加到 `guides/[slug].astro` getStaticPaths + guideMap
+- [x] 104→105 页
+
+### A #7 Best Litter Box for Multiple Cats
+- [x] 新写：LR5 ($799) / LR4 ($699) / CATLINK Young Pro ($399) / Elspet Pro ($349)
+- [x] 4 FAQ：几猫共享/最大抽屉/体重追踪准确度/3猫1机
+- [x] 添加到 `best/[slug].astro` getStaticPaths + categoryMap + content
+- [x] 105 页，0 错误
+
+### Pinterest Pin #4
+- [x] pin76_exp4.jpg 生成：多猫/可靠性 — "3 Cats, 1 Litter Box?"
+
+### 外链 Outreach 第 2 轮
+- [x] **Gmail 检查**：PetsAnalysis + AnimalPetsBlog 2 天未回复（正常）
+- [x] **Qwoted 新线索**：USA TODAY 找 pet owner 分享保险心得（DA93，可尝试）
+- [ ] 两家等待 + USA TODAY pitch
+
+### Week 7 完成总结
+| 维度 | 完成 |
+|:------|:--:|
+| 内容 7/7 | ✅ C×2 + B×4 + A×1 |
+| P1 任务 | ✅ 4/5（P1-2 4/6页） |
+| GEO P0 | ✅ 3/3 |
+| GEO P1 | ✅ 3/5（P1-4周日 + P1-5 7/1） |
+| 外链 Outreach | 🔄 第1轮完成 + 第2轮等回复 |
+| 实验 Pin | 🔄 4/12 |
+
+### 更新文件
+- [x] `guides/[slug].astro`：B #6 + citation 脚注
+- [x] `best/[slug].astro`：A #7
+- [x] `pins/generate-pins-v2.py`：+pin76_exp4
+- [x] `task_plan.md`：6/26 状态 + Week 7 7/7 完成 + GEO 3/3
+- [x] `progress.md`：本日志
+
+### 待用户手动
+- [x] 发布 pin76_exp4 ✅
+
+---
+## 会话：2026-06-27 周六 — 技术修复
+
+### canonical / Schema / sitemap URL 一致性
+- [x] **canonical**：`BaseLayout` line 50 `.replace(/\/$/, "")` 去掉，统一带尾斜杠
+- [x] **Schema @id**：line 83 同步修正
+- [x] **sitemap lastmod**：去掉强制写构建日期，由文件时间驱动
+- [x] 验证：curl + sitemap XML 均确认
+
+### Git push 修复
+- [x] **根因**：SSH 被代理 198.18.0.16 拦截
+- [x] **修复**：remote SSH→HTTPS，GitHub CLI 凭证
+- [x] 5 条 commit 全部推送
+
+---
 *每个阶段完成后或遇到错误时更新此文件*

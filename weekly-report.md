@@ -12,18 +12,41 @@
 | Pinterest 出站点击 | **0** |
 | Amazon 点击 | **0**（GA4 追踪刚上线） |
 
-## Week 6 周一（6/15）开局
+## Week 6 收盘（6/21 周日）
 
-| 指标 | 数值 | vs 上周 |
+| 指标 | 数值 | vs Week 5 |
 |------|:--:|:--:|
-| 页面数 | **95** | +3 |
+| 页面数 | **101** | +6 |
 | GSC 已索引 | **14** | — |
-| GSC 点击 | **3** | — |
-| Pinterest 月浏览 | **2,451** | +16 |
+| GSC 未索引 | **15** | — |
+| GSC 曝光（3月累计） | **130** | +6 |
+| GSC 点击（3月累计） | **3** | — |
+| GSC 平均排名 | **20.4** | -0.8 |
+| Pinterest 30天浏览 | **2,796** | +263 (+10.4%) |
 | Pinterest 出站点击 | **0** | — |
+| Pinterest 收藏 | **0** | — |
+| Pinterest 受众 | **5** | +1 |
 | GA4 affiliate 点击 | **刚上线** | — |
+| Qwoted | **Pitch #1 已提交** | 新 |
 
-## Week 6 选题（6/16-6/20）
+### GSC Top 页面（曝光）
+| 页面 | 曝光 | 点击 |
+|------|:--:|:--:|
+| Petlibro Granary 评测 | **55** | 0 |
+| Catit PIXI 评测 | **39** | 0 |
+| 首页 | **37** | 0 |
+| Aorkuler GPS 评测 | **29** | 0 |
+| No-Fee GPS 评测 | 15 | 0 |
+| WOPET 摄像头评测 | 14 | 0 |
+
+### Pinterest Top Pin（30天浏览）
+| Pin | 浏览 |
+|------|:--:|
+| Stainless Steel Cat Fountains | **141** |
+| Best Pet Cameras No Subscription | **139** |
+| LR4 vs Leo's Loo Too | **114** |
+
+### Week 6 选题（6/16-6/20）— 5/5 ✅
 
 | # | 选题 | 修饰词 | 类型 | 状态 |
 |---|------|:--:|:--:|:--:|
@@ -31,13 +54,15 @@
 | 2 | Are Automatic Feeders Worth It for One Cat? | worth it | C | ✅ 已发布 |
 | 3 | Best Quiet Pet Fountains for Apartments | for apartment | C | ✅ 已发布 |
 | 4 | Automatic Feeder Maintenance Checklist | maintenance | C | ✅ 已发布 |
-| 5 | 3-Year Cost: Litter-Robot 5 vs Amazon Basics | 3 year cost | B | — |
+| 5 | 3-Year Cost: Litter-Robot 5 vs Amazon Basics | 3 year cost | B | ✅ 已发布 |
 
-### 周二：选题 1+2 ✅（2 篇 + 2 Pin 已发布，97 页/64 Pin 在线）
-### 周三：选题 3+4 ✅（2 篇 + 2 Pin 已发布，99 页/66 Pin 在线）
-### 周四：选题 5（1 篇）
-### 周五：外链 outreach
-### 周六：Pinterest 批量生成下周 Pin 图（不集中发布，每天 1-2 Pin 分散）
+### Week 6 额外产出
+- Wikidata 实体 Q140290653 创建 ✅
+- Qwoted 体系搭建（域名邮箱 + Source 档案 + 统计数据页 + Pitch #1）
+- 机器人吸尘器品类调研（入 Week 8）
+- Pinterest 审计修复全部完成（Board 拆分/描述补全/UTM补全）
+- R7+R8 Pin 发布（76 Pin）
+- GEO 周检（Schema 3/3 通过）
 
 ## 历史趋势
 

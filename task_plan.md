@@ -1,752 +1,441 @@
-# 任务计划：SmartPetGuide 宠物智能设备内容站
+# SmartPetGuide 任务计划
 
-## 目标
-日均 UV 3000-10000，月收入 $500-2000（12个月目标）
+**最后更新：2026-06-26 周五 | 105 页 / 81 Pin 在线 | 策略阶段：生产驱动 → 分发与验证驱动 | Week 7 内容 7/7 ✅ 外链 outreach 3/2 轮**
 
-## 当前阶段
-**Week 6（6/22 周一收盘）** | **101 页**在线 | Pinterest **78 Pin** / 5 Board / 浏览 2,796 | GSC 14 索引 / 130 曝光 / 3 点击 | GA4 165 活跃用户 | AI 爬虫 **12** | 内链重构 ✅ ~100 条 | 技术清障 ✅（尾斜杠/www/AI爬虫） | GEO Score 70 | Qwoted Pitch #1 已提交
+> 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
-**Week 6 选题（6/16-6/20）：** 5/5 ✅
+### 内容选题引擎（6/26 起）
 
----
+| 引擎 | 优先级 | 频次 | 产出类型 |
+|------|:--:|------|------|
+| **Google PAA** | 🔴 P0 | 每周 1 次，搜 3-4 个核心词 | C 级长尾（KD<10） |
+| **Reddit 问题** | 🟡 P1 | 每周 1 次，扫描 r/CatAdvice+r/cats | C 级长尾 + 选题验证 |
+| **Amazon NR** | ⚪ P2 | 每周 1 次（周六），仅监不追 | B 级新品评测（极少触发） |
 
-## Week 7 选题（6/23-6/27，7 篇 ~6h）
+> PAA 做法：在 Google 搜 `how to [品类词] [问题词]`，看 People Also Ask 和搜索结果中的问题式标题。每个高赞 Reddit 帖子的问题 = 一篇 C 级。NR 自动触发条件：BSR<10K + 评论<100 → 48h 出稿。
 
-> 选题优先级：GSC 直驱 > Pinterest 已验证角度 > 站点内容缺口 > 新场景探索
+### Week 8 PAA 候选（6/26 已挖掘，待下周执行）
 
-### C 级（2 篇，先出量）
+| # | 标题 | KD | 级别 | 工时 |
+|---|------|:--:|:--:|:--:|
+| 1 | How to Stop Your Automatic Feeder From Jamming (7 Fixes) | <5 | C | 30min |
+| 2 | How to Introduce Cat to Automatic Litter Box (Without Scaring Them) | <5 | C | 45min |
+| 3 | Cat Won't Drink From Water Fountain? 8 Reasons & Fixes | <5 | C | 30min |
+| 4 | Why Does My Automatic Feeder Keep Disconnecting from WiFi? | <5 | C | 30min |
+| 5 | How to Keep Your Cat From Breaking Into the Automatic Feeder | <5 | C | 30min |
 
-| # | 标题 | KD | 工时 | 选题理由 |
-|---|------|:--:|:--:|------|
-| 1 | **5 Best No-Subscription Pet Cameras (2026)** | 12-18 | 30min | No Subscription ✅已验证 + 摄像头集群内链 |
-| 2 | **Smart Home for Pets: Alexa & Google Home Compatible Devices** | 8-12 | 45min | **站点 0 覆盖**，真正内容缺口，GEO 友好 |
+### 今日任务状态（6/23 周二）
 
-### B 级（4 篇，主力产出）
+| 任务 | 状态 |
+|------|:--:|
+| C #1+#2 内容 | ✅ 6/22 已完成 |
+| P1-1 GA4 基础看板 | ✅ 全部完成（outbound_click + debug过滤 + IP规则209.137.178.236 + 内部流量过滤器已启用） |
+| GEO-P0-3 Wikidata 验证 | ✅ 4 属性全存在（P31/P571/P407/P856）+ description |
+| GSC 索引请求 ×2 | ✅ 两篇已提交优先抓取队列 |
+| 口径一致性周检 | ✅ 1 处修复（alltop-email.txt），src/pins 干净 |
+| Pinterest 出站实验 Pin #1 | ✅ 已发布（Pet Cameras-no subscription） |
+| robots.txt 修复 | ✅ Vercel 域名 308 死循环修复 + AdsBot 封禁 |
+| GSC 抓取统计 + 链接报告审查 | ✅ 346 请求/90天 / 外部链接仅1条（数据延迟） |
+| Reddit D33 首条链接 | ✅ r/CatAdvice 2猫除臭帖，回复存活 10min+ |
 
-| # | 标题 | KD | 工时 | 选题理由 |
-|---|------|:--:|:--:|------|
-| 3 | **PETKIT Eversweet vs Catit PIXI — Which Smart Fountain Wins?** | 20-25 | 1h | **GSC 直驱**："catit pixi" 在 Top 查询词 |
-| 4 | **Best Stainless Steel Cat Water Fountains (2026)** | 18-22 | 1h | Pinterest ✅：不锈钢 139 浏览 |
-| 5 | **Best Automatic Litter Box for Large Cats — Maine Coon Guide** | 22-28 | 1.5h | Pinterest ✅：大猫 75 浏览 + 独立评测内容稀缺 |
-| 6 | **Traveling with Pets? Smart Tech You Actually Need** | 12-18 | 1h | 场景缺口，清单格式 GEO 友好 |
+### 今日任务状态（6/24 周三）
 
-### A 级（1 篇，周末旗舰）
+| 任务 | 状态 |
+|------|:--:|
+| B #3 PETKIT vs Catit PIXI | ✅ 已有内容 + citation cue + verdict 优化 |
+| 外链 Outreach | ✅ 3封guest post已发（PetPress/PetsAnalysis/AnimalPetsBlog） |
+| GSC Top 6 页优化 | ✅ Petlibro 标题/描述 CTR 修复（55曝光→0点击） |
+| Pinterest 实验 Pin #2 | ✅ pin74_exp2.jpg 已生成（3-Year TCO Cost角度） |
+| Reddit | 🔴 首条链接24h后被移除，策略降级为纯价值回复不挂链接 |
+| GSC Top 6 页优化（续） | ✅ No-Fee GPS/Aorkuler/WOPET Camera 标题问句改断言 |
+| press@ 邮件配置 | ✅ Gmail SMTP 别名已生效 |
 
-| # | 标题 | KD | 工时 | 选题理由 |
-|---|------|:--:|:--:|------|
-| 7 | **Best Automatic Litter Box for Multiple Cats — LR4 vs CS106 vs CATLINK** | 30-40 | 2h | 多猫场景大缺口，支柱内容，积累权威 |
+### 今日任务状态（6/25 周四）
 
-### 每日节奏
+| 任务 | 状态 |
+|------|:--:|
+| B #4 Best Stainless Steel Fountains | ✅ 已有内容 + citation cue + keyword 优化 |
+| B #5 Large Cats Litter Box | ✅ 已有内容 + citation cue + breed keyword |
+| Pinterest Pin #3 | ✅ pin75_exp3.jpg 已发布（避坑/健康角度 → Pet Water Fountains） |
+| P1-5 Named author profile | ✅ Wikidata Q140290653 挂接全站 Schema + 名称统一为"Research Team" |
+| Reddit | 🔴 暂停链接，只做纯价值 |
 
-| 日 | 内容选题 | GEO/外链 | 总工时 |
-|:--:|------|------|:--:|
-| 周一 | #1 (C) + #2 (C) | 🔴 **llms.txt 更新 + llms-full.txt 增强 + Wikidata 补全** | ~2h |
-| 周二 | #3 (B) | 新文章 citation cue | 1h |
-| 周三 | #4 (B) | 新文章 citation cue | 1h |
-| 周四 | #5 (B) + #6 (B) | 新文章 citation cue + verdict | 2.5h |
-| 周五 | #7 (A) | 外链 outreach（HARO注册+首批5 pitch） | 3h |
+### 今日任务状态（6/26 周五）
 
-### 🔴 Week 7 GEO 高优先（周一集中完成，~40min）
+| 任务 | 状态 |
+|------|:--:|
+| B #6 Traveling with Pets | ✅ 新写 6 节 + 4 FAQ，104→105 页 |
+| A #7 Multi-Cat Litter Box | ✅ 新写（LR5/LR4/CATLINK/Elspet），105 页 |
+| GEO P1-1 C级 citation cue | ✅ C #1+#2 描述已加 |
+| GEO P1-3 指南 citation cue | ✅ 33 篇指南统一脚注 `Data sourced from Amazon.com, June 2026` |
+| Pinterest Pin #4 | ✅ pin76_exp4.jpg 已生成（多猫/可靠性） |
+| 外链 Outreach 第 2 轮 | 🔄 PetsAnalysis+AnimalPetsBlog 等回复 / USA TODAY lead |
 
-| # | 任务 | 说明 | 耗时 |
-|:--:|------|------|:--:|
-| GEO-P0-1 | **llms.txt 内容更新** | 计数修正（对比 13→15 / 指南 29→31）+ URL 全部加尾斜杠 | 5min |
-| GEO-P0-2 | **llms-full.txt 增强** | 加 per-category 覆盖详情 + 最新更新日期 + 方法论段落 | 20min |
-| GEO-P0-3 | **Wikidata 属性补全** | Q140290653 补：official website / inception (2026-05-19) / description / language of work | 15min |
+### 今日任务状态（6/27 周六）
 
-### 🟡 Week 7 GEO 持续任务（嵌入内容流程）
-
-| # | 事项 | 说明 |
-|---|------|------|
-| GEO-P1-1 | 7 篇新文章全部加 citation cue | `Data sourced from Amazon.com, June 2026` |
-| GEO-P1-2 | 新文章全部加 verdict 段落 | C 级 2-3 句结论，B/A 级需完整 verdict |
-| GEO-P1-3 | 指南页 citation cue 分批补 | 每次会话改 3-5 篇，本周目标 ~10 篇 |
-| GEO-P1-4 | Schema 抽样验证（周日） | Rich Results Test 抽查 2-3 页 |
-| GEO-P1-5 | Wikidata 存活验证 | 7/1 前确认 Q140290653 未被删除/合并 |
-
----
-
-## Week 8 选题（6/30-7/4）— 机器人吸尘器品类测试
-
-> 背景：全球市场 $10.2B，宠物毛发细分 CAGR 15-22%，客单佣金 $11-31/单。SERP 首页全被 DA85+ 大站垄断，但长尾 KD 10-25 可做。先 3 篇测试，3 个月看 GSC 数据再决定是否全面扩张。
-
-| # | 标题 | KD | 级别 | 工时 | 选题理由 |
-|---|------|:--:|:--:|:--:|------|
-| 1 | **Best Robot Vacuum for Cat Litter Tracking (2026)** | 15-25 | B | 1h | 猫砂带出是猫砂盆用户 #1 痛点，与现有品类最强协同 |
-| 2 | **Best Robot Vacuum for Golden Retriever Shedding — Heavy-Duty Picks** | 10-15 | B | 1h | 品种专题差异化，避开泛词正面竞争 |
-| 3 | **Robot Vacuum vs Stick Vacuum for Pet Hair — Which Saves More Time?** | 15-20 | B | 1h | 对比格式 GEO 友好，决策辅助高转化 |
-
-### 测试标准（3 个月后评估）
-
-| 指标 | 达标线 | 未达标处理 |
-|------|:--:|------|
-| GSC 这 3 篇有曝光 | 任意 1 篇 > 50 次 | ✅ 继续，正式建 vacuums 品类 |
-| 3 个月全部 < 50 曝光 | — | ❌ 搁置，等 DA > 10 再试 |
-
-### 后续产品池（测试通过后）
-
-| 品牌 | 代表型号 | 价格 | 宠物专属功能 |
-|------|------|:--:|------|
-| iRobot Roomba | j9+ | $599 | P.O.O.P 宠物避障 + 双主刷防缠绕 |
-| Roborock | Q5 Pro+ | $499 | 自集尘 + 毛发防缠绕 |
-| Shark | AI Ultra | $419 | 自动集尘 + 矩阵清洁 |
-| eufy | X10 Pro | $799 | 自清洁拖布 + 避障 + MopMaster |
-| Ecovacs DEEBOT | T30S | $599 | 零缠绕刷 + 热水拖布洗涤 |
-| Dreame | L20 Ultra | $949 | 双主刷 + 自动取下拖布 |
+| 任务 | 状态 |
+|------|:--:|
+| canonical 去尾斜杠修正 | ✅ 3 处统一（canonical / Schema @id / sitemap → actual URL） |
+| sitemap lastmod 造假修正 | ✅ 去掉强制写构建日期，由文件时间驱动 |
+| git push 修复 | ✅ SSH→HTTPS，`gh` CLI 凭证认证 |
 
 ---
 
-**Board 描述建议文案：**
-- **Self-Cleaning Litter Boxes**: "Honest reviews and head-to-head comparisons of the best self-cleaning litter boxes. Litter-Robot 5, Litter-Robot 4, Leo's Loo Too, PetSafe ScoopFree, CATLINK, Elspet, Amazon Basics. Buying guides, maintenance tips, and 3-year cost breakdowns for cat owners."
-- **Pet Water Fountains**: "Research-backed reviews of stainless steel and smart cat water fountains. Pioneer Pet, YEAPAW, KittySpout, PETKIT Eversweet, Catit PIXI, Homerunpet. Quiet, hygienic, and easy-to-clean picks for better pet hydration."
-- **Automatic Cat Feeders**: "Smart pet feeding made simple. App-controlled, camera-equipped, and portion-accurate automatic feeders. Petlibro Granary, WOPET, PETKIT Fresh Element, DOGNESS Mini. For cats and small dogs."
-- **Pet Cameras** (新 Board): "Check in on your pet from anywhere. Research-backed pet camera reviews with zero subscription picks. Furbo 360, eufy Security, Petcube Bites 2, xpai 4K, Honey Tour robot. Treat-tossing, 360° tracking, night vision."
-- **GPS Trackers No Subscription** (新 Board): "Real-time pet GPS tracking without monthly bills. Tractive GPS, Aorkuler off-grid tracker, No-Fee GPS. Range, battery life, accuracy, and subscription vs one-time cost comparisons."
-
----
-
-## 各阶段
-
-### 阶段 1：基础设施搭建 ✅ complete
-- [x] 域名 smartpetguide.net + Vercel 部署 + GA4/GSC
-- [x] Astro 5 + Tailwind CSS v3 搭建
-- [x] 产品数据库 products.json（15 款产品）
-- [x] 首批 19 页内容发布
-- [x] Amazon Associates 提交 + Pinterest + Reddit 账号
-- **完成：** 2026-05-19（Day 1）
-
-### 阶段 2：内容冲刺 + 变现激活 ✅ complete
-- [x] 喂食器 Best + 评测 + 指南
-- [x] 猫砂盆补齐
-- [x] WOPET vs Petlibro 对比
-- [x] AA 审核通过 + GSC Sitemap 提交
-- [x] Forest + Honey 编辑杂志风全站重设计
-- **完成：** 2026-05-21（Day 3）
-
-### 阶段 3：饮水机 + 摄像头品类拓展 ✅ complete
-- [x] 饮水机 Best + 评测 ×3 + 指南
-- [x] 摄像头 Best + 评测 ×2 + 对比 + 指南
-- [x] 404 修复（vercel.json + 4 个分类索引页）
-- [x] 24 个假 ASIN 替换为真实 Amazon 链接
-- [x] 产品配图：18/18 款全部替换为 Amazon 高清原图
-- [x] 架构重构：products.json 为唯一数据源，best/reviews/compare/breed 全部引用
-- [x] 关键词调研：Amazon 搜索建议 + Google SERP 分析 + BSR 验证
-- [x] 产品清理：删 Whistle Switch + PETKIT P2 + DOGNESS Fountain（21→18 款）
-- **完成：** 2026-05-21（Day 3 续）
-- **产出：** 33 页在线，18 款产品
-
-### 阶段 4：关键词驱动内容冲刺（Day 3-4）
-
-#### 产品调整 ✅
-- [x] 删 Whistle Switch（BSR #270,865 + 3.0⭐，差评滞销）
-- [x] 删 PETKIT P2（2016 年已下架）
-- [x] 删 DOGNESS Fountain（Amazon 全站点无此产品）
-- [x] 21 → 18 款产品，GPS 追踪器暂留 Tractive 单品
-
-#### P0 内容（高需求 + 低竞争）✅
-- [x] **"Best GPS Dog Trackers Without Monthly Fee 2026"** — 最大内容缺口
-- [x] **"Best Pet Cameras Without Subscription 2026"** — 大痛点
-- [x] **Petlibro Granary 评测增强** — BSR #1,173 爆款
-
-#### P1 内容（好需求 + 可差异化）✅
-- [x] **"Best Self-Cleaning Litter Boxes for Large Cats 2026"**
-- [x] **"Best Stainless Steel Cat Water Fountains 2026"**
-- [x] **"Best Automatic Cat Feeders for 2 Cats 2026"**
-
-#### 目标
-累计 **38 页**（+5 篇新内容）✅ 已达成
-
-### 阶段 4 状态：**complete** ✅
-
-### 阶段 5：对比文 + 品种拓展（Day 4）✅ complete
-- [x] Litter-Robot 4 vs PetSafe ScoopFree 对比
-- [x] Furbo vs eufy 对比（有订阅 vs 无订阅）
-- [x] 品种专题 ×2：Golden Retriever / Multiple Cats
-- [x] GPS 购买指南
-- [x] Pinterest 首批 5 张 Pin 图 → 已发布（pinterest.com/muchengxian）
-- **完成：** 2026-05-22（Day 4）
-- **产出：** 43 页在线，24 款产品，社交引流已启动
-
-### 阶段 6：数据分析 + 第一轮优化（GSC 数据驱动）🔄 边等边建
-- [ ] GSC 数据分析：哪些文章有展示？哪些词在涨？
-- [ ] 对展示 > 50 的文章做第二轮优化
-- [ ] 更新所有文章年份标记为 2026
-- [ ] 注册 ShareASale / Impact 联盟平台
-- **策略修正（5/25）**：不再被动等数据。GSC 数据回馈周期是 2-4 个月，不是 1-2 周。等数据期间继续生产内容。
-
-### 阶段 7：GEO + Schema + AI 搜索优化 ✅ complete
-
-#### Schema & 结构化数据
-- [x] Article Schema：BaseLayout 自动生成，38 篇内容页全部覆盖
-- [x] Review Schema：11 篇评测页含评分/品牌/价格/产品信息
-- [x] FAQ Schema / Breadcrumb Schema：已有
-- [x] Key Takeaways 组件：评测页/Best列表/对比页
-- [x] About 页 EEAT 强化
-
-#### AI 搜索调研（Perplexity 实测）
-- [x] 3 次查询验证：AI 只引用 Forbes/Wired/CNN 等 DA70+ 大站
-- [x] smartpetguide.net 未被任何 AI 引用（符合新站预期）
-- [x] 结论：Schema + 结构化数据是地基，权威信号才是进入 AI 的关键
-
-#### Rich Results 验证
-- [x] 评测页 6/6 · Best列表 3/3 · About 1/1 全部通过
-- **完成：** 2026-05-21（Day 4）
-- **产出：** 43 页全站 Schema · AI 引用路径明确
-
-### 阶段 8：社交引流 — 三线并进策略 ✅ 策略已确定
-
-#### 调研结论（2026-05-22，完整报告见 traffic-research.md）
-| 优先级 | 渠道 | 速度 | 风险 | 适配度 | 定位 |
-|--------|------|------|------|--------|------|
-| P0 | Pinterest | 中快 | 极低 | 极高 | 主力流量引擎 |
-| P0 | Facebook Groups | 中 | 低 | 极高 | 信任驱动转化 |
-| P1 | Reddit | 快 | 高 | 高 | 高质量精准流量 |
-| P2 | Medium | 慢 | 低 | 中 | canonical 回流 |
-| P2 | TikTok | 快 | 中 | 高 | 爆款潜力（需视频） |
-| P2 | Quora | 慢 | 中 | 中高 | 长线复利 |
-
-#### 三线并进
-
-**线 1：Pinterest 提频（P0）** 🔄 第 1 轮完成，冷启动中
-- [x] 7 张 Pin 上线（5/21-22）
-- [x] 24 张产品高清图下载（Amazon CDN → pins/images/）
-- [x] 第 1 轮 9 个 Best 列表 Pin 发布（5/22）→ 16/100+ Pin
-- [x] 41 Pin 5 轮内容计划表（pin-plan.md）
-- [ ] 第 2 轮：9 个对比文 Pin（等数据反馈后确定时间）
-- [ ] 第 3-5 轮：评测+指南+变体
-- **当前数据**：刚发几小时，展示量 0-20（正常冷启动）
-- **目标**：2-3 个月后月均 2K-10K PV
-
-**线 2：Facebook Groups 入群（P0）** 🔄 养号中
-- [x] 加入 8 个群组：6 个猫群 + 2 个狗群
-- [ ] 前 1-2 周：浏览/点赞/纯帮助回复，不发链接
-- [ ] 第 3 周起：回复中自然提及博客
-- **目标**：1 个月后月均 500-3K PV
-
-**线 3：Reddit 新号养号（P1）** 🔄 Day 1
-- [x] 新号 `honest_pet_reviews` 注册（5/22）
-- [x] 订阅 r/CatAdvice r/cats r/dogs r/Pets r/smarthome r/BuyItForLife r/gadgets
-- [ ] Day 1-7：浏览/点赞/纯帮助评论（不带链接）
-- [ ] Day 8-14：逐步增加有深度的评论，偶尔说"check my profile"
-- [ ] Day 15+：在"求推荐"类帖子中自然放 smartpetguide 链接
-- **教训**：旧号 `Additional_Diver3250` 因 Playwright 自动化 + Day 1 放链接，10 条全部被 Reddit 移除，账号已废
-- **目标**：养号后月均 1K-5K PV
-
-#### 辅助渠道
-- [x] **Flipboard**：注册账号+Magazine创建，RSS 自动同步需邮件申请发布者权限 → **暂时搁置**
-- [x] **RSS 重写**：6 条目→50+条目，域名 .com→.net，描述 300+ 字
-- [ ] **Medium**：改写 3-5 篇主站文章，设 canonical 回流（每周 1-2 篇）
-- [ ] **Quora**：每周回答 3-5 个宠物智能设备问题（3-6 月复利）
-- [ ] **Product Hunt**：一次性 Launch"Wirecutter for Pet Tech"拿 backlink
-
-### 阶段 9：多语言（Day 26-30）
-- [ ] 西班牙语 + 德语子目录 /es/ /de/
-- [ ] Top 20 文章翻译初稿
-
-### 阶段 10：规模化 + 广告变现（Month 2-3）
-- [ ] 内容冲刺至 150 篇
-- [ ] 申请 Mediavine Journey（月 5 万 sessions）
-- [ ] 宠物保险比价板块
-
----
-
-### 阶段 6a：方向微调 — 不锈钢饮水机+摄像头优先
-
-#### Google Trends 验证 + 内容追加（2026-05-21）
-| 关键词 | Trends 热度 | 行动 | 状态 |
-|------|------|------|------|
-| stainless steel cat water fountain | 23 | 追加 2 篇评测 | ✅ YEAPAW + KittySpout |
-| best pet camera | 14 | 追加 2 篇评测 | ✅ xpai 4K + Honey Tour |
-| gps tracker no monthly fee | 0 | 不追加 | ✅ 已降级 |
-| pet camera no subscription | 0 | 不追加 | ✅ 已降级 |
-| automatic feeder for 2 cats | 1 | 不追加 | ✅ 已降级 |
-
-#### 产出：43 → **47 页**（+4 篇评测）
-
-### 阶段 6b：50 页里程碑 — 3 篇对比文追加 ✅ complete
-
-#### 内容追加（2026-05-22）
-| 对比 | 产品 A | 产品 B | 理由 |
-|------|--------|--------|------|
-| Pioneer Pet vs YEAPAW | $39 经典 | $93 泵免 | 命中 Trends 23 不锈钢饮水机 |
-| xpai 4K vs eufy | $43 4K | $129 2K | 无订阅摄像头对比 |
-| PETKIT Eversweet vs Catit PIXI | $59 30dB | $79 3 高度 | 智能饮水机对比 |
-
-#### 产出：47 → **50 页**（+3 篇对比）
-#### 对比文总计：6 → **9 篇**
-
-#### 核心教训
-**Amazon 搜索 ≠ Google 搜索。** "no subscription/monthly fee" 是 Amazon 站内搜索词，Google 上几乎为零。选品必须双平台验证。
-
-### 阶段 6c：GEO 全栈优化 ✅ complete
-
-#### AI 引用深度调研（2026-05-23）
-- 四大引擎对比：ChatGPT/Perplexity/Google AIO/Gemini 引用算法差异
-- 真实案例：Growth Pro 0→82 引用（11 个月，133% 流量增长）
-- 关键因子：对比内容 +55% / 统计数据 +62% / 问题式 H2 +2.8× / dfn 定义 +57%
-
-#### 优化实施
-| 优化 | 效果 | 状态 |
-|------|------|------|
-| robots.txt AI 爬虫白名单 | 6 bot（GPTBot/PerplexityBot/Google-Extended/CCBot/anthropic-ai） | ✅ |
-| Author/Publisher sameAs | Pinterest+Medium+Flipboard 跨平台品牌一致性 | ✅ |
-| 66 个 H2 问题式标题 | +2.8× AI 引用率 | ✅ 13 篇指南全覆盖 |
-| 22 个 `<dfn>` 定义标签 | +57% AI 吸收率 | ✅ 关键术语已标记 |
-| Guide 可见日期 | 内容新鲜度信号 | ✅ May 24, 2026 |
-| Medium 3 篇 canonical | DA95 域名权威回流 | ✅ Trends Top 3 方向 |
-| Pinterest 25 Pin | 品牌信号积累 | ✅ 进行中 |
-
-#### GSC 首次真实数据
-- 1 点击 / 4 曝光 / CTR 25% / 平均排名 1
-- site: 搜索 4 唯一页面（+Aorkuler 评测）
-- **注意：** 疑似自身测试数据（site:搜索+页面验证产生的曝光和点击），非真实用户流量
-
-### 阶段 6d：Day 6 — CTA 补齐 + Skills 优化 + Awin 注册 + 数据初探 ✅ complete
-
-#### CTA 底部补齐（2026-05-24）
-- [x] 评测页底部 CTA（21 页，FAQ 后加"Ready to try...?"+ Amazon 按钮）
-- [x] 对比页底部 CTA（11 页，双产品并排按钮）
-- [x] Best 列表底部 CTA（9 页，Top Pick 推荐按钮）
-- **每页从 1 个链接提升到 2-3 个转化点**
-
-#### Skills 优化
-- [x] baoyu-image-gen（废弃）→ baoyu-imagine 替换
-- [x] 新增 image-optimization（图片压缩/WebP）
-- [x] 清理 4 个无用 skill（review/micro-saas-launcher/news-monitor/baoyu-image-gen）
-- [x] 激活 affiliate-marketing 联盟策略审查
-- [x] 总计 14→21 个精准 Skills（持续增长）
-
-#### Awin 联盟注册
-- [x] 自助注册完成（4 步：Account Setup → Promotional Type → Promotional Space → Verification）
-- [x] 账号：muchengxian@gmail.com / SmartPetGuide
-- [ ] 审核中，等待 Awin 邮件回复
-
-#### GSC + Pinterest 数据初探（Day 6）
-- GSC：1点击/4曝光（评估为自身测试流量），索引仍在处理中
-- Pinterest：Best列表11pv > 对比文4pv（~3x），0保存0点击，5月浏览
-- **结论：尚无可靠真实流量数据，等 1-2 周数据沉淀**
-
-#### 时间线校正
-- Day 1=5/19, Day 2=5/20, Day 3=5/21, Day 4=5/22, Day 5=5/23, **Day 6=5/24**
-- M7 达标 = Day 4（非 Day 5），提前达标；阶段 5 = Day 4（5/22）
-
-#### 技术优化（Day 6 后续）
-- [x] **尾部斜杠 canonical 修复**：BaseLayout 添加 canonical 标签 + Schema @id 同步去斜杠
-- [x] **内部链接审计**：5 个分类索引页全部更新（reviews 11→21, compare 4→11, guides 4→13, best 4→9, breed 新增）
-- [x] **图片性能优化**：全部产品图添加 decoding="async" + width/height + 评测 hero 图 fetchpriority="high"
-
-#### 外链获取（Day 6）
-- [x] **GitHub Profile**：muchengxian-lab 创建，README 含 smartpetguide.net 链接
-- [x] **Product Hunt**：5/27（周二）排期发布，DA90+ dofollow
-- [x] **Indie Hackers**：产品页+帖子已上线，DA72 dofollow
-- [x] **The Cat Site**：注册+个人资料链接，DA48 dofollow ✅
-- [x] ~~BetaList~~（收费跳过） ~~Dog Forums~~（注册被拒）
-- **外链 7/7 完成：PH + IH + GitHub + Cat Site + Medium + Pinterest + Flipboard**
-
----
-
-### 阶段 6e：策略重整 — 良辰美案例对照分析（Day 7，5/25）🔄 执行中
-
-#### 背景
-对照分析抖音博主「光羽的平行世界」采访的 AI 建站者良辰美（300+网站、年入$200K+）的真实路径，提炼可迁移经验教训，调整 SmartPetGuide 策略。
-
-#### 核心洞察
-1. **良辰美的本质是概率游戏**：300 个站赌 1 个爆（成功率 ~2.7%），前 36 个站全失败。如果他在第 5 个站就"等数据"，就没有第 37 个。
-2. **SmartPetGuide 是精品单站策略**：1 个站做深做透，不需要复制他的数量游戏，但要复制"不停试错"的思维。
-3. **新域名 SEO 数据回馈周期是 2-4 个月**，不是 1-2 周。现在 GSC 的 1点击/4曝光 是正常状态，不能据此做方向判断。
-4. **他成功的关键是「追热点+第一个做」**：游戏攻略站爆在「心动小镇」新游戏上线的窗口期。SmartPetGuide 的等效策略 = 追踪 Amazon 宠物智能设备 New Releases。
-5. **他的流量方法是黑帽 SEO（评论外链）**，已被 Google 2026 年 3 月 Spam Update 重点打击，SmartPetGuide 绝不采用。
-6. **他的"不懂代码"是人设**：300 站+支付系统后不可能完全不懂。但"AI 辅助+人工判断"的协作模式是真实有效的。
-
-#### 策略调整：五停止 + 五启动
-
-##### 🔴 停止/压缩
-
-| 原策略 | 调整 | 理由 |
-|--------|------|------|
-| **「暂停新内容，等数据 1-2 周」** | ❌ 立即终止 | 新域数据回馈周期是月级，不是周级。等数据 = 空转 |
-| **所有内容按 A 级标准打磨** | 压缩到 20% | 每篇都精雕是资源浪费，大部分长尾词不需要 Grade 8+Schema 全套 |
-| **FB Groups + Reddit 每日长时间养号** | 压缩到 15 分钟/天 | 社交流量不稳定，SEO 才是复利引擎。养号维持即可 |
-| **Medium 继续追加文章** | 暂停追加 | 已有 3 篇 canonical，再投 ROI 递减。等 GSC 数据再评估 |
-| **Quora / TikTok 启动** | 无限期推迟 | 分散精力，当前阶段聚焦内容+SEO |
-
-##### 🟢 新启动/加强
-
-| 新策略 | 优先级 | 说明 |
-|--------|:------:|------|
-| **恢复内容生产：每周 5-8 篇** | 🔴 P0 | 不要停。等数据的每一周都在损失复利积累 |
-| **内容分级制度（A/B/C）** | 🔴 P0 | 20% A 级精雕 + 50% B 级标准 + 30% C 级快速 |
-| **新品速报栏目** | 🔴 P0 | 监控 Amazon New Releases，48h 内出稿，创造「心动小镇时刻」 |
-| **Pinterest 持续提频** | 🟡 P1 | 唯一值得投入的社交渠道（宠物类目+Pin 生命周期 6-12 月） |
-| **100 篇后调研 Mediavine Journey** | 🟢 P2 | 门槛 30K sessions/月，为降低 Amazon 佣金依赖做准备 |
-
-#### 内容分级标准
-
-| 等级 | 占比 | 投入 | 适用场景 | 标准 |
-|------|:----:|------|----------|------|
-| **A 级** | 20% | 全流程（2-3h/篇） | 高竞争关键词、Best 列表、核心对比 | Schema 全套 + Hemingway Grade 8 + FAQ + 产品图 + CTA |
-| **B 级** | 50% | 标准流程（1-1.5h/篇） | 中等竞争、单品评测、品类指南 | 基础 Schema（Article+Breadcrumb）+ 可读性 + 产品图 + CTA |
-| **C 级** | 30% | 快速产出（30min/篇） | 长尾词、品种专题、FAQ 扩展 | 基础 Article Schema + 产品图 + CTA，不过度打磨 |
-
-#### 新品速报机制
-
-```
-触发条件：Amazon Pet Supplies > Cats/Dogs 品类 New Releases 榜单
-          + BSR < 10,000（有销量验证）
-          + 评论 < 100（还没被大站覆盖）
-
-行动：48 小时内产出 B 级以上单品评测
-      优先追：智能猫砂盆 / 智能饮水机 / 智能喂食器 新品
-
-目标：在新品搜索需求爆发前抢占排名
-      等效于良辰美「第一个做心动小镇攻略」的窗口期策略
-```
-
-#### 社交渠道重新定级
-
-| 渠道 | 旧优先级 | 新优先级 | 每日时间 | 说明 |
-|------|:------:|:------:|:-------:|------|
-| Pinterest | P0 | **P1** | Pin 发布 15min | 保持每周 2-3 轮 Pin 发布 |
-| FB Groups | P0 | **P2** | 5min | 浏览+点赞维持存在感 |
-| Reddit | P1 | **P2** | 5min | 纯养号，D15 前不推广 |
-| Medium | P2 | **暂停** | 0 | 3 篇够了，等数据 |
-| TikTok | P2 | **暂停** | 0 | 当前无视频产能 |
-| Quora | P2 | **暂停** | 0 | 长线复利，但现在做太早 |
-
-**社交总时间：25min/天 → 节省的 1-2h/天 全部投入内容生产。**
-
-#### 修订后的里程碑
-
-| 里程碑 | 内容数 | UV目标 | 预计完成 | 原计划 |
-|--------|--------|--------|---------|--------|
-| M7: 70篇+社交三线 | 70 | — | ✅ Day 4 | 不变 |
-| **M7.5: 新品速报上线** | **73+** | — | **Day 8-9** | 新增 |
-| M8: 规模化 | 150+ | 500-1000/天 | Month 2-3 | 推迟（等速报验证） |
-| M9: 广告变现 | 200+ | 1000-3000/天 | Month 4-6 | 不变 |
-
-#### 本周行动清单（5/25-5/31）
-
-**总目标：8 篇新内容（3 评测 + 3 指南 + 2 长尾），70 → 78 页**
-
-##### 选题调研（已完成 5/25）
-
-**内容缺口分析：**
-- 3 款产品有数据无评测：PETKIT Fresh Element（喂食器）/ Homerunpet Wireless（饮水机）/ eufy（摄像头）
-- 场景指南缺口：公寓/成本分析/新手入门尚未覆盖
-- 长尾词缺口：不锈钢vs塑料安全性/普通摄像头替代宠物摄像头
-
-##### 具体选题
-
-| # | 标题 | 类型 | 等级 | 时间 | 选题理由 |
-|---|------|------|:--:|:----:|------|
-| 1 | **PETKIT Fresh Element Solo Review 2026** | 评测 | B | 1.5h | 补喂食器缺口（4→5），$129/4.4★/6100评，旋转密封保鲜是差异化 |
-| 2 | **Homerunpet Wireless Fountain Review 2026** | 评测 | B | 1h | 补饮水机缺口（5→6），$45无线+USB-C+运动感应，最低价智能饮水机 |
-| 3 | **eufy Security Pet Camera Review 2026** | 评测 | B | 1h | 补摄像头缺口（5→6），已有2篇对比文指向它但无独立评测，"无订阅+本地存储"角度 |
-| 4 | **Smart Pet Devices for Apartment Living 2026** | 指南 | A | 2h | 场景化长尾：噪音+空间+无线，跨品类推荐，VOC噪音投诉高频 |
-| 5 | **The True Cost of Smart Pet Devices: Subscription vs One-Time (3-Year Analysis)** | 指南 | A | 2.5h | VOC最强发现——"订阅费愤怒"，跨品类成本对比表，转化杠杆内容 |
-| 6 | **First Smart Pet Device? Where to Start (Beginner's Guide 2026)** | 指南 | A | 2h | 买家旅程入口，串联现有Starter Kit内容，新用户着陆页 |
-| 7 | **Stainless Steel vs Plastic Cat Fountains: Safety, Taste & Hygiene** | 长尾 | C | 30min | Reddit+Amazon反复讨论，猫痤疮/细菌/塑料析出，挂钩Trends 23 |
-| 8 | **Can a Regular Security Camera Work as a Pet Camera?** | 长尾 | C | 30min | Reddit高频问题，xpai 4K处于重叠区，帮读者决策是否需宠物专用 |
-
-**周总工时：约 11 小时（日均 ~1.6h），产出 8 篇，78 页**
-
-##### 每日节奏建议
-
-| 日期 | 重点 | 产出 | 状态 |
-|------|------|------|:--:|
-| 周一 5/25 | PETKIT 评测 + Homerunpet 评测 + Amazon Basics 评测 | 3 篇 | ✅ |
-| 周二 5/26 | eufy 评测 + Pinterest 收尾 | 1 篇 + Pin 优化 | ✅ |
-| 周三 5/27 | PH检查 + 公寓指南（A级）+ Pinterest R3 Pin 22-27 + 双平台数据 + Pin 28-33优化 + UTM补全 + 养号D7 | 1篇A级+5Pin+6Pin优化+14UTM+数据分析 | ✅ |
-| 周四 5/28 | 订阅成本+A级+饮水机C级+Pin图优化+Bloagarama外链 | 2篇+6图+1外链+养号 | ✅ |
-| 周五 5/29 | 3 篇指南 + EEAT全站修正 + 养号 + 数据补检 | 3 篇 + EEAT + 养号 + GSC + Amazon | ✅ |
-| 周六 5/30 | Amazon NR扫描 + GSC检查 + 外链目录 + 养号 | 数据 + 外链 + 养号 | ✅ |
-| 周日 5/31 | 休息 | — | ✅ |
-| 周一 6/1 | 3篇内容 + GSC修复 + 内链加固 + Vercel部署 + Pin图12张 + 外链Crunchbase/Hotfrog + Pinterest数据分析 | Day 13 全栈日 | ✅ |
-| 周二 6/2 | 2篇指南（Maintenance + Under $50）+ Pin 34-37发布 + 头像更新 | 2 篇 + 4 Pin | ✅ |
-| 周三 6/3 | ✅ Feeder Portion Size Guide + ✅ PH措辞修正+外链排查+Affiliate披露+兽医免责（审计 Day 1）+ ✅ GSC 检查 + ✅ P0坏链修复+移动导航+信任声明 | 1 篇 + 审计 + 数据 + P0×3 | ✅ |
-| 周四 6/4 | ✅ Fountain Filter Guide + ✅ How We Research页+不推荐产品页 + ✅ 竞品外链分析 + ✅ P1-2 Schema日期 + ✅ P1-4 FAQ HTML | 1篇+2新页+外链+P1×2 | ✅ |
-| 周五 6/5 | ✅ Litter Box Intro Guide + ✅ Amazon NR扫描 + ✅ 核心评测增强 + ✅ P1-1 OG图片 + ✅ P1-3 Review Schema | 1篇+增强+P1×2 | ✅ |
-| 周六 6/6 | 周复盘 + Pinterest 数据周检 + GSC 检查 + 项目文件同步 | 数据 + 同步 | ⏳ |
-
-#### 关键原则
-- **不要在第 5 个站就停下来** → SmartPetGuide 才 70 篇，远没到该停的阶段
-- **精品单站 ≠ 只做内容不做量** → 70 篇 × 分级效率 > 70 篇 × 全 A 级打磨
-- **良辰美的黑帽手段绝不学** → 不碰评论外链、不碰 AI 全自动内容、不碰灰色矩阵
-- **但要学他的节奏** → 不停、不等、持续产出，用数量换概率
-
----
-
-## 内容结构（94 内容页 + 5 信息页 = 99 页，sitemap 收录 98 URL）
-
-| 类型 | 数量 | 内容 |
-|------|------|------|
-| 评测（Reviews） | 26 | 猫砂盆×7 / 喂食器×4 / 饮水机×6 / 摄像头×6 / GPS×3 |
-| 对比（Compare） | 12 | 猫砂盆×4 / 喂食器×2 / 饮水机×2 / 摄像头×3 / GPS×1 |
-| Best 列表 | 9 | 全品类覆盖 + 细分专题 |
-| 指南（Guides） | 29 | 5 购买 + 5 场景 + 3 Starter Kit + 3 长尾 + 4 保养/预算 + 1 份量 + 1 滤芯 + 1 猫砂盆入门 + 1 湿粮 + 3 其他 |
-| 品种（Breed） | 7 | 法斗/金毛/拉布拉多/德牧/多猫/老猫/小狗 |
-| 信息页 | 11 | 首页/关于/How We Research/不推荐产品/隐私/联盟披露/分类索引×4/404 |
-| **总计** | **94** | **全品类全覆盖（26款产品）** |
-
-> 注：sitemap 收录 98 URL（99 页中 404 页不计入），实际内容页 94 + 信息页 5（首页/about/privacy/affiliate/404）= 99 页
-
-### 质量指标
-- Hemingway Grade 8（全部 21 篇评测已达标）
-- 每篇评测 4 FAQ + 产品数据 + Schema
-- Review/Product/Breadcrumb/FAQ Schema 全覆盖
-
-## 选品原则（调研确认 + Trends 验证）
-1. **关键词先行**：Amazon 搜索建议 + Google Trends 双平台验证
-2. **BSR 验证**：只推 Amazon Best Sellers Rank < 50,000 的产品
-3. **评分过滤**：只推 ≥ 3.8 星的产品
-4. **竞争评估**：优先做 Google 首页有小站/Reddit 结果的关键词
-5. **Trends 验证**：Google Trends 热度 > 3 才投入，0 = 不投入
-6. **平台区分**：Amazon 搜索词 ≠ Google 搜索词，选品需双平台验证
-
-## 里程碑速查
-
-| 里程碑 | 内容数 | UV目标 | 预计完成 |
-|--------|--------|--------|---------|
-| M1: 基础上线 | 19 | — | ✅ Day 1 |
-| M2: 变现激活 | 19 | — | ✅ Day 3 |
-| M3: 30篇+架构完善 | 33 | 零星 | ✅ Day 3 |
-| M4: 关键词驱动38篇 | 38 | 10-30/天 | ✅ Day 3 |
-| M5: 对比+品种43篇 | 43 | 50-200/天 | ✅ Day 4 |
-| M6: GEO+Schema优化 | 43 | 10-50/天 | ✅ Day 4 |
-| M7: 70篇+社交三线 | 70 | 300-500/天 | ✅ Day 4（提前达标） |
-| M8: 规模化 | 150+ | 500-1000/天 | Month 2-3 |
-| M9: 广告变现 | 200+ | 1000-3000/天 | Month 4-6 |
-
-## 关键问题
-1. GSC 数据何时出现展示/点击？（sitemap 已提交 2026-05-21，通常 3-7 天）
-2. 第一批 33 篇文章在 GSC 表现如何？哪些词有展示？
-3. Amazon 第一条佣金何时产生？（AA 已通过，链接全部真实 ASIN）
-4. 是否需要根据 GSC 数据调整阶段 4 内容方向？
-
-## 已做决策
-| 决策 | 理由 |
-|------|------|
-| 域名选 smartpetguide.net | .com 被占，.net 语义清晰 |
-| 猫砂盆+喂食器优先 | 猫砂盆佣金高($50-100/单)，喂食器搜索量大 |
-| 纯静态 Astro 5 | <2s 加载，Vercel 免费，SEO 友好 |
-| products.json 单一数据源 | 改一处全站同步，杜绝假 ASIN |
-| Forest + Honey 编辑风 | Fraunces+Atkinson Hyperlegible，去 AI 感 |
-| 选品=关键词先行+BSR+评分 | 调研确认的方法论，避免无效内容 |
-| 新站不打品类大词 | 从长尾痛点切入，等权重积累后再攻品类词 |
-| 所有 ASIN 必须真实 | Day 3 发现全部占位 ASIN 无效，逐个验证替换 |
-
-## 遇到的错误
-| 错误 | 尝试次数 | 解决方案 |
-|------|---------|---------|
-| vercel.json 路由导致全站子页面 404 | 1 | cleanUrls: true + trailingSlash: false |
-| 分类导航页 404（best/reviews/compare/guides） | 1 | 创建 4 个 index.astro |
-| 24 个占位 ASIN 全部无效 | 1 | 浏览器逐个访问 Amazon 验证真实 ASIN |
-| 架构重构后 breed 页残留 3 个假 ASIN | 1 | 改为从 products.json 按 productId 引用 |
-| JSON 删除产品后尾逗号语法错误 | 1 | 检查 JSON 数组末尾逗号 |
-
-## 备注
-- GSC 数据是判断内容方向的最重要依据，每 3 天检查一次
-- 如果某个品类文章在 2 周内零展示，立即调整方向
-- 产品有变动时只改 products.json，全站自动同步
-- 新加产品前必须验证 BSR + Amazon 在售状态 + 评分 ≥ 3.8
-- 每完成一个阶段更新状态：pending → in_progress → complete
-- 决策前重新读取此计划（注意力操纵）
-
----
-
-## 阶段 11：生财有术经验驱动的策略调整（Day 9，5/27 新增）
-
-### 调整 1：资源重新分配
-
-| 维度 | 旧分配 | 新分配 | 行动 |
-|------|:--:|:--:|------|
-| 内容生产 | ~70% | **75%** | 保持节奏，B/C 级控 1h 内 |
-| 外链建设 | ~1% | **20%** | 每周固定 1-2h，系统推进 |
-| 技术优化 | ~29% | **5%** | 停止过度打磨 Schema/CWV |
-
-### 调整 2：外链建设周计划
-
-**每周固定任务（1-2 小时）：**
-
-| 周次 | 类型 | 具体行动 | 目标数 |
-|------|------|------|:--:|
-| **Week 1**（5/28-6/3） | 目录提交 | Blogarama✅ AllTop❌ Crunchbase✅ Hotfrog❌ Manta❌ = **8 外链完成** | 15-20 → 8（免费目录大多已死） |
-| **Week 2**（6/4-6/10） | 竞品外链分析 | 用免费工具查 pawsomeadvice.com 的 357 个引用域名，筛选可复制的 | 30 个目标 |
-| **Week 3**（6/11-6/17） | 资源页外链 | 搜 "pet resources" + "cat resources" + "dog resources" site:.edu，找可提交的资源页 | 10-15 |
-| **Week 4**（6/18-6/24） | Guest Post 调研 | 搜 "write for us" + pet/cat/dog，整理可投稿的博客列表 | 10-15 |
-| **持续** | HARO/Qwoted | 注册 HARO，每周回复 2-3 条宠物相关记者提问 | 每周 2-3 |
-
-### 调整 3：KD<20 选题策略
-
-**现有内容 KD 评估（估算）：**
-
-| 内容类型 | 数量 | 估计 KD | 策略 |
-|------|:--:|:--:|------|
-| Best 列表 | 9 篇 | 50-80 | ❌ 暂停新建，已有内容等权重积累 |
-| 对比文 | 11 篇 | 25-50 | 🟡 不再新建，已有的有价值 |
-| 单品评测 | 25 篇 | 10-30 | ✅ 新品速报继续做（KD 低的时间窗口） |
-| 购买指南 | 5 篇 | 30-55 | 🟡 谨慎新开 |
-| 场景化指南 | 5 篇 | 10-25 | ✅ 优先做（信息型长尾，KD 低） |
-| 品种专题 | 7 篇 | 5-20 | ✅ C 级快速出 |
-| C 级长尾 | 0 篇 | 5-15 | 🔴 **最大缺口！立即补** |
-
-**本周剩余选题 KD 复审（Semrush 实测）：**
-
-| # | 选题 | 实测 KD | 建议 |
-|---|------|:--:|------|
-| 6 | The True Cost: Subscription vs One-Time | ~15-25 | ✅ 信息型低竞争，"No Fee"角度已验证 |
-| 7 | First Smart Pet Device? Beginner's Guide | ~20-35 | 🟡 可做，但优先做完 KD 更低的 |
-| 8 | Stainless Steel vs Plastic Cat Fountains | ~15-25 | ✅ 长尾高转化，挂钩 9.9K 搜索量大词 |
-| 9 | Can Regular Security Camera Work as Pet Camera? | ~10-20 | ✅ Reddit 高频问题 |
-
-**新增 KD<20 选题池（Semrush 实测 + 备选）：**
-
-| 选题 | 类型 | 实测 KD | 月搜索量 | 理由 |
-|------|------|:--:|:--:|------|
-| How to Clean a Cat Water Fountain | C 级指南 | **12%** | 140 | ✅ Semrush 实测最低 KD |
-| How to Clean a Stainless Steel Cat Fountain | C 级指南 | ~5-10 | — | 上一题的变体，Reddit 高频 |
-| Why Does My Cat Not Use the Water Fountain? | C 级指南 | ~5-10 | — | 搜索量稳定，0 竞争 |
-| How to Introduce Cat to Automatic Litter Box | C 级指南 | ~5-10 | — | 新手高频问题 |
-| How Long Does Crystal Litter Last vs Clumping? | C 级指南 | ~5-10 | — | PetSafe ScoopFree 相关内容 |
-| Pet Camera Placement Guide | C 级指南 | ~5-10 | — | 场景化，挂钩已有产品 |
-| Best Quiet Automatic Litter Box for Bedrooms | B 级 Best | ~10-20 | — | 公寓角度二次利用 |
-| WiFi vs Non-WiFi Pet Feeder Comparison | B 级对比 | ~10-15 | — | 覆盖所有喂食器产品 |
-
-**现有内容 KD 分级（Semrush 实测）：**
-
-| KD 范围 | 数量 | 策略 |
-|:--:|:--:|------|
-| **KD 40-55** | 2 篇 Best 列表 | ❌ 不动。等 DA 到 15+ 再优化 |
-| **KD 30-40** | 1 篇 Best（不锈钢饮水机 9.9K） | 🟡 重点优化对象，6 个月内最可能出成绩的大词 |
-| **KD 20-30** | ~4 篇（LR4 评测等） | 🟡 继续做新品评测，自然积累 |
-| **KD 10-20** | ~5 篇（无订阅摄像头等） | ✅ 优先推广到 Pinterest |
-| **KD <10** | 大量长尾页面 | ✅ 批量生产 C 级
-
-### 本次调整的核心原则
-
-1. **外链不再等**——从今天开始，每周都有外链任务
-2. **KD 优先于话题热度**——一个 KD 5 的长尾词比一个 KD 60 的热词对现在的我们更有价值
-3. **技术优化刹车**——Schema/CWV 够用就行，不再花时间打磨
-4. **确认耐心是对的**——即使最快的工具站也要 8 个月爆发，我们 Month 5 能见到第一笔钱就是正常速度
-
----
-
-## 日常/周期任务清单（Day 9 起执行）
-
-### 🔴 每日任务（~2h）
+## 🔁 每日（~2h）
 
 | 任务 | 时间 | 说明 |
 |------|:--:|------|
-| **FB + Reddit 养号** | 15min | FB：8 群浏览/点赞/回复。Reddit：honest_pet_reviews 浏览/评论。D15 前不推广 |
-| **内容生产** | 1-1.5h | A 级 2-3h（每周最多 2 篇）/ B 级 1-1.5h / C 级 30min。按周计划选题推进 |
-| **Pinterest Pin 发布** | 10min | 每天 1-2 个 Pin（分散发布，不集中）。按 pin-plan.md 顺序发布 |
+| **口径自检** | 2min | 新写/修改的任何对外文字，检查 hands-on/tested/we tested 残留 |
+| **Pinterest 出站实验 Pin** | 10min | 每天 1 个带 UTM 的实验 Pin（价格/TCO/零订阅/可靠性/避坑型标题）。12 个做完前不发普通 Pin |
+| **内容生产** | 90min | 仅围绕 4 个集群（不锈钢饮水机/零订阅摄像头GPS/喂食器可靠性/猫砂盆TCO）。A 级每周≤2 篇 / B 级 1-1.5h / C 级 30min |
+| **FB + Reddit** | 10min | FB：浏览/点赞/纯帮助回复。Reddit：纯价值回复不挂链接，养到500+karma再尝试自然链接 |
 
-### 🟡 每周任务（~5h → ~5.25h）
+---
+
+## 📅 每周（~5.5h）
 
 | 任务 | 时间 | 频次 | 说明 |
 |------|:--:|:--:|------|
-| **Amazon New Releases 扫描** | 30min | **每周 2 次**（周三+周六） | 扫 Pet Supplies > Cats/Dogs 新品。触发条件：BSR<10K + 评论<100 → 48h 内出 B 级评测 |
-| **外链建设** | 1-2h | **每周 1 次** | 按 4 阶段计划：Week1 目录提交 → Week2 竞品外链分析 → Week3 资源页 → Week4 Guest Post 调研 |
-| **Pinterest 数据分析** | 10min | **每周 1 次**（周六） | 看 analytics.pinterest.com：浏览/点击/收藏/出站点击。重点关注出站点击是否破 0 |
-| **GSC 数据检查** | 10min | **每周 2 次**（周三+周六） | 核心看：索引页数变化。索引从 5→10→20 是唯一重要的 KPI。曝光/点击目前太小不用细看 |
-| **GEO 存活检查** | 5min | **每周 1 次**（周一数据检查时） | 验证 `llms.txt` + `llms-full.txt` 返回 200；检查 robots.txt AI bot 白名单是否完整（GPTBot/ChatGPT-User/PerplexityBot/Google-Extended/CCBot/anthropic-ai）；关注是否有新 AI 爬虫需要添加 |
-| **Qwoted 周检** | 10min | **每周 1 次**（周一） | 搜 "pet tech" / "smart pet" / "robot vacuum pet"，匹配就 pitch（引用 `/pet-tech-statistics/`），无匹配跳过 |
+| **外链 Outreach** | 2-3h | 每周 1 次（固定，不可挤占） | Qwoted 2-3 pitch + 资源页 outreach + 品牌补充资料。目标：每周 +2-5 可验证外链 |
+| **GSC 索引追踪** | 15min | 每周 2 次（周三+周六） | 核心 KPI：索引页数（目标 14→30→60）+ 索引率。索引<20 时暂停大规模扩页 |
+| **GSC 曝光 Top 6 页优化** | 20min | 每周 1 次（周三） | Petlibro Granary / Catit PIXI / 首页 / Aorkuler GPS / No-Fee GPS / WOPET Camera — 补 verdict + 数据脚注 + 内链 |
+| **Pinterest 出站分析** | 10min | 每周 1 次（周六） | KPI 从 Pin 浏览切换为 **outbound click rate + save rate + 每个 Board 的链接点击** |
+| **GA4 数据净化** | 10min | 每周 1 次（周一） | 检查 source/medium 报告，确认自测流量已过滤。看 affiliate_click + outbound_click 事件是否正常上报 |
+| **Google PAA 选题挖掘** | 30min | 每周 1 次（周六） | 搜 3-4 个核心词看 PAA + Reddit 问题帖，产出 3-5 个 C 级候选 |
+| **Amazon NR 扫描** | 10min | 每周 1 次（周六） | 仅监不追，触发条件极罕见（BSR<10K + 评论<100） |
+| **GEO 存活检查** | 5min | 每周 1 次（周一） | 验证 llms.txt + llms-full.txt 200；robots.txt AI bot 白名单完整；Wikidata Q140290653 存活 |
+| **GSC 设置报告巡检** | 10min | 每周 1 次（周一） | robots.txt 报告（0 错误）+ 抓取统计信息（301/404 占比<10% + 平均响应<200ms + AdsBot 零请求） |
+| **口径一致性周检** | 5min | 每周 1 次（周一） | Grep 全站 `hands-on|tested|testing` 确认零残留；抽查 pin-plan.md / backlinks/ 素材无旧口径 |
 
-### 🟢 每月任务（~2h → ~2.5h）
+---
+
+## 🟢 每月（~3h）
 
 | 任务 | 时间 | 说明 |
 |------|:--:|------|
 | **GSC 深度分析** | 30min | 每月 1 号。导出查询词报告，对比上月，找出曝光增长最快的页面和新增查询词 |
-| **Pinterest 月度分析** | 15min | 看按月趋势：浏览增长曲线、点击率变化、Board 排名变化 |
-| **Semrush KD 复查** | 30min | 每月 1 次。免费版 10 次查询：复查已有内容 KD + 检查新选题 KD。重点关注哪些词的 KD 在下降 |
-| **选题池更新** | 30min | 汇总 Amazon New Releases + Reddit 高频问题 + Semrush 低 KD 词，更新下周选题 |
-| **外链进度回顾** | 15min | 检查本月新增外链数、引用域名数。目标：每月 +10-20 外链 |
-| **GEO 月度复检** | 30min | 每月 1 号。① 跑 `geo-audit` 重新打分（目标：每月 +3-5 分）；② 更新 llms-full.txt 内容摘要（新品/新指南）；③ 检查 Schema 覆盖率（Google Rich Results Test 抽查 5 页）；④ 品牌实体进度（Wikidata/Crunchbase/Reddit）|
+| **Pinterest 月度分析** | 15min | 按月趋势：出站点击率变化、保存率、Board 排名 |
+| **Semrush KD 复查** | 30min | 每月 1 次。免费版 10 次查询。重点关注哪些词的 KD 在下降 |
+| **选题池更新** | 30min | 汇总 Amazon NR + Reddit 高频问题 + Semrush 低 KD 词，只围绕 4 个集群扩展 |
+| **外链进度回顾** | 15min | 本月新增外链数、引用域名数。目标：每月 +10-20 外链 |
+| **GEO 月度复检** | 30min | 每月 1 号。跑 geo-audit 重新打分（目标 +3-5/月）；更新 llms-full.txt；Schema 抽查 5 页 |
+| **信任一致性审计** | 15min | 每月 1 号。隐私页 vs GA4 实际追踪是否一致；外链平台描述 vs 站内 How We Research 是否一致 |
 
-### 🔵 每篇新文章发布后（5min → 7min）
+---
+
+## 🔵 新文章发布后（~7min）
 
 | 任务 | 说明 |
 |------|------|
 | **GSC 请求索引** | URL Inspection → Request Indexing |
-| **Pinterest Pin 排期** | 如果是评测/对比/Best，同步加入 pin-plan.md |
-| **内部链接检查** | 新文章是否被相关页面引用（分类索引页/其他评测） |
-| **GEO citation cue** | 评测/指南/对比页确认有数据来源标注（`Data sourced from Amazon.com, [Month] 2026`） |
+| **内部链接检查** | 新文章是否被分类索引页 + 已有 Top 页面引用 |
+| **CTA + 数据脚注** | 确认有 verdict/conclusion + 数据来源标注 + affiliate 披露 |
+| **Pinterest 排期** | 仅当文章属于 4 个集群时才做 Pin，否则跳过 |
 
-### 数据看板一览
+---
 
-| 渠道 | 地址 | 核心 KPI | 当前值 (6/18) |
-|------|------|------|:--:|
-| GSC | search.google.com → smartpetguide.net | 索引 / 曝光 / 点击 / CTR / 排名 | 14 / 124 / 3 / 2.4% / 19.6 |
-| Pinterest | analytics.pinterest.com | Pin / 浏览(30d) / 出站点击 | 69 / 2,549 / 0 |
-| Semrush | semrush.com → Domain Overview | Authority Score | 0 |
-| 本地 | task_plan.md 本周进度表 | 周产出篇数 | 5/5 ✅ |
-| GEO | `GEO-AUDIT-REPORT.md` | GEO Score | 70 |
+## 🚫 已取消/暂停
+
+| 事项 | 状态 | 理由 |
+|------|:--:|------|
+| 死目录提交（Manta/Hotfrog/AllTop 等） | ❌ 取消 | 免费目录大多已死，ROI 近零 |
+| 无反馈大词 Best 列表新建 | ❌ 取消 | 已有 9 篇够用，等 DA>10 或索引>50 |
+| 无出站验证 Pin 批量铺量 | 🟡 暂停 | 先 12 个实验 Pin 验证通路 |
+| 机器人吸尘器品类扩张 | 🟡 仅保留 3 篇测试 | 3 个月看 GSC 数据再决定 |
+| Medium 追加文章 | ❌ 取消 | 3 篇 canonical 足够，ROI 递减 |
+| hands-on/tested 口径 | ❌ 已全站清零 | 每周 Grep 自检 |
+
+---
+
+## 🔴 本周任务（6/23-6/27）
+
+### 紧急行动
+
+| # | 任务 | 类型 | 耗时 | 状态 |
+|:--:|------|:--:|:--:|:--:|
+| P0-1 | 隐私页 GA4 披露修正 | 合规 | ✅ | 6/23 完成 |
+| P0-2 | 外部素材口径统一（backlinks/ + pins/） | 合规 | ✅ | 6/23 完成 |
+| P1-1 | **GA4 基础看板**：source/medium + landing_page + affiliate_click + outbound_click + self-traffic exclusion | 数据治理 | 30min | ✅ 全部完成 |
+| P1-2 | **GSC 曝光 Top 6 页轻优化**：补 verdict + 数据脚注 + 内链 | 索引加速 | 45min | ✅ 4/6完成（Petlibro+No-Fee/Aorkuler/WOPET） |
+| P1-3 | **Pinterest 12 个出站实验 Pin**：价格/TCO/零订阅/可靠性/避坑型标题，全部带 UTM | 社交验证 | 分 3 天 | 🔄 4/12 完成 |
+| P1-4 | **外链 Outreach 2 轮**：Qwoted 2-3 pitch + 资源页 outreach | 外链权威 | 2×2.5h | 🔄 第1轮：PetPress🔴付费站 / 第2轮：等2家回复+USA TODAY lead |
+| P1-5 | **创建 named author profile**：EEAT 增强，Schema sameAs 挂接 | EEAT | 30min | ✅ Wikidata Q140290653 挂接全站 Schema |
+
+### GEO 任务
+
+| # | 任务 | 耗时 | 状态 |
+|:--:|------|:--:|:--:|
+| GEO-P0-1 | llms.txt 内容更新（计数修正 + URL 加尾斜杠） | — | ✅ 6/22 完成 |
+| GEO-P0-2 | llms-full.txt 增强（品类覆盖详情 + 最新日期 + 方法论） | — | ✅ 6/22 完成 |
+| GEO-P0-3 | **Wikidata Q140290653 属性补全**（official website / inception 2026-05-19 / description / language） | 15min | ✅ 4属性全部已存在 |
+| GEO-P1-1 | 7 篇新文章全部加 citation cue（Data sourced from Amazon.com, June 2026） | 持续 | ✅ C #1+#2 描述已加 / Best 系列自带 |
+| GEO-P1-2 | 新文章全部加 verdict 段落（C 级 2-3 句，B/A 级完整 verdict） | 持续 | ✅ Best 列表自带 verdict + 评测页自带 |
+| GEO-P1-3 | 指南页 citation cue 分批补，本周目标 ~10 篇 | 持续 | ✅ 33 篇指南底部统一加引用脚注 |
+| GEO-P1-4 | Schema 抽样验证（周日，Rich Results Test 2-3 页） | 10min | ⏳ |
+| GEO-P1-5 | Wikidata Q140290653 存活验证（7/1 前确认未被删除/合并） | 5min | ⏳ |
+
+### Week 7 选题（7 篇，~6h）
+
+> 选题优先级：GSC 直驱 > Pinterest 已验证角度 > 站点内容缺口 > 新场景探索
+
+| # | 标题 | 类型 | KD | 工时 | 选题理由 | 状态 |
+|---|------|:--:|:--:|:--:|------|:--:|
+| 1 | **5 Best No-Subscription Pet Cameras (2026)** | C | 12-18 | 30min | No Subscription 已验证 + 摄像头集群内链 | ✅ 6/22 |
+| 2 | **Smart Home for Pets: Alexa & Google Home Compatible Devices** | C | 8-12 | 45min | 站点 0 覆盖，真正内容缺口，GEO 友好 | ✅ 6/22 |
+| 3 | **PETKIT Eversweet vs Catit PIXI — Which Smart Fountain Wins?** | B | 20-25 | 1h | GSC 直驱："catit pixi" 在 Top 查询词 | ✅ 6/24 |
+| 4 | **Best Stainless Steel Cat Water Fountains (2026)** | B | 18-22 | 1h | Pinterest 已验证：不锈钢 139 浏览 | ✅ 6/25 |
+| 5 | **Best Automatic Litter Box for Large Cats — Maine Coon Guide** | B | 22-28 | 1.5h | Pinterest 已验证：大猫 75 浏览 + 独立评测内容稀缺 | ✅ 6/25 |
+| 6 | **Traveling with Pets? Smart Tech You Actually Need** | B | 12-18 | 1h | 场景缺口，清单格式 GEO 友好 | ✅ 6/26 |
+| 7 | **Best Automatic Litter Box for Multiple Cats — LR4 vs CS106 vs CATLINK** | A | 30-40 | 2h | 多猫场景大缺口，支柱内容，积累权威 | ✅ 6/26 |
+
+### 每日排班
+
+| 日 | 内容 | 分发/验证 | 总工时 |
+|:--:|------|------|:--:|
+| 周二 6/23 | C #1+#2 ✅ | GA4 看板 + Wikidata 验证 + GSC 索引请求 + 口径周检 | ~1.5h |
+| 周三 6/24 | B #3 PETKIT vs Catit PIXI | 🔴 **外链 Outreach 2-3h** + Pinterest 出站实验 Pin ×2 | ~3.5h |
+| 周四 6/25 | B #4 Best Stainless Steel Fountains | 🔴 GSC 索引追踪 + 曝光 Top 6 页轻优化 + 口径一致性 Grep | ~2h |
+| 周五 6/26 | B #5 Large Cats Litter Box + B #6 Traveling with Pets | 🔴 Pinterest 出站实验 Pin ×2 + named author profile 创建 | ~2.5h |
+| 周六 6/27 | A #7 Multi-Cat Litter Box | 🔴 外链 Outreach 第 2 轮 + Amazon NR 扫描 + Pinterest 出站分析 + 下周选题 | ~3.5h |
+
+---
+
+## 📊 数据看板
+
+| 指标 | 当前 (6/22) | 30 天目标 | 审计评分 |
+|------|:--:|:--:|:--:|
+| 页面数 | 103 | 115-120 | A- |
+| GSC 索引 | 14 | 30+ | C |
+| GSC 曝光 | 130 | 300 | C |
+| GSC 点击 | 3 | 20 | C |
+| Pinterest 出站点击 | 0 | >5 | C- |
+| 引用域名 | 11 | 18+ | C |
+| GA4 affiliate_click | ? | 有数据 | C+ |
+| GEO Score | 70 | 75+ | B+ |
+| Wikidata | Q140290653 | 补全属性 | B |
+| 口径一致性 | P0 风险 | 零残留 | — |
 
 ### 每日时间预算
 
 ```
-周一至周五：~2h/天
-  15min  养号（FB + Reddit）
-  10min  **Pin 发布（每天 1-2 个，分散发布）**
-  90min  内容生产（B 级或 C 级）
-   5min  新文章后索引请求
-
-周六：~3h
-  30min  Amazon New Releases 扫描
-  90min  内容生产（通常 C 级 ×2）
-  30min  GSC + Pinterest 数据检查
-  30min  **批量生成下周 Pin 图**（不集中发布，每天 1-2 个分散发）
-
-周日：休息（或补进度）
+周二至周六：~2-3h/天
+    2min  口径自检（hands-on/tested 零容忍）
+   10min  Pinterest 出站实验 Pin ×1（12 个做完前不发普通 Pin）
+   10min  FB + Reddit 养号
+   60-120min 内容生产（仅围绕 4 个集群，含 verdict + 数据脚注）
+    5min  新文章后 GSC 索引请求
+   
+周三额外：GSC 索引追踪 + 曝光 Top 页轻优化 (+30min)
+周六额外：Amazon NR 扫描 + Pinterest 出站分析 + 外链 Outreach (+3h)
 ```
-
-### 什么时候调整这套节奏？
-
-| 触发条件 | 调整方向 |
-|------|------|
-| 月自然点击 > 100 | GSC 检查升级为每周 3 次，开始做查询词分析 |
-| Pinterest 出站点击 > 10/周 | 发布频率从每周 2-3 轮升级到每天 1-2 Pin |
-| 索引 > 30 页 | 开始优化已有内容的标题/描述/内部链接 |
-| Authority Score > 5 | 可以开始做 KD 20-30 的对比文 |
-| 月佣金 > $100 | 复盘哪些文章在产生收入，多写同类内容 |
-| 月流量 > 1,000 PV | 注册 GA4 增强型电商追踪，精确归因佣金来源 |
-| **GEO Score > 80** | GEO 月度复检降为季度；重点转向品牌实体建设（Wikidata/Wikipedia） |
-| **首次 AI 引用出现** | 记录引用来源+页面+关键词，分析被引用页面的共同特征，复制到其他核心页面 |
 
 ---
 
-## 阶段 12：EEAT 审计经验 + 81 页后的策略拐点（Day 11，5/29 新增）
+## ⏭️ Week 8（6/30-7/4）
 
-### EEAT 审计发现
+### 1. 内容与选题（Content, 5.5h）
 
-第三方审计发现 3 个主要风险：
-1. 全站 60+ 处"tested/hands-on"措辞与研究方法论不符（实际是 research-backed 而非 physical testing）
-2. 缺失作者署名和 EEAT 信号
-3. 邮箱域名不一致 + 文档日期滞后
+> 引擎：Google PAA 主力 + Reddit 辅助 + NR 仅监不追
 
-### 已完成修正
+| # | 标题 | KD | 级别 | 工时 | 选题来源 |
+|---|------|:--:|:--:|:--:|------|
+| 1 | How to Stop Your Automatic Feeder From Jamming (7 Fixes) | <5 | C | 30min | PAA |
+| 2 | How to Introduce Cat to Automatic Litter Box | <5 | C | 45min | PAA |
+| 3 | Cat Won't Drink From Water Fountain? 8 Reasons & Fixes | <5 | C | 30min | PAA |
+| 4 | Why Does My Automatic Feeder Keep Disconnecting from WiFi? | <5 | C | 30min | Reddit |
+| 5 | How to Keep Your Cat From Breaking Into the Automatic Feeder | <5 | C | 30min | Reddit |
+| 6 | Best Robot Vacuum for Cat Litter Tracking (2026) | 15-25 | B | 1h | 品类测试 |
+| 7 | Best Robot Vacuum for Golden Retriever Shedding | 10-15 | B | 1h | 品类测试 |
+| 8 | Robot Vacuum vs Stick Vacuum for Pet Hair | 15-20 | B | 1h | 品类测试 |
 
-| 修正项 | 改动范围 | 完成 |
+> 机器人吸尘器测试标准：3 个月后任意 1 篇 > 50 曝光 → 继续；全部 < 50 → 搁置等 DA>10。
+
+---
+
+### 2. 页面优化（On-Page, 3h）
+
+> 已索引 14 页中，GSC 曝光最高的 5 个做深度加固。目标：提高现有页面的 EEAT 信号和用户行为指标，促使 Google 增加抓取预算。
+
+| # | 页面 | 曝光 | 加固动作 | 工时 |
+|:--:|------|:--:|------|:--:|
+| 1 | Petlibro Granary 评测 | 55 | 加"真实用户原话"正反引用 + 对比表 | 45min |
+| 2 | Catit PIXI 对比 | 39 | verdict 强化 + 内链→饮水机评测 | 30min |
+| 3 | 首页 | 37 | 加最新研究区块 + social proof 数字 | 30min |
+| 4 | No-Fee GPS 评测 | 29 | 加"真实用户原话" + Tractive/Aorkuler 对比表 | 45min |
+| 5 | Aorkuler GPS 评测 | 29 | 加使用场景章节 + 内链→对比文 | 30min |
+
+---
+
+### 3. 内链体系（Internal Linking, 1h）
+
+> 上一次全站内链重构是 6/22（~100 条跨类型链接）。本周目标：从 14 个已索引页面出发，给新页面补入站链接。
+
+| # | 动作 | 工时 |
+|:--:|------|:--:|
+| 1 | 14 索引页各加 Related Resources → 本周 8 新篇 + A #7 | 30min |
+| 2 | 评测模板 "Explore More" → 补 3 个高价值指南链接 | 15min |
+| 3 | 饮水机↔猫砂盆↔喂食器↔摄像头 Best 列表互相链接 | 15min |
+
+---
+
+### 4. 外链建设（Off-Page, 2h）
+
+| # | 动作 | 工时 |
+|:--:|------|:--:|
+| 1 | PetsAnalysis + AnimalPetsBlog 跟进（1 周未回复→搜新目标） | 30min |
+| 2 | 第 3 轮 outreach：搜 5 个新目标，排除公开标价站 | 1h |
+| 3 | 起草 + 发送 pitch 邮件 | 30min |
+
+---
+
+### 5. 技术 SEO（Technical, 30min）
+
+| # | 动作 | 工时 |
+|:--:|------|:--:|
+| 1 | 本周 8 新篇 + 5 个强化页重新提交 GSC 优先抓取 | 15min |
+| 2 | robots.txt / sitemap / canonical 抽样验证 | 10min |
+| 3 | Schema 抽样验证（GEO P1-4，Rich Results Test 2-3 页） | 10min |
+
+---
+
+### 6. 社交与分发（Social & Distribution, 1.5h）
+
+| 任务 | 频次 | 说明 |
+|------|:--:|------|
+| Pinterest 实验 Pin #5-8 | 每天 1 个 | 4/12→8/12，角度：可靠性/价格/避坑/使用场景 |
+| Reddit 纯价值回复 | 每天 5min | 不挂链接，养 karma |
+
+---
+
+### 7. GEO 优化（1h）
+
+| # | 动作 | 工时 | 说明 |
+|:--:|------|:--:|------|
+| 1 | **7/1 月度 GEO 复检**（geo-audit 重打分） | 20min | 目标从 70→75+ |
+| 2 | llms-full.txt 更新 | 15min | 105→113 页 + 新增机器人吸尘器品类 |
+| 3 | Wikidata Q140290653 存活验证（P1-5） | 5min | 确认未被删除/合并 |
+| 4 | 新文章 citation cue（P1-1） | 持续 | 8 篇新文章描述加 `Data sourced from Amazon.com, June 2026` |
+| 5 | Schema 抽样验证（P1-4） | 10min | Rich Results Test 抽查 2-3 页 |
+
+---
+
+### 8. 数据与监控（Analytics, 1h）
+
+| 任务 | 频次 | 说明 |
+|------|:--:|------|
+| GSC/Pinterest/GA4 周检 | 周一 | 索引变化 + 出站点击 + GA4 事件 |
+| 口径一致性自检 | 每天 2min | Grep `hands-on\|tested` |
+| NR 扫描 | 周六 | 仅监不追 |
+| Pinterest 出站分析 | 周五 | 4 实验 Pin 对比出站点击率 |
+
+---
+
+### 每日排班
+
+| 日 | 上午（内容） | 下午（分发） |
+|:--:|------|------|
+| **周一** | PAA #1+#2 | 主力页 Petlibro + GSC 提交 + 周检 |
+| **周二** | PAA #3+#4 | 内链补全 + Pin #5 |
+| **周三** | PAA #5 + Robot #6 | GEO 月度复检 + llms-full.txt 更新 + 主力页 Catit/首页/No-Fee/Aorkuler + Pin #6 |
+| **周四** | Robot #7+#8 | 外链第 3 轮 + Pin #7 |
+| **周五** | — | 外链跟进 + NR + Pin #8 + 周复盘 + 下周 PAA |
+
+---
+
+### Week 8 成功标准
+
+| 指标 | 当前 | 目标 | 判定 |
+|------|:--:|:--:|------|
+| GSC 索引 | 14 | **20+** | 🔴 主力 KPI |
+| Pinterest 出站点击 | 0 | 1+ | 必须破 0 |
+| 引用域名 | 11 | 15+ | 外链发力 |
+| GEO Score | 70 | 75+ | 品牌权威 |
+| 实验 Pin | 4/12 | 8/12 | 持续验证 |
+| GA4 affiliate_click | ? | 有数据 | 看板已建
+
+---
+
+## 📈 触发条件（什么时候调整节奏）
+
+| 触发条件 | 调整方向 |
+|------|------|
+| **Pinterest 出站点击 > 5/周** | 出站实验 Pin 12→常态化，恢复每日 1-2 Pin 发布 |
+| **索引 > 30 页** | GSC 曝光 Top 页优化升级为每周 2 次 |
+| **月自然点击 > 100** | GSC 检查升级为每周 3 次，开始做查询词驱动更新 |
+| **GA4 过滤后月活 > 100** | 开始做 source/medium + landing page 归因分析 |
+| **Authority Score > 5** | 可以开始做 KD 20-30 的对比文 |
+| **月佣金 > $50** | 复盘哪些文章在产生收入，多写同类内容 |
+| **月流量 > 1,000 PV** | 注册 GA4 增强型电商追踪 |
+| **GEO Score > 80** | GEO 月度复检降为季度 |
+| **任一集群月曝光 > 500** | 围绕该集群做 hub page + 对比页 + FAQ 页 + Pinterest 系列 |
+| **索引 < 30 持续 4 周** | 暂停大规模扩页，70% 时间转内链+外链+重写 |
+| **Pinterest 出站=0 持续 4 周** | 重新设计 Pin 策略（标题/CTA/图片/Board 结构） |
+
+---
+
+## 📋 项目基础信息
+
+### 技术栈
+- **域名**：https://smartpetguide.net
+- **框架**：Astro 5 + Tailwind CSS v3，纯静态
+- **部署**：Vercel（`vercel.com/muchengxian-labs-projects/smartpetguide`），GitHub push 自动部署
+- **数据源**：`src/data/products.json`（26 款产品，6 品类）
+- **设计系统**：Forest + Honey 编辑杂志风（Fraunces + Atkinson Hyperlegible）
+
+### 选品原则
+1. 关键词先行：Amazon 搜索建议 + Google Trends 双平台验证
+2. BSR 验证：只推 Amazon BSR < 50,000 的产品
+3. 评分过滤：只推 ≥ 3.8 星的产品
+4. 竞争评估：优先做 Google 首页有小站/Reddit 结果的关键词
+5. Trends 验证：Google Trends 热度 > 3 才投入，0 = 不投入
+6. 平台区分：Amazon 搜索词 ≠ Google 搜索词，选品需双平台验证
+
+### 4 个内容集群（VOC 验证 + 市场确认）
+
+| 集群 | 核心角度 | 验证来源 |
+|------|------|------|
+| **A: Stainless Steel Cat Fountain Hub** | 卫生/猫下巴痤疮/清洁难度/材质安全 | Trends 23 + Reddit 共识 + Amazon 好评 |
+| **B: No Subscription Camera/GPS TCO Hub** | 3 年真实成本对比，零订阅替代方案 | VOC #1 痛点（订阅费愤怒）+ Semrush KD 15 |
+| **C: Automatic Feeder Reliability Hub** | 断网是否仍出粮/卡粮/App 稳定性 | VOC #1 购买门槛（可靠性 > 一切） |
+| **D: Litter Box Worth-It/3-Year Cost Hub** | $699→每月成本拆解，多猫家庭 TCO | Reddit 最高频帖子类型 + 转化杠杆 |
+
+### 内容结构（103 页）
+
+| 类型 | 数量 | 说明 |
+|------|:--:|------|
+| 评测（Reviews） | 26 | 猫砂盆×7 / 喂食器×4 / 饮水机×6 / 摄像头×6 / GPS×3 |
+| 对比（Compare） | 15 | 猫砂盆×5 / 喂食器×2 / 饮水机×2 / 摄像头×3 / GPS×1 / 跨品类×2 |
+| Best 列表 | 9 | 全品类覆盖 + 细分专题 |
+| 指南（Guides） | 33 | 购买/场景/保养/长尾/份量/滤芯/入门/湿粮/公寓/成本/新手/智能家居等 |
+| 品种（Breed） | 7 | 法斗/金毛/拉布拉多/德牧/多猫/老猫/小狗 |
+| 信息页 | 13 | 首页/about/privacy/affiliate/how-we-research/不推荐/pet-tech-statistics/分类索引×5/404 |
+
+### 里程碑
+
+| 里程碑 | 内容数 | 状态 |
+|--------|--------|:--:|
+| M1: 基础上线 | 19 | ✅ Day 1 |
+| M2: 变现激活 | 19 | ✅ Day 3 |
+| M3: 30篇+架构完善 | 33 | ✅ Day 3 |
+| M4: 关键词驱动38篇 | 38 | ✅ Day 3 |
+| M5: 对比+品种43篇 | 43 | ✅ Day 4 |
+| M6: GEO+Schema优化 | 43 | ✅ Day 4 |
+| M7: 70篇+社交三线 | 70 | ✅ Day 4 |
+| M8: 规模化 | 150+ | ⏳ Month 2-3 |
+| M9: 广告变现 | 200+ | ⏳ Month 4-6 |
+
+### 90 天目标（到 2026-09-15）
+
+| 指标 | 当前 | 目标 |
 |------|:--:|:--:|
-| 措辞统一 | tested/hands-on → research-backed/analyzed | ✅ 全站 0 残留 |
-| 作者署名 | Footer + 评测页：Written by SmartPetGuide editorial team | ✅ |
-| 数据来源 | 评测页：Data sourced from Amazon.com as of May 2026 | ✅ |
-| 邮箱修正 | hello@smartpetguide.com → .net | ✅ |
-| 文件日期 | task_plan.md 标题：Day 7/70页 → Day 11/81页 | ✅ |
+| 页面数 | 103 | 150-180 |
+| GSC 索引 | 14 | 60-100 |
+| 引用域名 | 11 | 25-40 |
+| Pin | 79 | 150-220 |
+| 月自然点击 | 3 | 100-500 |
+| **GEO Score** | **70** | **85+** |
 
-### 81 页后的策略拐点
-
-**之前（Week 1-2）：拼量**
-- 目标：快速铺内容，建立内容骨架
-- 节奏：每天 2-3 篇，A/B/C 分级
-- 结果：81 页，覆盖全部品类
-
-**之后（Week 3-4+）：做深 + 做信任**
-- Top 20 页面优先证据化
-- 每篇新文章从 Day 1 就带 EEAT 签名
-- 不再追求页数增长，追求单页质量
-
-### 新文章 EEAT SOP（每篇必带）
+### 新文章 EEAT SOP
 
 | 元素 | 位置 | 格式 |
 |------|------|------|
@@ -755,86 +444,84 @@
 | 数据来源 | 评测页 CTA 区域 | Data sourced from Amazon.com as of [Month] 2026 |
 | 联盟披露 | CTA 按钮下方 | As an Amazon Associate, we earn from qualifying purchases |
 
-### Month 2 策略重心
-
-| 维度 | Week 1-2（已完成） | Week 3-4（新） |
-|------|:--:|:--:|
-| 内容 | 堆页数 70→81 | 做深 + 证据化 Top 20 |
-| 外链 | 启动（0→8） | 加速（8→20+） |
-| EEAT | 无 | ✅ 全站达标 |
-| Pinterest | 自然 Pin R1-R3 | R4 启动 |
-| 数据 | GSC 观望 | 开始关注索引变化趋势 |
+### 每篇新文章 GEO checklist
+- [ ] 数据来源标注：`Data sourced from Amazon.com, [Month] 2026`
+- [ ] 评测/指南有独立 verdict/conclusion 句
+- [ ] Citation cue 已加
 
 ---
 
-## 阶段 13：第三方审计整改（Day 14，6/2 新增）
+## 📚 历史阶段（只读归档）
 
-审计来源：外部审查报告（仅公开页面），3 个 P0 + 4 个 P1 问题
-核心结论：信任证据不足是最大风险，需建"方法论透明化"体系
+### 阶段 1：基础设施搭建 ✅ Day 1 (5/19)
+- 域名 smartpetguide.net + Vercel 部署 + GA4/GSC
+- Astro 5 + Tailwind CSS v3 搭建
+- 产品数据库 products.json（15 款产品）
+- 首批 19 页内容发布 + Amazon Associates 提交
 
-### 执行计划（3 天，约 11h）
+### 阶段 2：内容冲刺 + 变现激活 ✅ Day 3 (5/21)
+- 喂食器 Best + 评测 + 指南 + 猫砂盆补齐
+- WOPET vs Petlibro 对比 + AA 审核通过 + GSC Sitemap 提交
+- Forest + Honey 编辑杂志风全站重设计
 
-#### Day 1（6/3 周三）— 内容 1 篇 + 快速修复 5 项 2h ✅
+### 阶段 3：饮水机 + 摄像头品类拓展 ✅ Day 3 (5/21)
+- 饮水机/摄像头 Best + 评测 + 对比 + 指南
+- 404 修复 + 24 假 ASIN 替换 + 产品配图 18/18 Amazon 高清
+- 架构重构：products.json 为唯一数据源
 
-| # | 任务 | 类型 | 预计 |
-|---|------|:--:|:--:|
-| — | **Feeder Portion Size Guide**（KD<5，C 级指南） | 内容 | ✅ |
-| 1 | Product Hunt 页面措辞修正 | P0 | ✅ |
-| 2 | 外链平台排查 | P0 | ✅ |
-| 3 | 评测页顶部加信任行 | P1 | ✅ |
-| 4 | BaseLayout 加兽医免责 | P1 | ✅ |
-| 5 | 全站 CTA 区域 affiliate 披露确认 | P1 | ✅ |
+### 阶段 4：关键词驱动内容冲刺 ✅ Day 3-4 (5/21-22)
+- P0：GPS 无月费 + 摄像头无订阅 + Petlibro 评测增强
+- P1：大猫猫砂盆 + 不锈钢饮水机 + 2猫喂食器
+- 产品清理：18→24 款，累计 38→43 页
 
-#### Day 2（6/4 周四）— 内容 1 篇 + 信任基础设施 + Reddit 解禁 4h
+### 阶段 5：对比文 + 品种拓展 ✅ Day 4 (5/22)
+- LR4 vs PetSafe ScoopFree / Furbo vs eufy 对比
+- Golden Retriever / Multiple Cats 品种专题
+- GPS 购买指南 + Pinterest 首批 5 张 Pin
 
-| # | 任务 | 类型 | 预计 |
-|---|------|:--:|:--:|
-| — | **Fountain Filter Guide**（KD<10，C 级指南） | 内容 | 30min |
-| — | 🔥 **Reddit D14 解禁**：首次在推荐帖放链接 | 社交 | 30min |
-| 1 | 新建 "How We Research & Evaluate" 公开页 | P0 | 2h |
-| 2 | 新建 "Products We Don't Recommend" 页面 | P0 | 1h |
+### 阶段 6：数据分析 + 策略重整 ✅ Day 7-9 (5/25-27)
+- 良辰美案例分析 → 策略调整：恢复生产 + 内容分级 A20/B50/C30
+- 生财有术案例对照 → KD<20 优先 + 外链从 1%→20%
+- Amazon New Releases 扫描 + Amazon Basics 新品抢发
 
-#### Day 3（6/5 周五）— 内容 1 篇 + 评测增强 + 邮件 + NR 扫描 7h
+### 阶段 7：GEO + Schema + AI 搜索优化 ✅ Day 4-6 (5/22-23)
+- Article/Review/FAQPage/BreadcrumbList Schema 全覆盖
+- robots.txt AI 爬虫白名单 6 bot + 66 H2 问题式标题 + 22 dfn 标签
+- Medium 3 篇 canonical + Rich Results 验证 6/6 通过
 
-| # | 任务 | 类型 | 预计 |
-|---|------|:--:|:--:|
-| — | **Litter Box Introduction Guide**（KD 15-20，B 级指南） | 内容 | 1h |
-| — | **Amazon New Releases 扫描** | 数据 | 20min |
-| 1 | 3-5 篇核心评测信任增强 | P0 | 3h |
-| 2 | 邮件订阅接入 | P1 | 3h |
+### 阶段 8：社交引流三线并进 ✅ Day 5 (5/22)
+- Pinterest 5 Board + 41 Pin 计划 + 第1-2轮发布
+- Facebook 8 群组入群 + Reddit 新号养号
+- 策略确定：Pinterest 提频 + FB Groups + Reddit 养号
 
-How We Research 页内容结构：
-- 方法论：聚合 verified purchase reviews > 单人单次测试
-- 评分维度：可靠性/易用性/App 稳定性/清洁/宠物接受度/售后/性价比
-- 数据来源：Amazon verified reviews + BSR + 制造商规格
-- 更新频率：每季度重检
-- 透明声明：不买产品做物理测试，但读每条 verified review
+### 阶段 9-10：CTA 补齐 + Skills 优化 + 外链获取 ✅ Day 6 (5/24)
+- 评测/对比/Best 三模板底部 CTA + Awin 注册
+- 14→21 Skills + GitHub/PH/IH/CatSite 外链上线
+- 技术优化：canonical 修复 + 内链审计 + 图片性能
 
-不推荐页面：列出被我们评估后排除的产品 + 原因（Whistle Switch / PETKIT P2 等）
+### 阶段 11：生财有术经验驱动策略调整 ✅ Day 9 (5/27)
+- 资源重新分配：内容 75% / 外链 20% / 技术 5%
+- 外链建设 4 周计划 + KD<20 选题策略
+- Semrush 实测：KD 55→12 分布，最佳 ROI 词确认
 
-#### Day 3（6/5 周五）— 核心评测增强 + 邮件 6h
+### 阶段 12：EEAT 审计 + 81 页策略拐点 ✅ Day 11 (5/29)
+- 全站 60+ 处 tested→research-backed 措辞统一
+- 作者署名 + 数据来源标注 + 邮箱修正
+- 新文章 EEAT SOP：署名/日期/来源/披露 Day 1 就带
 
-| # | 任务 | 类型 | 预计 |
-|---|------|:--:|:--:|
-| 1 | 3-5 篇核心评测信任增强（Amazon 真实用户原话板块） | P0 | 3h |
-| 2 | 邮件订阅接入（ConvertKit/Buttondown free tier） | P1 | 3h |
+### 阶段 13：第三方审计整改 ✅ Day 14-16 (6/2-6/5)
+- P0：8 坏链修复 + 信任声明 + 移动导航
+- P1：Schema 日期 + FAQ HTML + OG 图片 + Review Schema
+- How We Research 页 + 不推荐产品页 + 3 篇评测增强
 
-核心评测增强每篇加：
-- "What Verified Owners Actually Say" 板块（正面+负面原话引用）
-- 常见故障/投诉频率统计
-- 数据采集日期标注
+### 阶段 14：满月审计 + 策略转向（6/22-6/23）
+- 核心诊断：第一个月是"资产与索引种子月"，内容/技术/GEO 超前，索引/外链/社交出站仍在冷启动早期
+- 策略转向：生产驱动 → 分发与验证驱动
+- 内容方向从全品类铺开 → 4 个集群深耕
+- P0 修复：隐私页 GA4 披露 + 外部素材口径统一 ✅
+- 任务体系全面重构（日常/每周/每月 + 触发条件 + 数据看板）
 
-邮件订阅：
-- Footer 表单（全站自动出现）+ 2-3 封欢迎序列 + 3 篇高流量文章底部内容升级
+---
 
-### 整改优先级总览
-
-| 优先级 | 事项 | 耗时 | 阻塞 |
-|:--:|------|:--:|------|
-| 🔴 P0 | PH 措辞 + 外链排查 | 30min | 合规 |
-| 🔴 P0 | How We Research + 不推荐页 | 3h | 信任基础 |
-| 🔴 P0 | 核心评测增强 | 3h | 转化率 |
-| 🟡 P1 | Affiliate 披露强化 | 30min | 合规 |
-| 🟡 P1 | 兽医免责 | 20min | 合规 |
-| 🟡 P1 | 邮件订阅 | 3h | 用户留存 |
-| ⚪ P2 | 饮水机品类做深 | 融入 P0 | 长期优势 |
+*后续任务管理统一在本文件维护，不再分散到 dashboard.md。每次会话开工读此文件顶部活跃任务区，收工更新任务状态。*
+*progress.md 继续作为会话日志单独维护。findings.md 继续作为研究/决策记录单独维护。*

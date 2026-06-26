@@ -22,12 +22,12 @@
 **Tagline:** Honest reviews of smart pet devices — automatic feeders, self-cleaning litter boxes, pet cameras & more
 **Description:**
 ```
-SmartPetGuide is the Wirecutter for pet tech. We spend weeks hands-on testing automatic feeders, self-cleaning litter boxes, smart water fountains, pet cameras, and GPS trackers — then write honest, data-driven reviews to help pet parents make confident buying decisions.
+SmartPetGuide is the Wirecutter for pet tech. We research and analyze automatic feeders, self-cleaning litter boxes, smart water fountains, pet cameras, and GPS trackers using verified Amazon owner data — then write honest, data-driven reviews to help pet parents make confident buying decisions.
 
 🔍 **70+ in-depth articles** covering every major pet device category
-📊 **24 products tested** with real Amazon data (BSR, ratings, reviews)
+📊 **24 products analyzed** with real Amazon data (BSR, ratings, reviews)
 🔄 **Updated for 2026** — all content refreshed with current prices and specs
-🎯 **No sponsored placements** — every recommendation is independently tested
+🎯 **No sponsored placements** — every recommendation is independently researched
 
 We built SmartPetGuide because most pet product reviews on Google are either generic AI content or sponsored fluff. Pet parents deserve better.
 ```
@@ -38,7 +38,7 @@ We built SmartPetGuide because most pet product reviews on Google are either gen
 
 **First Comment:**
 ```
-Hey PH! I built SmartPetGuide because when my cat got sick last year, I spent HOURS researching automatic feeders and water fountains. The search results were filled with generic "Top 10" lists that clearly never tested the products. So I spent 6 months building a real, hands-on review site.
+Hey PH! I built SmartPetGuide because when my cat got sick last year, I spent HOURS researching automatic feeders and water fountains. The search results were filled with generic "Top 10" lists that clearly never analyzed real owner data. So I spent 6 months building a real, research-backed review site.
 
 The site is 100% static (Astro 5 + Vercel), loads in under 2 seconds, and every product recommendation links to verified Amazon listings with real reviews.
 

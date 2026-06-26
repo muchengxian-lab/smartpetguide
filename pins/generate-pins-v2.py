@@ -124,6 +124,35 @@ PINS = [
         "tags": ["LR4 vs CS106 vs CATLINK", "Per-Cat Weight Tracking", "13L+ Waste Drawers", "3-4 Cat Capacity"],
         "cta": "Compare Multi-Cat Boxes",
     },
+    # --- R9 出站实验 Pin (6/23-) ---
+    {
+        "id": "pin73_exp1", "img": "eufy-pet-cam.jpg",
+        "title": "5 Pet Cameras With\nZero Monthly Fees (2026)",
+        "badge": "No Subscription Required — One-Time Purchase",
+        "tags": ["eufy Security #1 Pick", "xpai 4K Budget Champ", "Honeytour Robot Cam", "Save $100+/Year vs Furbo"],
+        "cta": "See All No-Fee Cameras",
+    },
+    {
+        "id": "pin74_exp2", "img": "furbo-360.jpg",
+        "title": "The Hidden $500 Cost of\nYour Pet Camera (2026)",
+        "badge": "Subscription Fees Add Up — See the Math",
+        "tags": ["Furbo $7.99/mo = $288/3yr", "vs eufy $0/mo Forever", "3-Year TCO Comparison", "$0 Sub Picks Inside"],
+        "cta": "See the True 3-Year Cost",
+    },
+    {
+        "id": "pin75_exp3", "img": "pioneer-pet-raindrop.jpg",
+        "title": "Is Your Cat's Fountain\nMaking Them Sick?",
+        "badge": "Plastic vs Stainless Steel — The Hidden Risk",
+        "tags": ["Plastic Biofilm Warning", "18,500+ Owners Switched", "Dishwasher-Safe Picks", "From $39 — Health Upgrade"],
+        "cta": "See Steel Fountain Picks",
+    },
+    {
+        "id": "pin76_exp4", "img": "litter-robot-4.jpg",
+        "title": "3 Cats, 1 Litter Box?\nYour Setup Might Be Too Small",
+        "badge": "Multi-Cat Homes Need Bigger Solutions",
+        "tags": ["LR5 Fits 5 Cats", "CATLINK 13L Drawer", "$349 Budget Pick", "Drawer Size Comparison"],
+        "cta": "Compare Multi-Cat Boxes",
+    },
 ]
 
 for pin in PINS:

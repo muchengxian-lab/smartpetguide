@@ -1,7 +1,7 @@
 # SmartPetGuide Pinterest Pin 内容计划
 
 > 目标：150+ Pin | 每天 1-2 个分散发布（周六批量做图，不集中发） | 图片：`pins/pins_with_text/`（带文字叠层，1000×1500）
-> 活跃 Pin：**76**（R1-R6 62 + R7 12 + R8 2） | 5 Board | R8 Week 7 进行中
+> 活跃 Pin：**79**（R1-R6 62 + R7 12 + R8 5） | 5 Board | R8 Week 7 进行中 | Pin 67 已发 ✅ / Pin 71-72 待发
 
 ## 设计规范（v2 — 2026-06-16 更新）
 
@@ -229,7 +229,7 @@
 ### Pin 25
 - **图片**：`xpai-4k-camera.jpg`
 - **标题**：xpai 4K Camera Review — $43 4K Pet Cam With No Subscription?
-- **描述**：4K resolution. 64GB built-in storage. Pan and tilt. Zero monthly fees. All for $43. Is the xpai 4K the best budget pet camera or too good to be true? Our hands-on review.
+- **描述**：4K resolution. 64GB built-in storage. Pan and tilt. Zero monthly fees. All for $43. Is the xpai 4K the best budget pet camera or too good to be true? Our research-backed review.
 - **链接**：https://smartpetguide.net/reviews/xpai-4k-camera-review/
 - **标签**：xpai 4K camera, budget pet camera, no subscription camera, pet monitoring, 4K security camera
 
@@ -557,7 +557,7 @@
 
 > Pintitle: "10 Best Automatic Cat Feeders Researched & Reviewed (2026)"
 >
-> We spent months testing automatic pet feeders with real BSR data and verified Amazon reviews. From budget WOPET ($89) to the Petlibro Granary with built-in 1080p camera — find the right feeder for your cat.
+> We spent months analyzing automatic pet feeders with real BSR data and verified Amazon reviews. From budget WOPET ($89) to the Petlibro Granary with built-in 1080p camera — find the right feeder for your cat.
 >
 > 🔗 Full breakdown: https://smartpetguide.net/best/automatic-cat-feeders/
 > #automaticcatfeeder #pettech #smartpet #catproducts
