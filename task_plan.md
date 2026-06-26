@@ -339,6 +339,9 @@
 | **周三** | PAA #5 + Robot #6 | GEO 月度复检 + llms-full.txt 更新 + 主力页 Catit/首页/No-Fee/Aorkuler + Pin #6 |
 | **周四** | Robot #7+#8 | 外链第 3 轮 + Pin #7 |
 | **周五** | — | 外链跟进 + NR + Pin #8 + 周复盘 + 下周 PAA |
+| **每日** | — | `git add -A && git commit -m "day: <日期> <改动摘要>" && git push` |
+
+> ⚠️ **每日收尾提交**：每天工作结束前必须 commit + push。内容写完不推送 = Google 看不到 = 白写。这是 Week 7 16 个文件堆积 3-7 天的教训。
 
 ---
 
