@@ -2284,4 +2284,54 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] 5 条 commit 全部推送
 
 ---
+## 会话：2026-06-27 周六（续1）— 补提交 Week 7 全部改动
+
+### 发现 sitemap 差异
+- [x] 本地 sitemap 104 URL vs 线上 102 URL，缺 2 个新页面
+- [x] **根因**：Week 7 内容改动（B #3-6、A #7、Petlibro 强化等）本地写好但从未 commit/push
+- [x] 16 个文件 / 998 行新增，改动跨越 6/24-6/26，最久延迟 3 天
+
+### 补提交 + 流程改进
+- [x] `git add -A` → commit → push：21 files, 1230 insertions
+- [x] 线上验证：litter-boxes-for-multiple-cats + traveling-with-pets-smart-tech 均 200
+- [x] **每日收尾提交**加入 task_plan.md Week 8 排班表
+
+---
+## 会话：2026-06-27 周六（续2）— 周六例行任务+实验Pin
+
+### GSC 索引追踪（浏览器操作）
+- [x] **概览**：索引 14 / 未索引 12 / 点击 4 / CWV 无数据
+- [x] **索引报告**：12 个"重定向错误"，上次更新 6/12（过期数据）
+- [x] **站点地图**：上次读取 6/5（22 天前），仅发现 84 个 URL
+- [x] **重提交**：sitemap-index.xml 已重新提交
+- [x] **12 URL Inspection**：逐个检查，全部已索引（重定向错误实为历史遗留，修复后已验证通过）
+
+### Pinterest 出站分析（浏览器操作）
+- [x] **概览（近 30 天）**：1,990 浏览 / 0 出站点击 / 1 保存 / 6 受众
+- [x] 实验 Pin 5/12，4 个已发 1-4 天，数据待积累
+
+### GEO 验证
+- [x] **Schema 抽样**：3 页全部通过（Petlibro/Multi-Cat/xpai）
+- [x] 所有字段完整：headline/description/author/publisher/mainEntityOfPage/sameAs+Wikidata
+- [x] ⚠️ dateModified 全部停在 6/3，未随内容更新刷新
+- [x] **Wikidata Q140290653**：存活，P31/P571/P407/P856 完整
+
+### PAA 选题确认
+- [x] 5 个候选网络调研完成（feeder jamming / cat won't drink / litter box intro / wifi disconnect / cat breaking feeder）
+- [x] 所有选题 KD<5，Google PAA + Reddit 均有真实问题来源
+
+### 外链 Outreach
+- [x] PetPress 回复：$250/篇带 5 do-follow 链接 — 🔴 付费站，不跟
+- [x] PetsAnalysis + AnimalPetsBlog：3 天无回复
+- [x] 下周需第 3 轮找新目标
+
+### 实验 Pin #5
+- [x] 图片生成：pin77_exp5.jpg（价格/价值角度，WOPET $89 vs Petlibro $139 vs PetSafe $249）
+- [x] 已发布：Automatic Cat Feeders Board，UTM pin_exp5
+- [x] 实验进度 5/12
+
+### Amazon NR
+- [x] WebFetch 503 阻断，跳过（仅监不追）
+
+---
 *每个阶段完成后或遇到错误时更新此文件*

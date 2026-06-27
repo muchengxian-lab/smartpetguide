@@ -1,6 +1,6 @@
 # SmartPetGuide 任务计划
 
-**最后更新：2026-06-26 周五 | 105 页 / 81 Pin 在线 | 策略阶段：生产驱动 → 分发与验证驱动 | Week 7 内容 7/7 ✅ 外链 outreach 3/2 轮**
+**最后更新：2026-06-27 周六 | 105 页 / 82 Pin 在线 | 策略阶段：生产驱动 → 分发与验证驱动 | 实验 Pin 5/12 | 外链未突破**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -75,9 +75,17 @@
 
 | 任务 | 状态 |
 |------|:--:|
-| canonical 去尾斜杠修正 | ✅ 3 处统一（canonical / Schema @id / sitemap → actual URL） |
-| sitemap lastmod 造假修正 | ✅ 去掉强制写构建日期，由文件时间驱动 |
-| git push 修复 | ✅ SSH→HTTPS，`gh` CLI 凭证认证 |
+| Week 7 补提交推送 | ✅ 21 文件/1230 行，sitemap 102→104 |
+| 每日收尾提交步骤 | ✅ 已加入 Week 8 排班表 |
+| GSC 索引追踪 | ✅ 索引 14 / 12 重定向错误实为已修复 / sitemap 重提交 |
+| GSC 12 URL Inspection | ✅ 逐个验证，全部已索引 |
+| Pinterest 出站分析 | ✅ 1,990 浏览 / 0 出站点击 / 1 保存 / 6 受众 |
+| GEO Schema 抽样 | ✅ 3/3 页通过（Petlibro/Multi-Cat/xpai），dateModified 全停在 6/3 |
+| GEO Wikidata 验证 | ✅ Q140290653 存活，P31/P571/P407/P856 完整 |
+| PAA 选题确认 | ✅ 5 个候选网络调研完成，内容丰富可写 |
+| Amazon NR 扫描 | ⚪ 503 阻断，跳过 |
+| 外链 Outreach 跟进 | 🔴 PetPress=$250 付费站 / PetsAnalysis+AnimalPetsBlog 3 天无回复 |
+| 实验 Pin #5 | ✅ pin77_exp5 已发布（价格/价值角度，Automatic Cat Feeders） |
 
 ---
 
