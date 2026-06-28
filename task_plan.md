@@ -108,10 +108,17 @@
 | **Pinterest 出站实验 Pin** | 10min | 每天 1 个带 UTM 的实验 Pin（价格/TCO/零订阅/可靠性/避坑型标题）。12 个做完前不发普通 Pin |
 | **内容生产** | 90min | 仅围绕 4 个集群（不锈钢饮水机/零订阅摄像头GPS/喂食器可靠性/猫砂盆TCO）。A 级每周≤2 篇 / B 级 1-1.5h / C 级 30min |
 | **FB + Reddit** | 10min | FB：浏览/点赞/纯帮助回复。Reddit：纯价值回复不挂链接，养到500+karma再尝试自然链接 |
+| **GSC URL Inspection** | 5min | 每天手动提交 5 个优先 URL，直接入优先抓取队列。优先列表见下方 |
+
+> **优先 URL 池**（周一刷新）：Petlibro Granary 评测 > Multi-Cat Best > Traveling Guides > No-Fee GPS 评测 > Aorkuler 评测 > WOPET Camera 评测 > Catit PIXI 对比 > Stainless Steel Best > Large Cats Best > LR5 评测
 
 ---
 
 ## 📅 每周（~5.5h）
+
+| 任务 | 时间 | 频次 | 说明 |
+|------|:--:|:--:|------|
+| **Sitemap 重提交** | 2min | 每周 1 次（周一） | 手动重提 sitemap-index.xml。小站 Google 不会主动回读，必须手动催。新内容上线当天也重提一次 |
 
 | 任务 | 时间 | 频次 | 说明 |
 |------|:--:|:--:|------|
@@ -147,6 +154,7 @@
 | 任务 | 说明 |
 |------|------|
 | **GSC 请求索引** | URL Inspection → Request Indexing |
+| **Sitemap 重提交** | 新内容上线当天重提 sitemap-index.xml（URL 数量变化触发 Google 峰值抓取） |
 | **内部链接检查** | 新文章是否被分类索引页 + 已有 Top 页面引用 |
 | **CTA + 数据脚注** | 确认有 verdict/conclusion + 数据来源标注 + affiliate 披露 |
 | **Pinterest 排期** | 仅当文章属于 4 个集群时才做 Pin，否则跳过 |
@@ -372,9 +380,10 @@
 | **周三** | PAA #5 + Robot #6 | GEO 月度复检 + llms-full.txt 更新 + GEO-P1-6/7 模板来源脚注 + 主力页 Catit/首页/No-Fee/Aorkuler + Pin #6 |
 | **周四** | Robot #7+#8 | GEO-P1-8 Guide 顶部 Quick answer + 外链第 3 轮 + Pin #7 |
 | **周五** | — | GEO-P2-6/7/8 结构化与作者页收尾 + GEO-DOC-1 审计报告同步 + 外链跟进 + NR + Pin #8 + 周复盘 + 下周 PAA |
-| **每日** | — | `git add -A && git commit -m "day: <日期> <改动摘要>" && git push` |
+| **每日** | GSC URL Inspection（5 个优先 URL） | 实验 Pin + Reddit 5min + `git add -A && commit && push` |
 
-> ⚠️ **每日收尾提交**：每天工作结束前必须 commit + push。内容写完不推送 = Google 看不到 = 白写。这是 Week 7 16 个文件堆积 3-7 天的教训。
+> ⚠️ **每日收尾提交**：每天工作结束前必须 commit + push。内容写完不推送 = Google 看不到 = 白写。
+> 🔍 **每日 URL Inspection**：每天手动提交 5 个优先 URL，把有限抓取定向到最有价值的页面。周一顺便重提 sitemap。
 
 ---
 
