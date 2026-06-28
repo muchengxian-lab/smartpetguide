@@ -2351,5 +2351,22 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] Git: `06c78ae`
 - [x] 影响：26 篇评测页全部生效，GSC 评价摘要有机会从 2 页扩展到更多
 
+### GSC 抓取行为实测
+- [x] 抓取统计：90 天 321 次 / 平均 82ms / 200=66% / 301=21% / 404=13%
+- [x] **6/27 峰值 ~55 次**：21 文件改动触发（平时 3.8/天）
+- [x] **Sitemap 22 天无主动回读**：Google 首次提交后读一次，之后不会主动回来
+- [x] `lastmod` 必须真实，造假会全程失效
+- [x] `priority` / `changefreq` 被 Google 忽略
+
+### 抓取策略（已接入 task_plan.md）
+- [x] ①每天 GSC URL Inspection 5 个优先 URL
+- [x] ②每周一重提 sitemap-index.xml
+- [x] ③新内容上线当天重提 sitemap
+- [x] 10 个优先 URL 池已列出
+
+### 经验复盘文件
+- [x] `lessons-learned.md` 创建：10 大类（技术/GSC/内容/外链/Pinterest/Reddit/GEO/流程/数据/新项目清单）62 条经验
+- [x] Git: `17dc16a`
+
 ---
 *每个阶段完成后或遇到错误时更新此文件*

@@ -97,6 +97,10 @@
 | 构建验证 | ✅ 105 页 0 错误 |
 | 线上验证 | ✅ Petlibro Granary 页 Review Schema 完整 |
 | 提交推送 | ✅ `06c78ae` |
+| GSC 抓取行为分析 | ✅ 3 个月 321 次 / 6/27 峰值 ~55 次（21 文件改动触发） / 平时 3.8/天 |
+| Sitemap 经验调研 | ✅ Google 小站不会主动回读 / `lastmod` 必须真实 / `priority`+`changefreq` 被忽略 |
+| 抓取策略三条 | ✅ ①每天 URL Inspection 5 个 ②每周一重提 sitemap ③新内容上线当天重提 |
+| 经验复盘文件 | ✅ `lessons-learned.md` 创建，10 大类 62 条经验覆盖 Day 1-41 |
 
 ---
 
