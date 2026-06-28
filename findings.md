@@ -754,6 +754,38 @@ SmartPetGuide 对应的目标：
 - 内容生产维持 5-7 篇/周，但仅围绕 4 个集群（不锈钢饮水机/零订阅摄像头GPS/喂食器可靠性/猫砂盆TCO）
 - 外链 Outreach 升级为每周固定 2-3h（不可挤占）
 - Pinterest KPI 从 Pin 浏览切换为出站点击率
+
+---
+## GSC Sitemap 与抓取行为实测（2026-06-28，Week 7 总结）
+
+### 发现
+
+通过 GSC 抓取统计报告 + sitemap 读取记录交叉验证，得出以下关于 Google 对小站行为的实测结论：
+
+### 核心事实
+
+| 发现 | 证据 |
+|------|------|
+| Google 首次提交后读一次，之后不主动回读 | sitemap 6/5 读取后，22 天无主动回读，直到 6/27 手动重提 |
+| 手动重提 sitemap 是能触发 Google 重读的 | 6/27 重提后立即读取 |
+| 批量内容更新能触发抓取峰值 | 6/27 21 文件改动 → 单日抓取 ~55 次（平时 3.8） |
+| URL Inspection 比 sitemap 更优先 | 手动提交的 URL 直接入优先抓取队列 |
+| 抓取预算 ~3.8/天不是硬上限 | 6/27 峰值证明 Google 可以放大抓取，前提是探测到"重要变化" |
+
+### 由此制定的三条操作规则
+
+1. **每天 GSC URL Inspection 5 个优先 URL** — 把有限抓取定向到最有价值的页面
+2. **每周一重提 sitemap** — 保底，确保 Google 至少每周读一次
+3. **新内容上线当天重提 sitemap** — URL 数量变化时触发峰值抓取（类似 6/27 效应）
+
+### 其他 Sitemap 经验
+
+| 规则 | 说明 |
+|------|------|
+| `lastmod` 必须真实 | 造假会让 Google 全程忽略此字段（已修 ✅） |
+| `priority` / `changefreq` 被 Google 忽略 | 可以删掉省代码 |
+| robots.txt 加 sitemap 声明 | 被动发现兜底 `Sitemap: https://smartpetguide.net/sitemap-index.xml` |
+| sitemap 不能含 301/404 | 降低 Google 对 sitemap 的信任 |
 - GSC KPI 从曝光/点击切换为索引率
 - 取消：死目录提交、无反馈大词 Best、无出站验证 Pin 铺量
 - 暂停：机器人吸尘器仅保留 3 篇测试、Medium 不再追加
