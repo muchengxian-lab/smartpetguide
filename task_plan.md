@@ -1,6 +1,6 @@
 # SmartPetGuide 任务计划
 
-**最后更新：2026-06-27 周六 | 105 页 / 82 Pin 在线 | 策略阶段：生产驱动 → 分发与验证驱动 | 实验 Pin 5/12 | 外链未突破**
+**最后更新：2026-06-28 周日 | 105 页 / 82 Pin 在线 | 策略阶段：生产驱动 → 分发与验证驱动 | 实验 Pin 5/12 | Review Schema 增强完成**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -86,6 +86,17 @@
 | Amazon NR 扫描 | ⚪ 503 阻断，跳过 |
 | 外链 Outreach 跟进 | 🔴 PetPress=$250 付费站 / PetsAnalysis+AnimalPetsBlog 3 天无回复 |
 | 实验 Pin #5 | ✅ pin77_exp5 已发布（价格/价值角度，Automatic Cat Feeders） |
+
+### 今日任务状态（6/28 周日）
+
+| 任务 | 状态 |
+|------|:--:|
+| GSC 购物报告发现 | ✅ 产品摘要 1 有效 / 商家信息 1 有效 ⚠️缺退货政策+运费 / 评价摘要 2 有效 |
+| 评价摘要深度分析 | ✅ 2 页被识别（首页+LR5），其余 24 篇缺 reviewRating + publisher 信息不全 |
+| Review Schema 增强 | ✅ 加 reviewRating + url + 统一 author/publisher sameAs，26 篇评测页一次生效 |
+| 构建验证 | ✅ 105 页 0 错误 |
+| 线上验证 | ✅ Petlibro Granary 页 Review Schema 完整 |
+| 提交推送 | ✅ `06c78ae` |
 
 ---
 
@@ -315,7 +326,7 @@
 
 ---
 
-### 7. GEO 优化（1h）
+### 7. GEO 优化（1h + 增量修复 2-3h）
 
 | # | 动作 | 工时 | 说明 |
 |:--:|------|:--:|------|
@@ -324,6 +335,20 @@
 | 3 | Wikidata Q140290653 存活验证（P1-5） | 5min | 确认未被删除/合并 |
 | 4 | 新文章 citation cue（P1-1） | 持续 | 8 篇新文章描述加 `Data sourced from Amazon.com, June 2026` |
 | 5 | Schema 抽样验证（P1-4） | 10min | Rich Results Test 抽查 2-3 页 |
+
+### 7.1 Codex GEO 增量审计修复（6/27 新增，Claude 执行）
+
+> 来源：Codex 2026-06-27 AI 可见性 / GEO 增量审计。目标不是重做基础 GEO，而是补齐 compare / best / guide / stats 的可引用性、结构化语义和作者实体。
+
+| # | 优先级 | 任务 | 范围 | 验收标准 |
+|:--:|:--:|------|------|------|
+| GEO-P1-6 | P1 | Compare 模板加来源/日期脚注 | `src/pages/compare/[slug].astro` | `dist/compare/litter-robot-5-vs-litter-robot-4/index.html` 可见 `Data sourced` 或同等来源日期说明 |
+| GEO-P1-7 | P1 | Best 模板加来源/价格日期说明 | `src/pages/best/[slug].astro` | `dist/best/automatic-cat-feeders/index.html` 可见来源、价格波动、更新时间说明 |
+| GEO-P1-8 | P1 | Guide 顶部加 `Quick answer` / `Bottom line` | `src/pages/guides/[slug].astro` | `dist/guides/how-to-clean-cat-water-fountain/index.html` H1 后有 2-3 句可摘取结论 |
+| GEO-P2-6 | P2 | 步骤型 Guide 增加 `HowTo` Schema | 清洁、维护、安装类 guides | 清洁饮水机样本页 JSON-LD 出现 `HowTo` |
+| GEO-P2-7 | P2 | Stats 页增加 `Dataset` JSON-LD | `src/pages/pet-tech-statistics.astro` | 页面 JSON-LD 包含 `Dataset`，保留现有 `Article` |
+| GEO-P2-8 | P2 | 建真正的 named author profile | `/about` 或 `/authors/...` | 至少 1 个个人作者页，并能被 Article author 引用 |
+| GEO-DOC-1 | P2 | 同步 6/27 Codex 增量审计摘要 | `GEO-AUDIT-REPORT.md` | 项目内 canonical GEO 报告记录 86/100 新基线与新增修复项 |
 
 ---
 
@@ -344,9 +369,9 @@
 |:--:|------|------|
 | **周一** | PAA #1+#2 | 主力页 Petlibro + GSC 提交 + 周检 |
 | **周二** | PAA #3+#4 | 内链补全 + Pin #5 |
-| **周三** | PAA #5 + Robot #6 | GEO 月度复检 + llms-full.txt 更新 + 主力页 Catit/首页/No-Fee/Aorkuler + Pin #6 |
-| **周四** | Robot #7+#8 | 外链第 3 轮 + Pin #7 |
-| **周五** | — | 外链跟进 + NR + Pin #8 + 周复盘 + 下周 PAA |
+| **周三** | PAA #5 + Robot #6 | GEO 月度复检 + llms-full.txt 更新 + GEO-P1-6/7 模板来源脚注 + 主力页 Catit/首页/No-Fee/Aorkuler + Pin #6 |
+| **周四** | Robot #7+#8 | GEO-P1-8 Guide 顶部 Quick answer + 外链第 3 轮 + Pin #7 |
+| **周五** | — | GEO-P2-6/7/8 结构化与作者页收尾 + GEO-DOC-1 审计报告同步 + 外链跟进 + NR + Pin #8 + 周复盘 + 下周 PAA |
 | **每日** | — | `git add -A && git commit -m "day: <日期> <改动摘要>" && git push` |
 
 > ⚠️ **每日收尾提交**：每天工作结束前必须 commit + push。内容写完不推送 = Google 看不到 = 白写。这是 Week 7 16 个文件堆积 3-7 天的教训。

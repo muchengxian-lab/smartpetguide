@@ -2334,4 +2334,22 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] WebFetch 503 阻断，跳过（仅监不追）
 
 ---
+## 会话：2026-06-28 周日 — GSC 购物报告发现 + Review Schema 增强
+
+### GSC 新报告发现
+- [x] GSC 侧栏新增"购物"分类：产品摘要、商家信息
+- [x] **产品摘要**：1 有效（首页），0 错误
+- [x] **商家信息**：1 有效（首页），2 警告（缺 hasMerchantReturnPolicy + shippingDetails）
+  - 不需修：我们是 affiliate 站，不是商家
+- [x] **评价摘要**：2 有效（首页 + LR5 评测），0 错误
+
+### Review Schema 增强
+- [x] **根因**：26 篇评测页已有 `Review` + `Product` + `aggregateRating` Schema，但缺关键字段
+- [x] **修复**：加 reviewRating + url + 统一 author/publisher sameAs
+- [x] 构建：105 页 0 错误
+- [x] 线上验证：Petlibro Granary 页 Review Schema 完整
+- [x] Git: `06c78ae`
+- [x] 影响：26 篇评测页全部生效，GSC 评价摘要有机会从 2 页扩展到更多
+
+---
 *每个阶段完成后或遇到错误时更新此文件*
