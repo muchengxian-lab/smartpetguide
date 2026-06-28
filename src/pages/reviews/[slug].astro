@@ -607,6 +607,7 @@ const product = allProducts.get(review.productId);
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Review",
+    url: Astro.url.href,
     itemReviewed: {
       "@type": "Product",
       name: product?.name || review.title,
@@ -618,8 +619,11 @@ const product = allProducts.get(review.productId);
         aggregateRating: { "@type": "AggregateRating", ratingValue: product.rating, bestRating: 5, ratingCount: product.reviewCount }
       } : {}),
     },
-    author: { "@type": "Person", name: "SmartPetGuide Research Team", sameAs: ["https://www.wikidata.org/wiki/Q140290653"] },
+    ...(product?.rating && product?.reviewCount >= 10 ? {
+      reviewRating: { "@type": "Rating", ratingValue: product.rating, bestRating: 5 }
+    } : {}),
+    author: { "@type": "Person", name: "SmartPetGuide Research Team", url: "https://smartpetguide.net/about/", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/", "https://www.wikidata.org/wiki/Q140290653"] },
     datePublished: "2026-05-21",
-    publisher: { "@type": "Organization", name: "SmartPetGuide" },
+    publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/", sameAs: ["https://www.pinterest.com/muchengxian/", "https://medium.com/@muchengxian", "https://flipboard.com/@755g287", "https://www.wikidata.org/wiki/Q140290653"] },
   })} />
 </BaseLayout>
