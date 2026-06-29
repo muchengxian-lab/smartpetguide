@@ -2534,3 +2534,46 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 3. **Organic Social 1 个会话**——可能来自 Pinterest 自然浏览。
 4. **内部流量过滤器已启用**——自测流量被排除，剩余 30 用户基本为真实流量。
 5. **Task A 的决策模块和 CTA 优化是正确的**——但数据回馈需要等索引突破 14 页冻结 + 自然流量爬升。Month 3 之前不要期望可量化的收入信号。
+
+---
+## 会话：2026-06-29 周一 — Brand Outreach D4-D7
+
+### 完成事项
+- [x] **D4：创建 [for-brands.astro](src/pages/for-brands.astro)** — 品牌合作入口页。内容：站点覆盖说明 → 可见性问题诊断 → 免费可见性快照 → 三档付费审计（$199/$499/$1,200）→ 编辑边界（不卖排名/不保证正面/数据属实/赞助标注）→ CTA（press@smartpetguide.net）→ FAQ
+- [x] **D5：创建 [pet-tech-audit-template.md](docs/monetization/pet-tech-audit-template.md)** — 12 节可复用审计模板：产品快照/竞品集/Google 可见性/AI 引用就绪度/产品页 Schema 就绪度/Amazon 评论痛点/买家异议与缺失 FAQ/竞品内容缺口/推荐页面更新/30 天内容路线图/衡量计划/优先行动清单。全部含 placeholder 说明。
+- [x] **D6：创建 [brand-outreach-crm.md](docs/monetization/brand-outreach-crm.md)** — 12 品牌 CRM 表（Aorkuler→Catit，含品类/产品/3 关键发现/状态/跟进）+ D0(3买家问题)/D3(跟进)/D7(闭环) 序列 + 回复模板（发详情/只做联盟/不感兴趣）
+- [x] **D6：重写 [brand-outreach-template.md](backlinks/brand-outreach-template.md)** — 旧索链接模板标记为 Historical（含失败原因分析），替换为价值优先 D0/D3/D7 序列
+- [x] **D7：创建 [sample-mini-audit-aorkuler.md](docs/monetization/sample-mini-audit-aorkuler.md)** — repo-based 样本审计。5 节：产品快照/竞品集/3 关键发现（订阅故事被埋没/离线场景未充分解释/评论数低）/4 内容机会/6 优先行动。标注「Repo-based sample only」
+- [x] `npm run build` 通过，108 页 0 错误
+- [x] `git commit + push` → Vercel 自动部署
+
+### Brand Outreach 交付包状态
+
+| 交付物 | 状态 | 路径 |
+|------|:--:|------|
+| /for-brands/ 品牌页 | ✅ 已上线 | `src/pages/for-brands.astro` |
+| 12 节审计模板 | ✅ | `docs/monetization/pet-tech-audit-template.md` |
+| 外联 CRM（12 品牌） | ✅ 待人类发送 | `docs/monetization/brand-outreach-crm.md` |
+| Aorkuler 样本审计 | ✅ | `docs/monetization/sample-mini-audit-aorkuler.md` |
+| 外联模板（新序列） | ✅ | `backlinks/brand-outreach-template.md` |
+
+### 下一步（D8-D9，人工阻塞）
+- D8：人工审核定价 + 选首批 5 个优先品牌
+- D9：人类发送第一波外联（5 封 D0 开场邮件）
+
+### 修改文件
+- `src/pages/for-brands.astro` — 新建
+- `docs/monetization/pet-tech-audit-template.md` — 新建
+- `docs/monetization/brand-outreach-crm.md` — 新建
+- `docs/monetization/sample-mini-audit-aorkuler.md` — 新建
+- `backlinks/brand-outreach-template.md` — 重写
+
+### 今日会话总计
+
+| 轨道 | 完成 | 状态 |
+|------|------|:--:|
+| Task A 变现基建 | 联盟审核 + 5 决策模块 + 2 指南 CTA | ✅ |
+| GA4 周检 | 数据+过滤器+事件验证 | ✅ |
+| Brand Outreach | /for-brands/ + 审计模板 + CRM + 样本审计 | ✅ |
+| 构建 | 108 页 0 错误 ×2 次 | ✅ |
+| Git | 3 次 commit，全部 pushed | ✅ |

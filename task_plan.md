@@ -4,6 +4,34 @@
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
+## 📋 两套任务体系协调
+
+> 当前同时运行两套计划。每天开工时先读此表确认当天任务，收工时更新两边的状态。
+
+| 体系 | 文件 | 角色 | 节奏 |
+|------|------|------|------|
+| **Week 8 内容+分发** | `task_plan.md`（本文件） | 日常生产引擎 | 每天 ~2-3h，周二至周五 |
+| **30 天变现 Sprint** | `docs/monetization/30-day-schedule.md` | 商业验证轨道 | D1-D30，与 Week 排班协调 |
+
+### 本周交叉排班（6/30-7/4）
+
+| 天 | 日期 | Week 8 任务 | 变现 Sprint | 预计工时 |
+|:--:|------|------|------|:--:|
+| 周一 | 6/30 | PAA #1#2 + Petlibro 加固 + GSC 周检 + Pin #6 | Task A D1-D3 + GA4 周检 + Brand Outreach D4-D7 | ~3h（全部完成✅） |
+| 周二 | 7/1 | PAA #3#4 + 内链补全 + Pin #7 | D8 QA + D9 外联准备（人工） | ~2.5h |
+| 周三 | 7/2 | PAA #5 + Robot #6 + GEO 月度复检 + 主力页加固 + Pin #8 | D10-D12 跟进+度量 | ~3h |
+| 周四 | 7/3 | Robot #7#8 + GEO 模板修复 + 外链第 3 轮 + Pin #9 | D13-D14 第二波外联 | ~3.5h |
+| 周五 | 7/4 | GEO 收尾 + 外链跟进 + NR + Pin #10 + 周复盘 | D15-D17 跟进+Review | ~3.5h |
+
+### 优先级规则
+1. **GSC URL Inspection（5 个/天）** — 雷打不动，每天 5 分钟
+2. **实验 Pin（1 个/天）** — 雷打不动，每天 10 分钟
+3. **变现 Sprint 人工阻塞项优先** — 人类时间不可控，能推进的先推进
+4. **内容生产** — 弹性，被 Sprint 挤占时从 C 级开始砍
+5. **变现 Sprint Claude 可执行项** — 在内容生产间隙推进
+
+---
+
 ## Monetization Validation Sprint（Claude Code 执行入口）
 
 > 新增日期：2026-06-29。目标：把 SmartPetGuide 的 3 条更快变现路径整理成 Claude Code 可以逐条执行的项目文件。执行前先读根目录 `CLAUDE.md` 与 `docs/monetization/README.md`。
@@ -127,6 +155,8 @@
 | GSC URL Inspection | ✅ 7 个优先 URL（2 新篇 + 5 优先页） |
 | 实验 Pin #6 | ✅ pin78_exp6 已发布（使用场景/空间角度） |
 | GA4 周检 | ✅ 6/29 完成（见 progress.md） |
+| **Task A 变现基建** | ✅ 联盟审核 + 3 review 决策模块 + 2 guide CTA |
+| **Brand Outreach D4-D7** | ✅ /for-brands/ 页面 + 审计模板 + CRM + 样本审计 |
 
 ### ⚠️ 本周关注
 
