@@ -2369,4 +2369,41 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] Git: `17dc16a`
 
 ---
+## 会话：2026-06-30 周一 — Week 8 Day 1
+
+### 内容生产（上午）
+- [x] **PAA #1**：How to Stop Your Automatic Feeder From Jamming (7 Fixes)
+  - 7 个修复步骤：断电→反向旋转→打破桥接→清理通道→检查颗粒→防潮→重置校准 + 无解时的建议
+  - 4 FAQ
+- [x] **PAA #2**：How to Introduce Cat to Automatic Litter Box (Without Scaring Them)
+  - 5 步渐进法 + 特殊案例（老猫/幼猫/多猫）+ 拒绝 2 周后的处理
+  - 4 FAQ
+- [x] 构建：107 页 0 错误
+- [x] Git: `d999152`
+
+### Petlibro Granary 加固（下午）
+- [x] **用户原话**：praise 加 3 条直接引语（安心监控/RFID 防偷食/夜视），complaints 加 5 条引语（WiFi 设置 45min/3L 太小/干燥剂盒难开/通知延迟/固定角度）
+- [x] **对比 FAQ**：新增 Petlibro vs WOPET vs PETKIT 三款对比（$139 vs $89 vs $129，含评分、定位、结论）
+- [x] Git: `c24d637`
+
+### GSC 周检（浏览器操作）
+- [x] **索引**：14（4 周无变化）/ 未索引 12（仍为旧数据）
+- [x] **HTTPS**：从 0→10（Google 在慢慢扫描更多页面）
+- [x] **路径**：10→11（结构化数据在扩张）
+- [x] **评价摘要**：仍为 2（Review Schema 增强后 Google 还没重抓）
+- [x] **Sitemap**：重提交，sitemap-0.xml 含 106 URL，GSC 显示 0 为正常延迟
+- [x] **URL Inspection**：7 个优先 URL 全部提交
+
+### 其他周检
+- [x] **GEO**：llms.txt 200 / robots.txt 200 (AdsBot blocked + Sitemap declared) / Wikidata Q140290653 存活
+- [x] **口径自检**：6 条命中，全部合理上下文（how-we-research 方法论说明 + FAQ 回答 + 产品数据标注）
+- [x] **Pin #6**：pin78_exp6 已生成+发布（使用场景/空间角度，Self-Cleaning Litter Boxes Board）
+
+### 发现与关注
+- [x] 🔴 **索引 14 冻结 4 周**：不是增长慢，是完全停滞。明天内链补全优先级提最高
+- [x] 🟡 **改动队列堆积**：Review Schema + 2 新篇 + Petlibro 加固都在等 Google 重抓
+- [x] 🟢 **正面信号**：HTTPS +10 / 路径 +1 / 曝光缓慢爬升
+
+---
+*每个阶段完成后或遇到错误时更新此文件*
 *每个阶段完成后或遇到错误时更新此文件*

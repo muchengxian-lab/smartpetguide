@@ -1,6 +1,6 @@
 # SmartPetGuide 任务计划
 
-**最后更新：2026-06-28 周日 | 105 页 / 82 Pin 在线 | 策略阶段：生产驱动 → 分发与验证驱动 | 实验 Pin 5/12 | Review Schema 增强完成**
+**最后更新：2026-06-30 周一 | 107 页 / 83 Pin 在线 | 策略阶段：分发与验证驱动 | 实验 Pin 6/12 | 索引 14 冻结 4 周**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -102,9 +102,28 @@
 | 抓取策略三条 | ✅ ①每天 URL Inspection 5 个 ②每周一重提 sitemap ③新内容上线当天重提 |
 | 经验复盘文件 | ✅ `lessons-learned.md` 创建，10 大类 62 条经验覆盖 Day 1-41 |
 
----
+### 今日任务状态（6/30 周一 — Week 8 Day 1）
 
-## 🔁 每日（~2h）
+| 任务 | 状态 |
+|------|:--:|
+| PAA #1: Feeder Jamming 7 Fixes | ✅ 新写 7 节 + 4 FAQ，C 级 30min |
+| PAA #2: Cat Litter Box Introduction | ✅ 新写 8 节 + 4 FAQ，C 级 45min |
+| Petlibro Granary 加固 | ✅ 用户原话引语 8 条 + Petlibro/WOPET/PETKIT 对比 FAQ |
+| GSC 周检 | ✅ 索引 14（冻结 4 周）/ HTTPS 0→10 / 路径 10→11 / 评价摘要仍 2 |
+| Sitemap 重提交 | ✅ 周一例行，sitemap-0.xml 含 106 URL |
+| GEO 存活检查 | ✅ llms.txt 200 / robots.txt 200 / Wikidata Q140290653 存活 |
+| 口径一致性周检 | ✅ 6 条命中全部合理上下文 |
+| GSC URL Inspection | ✅ 7 个优先 URL（2 新篇 + 5 优先页） |
+| 实验 Pin #6 | ✅ pin78_exp6 已发布（使用场景/空间角度） |
+| GA4 周检 | ⏳ 未执行（GSC 浏览器会话中断） |
+
+### ⚠️ 本周关注
+
+| 事项 | 严重度 | 说明 |
+|------|:--:|------|
+| 索引冻结 | 🔴 | 14 已 4 周不动。明天内链补全优先级提最高 |
+| 改动队列堆积 | 🟡 | Review Schema/PAA #1#2/Petlibro 加固都在等 Google 重抓 |
+| Pin #6 已发 | 🟢 | 实验进度 6/12 |
 
 | 任务 | 时间 | 说明 |
 |------|:--:|------|
