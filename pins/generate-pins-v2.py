@@ -133,7 +133,7 @@ PINS = [
         "cta": "See the Price Breakdown",
     },
     {
-        "id": "pin78_exp6", "img": "petkit-eversweet.jpg",
+        "id": "pin78_exp6", "img": "elspet-pro.jpg",
         "title": "Single Cat? Small Apartment?\nYour Litter Box Is Too Big",
         "badge": "Space-Optimized vs Overkill — Size Comparison",
         "tags": ["CATLINK 22\" Needs 3ft²", "Elspet Compact 17\"", "1 Cat ≠ Biggest Box", "Measure Before You Buy"],
