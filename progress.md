@@ -2407,3 +2407,62 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 ---
 *每个阶段完成后或遇到错误时更新此文件*
 *每个阶段完成后或遇到错误时更新此文件*
+
+---
+## 会话：2026-06-29 周一 — 变现验证 Sprint 文档化
+
+### 完成事项
+- [x] 创建根目录 `CLAUDE.md`，作为 Claude Code 第一入口，指向现有项目上下文和 monetization sprint 文档。
+- [x] 创建 `docs/monetization/README.md`，定义 30 天变现验证 Sprint 的目标、执行顺序、全局边界和验收标准。
+- [x] 创建 `docs/monetization/task-a-amazon-affiliate-conversion.md`，拆解 Amazon affiliate conversion 任务：目标页、链接审计、购买决策模块、CTA、Pinterest 实验和 GA4 检查。
+- [x] 创建 `docs/monetization/task-b-brand-partnerships.md`，拆解品牌合作任务：`/for-brands/` 页面、brand partnerships 文档、旧邮件模板改写、offer ladder 和 outreach sequence。
+- [x] 创建 `docs/monetization/task-c-pet-tech-visibility-audit.md`，拆解 Pet Tech Visibility Audit 服务：服务页、审计模板、CRM、样板 mini-audit 和人工边界。
+- [x] 更新 `.claude/CLAUDE.md`，让 Claude Code 能在项目上下文里看到新增执行入口。
+- [x] 更新 `task_plan.md` 顶部，新增 Monetization Validation Sprint 执行索引。
+
+### 执行约束
+- Claude Code 只负责站内页面、模板、CRM、审计样板和代码/文档改动。
+- 不自动发邮件、不提交外部表单、不联系品牌、不承诺付费排名、不伪造联系人/流量/销售数据。
+- 推荐执行顺序：C → B → A。
+
+---
+## 会话：2026-06-29 周一 — 变现验证 Sprint 排期补充
+
+### 完成事项
+- [x] 创建 `docs/monetization/30-day-schedule.md`，将 Task C/B/A 拆成 D1-D30 每日执行表。
+- [x] 排期采用“10 天构建 + 20 天验证”结构：先完成服务页、品牌页、审计模板、CRM、affiliate CTA，再进入人工 outreach、跟进和数据复盘。
+- [x] 每天标注 Claude Code 可执行任务、人工作业边界、输出/验收标准。
+- [x] 更新 `docs/monetization/README.md`、根目录 `CLAUDE.md`、`.claude/CLAUDE.md` 和 `task_plan.md`，加入日程文件入口。
+
+### 关键边界
+- D14/D16/D20/D25/D27 的邮件发送和跟进均为 human-only，Claude Code 只准备模板和更新 CRM。
+- 如果时间冲突，先暂停非商业新内容、泛 guest-post outreach、低信号 Pinterest 铺量；不要暂停 GSC priority URL inspection、sitemap 重提和口径一致性检查。
+
+---
+## 会话：2026-06-29 周一 — Task A 变现基建（D1-D3 合并执行）
+
+### 完成事项
+- [x] **D1 联盟链接全站审计**：审核 10 个目标页面，全部 products.json amazonUrl 含 `tag=smartpetgui0a-20`，全部模板 `rel="sponsored"`。发现：2 篇指南零联盟链接、LR5 用搜索 URL 非直接 ASIN。
+- [x] 创建 `docs/monetization/amazon-conversion-log.md`，10 页逐页审核表 + 待修复项 + 执行优先级。
+- [x] **D2 Review 决策模块**：模板新增 `buyIf`/`skipIf`/`bestAlternative` 可选字段，3 篇高优先级评测（Petlibro Granary、Amazon Basics Litter Box、Litter-Robot 5）已添加 Quick Decision 模块。
+- [x] **D3 Guide CTA 补齐**：guide 模板新增 `recommendedProductIds` 可选字段 + 底部推荐产品 CTA 区块。2 篇目标指南（are-automatic-feeders-worth-it-for-one-cat、best-no-subscription-cameras）已添加产品推荐卡片，从零变现路径到 3 产品/页。
+- [x] `npm run build` 通过，107 页 0 错误。
+- [x] Compare/Best 页面已有完整 CTA 体系（产品卡 + 底部 CTA + affiliate disclosure），无需额外改动。
+
+### 未覆盖的目标页面（已有 CTA，无需改动）
+| 页面 | 类型 | 已有 CTA | 状态 |
+|------|------|:--:|:--:|
+| `/compare/lr5-vs-amazon-basics-cost/` | Compare | 产品卡×2 + 底部CTA + affiliate disclosure | ✅ 无需改动 |
+| `/compare/wopet-vs-petlibro/` | Compare | 同上 | ✅ 无需改动 |
+| `/best/pet-cameras-no-subscription/` | Best | 产品卡×4 + 底部CTA | ✅ 无需改动 |
+| `/best/gps-trackers-no-monthly-fee/` | Best | 产品卡×3 + 底部CTA | ✅ 无需改动 |
+
+### 修改文件
+- `src/pages/reviews/[slug].astro` — 新增 `buyIf`/`skipIf`/`bestAlternative` 字段 + Quick Decision 模块渲染
+- `src/pages/guides/[slug].astro` — 导入 products.json + 新增 `recommendedProductIds` 字段 + 底部产品推荐 CTA
+- `docs/monetization/amazon-conversion-log.md` — 新建
+
+### 关键边界
+- 未触碰 Week 8 已规划的任务页面（Aorkuler 评测留到 7/1、Catit PIXI 对比留到 7/1 等）
+- Compare/Best 模板未改——已有完整变现路径
+- Guide 模板改动向后兼容——`recommendedProductIds` 为可选字段，未设置的 34 篇指南不受影响

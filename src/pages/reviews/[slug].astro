@@ -52,6 +52,9 @@ interface ReviewData {
   content: string;
   whatOwnersSay?: { praise: string; complaints: string };
   faqs: { q: string; a: string }[];
+  buyIf?: string;
+  skipIf?: string;
+  bestAlternative?: string;
 }
 
 const reviewMap: Record<string, ReviewData> = {
@@ -71,6 +74,9 @@ const reviewMap: Record<string, ReviewData> = {
       { q: "Should I upgrade from Litter-Robot 4 to 5?", a: "Only if you want WasteID health tracking or have a large cat that's cramped in the LR4. The LR4 is still an excellent box. The core experience (automatic sifting, odor control, app alerts) is very similar. If your LR4 is working fine and your cat is healthy, the $799 upgrade probably isn't worth it. If you're buying your first automatic box, the LR5 is worth the $100 premium over the LR4 for the larger interior and future-proof health features." },
       { q: "Does the Litter-Robot 5 work on carpet?", a: "Yes — unlike the LR4 which requires a $30 carpet tray kit, the LR5's redesigned base works directly on carpet. The weight sensors are calibrated to account for carpet compression." },
     ],
+    buyIf: "You have a cat with health concerns (diabetes, kidney disease, FLUTD) and want WasteID to track pee vs poop patterns — this could catch problems weeks before symptoms appear. Also worth it if you have a large cat breed that's cramped in the LR4, or if you're buying your first automatic box and want the latest tech.",
+    skipIf: "Your LR4 is working fine and your cat is healthy. The core experience (auto-sifting, odor control, app alerts) is very similar. The $799 upgrade from a working LR4 isn't worth it unless you specifically need WasteID health tracking.",
+    bestAlternative: "<strong>Litter-Robot 4 ($699)</strong> — still excellent, 12,500+ reviews proving long-term reliability, saves $100 vs LR5. <strong>CATLINK Young Pro ($399)</strong> if you want multi-cat weight tracking at nearly half the price. <strong>Amazon Basics ($209)</strong> if you just want to stop scooping and don't need smart features.",
   },
   "litter-robot-4-review": {
     title: "Litter-Robot 4 Review 2026 — Is It Worth $699?",
@@ -104,6 +110,9 @@ const reviewMap: Record<string, ReviewData> = {
       { q: "Can I use Petlibro Granary without the app?", a: "The schedule requires initial app setup via Wi-Fi. Once programmed, the feeder continues on schedule even if your phone is off. Manual feeding buttons are available on the unit. If you want a feeder that never needs an app, consider the simpler WOPET ($89)." },
       { q: "Petlibro Granary vs WOPET vs PETKIT Fresh Element — which should I buy?", a: "<strong>Petlibro Granary ($139, 4.5★, 8,700+ reviews):</strong> Best for owners who want visual check-ins. Built-in 1080p camera with night vision = feeder + pet cam in one device. 3L/5L hopper. Top Amazon BSR (#1,173). <strong>WOPET ($89, 4.3★, 15,200+ reviews):</strong> Best budget pick. 6L hopper is the largest, built-in battery backup included, 10 meals/day. No camera. WiFi can be finicky. <strong>PETKIT Fresh Element ($129, 4.4★, 6,100+ reviews):</strong> Best for kibble freshness. Rotary sealing system keeps food fresher longer. Polished app. No camera — you're paying for the sealing mechanism. <strong>Bottom line:</strong> Get Petlibro if you want to see your pet eat. Get WOPET if you want max capacity at the lowest price. Get PETKIT if food freshness is your top concern." },
     ],
+    buyIf: "You want to see your pet eat while you're away — the built-in 1080p camera with night vision gives you visual confirmation. Worth the $139 if peace of mind about whether your cat ate today matters more than raw hopper capacity.",
+    skipIf: "You already have a pet camera, or you have 2+ pets and don't want to refill every 2-3 days. The 3L hopper is too small for multi-pet homes, and the camera can't pan/tilt — it only shows the feeding area.",
+    bestAlternative: "<strong>WOPET ($89)</strong> if you want max capacity (6L) and built-in battery backup at a lower price — no camera, but more food storage. <strong>PETKIT Fresh Element ($129)</strong> if food freshness matters more than a camera — rotary sealing keeps kibble fresher longer.",
   },
   "wopet-automatic-feeder-review": {
     title: "WOPET Automatic Feeder Review 2026 — Best Budget Smart Feeder?",
@@ -385,6 +394,9 @@ const reviewMap: Record<string, ReviewData> = {
       { q: "How does the Amazon Basics litter box compare to Litter-Robot 4?", a: "Amazon Basics wins on price by a huge margin: $209 vs $699. Both are automatic, both are quiet (~40dB), both have safety sensors. Litter-Robot 4 wins on: proven 12,500-review track record, WiFi app with per-cat weight tracking, larger community and support, and longer market history. Amazon Basics wins on: price, washable liner (no bag purchase needed), and the built-in deodorizing spray. If budget is your priority, the Amazon Basics is the clear choice. If you want the proven, full-featured experience and can afford it, the Litter-Robot 4 is still the best automatic litter box on the market." },
       { q: "Is it safe for cats? Are the sensors reliable?", a: "The box has 15 sensors that detect a cat's presence and pause operation immediately when approached. The ≤40dB noise level is quiet enough not to scare most cats. The box works with cats from 3.3 lbs (kittens) to 22 lbs (large breeds). However, with 0 user reviews, real-world safety data is not yet available. We recommend monitoring your cat's first few uses closely, as with any new automatic litter box." },
     ],
+    buyIf: "You want an automatic litter box but can't justify spending $400-800. At $209, this is the lowest-priced auto box on the market. The washable liner means zero ongoing tray costs, and the deodorizing spray is genuinely useful — not a gimmick at this price.",
+    skipIf: "You want app notifications, per-cat weight tracking, or proven long-term reliability. This is a brand-new product with zero reviews — early adopters are taking a calculated risk. If you have multiple cats of different sizes, the lack of weight recognition means you won't know who's using the box.",
+    bestAlternative: "<strong>CATLINK Young Pro ($399)</strong> if you want multi-cat recognition and app connectivity at a still-reasonable price. <strong>PetSafe ScoopFree ($299)</strong> if you want the most proven budget option — 9,200+ reviews, crystal litter system, but ongoing tray costs of $15-25/month.",
   },
   "eufy-pet-camera-review": {
     title: "eufy Security Pet Camera Review 2026 — Best No-Subscription 2K Cam?",
@@ -495,6 +507,27 @@ const product = allProducts.get(review.productId);
       <h2 class="font-display text-xl font-bold text-forest">Who Is This For?</h2>
       <p class="mt-2 text-bark-muted">{(product?.bestFor || []).join(" / ")}</p>
     </div>
+
+    {/* Quick Decision Module */}
+    {review.buyIf && review.skipIf && review.bestAlternative && (
+      <div class="mt-8 rounded-2xl border border-forest/20 bg-gradient-to-br from-forest/5 to-sage/20 p-6 md:p-8">
+        <h2 class="font-display text-xl font-bold text-forest">Quick Decision: Should You Buy the {product?.name || "Product"}?</h2>
+        <div class="mt-4 grid gap-4 md:grid-cols-3">
+          <div class="rounded-xl border border-green-200/50 bg-green-50/50 p-4">
+            <p class="text-sm font-bold text-green-800">✅ Buy if</p>
+            <p class="mt-1 text-sm leading-relaxed text-green-900/80">{review.buyIf}</p>
+          </div>
+          <div class="rounded-xl border border-red-200/50 bg-red-50/50 p-4">
+            <p class="text-sm font-bold text-red-800">❌ Skip if</p>
+            <p class="mt-1 text-sm leading-relaxed text-red-900/80">{review.skipIf}</p>
+          </div>
+          <div class="rounded-xl border border-honey/30 bg-honey/5 p-4">
+            <p class="text-sm font-bold text-forest">🔄 Best alternative</p>
+            <p class="mt-1 text-sm leading-relaxed text-bark">{review.bestAlternative}</p>
+          </div>
+        </div>
+      </div>
+    )}
 
     {/* What Verified Owners Say */}
     {review.whatOwnersSay && (

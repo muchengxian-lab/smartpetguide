@@ -4,6 +4,17 @@
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
+## Monetization Validation Sprint（Claude Code 执行入口）
+
+> 新增日期：2026-06-29。目标：把 SmartPetGuide 的 3 条更快变现路径整理成 Claude Code 可以逐条执行的项目文件。执行前先读根目录 `CLAUDE.md` 与 `docs/monetization/README.md`。
+> **2026-06-29 更新**：原始三轨道合并为两轨道（Task A 后台基建 + Brand Outreach B+C 合并），Task A 已于当日 D1-D3 合并执行完成。
+
+| Track | 目标 | 执行文件 | 状态 |
+|------|------|------|:--:|
+| Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D3 已执行 |
+| A | Amazon affiliate conversion：5 页决策模块 + 2 指南 CTA + 全站审核 | `docs/monetization/task-a-amazon-affiliate-conversion.md` | ✅ 完成 |
+| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 待执行 |
+
 ### 内容选题引擎（6/26 起）
 
 | 引擎 | 优先级 | 频次 | 产出类型 |

@@ -2,6 +2,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQ from "../../components/FAQ.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
+import products from "../../data/products.json";
+
+const allProductMap = new Map<string, any>();
+for (const [, items] of Object.entries(products)) {
+  for (const p of items as any[]) allProductMap.set(p.id, p);
+}
 
 export function getStaticPaths() {
   return [
@@ -44,7 +50,7 @@ export function getStaticPaths() {
   ];
 }
 
-const guideMap: Record<string, { title: string; description: string; sections: { heading: string; body: string }[]; faqs: { q: string; a: string }[] }> = {
+const guideMap: Record<string, { title: string; description: string; sections: { heading: string; body: string }[]; faqs: { q: string; a: string }[]; recommendedProductIds?: string[] }> = {
   "automatic-feeder-buying-guide": {
     title: "Automatic Pet Feeder Buying Guide 2026 — How to Choose the Right One",
     description: "Everything you need to know before buying an automatic pet feeder. Camera vs no camera, capacity, app features, power backup, and more.",
@@ -548,6 +554,7 @@ const guideMap: Record<string, { title: string; description: string; sections: {
       { q: "Can I feed wet food with an automatic feeder?", a: "Standard dry feeders like the WOPET, Petlibro, and PETKIT — no. Wet food spoils at room temperature in 2-4 hours and clogs the mechanism. For wet food, consider: the hybrid approach (feeder for dry breakfast/lunch, you serve wet dinner), or the new PETKIT Yumshare (~$149) with refrigerated compartments designed for wet food. See our <a href='/guides/wet-food-automatic-feeder-guide/'>wet food feeder guide</a> for details." },
       { q: "What if my cat refuses to eat from the automatic feeder?", a: "About 5-10% of cats are initially suspicious. Try: placing the feeder next to your cat's old bowl (unplugged) for 2-3 days, putting high-value treats in the bowl to create positive association, and recording your voice on the meal call feature (WOPET, Petlibro both have this). Most cats adapt within 3-5 days. If your cat hasn't eaten from the feeder after a week, return it — automatic feeding isn't for every cat." },
     ],
+    recommendedProductIds: ["petlibro-granary", "wopet-automatic", "petkit-fresh-element"],
   },
   "best-quiet-pet-fountains-for-apartments": {
     title: "Best Quiet Pet Fountains for Apartments 2026 — Silent Picks for Studio & Shared Living",
@@ -648,6 +655,7 @@ const guideMap: Record<string, { title: string; description: string; sections: {
       { q: "Which is the single best no-subscription pet camera?", a: "The eufy Security ($129) — best balance of trusted brand (Anker), video quality (2K), features (360° pan/tilt, auto tracking), and local storage (16GB built-in + microSD). For budget, the xpai 4K at $43 is unbeatable value." },
       { q: "Can I use a regular security camera as a pet camera?", a: "Yes — the Wyze Cam v4 and TP-Link Tapo are security cameras that work great for pets. They lack pet-specific features (treat tossing, barking alerts) but deliver the core pet-monitoring experience at a fraction of the price." },
     ],
+    recommendedProductIds: ["eufy-pet-cam", "xpai-4k-camera", "honeytour-robot-cam"],
   },
   "smart-home-pet-devices": {
     title: "Smart Home for Pets: Alexa & Google Home Compatible Devices 2026",
@@ -863,6 +871,30 @@ const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
         </div>
       );
     })()}
+    {/* Recommended Products CTA */}
+    {guide.recommendedProductIds && guide.recommendedProductIds.length > 0 && (
+      <div class="mt-10 rounded-2xl border border-honey/40 bg-gradient-to-br from-honey/5 to-cream p-6 md:p-8">
+        <p class="font-display text-xl font-bold text-forest text-center">Our Top Picks</p>
+        <p class="mt-1 text-center text-sm text-bark-muted">Based on our research of verified owner reviews and product specs</p>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {guide.recommendedProductIds.map((pid: string) => {
+            const p = allProductMap.get(pid);
+            if (!p) return null;
+            return (
+              <a href={p.amazonUrl} target="_blank" rel="nofollow sponsored noopener"
+                 class="flex flex-col items-center rounded-xl border border-sage-dark/30 bg-white p-5 shadow-sm transition-all hover:border-honey/50 hover:shadow-md active:scale-[0.98]">
+                <span class="font-semibold text-forest text-center">{p.name}</span>
+                <span class="text-sm text-bark-muted">by {p.brand}</span>
+                <span class="mt-1 font-bold text-honey">${p.price}</span>
+                <span class="text-xs text-bark-muted/70">{p.rating}★ ({p.reviewCount.toLocaleString()} reviews)</span>
+                <span class="mt-3 inline-flex items-center gap-1.5 rounded-lg bg-honey px-4 py-2 text-xs font-bold text-white">View on Amazon →</span>
+              </a>
+            );
+          })}
+        </div>
+        <p class="mt-4 text-center text-xs text-bark-muted/70">As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure/" class="underline">Learn more</a></p>
+      </div>
+    )}
     <p class="mt-8 text-xs text-bark-muted/70 border-t border-sage-dark/20 pt-4">Data sourced from Amazon.com verified purchase reviews as of June 2026. Individual experiences may vary.</p>
   </article>
 </BaseLayout>
