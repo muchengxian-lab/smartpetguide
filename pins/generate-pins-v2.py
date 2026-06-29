@@ -126,6 +126,21 @@ PINS = [
     },
     # --- R9 出站实验 Pin (6/23-) ---
     {
+        "id": "pin77_exp5", "img": "wopet-feeder.jpg",
+        "title": "$89 vs $139 vs $249 —\nWhat You Get at Each Tier",
+        "badge": "Budget to Premium: Real Value Analysis",
+        "tags": ["WOPET $89 Basics-Only", "Petlibro $139 1080p Cam", "PetSafe $249 Smart Feed", "Sweet Spot: $139"],
+        "cta": "See the Price Breakdown",
+    },
+    {
+        "id": "pin78_exp6", "img": "petkit-eversweet.jpg",
+        "title": "Single Cat? Small Apartment?\nYour Litter Box Is Too Big",
+        "badge": "Space-Optimized vs Overkill — Size Comparison",
+        "tags": ["CATLINK 22\" Needs 3ft²", "Elspet Compact 17\"", "1 Cat ≠ Biggest Box", "Measure Before You Buy"],
+        "cta": "Find Your Right Size",
+    },
+    # --- R9 出站实验 Pin (6/23-) ---
+    {
         "id": "pin73_exp1", "img": "eufy-pet-cam.jpg",
         "title": "5 Pet Cameras With\nZero Monthly Fees (2026)",
         "badge": "No Subscription Required — One-Time Purchase",
