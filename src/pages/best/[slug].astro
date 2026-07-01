@@ -276,6 +276,48 @@ const isLitterBox = slug.includes("litter");
 
     <FAQ items={pageData.faqs} />
 
+    <!-- Related Categories -->
+    {(() => {
+      const crossLinks: { label: string; href: string }[] = [];
+      const isLitter = slug.includes("litter");
+      const isFeeder = slug.includes("feeder");
+      const isFountain = slug.includes("fountain") || slug.includes("water");
+      const isCamera = slug.includes("camera");
+      const isGPS = slug.includes("gps");
+      if (isLitter) {
+        crossLinks.push({ label: "Best Automatic Cat Feeders", href: "/best/automatic-cat-feeders/" });
+        crossLinks.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
+      }
+      if (isFeeder) {
+        crossLinks.push({ label: "Best Pet Water Fountains", href: "/best/smart-pet-water-fountains/" });
+        crossLinks.push({ label: "Best Pet Cameras", href: "/best/pet-cameras/" });
+        crossLinks.push({ label: "Best Self-Cleaning Litter Boxes", href: "/best/self-cleaning-litter-boxes/" });
+      }
+      if (isFountain) {
+        crossLinks.push({ label: "Best Automatic Cat Feeders", href: "/best/automatic-cat-feeders/" });
+        crossLinks.push({ label: "Best Self-Cleaning Litter Boxes", href: "/best/self-cleaning-litter-boxes/" });
+      }
+      if (isCamera) {
+        crossLinks.push({ label: "GPS Trackers Without Monthly Fees", href: "/best/gps-trackers-no-monthly-fee/" });
+        crossLinks.push({ label: "Best Automatic Cat Feeders", href: "/best/automatic-cat-feeders/" });
+      }
+      if (isGPS) {
+        crossLinks.push({ label: "Pet Cameras With No Subscription", href: "/best/pet-cameras-no-subscription/" });
+        crossLinks.push({ label: "Best Self-Cleaning Litter Boxes", href: "/best/self-cleaning-litter-boxes/" });
+      }
+      if (crossLinks.length === 0) return null;
+      return (
+        <div class="mt-8 rounded-xl border border-sage-dark/30 bg-cream/50 p-6">
+          <p class="text-sm font-bold uppercase tracking-wide text-bark-muted">Explore More Categories</p>
+          <ul class="mt-3 grid gap-2 sm:grid-cols-2">
+            {crossLinks.map(l => (
+              <li><a href={l.href} class="text-forest underline decoration-sage-dark/50 underline-offset-2 hover:text-forest-dark">{l.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      );
+    })()}
+
     <!-- Bottom CTA -->
     {allProducts[0] && (
       <div class="mt-10 rounded-2xl border border-honey/40 bg-gradient-to-br from-honey/5 to-cream p-6 text-center md:p-8">
