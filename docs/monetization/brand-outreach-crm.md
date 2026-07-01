@@ -225,3 +225,81 @@ press@smartpetguide.net
 ### 发送后更新 CRM
 
 发完后把对应行的 Status 改为 "Sent — awaiting reply"，填上 Sent 日期。
+
+---
+
+## Wave 1 D3 跟进邮件（7/4 发送）
+
+> 发件地址：`press@smartpetguide.net`
+
+### 1. Aorkuler — service@aorkuler.com
+
+**Subject:** Re: Aorkuler GPS Tracker visibility
+
+```
+Hi Aorkuler team,
+
+Following up on my note from Tuesday — I know inboxes get busy.
+
+The offer stands: I can put together a free visibility snapshot for your GPS tracker showing where it appears (or doesn't) in Google and AI search results, plus the top buyer questions hiding in your 480 reviews. Takes about 30 minutes, zero cost.
+
+Let me know if you'd like me to go ahead.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+### 2. KittySpout — via contact form
+
+**Subject:** Re: KittySpout Fountain visibility
+
+```
+Hi KittySpout team,
+
+Following up on Tuesday's message — inboxes get busy, totally understand.
+
+The free visibility snapshot offer still stands: I'll analyze how your fountain appears in Google search, AI citations, and buyer reviews, and send you 3 concrete findings you can act on. Zero cost.
+
+Let me know if you'd like me to put that together.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+### 3. YEAPAW — via contact form
+
+**Subject:** Re: YEAPAW Fountain visibility
+
+```
+Hi YEAPAW team,
+
+Following up on Tuesday's note — just a quick nudge in case it got buried.
+
+Happy to put together a free visibility snapshot for your pumpless fountain: Google search visibility, AI citation readiness, and the top buyer questions in your reviews. No cost, no commitment.
+
+Worth 30 minutes of your time?
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+### 4. Elspet — help@elspet.com
+
+**Subject:** Re: Elspet Pro visibility
+
+```
+Hi Elspet team,
+
+Quick follow-up on my Tuesday email — I know things move fast in pet tech.
+
+The free visibility snapshot for the Elspet Pro is still on the table: I'll show you how your product appears in Google, AI search, and buyer reviews, with 3 actionable findings. Takes 30 minutes, no cost.
+
+Interested?
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
