@@ -168,6 +168,14 @@ PINS = [
         "tags": ["LR5 Fits 5 Cats", "CATLINK 13L Drawer", "$349 Budget Pick", "Drawer Size Comparison"],
         "cta": "Compare Multi-Cat Boxes",
     },
+    # --- R10 出站实验 Pin (6/30-) ---
+    {
+        "id": "pin79_exp7", "img": "petlibro-granary.jpg",
+        "title": "WiFi Keeps Dropping?\n6 Fixes That Actually Work",
+        "badge": "Reliability Guide — Fix It Yourself",
+        "tags": ["2.4GHz Only — Check WiFi", "Router Channel Switching", "Don't Return It Yet", "Petlibro, WOPET, PETKIT"],
+        "cta": "See the 6 Fixes",
+    },
 ]
 
 for pin in PINS:
