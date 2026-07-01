@@ -236,12 +236,9 @@
 
 ## 视觉/浏览器发现
 <!-- 关键：每执行2次查看/浏览器操作后必须更新此部分 -->
-- smartpetguide.net 线上可访问，**99 页**正常
-- 新增 3 篇对比文：Pioneer Pet vs YEAPAW / xpai vs eufy / PETKIT vs Catit PIXI
-- 对比文从 6 → 9 篇，覆盖全部 5 个品类
-- 产品图片替换为 Amazon 高清原图后，文章视觉效果大幅提升
-- 对比页双卡 + 图片布局在桌面端并排、移动端堆叠
-- Amazon 商品页结构稳定，#landingImage + data-old-hires 可可靠提取图片
+- smartpetguide.net 线上可访问，**112 页**正常
+- 对比文 15 篇、Best 列表 10 篇、评测 26 篇、指南 37 篇、品种 7 篇、信息页 17 篇
+- 7/1 新增机器人吸尘器测试品类（Robot #6）
 
 ## 技术栈
 | 决策 | 理由 |
@@ -807,6 +804,37 @@ SmartPetGuide 对应的目标：
 - [x] task_plan.md 日常/周期任务全面重构（新增口径自检 + GA4 看板 + 外链固定 + 出站实验 + 取消清单）
 - [x] task_plan.md 新增阶段 14 满月审计策略调整
 - [x] 构建验证：103 页，0 错误
+
+## 变现 Sprint 启动 + 两日密集执行（2026-06-29 ~ 07-01）
+
+### 三轨道合并决策
+- 原始 A/B/C 三轨道评估后合并为两轨道：Task A（后台基建）+ Brand Outreach（B+C 合并）
+- 合并理由：B 和 C 打的是同一批 12 个品牌，分开外联会自我竞争；A 在 GSC 仅 3 次点击时 30 天内不可能有可量化收入信号
+- 执行顺序调整为 A 先（3 天一次性完成）→ Brand Outreach（唯一主动外联轨道）
+
+### Task A 变现基建完成
+- 联盟链接审核：全部 26 款产品含 `tag=smartpetgui0a-20`，全部模板 `rel="sponsored"`
+- Review 模板新增 Quick Decision 模块（buyIf/skipIf/bestAlternative）：3 篇高优先级评测已添加
+- Guide 模板新增推荐产品 CTA：2 篇指南从零变现路径到各 3 产品卡片
+- GA4 周检确认：affiliate_click/outbound_click 跟踪代码正确，内部流量过滤器已启用，30 活跃用户/7 天
+
+### Brand Outreach 推进
+- `/for-brands/` 页面：免费可见性快照 → $199/$499/$1,200 审计阶梯 + 编辑边界
+- 审计模板（12 节）、外联 CRM（12 品牌）、Aorkuler 样本审计
+- 旧索链接模板标记为 Historical，新序列：D0（3 买家问题）→ D3（免费快照）→ D7（闭环）
+- Wave 1 外联：Aorkuler（service@）、KittySpout（表单）、YEAPAW（表单）、Elspet（help@elspet.com 已建 cares）、xpai（无官网跳过）
+
+### 内容+SEO 进展
+- 两日内容：PAA #3-#5（饮水机/喂食器WiFi/喂食器防盗）+ Robot #6（机器人吸尘器），106→112 页
+- 内链补全：评测模板 5 品类各加 2 指南链接 + Best 模板跨品类互链
+- 页面加固：No-Fee GPS/Aorkuler 加用户原话，Catit PIXI verdict 强化，首页加 social proof
+- GSC：索引仍 14 冻结（5 周），点击 3→4，评价摘要 2→4。Sitemap 已重提交（106→109 已读取）
+- 实验 Pin：7/12→8/12（Pin #7 WiFi断连角度、Pin #8 猫砂+机器人吸尘器角度）
+
+### 本周交叉排班验证
+- 两套任务体系（Week 8 内容+变现 Sprint）首次交叉执行，22/22 任务全部完成
+- 优先级规则（GSC > Pin > 人工阻塞 Sprint > 内容 > Claude Sprint）经实战验证有效
+- 在 task_plan.md 顶部固化了两套体系的协调排班表
 
 ---
 *每次调研后更新此文件*
