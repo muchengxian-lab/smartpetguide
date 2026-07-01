@@ -1,6 +1,6 @@
 # SmartPetGuide — Extended Content for AI
 
-> Last updated: June 23, 2026. 101 pages covering 26 smart pet devices across 5 categories.
+> Last updated: July 1, 2026. 112 pages covering 26 smart pet devices across 5 categories. Plus robot vacuum for pet hair test category.
 
 ## Site Overview
 
@@ -85,6 +85,22 @@ All pages include structured data: Article/Review + FAQPage + BreadcrumbList. Ho
 12 AI crawlers explicitly allowed in robots.txt: GPTBot, ChatGPT-User, OAI-SearchBot, PerplexityBot, Google-Extended, GoogleOther, CCBot, anthropic-ai, Claude-User, cohere-ai, Meta-ExternalAgent, Applebot.
 
 Wikidata entity: Q140290653 (SmartPetGuide, created June 2026).
+
+## Troubleshooting & How-To Guides (New — July 2026)
+
+- How to Stop Your Automatic Feeder From Jamming (7 Fixes) — covers WOPET, Petlibro, PETKIT
+- How to Introduce Cat to an Automatic Litter Box — step-by-step transition guide
+- Cat Won't Drink From Water Fountain? 8 Reasons & Fixes — pump noise, taste, location, filter smell
+- Why Does My Automatic Feeder Keep Disconnecting from WiFi? — 2.4GHz, band steering, channel switching
+- How to Keep Your Cat From Breaking Into the Automatic Feeder — 5 fixes from real owners
+
+## New Category — Robot Vacuums for Pet Hair (Test)
+
+- Best Robot Vacuum for Cat Litter Tracking (2026) — 5 models compared: Roomba j7+, Roborock Q5 Pro, Shark AI Ultra, Eufy X8, Roomba 694. Covers suction power, brush roll type, auto-empty docks, and litter-specific setup tips.
+
+## For Brands
+
+- /for-brands/ — brand partnership page with free visibility snapshot and paid Pet Tech Visibility Audit ($199/$499/$1,200)
 
 llms.txt available at https://smartpetguide.net/llms.txt
 Sitemap available at https://smartpetguide.net/sitemap-index.xml
