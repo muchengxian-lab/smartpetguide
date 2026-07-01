@@ -176,6 +176,13 @@ PINS = [
         "tags": ["2.4GHz Only — Check WiFi", "Router Channel Switching", "Don't Return It Yet", "Petlibro, WOPET, PETKIT"],
         "cta": "See the 6 Fixes",
     },
+    {
+        "id": "pin80_exp8", "img": "litter-robot-4.jpg",
+        "title": "Cat Litter Everywhere?\n5 Robot Vacuums That Handle It",
+        "badge": "Litter-Tested by Real Cat Owners",
+        "tags": ["Roomba j7+ vs Roborock Q5", "Clay & Crystal Litter Test", "Auto-Empty Dock Picks", "From $179 to $499"],
+        "cta": "See the Litter-Ready Vacuums",
+    },
 ]
 
 for pin in PINS:
