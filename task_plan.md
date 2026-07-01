@@ -1,6 +1,6 @@
 # SmartPetGuide 任务计划
 
-**最后更新：2026-06-30 周一 | 107 页 / 83 Pin 在线 | 策略阶段：分发与验证驱动 | 实验 Pin 6/12 | 索引 14 冻结 4 周**
+**最后更新：2026-07-01 周三 | 112 页 / 85 Pin 在线 | 策略阶段：分发与验证驱动 | 实验 Pin 8/12 | 索引 14 冻结 5 周**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -19,7 +19,7 @@
 |:--:|------|------|------|:--:|
 | 周一 | 6/30 | PAA #1#2 + Petlibro 加固 + GSC 周检 + Pin #6 | Task A D1-D3 + GA4 周检 + Brand Outreach D4-D7 | ~3h（全部完成✅） |
 | 周二 | 7/1 | PAA #3#4 + 内链补全 + Pin #7 + GSC + Sitemap | D8 QA + D9 外联准备 + Wave 1 发送 | ~2.5h（全部完成✅） |
-| 周三 | 7/2 | PAA #5 + Robot #6 + GEO 月度复检 + 主力页加固 + Pin #8 | D10-D12 跟进+度量 | ~3h |
+| 周三 | 7/2 | PAA #5 + Robot #6 + GEO 复检 + 4 页加固 + Pin #8 | D10-D12 D3跟进+度量日志 | ~3h（全部完成✅） |
 | 周四 | 7/3 | Robot #7#8 + GEO 模板修复 + 外链第 3 轮 + Pin #9 | D13-D14 第二波外联 | ~3.5h |
 | 周五 | 7/4 | GEO 收尾 + 外链跟进 + NR + Pin #10 + 周复盘 | D15-D17 跟进+Review | ~3.5h |
 
@@ -39,9 +39,9 @@
 
 | Track | 目标 | 执行文件 | 状态 |
 |------|------|------|:--:|
-| Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D3 已执行 |
+| Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D12 已执行 |
 | A | Amazon affiliate conversion：5 页决策模块 + 2 指南 CTA + 全站审核 | `docs/monetization/task-a-amazon-affiliate-conversion.md` | ✅ 完成 |
-| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 待执行 |
+| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 Wave 1 外联中，D3 跟进 7/4 |
 
 ### 内容选题引擎（6/26 起）
 
@@ -158,13 +158,32 @@
 | **Task A 变现基建** | ✅ 联盟审核 + 3 review 决策模块 + 2 guide CTA |
 | **Brand Outreach D4-D7** | ✅ /for-brands/ 页面 + 审计模板 + CRM + 样本审计 |
 
+### 今日任务状态（7/1 周三 — 接续周二）
+
+| 任务 | 状态 |
+|------|:--:|
+| PAA #5：Cat Breaking Into Feeder | ✅ C 级 30min，112 页 |
+| Robot #6：Best Robot Vacuum for Cat Litter | ✅ B 级 1h，品类测试 |
+| GEO 月度复检 + llms-full.txt 更新 | ✅ 112 页 + 新内容覆盖 |
+| GSC 索引追踪 | ✅ 仍 14 冻结，Sitemap 106→109 |
+| No-Fee GPS + 用户原话 | ✅ whatOwnersSay 已加 |
+| Aorkuler GPS + 用户原话 + 决策模块 | ✅ whatOwnersSay + buyIf/skipIf/bestAlt |
+| Catit PIXI verdict 强化 | ✅ 结论更具体 |
+| 首页 social proof 数字条 | ✅ 112页/26产品/85K+评论/6品类 |
+| 实验 Pin #8 | ✅ pin80_exp8 已生成+发布 |
+| GSC URL Inspection ×5 | ✅ 人工已提交 |
+| Sprint D11 D3 跟进草稿 | ✅ 4 品牌，7/4 发送 |
+| Sprint D12 度量日志 | ✅ weekly-metrics-log.md 创建 |
+| Sitemap 重提交 | ✅ 7/1 两次重提 |
+
 ### ⚠️ 本周关注
 
 | 事项 | 严重度 | 说明 |
 |------|:--:|------|
-| 索引冻结 | 🔴 | 14 已 4 周不动。明天内链补全优先级提最高 |
-| 改动队列堆积 | 🟡 | Review Schema/PAA #1#2/Petlibro 加固都在等 Google 重抓 |
-| Pin #6 已发 | 🟢 | 实验进度 6/12 |
+| 索引冻结 | 🔴 | 14 已 5 周不动。Sitemap 已重提+内链已补，等 Google 响应 |
+| 改动队列堆积 | 🟡 | Review Schema/PAA #1-#5/Robot #6/4 页加固都在等 Google 重抓 |
+| Pin #8 已发 | 🟢 | 实验进度 8/12 |
+| 外联 Wave 1 | 🟢 | 4/5 品牌已发，D3 跟进 7/4 |
 
 | 任务 | 时间 | 说明 |
 |------|:--:|------|
@@ -293,18 +312,17 @@
 
 ## 📊 数据看板
 
-| 指标 | 当前 (6/22) | 30 天目标 | 审计评分 |
+| 指标 | 当前 (7/1) | 30 天目标 | 审计评分 |
 |------|:--:|:--:|:--:|
-| 页面数 | 103 | 115-120 | A- |
+| 页面数 | 112 | 115-120 | A- |
 | GSC 索引 | 14 | 30+ | C |
-| GSC 曝光 | 130 | 300 | C |
-| GSC 点击 | 3 | 20 | C |
+| GSC 点击 | 4 | 20 | C |
 | Pinterest 出站点击 | 0 | >5 | C- |
 | 引用域名 | 11 | 18+ | C |
-| GA4 affiliate_click | ? | 有数据 | C+ |
+| GA4 affiliate_click | 0 | 有数据 | C+ |
 | GEO Score | 70 | 75+ | B+ |
 | Wikidata | Q140290653 | 补全属性 | B |
-| 口径一致性 | P0 风险 | 零残留 | — |
+| 口径一致性 | ✅ | 零残留 | — |
 
 ### 每日时间预算
 
@@ -334,8 +352,8 @@
 | 2 | How to Introduce Cat to Automatic Litter Box | <5 | C | 45min | PAA |
 | 3 | Cat Won't Drink From Water Fountain? 8 Reasons & Fixes | <5 | C | 30min | PAA |
 | 4 | Why Does My Automatic Feeder Keep Disconnecting from WiFi? | <5 | C | 30min | Reddit |
-| 5 | How to Keep Your Cat From Breaking Into the Automatic Feeder | <5 | C | 30min | Reddit |
-| 6 | Best Robot Vacuum for Cat Litter Tracking (2026) | 15-25 | B | 1h | 品类测试 |
+| 5 | How to Keep Your Cat From Breaking Into the Automatic Feeder | <5 | C | 30min | Reddit | ✅ 7/1 |
+| 6 | Best Robot Vacuum for Cat Litter Tracking (2026) | 15-25 | B | 1h | 品类测试 | ✅ 7/1 |
 | 7 | Best Robot Vacuum for Golden Retriever Shedding | 10-15 | B | 1h | 品类测试 |
 | 8 | Robot Vacuum vs Stick Vacuum for Pet Hair | 15-20 | B | 1h | 品类测试 |
 
@@ -349,11 +367,11 @@
 
 | # | 页面 | 曝光 | 加固动作 | 工时 |
 |:--:|------|:--:|------|:--:|
-| 1 | Petlibro Granary 评测 | 55 | 加"真实用户原话"正反引用 + 对比表 | 45min |
-| 2 | Catit PIXI 对比 | 39 | verdict 强化 + 内链→饮水机评测 | 30min |
-| 3 | 首页 | 37 | 加最新研究区块 + social proof 数字 | 30min |
-| 4 | No-Fee GPS 评测 | 29 | 加"真实用户原话" + Tractive/Aorkuler 对比表 | 45min |
-| 5 | Aorkuler GPS 评测 | 29 | 加使用场景章节 + 内链→对比文 | 30min |
+| 1 | Petlibro Granary 评测 | 55 | 加"真实用户原话"正反引用 + 对比表 | 45min | ✅ 6/30 |
+| 2 | Catit PIXI 对比 | 39 | verdict 强化 + 内链→饮水机评测 | 30min | ✅ 7/1 |
+| 3 | 首页 | 37 | 加最新研究区块 + social proof 数字 | 30min | ✅ 7/1 |
+| 4 | No-Fee GPS 评测 | 29 | 加"真实用户原话" + Tractive/Aorkuler 对比表 | 45min | ✅ 7/1 |
+| 5 | Aorkuler GPS 评测 | 29 | 加使用场景章节 + 内链→对比文 | 30min | ✅ 7/1 |
 
 ---
 
@@ -537,7 +555,7 @@
 
 | 指标 | 当前 | 目标 |
 |------|:--:|:--:|
-| 页面数 | 103 | 150-180 |
+| 页面数 | 112 | 150-180 |
 | GSC 索引 | 14 | 60-100 |
 | 引用域名 | 11 | 25-40 |
 | Pin | 79 | 150-220 |
