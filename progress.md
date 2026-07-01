@@ -2577,3 +2577,40 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 | Brand Outreach | /for-brands/ + 审计模板 + CRM + 样本审计 | ✅ |
 | 构建 | 108 页 0 错误 ×2 次 | ✅ |
 | Git | 3 次 commit，全部 pushed | ✅ |
+
+---
+## 会话：2026-07-01 周三 — 周二任务集中执行
+
+### 完成事项
+
+**内链与内容**
+- [x] **内链补全**：评测模板 5 品类各加 2 个指南链接（维护日程 + 品类专项）；Best 模板新增「Explore More Categories」跨品类互链区块
+- [x] **PAA #3**：Cat Won't Drink From Water Fountain? 8 Reasons & Fixes（C 级，30min，110 页）
+- [x] **PAA #4**：Why Does My Automatic Feeder Keep Disconnecting from WiFi? 6 Fixes（C 级，30min，110 页）
+
+**SEO 与分发**
+- [x] **GSC URL Inspection**：PAA #3 提交优先抓取队列（其余 4 个人工提交）
+- [x] **Sitemap 重提交**：7/1 重提 sitemap-index.xml，上次读取 6/29（106 页→110 页等 Google 重读）
+- [x] **实验 Pin #7**：pin79_exp7.jpg 已生成（v2 设计：Forest header + Honey badge + 产品图卡片 + 标签 + CTA）+ 已手动发布
+- [x] **口径自检**：guides 模板 1 处 tested→reliable 修复
+- [x] **GSC 数据速览**：索引仍 14（冻结），点击 3→4，评价摘要 2→4，HTTPS 12，路径 12
+
+**变现 Sprint**
+- [x] **D8 QA**：全部 Brand Outreach 交付物通过（/for-brands/ 页面、审计模板、CRM、样本审计、外联模板）
+- [x] **D9 外联准备**：Wave 1 发送包完成 — Aorkuler（service@）、KittySpout（表单）、YEAPAW（表单）、Elspet（help@）、xpai（跳过）
+- [x] **Wave 1 外联发送**：4 个品牌已发（Aorkuler/KittySpout/YEAPAW/Elspet），CRM 状态更新，D3 跟进日 7/4
+
+### 修改文件
+- `src/pages/reviews/[slug].astro` — Explore More 5 品类各加 2 指南链接
+- `src/pages/best/[slug].astro` — 新增跨品类 Explore More Categories
+- `src/pages/guides/[slug].astro` — PAA #3 + PAA #4 新文章 + 口径修复
+- `pins/generate-pins-v2.py` — +pin79_exp7
+- `pins/pins_with_text/pin79_exp7.jpg` — Pin #7 图片
+- `docs/monetization/brand-outreach-crm.md` — 邮箱补全 + Wave 1 发送状态 + 全文邮件
+- `docs/monetization/task-a/b/c` — 原始 spec 文件入库
+
+### 构建状态
+**110 页 / 0 错误 / 5 次 commit / 全部 pushed**
+
+### 周二任务完成率：9/9 ✅
+
