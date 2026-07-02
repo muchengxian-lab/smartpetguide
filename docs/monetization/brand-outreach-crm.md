@@ -303,3 +303,117 @@ Best,
 SmartPetGuide Research Team
 press@smartpetguide.net
 ```
+
+---
+
+## Wave 2 发送邮件（直接复制）
+
+### 6. Homerunpet — 待查联系方式
+
+**Subject:** 3 things buyers are asking about the Homerunpet Wireless Fountain
+
+```
+Hi Homerunpet team,
+
+I run SmartPetGuide, an independent research site covering smart pet devices. We've analyzed your Wireless Smart Fountain and noticed a few things in buyer reviews:
+
+1. You're the only wireless fountain under $60 — a unique position. But your Amazon listing buries the motion sensor feature deep in the description. "Turns on when your cat approaches" should be the second headline after "wireless."
+
+2. Buyers comparing corded vs cordless fountains don't understand the trade-offs. A simple comparison showing why battery life (weekly charging) is worth the cord-free convenience would address the #1 buyer objection upfront.
+
+3. USB-C charging is a modern convenience feature that most fountain buyers don't even know to look for. The USB-C port means you can use any phone charger — no proprietary cable to lose.
+
+No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+### 7. CATLINK — 待查联系方式
+
+**Subject:** 3 things buyers are asking about the CATLINK Young Pro
+
+```
+Hi CATLINK team,
+
+I run SmartPetGuide, an independent research site covering smart pet devices. We've reviewed your Young Pro and noticed a few things in the market:
+
+1. Multi-cat weight recognition at $399 is the best value in smart tracking — Litter-Robot charges $699+ for the same feature. This should be your headline.
+
+2. The 13L waste bin is larger than Litter-Robot 4 (10L) and Leo's Loo Too (8L) — meaning fewer emptying trips for multi-cat homes. This advantage is buried in specs.
+
+3. English app translation quality is the most common complaint in your Amazon reviews. Multiple buyers mention awkward phrasing. This is a fixable issue that directly impacts conversion — polished English = higher ratings.
+
+No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+### 8. Honey Tour — 待查联系方式
+
+**Subject:** 3 things buyers are asking about the Honey Tour Robot Camera
+
+```
+Hi Honey Tour team,
+
+I run SmartPetGuide, an independent research site covering smart pet devices. We've analyzed your movable robot camera and found something interesting:
+
+1. You have the only pet camera that physically drives around the house — with a 4.7★ rating from 320 owners. "This camera follows your cat from room to room" — that's the headline buyers need.
+
+2. At $160, you're cheaper than the Furbo 360 ($179) and Petcube Bites 2 ($249) — both stationary. A price comparison showing the Honey Tour delivers more functionality for less money would flip the value perception.
+
+3. 320 reviews at 4.7★ is excellent satisfaction but low volume — most buyers haven't heard of you. Getting covered by pet tech reviewers would accelerate discovery.
+
+No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+### 9. WOPET — support@wopet.com
+
+**Subject:** 3 things buyers are asking about the WOPET Feeder and Camera
+
+```
+Hi WOPET team,
+
+I run SmartPetGuide, an independent research site covering smart pet devices. We've covered your products extensively and noticed a few patterns across our research:
+
+1. Your 6L hopper is the largest in the automatic feeder category — nobody else offers this capacity at $89. For multi-pet homes and owners who travel, "largest hopper under $100" is the #1 conversion point.
+
+2. WiFi reliability complaints appear in a significant minority of your reviews — and many are fixable. Most are caused by 2.4GHz router channel switching, not the feeder itself. A simple "WiFi Troubleshooting" card in the box would reduce returns.
+
+3. Your camera model at $99 undercuts the Furbo 360 by $80 and the Petcube Bites 2 by $150. But buyers don't know this comparison exists — the "most affordable treat-tossing camera" story is your strongest angle.
+
+No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+### 10. Petlibro — support@petlibro.com
+
+**Subject:** 3 things buyers are asking about the Petlibro Granary
+
+```
+Hi Petlibro team,
+
+I run SmartPetGuide, an independent research site covering smart pet devices. Your Granary is the #1 BSR feeder we track, and we've noticed a few things:
+
+1. #1 BSR (#1,173 in Pet Supplies) means you're the market leader — but your Amazon listing doesn't tell this story. "The best-selling smart feeder on Amazon" in the first bullet would convert comparison shoppers on the fence.
+
+2. The camera + feeder integration is your killer feature. A separate feeder ($89 WOPET) + camera ($43 xpai) costs $132. Your $139 Granary costs only $7 more — and you get one clean integrated experience. That math should be front and center.
+
+3. The 3L vs 5L confusion is the #1 pre-purchase question in your reviews. A simple sizing guide (1 cat = 3L, 2+ cats = 5L) in the product images would eliminate this friction.
+
+No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```

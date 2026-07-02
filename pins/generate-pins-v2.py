@@ -183,6 +183,13 @@ PINS = [
         "tags": ["Roomba j7+ vs Roborock Q5", "Clay & Crystal Litter Test", "Auto-Empty Dock Picks", "From $179 to $499"],
         "cta": "See the Litter-Ready Vacuums",
     },
+    {
+        "id": "pin81_exp9", "img": "litter-robot-4.jpg",
+        "title": "Golden Retriever Hair\nEverywhere? 5 Vacuums That Win",
+        "badge": "Double-Coat Tested — From $259",
+        "tags": ["Roomba j7+ #1 for Goldens", "Auto-Empty Dock = Less Work", "Rubber Brush = No Tangle", "Run Daily During Coat Blow"],
+        "cta": "Find Your Golden-Ready Vacuum",
+    },
 ]
 
 for pin in PINS:
