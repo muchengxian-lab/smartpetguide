@@ -47,15 +47,22 @@
 | Track | 状态 | 关键信号 |
 |------|:--:|------|
 | Task A（后台基建） | ✅ 完成 | 5 决策模块 + 2 指南 CTA |
-| Brand Outreach D0-D9 | 🔄 外联中 | 4/5 品牌已发 D0，等回复 |
-| Brand Outreach D10+ | ⏳ 待推进 | D3 跟进日 7/4 |
+| Brand Outreach D0-D9 | 🔄 外联中 | 4/5 品牌已发 D0；Aorkuler 已回复并请求 snapshot |
+| Brand Outreach D10+ | 🔄 推进中 | Aorkuler 7/2 已发送 snapshot；其余品牌 D3 跟进待定 |
 
 ### 诊断
 
 - **流量瓶颈未突破**：30 活跃用户/7 天，90% Direct。affiliate_click 和 outbound_click 跟踪代码正确但无人点击。
 - **索引冻结**：14 页 4 周不动。内链补全 + sitemap 重提 + URL Inspection 5 个已完成，等 Google 响应。
-- **外联无回复**：D0 刚发 1 天，正常。D3 跟进日 7/4。
+- **外联状态**：7/1 快照时尚无回复；7/2 Aorkuler 已正向回复并请求 snapshot。
 - **Task A 决策模块已就绪**：等流量上来后才能看到效果。Month 3 之前不期望可量化的收入信号。
+
+### 7/2 更新：首个品牌正向回复
+
+- **Aorkuler / John** 回复并请求查看 visibility snapshot。
+- 状态从 `Sent — awaiting reply` → `Replied — snapshot requested` → `Snapshot sent — awaiting feedback`。
+- 7/2 已发送 PDF 附件 + 短邮件正文。
+- 后续采用 email-first 异步沟通，不主动推 call；若 7/8 前无回复，再发轻量 check-in。
 
 ---
 

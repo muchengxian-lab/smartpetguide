@@ -7,7 +7,7 @@
 
 | # | Brand | Category | Product | Website | Contact | 3 Key Findings | Status | Sent | Follow-up | Notes |
 |:--:|------|------|------|------|------|------|:--:|------|------|------|
-| 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | service@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Sent — awaiting reply | 7/1 | 7/4 | Small brand, high ticket ($229), good first outreach target |
+| 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Snapshot sent — awaiting feedback | 7/1 | Check in 7/8 if no reply | John replied 7/2 asking to see the visibility snapshot. PDF sent 7/2. Continue by email-first async follow-up; do not push a call unless John asks. |
 | 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | TBD | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Not contacted | — | — | Budget wireless, strong story |
 | 3 | KittySpout | Water Fountain | Stainless Steel Fountain | kittyspout.com | 表单 (kittyspout.com/pages/contact-us) | (1) Dishwasher-safe angle underused — key difference vs Pioneer Pet (2) Mid-price ($50) position unclear vs $39/$93 alternatives (3) 800 reviews — needs more social proof | Sent — awaiting reply | 7/1 | 7/4 | Mid-range steel fountain |
 | 4 | YEAPAW | Water Fountain | Stainless Steel Fountain | yeapaw.com | 表单 (yeapaw.com/pages/contact) | (1) Pumpless tech is unique but poorly explained in listing (2) Only 1,200 reviews — differentiation story needed (3) No content comparing magnetic induction vs traditional pumps | Sent — awaiting reply | 7/1 | 7/4 | Premium pumpless, needs education content |
@@ -112,6 +112,7 @@ Understood — thanks for the quick reply. If anything changes down the road, fe
 | Sent — awaiting reply | D0 sent, no response yet |
 | Replied — engaging | Brand responded positively |
 | Replied — not interested | Brand declined |
+| Snapshot sent — awaiting feedback | Free snapshot sent after positive reply; wait 3-5 business days before checking in |
 | Free snapshot delivered | Snapshot sent, awaiting feedback |
 | Audit discussion | Moving toward paid audit |
 | Closed — no response | D7 sent, no reply |
