@@ -836,5 +836,26 @@ SmartPetGuide 对应的目标：
 - 优先级规则（GSC > Pin > 人工阻塞 Sprint > 内容 > Claude Sprint）经实战验证有效
 - 在 task_plan.md 顶部固化了两套体系的协调排班表
 
+## 机器人吸尘器品类测试 + GEO 模板收官（2026-07-03）
+
+### 机器人吸尘器测试
+- 新增 3 篇：猫砂清理 / Golden Retriever 掉毛 / 机器人 vs 手持对比
+- 测试结论：机器人吸尘器是宠物设备站的天然延伸品类（搜索量中、竞争低、内容可复用现有研究框架）
+- 图片问题：无产品数据库，Pin 图复用 Litter-Robot 4 图片，长期需自建产品图库
+
+### GEO 模板修复
+- Compare/Best 模板底部加数据来源+日期脚注（解决 Codex 6/27 增量审计 P1-6/7）
+- Guide 模板新增 `quickAnswer` 可选字段（40-60字一句结论，AI 可提取的结构化摘要）
+- GEO Score 70→74（7/1 复检），目标 8/1 达到 80
+
+### 外联进展
+- Wave 1：4/5 品牌已发 D0（Aorkuler/KittySpout/YEAPAW/Elspet），D3 跟进日 7/4
+- Wave 2：2/5 品牌已发 D0（WOPET/Petlibro），3 品牌待查联系方式
+- 外联 Round 3：5 个 guest post 目标（PetPlace DA50+/EntirelyPets/Phetched/Your Vet Online/LenoxVet）
+- 关键信号：外联至今零回复（D0 发后 1-2 天正常），7/4 D3 跟进是第一个有效检验点
+
+### 114 页内容结构
+- 评测 26 篇 / 对比 15 篇 / Best 10 篇 / 指南 39 篇 / 品种 7 篇 / 信息页 17 篇
+
 ---
 *每次调研后更新此文件*
