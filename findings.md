@@ -848,14 +848,20 @@ SmartPetGuide 对应的目标：
 - Guide 模板新增 `quickAnswer` 可选字段（40-60字一句结论，AI 可提取的结构化摘要）
 - GEO Score 70→74（7/1 复检），目标 8/1 达到 80
 
-### 外联进展
-- Wave 1：4/5 品牌已发 D0（Aorkuler/KittySpout/YEAPAW/Elspet），D3 跟进日 7/4
-- Wave 2：2/5 品牌已发 D0（WOPET/Petlibro），3 品牌待查联系方式
-- 外联 Round 3：5 个 guest post 目标（PetPlace DA50+/EntirelyPets/Phetched/Your Vet Online/LenoxVet）
-- 关键信号：外联至今零回复（D0 发后 1-2 天正常），7/4 D3 跟进是第一个有效检验点
+### 外联进展（截至 7/4）
+- Wave 1：Aorkuler **已回复+快照已发** ✅；KittySpout/YEAPAW/Elspet D3 跟进已发
+- Wave 2：WOPET/Petlibro D0 已发（7/3），D3 跟进日 7/6
+- 外联 Round 3：5 个 guest post 目标已备，待人类发送
+- 关键里程碑：**Aorkuler 回复验证了「给价值再开口」的策略**，首个正向品牌信号
 
 ### 114 页内容结构
-- 评测 26 篇 / 对比 15 篇 / Best 10 篇 / 指南 39 篇 / 品种 7 篇 / 信息页 17 篇
+- 评测 26 篇 / 对比 15 篇 / Best 10 篇 / 指南 37 篇 / 品种 7 篇 / 信息页 17 篇 / 品牌页 1 篇 / 机器人吸尘器 3 篇(测试品类)
+
+### 周五（7/4）收尾
+- Pin #10：Robot vs Stick 对比角度（10/12 实验 Pin）
+- Wave 1 D3 跟进：KittySpout/YEAPAW/Elspet 已发
+- llms.txt 更新到 7/3（指南 31→37）+ llms-full.txt 日期更新
+- 周复盘：全周 49/50 任务完成，内容 106→114 页，GEO 70→74
 
 ---
 *每次调研后更新此文件*
