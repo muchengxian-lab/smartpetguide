@@ -190,6 +190,14 @@ PINS = [
         "tags": ["Roomba j7+ #1 for Goldens", "Auto-Empty Dock = Less Work", "Rubber Brush = No Tangle", "Run Daily During Coat Blow"],
         "cta": "Find Your Golden-Ready Vacuum",
     },
+    # --- R10 出站实验 Pin (7/4) ---
+    {
+        "id": "pin82_exp10", "img": "litter-robot-4.jpg",
+        "title": "Robot Vacuum vs Stick Vacuum\nWhich Wins for Pet Hair?",
+        "badge": "Don't Buy the Wrong One — Decision Guide",
+        "tags": ["Daily Robot vs Weekly Deep Clean", "Carpet? Get a Stick Vacuum", "Hard Floors? Robot Wins", "$179-699 — What to Spend"],
+        "cta": "See the Full Comparison",
+    },
 ]
 
 for pin in PINS:

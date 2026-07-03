@@ -21,7 +21,7 @@
 | 周二 | 7/1 | PAA #3#4 + 内链补全 + Pin #7 + GSC + Sitemap | D8 QA + D9 外联准备 + Wave 1 发送 | ~2.5h（全部完成✅） |
 | 周三 | 7/2 | PAA #5 + Robot #6 + GEO 复检 + 4 页加固 + Pin #8 | D10-D12 D3跟进+度量日志 | ~3h（全部完成✅） |
 | 周四 | 7/3 | Robot #7#8 + GEO 模板修复 + 外链第 3 轮 + Pin #9 | D13 Wave 2（WOPET+Petlibro 已发，3 品牌待查联系方式） | 8/9 ✅ |
-| 周五 | 7/4 | GEO 收尾 + 外链跟进 + NR + Pin #10 + 周复盘 | D15-D17 跟进+Review | ~3.5h |
+| 周五 | 7/4 | GEO 收尾 + NR + Pin #10 + 周复盘 | Wave 1 D3 跟进已发 + Aorkuler 快照已发 | 6/6 ✅ |
 
 ### 优先级规则
 1. **GSC URL Inspection（5 个/天）** — 雷打不动，每天 5 分钟

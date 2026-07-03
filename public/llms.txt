@@ -1,6 +1,6 @@
 # SmartPetGuide
 
-> Research-backed reviews of smart pet devices. Based on verified owner data and real-world analysis. Last updated: June 23, 2026.
+> Research-backed reviews of smart pet devices. Based on verified owner data and real-world analysis. Last updated: July 3, 2026.
 
 ## About
 
@@ -64,24 +64,28 @@ SmartPetGuide provides honest, research-backed reviews of automatic pet feeders,
 - [Petlibro vs PETKIT](https://smartpetguide.net/compare/petlibro-vs-petkit/)
 - [Tractive vs No-Fee GPS](https://smartpetguide.net/compare/tractive-vs-nofee-gps/)
 
-### Guides (31)
+### Guides (37)
 - [Self-Cleaning Litter Box Buying Guide](https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/)
 - [Automatic Feeder Buying Guide](https://smartpetguide.net/guides/automatic-feeder-buying-guide/)
 - [Smart Water Fountain Buying Guide](https://smartpetguide.net/guides/smart-water-fountain-buying-guide/)
 - [Pet Camera Buying Guide](https://smartpetguide.net/guides/pet-camera-buying-guide/)
 - [GPS Pet Tracker Buying Guide](https://smartpetguide.net/guides/gps-pet-tracker-buying-guide/)
 - [Stainless Steel Cat Fountain Guide](https://smartpetguide.net/guides/stainless-steel-cat-fountain-guide/)
-- [Wet Food Automatic Feeder Guide](https://smartpetguide.net/guides/wet-food-automatic-feeder-guide/)
-- [Litter Box Introduction Guide](https://smartpetguide.net/guides/litter-box-introduction-guide/)
+- [Robot Vacuum vs Stick for Pet Hair](https://smartpetguide.net/guides/robot-vacuum-vs-stick-vacuum-pet-hair/)
+- [Best Robot Vacuum for Cat Litter](https://smartpetguide.net/guides/best-robot-vacuum-cat-litter-tracking/)
+- [Best Robot Vacuum for Golden Retriever](https://smartpetguide.net/guides/best-robot-vacuum-golden-retriever-shedding/)
+- [Cat Broke Into Your Feeder? 5 Fixes](https://smartpetguide.net/guides/cat-breaking-into-automatic-feeder/)
+- [Cat Won't Drink From Fountain? 8 Fixes](https://smartpetguide.net/guides/cat-wont-drink-from-water-fountain/)
+- [Feeder WiFi Keeps Disconnecting? 6 Fixes](https://smartpetguide.net/guides/automatic-feeder-wifi-keeps-disconnecting/)
+- [Stop Feeder From Jamming: 7 Fixes](https://smartpetguide.net/guides/stop-automatic-feeder-from-jamming/)
+- [Introduce Cat to Automatic Litter Box](https://smartpetguide.net/guides/introduce-cat-to-automatic-litter-box/)
 - [How to Clean a Cat Water Fountain](https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/)
 - [Smart Pet Devices for Apartment Living](https://smartpetguide.net/guides/smart-pet-devices-apartment-living/)
 - [The True Cost: Subscription vs One-Time](https://smartpetguide.net/guides/smart-pet-devices-subscription-cost/)
 - [Beginner's Guide to Smart Pet Devices](https://smartpetguide.net/guides/first-smart-pet-device-guide/)
 - [Best Pet Tech Under $50](https://smartpetguide.net/guides/best-pet-tech-under-50/)
-- [Feeder Portion Size Guide](https://smartpetguide.net/guides/feeder-portion-size-guide/)
-- [Fountain Filter Guide](https://smartpetguide.net/guides/fountain-filter-guide/)
-- [Pet Camera Placement Guide](https://smartpetguide.net/guides/pet-camera-placement-guide/)
-- [Pet Device Maintenance Schedule](https://smartpetguide.net/guides/pet-device-maintenance-schedule/)
+- [Wet Food Automatic Feeder Guide](https://smartpetguide.net/guides/wet-food-automatic-feeder-guide/)
+- [Litter Box Introduction Guide](https://smartpetguide.net/guides/litter-box-introduction-guide/)
 - All guides at [Guides Index](https://smartpetguide.net/guides/)
 
 ### Breed-Specific Guides (7)

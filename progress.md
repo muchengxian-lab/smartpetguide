@@ -2707,6 +2707,78 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - CRM 状态更新为 "Snapshot sent — awaiting feedback"，Check in 7/8
 - 快照文件：`docs/monetization/aorkuler-visibility-snapshot-send.md`
 
+---
+## 会话：2026-07-04 周五
+
+### 完成事项
+- [x] **D3 跟进**：Wave 1 三品牌 D3 邮件已发（KittySpout/YEAPAW/Elspet），Aorkuler 已提前回复跳过
+- [x] **Pin #10**：pin82_exp10.jpg（Robot vs Stick 对比角度），10/12 实验 Pin 完成
+- [x] **GSC URL Inspection ×5**：本周新增 3 篇(PAA#5+Robot#7#8) + PAA#4 + Petlibro 评测
+- [x] **GEO 收尾**：llms.txt 更新到 7/3（指南 31→37）+ llms-full.txt 日期更新
+- [x] **NR 监控**：Amazon Pet Supplies 无值得追的智能宠物设备新品
+- [x] **外链跟进**：Round 3 guest post 待回复；Round 1/2 目标归档
+
+### 本周周复盘（6/30-7/4）
+
+#### 内容生产
+| 指标 | 周一 | 周五 | 变化 |
+|------|:--:|:--:|:--:|
+| 页面总数 | 106 | **114** | +8 |
+| 指南 | 31 | **37** | +6 |
+| Best 列表 | 10 | 10 | — |
+| 评测 | 26 | 26 | — |
+| 品类 | 5 | 5+1(机器人吸尘器测试) | +1 |
+
+本周新增：PAA #1-#5（5 篇故障排除指南）+ Robot #6-#8（3 篇机器人吸尘器测试）
+
+#### SEO & 索引
+| 指标 | 周一 | 周五 | 变化 |
+|------|:--:|:--:|:--:|
+| GSC 索引 | 14 | 14 | 冻结 5 周 |
+| GSC 点击 | 3 | 4 | +1 |
+| Sitemap 已发现 | 106 | 109 | +3 |
+| 评价摘要 | 2 | 4 | +2 |
+| URL Inspection | 日常 | 每日 5 个 | ✅ |
+| Sitemap 重提 | — | 2 次(6/30, 7/1, 7/3) | ✅ |
+
+**索引仍是最大瓶颈**。冻结 5 周但其他信号在改善（评价摘要翻倍、点击+1、sitemap 发现+3）。
+
+#### 内链 & GEO
+- 评测模板 5 品类各加 2-3 指南链接 + Best 模板 10 页跨品类互链
+- GEO Score 70→74（+4），主要来自 Review Schema 增强、llms-full.txt 更新、guide citation cue 全覆盖
+- GEO 模板修复：Compare/Best/Guide 三个模板底部加数据来源+日期脚注
+
+#### Pinterest
+- 实验 Pin：7/12 → **10/12**（Pin #7-#10）
+- 活跃 Pin：79 → 86
+- 出站点击：仍为零
+
+#### 外联（Brand Outreach）
+| Wave | 发送 | 回复 | 快照 |
+|------|:--:|:--:|:--:|
+| Wave 1 | 4/5 | 1（Aorkuler✅） | 1 已发 |
+| Wave 2 | 2/5 | 待 | — |
+| Guest Post Round 3 | 5 目标 | 待 | — |
+
+**关键里程碑**：Aorkuler/John 回复并收到免费快照。这是变现 Sprint 首个正向品牌回复——验证了「给价值再开口」的策略。
+
+#### 两套体系交叉执行
+- 4 天执行 31/33 任务完成（94%）
+- 优先级规则（GSC > Pin > 人工阻塞 Sprint > 内容 > Claude Sprint）经实战验证有效
+- 周二 9/9、周三 13/13、周四 8/9、周五 6/6
+- 仅剩人工项：Wave 2 剩余 3 品牌联系方式 + D3 跟进邮件发送
+
+#### 下周重点
+1. **索引突破**：继续每天 URL Inspection，关注 sitemap 重读结果
+2. **Pin 11-12**：完成实验最后 2 个
+3. **Aorkuler 跟进**：7/8 check in（如果还没回复）
+4. **外联回复处理**：Wave 1 D3 + Wave 2 初期回复
+5. **Week 9 新内容**：恢复设备文章（暂停的 4 集群）
+
+### 周五任务完成率：6/6 ✅
+
+**114 页 / 0 错误 / 1 次 commit / 全部 pushed**
+
 ### 两日会话总计（周二+周三）
 - 内容：PAA #3-#5 + Robot #6 = 4 篇新文章
 - 内链：评测 Explore More 全品类 + Best 跨品类互链
