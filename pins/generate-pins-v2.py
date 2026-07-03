@@ -198,6 +198,21 @@ PINS = [
         "tags": ["Daily Robot vs Weekly Deep Clean", "Carpet? Get a Stick Vacuum", "Hard Floors? Robot Wins", "$179-699 — What to Spend"],
         "cta": "See the Full Comparison",
     },
+    # --- R10 出站实验 Pin (7/5-6) ---
+    {
+        "id": "pin83_exp11", "img": "petlibro-granary.jpg",
+        "title": "Cat Breaking Into the\nFeeder? 5 Fixes That Work",
+        "badge": "Stop the Food Theft — Owner-Tested Solutions",
+        "tags": ["More Meals = Less Theft", "Lock That Lid Tight", "RFID Feeders Stop Food Crime", "Puzzle Toy Distraction"],
+        "cta": "See the 5 Fixes",
+    },
+    {
+        "id": "pin84_exp12", "img": "wopet-feeder.jpg",
+        "title": "Your $89 Feeder Just Saved\nYou $200 in Vet Bills",
+        "badge": "The Portion Control Investment — Do the Math",
+        "tags": ["Obesity = $200-500 Vet Visit", "Auto Portions = No Overfeeding", "WOPET $89 vs Diet Food $30/mo", "Prevention > Treatment"],
+        "cta": "See the Real Cost Math",
+    },
 ]
 
 for pin in PINS:
