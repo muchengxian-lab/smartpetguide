@@ -1,6 +1,6 @@
 # SmartPetGuide 任务计划
 
-**最后更新：2026-07-03 周四 | 114 页 / 86 Pin 在线 | 策略阶段：分发与验证驱动 | 实验 Pin 9/12 | 索引 14 冻结 5 周 | Wave 2 外联 2/5 已发**
+**最后更新：2026-07-04 周六 | 114 页 / 88 Pin 在线 | 策略阶段：分发与验证驱动 | 实验 Pin 12/12 完成 | 索引 22 | Wave 2 外联 2/5 已发**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -8,40 +8,48 @@
 
 > 当前同时运行两套计划。每天开工时先读此表确认当天任务，收工时更新两边的状态。
 
+### 日期防呆规则（Claude Code 必读）
+
+> 当前校准点：**2026-07-03 是周五**。下周工作周为 **2026-07-06 周一 → 2026-07-10 周五**。
+
+1. 任何涉及"今天/明天/下周/周五"的任务，先在终端运行 `Get-Date -Format "yyyy-MM-dd dddd"`，以系统日期为准，不凭模型记忆推断。
+2. 记录排期时必须写绝对日期 + 星期；如果用户给了相对日期，先转换为绝对日期。
+3. 保存排期前复核本周/下周日历，尤其不要把 7月4日写成周五、7月7日写成周一、7月11日写成周五。
+
 | 体系 | 文件 | 角色 | 节奏 |
 |------|------|------|------|
 | **Week 8 内容+分发** | `task_plan.md`（本文件） | 日常生产引擎 | 每天 ~2-3h，周二至周五 |
 | **30 天变现 Sprint** | `docs/monetization/30-day-schedule.md` | 商业验证轨道 | D1-D30，与 Week 排班协调 |
 
-### 本周交叉排班（6/30-7/4）
+### 本周交叉排班（6/30-7/3，按 2026 日历校正）
 
 | 天 | 日期 | Week 8 任务 | 变现 Sprint | 预计工时 |
 |:--:|------|------|------|:--:|
-| 周一 | 6/30 | PAA #1#2 + Petlibro 加固 + GSC 周检 + Pin #6 | Task A D1-D3 + GA4 周检 + Brand Outreach D4-D7 | ~3h（全部完成✅） |
-| 周二 | 7/1 | PAA #3#4 + 内链补全 + Pin #7 + GSC + Sitemap | D8 QA + D9 外联准备 + Wave 1 发送 | ~2.5h（全部完成✅） |
-| 周三 | 7/2 | PAA #5 + Robot #6 + GEO 复检 + 4 页加固 + Pin #8 | D10-D12 D3跟进+度量日志 | ~3h（全部完成✅） |
-| 周四 | 7/3 | Robot #7#8 + GEO 模板修复 + 外链第 3 轮 + Pin #9 | D13 Wave 2（WOPET+Petlibro 已发，3 品牌待查联系方式） | 8/9 ✅ |
-| 周五 | 7/4 | GEO 收尾 + NR + Pin #10 + 周复盘 | Wave 1 D3 跟进已发 + Aorkuler 快照已发 | 6/6 ✅ |
-| 周末 | 7/5-6 | Pin #11 #12 生成 | WOPET+Petlibro D3 跟进（7/6 周日） | ~30min |
+| 周二 | 6/30 | PAA #1#2 + Petlibro 加固 + GSC 周检 + Pin #6 | Task A D1-D3 + GA4 周检 + Brand Outreach D4-D7 | ~3h（全部完成✅） |
+| 周三 | 7/1 | PAA #3#4 + 内链补全 + Pin #7 + GSC + Sitemap | D8 QA + D9 外联准备 + Wave 1 发送 | ~2.5h（全部完成✅） |
+| 周四 | 7/2 | PAA #5 + Robot #6 + GEO 复检 + 4 页加固 + Pin #8 | D10-D12 D3跟进草稿+度量日志 | ~3h（全部完成✅） |
+| 周五 | 7/3 | Robot #7#8 + GEO 模板修复 + 外链第 3 轮 + Pin #9#10 + GSC 14→22 复盘 + GEO 收尾 + NR | D13 Wave 2（WOPET+Petlibro 已发，3 品牌待查联系方式）+ Aorkuler 快照已发 | 本周收尾✅，缺 Wave 2 剩余 3 品牌联系方式 |
+| 周末 | 7/4-7/5 | Pin #11 #12 生成/发布缓冲 | Wave 1 D3 如未发送则 7/4 补发 | ~30min |
 
-### Week 9 排班（7/7-7/11）
+### Week 9 排班（7/6-7/10，按 2026 日历校正）
 
 | 天 | 日期 | Week 9 内容 | 变现 Sprint | 预计工时 |
 |:--:|------|------|------|:--:|
-| 周一 | 7/7 | GSC 周检 + GA4 周检 + Sitemap 重提 + Pin 常态化启动 + **GEO #3** 补全 citation cue | **D7 闭环**：Wave 1 三品牌 D7 邮件 + D17 周复盘 | ~2h |
-| 周二 | 7/8 | 不锈钢饮水机集群 + **GEO #6** 建具名作者页 + Top 5 评测换署名 | **Aorkuler check-in** + D18 试点方案模板 | ~2.5h |
-| 周三 | 7/9 | 零订阅摄像头GPS 集群 + **GEO #7** 给 34 篇指南补 quickAnswer | D19 外联 v2 改进（基于 Wave 1 回复经验） | ~2.5h |
-| 周四 | 7/10 | 恢复 4 集群内容生产 #3（喂食器可靠性） | D20 CRM 扩容（如有正向信号） | ~2.5h |
-| 周五 | 7/11 | 恢复 4 集群内容生产 #4（猫砂盆 TCO）+ **批量改动日** | D21-D22 Wave 2 D7 闭环 + 第 3 周复盘 | ~3.5h |
+| 周一 | 7/6 | GSC 周检 + GA4 周检 + Sitemap 重提 + Snapshot 2 + Pin #11 + **GEO #3** 补全 citation cue | WOPET/Petlibro D3 跟进 + Wave 2 剩余 3 品牌联系方式 | ~2h |
+| 周二 | 7/7 | 不锈钢饮水机集群 + **GEO #6** 建具名作者页 + Top 5 评测换署名 + Rich Results 抽测 | Guest Post Round 3 发送准备 + 外联 v2 标题草稿 | ~2.5h |
+| 周三 | 7/8 | 零订阅摄像头/GPS 集群 + **GEO #7** 给 34 篇指南补 quickAnswer + 定位 duplicate canonical URL | Wave 1 三品牌 D7 闭环 + Aorkuler check-in + D18 试点方案模板 | ~2.5h |
+| 周四 | 7/9 | 喂食器可靠性集群 + "已抓取-未索引"8 页质量加固 | D19 外联 v2 改进（基于 Wave 1 回复经验） | ~2.5h |
+| 周五 | 7/10 | 猫砂盆 TCO 集群 + **批量改动日** + 周报/度量日志更新 | WOPET/Petlibro D7 闭环 + 第 2 周复盘 | ~3.5h |
 
 ### Week 9 关键日期
 
 | 日期 | 事件 | 类型 |
 |------|------|:--:|
-| 7/6 周日 | WOPET + Petlibro D3 跟进 | 人工发邮件 |
-| 7/7 周一 | KittySpout/YEAPAW/Elspet D7 闭环 | 人工发邮件 |
-| 7/8 周二 | Aorkuler check-in（发快照后一周） | 人工发邮件 |
-| 7/11 周五 | 批量改动日（选 3-5 已索引页做信号改动→push→sitemap） | 索引加速 |
+| 7/6 周一 | WOPET + Petlibro D3 跟进 | 人工发邮件 |
+| 7/8 周三 | KittySpout/YEAPAW/Elspet D7 闭环 | 人工发邮件 |
+| 7/8 周三 | Aorkuler check-in（快照后轻量跟进） | 人工发邮件 |
+| 7/10 周五 | WOPET + Petlibro D7 闭环 | 人工发邮件 |
+| 7/10 周五 | 批量改动日（选 3-5 已索引页做信号改动→push→sitemap） | 索引加速 |
 
 ### 优先级规则
 1. **GSC URL Inspection（5 个/天）** — 雷打不动，每天 5 分钟。分配：2 个本周新内容 + 2 个"已抓取-未索引"轮换 + 1 个高价值旧页
@@ -70,9 +78,9 @@
 
 | Track | 目标 | 执行文件 | 状态 |
 |------|------|------|:--:|
-| Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D12 已执行 |
+| Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D13 已执行，D14 起按 7/6 周一校正 |
 | A | Amazon affiliate conversion：5 页决策模块 + 2 指南 CTA + 全站审核 | `docs/monetization/task-a-amazon-affiliate-conversion.md` | ✅ 完成 |
-| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 Wave 1 外联中，D3 跟进 7/4 |
+| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 Wave 1 已获 Aorkuler 回复；Wave 2 2/5 已发，3 个联系人待查 |
 
 ### 内容选题引擎（6/26 起）
 
@@ -343,10 +351,10 @@
 
 ## 📊 数据看板
 
-| 指标 | 当前 (7/1) | 30 天目标 | 审计评分 |
+| 指标 | 当前 (7/3) | 30 天目标 | 审计评分 |
 |------|:--:|:--:|:--:|
-| 页面数 | 112 | 115-120 | A- |
-| GSC 索引 | 14 | 30+ | C |
+| 页面数 | 114 | 115-120 | A- |
+| GSC 索引 | 22 | 30+ | B- |
 | GSC 点击 | 4 | 20 | C |
 | Pinterest 出站点击 | 0 | >5 | C- |
 | 引用域名 | 11 | 18+ | C |
@@ -504,7 +512,7 @@
 
 | 指标 | 当前 | 目标 | 判定 |
 |------|:--:|:--:|------|
-| GSC 索引 | 14 | **20+** | 🔴 主力 KPI |
+| GSC 索引 | 22 | **30+** | 🟡 主力 KPI（14→22 已突破，下一目标 30） |
 | Pinterest 出站点击 | 0 | 1+ | 必须破 0 |
 | 引用域名 | 11 | 15+ | 外链发力 |
 | GEO Score | 70 | 75+ | 品牌权威 |
@@ -587,7 +595,7 @@
 | 指标 | 当前 | 目标 |
 |------|:--:|:--:|
 | 页面数 | 112 | 150-180 |
-| GSC 索引 | 14 | 60-100 |
+| GSC 索引 | 22 | 60-100 |
 | 引用域名 | 11 | 25-40 |
 | Pin | 79 | 150-220 |
 | 月自然点击 | 3 | 100-500 |
