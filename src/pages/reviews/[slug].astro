@@ -50,6 +50,7 @@ interface ReviewData {
   productId: string;
   verdict: string;
   content: string;
+  quickAnswer?: string;
   whatOwnersSay?: { praise: string; complaints: string };
   faqs: { q: string; a: string }[];
   buyIf?: string;
@@ -98,6 +99,7 @@ const reviewMap: Record<string, ReviewData> = {
     title: "Petlibro Granary Review 2026 — 8,700+ Owners, #1 Smart Feeder on Amazon",
     description: "Petlibro Granary ($139, 4.5★): Amazon BSR #1,173, the top-selling smart feeder. 1080p night vision camera, app control, RFID anti-theft, dual-tray option. Compared vs WOPET, PETKIT, DOGNESS. Data sourced from Amazon.com, June 2026.",
     productId: "petlibro-granary",
+    quickAnswer: "The Petlibro Granary is the best automatic feeder for most pet owners. Its built-in 1080p night vision camera lets you check on your pet from anywhere — effectively two devices in one for $139. Get the 5L version if you have 2+ cats; the 3L is fine for a single cat but too small for multi-pet homes. If you don't need a camera, the WOPET ($89) offers more capacity at a lower price.",
     verdict: "The Petlibro Granary is the best automatic feeder for most pet owners. The data supports this: it ranks #1,173 in all Pet Supplies on Amazon, making it the top-selling smart feeder by a huge margin. We evaluateed it alongside the WOPET, PETKIT Fresh Element, and DOGNESS Mini to understand why. The built-in 1080p camera is what makes it stand out. You get a feeder and a pet camera in one device for $139. Buying those separately costs more — $89 for a WOPET feeder plus $40-50 for a basic camera adds up to about the same price for two devices instead of one. The night vision quality is genuinely good, motion alerts arrive reliably, and the Petlibro app is the most polished in this category. The main trade-offs are a smaller hopper and a fixed camera view. The 3L or 5L tank is smaller than the WOPET's 6L. The camera doesn't pan or tilt — it shows only the feeding area. For most anxious pet parents, the question is simple: did my cat eat today? The Granary answers that perfectly every time. If you have a large dog or want full-room camera coverage, consider pairing a WOPET feeder with a separate pan-and-tilt camera instead.",
     content: "",
     whatOwnersSay: {
@@ -437,7 +439,7 @@ const product = allProducts.get(review.productId);
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{review.title}</h1>
 
     <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
-      <span>Updated: <time datetime="2026-05-21">May 21, 2026</time></span>
+      <span>Updated: <time datetime="2026-07-07">July 7, 2026</time></span>
       <span>10 min read</span>
       <span class="rounded-full bg-sage/70 px-2.5 py-0.5 text-xs font-medium text-forest">Advertiser Disclosure</span>
     </div>
@@ -449,6 +451,14 @@ const product = allProducts.get(review.productId);
     {product?.imageUrl && (
       <div class="mt-6">
         <img src={product.imageUrl} alt={product.name} class="mx-auto h-64 w-full max-w-lg rounded-2xl object-cover shadow-sm bg-sage/60" width="800" height="256" loading="eager" decoding="async" fetchpriority="high" />
+      </div>
+    )}
+
+    {/* Quick Answer */}
+    {review.quickAnswer && (
+      <div class="mt-8 rounded-2xl border border-honey/30 bg-gradient-to-br from-honey/5 to-cream/50 p-6">
+        <p class="text-sm font-bold uppercase tracking-wide text-honey-dark">Quick Answer</p>
+        <p class="mt-2 text-base leading-relaxed text-forest font-medium">{review.quickAnswer}</p>
       </div>
     )}
 
@@ -653,7 +663,7 @@ const product = allProducts.get(review.productId);
       <p class="mt-3 text-xs text-bark-muted/70">As an Amazon Associate, we earn from qualifying purchases. Prices and availability are subject to change. Last checked: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}. <a href="/affiliate-disclosure/" class="underline">Learn more</a></p>
     </div>)})()}
     <div class="mt-6 border-t border-sage-dark/20 pt-4 text-xs text-bark-muted/60">
-      <p>Written by the SmartPetGuide research team. Last updated: <time datetime="2026-05-29">May 29, 2026</time>.</p>
+      <p>Written by the SmartPetGuide research team. Last updated: <time datetime="2026-07-07">July 7, 2026</time>.</p>
     </div>
   </article>
 
@@ -677,6 +687,7 @@ const product = allProducts.get(review.productId);
     } : {}),
     author: { "@type": "Person", name: "SmartPetGuide Research Team", url: "https://smartpetguide.net/about/", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/", "https://www.wikidata.org/wiki/Q140290653"] },
     datePublished: "2026-05-21",
+      dateModified: "2026-07-07",
     publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/", sameAs: ["https://www.pinterest.com/muchengxian/", "https://medium.com/@muchengxian", "https://flipboard.com/@755g287", "https://www.wikidata.org/wiki/Q140290653"] },
   })} />
 </BaseLayout>

@@ -1,6 +1,6 @@
-# SmartPetGuide 任务计划
+﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-04 周六 | 114 页 / 88 Pin 在线 | 策略阶段：分发与验证驱动 | 实验 Pin 12/12 完成 | 索引 22 | Wave 2 外联 2/5 已发**
+**最后更新：2026-07-06 周一 | 114 页 / 88 Pin 在线 | GSC 索引 22 / 曝光 268 / GA4 活跃用户 9 | 实验 Pin 12/12 ✅ | Wave 2 外联 2/5 D3 已发 | Snapshot 3 已生成**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -35,11 +35,81 @@
 
 | 天 | 日期 | Week 9 内容 | 变现 Sprint | 预计工时 |
 |:--:|------|------|------|:--:|
-| 周一 | 7/6 | GSC 周检 + GA4 周检 + Sitemap 重提 + Snapshot 2 + Pin #11 + **GEO #3** 补全 citation cue | WOPET/Petlibro D3 跟进 + Wave 2 剩余 3 品牌联系方式 | ~2h |
-| 周二 | 7/7 | 不锈钢饮水机集群 + **GEO #6** 建具名作者页 + Top 5 评测换署名 + Rich Results 抽测 | Guest Post Round 3 发送准备 + 外联 v2 标题草稿 | ~2.5h |
-| 周三 | 7/8 | 零订阅摄像头/GPS 集群 + **GEO #7** 给 34 篇指南补 quickAnswer + 定位 duplicate canonical URL | Wave 1 三品牌 D7 闭环 + Aorkuler check-in + D18 试点方案模板 | ~2.5h |
-| 周四 | 7/9 | 喂食器可靠性集群 + "已抓取-未索引"8 页质量加固 | D19 外联 v2 改进（基于 Wave 1 回复经验） | ~2.5h |
-| 周五 | 7/10 | 猫砂盆 TCO 集群 + **批量改动日** + 周报/度量日志更新 | WOPET/Petlibro D7 闭环 + 第 2 周复盘 | ~3.5h |
+| 周一 | 7/6 | ✅ GSC 周检 + GA4 周检 + Sitemap 确认 + Snapshot 3 + Pin 指标口径固化 | ✅ WOPET/Petlibro D3 已发 + Wave 2 联系方式已查 | 6/6 ✅，仅 Sprint 立项顺延 |
+| 周二 | 7/7 | 不锈钢饮水机集群 `phrasing map` + **GEO #6** 建具名作者页 + `Petlibro Granary review` fact layer 审计 + Rich Results 抽测 | Guest Post Round 3 发送准备 + 外联 v2 标题草稿 | ~2.5h |
+| 周三 | 7/8 | 零订阅摄像头/GPS 集群 `phrasing map` + **GEO #7** 给 34 篇指南补 quickAnswer + `Stop Automatic Feeder From Jamming` guide fact layer 加固 + duplicate canonical URL | Wave 1 三品牌 D7 闭环 + Aorkuler check-in + D18 试点方案模板 | ~2.5h |
+| 周四 | 7/9 | 喂食器可靠性集群 `phrasing map` + LR4 compatibility 验证 + `WOPET vs Petlibro` compare fact layer 加固 + `"已抓取-未索引"`8 页质量加固 | D19 外联 v2 改进（基于 Wave 1 回复经验） | ~2.5h |
+| 周五 | 7/10 | 猫砂盆 TCO 集群 `phrasing map` + **批量改动日** + 3 页 fact layer 改动统一提交 + 周报/度量日志更新 + Sprint 复盘 | WOPET/Petlibro D7 闭环 + 第 2 周复盘 | ~3.5h |
+
+### Week 9 统一任务：GEO + VOC Fact Layer Sprint
+
+> 来源：`2026-W27 AI Signal Weekly Review`。本周把重复出现的 GEO / VOC / machine-readable fact layer 信号合并成 **1 个 Claude Code 统一任务**，避免把判断、写页、开新题材拆成多条低收益支线。
+
+**目标**
+
+1. 验证 `Litter Robot 4 litter compatibility` 是否值得进入现有页面。
+2. 给 4 个核心集群各整理 1 张 `phrasing map`，并把高价值措辞回填到现有页。
+3. 选 3 个主力页（Review / Compare / Guide 各 1 页）做 `machine-readable fact layer` 审计和加固。
+
+**执行边界**
+
+- 只优化 **现有页面**，不新开 GEO / AEO 专题页。
+- 不因为泛 AI 新闻新增 SmartPetGuide 内容。
+- 评论和论坛内容只能当线索，不能直接当事实。
+- 先研究再改页；先选页面再写改动；没有重复证据不写进 verdict。
+- 不扩展到 repo memory、tooling、workflow 基建类任务，那些留给独立线程。
+
+**本周交付物**
+
+| 交付物 | 最低完成标准 | 优先级 |
+|---|---|---|
+| LR4 compatibility 小验证 | `Reddit + Amazon + 官方 FAQ` 至少各抽样 5 条；出现 3 个独立重复痛点才进入现有页 | P1 |
+| 4 个集群 phrasing map | 每个集群 5-10 条问题 / 反对意见 / 用户原话；每个集群至少回填 2 条到现有页 | P1 |
+| 3 页 fact layer 审计 | Review / Compare / Guide 各 1 页，补 `前置结论 + 来源脚注 + 更新时间 + quickAnswer` | P1 |
+| crawler / Cloudflare 规则核对 | 确认当前是否走 Cloudflare，以及 AI crawler / Googlebot 规则现状 | P2 |
+| Sprint 复盘 | 列出改了哪些页面、补了哪些 FAQ / verdict / fact cues、哪些信号被降级 Watch | P1 |
+
+**首批锁定审计 URL（Week 9 先做这 3 个）**
+
+1. Review：`https://smartpetguide.net/reviews/petlibro-granary-review/`
+2. Compare：`https://smartpetguide.net/compare/wopet-vs-petlibro/`
+3. Guide：`https://smartpetguide.net/guides/stop-automatic-feeder-from-jamming/`
+
+**为什么先做这 3 个**
+
+- 它们都属于 **喂食器可靠性** 集群，可以共用同一批 VOC phrasing、FAQ 措辞和事实层修复，Claude Code 批量执行最顺。
+- `Petlibro Granary` 已在优先 URL 池和历史曝光页里反复出现，是当前最值得加固的 review 入口。
+- `WOPET vs Petlibro` 是离转化最近的 compare 页面之一，也已经进入过变现任务日志，适合补强 decision / fact layer。
+- `Stop Your Automatic Feeder From Jamming` 是本轮 PAA / 问题型 Guide 里最适合承接 GEO `quickAnswer + 前置结论 + FAQ phrasing` 的页面。
+- `LR4 compatibility` 还要先做样本验证，所以 **暂不把 LR4 页面列为第一批 fact-layer 审计页**；验证通过后再进入第二批。
+
+**第二批候选（本周若有余量再做）**
+
+- Compare：`https://smartpetguide.net/compare/petkit-eversweet-vs-catit-pixi/`
+- Guide：`https://smartpetguide.net/guides/best-no-subscription-cameras/`
+
+**首批执行清单（基于 2026-07-05 审计）**
+
+| 页面 | 必做改动 | 验收标准 |
+|---|---|---|
+| `petlibro-granary-review` | 统一页面内 `Updated` 与底部 `Last updated`；补 2 句 `Quick decision`；修正 `We evaluateed`；给 `Review` schema 补 `dateModified` | 页面只保留 1 套一致更新时间；H1 下 1 屏内能提取到购买判断；Review schema 含 `dateModified` |
+| `wopet-vs-petlibro` | 增加 visible `Updated`；在描述后补 `Quick decision`（选 WOPET / 选 Petlibro）；在 comparison table 前补 `Data snapshot` | 页面顶部可直接提取 `Updated + Quick decision`；不必滚动到 `Bottom Line` 才知道该买哪款 |
+| `stop-automatic-feeder-from-jamming` | 给 slug 填 `quickAnswer`；在首屏补 2-3 句 `Bottom line`；统一 visible updated 与 `modifiedDate`；补 `HowTo` schema；把脚注改成 `owner reviews + manufacturer specs` 复合来源 | 页面顶部有 `Quick Answer`；步骤内容有 `HowTo` schema；来源表述与正文证据一致 |
+
+**执行纪律**
+
+- 先修时间口径，再补 quick decision / quickAnswer，再补 schema。
+- `LR4 compatibility` 仍先做样本验证；未验证通过前，不把 LR4 结论硬写进页面。
+- 第一批只改这 3 个 URL；第二批候选本周有余量再做。
+- 完成后在 `progress.md` 明确记录：改了哪些页面、改了哪些 fact cues、哪些候选信号被降级为 watch。
+
+**Claude Code 完成标准**
+
+- 至少完成 1 个 LR4 compatibility 验证结论
+- 至少完成 4 个集群的 phrasing map
+- 至少完成 3 个页面的 fact layer 优化
+- 第一批 3 个 URL 都要留下明确的页面级改动记录
+- 更新 `progress.md`、必要项目日志，以及本文件相关状态
 
 ### Week 9 关键日期
 
@@ -53,7 +123,7 @@
 
 ### 优先级规则
 1. **GSC URL Inspection（5 个/天）** — 雷打不动，每天 5 分钟。分配：2 个本周新内容 + 2 个"已抓取-未索引"轮换 + 1 个高价值旧页
-2. **实验 Pin（1 个/天）** — 雷打不动，每天 10 分钟
+2. **Pin 口径维护 / 出站复盘** — 实验 Pin 已完成 12/12；本周不再强制日更，改为维护 `总在线数 / active Pin / 实验完成度` 三套口径，并复盘哪些角度值得保留
 3. **变现 Sprint 人工阻塞项优先** — 人类时间不可控，能推进的先推进
 4. **内容生产** — 弹性，被 Sprint 挤占时从 C 级开始砍
 5. **变现 Sprint Claude 可执行项** — 在内容生产间隙推进
@@ -227,7 +297,7 @@
 | 任务 | 时间 | 说明 |
 |------|:--:|------|
 | **口径自检** | 2min | 新写/修改的任何对外文字，检查 hands-on/tested/we tested 残留 |
-| **Pinterest 出站实验 Pin** | 10min | 每天 1 个带 UTM 的实验 Pin（价格/TCO/零订阅/可靠性/避坑型标题）。12 个做完前不发普通 Pin |
+| **Pin 口径维护 / 出站复盘** | 10min | 实验 Pin 已完成 12/12；本周改为核对 `总在线数 / active Pin / 实验完成度`，并记录哪些角度值得继续保留 |
 | **内容生产** | 90min | 仅围绕 4 个集群（不锈钢饮水机/零订阅摄像头GPS/喂食器可靠性/猫砂盆TCO）。A 级每周≤2 篇 / B 级 1-1.5h / C 级 30min |
 | **FB + Reddit** | 10min | FB：浏览/点赞/纯帮助回复。Reddit：纯价值回复不挂链接，养到500+karma再尝试自然链接 |
 | **GSC URL Inspection** | 5min | 每天手动提交 5 个优先 URL，直接入优先抓取队列。优先列表见下方 |
@@ -368,7 +438,7 @@
 ```
 周二至周六：~2-3h/天
     2min  口径自检（hands-on/tested 零容忍）
-   10min  Pinterest 出站实验 Pin ×1（12 个做完前不发普通 Pin）
+   10min  Pin 口径维护 / 出站复盘（核对总在线数 / active Pin / 实验完成度）
    10min  FB + Reddit 养号
    60-120min 内容生产（仅围绕 4 个集群，含 verdict + 数据脚注）
     5min  新文章后 GSC 索引请求
@@ -691,3 +761,8 @@
 
 *后续任务管理统一在本文件维护，不再分散到 dashboard.md。每次会话开工读此文件顶部活跃任务区，收工更新任务状态。*
 *progress.md 继续作为会话日志单独维护。findings.md 继续作为研究/决策记录单独维护。*
+
+
+
+
+

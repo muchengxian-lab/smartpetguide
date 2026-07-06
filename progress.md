@@ -2659,7 +2659,7 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 ### 周三任务完成率：13/13 ✅
 
 ---
-## 会话：2026-07-03 周四
+## 会话：2026-07-03 周五
 
 ### 完成事项
 - [x] **Robot #7**：Best Robot Vacuum for Golden Retriever Shedding（B 级，5 款产品）— 新增至 guides 模板
@@ -2708,7 +2708,7 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - 快照文件：`docs/monetization/aorkuler-visibility-snapshot-send.md`
 
 ---
-## 会话：2026-07-04 周五
+## 会话：2026-07-03 周五 — 周五收尾 + 周复盘（日期校正）
 
 ### 完成事项
 - [x] **D3 跟进**：Wave 1 三品牌 D3 邮件已发（KittySpout/YEAPAW/Elspet），Aorkuler 已提前回复跳过
@@ -2718,10 +2718,10 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] **NR 监控**：Amazon Pet Supplies 无值得追的智能宠物设备新品
 - [x] **外链跟进**：Round 3 guest post 待回复；Round 1/2 目标归档
 
-### 本周周复盘（6/30-7/4）
+### 本周周复盘（6/30-7/3）
 
 #### 内容生产
-| 指标 | 周一 | 周五 | 变化 |
+| 指标 | 周初(6/30) | 周五(7/3) | 变化 |
 |------|:--:|:--:|:--:|
 | 页面总数 | 106 | **114** | +8 |
 | 指南 | 31 | **37** | +6 |
@@ -2732,16 +2732,16 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 本周新增：PAA #1-#5（5 篇故障排除指南）+ Robot #6-#8（3 篇机器人吸尘器测试）
 
 #### SEO & 索引
-| 指标 | 周一 | 周五 | 变化 |
+| 指标 | 周初(6/30) | 周五(7/3) | 变化 |
 |------|:--:|:--:|:--:|
-| GSC 索引 | 14 | 14 | 冻结 5 周 |
+| GSC 索引 | 14 | **22** | +8，本周突破冻结 |
 | GSC 点击 | 3 | 4 | +1 |
 | Sitemap 已发现 | 106 | 109 | +3 |
 | 评价摘要 | 2 | 4 | +2 |
 | URL Inspection | 日常 | 每日 5 个 | ✅ |
 | Sitemap 重提 | — | 2 次(6/30, 7/1, 7/3) | ✅ |
 
-**索引仍是最大瓶颈**。冻结 5 周但其他信号在改善（评价摘要翻倍、点击+1、sitemap 发现+3）。
+**索引冻结已被打破**。这次新增主要来自 5-6 月旧页，说明 6/27 批量改动 + 内链补全 + sitemap 重提触发了抓取与入索引；本周新内容仍需等待重抓和质量筛选。
 
 #### 内链 & GEO
 - 评测模板 5 品类各加 2-3 指南链接 + Best 模板 10 页跨品类互链
@@ -2766,14 +2766,14 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - 4 天执行 31/33 任务完成（94%）
 - 优先级规则（GSC > Pin > 人工阻塞 Sprint > 内容 > Claude Sprint）经实战验证有效
 - 周二 9/9、周三 13/13、周四 8/9、周五 6/6
-- 仅剩人工项：Wave 2 剩余 3 品牌联系方式 + D3 跟进邮件发送
+- 仅剩人工项：Wave 2 剩余 3 品牌联系方式；Wave 1 D7 闭环按正确日历为 7/8 周三
 
 #### 下周重点
-1. **索引突破**：继续每天 URL Inspection，关注 sitemap 重读结果
+1. **索引突破后的质量加固**：继续每天 URL Inspection，重点处理 8 个"已抓取-未索引"页面
 2. **Pin 11-12**：完成实验最后 2 个
 3. **Aorkuler 跟进**：7/8 check in（如果还没回复）
-4. **外联回复处理**：Wave 1 D3 + Wave 2 初期回复
-5. **Week 9 新内容**：恢复设备文章（暂停的 4 集群）
+4. **外联回复处理**：Wave 1 D7、Wave 2 D3/D7、Aorkuler check-in
+5. **Week 9 新内容**：恢复设备文章（4 集群），并补 duplicate canonical / Rich Results 抽测
 
 ### 周五任务完成率：6/6 ✅
 
@@ -2789,3 +2789,117 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - 度量：weekly-metrics-log.md 创建
 - 构建：106→112 页（+6），11 次 commit
 - **两日完成率：22/22 ✅**
+
+---
+## 会话：2026-07-03 周五 — 日期错位与排期同步修正（Codex）
+
+### 完成事项
+- [x] **日期校正**：确认 2026-07-03 为周五，7/6 为下周一，7/10 为下周五；修正 `task_plan.md`、`progress.md`、`findings.md`、`docs/monetization/30-day-schedule.md` 中的错位日期。
+- [x] **当前指标同步**：将当前 GSC 索引状态从 14 页冻结更新为 22 页突破；保留历史日志中的 14 作为当时状态。
+- [x] **Week 9 排期调整**：保留 ClaudeCode 已排的 GEO/内容任务，并补充 Snapshot 2、Rich Results 抽测、duplicate canonical URL 定位、8 个已抓取未索引页面质量加固、Wave 2 三品牌联系方式等漏项。
+- [x] **变现 Sprint 校正**：将 D13-D22 从错误的 7/12 起始重排为 7/3 起的真实执行日期；D 编号改按阶段理解，不再等同自然日。
+- [x] **CRM 跟进日期修正**：Wave 1 三品牌 D7 闭环从 7/7 改为 7/8。
+- [x] **日期防呆规则**：在 `CLAUDE.md` 和 `task_plan.md` 写入开工前运行 `Get-Date -Format "yyyy-MM-dd dddd"` 的规则，防止 ClaudeCode 继续凭模型记忆推星期。
+- [x] **周报/度量日志补齐**：`weekly-report.md` 新增 Week 8 收盘，`weekly-metrics-log.md` 新增 Snapshot 2。
+
+### 验证
+- `rg` 检查已清除当前排期中的典型错误标签（7月4日被写成周五、7月7日被写成周一、7月11日被写成周五）。
+- 未运行 `npm run build`：本次只改文档与计划文件，没有改代码或页面模板。
+
+---
+
+## 会话：2026-07-06 周一 — Week 9 启动日
+
+### 完成事项
+
+#### GEO 存活 + 口径检查
+- [x] **llms.txt**：HTTP 200，8,617 bytes，text/plain ✅
+- [x] **robots.txt**：HTTP 200，587 bytes ✅
+- [x] **llms-full.txt**：HTTP 200，6,624 bytes ✅
+- [x] **口径一致性 Grep**：`how-we-research.astro` 中 EEAT 透明声明正确；`guides/[slug].astro` 中为读者清单指示（非声称测试）。无违规项。
+
+#### 变现 Sprint — Wave 2 跟进
+- [x] **Wave 2 剩余 3 品牌联系方式补齐**：
+  - Homerunpet: contact@homerunpet.com ✅
+  - CATLINK: 表单 catlink.com/contact-us ✅
+  - Honey Tour: 无官网，纯 Amazon 卖家 ❌（同 xpai，暂跳）
+- [x] **WOPET + Petlibro D3 跟进邮件**：已写入 CRM（7/6 发送，主题使用 Re: 原标题保证 Gmail threading）
+- [x] **CRM 批量更新**：3 品牌联系方式 + 2 品牌 D3 状态 + Wave 2 完整度从 2/5→4/5（仅剩 xpai 无邮箱）
+
+#### GSC 浏览器直连数据
+- [x] **GSC**：索引 22 / 点击 4 / 曝光 **268**（38 倍增长）/ CTR 1.5% / 排名 33.6
+- [x] **GA4**：活跃用户 9（7天）/ 新用户 9 / 事件 47 / affiliate_click 0 / outbound_click 0
+- [x] **GA4 权限**：用户已授权 `muchengxian@gmail.com`，数据成功抓取
+- [x] **Sitemap**：上次读取 7/3，发现 113 URL，可推迟到明天重提
+
+#### Pinterest 数据
+- [x] **浏览器直连**：月浏览 1,105 / 粉丝 1 / 关注 7 / 5 Board
+- [x] **Pin 总数**：88（86 + 周末 Pin #11-#12），实验 12/12 完成
+- [x] **出站点击**：仍为零
+
+#### Pin 指标口径固化
+
+后续所有 Pinterest 报告以此 6 个字段为准：
+
+| 指标 | 数据来源 | 更新频率 |
+|------|------|:--:|
+| 活跃 Pin 总数 | Pinterest 个人资料 → 已创建 Tab（滚动到底计数） | 每周一 |
+| Board 数 | Pinterest 个人资料 → 已保存 Tab → Boards | 每周一 |
+| 月浏览量 | Pinterest 个人资料顶部（过去 30 天） | 每周一 |
+| 出站点击 | Pinterest 个人资料 → 查看统计数据（过去 30 天 Engagements） | 每周一 |
+| 粉丝数 | Pinterest 个人资料顶部 | 每周一 |
+| 实验 Pin 进度 | Pin 生成脚本 + 发布确认 | 每次发布后 |
+
+> ⚠️ Pinterest 新 UI 不在个人资料页显示总 Pin 数，也不在各 Board 卡片显示含 Pin 数。目前 88 是代码追踪数（上次确认 86 + 周末 2）。如果后续与 Pinterest 后台不一致，以"已创建"Tab 的实际网格计数为准。
+
+### 今日未完成（顺延至明日）
+
+| # | 操作 | 状态 |
+|:--:|------|:--:|
+| 1 | GSC 周检 | ✅ Claude Code 浏览器直连完成 |
+| 2 | GA4 周检 | ✅ Claude Code 浏览器直连完成 |
+| 3 | Sitemap 重提 | ⏸ 推迟到明天（7/3 刚读） |
+| 4 | Pin 数确认 | ⏳ 待人工 |
+| 5 | 发 WOPET D3 + Petlibro D3 | ✅ **已发送** |
+| 6 | URL Inspection ×5 | ✅ **已提交** |
+
+### GEO+VOC Fact Layer Sprint — 立项完成（7/6）
+
+#### 三页基线审计
+
+线上实测 3 个目标页面，问题清单如下：
+
+| # | 页面 | Quick Decision | 更新日期 | quickAnswer | Owner Quotes | Schema |
+|:--:|------|:--:|:--:|:--:|:--:|:--:|
+| 1 | petlibro-granary-review | ✅ 已有 | ⚠️ 两个矛盾日期 (5/21 vs 5/29) | ❌ 缺 | ✅ 已有 | Review ✅ |
+| 2 | wopet-vs-petlibro | ❌ 缺 | ❌ 无可见日期 | N/A | ❌ 缺 | N/A |
+| 3 | feeder-jamming guide | N/A | ⚠️ 5/24，已过 6 周 | ❌ 缺 | N/A | ❌ 缺 HowTo |
+
+#### 每页改动清单
+
+**1. Petlibro Granary 评测（轻量修正）**
+- [ ] 统一 Updated 日期：两处改为 "July 7, 2026"
+- [ ] 补 `quickAnswer` 字段（一句 40-50 词的购买结论）
+- [ ] "Last checked: July 2026" 精确到 "July 7, 2026"
+
+**2. WOPET vs Petlibro 对比（中度加固）**
+- [ ] 新增 Quick Decision 模块（Buy if / Skip if / Best alternative）
+- [ ] 补 visible "Last updated: July 7, 2026"
+- [ ] 新增 "What Owners Say" 板块（跨两个产品各取 3-5 条 verified review 原话）
+
+**3. Feeder Jamming 指南（中度加固）**
+- [ ] 首屏补 Bottom Line 总结（非仅警告）
+- [ ] 补 `quickAnswer` 字段
+- [ ] 更新日期：May 24 → July 7, 2026
+- [ ] 添加 HowTo Schema（7 步骤对应 7 个 fix）
+- [ ] 来源脚注扩展（当前仅一句，补修复成功率数据/Reddit 线索）
+
+#### 执行顺序
+
+明天周二（7/7）先做 #1（轻量）+ #3（指南，最直接影响"已抓取未索引"8 页池）+ 周日历任务（不锈钢饮水机 phrasing map + GEO #6 作者页）。#2（对比页）周三随喂食器可靠性集群一起做。
+
+#### 文件更新
+- [x] `task_plan.md`：表头 + Week 9 周一完成状态 + Snapshot 3 数据同步
+- [x] `docs/monetization/30-day-schedule.md`：D14 已发送 + 联系方式阻塞解除 + 日期校准
+- [x] `.claude/CLAUDE.md`：Week 9 当前阶段更新
+- [x] `progress.md`：本日志 + Sprint 立项

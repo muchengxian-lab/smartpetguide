@@ -36,6 +36,10 @@ Recommended order:
 
 ## Non-Negotiable Rules
 
+- Before any date-sensitive planning or status update, run `Get-Date -Format "yyyy-MM-dd dddd"` in the project shell and use that output as the source of truth. Do not infer weekdays from model memory.
+- When the user says today/tomorrow/next week/Friday, convert it to an absolute date in the note you are editing.
+- For the current sprint calibration: 2026-07-03 is Friday; the next work week is 2026-07-06 Monday through 2026-07-10 Friday.
+- Before saving schedule edits, re-check the current and next-week calendar. Do not repeat the prior drift where July 4 was labeled Friday, July 7 Monday, or July 11 Friday.
 - Do not send emails, submit forms, create external accounts, or contact brands. Generate templates and CRM rows only.
 - Do not claim hands-on testing unless the repository already contains proof for that specific product.
 - Do not sell paid rankings or paid first-place recommendations.

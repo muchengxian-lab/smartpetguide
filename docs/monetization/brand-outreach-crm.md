@@ -8,15 +8,15 @@
 | # | Brand | Category | Product | Website | Contact | 3 Key Findings | Status | Sent | Follow-up | Notes |
 |:--:|------|------|------|------|------|------|:--:|------|------|------|
 | 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Snapshot sent — awaiting feedback | 7/1 | Check in 7/8 if no reply | John replied 7/2 asking to see the visibility snapshot. PDF sent 7/2. Continue by email-first async follow-up; do not push a call unless John asks. |
-| 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | TBD | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Not contacted | — | — | Budget wireless, strong story |
-| 3 | KittySpout | Water Fountain | Stainless Steel Fountain | kittyspout.com | 表单 (kittyspout.com/pages/contact-us) | (1) Dishwasher-safe angle underused — key difference vs Pioneer Pet (2) Mid-price ($50) position unclear vs $39/$93 alternatives (3) 800 reviews — needs more social proof | D3 sent — awaiting reply | 7/1 | 7/7 | Mid-range steel fountain |
-| 4 | YEAPAW | Water Fountain | Stainless Steel Fountain | yeapaw.com | 表单 (yeapaw.com/pages/contact) | (1) Pumpless tech is unique but poorly explained in listing (2) Only 1,200 reviews — differentiation story needed (3) No content comparing magnetic induction vs traditional pumps | D3 sent — awaiting reply | 7/1 | 7/7 | Premium pumpless, needs education content |
-| 5 | Elspet | Litter Box | Elspet Pro Self-Cleaning | elspet.com | help@elspet.com | (1) Easiest-to-clean design in category — but no video/visual proof (2) 18-month warranty longer than competitors — not highlighted (3) 2,100 reviews — new brand trust gap | D3 sent — awaiting reply | 7/1 | 7/7 | Newer brand, easy-clean angle, Elspet已建cares |
-| 6 | CATLINK | Litter Box | CATLINK Young Pro | catlink.com | TBD | (1) Multi-cat weight recognition at $399 — best value in smart tracking (2) App translations hurt credibility with English-speaking buyers (3) 13L waste bin advantage not clearly communicated vs 10L competitors | Not contacted | — | — | Multi-cat value leader |
-| 7 | Honey Tour | Pet Camera | Movable Pet Camera Robot | TBD | TBD | (1) Only mobile pet camera on market — unique but needs explanation (2) 4.7★ with only 320 reviews — high satisfaction, low awareness (3) Floor-type limitations not disclosed upfront | Not contacted | — | — | Niche mobile camera |
+| 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | contact@homerunpet.com | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Not contacted | — | — | Budget wireless, strong story |
+| 3 | KittySpout | Water Fountain | Stainless Steel Fountain | kittyspout.com | 表单 (kittyspout.com/pages/contact-us) | (1) Dishwasher-safe angle underused — key difference vs Pioneer Pet (2) Mid-price ($50) position unclear vs $39/$93 alternatives (3) 800 reviews — needs more social proof | D3 sent — awaiting reply | 7/1 | 7/8 | Mid-range steel fountain; D7 close-loop date corrected by 2026 calendar |
+| 4 | YEAPAW | Water Fountain | Stainless Steel Fountain | yeapaw.com | 表单 (yeapaw.com/pages/contact) | (1) Pumpless tech is unique but poorly explained in listing (2) Only 1,200 reviews — differentiation story needed (3) No content comparing magnetic induction vs traditional pumps | D3 sent — awaiting reply | 7/1 | 7/8 | Premium pumpless, needs education content; D7 close-loop date corrected |
+| 5 | Elspet | Litter Box | Elspet Pro Self-Cleaning | elspet.com | help@elspet.com | (1) Easiest-to-clean design in category — but no video/visual proof (2) 18-month warranty longer than competitors — not highlighted (3) 2,100 reviews — new brand trust gap | D3 sent — awaiting reply | 7/1 | 7/8 | Newer brand, easy-clean angle, Elspet已建cares; D7 close-loop date corrected |
+| 6 | CATLINK | Litter Box | CATLINK Young Pro | catlink.com | 表单 (catlink.com/contact-us) | (1) Multi-cat weight recognition at $399 — best value in smart tracking (2) App translations hurt credibility with English-speaking buyers (3) 13L waste bin advantage not clearly communicated vs 10L competitors | Not contacted | — | — | Multi-cat value leader |
+| 7 | Honey Tour | Pet Camera | Movable Pet Camera Robot | 无官网 | 无（纯 Amazon 卖家） | (1) Only mobile pet camera on market — unique but needs explanation (2) 4.7★ with only 320 reviews — high satisfaction, low awareness (3) Floor-type limitations not disclosed upfront | Not contacted | — | — | Niche mobile camera, 类似 xpai 纯 Amazon 卖家 |
 | 8 | xpai | Pet Camera | xpai 4K UHD Pet Camera | 无官网 | 无（纯 Amazon 卖家） | (1) 4K at $43 is price-performance champion — not marketed as such (2) 64GB built-in storage is unique — not in product title (3) Newer brand with 1,500 reviews — trust signals needed | Not contacted | — | — | Budget 4K, strongest value story |
-| 9 | WOPET | Feeder / Camera | Automatic Feeder + Pet Camera | wopet.com | support@wopet.com | (1) 6L hopper is largest in class — not the headline (2) WiFi reliability complaints in reviews need addressing (3) Camera model ($99) undercuts Furbo by $80 — value story missing | Sent — awaiting reply | 7/3 | 7/6 | Existing in project, previously no reply |
-| 10 | Petlibro | Feeder | Petlibro Granary Camera Feeder | petlibro.com | support@petlibro.com | (1) #1 BSR feeder — market leadership story not told by brand (2) Camera+feeder integration vs separate devices not compared (3) 3L vs 5L confusion — buyers need sizing guidance | Sent — awaiting reply | 7/3 | 7/6 | Top seller, previously no reply |
+| 9 | WOPET | Feeder / Camera | Automatic Feeder + Pet Camera | wopet.com | support@wopet.com | (1) 6L hopper is largest in class — not the headline (2) WiFi reliability complaints in reviews need addressing (3) Camera model ($99) undercuts Furbo by $80 — value story missing | D3 sent — awaiting reply | 7/3 | 7/6 | Wave 2；7/6 D3 已发送；D7 闭环 7/10 |
+| 10 | Petlibro | Feeder | Petlibro Granary Camera Feeder | petlibro.com | support@petlibro.com | (1) #1 BSR feeder — market leadership story not told by brand (2) Camera+feeder integration vs separate devices not compared (3) 3L vs 5L confusion — buyers need sizing guidance | D3 sent — awaiting reply | 7/3 | 7/6 | Top seller, Wave 2；7/6 D3 已发送；D7 闭环 7/10 |
 | 11 | PETKIT | Feeder / Fountain | Fresh Element + Eversweet | petkit.com | Previously listed | (1) Rotary sealing is unique food-freshness tech — buried in specs (2) App is best-in-class but not showcased (3) Brand covers 3 categories — cross-selling story missing | Not contacted | — | — | Multi-category, previously no reply |
 | 12 | Catit | Water Fountain | Catit PIXI Smart Fountain | catit.com | Previously listed | (1) Only fountain with water intake tracking — health angle underused (2) 3 drinking heights is clever design — not explained visually (3) Filter cost ($12-15/month) is top buyer objection — not addressed | Not contacted | — | — | Health tracking differentiator |
 
@@ -413,6 +413,48 @@ I run SmartPetGuide, an independent research site covering smart pet devices. Yo
 3. The 3L vs 5L confusion is the #1 pre-purchase question in your reviews. A simple sizing guide (1 cat = 3L, 2+ cats = 5L) in the product images would eliminate this friction.
 
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+---
+
+## Wave 2 D3 跟进邮件（7/6 发送）
+
+> 发件地址：`press@smartpetguide.net`
+
+### 9. WOPET — support@wopet.com
+
+**Subject:** Re: 3 things buyers are asking about the WOPET Feeder and Camera
+
+```
+Hi WOPET team,
+
+Following up on my Thursday note — inboxes get buried, totally understand.
+
+The free visibility snapshot offer still stands: I'll analyze how your feeder and camera appear in Google search, AI citations, and buyer reviews, with 3 concrete findings you can act on. Takes about 30 minutes, zero cost.
+
+Let me know if you'd like me to go ahead.
+
+Best,
+SmartPetGuide Research Team
+press@smartpetguide.net
+```
+
+### 10. Petlibro — support@petlibro.com
+
+**Subject:** Re: 3 things buyers are asking about the Petlibro Granary
+
+```
+Hi Petlibro team,
+
+Quick follow-up on my Thursday email — I know things move fast in pet tech.
+
+The free visibility snapshot for the Granary is still on the table: I'll analyze your Google search visibility, AI citation readiness, and top buyer questions in your reviews. No cost, no commitment — takes about 30 minutes.
+
+Worth a look?
 
 Best,
 SmartPetGuide Research Team

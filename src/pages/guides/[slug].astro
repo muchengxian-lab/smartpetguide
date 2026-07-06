@@ -725,6 +725,7 @@ const guideMap: Record<string, { title: string; description: string; quickAnswer
   "stop-automatic-feeder-from-jamming": {
     title: "How to Stop Your Automatic Feeder From Jamming — 7 Fixes That Work",
     description: "Automatic feeder jammed? Seven proven fixes to unclog your feeder fast, plus prevention tips to stop jams before they happen. Works for Petlibro, WOPET, PETKIT, and more.",
+    quickAnswer: "Unplug your feeder immediately — a stalled motor will burn out in minutes. Most jams are caused by oversized kibble, bridging, or chute buildup. Start with Fix #1 (reverse the auger by hand), which resolves ~70% of jams. If your feeder is 2+ years old and jamming persists after cleaning, the motor or chute may be worn — time to replace.",
     sections: [
       { heading: "Stop — Unplug the Feeder Now", body: "If your feeder is jammed and the motor is still trying to run, <strong>unplug it or remove the batteries immediately.</strong> A stalled motor that keeps trying to turn will burn out in minutes. This is the #1 reason feeders die young — not the jam itself, but the motor overheating while fighting it. Once unplugged, you can troubleshoot safely. Most jams take 2-5 minutes to clear." },
       { heading: "Fix #1: Reverse the Dispensing Mechanism", body: "Most feeders use an auger (a spiral screw) or a rotating wheel to push kibble through the chute. When a piece of kibble gets wedged between the auger and the chute wall, it locks the mechanism. <strong>How to fix:</strong> with the feeder unplugged, reach into the dispensing chute from below (where food drops into the bowl) and gently rotate the auger <strong>backward</strong> — the opposite direction it normally spins. This usually dislodges the stuck piece. You may hear a click or feel the kibble release. Once it moves freely, plug the feeder back in and run a test portion. This fixes ~70% of jams." },
@@ -825,14 +826,14 @@ const slug = Astro.params.slug || "automatic-feeder-buying-guide";
 const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
 ---
 
-<BaseLayout title={guide.title} description={guide.description} type="article" publishDate="2026-05-20" modifiedDate="2026-06-03">
+<BaseLayout title={guide.title} description={guide.description} type="article" publishDate="2026-05-20" modifiedDate="2026-07-07">
   <Breadcrumb crumbs={[{ label: "Guides", href: "/guides/" }, { label: guide.title }]} />
 
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{guide.title}</h1>
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{guide.description}</p>
     <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
-      <span>Updated: <time datetime="2026-05-24">May 24, 2026</time></span>
+      <span>Updated: <time datetime="2026-07-07">July 7, 2026</time></span>
       <span>8 min read</span>
     </div>
 
@@ -853,6 +854,22 @@ const guide = guideMap[slug] || guideMap["automatic-feeder-buying-guide"];
     </div>
 
     <FAQ items={guide.faqs} />
+
+	    {/* HowTo Schema — auto-detected for step-by-step guides */}
+	    {guide.sections.filter(s => /Fix #\d+/i.test(s.heading)).length >= 3 && (
+	      <script type="application/ld+json" set:html={JSON.stringify({
+	        "@context": "https://schema.org",
+	        "@type": "HowTo",
+	        "name": guide.title,
+	        "description": guide.description,
+	        "step": guide.sections.filter(s => /Fix #\d+/i.test(s.heading)).map((s, i) => ({
+	          "@type": "HowToStep",
+	          "position": i + 1,
+	          "name": s.heading,
+	          "text": s.body.replace(/<[^>]*>/g, "").substring(0, 300)
+	        }))
+	      })} />
+	    )}
 
     <!-- Related Resources -->
     {(() => {
