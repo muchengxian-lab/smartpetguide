@@ -2903,3 +2903,30 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] `docs/monetization/30-day-schedule.md`：D14 已发送 + 联系方式阻塞解除 + 日期校准
 - [x] `.claude/CLAUDE.md`：Week 9 当前阶段更新
 - [x] `progress.md`：本日志 + Sprint 立项 + Sprint 执行记录
+
+---
+
+## 会话：2026-07-07 周二 — Week 9 Day 2
+
+### 完成事项（5/5 ✅）
+
+#### GEO #6：具名作者页
+- [x] About 页新增 Chengxian Yang 作者卡片（头像 + bio + 方法论）
+- [x] BaseLayout Author Schema：匿名 "Research Team" → Person "Chengxian Yang" + url + sameAs
+- [x] 4 模板署名：review/compare/guide/best 加 "Written by Chengxian Yang" → `/about/#author`
+- [x] 构建部署
+
+#### 不锈钢饮水机 Phrasing Map
+- [x] 10 条 VOC 短语：粉刺/生物膜/无线困惑/滤芯成本/洗碗机/噪音/磁吸/塑料变形/后悔
+- [x] 回填：`stainless-steel-cat-fountain-guide`（猫粉刺案例）+ `stainless-steel-vs-plastic-fountains`（清洁对比）
+
+#### Rich Results 抽测（6/6 ✅）
+- Review/Compare/Guide/Best/About/Home 全类型通过，含 HowTo 7 步 ✅
+
+#### 变现 Sprint
+- [x] Guest Post Round 3：署名更新 + 日期校正 → 7/7 可发送
+- [x] 外联 v2 标题方案：4 格式 × 4 品牌，写入 CRM
+
+### 人工清单（7/7）
+1. 发 Guest Post Round 3（`backlinks/round3-guest-post-targets.md`）
+2. 明天 7/8：Wave 1 D7 ×3 + Aorkuler check-in（明早准备文案）

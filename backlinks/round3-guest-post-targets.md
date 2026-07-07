@@ -10,7 +10,7 @@
 |:--:|------|------|------|------|
 | 1 | **PetPlace.com** | petplace.com/write-for-us | DA 50+, 接受 guest post + 允许链接回自己网站 | "Robot Vacuum vs Stick Vacuum for Pet Hair — What 50+ Owners Actually Say" (Robot #8 改写) |
 | 2 | **EntirelyPets.com** | entirelypets.com/guest-blogger.html | "最大宠物博客之一，日数千访客" | "Are Automatic Feeders Worth It for One Cat? — Honest Research From Verified Owner Reviews" (PAA 动物改造) |
-| 3 | **Phetched.com** | phetched.com/submit-a-guest-post | 接受 dogs/pets 投稿 | "5 Best No-Subscription Pet Cameras — Zero Monthly Fees, Full Features" (现有 Best 列表改写) |
+| 3 | **Pretty Happy Pets** | prettyhappypets.com/write-for-us | 免费投稿，120+指南，聚焦猫狗健康/训练 | "Stainless Steel vs Plastic Cat Fountains — What 18,500 Verified Reviews Reveal" (现有指南改编) |
 | 4 | **Your Vet Online** | yourvetonline.com/write-for-us | 宠物真实经验+实用建议 | "Stainless Steel vs Plastic Cat Fountains — What 18,500 Owner Reviews Reveal" (现有指南改编) |
 | 5 | **LenoxVet** | lenoxvet.com/pages/new-affiliate | 接受 guest blog + 含 affiliate 机会 | "How to Choose Your First Smart Pet Device — A Research-Backed Starter Guide" (现有指南改编) |
 
@@ -76,28 +76,29 @@ Chengxian Yang
 press@smartpetguide.net
 ```
 
-### 3. Phetched.com
+### 3. Pretty Happy Pets
 
-**To:** Find via phetched.com/submit-a-guest-post/
-**Subject:** Guest post pitch: 5 Pet Cameras With Zero Monthly Fees (researched)
+**To:** info@prettyhappypets.com
+**Subject:** Guest post pitch: Stainless Steel vs Plastic Fountains — 18,500 Owner Reviews
 
 ```
-Hi Phetched team,
+Hi Pretty Happy Pets team,
 
-I run SmartPetGuide, where we analyze pet devices using verified owner data. I'd love to contribute a guest post.
+I run SmartPetGuide, an independent research site covering smart pet devices. I saw your write-for-us page and would love to contribute.
 
-Proposed topic: "5 Best Pet Cameras With NO Monthly Fee — Zero Subscription, Full Features (2026)"
+Proposed topic: "Stainless Steel vs Plastic Cat Fountains — What 18,500 Verified Owner Reviews Actually Reveal"
 
-The angle: most pet camera "free tiers" lock the best features behind $6-10/month subscriptions. This piece covers 5 cameras where everything works without paying — period:
-- eufy Security ($129) — best overall, 2K video
-- xpai 4K ($43) — budget champion, 64GB built-in storage
-- 3 more picks with verified owner feedback
+This fits your Cat Health & Nutrition category perfectly. The piece covers:
+- Why steel beats plastic for cat health (biofilm, bacteria, chin acne)
+- The 5-year cost comparison — steel is actually $61 cheaper
+- Real owner stories: cat acne cleared in 2 weeks after switching to steel
+- 3 budget stainless picks from $39
 
-No affiliate links in the guest version. Pure buying guide for budget-conscious pet owners.
+Written for pet owners, not scientists. No affiliate links, no brand bias. Your vet team can review the health claims.
 
-Sample: https://smartpetguide.net/guides/best-no-subscription-cameras/
+Sample of my research style: https://smartpetguide.net/guides/stainless-steel-vs-plastic-fountains/
 
-Let me know if you'd like to see a full draft.
+Happy to adapt to your 1,200-2,500 word guidelines. Let me know if you'd like a draft.
 
 Best,
 Chengxian Yang
