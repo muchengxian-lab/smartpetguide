@@ -138,7 +138,7 @@
 | Task A（后台基建） | ✅ 完成 | — |
 | Wave 1 外联 | 1/4 回复 | Aorkuler 已收到快照，7/8 check-in；3 品牌 D3 已发 |
 | Wave 2 外联 | 2/5 已发 | WOPET + Petlibro D3 跟进 7/6；3 品牌联系方式已查 |
-| Guest Post | 5 目标待发 | Round 3 |
+| Guest Post | ✅ 5/5 已发 | Round 3 |
 
 ### 联系方式补齐
 

@@ -2924,9 +2924,9 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - Review/Compare/Guide/Best/About/Home 全类型通过，含 HowTo 7 步 ✅
 
 #### 变现 Sprint
-- [x] Guest Post Round 3：署名更新 + 日期校正 → 7/7 可发送
+- [x] Guest Post Round 3：署名更新 + 邮箱查找 + Phetched→Pretty Happy Pets 替换 → 5/5 已发
 - [x] 外联 v2 标题方案：4 格式 × 4 品牌，写入 CRM
 
 ### 人工清单（7/7）
-1. 发 Guest Post Round 3（`backlinks/round3-guest-post-targets.md`）
+1. ✅ Guest Post Round 3 已发（5/5）
 2. 明天 7/8：Wave 1 D7 ×3 + Aorkuler check-in（明早准备文案）
