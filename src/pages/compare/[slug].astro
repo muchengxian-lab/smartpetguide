@@ -442,6 +442,9 @@ const productB = data.productBId ? allProducts.get(data.productBId) : data.produ
 
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{data.title}</h1>
+    <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
+      <span>Updated: <time datetime="2026-07-07">July 7, 2026</time></span>
+    </div>
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{data.description}</p>
 
     <!-- Trust line -->
@@ -487,8 +490,14 @@ const productB = data.productBId ? allProducts.get(data.productBId) : data.produ
       ))}
     </div>
 
+    <!-- Data Snapshot -->
+    <div class="mt-10 rounded-2xl border border-sage-dark/30 bg-cream/50 p-5">
+      <p class="text-sm font-bold uppercase tracking-wide text-bark-muted">Data Snapshot</p>
+      <p class="mt-1 text-sm leading-relaxed text-bark-muted">Prices and ratings as of July 2026. Comparison based on manufacturer specifications, verified Amazon owner reviews, and marketplace data. Individual experiences may vary.</p>
+    </div>
+
     <!-- Feature Comparison Table -->
-    <div class="mt-10">
+    <div class="mt-6">
       <h2 class="mb-4 font-display text-xl font-bold text-forest">Feature Comparison</h2>
       <div class="overflow-x-auto rounded-2xl border border-sage-dark/30">
         <table class="w-full text-sm">
