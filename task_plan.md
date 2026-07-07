@@ -36,7 +36,7 @@
 | 天 | 日期 | Week 9 内容 | 变现 Sprint | 预计工时 |
 |:--:|------|------|------|:--:|
 | 周一 | 7/6 | ✅ GSC 周检 + GA4 周检 + Sitemap 确认 + Snapshot 3 + Pin 指标口径固化 | ✅ WOPET/Petlibro D3 已发 + Wave 2 联系方式已查 | 6/6 ✅，仅 Sprint 立项顺延 |
-| 周二 | 7/7 | 不锈钢饮水机集群 `phrasing map` + **GEO #6** 建具名作者页 + `Petlibro Granary review` fact layer 审计 + Rich Results 抽测 | Guest Post Round 3 发送准备 + 外联 v2 标题草稿 | ~2.5h |
+| 周二 | 7/7 | ✅ 饮水机 phrasing map + GEO #6 作者页 + Petlibro fact layer（昨晚已做）+ Rich Results 6/6 | ✅ Guest Post Round 3 已发 + 外联 v2 入 CRM | 5/5 ✅ |
 | 周三 | 7/8 | 零订阅摄像头/GPS 集群 `phrasing map` + **GEO #7** 给 34 篇指南补 quickAnswer + `Stop Automatic Feeder From Jamming` guide fact layer 加固 + duplicate canonical URL | Wave 1 三品牌 D7 闭环 + Aorkuler check-in + D18 试点方案模板 | ~2.5h |
 | 周四 | 7/9 | 喂食器可靠性集群 `phrasing map` + LR4 compatibility 验证 + `WOPET vs Petlibro` compare fact layer 加固 + `"已抓取-未索引"`8 页质量加固 | D19 外联 v2 改进（基于 Wave 1 回复经验） | ~2.5h |
 | 周五 | 7/10 | 猫砂盆 TCO 集群 `phrasing map` + **批量改动日** + 3 页 fact layer 改动统一提交 + 周报/度量日志更新 + Sprint 复盘 | WOPET/Petlibro D7 闭环 + 第 2 周复盘 | ~3.5h |
@@ -64,8 +64,8 @@
 | 交付物 | 最低完成标准 | 优先级 |
 |---|---|---|
 | LR4 compatibility 小验证 | `Reddit + Amazon + 官方 FAQ` 至少各抽样 5 条；出现 3 个独立重复痛点才进入现有页 | P1 |
-| 4 个集群 phrasing map | 每个集群 5-10 条问题 / 反对意见 / 用户原话；每个集群至少回填 2 条到现有页 | P1 |
-| 3 页 fact layer 审计 | Review / Compare / Guide 各 1 页，补 `前置结论 + 来源脚注 + 更新时间 + quickAnswer` | P1 |
+| 4 个集群 phrasing map | 每个集群 5-10 条问题 / 反对意见 / 用户原话；每个集群至少回填 2 条到现有页 | P1 | 🟢 1/4：不锈钢饮水机 ✅ |
+| 3 页 fact layer 审计 | Review / Compare / Guide 各 1 页，补 `前置结论 + 来源脚注 + 更新时间 + quickAnswer` | P1 | ✅ 完成（7/6 晚） |
 | crawler / Cloudflare 规则核对 | 确认当前是否走 Cloudflare，以及 AI crawler / Googlebot 规则现状 | P2 |
 | Sprint 复盘 | 列出改了哪些页面、补了哪些 FAQ / verdict / fact cues、哪些信号被降级 Watch | P1 |
 
@@ -544,9 +544,9 @@
 | GEO-P1-6 | P1 | Compare 模板加来源/日期脚注 | `src/pages/compare/[slug].astro` | `dist/compare/litter-robot-5-vs-litter-robot-4/index.html` 可见 `Data sourced` 或同等来源日期说明 |
 | GEO-P1-7 | P1 | Best 模板加来源/价格日期说明 | `src/pages/best/[slug].astro` | `dist/best/automatic-cat-feeders/index.html` 可见来源、价格波动、更新时间说明 |
 | GEO-P1-8 | P1 | Guide 顶部加 `Quick answer` / `Bottom line` | `src/pages/guides/[slug].astro` | `dist/guides/how-to-clean-cat-water-fountain/index.html` H1 后有 2-3 句可摘取结论 |
-| GEO-P2-6 | P2 | 步骤型 Guide 增加 `HowTo` Schema | 清洁、维护、安装类 guides | 清洁饮水机样本页 JSON-LD 出现 `HowTo` |
+| GEO-P2-6 | P2 | 步骤型 Guide 增加 `HowTo` Schema | 清洁、维护、安装类 guides | ✅ Feeder jamming 指南已自动检测 Fix #N 并生成 HowTo（7/6） |
 | GEO-P2-7 | P2 | Stats 页增加 `Dataset` JSON-LD | `src/pages/pet-tech-statistics.astro` | 页面 JSON-LD 包含 `Dataset`，保留现有 `Article` |
-| GEO-P2-8 | P2 | 建真正的 named author profile | `/about` 或 `/authors/...` | 至少 1 个个人作者页，并能被 Article author 引用 |
+| GEO-P2-8 | P2 | 建真正的 named author profile | `/about` 或 `/authors/...` | ✅ Chengxian Yang 作者页 + 4 模板署名 + Person Schema（7/7） |
 | GEO-DOC-1 | P2 | 同步 6/27 Codex 增量审计摘要 | `GEO-AUDIT-REPORT.md` | 项目内 canonical GEO 报告记录 86/100 新基线与新增修复项 |
 
 ---
