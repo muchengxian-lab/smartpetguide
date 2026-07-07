@@ -82,7 +82,7 @@
 | 活跃 Pin | 86 | 本周末补 Pin #11-#12 |
 | affiliate_click | 0 | 流量仍低，追踪代码正常 |
 | 外联回复数 | 1 | Aorkuler 已回复并收到 snapshot |
-| Wave 2 | 2/5 已发 | WOPET + Petlibro；3 品牌联系方式待查 |
+| Wave 2 | 2/5 已发 | WOPET + Petlibro；3 品牌联系方式 7/7 已查（Homerunpet✅ CATLINK✅ Honey Tour❌） |
 
 ### 诊断
 

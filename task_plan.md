@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-06 周一 | 114 页 / 88 Pin 在线 | GSC 索引 22 / 曝光 268 / GA4 活跃用户 9 | 实验 Pin 12/12 ✅ | Wave 2 外联 2/5 D3 已发 | Snapshot 3 已生成**
+**最后更新：2026-07-07 周二 | 114 页 / 88 Pin 在线 | GSC 索引 22 / 曝光 268 / GA4 活跃用户 9 | 实验 Pin 12/12 ✅ | Wave 2 外联 2/5 D3 已发 | Guest Post Round 3 5/5 已发 | Snapshot 3 已生成**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -150,7 +150,7 @@
 |------|------|------|:--:|
 | Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D13 已执行，D14 起按 7/6 周一校正 |
 | A | Amazon affiliate conversion：5 页决策模块 + 2 指南 CTA + 全站审核 | `docs/monetization/task-a-amazon-affiliate-conversion.md` | ✅ 完成 |
-| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 Wave 1 已获 Aorkuler 回复；Wave 2 2/5 已发，3 个联系人待查 |
+| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 Wave 1 已获 Aorkuler 回复+快照已发；Wave 2 WOPET+Petlibro D3 已发，Homerunpet+CATLINK 联系方式已查（Honey Tour 无官网） |
 
 ### 内容选题引擎（6/26 起）
 
