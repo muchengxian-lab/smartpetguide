@@ -2858,8 +2858,8 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 |:--:|------|:--:|
 | 1 | GSC 周检 | ✅ Claude Code 浏览器直连完成 |
 | 2 | GA4 周检 | ✅ Claude Code 浏览器直连完成 |
-| 3 | Sitemap 重提 | ⏸ 推迟到明天（7/3 刚读） |
-| 4 | Pin 数确认 | ⏳ 待人工 |
+| 3 | Sitemap 重提 | ✅ 已提交（输入框重复提交法） |
+| 4 | Pin 数确认 | ✅ 88（追踪值确认） |
 | 5 | 发 WOPET D3 + Petlibro D3 | ✅ **已发送** |
 | 6 | URL Inspection ×5 | ✅ **已提交** |
 
@@ -2896,10 +2896,10 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 
 #### 执行顺序
 
-明天周二（7/7）先做 #1（轻量）+ #3（指南，最直接影响"已抓取未索引"8 页池）+ 周日历任务（不锈钢饮水机 phrasing map + GEO #6 作者页）。#2（对比页）周三随喂食器可靠性集群一起做。
+三页均已在 7/6 晚间完成修复+构建+推送+线上验证 ✅。明天周二直接做不锈钢饮水机 phrasing map + GEO #6 作者页 + Rich Results 抽测。
 
 #### 文件更新
 - [x] `task_plan.md`：表头 + Week 9 周一完成状态 + Snapshot 3 数据同步
 - [x] `docs/monetization/30-day-schedule.md`：D14 已发送 + 联系方式阻塞解除 + 日期校准
 - [x] `.claude/CLAUDE.md`：Week 9 当前阶段更新
-- [x] `progress.md`：本日志 + Sprint 立项
+- [x] `progress.md`：本日志 + Sprint 立项 + Sprint 执行记录

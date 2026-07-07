@@ -173,8 +173,8 @@
 
 1. ~~GSC 登录~~ → Claude Code 已用浏览器完成 ✅
 2. **GA4 登录** → 查活跃用户/affiliate_click/outbound_click → 填入本表（⚠️ `muchengxian@gmail.com` 无权限，需授权或用其他账号）
-3. **Sitemap 重提** → 7/3 刚读过，可推迟到明天
-4. **Pin 数确认** → Pinterest 后台查活跃 Pin 总数
+3. ~~Sitemap 重提~~ → ✅ 已手动提交（输入框重复提交 sitemap-index.xml）
+4. ~~Pin 数确认~~ → ✅ 88，确认一致
 5. ~~发送邮件~~ → WOPET D3 + Petlibro D3 ✅ 已发送
 6. **URL Inspection ×5**（GSC URL 检查工具）：
    - 2 已抓取未索引：/guides/stop-automatic-feeder-from-jamming/ + /guides/introduce-cat-to-automatic-litter-box/

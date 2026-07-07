@@ -78,7 +78,7 @@ const ogImage = image.startsWith("http")
         image: ogImage,
         ...(publishDate && { datePublished: publishDate }),
         ...(modifiedDate && { dateModified: modifiedDate }),
-        author: { "@type": "Person", name: "SmartPetGuide Research Team", url: "https://smartpetguide.net/about/", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/", "https://www.wikidata.org/wiki/Q140290653"] },
+        author: { "@type": "Person", name: "Chengxian Yang", description: "Founder & lead researcher at SmartPetGuide. Analyzes verified Amazon reviews and cross-references owner experiences to produce research-backed smart pet device recommendations.", url: "https://smartpetguide.net/about/#author", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/", "https://www.wikidata.org/wiki/Q140290653"] },
         publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/", sameAs: ["https://www.pinterest.com/muchengxian/", "https://medium.com/@muchengxian", "https://flipboard.com/@755g287", "https://www.wikidata.org/wiki/Q140290653"] },
         mainEntityOfPage: { "@type": "WebPage", "@id": Astro.url?.href || "https://smartpetguide.net/" },
       })} />
