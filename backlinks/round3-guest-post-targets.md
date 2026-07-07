@@ -44,7 +44,7 @@ Sample of my writing: https://smartpetguide.net/guides/robot-vacuum-vs-stick-vac
 Happy to adapt the piece to fit PetPlace's style and length guidelines. Let me know if this topic interests you.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -72,7 +72,7 @@ Sample: https://smartpetguide.net/guides/are-automatic-feeders-worth-it-for-one-
 Original, not published elsewhere. Can adapt to your length and style preferences.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -100,7 +100,7 @@ Sample: https://smartpetguide.net/guides/best-no-subscription-cameras/
 Let me know if you'd like to see a full draft.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -129,7 +129,7 @@ Sample of my research approach: https://smartpetguide.net/guides/stainless-steel
 Happy to adapt to your guidelines.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -158,12 +158,13 @@ Sample: https://smartpetguide.net/guides/first-smart-pet-device-guide/
 Let me know if you'd like to see a draft.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
 ## Follow-up
 
-- D3 (7/5): 跟进未回复的目标
-- D7 (7/9): 闭环或换目标
+- D0: 7/7（今日发送）
+- D3 (7/10): 跟进未回复的目标
+- D7 (7/14): 闭环或换目标
 - 预期回复率 20-30%，目标 1-2 个 guest post placement

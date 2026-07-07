@@ -42,7 +42,7 @@ No pitch — just thought you'd want to know. We see these patterns across a lot
 If a quick visibility snapshot would be useful (showing how your product appears in Google, AI search, and review patterns), happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -62,7 +62,7 @@ The offer stands: I can put together a free visibility snapshot for [Product Nam
 Let me know if you'd like me to go ahead.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 ```
 
 ### D7: Close-loop
@@ -79,7 +79,7 @@ One last note — if marketing/partnerships isn't the right contact for this kin
 Otherwise, I'll assume the timing isn't right and won't clutter your inbox further.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 ```
 
 ## Reply Templates
@@ -141,14 +141,14 @@ I run SmartPetGuide, an independent research site covering smart pet devices. We
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful (showing how your product appears in Google, AI search, and review patterns), happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
 ### 2. KittySpout — 表单提交 👤
 
 **网址：** https://www.kittyspout.com/pages/contact-us
-**Name:** SmartPetGuide Research Team
+**Name:** Chengxian Yang
 **Email:** press@smartpetguide.net
 **Message:**
 
@@ -166,14 +166,14 @@ I run SmartPetGuide, an independent research site covering smart pet devices. We
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
 ### 3. YEAPAW — 表单提交 👤
 
 **网址：** https://yeapaw.com/pages/contact
-**Name:** SmartPetGuide Research Team
+**Name:** Chengxian Yang
 **Email:** press@smartpetguide.net
 **Message:**
 
@@ -191,7 +191,7 @@ I run SmartPetGuide, an independent research site covering smart pet devices. We
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -213,7 +213,7 @@ I run SmartPetGuide, an independent research site covering smart pet devices. We
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -247,7 +247,7 @@ The offer stands: I can put together a free visibility snapshot for your GPS tra
 Let me know if you'd like me to go ahead.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -265,7 +265,7 @@ The free visibility snapshot offer still stands: I'll analyze how your fountain 
 Let me know if you'd like me to put that together.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -283,7 +283,7 @@ Happy to put together a free visibility snapshot for your pumpless fountain: Goo
 Worth 30 minutes of your time?
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -301,7 +301,7 @@ The free visibility snapshot for the Elspet Pro is still on the table: I'll show
 Interested?
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -327,7 +327,7 @@ I run SmartPetGuide, an independent research site covering smart pet devices. We
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -349,7 +349,7 @@ I run SmartPetGuide, an independent research site covering smart pet devices. We
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -371,7 +371,7 @@ I run SmartPetGuide, an independent research site covering smart pet devices. We
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -393,7 +393,7 @@ I run SmartPetGuide, an independent research site covering smart pet devices. We
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -415,7 +415,7 @@ I run SmartPetGuide, an independent research site covering smart pet devices. Yo
 No pitch — just thought you'd want to know. If a quick visibility snapshot would be useful, happy to put one together at no cost.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -439,7 +439,7 @@ The free visibility snapshot offer still stands: I'll analyze how your feeder an
 Let me know if you'd like me to go ahead.
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
 
@@ -457,6 +457,34 @@ The free visibility snapshot for the Granary is still on the table: I'll analyze
 Worth a look?
 
 Best,
-SmartPetGuide Research Team
+Chengxian Yang
 press@smartpetguide.net
 ```
+
+---
+
+## 外联 v2 标题测试方案（7/7）
+
+> Wave 1 数据：1/4 回复（Aorkuler）。"3 things..." 标题对数据驱动品牌有效。
+> 以下为后续波次的备选标题格式。
+
+| 格式 | 示例 | Wave 1 效果 | 适用 |
+|------|------|:--:|:--:|
+| **A: 数据洞察型** | "3 things buyers are asking about..." | 1/1 回复 | D0 开场 |
+| **B: 竞品盲区型** | "Your [Product] is missing [X] on Google — here is why" | 未测试 | D0 备选 |
+| **C: 具体痛点型** | "[Specific complaint] — a listing fix that takes 10 min" | 未测试 | D3 跟进 |
+| **D: 零压力型** | "Quick question about the [Product] (no pitch)" | 未测试 | D7 闭环 |
+
+### Wave 2 剩余品牌推荐标题
+
+| 品牌 | 格式 | 建议标题 |
+|------|:--:|------|
+| Homerunpet | A | "3 things buyers are asking about the Homerunpet Wireless Fountain" |
+| CATLINK | B | "CATLINK Young Pro: the $399 multi-cat feature buyers can&apos;t find" |
+| PETKIT | A | "3 things buyers are asking about the PETKIT Eversweet Fountain" |
+| Catit | B | "Catit PIXI: your water intake tracking is unique — but invisible" |
+
+### 关键教训
+- Aorkuler 回复的是 A 格式 → **D0 保持 A 格式**
+- D3/D7 跟进换角度，不重复 D0 标题
+- v2 正式执行等 7/10 周复盘时根据 Wave 1+2 全部结果决定
