@@ -38,7 +38,7 @@
 | 周一 | 7/6 | ✅ GSC 周检 + GA4 周检 + Sitemap 确认 + Snapshot 3 + Pin 指标口径固化 | ✅ WOPET/Petlibro D3 已发 + Wave 2 联系方式已查 | 6/6 ✅，仅 Sprint 立项顺延 |
 | 周二 | 7/7 | ✅ 饮水机 phrasing map + GEO #6 作者页 + Petlibro fact layer（昨晚已做）+ Rich Results 6/6 | ✅ Guest Post Round 3 已发 + 外联 v2 入 CRM | 5/5 ✅ |
 | 周三 | 7/8 | ✅ 摄像头/GPS phrasing map + GEO #7 quickAnswer 7 篇新增（11/38）+ feeder jamming（7/6 已做）+ canonical OK | ✅ Wave 1 D7 闭环 3/3 已发 + Aorkuler check-in + D18 模板入 CRM | 5/5 ✅ |
-| 周四 | 7/9 | 喂食器可靠性集群 `phrasing map` + LR4 compatibility 验证 + `WOPET vs Petlibro` compare fact layer 加固 + `"已抓取-未索引"`8 页质量加固 | D19 外联 v2 改进（基于 Wave 1 回复经验） | ~2.5h |
+| 周四 | 7/9 | **品种页 GEO 补齐（7 页：Schema 日期 + quickAnswer + 署名 + 来源脚注 + Explore More）** + 喂食器可靠性 `phrasing map` + LR4 compatibility 验证 + `"已抓取-未索引"`8 页质量加固（WOPET vs Petlibro fact layer 7/6 已做） | D19 外联 v2 改进 | ~3h |
 | 周五 | 7/10 | 猫砂盆 TCO 集群 `phrasing map` + **批量改动日** + 3 页 fact layer 改动统一提交 + 周报/度量日志更新 + Sprint 复盘 | WOPET/Petlibro D7 闭环 + 第 2 周复盘 | ~3.5h |
 
 ### Week 9 统一任务：GEO + VOC Fact Layer Sprint
@@ -548,6 +548,7 @@
 | GEO-P2-7 | P2 | Stats 页增加 `Dataset` JSON-LD | `src/pages/pet-tech-statistics.astro` | 页面 JSON-LD 包含 `Dataset`，保留现有 `Article` |
 | GEO-P2-8 | P2 | 建真正的 named author profile | `/about` 或 `/authors/...` | ✅ Chengxian Yang 作者页 + 4 模板署名 + Person Schema（7/7） |
 | GEO-DOC-1 | P2 | 同步 6/27 Codex 增量审计摘要 | `GEO-AUDIT-REPORT.md` | 项目内 canonical GEO 报告记录 86/100 新基线与新增修复项 |
+| GEO-P1-9 | P1 | **品种页 GEO 补齐**（审计雷达外的空白：breed 模板从未被审计，缺全部 GEO 信号） | `src/pages/breed/[slug].astro`（7 页） | 每个品种页有 publishDate/modifiedDate（Article schema 带日期）+ quickAnswer + Chengxian Yang 署名 + 来源脚注 + Explore More 内链块。排期 7/9 周四 |
 
 ---
 
