@@ -7,11 +7,11 @@
 
 | # | Brand | Category | Product | Website | Contact | 3 Key Findings | Status | Sent | Follow-up | Notes |
 |:--:|------|------|------|------|------|------|:--:|------|------|------|
-| 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Snapshot sent — awaiting feedback | 7/1 | Check in 7/8 if no reply | John replied 7/2 asking to see the visibility snapshot. PDF sent 7/2. Continue by email-first async follow-up; do not push a call unless John asks. |
+| 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Check-in sent — awaiting reply | 7/1 | 7/8 check-in | John replied 7/2, snapshot PDF sent 7/2. Check-in sent 7/8. Email-first async; next touch ~7/15 if no reply. |
 | 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | contact@homerunpet.com | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Not contacted | — | — | Budget wireless, strong story |
-| 3 | KittySpout | Water Fountain | Stainless Steel Fountain | kittyspout.com | 表单 (kittyspout.com/pages/contact-us) | (1) Dishwasher-safe angle underused — key difference vs Pioneer Pet (2) Mid-price ($50) position unclear vs $39/$93 alternatives (3) 800 reviews — needs more social proof | D3 sent — awaiting reply | 7/1 | 7/8 | Mid-range steel fountain; D7 close-loop date corrected by 2026 calendar |
-| 4 | YEAPAW | Water Fountain | Stainless Steel Fountain | yeapaw.com | 表单 (yeapaw.com/pages/contact) | (1) Pumpless tech is unique but poorly explained in listing (2) Only 1,200 reviews — differentiation story needed (3) No content comparing magnetic induction vs traditional pumps | D3 sent — awaiting reply | 7/1 | 7/8 | Premium pumpless, needs education content; D7 close-loop date corrected |
-| 5 | Elspet | Litter Box | Elspet Pro Self-Cleaning | elspet.com | help@elspet.com | (1) Easiest-to-clean design in category — but no video/visual proof (2) 18-month warranty longer than competitors — not highlighted (3) 2,100 reviews — new brand trust gap | D3 sent — awaiting reply | 7/1 | 7/8 | Newer brand, easy-clean angle, Elspet已建cares; D7 close-loop date corrected |
+| 3 | KittySpout | Water Fountain | Stainless Steel Fountain | kittyspout.com | 表单 (kittyspout.com/pages/contact-us) | (1) Dishwasher-safe angle underused — key difference vs Pioneer Pet (2) Mid-price ($50) position unclear vs $39/$93 alternatives (3) 800 reviews — needs more social proof | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
+| 4 | YEAPAW | Water Fountain | Stainless Steel Fountain | yeapaw.com | 表单 (yeapaw.com/pages/contact) | (1) Pumpless tech is unique but poorly explained in listing (2) Only 1,200 reviews — differentiation story needed (3) No content comparing magnetic induction vs traditional pumps | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
+| 5 | Elspet | Litter Box | Elspet Pro Self-Cleaning | elspet.com | help@elspet.com | (1) Easiest-to-clean design in category — but no video/visual proof (2) 18-month warranty longer than competitors — not highlighted (3) 2,100 reviews — new brand trust gap | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
 | 6 | CATLINK | Litter Box | CATLINK Young Pro | catlink.com | 表单 (catlink.com/contact-us) | (1) Multi-cat weight recognition at $399 — best value in smart tracking (2) App translations hurt credibility with English-speaking buyers (3) 13L waste bin advantage not clearly communicated vs 10L competitors | Not contacted | — | — | Multi-cat value leader |
 | 7 | Honey Tour | Pet Camera | Movable Pet Camera Robot | 无官网 | 无（纯 Amazon 卖家） | (1) Only mobile pet camera on market — unique but needs explanation (2) 4.7★ with only 320 reviews — high satisfaction, low awareness (3) Floor-type limitations not disclosed upfront | Not contacted | — | — | Niche mobile camera, 类似 xpai 纯 Amazon 卖家 |
 | 8 | xpai | Pet Camera | xpai 4K UHD Pet Camera | 无官网 | 无（纯 Amazon 卖家） | (1) 4K at $43 is price-performance champion — not marketed as such (2) 64GB built-in storage is unique — not in product title (3) Newer brand with 1,500 reviews — trust signals needed | Not contacted | — | — | Budget 4K, strongest value story |
@@ -488,3 +488,82 @@ press@smartpetguide.net
 - Aorkuler 回复的是 A 格式 → **D0 保持 A 格式**
 - D3/D7 跟进换角度，不重复 D0 标题
 - v2 正式执行等 7/10 周复盘时根据 Wave 1+2 全部结果决定
+
+---
+
+## Wave 1 D7 闭环 + Aorkuler Check-in（7/8 发送）
+
+> 发件地址：`press@smartpetguide.net`
+
+### KittySpout D7 — 表单提交
+
+**网址：** https://www.kittyspout.com/pages/contact-us
+**Subject:** Re: KittySpout Fountain visibility
+
+```
+Hi KittySpout team,
+
+One last note — I know inboxes get busy and timing isn't always right.
+
+If marketing or partnerships isn't the best contact for this kind of research collaboration, could you point me toward the right person? Otherwise I'll assume the timing isn't ideal and won't clutter your inbox further.
+
+Either way, appreciate your time — and if anything changes down the road, the free visibility snapshot offer remains open.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```
+
+### YEAPAW D7 — 表单提交
+
+**网址：** https://yeapaw.com/pages/contact
+**Subject:** Re: YEAPAW Fountain visibility
+
+```
+Hi YEAPAW team,
+
+One last note — I know things move fast and priorities shift.
+
+If there's a better contact for marketing or partnerships on your end, I'd appreciate the pointer. Otherwise, I'll assume the timing isn't right and won't add to your inbox.
+
+The free visibility snapshot offer stands if anything changes. Appreciate your time either way.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```
+
+### Elspet D7 — help@elspet.com
+
+**Subject:** Re: 3 things buyers are asking about the Elspet Pro
+
+```
+Hi Elspet team,
+
+One last note — just checking whether marketing or partnerships might be a better contact for this kind of research collaboration.
+
+If so, I'd appreciate a point in the right direction. If the timing isn't right, no worries — I'll assume that's the case and won't follow up further.
+
+Either way, the free visibility snapshot offer stays open if anything changes down the road.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```
+
+### Aorkuler Check-in — service@aorkuler.com（john@aorkuler.com 抄送）
+
+**Subject:** Re: Aorkuler GPS Tracker visibility
+
+```
+Hi John,
+
+Just checking in — have you had a chance to review the visibility snapshot I sent last Wednesday? No rush at all, just wanted to make sure it didn't get buried.
+
+Happy to jump on a quick call or answer any questions if that would be helpful. Otherwise, I'll check back in a week or so.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```
+
