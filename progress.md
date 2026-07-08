@@ -2940,7 +2940,7 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 #### 变现 Sprint — 品牌邮件
 - [x] **Wave 1 D7 闭环**：KittySpout（表单）+ YEAPAW（表单）+ Elspet（help@elspet.com）三封已发
 - [x] **Aorkuler check-in**：service@aorkuler.com，含 PDF 快照附件，轻量跟进
-- [x] **D18 试点方案模板**：4 阶梯（Free→$199→$499→$1,200），写入 CRM，品牌问即可发
+- [x] **D16 试点方案模板**：4 阶梯（Free→$199→$499→$1,200），写入 CRM，品牌问即可发（对应 30-day-schedule D16 Content）
 
 #### GEO Sprint — 摄像头/GPS Phrasing Map
 - [x] **10 条 VOC 短语**：订阅愤怒/SD卡隐私/AirTag不是GPS/电池焦虑/深夜脱离恐惧等
@@ -2948,10 +2948,11 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
   - `best-no-subscription-cameras`：Furbo 订阅后悔 → 换 eufy 省 $144 的真实案例
   - `gps-pet-tracker-buying-guide`：AirTag 在州立公园跟丢狗 → 第二天换 Tractive 的恐慌案例
 
-#### GEO #7：指南补 quickAnswer
-- [x] **新增 7 篇**：feeder/litterbox/fountain/camera 四大 buying guide + are-litterboxes-worth-it + 3 篇已有
-- [x] 累计 **11/38** 篇有 quickAnswer（29%）
-- [x] 其余 27 篇可分批继续
+#### GEO #7：指南补 quickAnswer（部分完成）
+- [x] **新增 4 篇**：feeder / litterbox / fountain / camera 四大 buying guide
+- [x] 累计 **8/38** 篇有 quickAnswer（21%）= 原有 4（robot ×3 + feeder jamming）+ 新增 4
+- [ ] `are-self-cleaning-litter-boxes-worth-it` 7/8 Edit 失败未落地，7/9 补
+- [ ] 其余 30 篇可分批继续
 
 #### 技术巡检
 - [x] **duplicate canonical URL**：全站 canonical 一致，无修复点。GSC 的 "重复网页规范不同" 等下次重抓确认。
@@ -2967,5 +2968,5 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 
 ### 文件更新
 - [x] `progress.md`：7/8 会话日志
-- [x] `docs/monetization/brand-outreach-crm.md`：Wave 1 D7/Aorkuler check-in/D18 模板
+- [x] `docs/monetization/brand-outreach-crm.md`：Wave 1 D7/Aorkuler check-in/D16 模板
 - [x] `src/pages/guides/[slug].astro`：7 quickAnswer + 2 VOC 回填

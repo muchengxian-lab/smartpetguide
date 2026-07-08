@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-08 周三 | 114 页 / 88 Pin 在线 | GSC 索引 22 / 曝光 268 / GA4 活跃用户 9 | 实验 Pin 12/12 ✅ | Wave 1 D7 闭环 3/3 + Aorkuler check-in | Guest Post Round 3 5/5 已发 | Sprint: 2/4 phrasing maps + 3/3 fact layer + 11/38 quickAnswer**
+**最后更新：2026-07-08 周三 | 114 页 / 88 Pin 在线 | GSC 索引 22 / 曝光 268 / GA4 活跃用户 9 | 实验 Pin 12/12 ✅ | Wave 1 D7 闭环 3/3 + Aorkuler check-in | Guest Post Round 3 5/5 已发 | Sprint: 2/4 phrasing maps + 3/3 fact layer + 8/38 quickAnswer**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -37,7 +37,7 @@
 |:--:|------|------|------|:--:|
 | 周一 | 7/6 | ✅ GSC 周检 + GA4 周检 + Sitemap 确认 + Snapshot 3 + Pin 指标口径固化 | ✅ WOPET/Petlibro D3 已发 + Wave 2 联系方式已查 | 6/6 ✅，仅 Sprint 立项顺延 |
 | 周二 | 7/7 | ✅ 饮水机 phrasing map + GEO #6 作者页 + Petlibro fact layer（昨晚已做）+ Rich Results 6/6 | ✅ Guest Post Round 3 已发 + 外联 v2 入 CRM | 5/5 ✅ |
-| 周三 | 7/8 | ✅ 摄像头/GPS phrasing map + GEO #7 quickAnswer 7 篇新增（11/38）+ feeder jamming（7/6 已做）+ canonical OK | ✅ Wave 1 D7 闭环 3/3 已发 + Aorkuler check-in + D18 模板入 CRM | 5/5 ✅ |
+| 周三 | 7/8 | ✅ 摄像头/GPS phrasing map + GEO #7 quickAnswer 4 篇新增（8/38，部分完成）+ feeder jamming（7/6 已做）+ canonical OK | ✅ Wave 1 D7 闭环 3/3 已发 + Aorkuler check-in + D16 试点模板入 CRM | 5/5 ✅（quickAnswer 部分） |
 | 周四 | 7/9 | **品种页 GEO 补齐（7 页：Schema 日期 + quickAnswer + 署名 + 来源脚注 + Explore More）** + 喂食器可靠性 `phrasing map` + LR4 compatibility 验证 + `"已抓取-未索引"`8 页质量加固（WOPET vs Petlibro fact layer 7/6 已做） | D19 外联 v2 改进 | ~3h |
 | 周五 | 7/10 | 猫砂盆 TCO 集群 `phrasing map` + **批量改动日** + 3 页 fact layer 改动统一提交 + 周报/度量日志更新 + Sprint 复盘 | WOPET/Petlibro D7 闭环 + 第 2 周复盘 | ~3.5h |
 
