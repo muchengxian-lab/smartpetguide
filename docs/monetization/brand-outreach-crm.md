@@ -567,3 +567,48 @@ Chengxian Yang
 press@smartpetguide.net
 ```
 
+---
+
+## D18 试点方案模板（7/8）
+
+> 品牌问"具体怎么做"时发此模板。不要主动推付费层级。
+
+### 回复模板
+
+```
+Hi [Name],
+
+Great to hear you're interested. Here's what we offer:
+
+FREE Visibility Snapshot (you already have this):
+- Google search visibility vs 2-3 competitors
+- AI search citation accuracy check
+- Top 3 buyer questions in your Amazon reviews
+
+$199 Deep-Dive Audit:
+- Full keyword gap analysis (10-15 keywords)
+- Amazon listing audit with 5 actionable fixes
+- Competitor comparison: where [Brand A] and [Brand B] outrank you
+- Delivered as PDF with screenshots and data
+
+$499 Full Competitive Audit:
+- Everything above + cross-platform (Google + Amazon + AI + Reddit)
+- Review pattern analysis
+- Content strategy with 5 article topics
+- 30-day trend tracking after delivery
+
+$1,200 Quarterly Partnership:
+- Full audit every 3 months + monthly calls + same-day response
+
+No pressure — the free snapshot is yours regardless. Happy to discuss which level fits.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```
+
+### 规则
+- 品牌问才发，不主动推
+- 首次只提 free → $199，不提 $499+
+- Aorkuler 若问详情，先用此模板回复
+
