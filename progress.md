@@ -3007,7 +3007,7 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 ### 人工操作清单（7/9）
 | # | 操作 | 状态 |
 |:--:|------|:--:|
-| 1 | GSC URL Inspection ×5（今日） | 待人工执行 |
+| 1 | GSC URL Inspection ×5（今日） | ✅ 已提交 |
 
 ### 文件更新
 - [x] `src/pages/breed/[slug].astro`：动态日期 + publishDate 字段
