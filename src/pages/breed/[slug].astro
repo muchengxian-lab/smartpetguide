@@ -34,6 +34,7 @@ interface BreedData {
   title: string;
   description: string;
   breed: string;
+  quickAnswer: string;
   recommendations: Recommendation[];
   tips: string[];
   faqs: { q: string; a: string }[];
@@ -44,6 +45,7 @@ const breedMap: Record<string, BreedData> = {
     title: "Best Automatic Feeder for French Bulldogs in 2026 — Top Picks",
     description: "French Bulldogs have unique feeding needs — flat faces, tendency to overeat, and sensitive digestion. We've picked the best feeders that work for your Frenchie.",
     breed: "French Bulldog",
+    quickAnswer: "For a French Bulldog, prioritize precise portion control — this obesity-prone breed overeats easily. The Petlibro Granary ($139) is the best pick: its camera lets you monitor eating and the portion control prevents overfeeding. Budget option: WOPET ($89). Elevate the feeder 4-6 inches to ease strain on their flat faces, and split food into 3-4 small meals to reduce bloat risk.",
     recommendations: [
       { category: "Best Overall", productId: "petlibro-granary", reason: "Camera lets you monitor your Frenchie's eating, and the portion control prevents overeating — critical for this obesity-prone breed." },
       { category: "Best Budget", productId: "wopet-automatic", reason: "6L capacity and reliable scheduling at an affordable price. Voice recording is great for calling your Frenchie to meals." },
@@ -59,6 +61,7 @@ const breedMap: Record<string, BreedData> = {
     title: "Best Smart Devices for Golden Retrievers 2026 — GPS, Feeders & Cameras",
     description: "Golden Retrievers are active, food-motivated, and prone to hip issues. We've picked the best GPS trackers, smart feeders, and pet cameras specifically for Goldens.",
     breed: "Golden Retriever",
+    quickAnswer: "The #1 smart device for a Golden Retriever is a GPS tracker — their friendly nature means they'll follow strangers and wander. Get the Tractive GPS ($79 + subscription) for real-time tracking with a virtual fence. Pair it with the WOPET feeder ($89, handles large portions) and a Furbo 360 camera for this social, separation-anxiety-prone breed. Split meals into 3-4 portions daily to reduce bloat (GDV) risk.",
     recommendations: [
       { category: "Best GPS Tracker", productId: "tractive-gps", reason: "Goldens love to run — the Tractive GPS gives you real-time location tracking with a virtual fence, so you'll know instantly if your Golden wanders off. Works in 170+ countries for adventure-loving dogs." },
       { category: "Best Feeder", productId: "wopet-automatic", reason: "Goldens are notorious over-eaters. The WOPET's 6L hopper handles large portions for big dogs, and the 10 meals/day scheduling helps prevent bloat by splitting meals into smaller portions throughout the day." },
@@ -76,6 +79,7 @@ const breedMap: Record<string, BreedData> = {
     title: "Best Smart Devices for Multiple Cats 2026 — Multi-Cat Home Essentials",
     description: "Managing a multi-cat household? We've picked the best self-cleaning litter boxes, water fountains, and automatic feeders that actually work for 2+ cats.",
     breed: "Multiple Cat",
+    quickAnswer: "Multi-cat homes need the Litter-Robot 4 — the only self-cleaning box rated for up to 4 cats, with weight-based recognition to track each cat's health. Add a Petlibro Granary with dual-tray splitter for separate feeding, and one large water fountain per floor. Follow the N+1 rule: have one more box than cats. Separate feeding stations to prevent resource guarding.",
     recommendations: [
       { category: "Best Litter Box", productId: "litter-robot-4", reason: "The only self-cleaning box rated for up to 4 cats. Its large waste drawer handles the output of multiple cats for 5-7 days, and the weight-based cat recognition tells you which cat used the box — essential for multi-cat health monitoring." },
       { category: "Best Budget Litter Box", productId: "catlink-young", reason: "At $399, the CATLINK handles multiple cats at a lower price point. Individual cat weight recognition helps you track each cat's bathroom habits — early warning for UTIs or kidney issues that are common in multi-cat stress situations." },
@@ -93,6 +97,7 @@ const breedMap: Record<string, BreedData> = {
     title: "Best Smart Devices for Labrador Retrievers 2026 — GPS, Feeders & More",
     description: "Labs are America's most popular dog — food-obsessed, water-loving, and endlessly energetic. We've picked the best GPS trackers, smart feeders, and cameras that work for this iconic breed.",
     breed: "Labrador Retriever",
+    quickAnswer: "Labs are the #1 breed for obesity and love water, so two devices matter most: a precise portion-control feeder and a waterproof GPS tracker. Get the WOPET ($89, 10 meals/day scheduling) and the Tractive GPS LTE (waterproof, works in 170+ countries). Never free-feed a Lab — they lack the 'full' signal. Split meals into 3-4 portions and wait 1 hour after eating before heavy activity to reduce bloat risk.",
     recommendations: [
       { category: "Best GPS Tracker", productId: "tractive-gps", reason: "Labs will follow a scent for miles — and swim across a lake while doing it. The Tractive GPS LTE is waterproof, works in 170+ countries, and has a virtual fence to alert you the moment your Lab wanders too far. The activity monitor also tracks if your Lab is getting enough daily exercise." },
       { category: "Best Feeder", productId: "wopet-automatic", reason: "Labs are legendary over-eaters who will eat themselves into obesity. The WOPET's 6L hopper handles large portions, and 10 meals/day scheduling lets you split food into small, frequent meals — reducing the risk of bloat (GDV), which Labs are prone to." },
@@ -109,6 +114,7 @@ const breedMap: Record<string, BreedData> = {
     title: "Best Smart Devices for German Shepherds 2026 — Tech for Working Dogs",
     description: "German Shepherds are intelligent working dogs with high exercise needs and strong protective instincts. We've picked the best GPS trackers, smart feeders, and cameras for GSDs.",
     breed: "German Shepherd",
+    quickAnswer: "For German Shepherds — often trained for off-leash work in areas with spotty cell coverage — the Aorkuler GPS ($229, radio-based, no cell towers needed) is the top pick. Pair it with the PETKIT Fresh Element feeder (sensitive stomachs) and a eufy camera (no subscription) for this separation-anxiety-prone breed. GSDs are #2 on the bloat risk list: split meals into 3+ portions and use slow-feed bowls.",
     recommendations: [
       { category: "Best GPS Tracker", productId: "aorkuler-gps", reason: "GSDs are often trained for off-leash work, hiking, and protection — where cell coverage may be spotty. The Aorkuler's radio-based tracking works without cell towers and shows real-time direction and distance. The handheld controller is great for training sessions in remote areas." },
       { category: "Best Feeder", productId: "petkit-fresh-element", reason: "GSDs have sensitive stomachs and are prone to digestive issues. The PETKIT's rotary sealing system keeps kibble fresher longer, and the 4L capacity handles a large dog's meals. Precise portioning helps prevent bloat — a serious risk in deep-chested breeds like GSDs." },
@@ -125,6 +131,7 @@ const breedMap: Record<string, BreedData> = {
     title: "Best Smart Devices for Senior Cats 2026 — Health Monitoring & Comfort",
     description: "Senior cats (7+ years) need different things: easier access, health tracking, and quiet operation. We've picked the best smart devices designed with older cats in mind.",
     breed: "Senior Cat",
+    quickAnswer: "The single most important device for a senior cat is a water fountain — older cats are at high risk for kidney disease, and running water increases intake 30-50%. The Pioneer Pet Raindrop ($39, quiet, low-profile stainless steel) is ideal. Add a low-entry PetSafe ScoopFree litter box (arthritis-friendly) and a Petlibro Granary camera feeder to confirm your senior cat is eating — decreased appetite is often the first sign of illness.",
     recommendations: [
       { category: "Best Litter Box", productId: "petsafe-scoopfree", reason: "Senior cats may have arthritis or mobility issues making it hard to climb into tall litter boxes. The PetSafe ScoopFree has a low entry height, and the crystal litter system means fewer deep cleans — less stress for older cats. Disposable trays mean you never have to scrub." },
       { category: "Best Fountain", productId: "pioneer-pet-raindrop", reason: "Senior cats are prone to kidney disease and dehydration. The Pioneer Pet Raindrop's gentle, quiet water flow encourages drinking without scaring older cats. Stainless steel is hygienic and the low profile is easy for arthritic cats to reach. At $39 with 18,500+ reviews, it's proven and trusted." },
@@ -141,6 +148,7 @@ const breedMap: Record<string, BreedData> = {
     title: "Best Smart Devices for Small Dogs 2026 — Compact, Quiet & Safe",
     description: "Small dogs (under 20 lbs) need devices sized for their tiny bodies — not just mini versions of big-dog gear. We've picked the best compact feeders, fountains, and cameras for Chihuahuas, Yorkies, Pugs, and other small breeds.",
     breed: "Small Dog",
+    quickAnswer: "Small dogs (under 20 lbs) need devices sized for tiny bodies, not scaled-down big-dog gear. The DOGNESS Mini feeder ($99, 3.5L, dispenses portions as small as 1/8 cup) is the best pick. Add a whisper-quiet PETKIT Eversweet fountain (30dB, low drinking height) and an xpai 4K camera ($43, no subscription). Feed 3-4 micro-meals daily — a 10% overfeed for a Chihuahua is proportionally huge.",
     recommendations: [
       { category: "Best Feeder", productId: "dogness-mini", reason: "Small dogs need tiny, precise portions — most large feeders dispense portions that are too big. The DOGNESS Mini's 3.5L hopper and anti-clog design handle small kibble perfectly. The stainless steel bowl is hygienic and compact, fitting in small apartments." },
       { category: "Best Fountain", productId: "petkit-eversweet", reason: "Small dogs can be intimidated by large, noisy fountains. The PETKIT Eversweet runs at just 30dB (whisper-quiet) and has a low drinking height accessible to toy breeds. The 2L capacity is plenty for dogs under 20 lbs." },
@@ -159,12 +167,22 @@ const slug = Astro.params.slug || "best-feeder-for-french-bulldog";
 const data = breedMap[slug] || breedMap["best-feeder-for-french-bulldog"];
 ---
 
-<BaseLayout title={data.title} description={data.description} type="article">
+<BaseLayout title={data.title} description={data.description} type="article" publishDate="2026-05-20" modifiedDate="2026-07-09">
   <Breadcrumb crumbs={[{ label: "Breed-Specific", href: "/breed/" }, { label: data.breed }]} />
 
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{data.title}</h1>
+    <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
+      <span>Updated: <time datetime="2026-07-09">July 9, 2026</time></span>
+    </div>
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{data.description}</p>
+
+    {data.quickAnswer && (
+      <div class="mt-6 rounded-2xl border border-forest/20 bg-gradient-to-r from-forest/5 to-sage/10 p-5 md:p-6">
+        <p class="text-sm font-semibold uppercase tracking-wider text-bark-muted">Quick Answer</p>
+        <p class="mt-1 text-base leading-relaxed text-forest font-medium">{data.quickAnswer}</p>
+      </div>
+    )}
 
     <!-- Recommendations -->
     <section class="mt-10">
@@ -202,5 +220,34 @@ const data = breedMap[slug] || breedMap["best-feeder-for-french-bulldog"];
     </section>
 
     <FAQ items={data.faqs} />
+
+    {/* Explore More */}
+    {(() => {
+      const isCat = data.breed.toLowerCase().includes("cat");
+      const links: { label: string; href: string }[] = [];
+      if (isCat) {
+        links.push({ label: "Best Self-Cleaning Litter Boxes", href: "/best/self-cleaning-litter-boxes/" });
+        links.push({ label: "Best Stainless Steel Cat Fountains", href: "/best/stainless-steel-cat-fountains/" });
+        links.push({ label: "Automatic Feeder Buying Guide", href: "/guides/automatic-feeder-buying-guide/" });
+        links.push({ label: "Best Devices for Multiple Cats", href: "/breed/best-devices-for-multiple-cats/" });
+      } else {
+        links.push({ label: "Best GPS Trackers Without Monthly Fee", href: "/best/gps-trackers-no-monthly-fee/" });
+        links.push({ label: "Automatic Feeder Buying Guide", href: "/guides/automatic-feeder-buying-guide/" });
+        links.push({ label: "Best Pet Cameras Without Subscription", href: "/best/pet-cameras-no-subscription/" });
+        links.push({ label: "GPS Pet Tracker Buying Guide", href: "/guides/gps-pet-tracker-buying-guide/" });
+      }
+      return (
+        <div class="mt-8 rounded-xl border border-sage-dark/30 bg-cream/50 p-6">
+          <p class="text-sm font-bold uppercase tracking-wide text-bark-muted">Explore More</p>
+          <ul class="mt-3 grid gap-2 sm:grid-cols-2">
+            {links.map(l => (
+              <li><a href={l.href} class="text-forest underline decoration-sage-dark/50 underline-offset-2 hover:text-forest-dark">{l.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      );
+    })()}
+
+    <p class="mt-8 text-xs text-bark-muted/70 border-t border-sage-dark/20 pt-4">Written by <a href="/about/#author" class="underline decoration-sage-dark/50 underline-offset-2">Chengxian Yang</a>. Recommendations based on verified owner reviews, breed-specific health research, product specifications, and marketplace data as of July 2026. Individual pets vary — consult your veterinarian for health-specific guidance.</p>
   </article>
 </BaseLayout>
