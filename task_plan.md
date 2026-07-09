@@ -38,7 +38,7 @@
 | 周一 | 7/6 | ✅ GSC 周检 + GA4 周检 + Sitemap 确认 + Snapshot 3 + Pin 指标口径固化 | ✅ WOPET/Petlibro D3 已发 + Wave 2 联系方式已查 | 6/6 ✅，仅 Sprint 立项顺延 |
 | 周二 | 7/7 | ✅ 饮水机 phrasing map + GEO #6 作者页 + Petlibro fact layer（昨晚已做）+ Rich Results 6/6 | ✅ Guest Post Round 3 已发 + 外联 v2 入 CRM | 5/5 ✅ |
 | 周三 | 7/8 | ✅ 摄像头/GPS phrasing map + GEO #7 quickAnswer 4 篇新增（8/38，部分完成）+ feeder jamming（7/6 已做）+ canonical OK | ✅ Wave 1 D7 闭环 3/3 已发 + Aorkuler check-in + D16 试点模板入 CRM | 5/5 ✅（quickAnswer 部分） |
-| 周四 | 7/9 | **品种页 GEO 补齐（7 页：Schema 日期 + quickAnswer + 署名 + 来源脚注 + Explore More）** + 喂食器可靠性 `phrasing map` + LR4 compatibility 验证 + `"已抓取-未索引"`8 页质量加固（WOPET vs Petlibro fact layer 7/6 已做） | D19 外联 v2 改进 | ~3h |
+| 周四 | 7/9 | ✅ **品种页 GEO 补齐（7 页：Schema 日期 + quickAnswer + 署名 + 来源脚注 + Explore More）** + ✅ **喂食器可靠性 `phrasing map`** + ✅ **LR4 compatibility 验证** + ✅ **`"已抓取-未索引"`4/8 页质量加固（内链补全，余 4 需 GSC 确认）** | ✅ D19 外联 v2 改进（上一会话） | 4/4 ✅ |
 | 周五 | 7/10 | 猫砂盆 TCO 集群 `phrasing map` + **批量改动日** + 3 页 fact layer 改动统一提交 + 周报/度量日志更新 + Sprint 复盘 | WOPET/Petlibro D7 闭环 + 第 2 周复盘 | ~3.5h |
 
 ### Week 9 统一任务：GEO + VOC Fact Layer Sprint

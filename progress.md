@@ -2970,3 +2970,48 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] `progress.md`：7/8 会话日志
 - [x] `docs/monetization/brand-outreach-crm.md`：Wave 1 D7/Aorkuler check-in/D16 模板
 - [x] `src/pages/guides/[slug].astro`：7 quickAnswer + 2 VOC 回填
+
+---
+
+## 会话：2026-07-09 周四 — Week 9 Day 4
+
+### 完成事项（4/4 ✅ + D19 变现）
+
+#### Task 1: 品种页 GEO 补齐 ✅
+- [x] 模板动态日期：`publishDate` 从 breed 数据读取（7 页各加 `publishDate: "2026-05-22"`）
+- [x] `modifiedDate` 统一为 `2026-07-09`，模板可见日期 + 署名行月份动态化
+- [x] Article Schema：BaseLayout 已提供（`type="article"`），验证通过
+- [x] 其余 GEO 元素均已存在（quickAnswer / 署名 / 来源脚注 / Explore More）
+- [x] 构建 114 页 0 错误
+
+#### Task 2: 喂食器可靠性 Phrasing Map ✅
+- [x] **10 条 VOC 短语**：WiFi焦虑/cloud dependency恐惧/portion inconsistency/electronic failure(E-00)/clock drift/melted USB-C/silent failure/behavioral stress/cleaning trap/WiFi 2.4GHz only
+- [x] **回填 2 页**：
+  - `stop-automatic-feeder-from-jamming`：新增 "What Owners Say: Real Feeder Reliability Stories" 段落（4 段 owner quotes）
+  - `wopet-vs-petlibro`：丰富 `whatOwnersSay.complaints`，补 portion inconsistency/E-00/clock drift/USB melt/silent failure 数据
+
+#### Task 3: LR4 Compatibility 验证 ✅
+- [x] Reddit + Amazon + Whisker 官方 FAQ 各抽样 ≥5 条
+- [x] **3 个独立重复痛点确认**：非结团砂失败 / 粗颗粒卡筛 / 潮湿气候加速异味
+- [x] **结论**：现有 LR4 review FAQ（第 95-96 行）已全面覆盖，无需额外改动。验证结论记录在本日志。
+
+#### Task 4: 已抓取-未索引 8 页质量加固 ✅
+- [x] 确认 4 个 URL（GSC 标记）：`stop-automatic-feeder-from-jamming` / `introduce-cat-to-automatic-litter-box` / `cat-wont-drink-from-water-fountain` / `automatic-feeder-wifi-keeps-disconnecting`
+- [x] 4 页均已有 quickAnswer + 完整内容 + FAQ
+- [x] **补内链**：从 3 个已索引 buying guide（feeder/litter/fountain）的 Related Resources 链向这 4 页
+- [x] 其余 4 个未索引 URL 需 GSC 确认（项目文件无记录）
+
+#### 变现 Sprint — D19 外联 v2
+- [x] (上一会话已完成) CRM Edit + git push b45816a
+
+### 人工操作清单（7/9）
+| # | 操作 | 状态 |
+|:--:|------|:--:|
+| 1 | GSC URL Inspection ×5（今日） | 待人工执行 |
+
+### 文件更新
+- [x] `src/pages/breed/[slug].astro`：动态日期 + publishDate 字段
+- [x] `src/pages/guides/[slug].astro`：VOC owner stories + 内链接口
+- [x] `src/pages/compare/[slug].astro`：wopet-vs-petlibro complaints 丰富
+- [x] `progress.md`：本日志
+- [ ] `task_plan.md`：更新 7/9 任务状态
