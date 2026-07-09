@@ -3014,4 +3014,4 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] `src/pages/guides/[slug].astro`：VOC owner stories + 内链接口
 - [x] `src/pages/compare/[slug].astro`：wopet-vs-petlibro complaints 丰富
 - [x] `progress.md`：本日志
-- [ ] `task_plan.md`：更新 7/9 任务状态
+- [x] `task_plan.md`：更新 7/9 任务状态
