@@ -612,3 +612,30 @@ press@smartpetguide.net
 - 首次只提 free → $199，不提 $499+
 - Aorkuler 若问详情，先用此模板回复
 
+---
+
+## D19 外联 v2 复盘（7/9，基于 Wave 1 数据）
+
+### Wave 1 实测结果
+
+| 品牌 | 联系方式 | 回复 |
+|------|------|:--:|
+| Aorkuler | 邮箱直发（service@aorkuler.com） | ✅ 回复 + 要快照 |
+| KittySpout | 表单提交 | ❌ 零回复（已 D7 关闭） |
+| YEAPAW | 表单提交 | ❌ 零回复（已 D7 关闭） |
+| Elspet | 邮箱直发（help@elspet.com） | ❌ 零回复（已 D7 关闭） |
+
+### 核心发现
+
+1. **邮箱直发 >> 表单提交**：唯一回复来自邮箱直发（Aorkuler）。2 家表单投递全灭。表单大概率进了客服黑洞，触达不到营销/合作决策人。
+2. **样本太小不能下强结论**：4 家 1 回复（25%），但邮箱 vs 表单是 2:2 分组，邮箱组 1/2 回复、表单组 0/2。方向性提示明确但样本不足。
+3. **A 格式标题有效**：Aorkuler 回复的是 "3 things buyers are asking about..." 数据洞察型标题 → D0 继续用 A 格式。
+
+### v2 改进（Wave 2 及后续执行）
+
+- **优先找邮箱，避免表单**：Wave 2 的 Homerunpet（contact@homerunpet.com）用邮箱；CATLINK 只有表单，降低预期或找 LinkedIn/领英决策人邮箱。
+- **表单投递时在开头点名收件人**："Attn: Marketing / Partnerships team" —— 增加内部转发概率。
+- **D0 保持 A 格式**（数据洞察型标题），已验证有效。
+- **D3 跟进换角度**：不重复 D0 标题，用竞品盲区型（B 格式）。
+- **正式定型等 7/10 周复盘**：叠加 Wave 2（WOPET/Petlibro）D7 结果后再最终确认 v2 模板。
+
