@@ -64,7 +64,7 @@
 | 交付物 | 最低完成标准 | 优先级 |
 |---|---|---|
 | LR4 compatibility 小验证 | `Reddit + Amazon + 官方 FAQ` 至少各抽样 5 条；出现 3 个独立重复痛点才进入现有页 | P1 |
-| 4 个集群 phrasing map | 每个集群 5-10 条问题 / 反对意见 / 用户原话；每个集群至少回填 2 条到现有页 | P1 | 🟢 1/4：不锈钢饮水机 ✅ |
+| 4 个集群 phrasing map | 每个集群 5-10 条问题 / 反对意见 / 用户原话；每个集群至少回填 2 条到现有页 | P1 | ✅ 4/4：不锈钢饮水机 + 摄像头/GPS + 喂食器可靠性 + 猫砂盆 TCO |
 | 3 页 fact layer 审计 | Review / Compare / Guide 各 1 页，补 `前置结论 + 来源脚注 + 更新时间 + quickAnswer` | P1 | ✅ 完成（7/6 晚） |
 | crawler / Cloudflare 规则核对 | 确认当前是否走 Cloudflare，以及 AI crawler / Googlebot 规则现状 | P2 |
 | Sprint 复盘 | 列出改了哪些页面、补了哪些 FAQ / verdict / fact cues、哪些信号被降级 Watch | P1 |

@@ -1,0 +1,48 @@
+{
+  "description": "Per-page publishDate / modifiedDate registry. Templates read from here instead of hardcoded values. modifiedDate must reflect actual body content changes, not template-level blanket updates.",
+  "defaults": {
+    "guides": { "publishDate": "2026-05-20", "modifiedDate": "2026-06-03" },
+    "reviews": { "publishDate": "2026-05-20", "modifiedDate": "2026-06-03" },
+    "compare": { "publishDate": "2026-05-22", "modifiedDate": "2026-06-03" },
+    "breed": { "publishDate": "2026-05-22", "modifiedDate": "2026-06-03" },
+    "best": { "publishDate": "2026-05-20", "modifiedDate": "2026-06-03" }
+  },
+  "overrides": {
+    "guides": {
+      "are-self-cleaning-litter-boxes-worth-it": { "modifiedDate": "2026-07-10" },
+      "self-cleaning-litter-box-buying-guide": { "modifiedDate": "2026-07-10" },
+      "stop-automatic-feeder-from-jamming": { "modifiedDate": "2026-07-09" },
+      "introduce-cat-to-automatic-litter-box": { "modifiedDate": "2026-07-09" },
+      "cat-wont-drink-from-water-fountain": { "modifiedDate": "2026-07-09" },
+      "automatic-feeder-wifi-keeps-disconnecting": { "modifiedDate": "2026-07-09" },
+      "cat-breaking-into-automatic-feeder": { "modifiedDate": "2026-07-09" },
+      "automatic-feeder-buying-guide": { "modifiedDate": "2026-07-09" },
+      "smart-water-fountain-buying-guide": { "modifiedDate": "2026-07-09" },
+      "best-no-subscription-cameras": { "modifiedDate": "2026-07-08" },
+      "gps-pet-tracker-buying-guide": { "modifiedDate": "2026-07-08" },
+      "stainless-steel-cat-fountain-guide": { "modifiedDate": "2026-07-08" },
+      "stainless-steel-vs-plastic-fountains": { "modifiedDate": "2026-07-08" },
+      "pet-camera-buying-guide": { "modifiedDate": "2026-07-08" },
+      "smart-pet-devices-subscription-cost": { "modifiedDate": "2026-07-08" },
+      "how-to-clean-cat-water-fountain": { "modifiedDate": "2026-07-08" },
+      "security-camera-as-pet-camera": { "modifiedDate": "2026-07-08" }
+    },
+    "reviews": {
+      "petlibro-granary-review": { "modifiedDate": "2026-07-09" },
+      "wopet-automatic-feeder-review": { "modifiedDate": "2026-07-09" },
+      "litter-robot-4-review": { "modifiedDate": "2026-07-09" }
+    },
+    "compare": {
+      "wopet-vs-petlibro": { "modifiedDate": "2026-07-09" }
+    },
+    "breed": {
+      "best-feeder-for-french-bulldog": { "modifiedDate": "2026-07-09", "publishDate": "2026-05-22" },
+      "best-devices-for-golden-retrievers": { "modifiedDate": "2026-07-09", "publishDate": "2026-05-22" },
+      "best-devices-for-multiple-cats": { "modifiedDate": "2026-07-09", "publishDate": "2026-05-22" },
+      "best-devices-for-labrador-retrievers": { "modifiedDate": "2026-07-09", "publishDate": "2026-05-22" },
+      "best-devices-for-german-shepherds": { "modifiedDate": "2026-07-09", "publishDate": "2026-05-22" },
+      "best-devices-for-senior-cats": { "modifiedDate": "2026-07-09", "publishDate": "2026-05-22" },
+      "best-devices-for-small-dogs": { "modifiedDate": "2026-07-09", "publishDate": "2026-05-22" }
+    }
+  }
+}

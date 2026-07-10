@@ -431,16 +431,23 @@ const reviewMap: Record<string, ReviewData> = {
 const slug = Astro.params.slug || "litter-robot-4-review";
 const review = reviewMap[slug] || reviewMap["litter-robot-4-review"];
 const product = allProducts.get(review.productId);
+
+import datesRaw from "../../data/content-dates.json";
+const dates = datesRaw as any;
+const reviewDates = (dates.overrides?.reviews?.[slug]) || {};
+const pubDate = reviewDates.publishDate || dates.defaults.reviews.publishDate;
+const modDate = reviewDates.modifiedDate || dates.defaults.reviews.modifiedDate;
+const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 ---
 
-<BaseLayout title={review.title} description={review.description} type="article" publishDate="2026-05-20" modifiedDate="2026-07-10">
+<BaseLayout title={review.title} description={review.description} type="article" publishDate={pubDate} modifiedDate={modDate}>
   <Breadcrumb crumbs={[{ label: "Reviews", href: "/reviews/" }, { label: product?.name || review.title }]} />
 
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{review.title}</h1>
 
     <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
-      <span>Updated: <time datetime="2026-07-07">July 7, 2026</time></span>
+      <span>Updated: <time datetime={modDate}>{displayMod}</time></span>
       <span>10 min read</span>
       <span class="rounded-full bg-sage/70 px-2.5 py-0.5 text-xs font-medium text-forest">Advertiser Disclosure</span>
     </div>
@@ -687,8 +694,8 @@ const product = allProducts.get(review.productId);
       reviewRating: { "@type": "Rating", ratingValue: product.rating, bestRating: 5 }
     } : {}),
     author: { "@type": "Person", name: "Chengxian Yang", url: "https://smartpetguide.net/about/#author", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/", "https://www.wikidata.org/wiki/Q140290653"] },
-    datePublished: "2026-05-21",
-      dateModified: "2026-07-07",
+    datePublished: pubDate,
+    dateModified: modDate,
     publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/", sameAs: ["https://www.pinterest.com/muchengxian/", "https://medium.com/@muchengxian", "https://flipboard.com/@755g287", "https://www.wikidata.org/wiki/Q140290653"] },
   })} />
 </BaseLayout>

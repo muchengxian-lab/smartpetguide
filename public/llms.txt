@@ -1,6 +1,6 @@
 # SmartPetGuide
 
-> Research-backed reviews of smart pet devices. Based on verified owner data and real-world analysis. Last updated: July 3, 2026.
+> Research-backed reviews of smart pet devices. Based on verified owner data and real-world analysis. Last updated: July 11, 2026. 114 pages generated, 113 indexable sitemap URLs.
 
 ## About
 
@@ -64,7 +64,7 @@ SmartPetGuide provides honest, research-backed reviews of automatic pet feeders,
 - [Petlibro vs PETKIT](https://smartpetguide.net/compare/petlibro-vs-petkit/)
 - [Tractive vs No-Fee GPS](https://smartpetguide.net/compare/tractive-vs-nofee-gps/)
 
-### Guides (37)
+### Guides (42)
 - [Self-Cleaning Litter Box Buying Guide](https://smartpetguide.net/guides/self-cleaning-litter-box-buying-guide/)
 - [Automatic Feeder Buying Guide](https://smartpetguide.net/guides/automatic-feeder-buying-guide/)
 - [Smart Water Fountain Buying Guide](https://smartpetguide.net/guides/smart-water-fountain-buying-guide/)

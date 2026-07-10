@@ -172,8 +172,8 @@ const compareMap: Record<string, CompareData> = {
     skipIf: "You're on a tight budget or don't need a camera. The WOPET ($89) gives you more capacity (6L vs 3L), built-in battery backup, and proven reliability for $50 less. If you already have a separate pet camera, the Petlibro's camera is redundant.",
     bestAlternative: "<strong>PETKIT Fresh Element ($129)</strong> — rotary sealing keeps kibble fresher longer. No camera, but better food preservation if that's your priority. <strong>DOGNESS Mini ($99)</strong> — compact design with stainless steel bowl, best for small spaces.",
     whatOwnersSay: {
-      praise: "Petlibro owners consistently praise the camera+feeder combo: <em>\"I can finally stop worrying whether my cat got fed. The night vision shows her clearly eating at 3am.\"</em> WOPET owners love the capacity and value: <em>\"6L hopper means I fill it once every 2 weeks. Best $89 I've spent on my dogs.\"</em> Both feeders get high marks for portion consistency — most units dispense within 1-2g of the programmed amount.",
-      complaints: "Petlibro's WiFi setup is the #1 frustration — 2.4GHz only, mesh router users report 30-45 minute setup times. Owners consistently report portion inconsistency: <em>\"Set to 3 portions, got a dusting. Set to 4, my bowl overflowed.\"</em> The abstract 'P' units (no grams or cups) make calibration guesswork. Electronic failures spike around the 6-month mark — E-00/E-1 error codes, clock drift (one owner's feeder was 8 hours off), and in one alarming case, a melted USB-C power port. WOPET owners report occasional WiFi disconnections; some units develop jamming issues with large kibble after 6+ months. A minority of Petlibro users find the fixed camera angle limiting: <em>\"My cat eats from the side and I can barely see her face.\"</em> The silent failure risk is real for both: when cloud servers go down or WiFi drops, feeders that depend on cloud scheduling may skip meals without notification — the app shows 'completed' but nothing dispensed.",
+      praise: "Petlibro owners frequently highlight the camera+feeder combination as the key selling point — being able to visually confirm a pet ate provides peace of mind, and night vision captures clear footage even in dark rooms. WOPET owners emphasize the value proposition: the 6L hopper means less frequent refills, and the $89 price point is frequently described as a strong value for a reliable automatic feeder.",
+      complaints: "Petlibro uses 2.4GHz WiFi only, which can complicate setup on mesh networks that combine 2.4GHz and 5GHz bands under a single SSID. The portion system uses abstract units (labeled as portions, not grams or cups), and the same setting can dispense different amounts depending on kibble size and hopper fill level — we recommend weighing a few test portions on a kitchen scale before relying on scheduled feedings. Electronic issues noted in owner reports include E-00/E-1 error codes (motor or sensor faults), clock drift requiring factory reset, and rare instances of USB-C port overheating. WOPET owners note occasional WiFi disconnections and some units develop jam tendencies with kibble above the recommended size range after extended use. Petlibro's fixed-angle camera shows only the feeding area, not the surrounding room. Owners of both feeders should verify offline behavior before leaving pets unattended: cloud-dependent scheduling may not function during internet outages, and a battery backup is recommended.",
     },
   },
   "furbo-vs-petcube": {
@@ -435,15 +435,22 @@ const data = compareMap[slug] || compareMap["litter-robot-4-vs-leos-loo-too"];
 // Get products from products.json, or use inline data for generic comparisons
 const productA = data.productAId ? allProducts.get(data.productAId) : data.productA;
 const productB = data.productBId ? allProducts.get(data.productBId) : data.productB;
+
+import datesRaw from "../../data/content-dates.json";
+const dates = datesRaw as any;
+const compareDates = (dates.overrides?.compare?.[slug]) || {};
+const pubDate = compareDates.publishDate || dates.defaults.compare.publishDate;
+const modDate = compareDates.modifiedDate || dates.defaults.compare.modifiedDate;
+const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 ---
 
-<BaseLayout title={data.title} description={data.description} type="article" publishDate="2026-05-22" modifiedDate="2026-07-10">
+<BaseLayout title={data.title} description={data.description} type="article" publishDate={pubDate} modifiedDate={modDate}>
   <Breadcrumb crumbs={[{ label: "Compare", href: "/compare/" }, { label: productA.name + " vs " + productB.name }]} />
 
   <article>
     <h1 class="font-display text-3xl font-bold leading-tight text-forest md:text-4xl">{data.title}</h1>
     <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-bark-muted">
-      <span>Updated: <time datetime="2026-07-07">July 7, 2026</time></span>
+      <span>Updated: <time datetime={modDate}>{displayMod}</time></span>
     </div>
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{data.description}</p>
 

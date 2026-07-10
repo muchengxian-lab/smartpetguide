@@ -214,13 +214,13 @@
 - [x] Guest Post Round 3 5/5 已发
 - [x] D19 外联 v2 复盘（CRM + push）
 - [x] WOPET + Petlibro D3 跟进（7/6）
-- [ ] WOPET + Petlibro D7 闭环（7/10 人工）
+- [x] WOPET + Petlibro D7 闭环（7/10 人工）
 
 #### 文档 & 数据
 - [x] task_plan.md / progress.md 每日更新
 - [x] weekly-metrics-log.md Snapshot 4
-- [ ] Sprint 复盘（today）
-- [ ] GSC Sitemap 重提交（push 后人工）
+- [x] Sprint 复盘（7/10）
+- [x] GSC Sitemap 重提交（7/10 push 后）
 
 ### 本周人工操作
 

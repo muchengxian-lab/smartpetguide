@@ -160,9 +160,15 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
 
 const pageData = titleMap[slug] || titleMap["self-cleaning-litter-boxes"];
 const isLitterBox = slug.includes("litter");
+
+import datesRaw from "../../data/content-dates.json";
+const dates = datesRaw as any;
+const bestDates = (dates.overrides?.best?.[slug]) || {};
+const pubDate = bestDates.publishDate || dates.defaults.best.publishDate;
+const modDate = bestDates.modifiedDate || dates.defaults.best.modifiedDate;
 ---
 
-<BaseLayout title={pageData.title} description={pageData.description} type="article" publishDate="2026-05-20" modifiedDate="2026-06-03">
+<BaseLayout title={pageData.title} description={pageData.description} type="article" publishDate={pubDate} modifiedDate={modDate}>
   <Breadcrumb crumbs={[{ label: "Best Picks", href: "/best/" }, { label: pageData.title.replace(/^\d+\s/, "") }]} />
 
   <article>
