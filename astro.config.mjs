@@ -4,22 +4,18 @@ import sitemap from "@astrojs/sitemap";
 import { readFileSync } from "fs";
 
 const dateData = JSON.parse(readFileSync(new URL("./src/data/content-dates.json", import.meta.url), "utf-8"));
-const defaults = dateData.defaults || {};
-const overrides = dateData.overrides || {};
+const pages = dateData.pages || {};
 
 function getLastmod(url) {
-  // Extract type and slug from URL path: e.g. /guides/stop-automatic-feeder-from-jamming/ → type=guides, slug=stop-automatic-feeder-from-jamming
   const path = url.replace("https://smartpetguide.net/", "").replace(/\/$/, "");
-  if (!path) return undefined; // homepage
+  if (!path) return undefined;
   const parts = path.split("/");
   const type = parts[0];
   const slug = parts[parts.length - 1];
-  const typeOverrides = overrides[type] || {};
-  const typeDefaults = defaults[type] || {};
-  if (typeOverrides[slug]) {
-    return typeOverrides[slug].modifiedDate || typeDefaults.modifiedDate;
-  }
-  return typeDefaults.modifiedDate || undefined;
+  const typePages = pages[type] || {};
+  const entry = typePages[slug];
+  if (entry) return entry.modifiedDate || entry.publishDate;
+  return undefined;
 }
 
 export default defineConfig({

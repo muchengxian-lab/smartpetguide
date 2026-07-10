@@ -15,7 +15,7 @@ We analyze thousands of verified Amazon owner reviews and product specifications
 ### Self-Cleaning Litter Boxes
 - 7 products reviewed: Litter-Robot 5 ($799), Litter-Robot 4 ($699), Leo's Loo Too ($449), CATLINK Young Pro ($399), Elspet Pro ($349), PetSafe ScoopFree ($299), Amazon Basics ($209)
 - 3 Best lists: Main, Large Cats, Litter Boxes category
-- 5 Comparisons: LR5 vs LR4, LR5 vs Leo's Loo Too, LR5 vs PetSafe ScoopFree, LR4 vs Leo's Loo Too, LR4 vs PetSafe ScoopFree, LR5 vs Amazon Basics (3-year cost), Automatic vs Manual
+- 7 Comparisons: LR5 vs LR4, LR5 vs Leo's Loo Too, LR5 vs PetSafe ScoopFree, LR4 vs Leo's Loo Too, LR4 vs PetSafe ScoopFree, LR5 vs Amazon Basics (3-year cost), Automatic vs Manual
 - 3 Guides: Buying guide, Introduction guide, Deep clean guide
 
 ### Automatic Feeders

@@ -438,9 +438,9 @@ const productB = data.productBId ? allProducts.get(data.productBId) : data.produ
 
 import datesRaw from "../../data/content-dates.json";
 const dates = datesRaw as any;
-const compareDates = (dates.overrides?.compare?.[slug]) || {};
-const pubDate = compareDates.publishDate || dates.defaults.compare.publishDate;
-const modDate = compareDates.modifiedDate || dates.defaults.compare.modifiedDate;
+const compareDates = (dates.pages?.compare?.[slug]) || {};
+const pubDate = compareDates.publishDate || "2026-05-22";
+const modDate = compareDates.modifiedDate || compareDates.publishDate || "2026-05-22";
 const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 ---
 
