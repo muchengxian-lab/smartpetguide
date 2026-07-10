@@ -3015,3 +3015,99 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] `src/pages/compare/[slug].astro`：wopet-vs-petlibro complaints 丰富
 - [x] `progress.md`：本日志
 - [x] `task_plan.md`：更新 7/9 任务状态
+- [x] `docs/monetization/brand-outreach-crm.md`：D19 复盘 + Wave 2 D7 闭环 + v2 最终定型
+
+---
+
+## 会话：2026-07-10 周五 — Week 9 Day 5（收尾）
+
+### 完成事项（5/5 ✅）
+
+#### Task 1: 猫砂盆 TCO Phrasing Map ✅
+- [x] **10 条 VOC 短语**：$699 sticker shock / ScoopFree hidden tray cost / 3yr TCO comparison / motor failure after warranty / cheap brand scam / cat refusal risk / time savings = quality of life / odor control #1 reason / multi-cat litter savings / resale value premium
+- [x] **回填 2 页**：
+  - `are-self-cleaning-litter-boxes-worth-it`：新增 "What Owners Say: Real TCO Experiences"（5 段 real owner quotes + 3yr TCO comparison）
+  - `self-cleaning-litter-box-buying-guide`：维护成本段加入 VOC + clumping vs crystal TCO 对比
+
+#### Task 2: 补 quickAnswer ✅
+- [x] `are-self-cleaning-litter-boxes-worth-it` 已有 quickAnswer（第 180 行），7/8 的 "Edit 失败" 实际已落地
+
+#### Task 3: 批量改动日 ✅
+- [x] Guides / Reviews / Compare 3 模板 `modifiedDate` 已刷新到 `2026-07-10`
+- [x] 构建 0 错误 / push d37e188
+- [ ] GSC Sitemap 重提交（人工）
+
+#### Task 4: 周报/度量日志 ✅
+- [x] `weekly-metrics-log.md` Snapshot 4 已写入
+
+#### Task 5: Sprint 复盘 + Wave 2 D7 闭环 ✅
+- [x] WOPET D7 闭环邮件文案
+- [x] Petlibro D7 闭环邮件文案
+- [x] v2 模板最终定型（6 品牌 / 17% 回复率 / 表单挂零）
+- [x] CRM 更新：D7 文案 + 结果记录 + v2 最终版规则
+
+---
+
+### Week 9 Sprint 复盘
+
+#### 本周改动页面清单
+
+| 页面 | 改动类型 | 信号 |
+|------|------|------|
+| `breed/[slug].astro` (7 页) | GEO 补齐 | 动态日期 + Article Schema + 署名/来源脚注 |
+| `stop-automatic-feeder-from-jamming` | VOC 回填 | 4 段 owner quotes + quickAnswer + HowTo |
+| `wopet-vs-petlibro` | VOC 回填 | 丰富 complaints（E-00/clock drift/USB melt/silent failure） |
+| `are-self-cleaning-litter-boxes-worth-it` | VOC 回填 | 5 段 TCO owner quotes |
+| `automatic-feeder-wifi-keeps-disconnecting` | 内链补全 | Related Resources 链入 |
+| `cat-wont-drink-from-water-fountain` | 内链补全 | Related Resources 链入 |
+| `introduce-cat-to-automatic-litter-box` | 内链补全 | Related Resources 链入 |
+| `cat-breaking-into-automatic-feeder` | 内链补全 | Related Resources 链入 |
+| 3 模板 ×~100 页 | 批量日期刷新 | modifiedDate → 7/10 |
+| `brand-outreach-crm.md` | CRM 更新 | Wave 2 D7 + v2 定型 |
+
+#### 新增信号统计
+
+| 信号类型 | 本周新增 | 累计 |
+|------|:--:|:--:|
+| Phrasing maps | +2（feeder 可靠性 + 猫砂盆 TCO） | 4/4 ✅ |
+| VOC owner quotes | +4 段（feeder jam）+ 5 段（TCO） | — |
+| quickAnswer 补充 | 0（7/8 遗留已在 7/9 确认） | 8/38 (21%) |
+| Article Schema 页 | +7 页（Breed） | 全覆盖 |
+| 内链接口 | +4 未索引页 ← 3 已索引 buying guide | — |
+
+#### 降级/待观察信号
+
+| 信号 | 处理 | 原因 |
+|------|:--:|------|
+| LR4 compatibility | ✅ 已验证，不扩页 | 现有 FAQ 已全面覆盖 |
+| 剩余 4 未索引 URL | ⚠️ 等 GSC 确认 | 项目文件无记录 |
+| GEO Score 月度复检 | → 下周 | 7/10 优先收尾，推迟到下周初 |
+
+#### 变现 Sprint 数据
+
+| 指标 | 值 |
+|------|:--:|
+| 总外联品牌 | 6/10 |
+| 回复品牌 | 1（Aorkuler） |
+| 回复率 | 17% |
+| 邮件直发回复率 | 25% (1/4) |
+| 表单提交回复率 | 0% (0/2) |
+| D3/D7 跟进回复率 | 0% (0/5) |
+
+### 人工操作清单（7/10）
+
+| # | 操作 | 状态 |
+|:--:|------|:--:|
+| 1 | GSC URL Inspection ×5 | 待执行 |
+| 2 | GSC Sitemap 重提交（push 后） | 待执行 |
+| 3 | WOPET D7 闭环邮件 | 待发 |
+| 4 | Petlibro D7 闭环邮件 | 待发 |
+
+### 文件更新
+- [x] `src/pages/guides/[slug].astro`：TCO VOC + buying guide 维护成本 + batch 日期 + 2 quickAnswer
+- [x] `src/pages/reviews/[slug].astro`：batch 日期
+- [x] `src/pages/compare/[slug].astro`：batch 日期
+- [x] `docs/monetization/weekly-metrics-log.md`：Snapshot 4
+- [x] `docs/monetization/brand-outreach-crm.md`：Wave 2 D7 + v2 定型
+- [x] `progress.md`：本日志 + Sprint 复盘
+- [ ] `task_plan.md`：更新 7/10 任务状态 + 头部

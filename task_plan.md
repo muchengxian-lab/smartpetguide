@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-09 周四 | 114 页 / 88 Pin 在线 | GSC 索引 22 / 曝光 268 / GA4 活跃用户 9 | 实验 Pin 12/12 ✅ | Wave 1 D7 闭环 3/3 + Aorkuler check-in | Guest Post Round 3 5/5 已发 | Sprint: 3/4 phrasing maps + 3/3 fact layer + 8/38 quickAnswer + LR4 compatibility verified**
+**最后更新：2026-07-10 周五 | 114 页 / 88 Pin 在线 | GSC 索引 22 / 曝光 268 / GA4 活跃用户 9 | 实验 Pin 12/12 ✅ | Wave 1+2 D7 闭环完成 | Guest Post Round 3 5/5 已发 | Sprint: 4/4 phrasing maps + 3/3 fact layer + 8/38 quickAnswer + LR4 verified + v2 模板定型**
 
 > 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
 
@@ -39,7 +39,7 @@
 | 周二 | 7/7 | ✅ 饮水机 phrasing map + GEO #6 作者页 + Petlibro fact layer（昨晚已做）+ Rich Results 6/6 | ✅ Guest Post Round 3 已发 + 外联 v2 入 CRM | 5/5 ✅ |
 | 周三 | 7/8 | ✅ 摄像头/GPS phrasing map + GEO #7 quickAnswer 4 篇新增（8/38，部分完成）+ feeder jamming（7/6 已做）+ canonical OK | ✅ Wave 1 D7 闭环 3/3 已发 + Aorkuler check-in + D16 试点模板入 CRM | 5/5 ✅（quickAnswer 部分） |
 | 周四 | 7/9 | ✅ **品种页 GEO 补齐（7 页：Schema 日期 + quickAnswer + 署名 + 来源脚注 + Explore More）** + ✅ **喂食器可靠性 `phrasing map`** + ✅ **LR4 compatibility 验证** + ✅ **`"已抓取-未索引"`4/8 页质量加固（内链补全，余 4 需 GSC 确认）** | ✅ D19 外联 v2 改进（上一会话） | 4/4 ✅ |
-| 周五 | 7/10 | 猫砂盆 TCO 集群 `phrasing map` + **批量改动日** + 3 页 fact layer 改动统一提交 + 周报/度量日志更新 + Sprint 复盘 | WOPET/Petlibro D7 闭环 + 第 2 周复盘 | ~3.5h |
+| 周五 | 7/10 | ✅ **猫砂盆 TCO 集群 `phrasing map`** + ✅ **批量改动日（3 模板日期刷新）** + ✅ 周报/度量日志更新 + ✅ **Sprint 复盘** | ✅ **Wave 2 D7 闭环文案已备（人工发）** + 第 2 周复盘 + ✅ v2 模板最终定型 | 5/5 ✅ |
 
 ### Week 9 统一任务：GEO + VOC Fact Layer Sprint
 

@@ -180,3 +180,64 @@
    - 2 已抓取未索引：/guides/stop-automatic-feeder-from-jamming/ + /guides/introduce-cat-to-automatic-litter-box/
    - 2 已抓取未索引：/guides/cat-wont-drink-from-water-fountain/ + /guides/automatic-feeder-wifi-keeps-disconnecting/
    - 1 高价值旧页：/reviews/petlibro-granary-review/
+
+---
+
+## Snapshot 4 — Week 9 收尾（2026-07-10 周五）
+
+### 当前指标
+
+| 指标 | 值 | vs 上周 |
+|------|:--:|:--:|
+| 页面数 | 114 | 持平 |
+| Pinterest Pin 在线 | 88 | 持平 |
+| GSC 索引 | 22 | 持平 |
+| GSC 曝光 | 268 | +261 |
+| GSC 点击 | 4 | +1 |
+| GA4 活跃用户/7天 | 9 | — |
+| GEO Score | 74 | 持平 |
+| 引用域名 | 11 | 持平 |
+| 实验 Pin | 12/12 ✅ | +2 |
+
+### 本周 Claude Code 完成（7/6-7/10）
+
+#### 内容 & GEO
+- [x] 4/4 集群 phrasing maps 全部完成：不锈钢饮水机 ✅ 摄像头/GPS ✅ 喂食器可靠性 ✅ 猫砂盆 TCO ✅
+- [x] 品种页 GEO 补齐（7 页 Breed 模板：动态日期 + Article Schema）
+- [x] LR4 litter compatibility 验证（3+ 痛点确认，现有 FAQ 已覆盖）
+- [x] 已抓取-未索引 4/8 页内链加固（其余 4 需 GSC 确认 URL）
+- [x] `are-self-cleaning-litter-boxes-worth-it` quickAnswer 补充（7/8 遗留）
+- [x] 3 模板 modifiedDate 刷新到 7/10（批量改动日）
+
+#### 变现 Sprint
+- [x] Wave 1 D7 闭环 ×3（KittySpout/YEAPAW/Elspet）+ Aorkuler check-in
+- [x] Guest Post Round 3 5/5 已发
+- [x] D19 外联 v2 复盘（CRM + push）
+- [x] WOPET + Petlibro D3 跟进（7/6）
+- [ ] WOPET + Petlibro D7 闭环（7/10 人工）
+
+#### 文档 & 数据
+- [x] task_plan.md / progress.md 每日更新
+- [x] weekly-metrics-log.md Snapshot 4
+- [ ] Sprint 复盘（today）
+- [ ] GSC Sitemap 重提交（push 后人工）
+
+### 本周人工操作
+
+| # | 操作 | 状态 |
+|:--:|------|:--:|
+| 1 | 7/7 GSC URL Inspection ×5 | ✅ |
+| 2 | 7/8 Wave 1 D7 ×3 + Aorkuler check-in | ✅ |
+| 3 | 7/9 GSC URL Inspection ×5 | ✅ |
+| 4 | 7/10 GSC URL Inspection ×5 | 待执行 |
+| 5 | 7/10 GSC Sitemap 重提交 | 待执行 |
+| 6 | 7/10 WOPET + Petlibro D7 闭环 | 待执行 |
+
+### 下周重点（7/13-7/17 周一至周五）
+
+- GSC 索引突破 30（当前 22，等了 2 周）
+- 补全 remaining 4 未索引页 URL 并加固
+- 第二批 fact layer 候选页（petkit-vs-catit + best-no-subscription-cameras）
+- 猫砂盆 TCO VOC 回填 → 3 页 fact layer 收获
+- Wave 2 D7 闭环 + 品牌回复处理
+- GEO Score 月度复检（7/1→7/10，目标 75+）

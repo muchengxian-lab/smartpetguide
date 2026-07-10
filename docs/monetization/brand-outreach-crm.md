@@ -639,3 +639,69 @@ press@smartpetguide.net
 - **D3 跟进换角度**：不重复 D0 标题，用竞品盲区型（B 格式）。
 - **正式定型等 7/10 周复盘**：叠加 Wave 2（WOPET/Petlibro）D7 结果后再最终确认 v2 模板。
 
+---
+
+## Wave 2 D7 闭环（7/10 发送）
+
+> 发件地址：`press@smartpetguide.net`
+
+### WOPET D7 — support@wopet.com
+
+**Subject:** Re: 3 things buyers are asking about the WOPET feeder
+
+```
+Hi WOPET team,
+
+One last note — I know inboxes get busy and timing isn't always right.
+
+If marketing or partnerships isn't the best contact for this kind of research collaboration, could you point me toward the right person? Otherwise I'll assume the timing isn't ideal and won't clutter your inbox further.
+
+Either way, appreciate your time — and if anything changes down the road, the free visibility snapshot offer remains open.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```
+
+### Petlibro D7 — support@petlibro.com
+
+**Subject:** Re: 3 things buyers are asking about the Petlibro Granary
+
+```
+Hi Petlibro team,
+
+One last note — just checking whether marketing or partnerships might be a better contact for this kind of research collaboration.
+
+If so, I'd appreciate a point in the right direction. If the timing isn't right, no worries — I'll assume that's the case and won't follow up further.
+
+Either way, the free visibility snapshot offer stays open if anything changes down the road.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```
+
+### Wave 2 结果记录（7/10）
+
+| 品牌 | D0 | D3 | D7 | 结果 |
+|------|:--:|:--:|:--:|------|
+| WOPET | 7/3 | 7/6 | 7/10 | 零回复，关闭 |
+| Petlibro | 7/3 | 7/6 | 7/10 | 零回复，关闭 |
+| Homerunpet | — | — | — | 未发（待查联系方式） |
+| CATLINK | — | — | — | 未发（仅表单，待找邮箱） |
+
+### v2 模板最终定型（基于 Wave 1+2 全部数据）
+
+**总样本 6 品牌**：Aorkuler ✅ / WOPET ❌ / Petlibro ❌ / KittySpout ❌ / YEAPAW ❌ / Elspet ❌
+
+- **回复率 1/6 (17%)** — 只有邮箱直发的 Aorkuler 回复了
+- **邮箱直发 1/4 (25%)** vs **表单提交 0/2 (0%)** — 方向明确但样本小
+- **D3/D7 跟进 0/5** — 未回复的品牌在所有跟进中均无反应
+
+**v2 最终版**：
+1. D0 用 A 格式（数据洞察型标题）→ 邮箱直发优先
+2. 表单提交仅在找不到邮箱时使用，且开头加 "Attn: Marketing / Partnerships team"
+3. D3 跟进用 B 格式（竞品盲区型），只发一次
+4. D7 闭环不发 —— 已回复的品牌发 check-in，未回复的不再打扰
+5. 下一批品牌：Homerunpet (contact@homerunpet.com) + PETKIT + Catit
+
