@@ -3098,10 +3098,10 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 
 | # | 操作 | 状态 |
 |:--:|------|:--:|
-| 1 | GSC URL Inspection ×5 | 待执行 |
-| 2 | GSC Sitemap 重提交（push 后） | 待执行 |
-| 3 | WOPET D7 闭环邮件 | 待发 |
-| 4 | Petlibro D7 闭环邮件 | 待发 |
+| 1 | GSC URL Inspection ×5 | ✅ 已提交 |
+| 2 | GSC Sitemap 重提交（push 后） | ✅ 已重提 |
+| 3 | WOPET D7 闭环邮件 | ✅ 已发 |
+| 4 | Petlibro D7 闭环邮件 | ✅ 已发 |
 
 ### 文件更新
 - [x] `src/pages/guides/[slug].astro`：TCO VOC + buying guide 维护成本 + batch 日期 + 2 quickAnswer

@@ -229,9 +229,9 @@
 | 1 | 7/7 GSC URL Inspection ×5 | ✅ |
 | 2 | 7/8 Wave 1 D7 ×3 + Aorkuler check-in | ✅ |
 | 3 | 7/9 GSC URL Inspection ×5 | ✅ |
-| 4 | 7/10 GSC URL Inspection ×5 | 待执行 |
-| 5 | 7/10 GSC Sitemap 重提交 | 待执行 |
-| 6 | 7/10 WOPET + Petlibro D7 闭环 | 待执行 |
+| 4 | 7/10 GSC URL Inspection ×5 | ✅ 已提交 |
+| 5 | 7/10 GSC Sitemap 重提交 | ✅ 已重提 |
+| 6 | 7/10 WOPET + Petlibro D7 闭环 | ✅ 已发 |
 
 ### 下周重点（7/13-7/17 周一至周五）
 
