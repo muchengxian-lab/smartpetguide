@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "validate:dates": "node scripts/validate-content-dates.mjs",
+    "verify": "npm run build && npm run validate:dates"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

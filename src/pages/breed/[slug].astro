@@ -172,10 +172,15 @@ const breedMap: Record<string, BreedData> = {
 
 const slug = Astro.params.slug || "best-feeder-for-french-bulldog";
 const data = breedMap[slug] || breedMap["best-feeder-for-french-bulldog"];
-const publishDate = (data as any).publishDate || "2026-05-22";
-const modifiedDate = "2026-07-09";
+
+import datesRaw from "../../data/content-dates.json";
+const dates = datesRaw as any;
+const breedDates = dates.pages?.breed?.[slug];
+if (!breedDates) throw new Error(`Missing content date registry entry: breed/${slug}`);
+const publishDate = breedDates.publishDate;
+const modifiedDate = breedDates.modifiedDate;
 const monthYear = "July 2026";
-const displayDate = "July 9, 2026";
+const displayDate = new Date(modifiedDate + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 ---
 
 <BaseLayout title={data.title} description={data.description} type="article" publishDate={publishDate} modifiedDate={modifiedDate}>
