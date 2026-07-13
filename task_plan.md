@@ -1,8 +1,10 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-10 周五 | 114 页 / 88 Pin 在线 | GSC 索引 22 / 曝光 268 / GA4 活跃用户 9 | 实验 Pin 12/12 ✅ | Wave 1+2 D7 闭环完成 | Guest Post Round 3 5/5 已发 | Sprint: 4/4 phrasing maps + 3/3 fact layer + 8/38 quickAnswer + LR4 verified + v2 模板定型**
+**最后更新：2026-07-13 周一 | Snapshot 5 基线（7/13 实测）：114 页 / Pinterest 1,423 月浏览(出站0) / GSC 索引 22 / 曝光 282 / 点击 4 / CTR 1.4% / 排名 35 / GA4 29 活跃(21/29 Singapore) / 引用域名 12(Semrush，待核验) / Authority Score 2 | Brand Outreach 1/6 回复 | Guest Post Round 3 5/5 已发 | Month 2 战略已建立 | 已抓取未索引 8 页全部确认处置**
 
-> 核心策略：从"产出页面"切换到"获得分发"。继续 5-7 篇/周，但 40-50% 时间转向外链、GSC 反馈、Pinterest 出站实验、GA4 数据治理和高价值页面复用。
+> 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 10 默认不扩页；35-40% 时间用于外链/编辑型分发，25-30% 用于 GSC 与现有页加固，20-25% 用于战略 GEO/VOC 回填，Pinterest 只做低成本维护。
+
+> 月度战略：`docs/month-2-strategy-2026-07-13-to-2026-08-09.md`。本文件按周滚动拆解；除非命中战略触发条件，不在周中改变月度方向。
 
 ## 📋 两套任务体系协调
 
@@ -10,7 +12,7 @@
 
 ### 日期防呆规则（Claude Code 必读）
 
-> 当前校准点：**2026-07-03 是周五**。下周工作周为 **2026-07-06 周一 → 2026-07-10 周五**。
+> 当前校准点：**2026-07-13 是周一**。当前工作周为 **2026-07-13 周一 → 2026-07-17 周五**。
 
 1. 任何涉及"今天/明天/下周/周五"的任务，先在终端运行 `Get-Date -Format "yyyy-MM-dd dddd"`，以系统日期为准，不凭模型记忆推断。
 2. 记录排期时必须写绝对日期 + 星期；如果用户给了相对日期，先转换为绝对日期。
@@ -18,7 +20,8 @@
 
 | 体系 | 文件 | 角色 | 节奏 |
 |------|------|------|------|
-| **Week 8 内容+分发** | `task_plan.md`（本文件） | 日常生产引擎 | 每天 ~2-3h，周二至周五 |
+| **Week 10 索引+权威+战略 GEO** | `task_plan.md`（本文件） | 日常执行引擎 | 每天 ~2-3h，周一至周五 |
+| **Month 2 四周战略** | `docs/month-2-strategy-2026-07-13-to-2026-08-09.md` | 目标、资源比例、触发条件 | 7/13-8/9；每周日复盘，不按天写死 |
 | **30 天变现 Sprint** | `docs/monetization/30-day-schedule.md` | 商业验证轨道 | D1-D30，与 Week 排班协调 |
 
 ### 本周交叉排班（6/30-7/3，按 2026 日历校正）
@@ -40,6 +43,66 @@
 | 周三 | 7/8 | ✅ 摄像头/GPS phrasing map + GEO #7 quickAnswer 4 篇新增（8/38，部分完成）+ feeder jamming（7/6 已做）+ canonical OK | ✅ Wave 1 D7 闭环 3/3 已发 + Aorkuler check-in + D16 试点模板入 CRM | 5/5 ✅（quickAnswer 部分） |
 | 周四 | 7/9 | ✅ **品种页 GEO 补齐（7 页：Schema 日期 + quickAnswer + 署名 + 来源脚注 + Explore More）** + ✅ **喂食器可靠性 `phrasing map`** + ✅ **LR4 compatibility 验证** + ✅ **`"已抓取-未索引"`4/8 页质量加固（内链补全，余 4 需 GSC 确认）** | ✅ D19 外联 v2 改进（上一会话） | 4/4 ✅ |
 | 周五 | 7/10 | ✅ **猫砂盆 TCO 集群 `phrasing map`** + ✅ **批量改动日（3 模板日期刷新）** + ✅ 周报/度量日志更新 + ✅ **Sprint 复盘** | ✅ **Wave 2 D7 闭环文案已备（人工发）** + 第 2 周复盘 + ✅ v2 模板最终定型 | 5/5 ✅ |
+
+### Week 9 复盘（7/6-7/12）
+
+| 维度 | 计划结果 | 实际结果 | 结论 |
+|------|------|------|------|
+| GEO / VOC | 4 张 phrasing map + 3 页 fact layer + LR4 验证 | 4/4、3/3、LR4 verified；`quickAnswer` Git 校准为 13/38 | Sprint 完成；转入现有页审计，不再开技术 GEO 冲刺 |
+| 索引 | 加固 8 个已抓取未索引页 | 已确认并加固 4/8；剩余 4 个 URL 未确认 | Week 10 P0 闭环 |
+| 外链 / Brand | Guest Post Round 3 + Wave 1/2 跟进 | Guest Post 5/5 已发；品牌 1/6 回复；引用域名仍 11 | 活动完成但结果未增长，需提高编辑型外链强度 |
+| Pinterest | 完成 12 个实验 Pin | 12/12；出站点击仍 0 | 停止铺量，只保留指标维护 |
+| 数据 / 转化 | GSC、GA4 周检 | 索引 22、曝光 268、点击 4；affiliate/outbound 仍 0 | 下周先刷新数据，再按页面信号行动 |
+| 自动化 | 日报、VOC、周报、知识同步、健康检查 | W28 VOC 165 条；高置信度仍是 feeder WiFi/app/offline reliability | 信号支持现有页回填，不支持新增泛题材 |
+
+**本周未闭环 / 顺延**
+
+1. ~~在 GSC 确认剩余 4 个 `已抓取-未索引` URL~~ → **7/13 已闭环**：8/8 URL 已确认并分类（3 等待+2 加固+2 等301+1 商业页），另有 wifi-disconnecting 已入索引。Week 10 完成其中 2 个待加固页面即可。
+2. 项目当前汇总中的 `quickAnswer 8/38` 漂移已在本次复盘修正为 Git 已验证的 `13/38`；历史 7/8 日志保留当时值。
+3. `crawler / Cloudflare` 核对未做；降级为一次性 P2 收口，不作为持续 GEO 工作。
+4. GEO 月度综合复检未做；下周只做一次综合复检，避免重复技术评分。
+5. Guest Post Round 3 尚无回复/落链结果；7/14 进入 7 天跟进窗口。
+6. `findings.md`、`weekly-report.md` 已陈旧；本次复盘同步更新。
+7. `date-trace.txt` 仍为未跟踪文件；下周确认用途后再决定保留或移除，不自动处理。
+
+### Week 10 排班（7/13-7/17）
+
+| 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
+|:--:|------|------|------|------|
+| 周一 | 7/13 | ✅ 刷新 GSC/GA4/Pinterest/引用域名基线；确认全部 8 个未索引 URL（3+2+2+1=8 分类完成）；同步文档口径 | — | ✅ Snapshot 5 实测，8/8 URL 已确认分类，wifi-disconnecting 已入索引（不计入 8），CRM D20 完成，GSC URL Inspection ×5 人工已提交 |
+| 周二 | 7/14 | 3 页 `identity/source/date/quickAnswer/answerability` 审计；把 W28 高置信度 feeder reliability 信号回填缺口页 | Guest Post Round 3 5/5 跟进 | 1 Review + 1 Compare + 1 Guide 审计表；只改有证据缺口 |
+| 周三 | 7/15 | 2-4 个未索引页质量/内链加固；GSC URL Inspection ×5 | Aorkuler 最后一次轻量 check-in（仅无回复时）；Homerunpet email-first v2 小试点 | 未索引页有页面级记录；不扩 10 品牌 CRM |
+| 周四 | 7/16 | 加固现有可链接资产：优先 `pet-tech-statistics` / 3-year TCO 数据与来源层 | 新找 5 个高相关编辑型/资源页目标；排除目录、公开售链站 | 1 个可外联资产 + 5 个合格目标 |
+| 周五 | 7/17 | 批量真实改动、build、push、必要时 sitemap、GSC/GA4 周快照 | 复盘外链回复、品牌回复、索引变化；决定 Week 11 是否继续同权重 | Week 10 周报 + Continue/Adjust/Stop |
+
+**Week 10 固定动作**
+
+- 每次 Claude Code 开工先读 `docs/claude-execution-guardrails.md`，按其中的事实、日期、外联和收工规则执行。
+- 周一至周五：GSC URL Inspection ×5，分配为 3 个未索引/近期加固页 + 2 个已有曝光的高价值页。
+- 周一：确认 `date-trace.txt` 用途；不明确时保持未跟踪，不自动删除。
+- 周五：用 30 分钟完成一次 GEO 综合复检 + crawler/Cloudflare 一次性核对；只记录综合缺口，不再拆技术任务。
+- 仅在发生真实页面改动或 URL 变化后重提 sitemap；不为了制造抓取信号只刷新日期。
+
+### Week 10 成功标准
+
+| 指标 | 当前基线 | 周目标 | 说明 |
+|------|:--:|:--:|------|
+| 已抓取未索引 URL | 8/8 已确认并分类（3+2+2+1=8） | 完成其中 2 个待加固页面；wifi-disconnecting 已入索引单独记录 | 领先指标，可控 |
+| GSC 索引 | 22 | 观察目标 26-30 | 结果指标，不为达标而批量扩页 |
+| 3 页战略 GEO 审计 | 0/3（W28 新口径） | 3/3 | 看复述稳定性与事实层，不看单次 AI 排名 |
+| 外链分发 | Guest Post 5 封已发 / 引用域名 11 | 跟进 5/5 + 新目标 5 个；争取 1 个回复或落链 | 不把目录/Profile 当主要成果 |
+| Brand Outreach | 1/6 回复 | 只跑 1 个 email-first v2 小试点 + Aorkuler 收口 | 先验证触点，不扩名单 |
+| 新页面 | 114 页 | 默认 0；强信号触发时最多 2 页 | 优先消化现有资产 |
+| Pinterest | 出站 0 | 只观察，不新增 Pin 配额 | 出站未破零前不恢复铺量 |
+
+### 后续 3-4 周持续节奏
+
+- 每周处理 2-4 个现有高价值页或未索引页；新内容保持 0-2 篇、由 GSC/VOC 触发。
+- 每周固定 3-5 小时外链/PR：编辑型投稿、资源页、记者需求、可链接数据资产；目标每月新增 2-5 个相关引用域名。
+- GEO 保留为现有页的 `identity + source + date + answerability` 审计；技术存活检查周度 5 分钟，综合评分月度一次。
+- Brand Outreach 继续 email-first 小样本实验；每批最多 3 个品牌，根据回复再扩。
+- Pinterest 保持周度 10-20 分钟维护；出站点击破 0 后再讨论恢复发布。
+- 每周日继续消费 AI Radar、L2 VOC、Weekly Review、Knowledge Health 和 Dashboard 信号，再决定下一周权重。
 
 ### Week 9 统一任务：GEO + VOC Fact Layer Sprint
 
@@ -66,7 +129,7 @@
 | LR4 compatibility 小验证 | `Reddit + Amazon + 官方 FAQ` 至少各抽样 5 条；出现 3 个独立重复痛点才进入现有页 | P1 |
 | 4 个集群 phrasing map | 每个集群 5-10 条问题 / 反对意见 / 用户原话；每个集群至少回填 2 条到现有页 | P1 | ✅ 4/4：不锈钢饮水机 + 摄像头/GPS + 喂食器可靠性 + 猫砂盆 TCO |
 | 3 页 fact layer 审计 | Review / Compare / Guide 各 1 页，补 `前置结论 + 来源脚注 + 更新时间 + quickAnswer` | P1 | ✅ 完成（7/6 晚） |
-| crawler / Cloudflare 规则核对 | 确认当前是否走 Cloudflare，以及 AI crawler / Googlebot 规则现状 | P2 |
+| crawler / Cloudflare 规则核对 | 确认当前是否走 Cloudflare，以及 AI crawler / Googlebot 规则现状；Week 9 未做，顺延为一次性 P2 收口 | P2 |
 | Sprint 复盘 | 列出改了哪些页面、补了哪些 FAQ / verdict / fact cues、哪些信号被降级 Watch | P1 |
 
 **首批锁定审计 URL（Week 9 先做这 3 个）**
@@ -150,7 +213,7 @@
 |------|------|------|:--:|
 | Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D13 已执行，D14 起按 7/6 周一校正 |
 | A | Amazon affiliate conversion：5 页决策模块 + 2 指南 CTA + 全站审核 | `docs/monetization/task-a-amazon-affiliate-conversion.md` | ✅ 完成 |
-| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 Wave 1 已获 Aorkuler 回复+快照已发；Wave 2 WOPET+Petlibro D3 已发，Homerunpet+CATLINK 联系方式已查（Honey Tour 无官网） |
+| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 6 品牌完成首轮验证，1/6 回复；Wave 1/2 已闭环，Week 10 只做 Aorkuler 收口 + 1 个 email-first v2 小试点 |
 
 ### 内容选题引擎（6/26 起）
 
@@ -762,8 +825,3 @@
 
 *后续任务管理统一在本文件维护，不再分散到 dashboard.md。每次会话开工读此文件顶部活跃任务区，收工更新任务状态。*
 *progress.md 继续作为会话日志单独维护。findings.md 继续作为研究/决策记录单独维护。*
-
-
-
-
-

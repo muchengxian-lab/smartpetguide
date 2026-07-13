@@ -12,11 +12,13 @@
 Claude Code 在执行任何相关工作前必须先读：
 
 1. 根目录 `CLAUDE.md`
-2. `docs/monetization/README.md` — 合并决策说明
-3. `docs/monetization/30-day-schedule.md` — 合并版逐日排期
-4. `docs/monetization/task-a-amazon-affiliate-conversion.md` — Task A 详细需求
-5. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
-6. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
+2. `docs/claude-execution-guardrails.md` — Week 10 防错与验收规则
+3. `docs/month-2-strategy-2026-07-13-to-2026-08-09.md` — 四周方向、目标与触发条件
+4. `task_plan.md` 顶部 Week 10 活跃区
+5. `docs/monetization/README.md` — 合并决策说明
+6. `docs/monetization/30-day-schedule.md` — 合并版逐日排期
+7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
+8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
 推荐顺序：先执行 A（后台基建，3 天做完不等结果），再执行 Brand Outreach（`/for-brands/` → 免费快照 → 付费审计 $199/$499/$1,200，一个品牌只收一封邮件）。
 
@@ -24,10 +26,9 @@ Claude Code 在执行任何相关工作前必须先读：
 
 ## 日期校准（每次会话必读）
 
-- **项目起点**：2026-05-19 周一（Day 1）
+- **项目起点**：2026-05-19（历史 Day 1；不要再从该日期手算星期）
 - **当前日期**：根据系统日期计算，会话开始时自动校准
-- **Week 计算**：(当前日期 - 5/19) / 7 天 = Week N（5/19-5/25=Week 1, 5/26-6/1=Week 2, 6/2-6/8=Week 3, 6/9-6/15=Week 4, 6/16-6/22=Week 5, ...）
-- **星期几**：从 5/19=周一 推算（5/19→周一, 5/26→周一, 6/2→周一, 6/9→周一, 6/16→周一）
+- **Week/星期**：只使用系统日期和 `task_plan.md` 当前排班，不再用 Day 编号或项目起点推算
 
 > ⚠️ **不再使用 Day 编号**（Day 编号已严重漂移不可信），改用实际日期+Week 编号。
 > 每次会话开始时，根据系统日期重新计算今天星期几、Week 几。
@@ -41,17 +42,20 @@ Claude Code 在执行任何相关工作前必须先读：
 
 ## 当前阶段
 
-Week 9（2026-07-06 周一）。114 页在线，Pinterest 88 Pin / 5 Board，GSC 索引 22 / 点击 4 / 曝光 268，GA4 活跃用户 9/7天，GEO Score 74。实验 Pin 12/12 ✅。变现 sprint D0-D14 已执行，外联 6/10 品牌已发（Wave 2 D3 7/6 已发），Aorkuler 已回复+快照已发。
+Week 10 已于 2026-07-13 周一开始。7/13 Snapshot 5 基线：114 页、Pinterest 1,423 月浏览（出站 0）、GSC 索引 22 / 点击 4 / 曝光 282 / CTR 1.4% / 排名 35、引用域名 12（Semrush 计数，待核验）、GA4 活跃用户 29/7天（21/29 Singapore，Organic Search 0）、GEO Score 74。Brand Outreach 首轮 6 品牌验证完成，回复 1/6，Wave 1/2 已闭环。已抓取未索引 8 页全部确认处置。
 90 天目标：150-180 页 / 60-100 索引 / 25-40 引用域名 / GEO Score 85+。
 
 ## 核心策略
 
-- 边等边建，不等 SEO 数据回馈
-- A20/B50/C30 内容分级（不做全 A 级精雕）
-- KD<20 优先，大词等 6 个月后再说
-- 每周 5-8 篇长尾内容 + 10 个 outreach 外链建设
+- 主线从内容生产切换为索引、外部权威和现有页加固
+- 新页面默认 0；只有 GSC/VOC 强信号时单周最多 2 页
+- 每周 3-5 小时编辑型外链/PR，区分发送、回复、接受和落链
+- GEO 只做现有页的 identity/source/date/answerability，不再开技术 GEO 冲刺
+- Pinterest 只维护，出站点击破 0 前不恢复铺量
 
 ## 工作流
+
+任何执行先遵守 `docs/claude-execution-guardrails.md`。每天最多 3 个 P0；修改 2-3 项后做一次 diff/build/status 检查。
 
 写文章前调用 `seo-content-optimizer` → `article-content` 写 → `verify` 验证
 设计改动用 `frontend-design`

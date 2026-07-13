@@ -241,3 +241,166 @@
 - 猫砂盆 TCO VOC 回填 → 3 页 fact layer 收获
 - Wave 2 D7 闭环 + 品牌回复处理
 - GEO Score 月度复检（7/1→7/10，目标 75+）
+
+---
+
+## Snapshot 5 — Week 10 周一基线（2026-07-13）
+
+> 数据来源：GSC / GA4 / Pinterest 后台，周一刷新。Week 10 起点快照。
+
+### 核心指标（7/13 vs 7/10）
+
+| 指标 | 7/10 基线 | 7/13 当前 | 变化 |
+|------|:--:|:--:|:--:|
+| 页面数 | 114 | **114** | 持平 |
+| GSC 索引 | 22 | **22** | 持平 |
+| GSC 曝光（3个月） | 268 | **282** | +14 (+5%) |
+| GSC 点击（3个月） | 4 | **4** | 持平 |
+| GSC 平均排名 | 33.6 | **35** | -1.4 |
+| GSC 平均 CTR | 1.5% | **1.4%** | -0.1pp |
+| GSC 已抓取-未索引 | 8 | **8**（3 确认 + 5 新发现） | 持平总数，wifi-disconnecting 入索引 |
+| GSC 已发现-未索引 | 0 | **0** | 持平 |
+| GSC 重定向错误 | 3 | **3** | 持平 |
+| GSC 自动重定向 | 4 | **4** | 持平 |
+| GA4 活跃用户/7天 | 9 | **29** | +20（21/29 来自 Singapore，占比异常，疑似测试或非目标流量；没有进一步证据前不计为有效自然流量） |
+| GA4 page_view/7天 | 14 | **30** | +16 |
+| GA4 session_start/7天 | 11 | **29** | +18 |
+| GA4 affiliate_click | 0 | **0** | 持平 |
+| GA4 outbound_click | 0 | **0** | 持平 |
+| Pinterest 粉丝 | 1 | **1** | 持平 |
+| Pinterest 月浏览 | 1,105 | **1,423** | +318 (+29%) |
+| Pinterest 出站点击 | 0 | **0** | 仍未破零 |
+| 引用域名 | 11 | **12** | +1 |
+| Semrush Authority Score | — | **2** | 新指标 |
+| GEO Score | 74 | **74** | 持平（月度复检未做） |
+
+### GSC 索引详情
+
+| 索引状态 | 数量 | 说明 |
+|------|:--:|------|
+| 已索引 | **22** | 持平，但 wifi-disconnecting 新入索引（7/9→7/13） |
+| 已抓取-未索引 | **8** | 3 已加固 + 5 新确认（见下表） |
+| 已发现-未索引 | **0** | 保持清零 |
+| 重定向错误 | **3** | 旧尾斜杠 URL，等待 Google 重验证 |
+| 自动重定向 | **4** | 同上 |
+| 备用网页(规范标记) | **1** | 等待下次重抓确认 |
+| 重复网页(规范不同) | **1** | 等待下次重抓确认 |
+
+### 已抓取-未索引 8 页逐页状态（7/13 GSC 实测）
+
+| # | URL | 上次抓取 | 7/9 确认 | 7/13 处置 |
+|:--:|------|:--:|:--:|:--:|
+| 1 | `/guides/stop-automatic-feeder-from-jamming/` | 7/1 | ✅ 已加固 | **等待**（已有 quickAnswer+FAQ+内链+VOC owner quotes） |
+| 2 | `/guides/introduce-cat-to-automatic-litter-box/` | 7/1 | ✅ 已加固 | **等待**（已有 quickAnswer+FAQ+内链） |
+| 3 | `/guides/cat-wont-drink-from-water-fountain/` | 7/1 | ✅ 已加固 | **等待**（已有 quickAnswer+FAQ+内链） |
+| 4 | `/guides/cat-breaking-into-automatic-feeder/` | 7/1 | ❌ 遗漏 | **加固**（PAA C级，需从已索引 buying guide 加内链） |
+| 5 | `/for-brands/` | 7/1 | ❌ 未发现 | **等待**（商业页面，非内容页，低索引优先级） |
+| 6 | `/guides/self-cleaning-litter-box-buying-guide/` | 6/28 | ❌ 未发现 | **加固**（核心购买指南，已有 VOC TCO 回填+quickAnswer，加内链） |
+| 7 | `/reviews/wopet-automatic-feeder-review` | 6/16 | ❌ 未发现 | **检查301**（无尾斜杠旧URL，应301→带斜杠版本） |
+| 8 | `/guides/automatic-feeder-buying-guide` | 6/14 | ❌ 未发现 | **检查301**（无尾斜杠旧URL，应301→带斜杠版本） |
+
+> 🎉 `/guides/automatic-feeder-wifi-keeps-disconnecting/` 已不在列表中 → **已入索引**！
+
+### 8 URL 分类汇总（3+2+2+1=8）
+
+| 分类 | 数量 | URL |
+|------|:--:|------|
+| 等待 Google（Week 9 已加固） | 3 | `stop-automatic-feeder-from-jamming/`、`introduce-cat-to-automatic-litter-box/`、`cat-wont-drink-from-water-fountain/` |
+| 待加固（本周补内链） | 2 | `cat-breaking-into-automatic-feeder/`、`self-cleaning-litter-box-buying-guide/` |
+| 等 301 重抓（无尾斜杠旧 URL，已验证 301 正常） | 2 | `wopet-automatic-feeder-review`、`automatic-feeder-buying-guide` |
+| 等待（商业页，不期望被索引） | 1 | `for-brands/` |
+| **合计** | **8** | — |
+
+> 🎉 `automatic-feeder-wifi-keeps-disconnecting/` 已不在 7/13 列表中 → **已退出该桶，单独记录为已入索引**。
+
+### GA4 详情（过去 7 天，7/13 实测）
+
+| 指标 | 数值 | 说明 |
+|------|:--:|------|
+| 活跃用户 | **29** | 222% vs 上期，但 21/29 来自 Singapore |
+| 新用户 | **29** | — |
+| page_view | **30** | 114% vs 上期 |
+| session_start | **29** | 164% vs 上期 |
+| first_visit | **29** | — |
+| user_engagement | **23** | 229% vs 上期 |
+| scroll | **11** | — |
+| 关键事件 | **0** | 无转化 |
+| affiliate_click | **0** | 未出现在事件列表 |
+| outbound_click | **0** | 未出现在事件列表 |
+
+**流量来源（7天）**
+
+| 渠道 | 会话数 | 占比 |
+|------|:--:|:--:|
+| Direct | 29 | 100% |
+| Organic Search | 0 | 0% |
+
+**按国家/地区**
+
+| 国家 | 活跃用户 | 占比 |
+|------|:--:|:--:|
+| Singapore | 21 | 72% |
+| United States | 6 | 21% |
+| Australia | 1 | 3% |
+| Germany | 1 | 3% |
+
+> ⚠️ Singapore 21/29，占比异常，疑似测试或非目标流量；没有进一步证据前不计为有效自然流量。US 仅 6 用户/7 天。Organic Search 仍为 0 session。
+
+### 变现 Sprint D20 复核
+
+| 项目 | 状态 | 备注 |
+|------|:--:|------|
+| 首轮 6 品牌回复率 | 1/6 (17%) | Aorkuler 唯一回复，其余 5 全部关闭 |
+| 邮箱直发回复率 | 1/4 (25%) | Aorkuler ✅，WOPET/Petlibro/Elspet ❌ |
+| 表单提交回复率 | 0/2 (0%) | KittySpout/YEAPAW |
+| D20 扩量决策 | **不扩** | 不增加 CRM 占位，不扩 10 品牌 |
+| Homerunpet v2 小试点 | **Ready for human** | D0 文案已备，contact@homerunpet.com，邮箱直发 |
+
+### 诊断（7/13）
+
+- **索引持平但质量信号出现**：`wifi-keeps-disconnecting` 入索引是 Week 9 内链加固的首个可追踪成果。
+- **曝光微增 +14**：282 曝光，增长来自 `/best/gps-trackers-no-monthly-fee/`（GSC 建议确认）。
+- **2 个无尾斜杠旧URL**在未索引列表：wopet-automatic-feeder-review + automatic-feeder-buying-guide。需验证 301 生效。
+- **Pinterest 月浏览 +29%**（1,105→1,423）：增长健康，但出站仍为 0。继续观察，不追加 Pin。
+- **引用域名 12（Semrush 工具计数）**：+1 vs 7/10。新增域名、来源 URL、目标 URL 和相关性**待核验**。不能直接计为编辑型外链落地。
+- **GA4 活跃用户 29/7天**：但 21/29 来自 Singapore（自测流量），US 仅 6，Organic Search 仍为 0 session。
+- **Direct 29 会话 vs Organic 0**：全部为直接访问，自然搜索仍未产生流量。
+- **affiliate/outbound 仍为 0**：追踪代码正常，单纯无商业流量。
+- **新信号**：Semrush 显示 Authority Score 2，首次出现。引用域名 12 为工具计数，新增域名待核验。
+
+### 今日 Claude Code 完成
+
+- [x] **GSC 浏览器直连**：效果报告（282 曝光/4 点击/1.4% CTR/排名 35）+ 索引报告（22 已索引 / 8 已抓取未索引全部 URL 已列出）
+- [x] **Pinterest 浏览器直连**：1,423 月浏览 / 1 粉丝 / 出站 0 / 1 save
+- [x] **Semrush 浏览器直连**：12 引用域名 / 28 外链 / Authority Score 2
+- [x] **8 个未索引 URL 全部确认并分类**：3 等待 Google（Week 9 已加固）+ 2 待加固（cat-breaking + litter-box-buying-guide）+ 2 等 301 重抓（无尾斜杠旧 URL）+ 1 商业页等待（for-brands）= **8**。另有 `automatic-feeder-wifi-keeps-disconnecting` 已退出该桶并入索引，单独记录。
+- [x] **GA4 浏览器直连**：29 活跃用户/7天 / 30 page_view / 0 affiliate/outbound。21/29 来自 Singapore，占比异常，疑似测试或非目标流量；没有进一步证据前不计为有效自然流量。
+- [x] **Snapshot 5 全部实测数据已填入**
+- [x] CRM D20 复核完成 + Homerunpet v2 D0 Ready for human
+- [x] `date-trace.txt` 确认旧版，保持未跟踪
+
+### 人工操作清单（7/13）
+
+| # | 操作 | 详情 |
+|:--:|------|------|
+| 1 | **GSC URL Inspection ×5** | 已于 7/13 人工完成提交（cat-breaking + litter-box-buying-guide + wopet-review + feeder-buying-guide + petlibro-granary） |
+| 2 | **GSC URL Inspection ×5** | 建议：2 个需加固页（cat-breaking + litter-box-buying-guide）+ 2 个无尾斜杠旧 URL + 1 个高价值已索引页 |
+| 3 | **验证 2 个无尾斜杠旧 URL 的 301** | 浏览器访问 `/reviews/wopet-automatic-feeder-review` 和 `/guides/automatic-feeder-buying-guide`，确认 301 → 带斜杠版本 |
+| 4 | **Homerunpet D0 审核** | CRM 文案已备，7/15 发送前审核 |
+
+### 引用域名待核验（Semrush 12→?）
+
+> Semrush 免费版只显示计数变化（11→12），不提供新增域名详情。以下字段需人工用 Semrush 付费版或手动查证后填入。
+
+| 字段 | 当前状态 |
+|------|:--:|
+| Semrush 报告日期 | 2026-07-13 |
+| 引用域名计数 | 12 |
+| 较上次变化 | +1 |
+| 新增域名名称 | **待核验** |
+| 新增来源 URL | **待核验** |
+| 目标 URL（smartpetguide.net 上被链接的页面） | **待核验** |
+| 链接相关性（宠物/消费科技/编辑型） | **待核验** |
+| 链接是否真实可访问 | **待核验** |
+| 是否为 dofollow | **待核验** |
+| 是否可计为编辑型外链落地 | **待核验**（未核验前不得计入） |

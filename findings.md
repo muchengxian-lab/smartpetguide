@@ -567,7 +567,79 @@ SmartPetGuide 对应的目标：
 ---
 *每次调研后更新此文件*
 
+## W28 自动化信号与 Week 10 方向（2026-07-12）
+
+### 证据汇总
+
+- W28 L2 VOC 共 165 条：Google PAA 36、Amazon 25、YouTube 104。
+- 唯一达到 High 跨来源标准的主题是 **automatic feeder WiFi / app / offline reliability**，共 41 条、覆盖 3 类来源。
+- 四集群 phrasing map 和 LR4 compatibility 已由 Weekly Review 依据 Git/页面证据判定为 Proven；不再作为下一周实验重复执行。
+- AI Signal Daily/Weekly 反复提醒：单次 AI visibility 排名波动不能代表趋势。现阶段更可靠的检查对象是 `identity / source / date / quickAnswer / follow-up answerability`。
+- Week 9 的结果层仍未突破：索引 22、引用域名 11、Pinterest 出站 0、品牌回复 1/6、affiliate/outbound 0。
+
+### 决策
+
+1. Week 10 不再做新的技术 GEO Sprint；GEO 转为现有高价值页的事实层与复述稳定性审计。
+2. 默认不新增页面。~~先完成剩余 4 个已抓取未索引 URL 的确认与处置~~ → **7/13 已闭环**：8/8 URL 已确认并分类，后续完成其中 2 个待加固页面。
+3. 外链从“发出邮件数”升级为“编辑型目标 + 可链接资产 + 回复/落链结果”，目录/Profile 不作为主要成果。
+4. Brand Outreach 不按原 D20 一次扩 10 个 CRM；先用 Homerunpet 做 1 个 email-first v2 小试点，Aorkuler只做一次收口。
+5. Pinterest 在出站点击破 0 前不恢复铺量。
+6. `quickAnswer` 真实进度以 Git 为准：13/38；覆盖率不作为机械 KPI，只补目标页缺口。
+
+### 持续观察
+
+- YouTube 7/12 刷新失败，W28 使用 7/7 样本；下周重试一次，并把采样扩到猫砂盆 TCO、饮水机健康、零订阅摄像头/GPS。
+- GEO 综合分数最近明确值仍是 74；下次复检看综合 AI Citability/Brand Authority，不重复证明 Technical GEO 基础项。
+- Guest Post Round 3 已发 5/5，但尚无回复/落链，7/14 后才能判断触达质量。
+
+## Month 2 四周战略决策（2026-07-13）
+
+- 战略周期固定为 2026-07-13 至 2026-08-09，采用“月度框架固定、每周日滚动拆解、每日最多 3 个 P0”。
+- 北极星从页面数量转为外部验证：索引、编辑型外链、品牌认真回复和真实点击。
+- 四周资源比例固定为：外链/PR 35-40%，GSC/现有页 25-30%，战略 GEO/VOC 20-25%，数据与维护 10-15%。
+- 新内容默认 0，只有 GSC 连续增长、跨来源 VOC、外联资产需求或合格新品触发时才创建；单周最多 2 篇，周期最多 6 篇。
+- GEO 保留但转为“引用理由”建设；Technical GEO 周度只做 5 分钟存活检查，综合审计月度一次。
+- 详细目标、四周主题和 Continue/Adjust/Stop 规则见 `docs/month-2-strategy-2026-07-13-to-2026-08-09.md`。
+
 ---
+
+## Week 10 周一基线复核（2026-07-13）
+
+### GSC 数据实测
+
+- 索引 22（持平），曝光 282（+14），点击 4（持平），CTR 1.4%，平均排名 35。
+- `automatic-feeder-wifi-keeps-disconnecting` 已不在"已抓取-未索引"列表中 → **已入索引**（Week 9 内链加固首果）。
+- 重定向错误 3 + 自动重定向 4 + 规范标记 1 + 重复规范 1 无变化。
+
+### 已抓取-未索引 8 URL 处置（3+2+2+1=8）
+
+| 分类 | URL | 处置 | 理由 |
+|------|------|:--:|------|
+| 等待 | `stop-automatic-feeder-from-jamming/` | — | Week 9 已加固（quickAnswer+FAQ+内链+VOC quotes） |
+| 等待 | `introduce-cat-to-automatic-litter-box/` | — | Week 9 已加固（quickAnswer+FAQ+内链） |
+| 等待 | `cat-wont-drink-from-water-fountain/` | — | Week 9 已加固（quickAnswer+FAQ+内链） |
+| 加固 | `cat-breaking-into-automatic-feeder/` | PAA C级，缺内链输入 | 从已索引 buying guide 补 Related Resources |
+| 等待 | `for-brands/` | 商业页面 | 不期望被搜索用户发现 |
+| 加固 | `self-cleaning-litter-box-buying-guide/` | 核心购买指南 | 已有 VOC TCO+quickAnswer，补内链 |
+| 等301 | `wopet-automatic-feeder-review` | 无尾斜杠旧 URL | 已验证 301→带斜杠正常，等 Google 重抓 |
+| 等301 | `automatic-feeder-buying-guide` | 无尾斜杠旧 URL | 同上 |
+
+> `automatic-feeder-wifi-keeps-disconnecting/` 已退出该桶（7/13 列表中不存在）→ 已入索引。
+
+### Pinterest
+
+- 月浏览 1,105→1,423（+29%），粉丝 1，出站点击仍为 0。
+- 增长健康但未形成分发闭环。继续只观察不铺量。
+
+### 引用域名
+
+- Semrush 检测到引用域名 12（+1 vs 7/10 的 11）、外链 28、Authority Score 2（首现）。
+- 新增域名、来源页面、目标 URL 和相关性**待核验**——12 只是工具计数变化，不能直接断言为"自然外链积累"或编辑型外链落地。
+- 待核验字段见 `weekly-metrics-log.md` Snapshot 5。
+
+### GA4
+
+- 7/13 浏览器实测：29 活跃用户/7天、30 page_view、0 affiliate/outbound。21/29 来自 Singapore，Organic Search 为 0 session。Singapore 占比过高，疑似测试或非目标流量，不直接断言为自测。
 
 ## 竞品格局调研 + Semrush KD 实测（2026-05-27，Day 9）
 

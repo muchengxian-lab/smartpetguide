@@ -8,15 +8,15 @@
 | # | Brand | Category | Product | Website | Contact | 3 Key Findings | Status | Sent | Follow-up | Notes |
 |:--:|------|------|------|------|------|------|:--:|------|------|------|
 | 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Check-in sent — awaiting reply | 7/1 | 7/8 check-in | John replied 7/2, snapshot PDF sent 7/2. Check-in sent 7/8. Email-first async; next touch ~7/15 if no reply. |
-| 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | contact@homerunpet.com | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Not contacted | — | — | Budget wireless, strong story |
+| 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | contact@homerunpet.com | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Ready for human | — | 7/15 planned | D20 review: email-first v2 pilot. D0 draft ready, send 7/15. Budget wireless, strong story. |
 | 3 | KittySpout | Water Fountain | Stainless Steel Fountain | kittyspout.com | 表单 (kittyspout.com/pages/contact-us) | (1) Dishwasher-safe angle underused — key difference vs Pioneer Pet (2) Mid-price ($50) position unclear vs $39/$93 alternatives (3) 800 reviews — needs more social proof | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
 | 4 | YEAPAW | Water Fountain | Stainless Steel Fountain | yeapaw.com | 表单 (yeapaw.com/pages/contact) | (1) Pumpless tech is unique but poorly explained in listing (2) Only 1,200 reviews — differentiation story needed (3) No content comparing magnetic induction vs traditional pumps | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
 | 5 | Elspet | Litter Box | Elspet Pro Self-Cleaning | elspet.com | help@elspet.com | (1) Easiest-to-clean design in category — but no video/visual proof (2) 18-month warranty longer than competitors — not highlighted (3) 2,100 reviews — new brand trust gap | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
 | 6 | CATLINK | Litter Box | CATLINK Young Pro | catlink.com | 表单 (catlink.com/contact-us) | (1) Multi-cat weight recognition at $399 — best value in smart tracking (2) App translations hurt credibility with English-speaking buyers (3) 13L waste bin advantage not clearly communicated vs 10L competitors | Not contacted | — | — | Multi-cat value leader |
 | 7 | Honey Tour | Pet Camera | Movable Pet Camera Robot | 无官网 | 无（纯 Amazon 卖家） | (1) Only mobile pet camera on market — unique but needs explanation (2) 4.7★ with only 320 reviews — high satisfaction, low awareness (3) Floor-type limitations not disclosed upfront | Not contacted | — | — | Niche mobile camera, 类似 xpai 纯 Amazon 卖家 |
 | 8 | xpai | Pet Camera | xpai 4K UHD Pet Camera | 无官网 | 无（纯 Amazon 卖家） | (1) 4K at $43 is price-performance champion — not marketed as such (2) 64GB built-in storage is unique — not in product title (3) Newer brand with 1,500 reviews — trust signals needed | Not contacted | — | — | Budget 4K, strongest value story |
-| 9 | WOPET | Feeder / Camera | Automatic Feeder + Pet Camera | wopet.com | support@wopet.com | (1) 6L hopper is largest in class — not the headline (2) WiFi reliability complaints in reviews need addressing (3) Camera model ($99) undercuts Furbo by $80 — value story missing | D3 sent — awaiting reply | 7/3 | 7/6 | Wave 2；7/6 D3 已发送；D7 闭环 7/10 |
-| 10 | Petlibro | Feeder | Petlibro Granary Camera Feeder | petlibro.com | support@petlibro.com | (1) #1 BSR feeder — market leadership story not told by brand (2) Camera+feeder integration vs separate devices not compared (3) 3L vs 5L confusion — buyers need sizing guidance | D3 sent — awaiting reply | 7/3 | 7/6 | Top seller, Wave 2；7/6 D3 已发送；D7 闭环 7/10 |
+| 9 | WOPET | Feeder / Camera | Automatic Feeder + Pet Camera | wopet.com | support@wopet.com | (1) 6L hopper is largest in class — not the headline (2) WiFi reliability complaints in reviews need addressing (3) Camera model ($99) undercuts Furbo by $80 — value story missing | D7 sent — closed | 7/3 | 7/10 | Wave 2；D0/D3/D7 完成，零回复，停止跟进 |
+| 10 | Petlibro | Feeder | Petlibro Granary Camera Feeder | petlibro.com | support@petlibro.com | (1) #1 BSR feeder — market leadership story not told by brand (2) Camera+feeder integration vs separate devices not compared (3) 3L vs 5L confusion — buyers need sizing guidance | D7 sent — closed | 7/3 | 7/10 | Wave 2；D0/D3/D7 完成，零回复，停止跟进 |
 | 11 | PETKIT | Feeder / Fountain | Fresh Element + Eversweet | petkit.com | Previously listed | (1) Rotary sealing is unique food-freshness tech — buried in specs (2) App is best-in-class but not showcased (3) Brand covers 3 categories — cross-selling story missing | Not contacted | — | — | Multi-category, previously no reply |
 | 12 | Catit | Water Fountain | Catit PIXI Smart Fountain | catit.com | Previously listed | (1) Only fountain with water intake tracking — health angle underused (2) 3 drinking heights is clever design — not explained visually (3) Filter cost ($12-15/month) is top buyer objection — not addressed | Not contacted | — | — | Health tracking differentiator |
 
@@ -705,3 +705,67 @@ press@smartpetguide.net
 4. D7 闭环不发 —— 已回复的品牌发 check-in，未回复的不再打扰
 5. 下一批品牌：Homerunpet (contact@homerunpet.com) + PETKIT + Catit
 
+---
+
+## D20 复核（2026-07-13 周一）— 不扩量，确认 email-first v2 小试点
+
+### 首轮 6 品牌复盘
+
+| 维度 | 数据 | 判断 |
+|------|:--:|------|
+| 总回复率 | 1/6 (17%) | 在冷外联 1-3% 基准线之上，但样本太小 |
+| 邮箱直发 | 1/4 (25%) | Aorkuler 唯一回复来自邮箱 |
+| 表单提交 | 0/2 (0%) | 全灭，后续避免 |
+| D3/D7 跟进 | 0/5 | 未回复品牌跟进无效果 |
+
+### 决策
+
+1. **不扩 10 个 CRM 占位**（原 D20 描述）。CRM 保持 12 行，不再新增。
+2. **只执行 1 个 email-first v2 小试点**：Homerunpet，邮箱直发（contact@homerunpet.com），A 格式标题。
+3. **Aorkuler 收口**：7/15 做最后一次轻量 check-in（D21）。
+4. **PETKIT/Catit 暂不动作**：等 Homerunpet 回复后再决定是否启动。
+5. **Homerunpet D0 发件日**：D21（7/15 周三），今日只准备文案（Ready for human）。
+
+### CRM 状态更新
+
+| # | Brand | 7/13 状态 | 下一步 |
+|:--:|------|:--:|------|
+| 1 | Aorkuler | Check-in sent — awaiting reply | 7/15 最后 check-in（如仍无回复） |
+| 2 | Homerunpet | Ready for human | 7/15 发 D0（见下方文案） |
+| 3 | KittySpout | Closed — no reply (Wave 1) | 不跟进 |
+| 4 | YEAPAW | Closed — no reply (Wave 1) | 不跟进 |
+| 5 | Elspet | Closed — no reply (Wave 1) | 不跟进 |
+| 9 | WOPET | Closed — no reply (Wave 2) | 不跟进 |
+| 10 | Petlibro | Closed — no reply (Wave 2) | 不跟进 |
+| 6 | CATLINK | Not contacted | 暂不动作 |
+| 7 | Honey Tour | Not contacted（纯 Amazon 卖家，无官网） | 暂不动作 |
+| 8 | xpai | Not contacted（纯 Amazon 卖家，无官网） | 暂不动作 |
+| 11 | PETKIT | Not contacted | 暂不动作 |
+| 12 | Catit | Not contacted | 暂不动作 |
+
+---
+
+## Homerunpet email-first v2 D0（Ready for human — 7/15 发送）
+
+> 发件地址：`press@smartpetguide.net`
+> 发件日：2026-07-15 周三
+
+**Subject:** 3 observations about the Homerunpet Wireless Fountain
+
+```
+Hi Homerunpet team,
+
+I run SmartPetGuide, an independent research site covering smart pet devices. I've been looking at your Wireless Smart Fountain and wanted to share a few observations — no pitch, just things that stood out:
+
+1. The wireless + motion sensor combination is uncommon at this price point. On your Amazon listing, "turns on when your cat approaches" is listed in the description section — it may be worth testing whether moving that closer to the headline improves conversion.
+
+2. From the product page, the key trade-off appears to be cord-free convenience (battery-powered, place anywhere) vs regular recharging. A visual comparison showing what cordless enables — no cord clutter, flexible placement — could help buyers weigh this decision before reaching the reviews section.
+
+3. The USB-C charging port is worth highlighting explicitly. USB-C means owners can use a widely available cable type rather than a proprietary charger — this is a practical detail that's easy to overlook in a feature list.
+
+If a free visibility snapshot would be useful (showing how your product appears in Google and AI search results), happy to put one together — takes about 30 minutes, zero cost.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```

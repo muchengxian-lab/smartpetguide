@@ -3071,7 +3071,7 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 |------|:--:|:--:|
 | Phrasing maps | +2（feeder 可靠性 + 猫砂盆 TCO） | 4/4 ✅ |
 | VOC owner quotes | +4 段（feeder jam）+ 5 段（TCO） | — |
-| quickAnswer 补充 | 0（7/8 遗留已在 7/9 确认） | 8/38 (21%) |
+| quickAnswer 补充 | 7/9 新增 5 篇（含 3 个卡住的 PAA guide） | 13/38 (34%) |
 | Article Schema 页 | +7 页（Breed） | 全覆盖 |
 | 内链接口 | +4 未索引页 ← 3 已索引 buying guide | — |
 
@@ -3080,7 +3080,7 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 | 信号 | 处理 | 原因 |
 |------|:--:|------|
 | LR4 compatibility | ✅ 已验证，不扩页 | 现有 FAQ 已全面覆盖 |
-| 剩余 4 未索引 URL | ⚠️ 等 GSC 确认 | 项目文件无记录 |
+| 剩余 5 未索引 URL | ✅ 7/13 已全部确认（3+2+2+1=8 分类完成；另有 wifi-disconnecting 已入索引） | Week 9 仅确认 3/8，剩余 5 包含 cat-breaking/for-brands/litter-box-buying-guide + 2 个无尾斜杠旧 URL |
 | GEO Score 月度复检 | → 下周 | 7/10 优先收尾，推迟到下周初 |
 
 #### 变现 Sprint 数据
@@ -3110,4 +3110,144 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - [x] `docs/monetization/weekly-metrics-log.md`：Snapshot 4
 - [x] `docs/monetization/brand-outreach-crm.md`：Wave 2 D7 + v2 定型
 - [x] `progress.md`：本日志 + Sprint 复盘
-- [ ] `task_plan.md`：更新 7/10 任务状态 + 头部
+- [x] `task_plan.md`：7/12 复盘时已更新 7/10 状态、头部和 Week 10 计划
+
+---
+
+## 会话：2026-07-12 周日 — Week 9 自动化收盘复盘 + Week 10 规划
+
+### 本周总体判断
+
+- Week 9 的执行任务基本完成：4/4 phrasing maps、3/3 fact layer、LR4 compatibility、作者身份层、Breed GEO、Guest Post Round 3 5/5、Wave 1/2 D7 闭环均有项目或 Git 证据。
+- `quickAnswer` 的真实进度由 Git 提交链校准为 **13/38**；`task_plan.md` 与本日志原 Sprint 汇总写成 8/38，属于文档漂移，不是执行回退。
+- 结果层没有同步增长：GSC 索引仍 22、引用域名仍 11、Pinterest 出站 0、品牌回复仍 1、affiliate/outbound 仍 0。下周需要从“完成任务”转向“索引、回复、落链和页面信号闭环”。
+
+### 自动化结果纳入复盘
+
+| 自动化 | 结果 | 对项目的含义 |
+|------|------|------|
+| AI Signal Daily | 7/6-7/12 日报完整 | 单次 AI visibility 排名噪音大；继续 identity/source/date/quickAnswer，不开泛 GEO 新题材 |
+| L2 VOC Review | 165 条：PAA 36 / Amazon 25 / YouTube 104 | feeder WiFi/app/offline reliability 为唯一 High 跨来源主题，优先回填现有 Review/Compare/Guide |
+| Weekly Review | 4 张 phrasing map 与 LR4 实验已 Proven；Active 实验 0 | 已完成实验归档；新实验未经确认不自动启动 |
+| Knowledge Sync | 114 页、22 索引、13/38 quickAnswer 已核对 | `findings.md`、`weekly-report.md` 陈旧，需同步 |
+| Knowledge Health | Warning：1 conflict、2 stale files | 冲突是 quickAnswer 口径；陈旧源为 findings/weekly-report |
+| Dashboard Refresh | 成功 | 使用 7/12 日报、W28 周报、VOC 与健康数据 |
+
+### 未完成 / 顺延
+
+1. ~~GSC 剩余 4 个 `已抓取-未索引` URL 尚未确认。~~ → **7/13 已闭环**：8/8 URL 已确认并分类（3 等待+2 加固+2 等301+1 商业页），另有 wifi-disconnecting 已入索引。
+2. GEO 综合月度复检尚未执行；顺延一次，不再拆成多项技术任务。
+3. `crawler / Cloudflare` 规则核对未完成；降为一次性 P2 收口。
+4. Guest Post Round 3 尚未获得回复或落链；7/14 做 7 天跟进。
+5. `date-trace.txt` 为未跟踪文件，需确认用途后处理。
+6. YouTube 7/12 采样因 `IncompleteRead` 失败，W28 继续使用 7/7 样本；不影响 PAA+Amazon 结果，但下周需重试一次。
+
+### Week 10 方向决定
+
+- 主方向：索引闭环 + 外部权威/外链 + 现有页战略 GEO/VOC。
+- 新内容：默认 0 篇；只有 GSC 或跨来源 VOC 强信号时最多 2 篇。
+- Pinterest：只做周度指标维护，不安排新增 Pin。
+- Brand Outreach：不扩 10 个 CRM 占位；只做 Aorkuler 收口和 Homerunpet email-first v2 小试点。
+- 详细排班和验收标准已写入 `task_plan.md`。
+
+### 文件更新
+
+- [x] `task_plan.md`：Week 9 复盘、遗漏/顺延、Week 10 排班、持续节奏、quickAnswer 13/38
+- [x] `progress.md`：本复盘记录
+- [x] `findings.md`：W28 决策结论
+- [x] `weekly-report.md`：Week 9 收盘
+- [x] `docs/monetization/30-day-schedule.md`：Week 10 外联从扩量改为小样本 v2
+- [x] `docs/monetization/brand-outreach-crm.md`：WOPET/Petlibro 状态收口
+
+### Claude Week 9 执行问题收口（7/12）
+
+- [x] 新建 `docs/claude-execution-guardrails.md`，固化日期、事实优先级、VOC 证据、逐页日期、状态词、失败复核和收工检查。
+- [x] 更新根目录 `CLAUDE.md`：Week 10 校准、禁止批量日期刷新、禁止无来源 quote/数字、禁止未经确认写 Sent、禁止 `git add -A`。
+- [x] 更新 `.claude/CLAUDE.md`：移除错误的 5/19 星期推算、Week 9 旧状态和每周 5-8 篇/10 outreach 旧方向。
+- [x] 更新 `lessons-learned.md`：新增 Week 9 Claude 执行问题与对应防错规则。
+- [x] `task_plan.md` Week 10 固定动作加入开工必读防错清单。
+
+---
+
+## 会话：2026-07-13 周一 — Month 2 四周战略书制定
+
+- [x] 创建 `docs/month-2-strategy-2026-07-13-to-2026-08-09.md`。
+- [x] 固定四周北极星：索引、编辑型外链、品牌认真回复和真实点击，不追求页面数量。
+- [x] 固定资源比例：外链/PR 35-40%，GSC/现有页 25-30%，战略 GEO/VOC 20-25%，维护 10-15%。
+- [x] 明确 Week 10-13 主题、目标区间、触发条件、停止事项和月末 Continue/Adjust/Stop 判定。
+- [x] 将月度战略接入 `task_plan.md`、根目录 `CLAUDE.md` 和 `.claude/CLAUDE.md`。
+- [x] 当前基线仍使用 7/10 Snapshot 4；7/13 周一私有指标刷新后只更新基线，不自动改变战略方向。
+
+---
+
+## 会话：2026-07-13 周一 — Week 10 Day 1 开工核对 + 基线准备
+
+### P0-1：数据基线刷新 ✅
+
+- [x] **GSC 浏览器实测**：索引 22（持平）、曝光 282（+14）、点击 4（持平）、CTR 1.4%、排名 35
+- [x] **Pinterest 浏览器实测**：月浏览 1,423（+29%）、粉丝 1、出站 0
+- [x] **Semrush 实测**：引用域名 12（Semrush 工具计数，新增域名待核验）、外链 28、Authority Score 2（首现）
+- [x] **GA4 浏览器实测**（2026-07-13 11:51 CST）：29 活跃用户/7天 / 30 page_view / 0 affiliate/outbound。21/29 来自 Singapore，Organic Search 为 0 session。Singapore 占比过高，疑似测试或非目标流量，不直接断言为自测。
+- [x] **Snapshot 5**：全部实测数据写入 `weekly-metrics-log.md`
+
+### P0-2：8 个未索引 URL 全部确认 + 处置 ✅
+
+- [x] **GSC "已抓取-未索引" drilldown**：8 个 URL 完整列表已获取
+- [x] **逐页处置**：
+  - 3 已加固 → 等待（stop-jamming / introduce-litter-box / cat-wont-drink）
+  - 1 **新入索引** 🎉（automatic-feeder-wifi-keeps-disconnecting）
+  - 2 需加固 → `cat-breaking-into-automatic-feeder/`（补内链）+ `self-cleaning-litter-box-buying-guide/`（补内链）
+  - 2 无尾斜杠旧URL → 等301（已验证 301 正常）
+  - 1 等待 → `for-brands/`（商业页面）
+- [x] **301 验证**：`wopet-automatic-feeder-review` 和 `automatic-feeder-buying-guide` 无尾斜杠 URL 均 301→带斜杠版本正常
+
+### 今日产出汇总
+
+| 文件 | 改动 |
+|------|------|
+| `weekly-metrics-log.md` | Snapshot 5 完整写入（GSC/Pinterest/Semrush 实测 + 8 URL 处置） |
+| `brand-outreach-crm.md` | CRM D20 复核 + Homerunpet v2 D0 Ready for human |
+| `findings.md` | Week 10 周一基线实测数据 + URL 处置决策 |
+| `task_plan.md` | 7/13 周一任务状态 ✅ |
+| `progress.md` | 本日志 |
+
+### 指标变化（7/10→7/13）
+
+| 指标 | 变化 | 方向 |
+|------|------|:--:|
+| 索引 | 22→22 | — |
+| 曝光 | 268→282 | +5% |
+| 引用域名 | 11→12 | +1 |
+| Pinterest 月浏览 | 1,105→1,423 | +29% |
+| Authority Score | 0→2 | 首现 |
+| 出站点击 | 0→0 | — |
+
+### 人工操作收尾
+
+- [x] **GSC URL Inspection ×5**：人工已于 7/13 完成提交（cat-breaking + litter-box-buying-guide + wopet-review旧URL + feeder-buying-guide旧URL + petlibro-granary）
+
+### P0-3：文档同步 + CRM D20
+
+- [x] **`date-trace.txt`**：确认为旧版日期追踪文件（type|slug|publishDate|modifiedDate），已被 `content-dates.json` 替代。保持未跟踪，不自动删除。
+- [x] **CRM D20 复核**：1/6 回复率 17%，邮箱 1/4 有回复，表单 0/2 全灭。决策：不扩 10 个 CRM，只做 1 个 email-first v2 小试点（Homerunpet）。
+- [x] **Homerunpet v2 D0**：文案已写入 CRM，标记为 Ready for human。发件日 7/15（D21）。A 格式标题，邮箱直发 contact@homerunpet.com。
+- [x] **Aorkuler 收口排期**：7/15 最后一次轻量 check-in（D21）。
+- [x] **CRM Homerunpet 行**：状态从 Not contacted → Ready for human，notes 更新。
+
+### 人工操作清单（7/13）
+
+| # | 操作 | 详情 |
+|:--:|------|------|
+| 1 | GSC 登录 | 查索引/曝光/点击/排名 → 填入 Snapshot 5 |
+| 2 | GSC "已抓取-未索引" | 找出剩余 4 个 URL 完整路径 |
+| 3 | GA4 登录 | 活跃用户/page_view/affiliate_click/outbound_click |
+| 4 | Pinterest 登录 | 活跃 Pin/月浏览/出站点击 |
+| 5 | 引用域名查询 | Semrush 或类似工具 |
+| 6 | GSC URL Inspection ×5 | 3 个未索引/近期加固页 + 2 个高价值页 |
+| 7 | Homerunpet D0 审核 | CRM 文案已备，7/15 发送前审核 |
+
+### 当前工作区状态
+
+- 11 个已修改文件（9 个来自 7/12 策略会话 + 2 个今日编辑）
+- 3 个未跟踪文件（date-trace.txt / guardrails / month-2-strategy），均不自动处理
+- `git diff --check` 干净，无空白错误

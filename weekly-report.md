@@ -1,5 +1,44 @@
 # SmartPetGuide 周报
 
+## Week 9（7/6-7/12）收盘
+
+| 指标 | 数值 | vs Week 8 |
+|------|:--:|:--:|
+| 页面数 | **114** | 持平 |
+| GSC 已索引 | **22** | 持平 |
+| GSC 曝光（3月累计） | **268** | +261（以 7/6 Snapshot 为准） |
+| GSC 点击（3月累计） | **4** | 持平 |
+| GA4 活跃用户（7天） | **9** | 清除测试噪音后的新基线 |
+| 引用域名 | **11** | 持平 |
+| Pinterest 总在线 / Active | **88 / 86** | 实验 Pin 12/12 完成 |
+| Pinterest 出站点击 | **0** | 持平 |
+| GEO Score | **74** | 未复检 |
+| Brand Outreach | **1/6 回复** | Wave 1/2 均闭环 |
+| quickAnswer | **13/38** | Git 校准值，原汇总 8/38 有误 |
+
+### Week 9 完成
+
+- 四个核心集群 phrasing map 4/4 完成并回填现有页面。
+- Review / Compare / Guide 首批 fact layer 3/3 完成；LR4 compatibility 经多源验证，现有 FAQ 已覆盖。
+- 具名作者页、Person schema、4 模板署名和 7 个 Breed 页面 GEO 补齐完成。
+- 已抓取未索引页完成 4/8 确认与内链加固；剩余 4 个 URL 尚待 GSC 确认。
+- Guest Post Round 3 5/5 已发；Wave 1/2 D7 均闭环；Aorkuler仍是唯一回复品牌。
+- W28 自动化完整收盘：日报 7/7、VOC 165 条、Weekly Review、Knowledge Sync、Health Check、Dashboard 均完成。
+
+### 结果判断
+
+- 技术与页面事实层有明显进展，但尚未转化为更多索引、引用域名、Pinterest 出站或商业点击。
+- W28 唯一 High VOC 是 feeder WiFi/app/offline reliability，支持继续强化现有喂食器页面，不支持新增泛题材。
+- 下周正式从“技术 GEO + 任务完成量”切到“索引闭环 + 编辑型外链 + 战略 GEO/VOC”。
+
+### Week 10 重点
+
+1. ~~确认并处置剩余 4 个已抓取未索引 URL。~~ → **7/13 已闭环**：8/8 URL 已确认并分类（3 等待+2 加固+2 等301+1 商业页），另有 wifi-disconnecting 已入索引。
+2. 完成 1 Review + 1 Compare + 1 Guide 的 AI visibility measurement hygiene 审计。
+3. 跟进 Guest Post Round 3，并准备 1 个可外联数据资产与 5 个高相关编辑型目标。
+4. Brand Outreach 只跑 Aorkuler 收口 + Homerunpet email-first v2 小试点。
+5. 默认不新增页面、不新增 Pin；周五按索引/回复/落链结果复盘。
+
 ## Week 8（6/30-7/3）收盘
 
 | 指标 | 数值 | vs 上次记录 |
