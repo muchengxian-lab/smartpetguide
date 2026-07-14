@@ -3251,3 +3251,91 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 - 11 个已修改文件（9 个来自 7/12 策略会话 + 2 个今日编辑）
 - 3 个未跟踪文件（date-trace.txt / guardrails / month-2-strategy），均不自动处理
 - `git diff --check` 干净，无空白错误
+
+---
+
+## 会话：2026-07-14 周二 — Week 10 Day 2 GEO 审计 + Guest Post D7
+
+### P0-1：3 页 Feeder 集群 GEO 五维度审计 + 修复 ✅
+
+**审计方法**：逐页检查 identity / source / date / quickAnswer / answerability 五个维度。先读源码数据 + content-dates.json，再浏览器实测渲染状态，交叉验证。
+
+**审计表**：
+
+| 维度 | Petlibro Granary Review | WOPET vs Petlibro Compare | WiFi Disconnecting Guide |
+|------|:--:|:--:|:--:|
+| **identity** | ✅ Schema Person + footer 署名 | ✅ footer 署名 + Article Schema | ✅ footer 署名 + Article Schema |
+| **source** | ⚠️ 初审发现无法追溯的逐字引语和精确数字；已删除并改为保守概括 | ⚠️ 部分故障断言超出 source ledger；已删除，仅保留官方规格/支持文档可支撑内容 | ⚠️ 存在品牌级绝对断言、无来源引语和统一离线行为结论；已改为按型号核实和实测 |
+| **date** | ✅ 正文实质修改，modifiedDate 更新为 2026-07-14 | ✅ 本地原为 2026-07-09、生产曾显示 2026-07-11，已按本次实质修改统一更新为 2026-07-14 | ✅ 正文实质修改，modifiedDate 更新为 2026-07-14 |
+| **quickAnswer** | ✅ 已定义，模板渲染（CSS uppercase 显示为 QUICK ANSWER） | ✅ Quick Decision 模式 (winner+buyIf/skipIf) | ✅ 已定义，模板渲染（CSS uppercase） |
+| **answerability** | ✅ buyIf/skipIf/bestAlt + verdict + 4 FAQ + Review Schema | ✅ winner + Quick Decision + whatOwnersSay + 4 FAQ + 对比表 | ✅ 6 节正文 + 4 FAQ + FAQPage Schema |
+
+**结论：初审不能判定三页全部通过。已对三页来源表达进行最小修复：删除无 URL 的逐字引语、无依据精确数字和品牌级绝对结论，保留 source ledger 或官方规格能够支持的内容，并将无法统一证明的离线行为改为按型号核实、先行实测。修复后需以 build 和生成页抽查作为最终验收。**
+
+关键发现：Week 9 已补齐 identity、quickAnswer 和 answerability 结构，但 source 维度仍有过度表达；结构存在不等于来源通过。生产环境当时可访问，但 WOPET vs Petlibro 的线上日期（July 11）与本地 registry/dist（July 9）不一致，本次页面实质修改后统一按 2026-07-14 维护。
+
+### P0-2：W28 Feeder Reliability 信号回填 — 保留可证据化部分并降级过度表达
+
+W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的覆盖情况：
+- WiFi 2.4GHz only → Petlibro Review complaints + WiFi Guide Fix #1 ✅
+- Cloud dependency → WiFi Guide "Common Feeder Failure Modes" section ✅
+- Portion units / kibble-dependent output → WOPET vs Petlibro complaints，改为建议用户称重校准 ✅
+- E-00/E-1 errors → 保留官方支持文档可核实部分；删除无可追溯来源的 clock drift / USB overheating ✅
+- Silent failure → WiFi Guide + Jamming Guide ✅
+- Offline schedule behavior → 不再统一声称全部品牌离线继续执行；改为按具体型号说明书核实并先行断网测试 ✅
+
+**结论：不新增未经证明的 reliability 信号。已有内容按 guardrails 完成证据降级与保守改写。**
+
+### P0-3：Guest Post Round 3 D7 闭环 ✅ （有重大更新）
+
+**7/14 实际状态**（人工反馈更正）：
+
+| # | 目标 | 状态 |
+|:--:|------|:--:|
+| 1 | PetPlace.com | ❌ D0 起邮箱未找到，无法发送 |
+| 2 | EntirelyPets.com | ❌ D0 起邮箱未找到，无法发送 |
+| 3 | **Pretty Happy Pets** | ✅ **Accepted！** 7/14 回信接受投稿，要求 1,200-2,500 字 |
+| 4 | Your Vet Online | ✅ D7 已由人工发送 |
+| 5 | LenoxVet | ✅ D7 已由人工发送 |
+
+**里程碑**：Pretty Happy Pets 是 Guest Post Round 3 首个人工确认回复并接受的站点，也是全部 3 轮 Guest Post outreach 中第一个明确接受投稿的目标。对方另询问是否接受外部投稿；该请求必须独立按编辑标准审核，不承诺 reciprocal/dofollow 链接。
+
+**下一步**：
+- 基于现有 `stainless-steel-vs-plastic-fountains` 指南改写 1,200-2,500 字 guest post（去掉 affiliate 链接，保留 research-backed 风格）
+- 人工简短回信确认收悉 + 告知 draft 预计时间
+- 如对方提交选题或稿件，按相关性、证据质量和编辑标准独立审核
+
+- [x] round3 文件状态已更正，标注 #1/#2 邮箱缺失、#3 已接受
+- [x] Pretty Happy Pets 回复仅保存结构化摘要；私人邮件原文未存入公开仓库
+
+### 今日产出汇总
+
+| 文件 | 改动 |
+|------|------|
+| `src/pages/reviews/[slug].astro` | 删除 Petlibro 无法追溯的 owner quotes 和精确性能数字，改为保守概括 |
+| `src/pages/compare/[slug].astro` | 删除无证据的 clock drift / USB overheating / 统一离线行为断言 |
+| `src/pages/guides/[slug].astro` | 删除品牌级绝对结论和无来源引语，按型号/实测描述 WiFi 与离线行为 |
+| `src/data/content-dates.json` | 三个实际修改页面的 modifiedDate 更新为 2026-07-14 |
+| `backlinks/round3-guest-post-targets.md` | D0 纠正为 3/5、D7 实发 2、接受 1、未发送 2；移除私人邮件原文和换链承诺 |
+| `progress.md` / `task_plan.md` | 修正验收结论、日期差异和交付状态 |
+
+### 收工检查
+
+- [x] `git diff --check`：仅 LF/CRLF 警告（无害）
+- [x] `npm run build`：通过，114 pages built
+- [x] 生成页抽查：三页均显示 July 14, 2026；Article/Review Schema 与 Person author 保留；目标保守表达已渲染；已删除的高风险原话/断言未出现在生成页
+- [x] 未新增页面；仅三个实际修改页面刷新 modifiedDate
+- [x] 已移除本次审计发现的无来源 owner quote、精确统计和品牌级绝对断言
+- [x] 外联状态统一为：D0 实发 3/5；D7 实发 2；接受 1；未发送 2
+
+### 人工操作清单（7/14）
+
+| # | 操作 | 状态 |
+|:--:|------|:--:|
+| 1 | Guest Post Round 3 跟进 | ✅ #3 人工确认接受；#4/#5 D7 已发；#1/#2 因缺少公开编辑邮箱从未发送 |
+| 2 | **GSC URL Inspection ×5** | ✅ 已提交（cat-breaking + litter-box-buying-guide + wifi-disconnecting + petlibro-granary + wopet-vs-petlibro） |
+| 3 | Homerunpet v2 D0 审核 | → 明天 7/15 发送前审核 |
+
+### 指标变化
+
+本次修复涉及三个既有页面的来源表达，不新增 URL；流量和索引指标仍沿用 7/13 Snapshot 5，页面交付状态以 build、提交和后续生产部署为准。
