@@ -165,11 +165,11 @@ const compareMap: Record<string, CompareData> = {
     faqs: [
       { q: "Is the Petlibro camera worth the extra $50?", a: "If you check on your pet during the day, absolutely. The 1080p camera with night vision effectively replaces a separate pet camera ($30-$100). You're getting a feeder + camera bundle, which is cheaper than buying both separately." },
       { q: "Which feeder is better for large dogs?", a: "The WOPET wins for large dogs with its 6L hopper (vs Petlibro's 5L max). That's about 25-30 cups of kibble, enough for a large dog for 5-7 days. The WOPET also handles larger portion sizes better at 10 meals/day." },
-      { q: "Can both feeders work without Wi-Fi?", a: "Both require initial Wi-Fi setup for scheduling, but both will continue feeding on their programmed schedule even if Wi-Fi drops. The WOPET has a slight edge with built-in battery backup for power outages; Petlibro requires a separate battery pack." },
+      { q: "Can both feeders work without Wi-Fi?", a: "Offline scheduling and backup-power behavior vary by exact model revision. Before relying on either feeder, confirm in its manual whether schedules are stored locally, then test a scheduled portion with Wi-Fi and AC power disconnected." },
       { q: "Which app is easier to use?", a: "Petlibro's app is noticeably more polished — intuitive scheduling, clear camera feed, and responsive alerts. WOPET's app works reliably but the interface feels older and navigation is less intuitive. Neither is a dealbreaker, but Petlibro's UX is clearly ahead." },
     ],
-    buyIf: "You want visual proof your pet ate. The Petlibro Granary ($139) is the only feeder under $150 with a built-in 1080p camera and night vision — effectively a feeder + pet cam in one. Worth the $50 premium over WOPET for peace of mind.",
-    skipIf: "You're on a tight budget or don't need a camera. The WOPET ($89) gives you more capacity (6L vs 3L), built-in battery backup, and proven reliability for $50 less. If you already have a separate pet camera, the Petlibro's camera is redundant.",
+    buyIf: "You want a feeder with a built-in 1080p camera and night vision so you can check the bowl remotely. Compare the current price premium with the cost of buying a separate camera.",
+    skipIf: "You are on a tight budget, do not need a camera, or already have a separate pet camera. In those cases, compare hopper capacity, supported kibble size, backup power, and offline scheduling instead.",
     bestAlternative: "<strong>PETKIT Fresh Element ($129)</strong> — rotary sealing keeps kibble fresher longer. No camera, but better food preservation if that's your priority. <strong>DOGNESS Mini ($99)</strong> — compact design with stainless steel bowl, best for small spaces.",
     whatOwnersSay: {
       praise: "The recurring trade-off is straightforward: Petlibro combines feeding with a camera for visual check-ins, while WOPET prioritizes hopper capacity and lower upfront cost. Treat these as decision factors rather than universal reliability rankings, because app and WiFi performance depend on the model, firmware, router, and home setup.",
@@ -438,9 +438,10 @@ const productB = data.productBId ? allProducts.get(data.productBId) : data.produ
 
 import datesRaw from "../../data/content-dates.json";
 const dates = datesRaw as any;
-const compareDates = (dates.pages?.compare?.[slug]) || {};
-const pubDate = compareDates.publishDate || "2026-05-22";
-const modDate = compareDates.modifiedDate || compareDates.publishDate || "2026-05-22";
+const compareDates = dates.pages?.compare?.[slug];
+if (!compareDates) throw new Error(`Missing content date registry entry: compare/${slug}`);
+const pubDate = compareDates.publishDate;
+const modDate = compareDates.modifiedDate;
 const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 ---
 

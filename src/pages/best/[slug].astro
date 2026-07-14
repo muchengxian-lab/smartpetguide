@@ -163,9 +163,10 @@ const isLitterBox = slug.includes("litter");
 
 import datesRaw from "../../data/content-dates.json";
 const dates = datesRaw as any;
-const bestDates = (dates.pages?.best?.[slug]) || {};
-const pubDate = bestDates.publishDate || "2026-05-20";
-const modDate = bestDates.modifiedDate || bestDates.publishDate || "2026-05-20";
+const bestDates = dates.pages?.best?.[slug];
+if (!bestDates) throw new Error(`Missing content date registry entry: best/${slug}`);
+const pubDate = bestDates.publishDate;
+const modDate = bestDates.modifiedDate;
 const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 ---
 

@@ -434,9 +434,10 @@ const product = allProducts.get(review.productId);
 
 import datesRaw from "../../data/content-dates.json";
 const dates = datesRaw as any;
-const reviewDates = (dates.pages?.reviews?.[slug]) || {};
-const pubDate = reviewDates.publishDate || "2026-05-20";
-const modDate = reviewDates.modifiedDate || reviewDates.publishDate || "2026-05-20";
+const reviewDates = dates.pages?.reviews?.[slug];
+if (!reviewDates) throw new Error(`Missing content date registry entry: reviews/${slug}`);
+const pubDate = reviewDates.publishDate;
+const modDate = reviewDates.modifiedDate;
 const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 ---
 

@@ -3035,7 +3035,7 @@ Top 3 Pin：不锈钢饮水机 141 / 无订阅摄像头 139 / LR4 vs Leo 114
 #### Task 3: 批量改动日 ✅
 - [x] Guides / Reviews / Compare 3 模板 `modifiedDate` 已刷新到 `2026-07-10`
 - [x] 构建 0 错误 / push d37e188
-- [ ] GSC Sitemap 重提交（人工）
+- [x] GSC Sitemap 重提交（人工）
 
 #### Task 4: 周报/度量日志 ✅
 - [x] `weekly-metrics-log.md` Snapshot 4 已写入
