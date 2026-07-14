@@ -61,7 +61,7 @@
 2. 项目当前汇总中的 `quickAnswer 8/38` 漂移已在本次复盘修正为 Git 已验证的 `13/38`；历史 7/8 日志保留当时值。
 3. `crawler / Cloudflare` 核对未做；降级为一次性 P2 收口，不作为持续 GEO 工作。
 4. GEO 月度综合复检未做；下周只做一次综合复检，避免重复技术评分。
-5. Guest Post Round 3 已获 Pretty Happy Pets 接受；7/14 确认回复已发送，承诺 7/17 前提交 guest post draft；尚未形成发布或落链结果。
+5. Guest Post Round 3 已获 Pretty Happy Pets 接受；7/14 确认回复已发送，1,888-word draft 已完成，邮件中的站内样稿页也已完成证据化纠偏，待人工终审后于 7/17 前提交；尚未形成发布或落链结果。
 6. `findings.md`、`weekly-report.md` 已陈旧；本次复盘同步更新。
 7. `date-trace.txt` 仍为未跟踪文件；下周确认用途后再决定保留或移除，不自动处理。
 

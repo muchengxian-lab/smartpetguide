@@ -192,6 +192,6 @@ press@smartpetguide.net
 
 | # | 事项 | 类型 | 说明 |
 |:--:|------|:--:|------|
-| 1 | **写 Pretty Happy Pets 投稿稿** | Claude 可执行 | **截止 7/17**；基于现有 `stainless-steel-vs-plastic-fountains` 指南重写为 1,200-2,500 字 guest post，去掉 affiliate 链接；不沿用无法证明的 18,500 reviews / $61 / 2-week acne claims |
+| 1 | **Pretty Happy Pets 投稿稿** | Draft ready | ✅ 1,888-word 初稿：`backlinks/pretty-happy-pets-stainless-vs-plastic-draft.md`；无 affiliate 链接，未沿用无法证明的 18,500 reviews / $61 / 2-week acne claims；待人工审阅后于 7/17 前发送 |
 | 2 | **回复确认收悉** | 人工 | ✅ 7/14 已发送；已告知 7/17 前提交 draft |
 | 3 | **外部投稿审核决定** | 等待对方 | 等待其提供 2-3 个选题与写作样稿；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
