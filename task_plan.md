@@ -61,7 +61,7 @@
 2. 项目当前汇总中的 `quickAnswer 8/38` 漂移已在本次复盘修正为 Git 已验证的 `13/38`；历史 7/8 日志保留当时值。
 3. `crawler / Cloudflare` 核对未做；降级为一次性 P2 收口，不作为持续 GEO 工作。
 4. GEO 月度综合复检未做；下周只做一次综合复检，避免重复技术评分。
-5. Guest Post Round 3 尚无回复/落链结果；7/14 进入 7 天跟进窗口。
+5. Guest Post Round 3 已获 Pretty Happy Pets 接受；7/14 确认回复已发送，承诺 7/17 前提交 guest post draft；尚未形成发布或落链结果。
 6. `findings.md`、`weekly-report.md` 已陈旧；本次复盘同步更新。
 7. `date-trace.txt` 仍为未跟踪文件；下周确认用途后再决定保留或移除，不自动处理。
 
@@ -70,7 +70,7 @@
 | 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
 |:--:|------|------|------|------|
 | 周一 | 7/13 | ✅ 刷新 GSC/GA4/Pinterest/引用域名基线；确认全部 8 个未索引 URL（3+2+2+1=8 分类完成）；同步文档口径 | — | ✅ Snapshot 5 实测，8/8 URL 已确认分类，wifi-disconnecting 已入索引（不计入 8），CRM D20 完成，GSC URL Inspection ×5 人工已提交 |
-| 周二 | 7/14 | ✅ 完成 3 页 GEO 审计并修复来源表达缺口；三页正文改为可追溯或保守表述，日期逐页更新。**Guest Post Round 3：Pretty Happy Pets 人工确认接受投稿。** #1/#2 未发送，#4/#5 D7 已发 | ✅ 1 审计表 + 3 页内容修复 + 外联状态/隐私修正；build 通过（114 pages），待提交与生产部署 |
+| 周二 | 7/14 | ✅ 完成 3 页 GEO 审计并修复来源表达缺口；三页正文改为可追溯或保守表述，日期逐页更新。**Guest Post Round 3：Pretty Happy Pets 接受投稿，确认回复已发送，承诺 7/17 前交稿。** #1/#2 未发送，#4/#5 D7 已发 | ✅ build 通过（114 pages）、日期校验通过、已提交推送并完成生产部署；外联状态/隐私记录已同步 |
 | 周三 | 7/15 | 2-4 个未索引页质量/内链加固；GSC URL Inspection ×5 | Aorkuler 最后一次轻量 check-in（仅无回复时）；Homerunpet email-first v2 小试点 | 未索引页有页面级记录；不扩 10 品牌 CRM |
 | 周四 | 7/16 | 加固现有可链接资产：优先 `pet-tech-statistics` / 3-year TCO 数据与来源层 | 新找 5 个高相关编辑型/资源页目标；排除目录、公开售链站 | 1 个可外联资产 + 5 个合格目标 |
 | 周五 | 7/17 | 批量真实改动、build、push、必要时 sitemap、GSC/GA4 周快照 | 复盘外链回复、品牌回复、索引变化；决定 Week 11 是否继续同权重 | Week 10 周报 + Continue/Adjust/Stop |

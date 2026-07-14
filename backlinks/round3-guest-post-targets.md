@@ -176,7 +176,7 @@ press@smartpetguide.net
 |:--:|------|:--:|------|
 | 1 | PetPlace.com | ❌ 未发送 | D0 起邮箱未找到（petplace.com/write-for-us 无公开编辑邮箱），标注为 unresolved |
 | 2 | EntirelyPets.com | ❌ 未发送 | D0 起邮箱未找到（entirelypets.com/guest-blogger.html 无公开编辑邮箱），标注为 unresolved |
-| 3 | Pretty Happy Pets | ✅ **Accepted（人工确认）** | 7/14 回复接受投稿，要求 1,200-2,500 字、research-backed 风格；另询问是否接受外部投稿，待独立编辑审核 |
+| 3 | Pretty Happy Pets | ✅ **Accepted / Reply sent** | 7/14 人工确认接受；确认回复已发送，承诺 7/17 前提交 1,200-2,500 字 research-backed draft；外部投稿请求待独立编辑审核 |
 | 4 | Your Vet Online | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 | 5 | LenoxVet | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 
@@ -186,11 +186,12 @@ press@smartpetguide.net
 - 投稿主题：Stainless Steel vs Plastic Cat Fountains。
 - 对方要求：1,200-2,500 字，保持 research-backed 风格。
 - 额外请求：询问 SmartPetGuide 是否接受外部投稿；这与本次投稿独立处理，不承诺互换链接。
+- SmartPetGuide 回复：2026-07-14 人工已发送；承诺 2026-07-17 前交稿，并请对方另行提供 2-3 个选题与相关写作样稿，所有外部投稿按受众匹配、原创性和来源质量独立审核。
 
 ### 下一步行动
 
 | # | 事项 | 类型 | 说明 |
 |:--:|------|:--:|------|
-| 1 | **写 Pretty Happy Pets 投稿稿** | Claude 可执行 | 基于现有 `stainless-steel-vs-plastic-fountains` 指南改写为 1,200-2,500 字 guest post，去掉 affiliate 链接，保持 research-backed 风格 |
-| 2 | **回复确认收悉** | 人工 | 简短回信确认收到、告知 draft 预计时间（建议 1-3 天内提交） |
-| 3 | **外部投稿审核决定** | 人工决策 | 如对方提交选题或稿件，仅按相关性、证据质量和编辑标准独立审核；不承诺 reciprocal 或 dofollow 链接，也不把对方链接作为接收条件 |
+| 1 | **写 Pretty Happy Pets 投稿稿** | Claude 可执行 | **截止 7/17**；基于现有 `stainless-steel-vs-plastic-fountains` 指南重写为 1,200-2,500 字 guest post，去掉 affiliate 链接；不沿用无法证明的 18,500 reviews / $61 / 2-week acne claims |
+| 2 | **回复确认收悉** | 人工 | ✅ 7/14 已发送；已告知 7/17 前提交 draft |
+| 3 | **外部投稿审核决定** | 等待对方 | 等待其提供 2-3 个选题与写作样稿；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
