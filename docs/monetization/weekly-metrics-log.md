@@ -447,4 +447,6 @@
 - 日期注册表校验通过：100 content pages、113 sitemap URLs。
 - 三个目标页均为单 H1、带尾斜杠自指 canonical、`dateModified=2026-07-15`。
 - 不新增 URL，不修改全站 redirect/canonical 策略，不添加无来源 owner quote。
+- SEO 提交 `c42b9a1` 已推送至 `origin/master`；Vercel 生产部署 `dpl_FjC2DxWF4siygZSn5LuhidoQZR4R` 为 `READY`。
+- 主页、robots、sitemap 和三个目标页线上均返回 200；目标页生产 HTML 的 title/meta、canonical、日期与决策内容核验通过。
 - 观察窗口：14-28 天；期间不反复改标题，以页面点击、CTR 和平均排名判断效果。
