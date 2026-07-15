@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-15 周三 | Snapshot 5 基线（7/13 实测）：114 页 / Pinterest 1,423 月浏览(出站0) / GSC 索引 22 / 曝光 282 / 点击 4 / CTR 1.4% / 排名 35 / GA4 29 活跃(21/29 Singapore) / 引用域名 12(Semrush，待核验) / Authority Score 2 | Brand Outreach 1/6 回复，Homerunpet v2 D0 已发 | Guest Post Round 3：D0 实发 3/5、接受 1、未发送 2 | Month 2 战略已建立 | 已抓取未索引 8 页全部确认处置**
+**最后更新：2026-07-15 周三 | GSC Snapshot 6（7/15 实测）：114 页 / 索引 33 / 未索引 15 / Sitemap 成功发现 113 / 曝光 287 / 点击 4 / CTR 1.4% / 排名 35.4；其余渠道沿用 Snapshot 5（7/13）：Pinterest 1,423 月浏览(出站0) / GA4 29 活跃(21/29 Singapore) / 引用域名 12(Semrush，待核验) / Authority Score 2 | Brand Outreach 1/6 回复，Homerunpet v2 D0 已发 | Guest Post Round 3：D0 实发 3/5、接受 1、未发送 2 | GSC 高展示零点击页 3/3 已优化**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 10 默认不扩页；35-40% 时间用于外链/编辑型分发，25-30% 用于 GSC 与现有页加固，20-25% 用于战略 GEO/VOC 回填，Pinterest 只做低成本维护。
 
@@ -71,7 +71,7 @@
 |:--:|------|------|------|------|
 | 周一 | 7/13 | ✅ 刷新 GSC/GA4/Pinterest/引用域名基线；确认全部 8 个未索引 URL（3+2+2+1=8 分类完成）；同步文档口径 | — | ✅ Snapshot 5 实测，8/8 URL 已确认分类，wifi-disconnecting 已入索引（不计入 8），CRM D20 完成，GSC URL Inspection ×5 人工已提交 |
 | 周二 | 7/14 | ✅ 完成 3 页 GEO 审计并修复来源表达缺口；三页正文改为可追溯或保守表述，日期逐页更新。**Guest Post Round 3：Pretty Happy Pets 接受投稿，确认回复已发送，承诺 7/17 前交稿。** #1/#2 未发送，#4/#5 D7 已发 | ✅ build 通过（114 pages）、日期校验通过、已提交推送并完成生产部署；外联状态/隐私记录已同步 |
-| 周三 | 7/15 | ✅ 2 个未索引页内链加固（cat-breaking + litter-box-buying-guide，3 源页→2 目标页）；✅ GSC URL Inspection ×5 已提交 | ✅ Aorkuler 最终 check-in 已发；✅ Homerunpet v2 D0 已发 | ✅ 页面级记录、CRM 状态、build/date 校验、Git 推送及生产部署均完成 |
+| 周三 | 7/15 | ✅ 2 个未索引页内链加固；✅ GSC URL Inspection ×5；✅ GSC Snapshot 6；✅ Petlibro/GPS/Catit 三个高展示零点击页完成 title/meta、决策信息与正文内链优化 | ✅ Aorkuler 最终 check-in 已发；✅ Homerunpet v2 D0 已发 | ✅ 114 页 build、日期、最终 HTML、canonical、内链验证通过；本轮改动已提交 Git |
 | 周四 | 7/16 | 加固现有可链接资产：优先 `pet-tech-statistics` / 3-year TCO 数据与来源层 | 新找 5 个高相关编辑型/资源页目标；排除目录、公开售链站 | 1 个可外联资产 + 5 个合格目标 |
 | 周五 | 7/17 | 批量真实改动、build、push、必要时 sitemap、GSC/GA4 周快照 | 复盘外链回复、品牌回复、索引变化；决定 Week 11 是否继续同权重 | Week 10 周报 + Continue/Adjust/Stop |
 
@@ -87,8 +87,8 @@
 
 | 指标 | 当前基线 | 周目标 | 说明 |
 |------|:--:|:--:|------|
-| 已抓取未索引 URL | 8/8 已确认并分类（3+2+2+1=8） | 完成其中 2 个待加固页面；wifi-disconnecting 已入索引单独记录 | 领先指标，可控 |
-| GSC 索引 | 22 | 观察目标 26-30 | 结果指标，不为达标而批量扩页 |
+| 已抓取未索引 URL | Snapshot 6 为 4；原 8 页中部分已退出或转入其他分类 | 完成其中 2 个待加固页面；wifi-disconnecting 已入索引单独记录 | 领先指标已改善，继续等待重抓 |
+| GSC 索引 | **33** | 原观察目标 26-30 | ✅ 已超过周目标；不因达标批量扩页 |
 | 3 页战略 GEO 审计 | 0/3（W28 新口径） | 3/3 | 看复述稳定性与事实层，不看单次 AI 排名 |
 | 外链分发 | Guest Post D0 实发 3/5、接受 1 / 引用域名 11 | 跟进已发送目标 + 新目标 5 个；争取 1 个回复或落链 | #1/#2 因无公开邮箱未发送；不把目录/Profile 当主要成果 |
 | Brand Outreach | 1/6 回复 | 只跑 1 个 email-first v2 小试点 + Aorkuler 收口 | 先验证触点，不扩名单 |
@@ -825,3 +825,23 @@
 
 *后续任务管理统一在本文件维护，不再分散到 dashboard.md。每次会话开工读此文件顶部活跃任务区，收工更新任务状态。*
 *progress.md 继续作为会话日志单独维护。findings.md 继续作为研究/决策记录单独维护。*
+
+## 2026-07-15 GSC 高展示零点击页优化（已完成）
+
+**触发数据**：GSC 最近 3 个月 4 点击 / 287 展示 / CTR 1.4% / 平均排名 35.4；索引 33。优先处理三个已有展示但零点击的规范页面。
+
+| 页面 | GSC 展示 | 本轮动作 | 状态 |
+|------|:--:|------|:--:|
+| `/reviews/petlibro-granary-review/` | 69 | 缩短 title/meta，保留现有 Quick Answer 与决策模块，补强相关正文内链 | ✅ 完成 |
+| `/best/gps-trackers-no-monthly-fee/` | 53 | 对齐 “without subscription / no monthly fee” 意图，明确 2 个真实免订阅方案与 Tractive 付费基准 | ✅ 完成 |
+| `/reviews/catit-pixi-fountain-review/` | 49 | 缩短 title/meta，补 Quick Answer、Buy/Skip/Alternative 与维护成本判断 | ✅ 完成 |
+
+**验收条件**：
+- title 控制在约 50-60 字符，meta description 控制在约 150-160 字符；
+- 首屏直接回答“是否值得买 / 谁适合 / 谁不适合”；
+- GPS 页不把需要订阅的 Tractive 描述为免订阅产品；
+- 只刷新有实质内容改动页面的 `modifiedDate`；
+- `npm run build`、`git diff --check` 与生成页抽查通过；
+- 更新 `findings.md`、`progress.md` 和周指标记录后提交 Git。
+
+**验收结果**：最终 HTML title 为 58/56/59 字符，description 为 150/151/158 字符；3 页均为单 H1、自指向带尾斜杠 canonical、`dateModified=2026-07-15`。GPS 决策表、Catit Quick Answer/Quick Decision、3 条正文内链均已渲染；114 页 build 与日期校验通过。

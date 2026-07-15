@@ -567,6 +567,31 @@ SmartPetGuide 对应的目标：
 ---
 *每次调研后更新此文件*
 
+## GSC Snapshot 6 与高展示零点击页判断（2026-07-15）
+
+### 当前实测数据
+
+- GSC 索引报告更新于 2026-07-10：**33 已索引 / 15 未索引**，较 Snapshot 5 的 22 已索引增加 11。
+- 未索引分类：网页会自动重定向 5、重定向错误 3、备用网页（有适当规范标记）1、已抓取未索引 4、重复网页（Google 选择的规范页不同）2。
+- Sitemap 于 2026-07-11 读取成功，发现 **113 URL**。
+- 最近 3 个月效果：**4 点击 / 287 展示 / CTR 1.4% / 平均排名 35.4**。
+- 高展示零点击页：Petlibro Granary 69、GPS no monthly fee 53、Catit PIXI 49。
+
+### 重定向结论
+
+- 5 个“网页会自动重定向”中，两个是不带尾斜杠 URL → 带尾斜杠 canonical；两个是 HTTP/WWW → HTTPS 规范域；这些是预期重定向，不应改成 200。
+- `/reviews/nofee-gps-tracker-review/` 当前已直接返回 200，GSC 仍显示 2026-05-24 的旧抓取结果，属于报告滞后。
+- 3 个“重定向错误”示例（smart-home-pet-devices、best-no-subscription-cameras、amazon-basics-litter-box-review）当前均直接返回 200；验证已开始，继续等待 Google 重抓，无需新增代码重定向。
+- “网页会自动重定向”的验证失败不等于 canonical 故障；这些 URL 本来就应该跳转，反复验证会继续失败。
+
+### SEO 决策
+
+- 三个目标页源码标题原为 70+ 字符；BaseLayout 还会追加 `| SmartPetGuide`。优化必须按最终 HTML 长度验收，而不是只看源码 title。
+- Petlibro 已有 Quick Answer、Buy/Skip/Alternative，正文结构足够；最小改动是精简搜索标题和描述，并从相关指南补正文内链。
+- GPS 页实际包含两个免订阅方案和一个需要订阅的 Tractive。优化重点是显式说明 Tractive 仅为 cellular benchmark，并增加月费/技术/适用场景/限制比较表。
+- Catit 页缺少首屏购买判断；新增 Quick Answer 与 Buy/Skip/Alternative，但不新增无法追溯的 owner quote 或医疗结论。
+- 站点平均排名仍为 35.4，title/meta 只是 CTR 基础；后续应以 14-28 天窗口观察目标页展示、点击和平均排名，不在短期内反复改标题。
+
 ## W28 自动化信号与 Week 10 方向（2026-07-12）
 
 ### 证据汇总

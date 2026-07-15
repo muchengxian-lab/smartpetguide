@@ -51,7 +51,13 @@ const allProducts = categoryKey
   ? products[categoryKey]
   : (customLists[slug] || []).map((id: string) => allProductMap.get(id)).filter(Boolean);
 
-const titleMap: Record<string, { title: string; description: string; faqs: { q: string; a: string }[] }> = {
+const titleMap: Record<string, {
+  title: string;
+  description: string;
+  quickAnswer?: string;
+  subscriptionComparison?: { option: string; monthlyFee: string; technology: string; bestFor: string; mainLimit: string }[];
+  faqs: { q: string; a: string }[];
+}> = {
   "self-cleaning-litter-boxes": {
     title: "7 Best Self-Cleaning Litter Boxes of 2026 — Researched & Reviewed",
     description: "We analyzed thousands of verified owner reviews to find the best automatic litter boxes for odor control, multi-cat homes, and budget. Litter-Robot vs Leo's Loo vs PetSafe and more.",
@@ -95,8 +101,14 @@ const titleMap: Record<string, { title: string; description: string; faqs: { q: 
     ],
   },
   "gps-trackers-no-monthly-fee": {
-    title: "Best GPS Dog Trackers Without Monthly Fee 2026 — No Subscription Picks",
-    description: "Tired of subscription fees? We found the best GPS dog trackers with no monthly fees. Compare truly subscription-free trackers from Aorkuler, budget no-fee options, and the best cellular tracker for those okay with a small fee.",
+    title: "2 Best GPS Trackers Without Subscription",
+    description: "Compare two GPS dog trackers with no monthly fee against Tractive. See real range, upfront cost, accuracy, and which option works without cell service.",
+    quickAnswer: "Two trackers on this page avoid monthly fees. Aorkuler uses a handheld radio-frequency system for off-grid direction and distance, while the $33 no-fee model is the budget option. Tractive is included only as the cellular benchmark because it requires a subscription.",
+    subscriptionComparison: [
+      { option: "Aorkuler GPS", monthlyFee: "$0", technology: "Radio frequency + handheld controller", bestFor: "Hiking and areas without cell service", mainLimit: "$229 upfront; stated range up to 3.5 miles" },
+      { option: "No Monthly Fee Tracker", monthlyFee: "$0", technology: "App-connected budget tracker", bestFor: "Low upfront cost and everyday check-ins", mainLimit: "Shorter battery life and less established support" },
+      { option: "Tractive GPS", monthlyFee: "$5–13", technology: "Cellular GPS", bestFor: "Wide-area tracking where cell service is available", mainLimit: "Ongoing subscription; 2–5 day battery" },
+    ],
     faqs: [
       { q: "Are there really GPS dog trackers with no monthly fee?", a: "Yes — but they use different technology. Truly no-fee trackers like Aorkuler use radio frequency (RF) instead of cellular networks, limiting range to 3-5 miles. Bluetooth trackers like Apple AirTag have no fees but no real-time GPS. For unlimited-range GPS, cellular trackers like Tractive charge $5-13/month." },
       { q: "What's the range of a no-subscription GPS tracker?", a: "RF-based trackers like Aorkuler have a 3-5 mile range through open terrain. This is perfect for hiking and rural areas but won't help if your dog escapes and runs 10+ miles. For unlimited range, you need a cellular GPS tracker with a subscription." },
@@ -179,6 +191,46 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
 
     <!-- Trust line -->
     <p class="mt-3 text-sm text-bark-muted/80 italic">How we pick: We analyze verified owner reviews and product specs — <a href="/about/" class="underline decoration-honey/50 hover:text-honey">learn more about our research process</a></p>
+
+    {pageData.quickAnswer && (
+      <section class="mt-8 rounded-2xl border border-honey/30 bg-gradient-to-br from-honey/5 to-cream/50 p-6">
+        <h2 class="font-display text-xl font-bold text-forest">Do Any GPS Dog Trackers Work Without a Subscription?</h2>
+        <p class="mt-2 leading-relaxed text-bark-muted">{pageData.quickAnswer}</p>
+      </section>
+    )}
+
+    {pageData.subscriptionComparison && (
+      <section class="mt-8 overflow-hidden rounded-2xl border border-sage-dark/30 bg-white shadow-sm">
+        <div class="border-b border-sage-dark/20 bg-sage-light/50 px-6 py-4">
+          <h2 class="font-display text-xl font-bold text-forest">No-Fee Trackers vs the Cellular Benchmark</h2>
+          <p class="mt-1 text-sm text-bark-muted">Only the first two options avoid recurring fees. Tractive is shown to make the coverage and cost trade-off explicit.</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[760px] text-left text-sm">
+            <thead class="bg-cream/70 text-forest">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Option</th>
+                <th class="px-4 py-3 font-semibold">Monthly fee</th>
+                <th class="px-4 py-3 font-semibold">Technology</th>
+                <th class="px-4 py-3 font-semibold">Best for</th>
+                <th class="px-4 py-3 font-semibold">Main limit</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-sage-dark/20 text-bark-muted">
+              {pageData.subscriptionComparison.map(row => (
+                <tr>
+                  <td class="px-4 py-3 font-semibold text-bark">{row.option}</td>
+                  <td class="px-4 py-3">{row.monthlyFee}</td>
+                  <td class="px-4 py-3">{row.technology}</td>
+                  <td class="px-4 py-3">{row.bestFor}</td>
+                  <td class="px-4 py-3">{row.mainLimit}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
 
     <Takeaways items={[
       `${allProducts.length} products researched and compared`,
