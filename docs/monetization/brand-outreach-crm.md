@@ -7,8 +7,8 @@
 
 | # | Brand | Category | Product | Website | Contact | 3 Key Findings | Status | Sent | Follow-up | Notes |
 |:--:|------|------|------|------|------|------|:--:|------|------|------|
-| 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Check-in sent — awaiting reply | 7/1 | 7/8 check-in | John replied 7/2, snapshot PDF sent 7/2. Check-in sent 7/8. Email-first async; next touch ~7/15 if no reply. |
-| 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | contact@homerunpet.com | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Ready for human | — | 7/15 planned | D20 review: email-first v2 pilot. D0 draft ready, send 7/15. Budget wireless, strong story. |
+| 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Final check-in sent 7/15 | 7/1 | 7/8, 7/15 final | John replied 7/2, snapshot PDF sent 7/2. Check-in sent 7/8. Final check-in sent 7/15 — ball in their court. No further follow-up unless they reach out. |
+| 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | contact@homerunpet.com | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Sent — awaiting reply | 7/15 | — | v2 D0 sent 7/15. Email-first pilot. A-format title. Budget wireless, strong story. |
 | 3 | KittySpout | Water Fountain | Stainless Steel Fountain | kittyspout.com | 表单 (kittyspout.com/pages/contact-us) | (1) Dishwasher-safe angle underused — key difference vs Pioneer Pet (2) Mid-price ($50) position unclear vs $39/$93 alternatives (3) 800 reviews — needs more social proof | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
 | 4 | YEAPAW | Water Fountain | Stainless Steel Fountain | yeapaw.com | 表单 (yeapaw.com/pages/contact) | (1) Pumpless tech is unique but poorly explained in listing (2) Only 1,200 reviews — differentiation story needed (3) No content comparing magnetic induction vs traditional pumps | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
 | 5 | Elspet | Litter Box | Elspet Pro Self-Cleaning | elspet.com | help@elspet.com | (1) Easiest-to-clean design in category — but no video/visual proof (2) 18-month warranty longer than competitors — not highlighted (3) 2,100 reviews — new brand trust gap | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
@@ -745,7 +745,31 @@ press@smartpetguide.net
 
 ---
 
-## Homerunpet email-first v2 D0（Ready for human — 7/15 发送）
+## D21 Aorkuler Final Check-in（✅ 已发送 7/15）
+
+> 发件地址：`press@smartpetguide.net`
+> 发件日：2026-07-15 周三
+> 前情：7/2 John 回复并收到快照，7/8 check-in 询问是否已审阅。至今无二次回复。这是最后一次轻量收口，不施压。
+
+**Subject:** Re: Aorkuler GPS Tracker visibility
+
+```
+Hi John,
+
+One last follow-up — I know priorities shift and timing isn't always right.
+
+If anything changes down the road or you'd like to revisit the visibility snapshot, feel free to reach out anytime. No further follow-ups from my side — I'll leave the ball in your court.
+
+Either way, appreciate the conversation and hope the snapshot was useful.
+
+Best,
+Chengxian Yang
+press@smartpetguide.net
+```
+
+---
+
+## D21 Homerunpet email-first v2 D0（✅ 已发送 7/15）
 
 > 发件地址：`press@smartpetguide.net`
 > 发件日：2026-07-15 周三
