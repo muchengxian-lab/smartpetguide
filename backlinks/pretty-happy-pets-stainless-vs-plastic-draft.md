@@ -18,7 +18,7 @@ Biofilm is a community of microorganisms attached to a surface and protected by 
 
 The filter does not make those ingredients disappear. It catches some debris and may improve taste or odor, but water still circulates through the bowl, tubing and pump. If those parts are not cleaned, a filter can become one more damp surface in the system.
 
-Material affects how a fountain wears and how easy it is to clean, but it does not create a force field around the water. Laboratory research on food-contact surfaces has found that bacteria can form biofilm on both stainless steel and plastic. Surface condition, temperature, available nutrients and the bacterial strain all influence what happens.
+Material affects how a fountain wears and how easy it is to clean, but it does not create a force field around the water. Laboratory food-contact studies—not pet-fountain trials—have shown that bacteria can form biofilm on both stainless steel and plastic. That does not tell us which household fountain stays cleaner, but it does show that stainless steel is not immune to buildup.
 
 This is an important correction to a common sales claim: **stainless steel can still become slimy.** PetSafe even publishes a troubleshooting page specifically for slime in its stainless fountain. The practical benefit of steel is not that nothing grows on it. It is that a sound steel basin is durable, easy to inspect and less likely than soft plastic to accumulate deep scratches from years of scrubbing.
 
@@ -82,7 +82,7 @@ Prices change, so treat these as a shortlist rather than a ranking. None of the 
 
 ### Pioneer Pet Raindrop: the simple, established option
 
-The [Pioneer Pet Raindrop](https://pioneerpet.com/product/stainless-steel-raindrop-60oz/) is a 60-ounce stainless fountain that commonly sells around the $39–$50 range. Its main strength is not a smart feature; it is a straightforward design with a dishwasher-safe basin, replaceable pump and widely available filters. Pioneer recommends weekly fountain cleaning, filter changes every two to four weeks, and monthly pump cleaning.
+The [Pioneer Pet Raindrop](https://pioneerpet.com/product/stainless-steel-raindrop-60oz/) is a 60-ounce stainless fountain that commonly sells for around $60, although retailer pricing changes. Its main strength is not a smart feature; it is a straightforward design with a dishwasher-safe basin, replaceable pump and widely available filters. Pioneer recommends weekly fountain cleaning, filter changes every two to four weeks, and monthly pump cleaning.
 
 It suits someone who wants a basic plug-in fountain and does not mind the visible cord or a conventional submerged pump.
 
@@ -92,9 +92,9 @@ The [PetSafe Seaside](https://www.petsafe.com/p/seaside-stainless-pet-fountain/P
 
 This is the one I would compare for a timid cat or a multi-cat home where animals may approach the water from different directions.
 
-### KittySpout 2.2L: a larger wireless alternative
+### KittySpout 2.2L: a larger option to verify carefully
 
-The [KittySpout 2.2L](https://www.kittyspout.com/products/kittyspout-2-2l) was listed at $59.95 when checked. The manufacturer specifies 304 stainless steel, dishwasher-safe water-contact parts and a 2.2-liter capacity. Its wireless design gives you more freedom to test locations without running a cord across the floor.
+The [KittySpout 2.2L](https://www.kittyspout.com/products/kittyspout-2-2l) was listed at $59.95 when checked. The manufacturer describes the stainless parts as dishwasher-safe and specifies 304 stainless steel with a 2.2-liter capacity. Some specifications on the current product page appear to overlap with the company's separate wireless models, so confirm the exact power setup before ordering.
 
 As with any direct-to-consumer fountain, look beyond the headline claims. Confirm which pieces are actually stainless, the filter replacement interval, battery expectations and the return policy before ordering.
 
@@ -107,6 +107,20 @@ Empty and refresh the water regularly rather than topping it up forever. Wash th
 Multi-cat homes, long-haired cats and fountains placed near food may need more frequent cleaning. Hard water leaves mineral scale that also deserves attention. If slime returns quickly after a thorough wash, look for the part you missed: the pump cover, the channel behind the filter, a rubber gasket or a scratched basin.
 
 And if a plastic fountain remains smooth, comes apart fully and stays genuinely clean, there is no deadline that says it must be thrown away. Condition is more useful than a calendar.
+
+## Frequently asked questions
+
+### Are stainless steel cat fountains bacteria-free?
+
+No. Stainless steel can still develop biofilm when saliva, food debris and microorganisms remain in the water system. Its practical advantage is durability and ease of inspection, not immunity to buildup.
+
+### Can plastic bowls cause feline acne?
+
+Plastic is considered one possible aggravating factor, not the sole cause. If your cat develops chin blackheads or irritation, switching to a clean stainless steel, glass or intact ceramic dish is a reasonable first step, but persistent or painful lesions need veterinary attention.
+
+### How often should a cat fountain be cleaned?
+
+Follow the manufacturer's instructions and clean it before the surface feels slick or develops an odor. The pump, impeller, filter housing and hidden channels need attention as well as the drinking bowl. Multi-cat households may need more frequent cleaning.
 
 ## The bottom line
 

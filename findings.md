@@ -1,5 +1,29 @@
 # 发现与决策
 
+## Pretty Happy Pets 最终交稿状态（2026-07-16）
+
+**事实**：首个已接受的 Guest Post 已在承诺的 7/17 截止日前完成交付。2026-07-16 使用原邮件线程回复，附 PDF，并提供 Google Docs 链接；最终稿约 2,099 词，含 FAQ、可核查来源与 Author bio。
+
+**口径**：当前状态是 `Draft submitted / awaiting editorial and veterinary review`，不是 `Published` 或 `Backlink won`。只有收到采用确认且文章实际发布、作者链接上线后，才计为 guest post placement / referring domain 结果。
+
+**下一步**：等待编辑修改意见、兽医审核或发布时间。未收到反馈前不重复发送稿件；后续跟进只围绕是否需要修改及预计发布节奏，不要求 reciprocal/dofollow 链接。
+
+## TCO 跨页口径不一致（2026-07-16）
+
+**发现**：`pet-tech-statistics` 相机类别 3-Year Cost 范围 $43–$370，但 `smart-pet-devices-subscription-cost` 指南中订阅型相机 3 年成本为 $395（Furbo 360）和 $465（Petcube Bites 2），均超出 stats 表上限。
+
+**原因**：stats 表保留了较早的相机 TCO 上限，而新增方法学脚注明确包含适用的订阅费；因此不能继续把 `$370` 解释为不同口径。
+
+**处置**：2026-07-16 收工验收时立即修正。stats 相机范围更新为 `$43–$465`，与订阅指南中的最高值 Petcube Bites 2 `$464.64` 按整美元展示一致；页面可见更新时间和引用日期同时统一为 2026-07-16。
+
+## Editorial Outreach Round 4 目标复核（2026-07-16）
+
+**核验结果**：BarkyTech、Purely Wholesome、The Upper Pawside、PetsAnalysis 均有可公开核查的投稿规则与联系方式。原 #2 iTechPet 只能访问到机器人验证页，公开搜索无法支持“接受投稿 / admin 邮箱 / 严格编辑政策”等记录，因此不能计入 5 个合格目标。
+
+**替换决定**：以 **GlobalPETS / PETS International** 替换 iTechPet。该媒体当前仍更新，公开覆盖 smart pet devices 与消费者趋势，May 2026 杂志 masthead 列出编辑邮箱 `content@pets.nl`；pitch 改为面向行业读者的订阅疲劳与 3 年成本数据分析。
+
+**状态口径**：Round 4 五个目标均为 `Researched — not sent`，不是 `Drafted` 或 `Sent`。只有形成完整邮件草稿后才可标 Drafted，人工实际发送后才标 Sent。
+
 ## 第三方审计整改计划（2026-06-02）
 
 审计来源：`Codex/2026-06-02/smartpetguide-ai-report-generator` 项目审查报告第4节

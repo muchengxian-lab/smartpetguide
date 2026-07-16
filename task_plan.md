@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-15 周三 | GSC Snapshot 6（7/15 实测）：114 页 / 索引 33 / 未索引 15 / Sitemap 成功发现 113 / 曝光 287 / 点击 4 / CTR 1.4% / 排名 35.4；其余渠道沿用 Snapshot 5（7/13）：Pinterest 1,423 月浏览(出站0) / GA4 29 活跃(21/29 Singapore) / 引用域名 12(Semrush，待核验) / Authority Score 2 | Brand Outreach 1/6 回复，Homerunpet v2 D0 已发 | Guest Post Round 3：D0 实发 3/5、接受 1、未发送 2 | GSC 高展示零点击页 3/3 已优化、已推送并上线核验**
+**最后更新：2026-07-16 周四 | GSC Snapshot 6（7/15 实测）：114 页 / 索引 33 / 未索引 15 / Sitemap 成功发现 113 / 曝光 287 / 点击 4 / CTR 1.4% / 排名 35.4；其余渠道沿用 Snapshot 5（7/13）：Pinterest 1,423 月浏览(出站0) / GA4 29 活跃(21/29 Singapore) / 引用域名 12(Semrush，待核验) / Authority Score 2 | Brand Outreach 1/6 回复，Homerunpet v2 D0 已发 | Guest Post Round 3：D0 实发 3/5、接受 1、最终稿已提交 1、未发送 2 | GSC 高展示零点击页 3/3 已优化、已推送并上线核验**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 10 默认不扩页；35-40% 时间用于外链/编辑型分发，25-30% 用于 GSC 与现有页加固，20-25% 用于战略 GEO/VOC 回填，Pinterest 只做低成本维护。
 
@@ -61,9 +61,9 @@
 2. 项目当前汇总中的 `quickAnswer 8/38` 漂移已在本次复盘修正为 Git 已验证的 `13/38`；历史 7/8 日志保留当时值。
 3. `crawler / Cloudflare` 核对未做；降级为一次性 P2 收口，不作为持续 GEO 工作。
 4. GEO 月度综合复检未做；下周只做一次综合复检，避免重复技术评分。
-5. Guest Post Round 3 已获 Pretty Happy Pets 接受；7/14 确认回复已发送，1,888-word draft 已完成，邮件中的站内样稿页也已完成证据化纠偏，待人工终审后于 7/17 前提交；尚未形成发布或落链结果。
+5. Guest Post Round 3 已获 Pretty Happy Pets 接受；最终约 2,099-word 稿件已于 7/16 在原邮件线程提交，交付包含 PDF 附件与 Google Docs 链接；当前等待编辑/兽医审核，尚未形成发布或落链结果。
 6. `findings.md`、`weekly-report.md` 已陈旧；本次复盘同步更新。
-7. `date-trace.txt` 仍为未跟踪文件；下周确认用途后再决定保留或移除，不自动处理。
+7. `date-trace.txt` 已确认被 `content-dates.json` 替代，并于 7/16 收工清理；误生成的空文件 `({tag` 同步删除。
 
 ### Week 10 排班（7/13-7/17）
 
@@ -72,14 +72,14 @@
 | 周一 | 7/13 | ✅ 刷新 GSC/GA4/Pinterest/引用域名基线；确认全部 8 个未索引 URL（3+2+2+1=8 分类完成）；同步文档口径 | — | ✅ Snapshot 5 实测，8/8 URL 已确认分类，wifi-disconnecting 已入索引（不计入 8），CRM D20 完成，GSC URL Inspection ×5 人工已提交 |
 | 周二 | 7/14 | ✅ 完成 3 页 GEO 审计并修复来源表达缺口；三页正文改为可追溯或保守表述，日期逐页更新。**Guest Post Round 3：Pretty Happy Pets 接受投稿，确认回复已发送，承诺 7/17 前交稿。** #1/#2 未发送，#4/#5 D7 已发 | ✅ build 通过（114 pages）、日期校验通过、已提交推送并完成生产部署；外联状态/隐私记录已同步 |
 | 周三 | 7/15 | ✅ 2 个未索引页内链加固；✅ GSC URL Inspection ×5；✅ GSC Snapshot 6；✅ Petlibro/GPS/Catit 三个高展示零点击页完成 title/meta、决策信息与正文内链优化 | ✅ Aorkuler 最终 check-in 已发；✅ Homerunpet v2 D0 已发 | ✅ 114 页 build、日期、最终 HTML、canonical、内链验证通过；`c42b9a1` 已推送至 `origin/master`，Vercel 生产 READY，线上抽查通过 |
-| 周四 | 7/16 | 加固现有可链接资产：优先 `pet-tech-statistics` / 3-year TCO 数据与来源层 | 新找 5 个高相关编辑型/资源页目标；排除目录、公开售链站 | 1 个可外联资产 + 5 个合格目标 |
+| 周四 | 7/16 | ✅ 加固现有可链接资产：`pet-tech-statistics` / 3-year TCO 数据、来源层与跨页口径已统一 | ✅ 5 个已核验编辑型目标（BarkyTech/GlobalPETS/Purely Wholesome/Upper Pawside/PetsAnalysis）；✅ Pretty Happy Pets 最终稿已提交（PDF + Google Docs） | ✅ 1 个可外联资产 + 5 个可公开验真目标；首个已接受 Guest Post 完成交稿，等待编辑/兽医审核 |
 | 周五 | 7/17 | 批量真实改动、build、push、必要时 sitemap、GSC/GA4 周快照 | 复盘外链回复、品牌回复、索引变化；决定 Week 11 是否继续同权重 | Week 10 周报 + Continue/Adjust/Stop |
 
 **Week 10 固定动作**
 
 - 每次 Claude Code 开工先读 `docs/claude-execution-guardrails.md`，按其中的事实、日期、外联和收工规则执行。
 - 周一至周五：GSC URL Inspection ×5，分配为 3 个未索引/近期加固页 + 2 个已有曝光的高价值页。
-- 周一：确认 `date-trace.txt` 用途；不明确时保持未跟踪，不自动删除。
+- ~~周一：确认 `date-trace.txt` 用途~~ → 7/16 已确认被 `content-dates.json` 替代并完成清理。
 - 周五：用 30 分钟完成一次 GEO 综合复检 + crawler/Cloudflare 一次性核对；只记录综合缺口，不再拆技术任务。
 - 仅在发生真实页面改动或 URL 变化后重提 sitemap；不为了制造抓取信号只刷新日期。
 
