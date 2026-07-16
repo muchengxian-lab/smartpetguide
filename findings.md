@@ -1,5 +1,13 @@
 # 发现与决策
 
+## 2026-07-16 生产收口
+
+**结果**：可链接资产/TCO 修复、Pretty Happy Pets 最终交稿资产及 Round 4 目标清单已由提交 `3923c55` 推送。Vercel 内容部署 `dpl_BmJMYkw3ik83z1uWDdhb9A9Fda9k` 为 `READY`，生产页面、robots 与 sitemap 均返回 200。
+
+**线上证据**：`pet-tech-statistics` 已显示 July 16 与 `$43–$465`，旧 `$43–$370` 不再出现；stats、subscription guide、LR5 cost compare 的 `dateModified=2026-07-16`，两处来源声明和订阅指南 `$394.64/$464.64` 均已渲染。
+
+**状态边界**：本次只完成页面与外联资产的技术/版本交付。Round 4 仍为 `Researched — not sent`；Pretty Happy Pets 仍为 `Draft submitted / awaiting editorial and veterinary review`，均不提前计为外链结果。
+
 ## Pretty Happy Pets 最终交稿状态（2026-07-16）
 
 **事实**：首个已接受的 Guest Post 已在承诺的 7/17 截止日前完成交付。2026-07-16 使用原邮件线程回复，附 PDF，并提供 Google Docs 链接；最终稿约 2,099 词，含 FAQ、可核查来源与 Author bio。

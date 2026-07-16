@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-16 周四 | GSC Snapshot 6（7/15 实测）：114 页 / 索引 33 / 未索引 15 / Sitemap 成功发现 113 / 曝光 287 / 点击 4 / CTR 1.4% / 排名 35.4；其余渠道沿用 Snapshot 5（7/13）：Pinterest 1,423 月浏览(出站0) / GA4 29 活跃(21/29 Singapore) / 引用域名 12(Semrush，待核验) / Authority Score 2 | Brand Outreach 1/6 回复，Homerunpet v2 D0 已发 | Guest Post Round 3：D0 实发 3/5、接受 1、最终稿已提交 1、未发送 2 | GSC 高展示零点击页 3/3 已优化、已推送并上线核验**
+**最后更新：2026-07-16 周四 | GSC Snapshot 6（7/15 实测）：114 页 / 索引 33 / 未索引 15 / Sitemap 成功发现 113 / 曝光 287 / 点击 4 / CTR 1.4% / 排名 35.4；其余渠道沿用 Snapshot 5（7/13）：Pinterest 1,423 月浏览(出站0) / GA4 29 活跃(21/29 Singapore) / 引用域名 12(Semrush，待核验) / Authority Score 2 | Brand Outreach 1/6 回复，Homerunpet v2 D0 已发 | Guest Post Round 3：D0 实发 3/5、接受 1、最终稿已提交 1、未发送 2 | 7/16 可链接资产/TCO 修复已由 `3923c55` 推送并完成生产核验**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 10 默认不扩页；35-40% 时间用于外链/编辑型分发，25-30% 用于 GSC 与现有页加固，20-25% 用于战略 GEO/VOC 回填，Pinterest 只做低成本维护。
 
@@ -72,7 +72,7 @@
 | 周一 | 7/13 | ✅ 刷新 GSC/GA4/Pinterest/引用域名基线；确认全部 8 个未索引 URL（3+2+2+1=8 分类完成）；同步文档口径 | — | ✅ Snapshot 5 实测，8/8 URL 已确认分类，wifi-disconnecting 已入索引（不计入 8），CRM D20 完成，GSC URL Inspection ×5 人工已提交 |
 | 周二 | 7/14 | ✅ 完成 3 页 GEO 审计并修复来源表达缺口；三页正文改为可追溯或保守表述，日期逐页更新。**Guest Post Round 3：Pretty Happy Pets 接受投稿，确认回复已发送，承诺 7/17 前交稿。** #1/#2 未发送，#4/#5 D7 已发 | ✅ build 通过（114 pages）、日期校验通过、已提交推送并完成生产部署；外联状态/隐私记录已同步 |
 | 周三 | 7/15 | ✅ 2 个未索引页内链加固；✅ GSC URL Inspection ×5；✅ GSC Snapshot 6；✅ Petlibro/GPS/Catit 三个高展示零点击页完成 title/meta、决策信息与正文内链优化 | ✅ Aorkuler 最终 check-in 已发；✅ Homerunpet v2 D0 已发 | ✅ 114 页 build、日期、最终 HTML、canonical、内链验证通过；`c42b9a1` 已推送至 `origin/master`，Vercel 生产 READY，线上抽查通过 |
-| 周四 | 7/16 | ✅ 加固现有可链接资产：`pet-tech-statistics` / 3-year TCO 数据、来源层与跨页口径已统一 | ✅ 5 个已核验编辑型目标（BarkyTech/GlobalPETS/Purely Wholesome/Upper Pawside/PetsAnalysis）；✅ Pretty Happy Pets 最终稿已提交（PDF + Google Docs） | ✅ 1 个可外联资产 + 5 个可公开验真目标；首个已接受 Guest Post 完成交稿，等待编辑/兽医审核 |
+| 周四 | 7/16 | ✅ 加固现有可链接资产：`pet-tech-statistics` / 3-year TCO 数据、来源层与跨页口径已统一 | ✅ 5 个已核验编辑型目标（BarkyTech/GlobalPETS/Purely Wholesome/Upper Pawside/PetsAnalysis）；✅ Pretty Happy Pets 最终稿已提交（PDF + Google Docs） | ✅ `3923c55` 已推送；Vercel `dpl_BmJMYkw3ik83z1uWDdhb9A9Fda9k` READY，生产 HTML 核验通过；等待 Guest Post 编辑/兽医审核 |
 | 周五 | 7/17 | 批量真实改动、build、push、必要时 sitemap、GSC/GA4 周快照 | 复盘外链回复、品牌回复、索引变化；决定 Week 11 是否继续同权重 | Week 10 周报 + Continue/Adjust/Stop |
 
 **Week 10 固定动作**
