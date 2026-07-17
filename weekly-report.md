@@ -39,6 +39,53 @@
 4. Brand Outreach 只跑 Aorkuler 收口 + Homerunpet email-first v2 小试点。
 5. 默认不新增页面、不新增 Pin；周五按索引/回复/落链结果复盘。
 
+## Week 10（7/13-7/17）收盘
+
+| 指标 | 数值 | vs Week 9 |
+|------|:--:|:--:|
+| 页面数 | **114** | 持平 |
+| GSC 已索引 | **33** | +11 |
+| GSC 已发现-未索引 | **0** | 持平；7/13 已为 0 |
+| GSC 已抓取-未索引 | **4** | -4（从 8 降至 4） |
+| GSC 曝光（3月累计） | **288** | +20 |
+| GSC 点击（3月累计） | **4** | 持平 |
+| GA4 活跃用户（7天） | **30** | +1；美国用户 7（较 7/13 的 6 增加 1）+ 2 个 Referral session |
+| 引用域名 | **12** | +1；7/17 用户人工确认，新增来源 URL 尚未识别 |
+| Pinterest 月浏览 | **1,391** | -2%（稳定） |
+| Pinterest Board | **5** | 持平；用户人工确认 |
+| Pinterest 出站点击 | **待确认** | Analytics 页面本次未正常渲染 |
+| GEO Score | **74**（7/1） | 未重评 |
+| Brand Outreach | **Aorkuler 收口 + Homerunpet v2 均为 Sent-confirmed** | 等待回复，不扩大样本 |
+| Guest Post | **PHP 接受+交稿，审核中** | 已投稿但尚未形成落链 |
+
+### Week 10 完成
+
+- 已抓取-未索引 8→4，已索引 22→33；已发现-未索引从 7/13 起一直为 0。
+- 3 页战略 GEO 审计（来源表达、通用措辞、可追溯性）完成并修复。
+- 3 页高展示零点击 SEO 优化（Petlibro/GPS/Catit title/meta/决策信息）。
+- 可链接资产 TCO 跨页一致性修复（相机 $43-$370→$43-$465）。
+- Pretty Happy Pets 首个接受投稿的最终稿已提交（2,099 词，7/16），等待编辑/兽医审核。
+- Brand Outreach：Aorkuler 最终 check-in 7/15；Homerunpet email-first v2 D0 7/15。
+- GEO 综合复检通过：llms.txt/llms-full.txt/Wikidata/robots.txt 12 AI 爬虫全部存活；确认无 Cloudflare。
+- 零新增页面，遵守 Week 10 方向。
+
+### 结果判断
+
+- 索引数量和已抓取未索引桶位改善，但仍有 4 页等待 Google 决策；流量漏斗尚未打开（点击仍 4、曝光仍低）。
+- 编辑型外联有初步进展（PHP 接受），但尚未形成落链结果。
+- Brand Outreach 回复率仍为 1/6，Homerunpet v2 待观察。
+- Pinterest 1,391 月浏览稳定，但出站尚未完成后台核验，维持「不铺量」。
+- Month 2 战略 4 周已过 1 周，节奏和方向正确。
+
+### Week 11 重点
+
+1. GSC URL Inspection 轮换（继续推进 4 个已抓取-未索引页）。
+2. Guest Post Round 4 启动：5 个 Researched → Drafted → 发送。
+3. 跟进 Pretty Happy Pets 审核进度。
+4. 根据 Aorkuler/Homerunpet 回复决定 Brand Outreach 下一步。
+5. 确认 Pinterest 出站点击数据，决定是否调整策略。
+6. Week 11 方向建议：**Continue** 当前权重（外链 35-40% / GSC 25-30% / GEO 20-25% / Pinterest 只维护）；不扩页、不加任务数。
+
 ## Week 8（6/30-7/3）收盘
 
 | 指标 | 数值 | vs 上次记录 |

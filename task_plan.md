@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-16 周四 | GSC Snapshot 6（7/15 实测）：114 页 / 索引 33 / 未索引 15 / Sitemap 成功发现 113 / 曝光 287 / 点击 4 / CTR 1.4% / 排名 35.4；其余渠道沿用 Snapshot 5（7/13）：Pinterest 1,423 月浏览(出站0) / GA4 29 活跃(21/29 Singapore) / 引用域名 12(Semrush，待核验) / Authority Score 2 | Brand Outreach 1/6 回复，Homerunpet v2 D0 已发 | Guest Post Round 3：D0 实发 3/5、接受 1、最终稿已提交 1、未发送 2 | 7/16 可链接资产/TCO 修复已由 `3923c55` 推送并完成生产核验**
+**最后更新：2026-07-17 周五 Week 10 收盘 | Snapshot 7（7/17 实测）：114 页 / 索引 33 / 未索引 15（已发现-未索引 0，自 7/13 已为 0；已抓取-未索引 4）/ 曝光 288 / 点击 4 / CTR 1.4% / 排名 35.3 / 查询 94；Pinterest 1,391 月浏览 / 5 Board（用户人工确认，出站待确认）/ GA4 30 活跃（US 7，较 7/13 增加 1；2 个 Referral session；首次用户来源仍为 direct/none）/ Semrush 引用域名 12、外链 28、关键词 20、Authority Score 2（用户人工确认） | Brand Outreach Aorkuler 收口 + Homerunpet v2 D0 均为 Sent-confirmed；Guest Post PHP 最终稿已提交（审核中） | Week 11 建议 Continue**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 10 默认不扩页；35-40% 时间用于外链/编辑型分发，25-30% 用于 GSC 与现有页加固，20-25% 用于战略 GEO/VOC 回填，Pinterest 只做低成本维护。
 
@@ -73,7 +73,25 @@
 | 周二 | 7/14 | ✅ 完成 3 页 GEO 审计并修复来源表达缺口；三页正文改为可追溯或保守表述，日期逐页更新。**Guest Post Round 3：Pretty Happy Pets 接受投稿，确认回复已发送，承诺 7/17 前交稿。** #1/#2 未发送，#4/#5 D7 已发 | ✅ build 通过（114 pages）、日期校验通过、已提交推送并完成生产部署；外联状态/隐私记录已同步 |
 | 周三 | 7/15 | ✅ 2 个未索引页内链加固；✅ GSC URL Inspection ×5；✅ GSC Snapshot 6；✅ Petlibro/GPS/Catit 三个高展示零点击页完成 title/meta、决策信息与正文内链优化 | ✅ Aorkuler 最终 check-in 已发；✅ Homerunpet v2 D0 已发 | ✅ 114 页 build、日期、最终 HTML、canonical、内链验证通过；`c42b9a1` 已推送至 `origin/master`，Vercel 生产 READY，线上抽查通过 |
 | 周四 | 7/16 | ✅ 加固现有可链接资产：`pet-tech-statistics` / 3-year TCO 数据、来源层与跨页口径已统一 | ✅ 5 个已核验编辑型目标（BarkyTech/GlobalPETS/Purely Wholesome/Upper Pawside/PetsAnalysis）；✅ Pretty Happy Pets 最终稿已提交（PDF + Google Docs） | ✅ `3923c55` 已推送；Vercel `dpl_BmJMYkw3ik83z1uWDdhb9A9Fda9k` READY，生产 HTML 核验通过；等待 Guest Post 编辑/兽医审核 |
-| 周五 | 7/17 | 批量真实改动、build、push、必要时 sitemap、GSC/GA4 周快照 | 复盘外链回复、品牌回复、索引变化；决定 Week 11 是否继续同权重 | Week 10 周报 + Continue/Adjust/Stop |
+| 周五 | 7/17 | ✅ Snapshot 7 周快照 + Week 10 周复盘 + GEO 综合复检 + crawler/Cloudflare 核对（确认 Vercel 直连） | ✅ D22 第 3 周决策记录（Continue） | ✅ Week 10 全部收盘，Week 11 方向已定 |
+
+### Week 11 排班（7/20-7/24）— Continue，权重不变
+
+> Week 10 复盘结论：已索引 22→33，已抓取-未索引 8→4；已发现-未索引从 7/13 起一直为 0，并非本周 8→0。外联有初步接受信号但未落链，Brand Outreach 样本仍小。Week 11 暂不调整权重分配（外链 35-40% / GSC 25-30% / GEO 20-25% / Pinterest 维护），继续消化现有资产并观察剩余 4 页。
+
+| 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
+|:--:|------|------|------|------|
+| 周一 | 7/20 | 刷新 GSC/GA4/Pinterest 基线；GSC URL Inspection ×5（4 已抓取-未索引页 + 1 高价值页） | 确认 Pretty Happy Pets 审核进度；Aorkuler/Homerunpet 状态复核 | Snapshot 更新，外联状态同步 |
+| 周二 | 7/21 | Guest Post Round 4 草拟：5 个目标 Researched → Drafted | — | 5 封模板就绪（Ready for human） |
+| 周三 | 7/22 | 根据 GSC 查询信号做 1-2 个现有页加固（优先高曝光零点击页） | — | 加固页有前后记录，build 通过 |
+| 周四 | 7/23 | 外链或编辑资产维护（pet-tech-statistics 数据更新或新数据页） | — | 至少 1 个可链接资产刷新 |
+| 周五 | 7/24 | GSC/GA4 周快照 + 周复盘 | 外链回复/品牌回复/索引变化复盘 | Week 11 周报 + Continue/Adjust/Stop |
+
+**Week 11 固定动作**
+
+- 周一至周五：GSC URL Inspection ×5（4 已抓取-未索引轮换 + 1 高价值页）。
+- 周五：周度量快照 + 周复盘。
+- 仅在发生真实页面改动或 URL 变化后重提 sitemap。
 
 **Week 10 固定动作**
 

@@ -407,7 +407,114 @@
 
 ---
 
-## Snapshot 6 — 2026-07-15（GSC 局部刷新 + CTR 优化）
+## Snapshot 7 — 2026-07-17（Week 10 周五收盘）
+
+> 最新快照置于下方 Snapshot 6 历史附录之前。Codex 于 7/17 在已登录浏览器复核了 GSC、GA4 和 Pinterest；用户随后人工确认 Pinterest 核心账号指标及 Semrush 7/17 数值无误。Pinterest 出站点击仍未获得明确数值，继续标为待确认。
+
+### GSC（7/17 Codex 复核，上次更新 3 小时前）
+
+| 指标 | Snapshot 5（7/13 周初） | Snapshot 6（7/15 周中） | Snapshot 7（7/17 周末） | 周变化 |
+|------|:--:|:--:|:--:|:--:|
+| 已索引 | 22 | 33 | **33** | +11 |
+| 未索引 | — | 15 | **15** | — |
+| 已发现-未索引 | 0 | 0 | **0** | 持平 |
+| 已抓取-未索引 | 8 | 4 | **4** | -4 |
+| 点击（3个月） | 4 | 4 | **4** | — |
+| 曝光（3个月） | 282 | 287 | **288** | +6 |
+| CTR | 1.4% | 1.4% | **1.4%** | — |
+| 平均排名 | 35 | 35.4 | **35.3** | +0.3 |
+| 热门查询 | — | — | **94** | — |
+
+**未索引页构成（7/17）：**
+
+| 原因 | 数量 | 说明 |
+|------|:--:|------|
+| 网页会自动重定向 | 5 | 重组显示 |
+| 重定向错误 | 3 | 历史 Vercel cleanUrls 过渡 |
+| 已抓取-尚未编入索引 | 4 | 等 Google 重抓 |
+| 重复网页 | 2 | Google 选择了不同规范 |
+| 备用网页（适当规范标记） | 1 | — |
+| 已发现-尚未编入索引 | **0** | 7/13 已为 0，本周维持 |
+
+### GA4（7/17 实测，过去 7 天）
+
+| 指标 | 数值 | 说明 |
+|------|:--:|------|
+| 活跃用户 | **30** | +1 vs 7/13 |
+| 新用户 | 29 | — |
+| 事件数 | 151 | — |
+| 关键事件 | 0 | — |
+| page_view | 42 | — |
+| session_start | 31 | — |
+
+**国家分布**：Singapore 18（较 7/13 的 21 下降）/ **United States 7（较 7/13 的 6 增加 1，并非首次出现）** / China 2 / Hong Kong 1 / India 1 / Iceland 1 / Pakistan 1
+
+**会话获取**：Direct 29 / **Referral 2（首次记录到引荐会话）** / Organic Search 0。**首次用户来源/媒介**：`(direct) / (none)` 30，占 100%。两组指标口径不同，不合并表述。
+
+**affiliate_click / outbound_click**：未出现在 GA4 首页 Top 5 事件中；仅凭首页不能判定为 0/0，需到 Events 报告单独确认。
+
+### Pinterest（7/17 实测，muchengxian）
+
+| 指标 | 7/13 | 7/17 | 变化 |
+|------|:--:|:--:|:--:|
+| 月浏览 | 1,423 | **1,391** | -2% |
+| 粉丝 | ~8→1 | **1** | 口径差异 |
+| Board | 5 | **5** | 用户 7/17 人工确认 |
+| 出站点击 | 0 | **需确认** | Pinterest Analytics 页面本次未正常渲染 |
+
+### Semrush（7/17 快照；用户已人工确认）
+
+| 指标 | Snapshot 5（7/13） | Snapshot 7（7/17） | 变化 |
+|------|:--:|:--:|:--:|
+| Authority Score | 2 | **2** | — |
+| Organic Traffic | 0 | **0** | — |
+| Ref. Domains | 12 | **12** | — |
+| Backlinks | 22 | **28** | +6 |
+| Organic Keywords | 18 | **20** | +2 |
+| AI Mentions | — | **0** | 零覆盖 |
+
+### 本周 Claude Code 完成（7/13-7/17）
+
+#### 索引 & 页面加固
+- [x] 8/8 未索引 URL 全部确认并分类（周一）
+- [x] 已抓取-未索引 8→4；当前仍有 4 页等待 Google 重抓决策
+- [x] 3 页战略 GEO 审计 + 来源表达修复（周二）
+- [x] 2 未索引页内链加固 + 3 高展示零点击页 SEO 优化（周三）
+- [x] TCO 数据跨页一致性修复 + 可链接资产加固（周四）
+
+#### 外链 & 分发
+- [x] Pretty Happy Pets 最终稿提交（2,099 词，PDF + Google Docs）
+- [x] Round 4 编辑型目标 5 个 Researched
+- [x] Brand Outreach：Aorkuler 最终 check-in + Homerunpet v2 D0（7/15）
+
+#### 数据 & 文档
+- [x] Snapshot 5（7/13）+ Snapshot 6（7/15）+ Snapshot 7（7/17）
+- [x] Month 2 战略书制定
+- [x] GSC URL Inspection ×5（周一+周三，人工）
+- [x] GEO 综合复检 + Cloudflare 确认（周五）
+- [x] Week 10 周复盘 + Week 11 方向建议
+
+### 本周人工操作（7/13-7/17）
+
+| # | 操作 | 状态 |
+|:--:|------|:--:|
+| 1 | 7/13 GSC URL Inspection ×5 | ✅ |
+| 2 | 7/15 GSC URL Inspection ×5 | ✅ |
+| 3 | Aorkuler final check-in（7/15） | ✅ Sent-confirmed |
+| 4 | Homerunpet v2 D0（7/15） | ✅ Sent-confirmed |
+| 5 | Pinterest 出站点击后台确认 | 待查 |
+
+### Week 10 → Week 11 续转
+
+- GSC 4 个"已抓取-未索引"继续 URL Inspection 轮换
+- Guest Post Round 4 从 Researched → Drafted → Sent（人工）
+- Brand Outreach 根据 Aorkuler/Homerunpet 回复情况决定下一步
+- Pinterest 出站确认后决定是否维持当前策略
+- GEO Score 月度复检建议 8/1
+
+---
+
+## 历史附录：Snapshot 6 — 2026-07-15（GSC 局部刷新 + CTR 优化）
 
 > 本节只刷新 GSC 和本次页面交付状态；GA4、Pinterest、引用域名继续沿用 7/13 Snapshot 5，未重新测量，不与新数据混合。
 
