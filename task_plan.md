@@ -1,8 +1,8 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-17 周五 Week 10 收盘 | Snapshot 7（7/17 实测）：114 页 / 索引 33 / 未索引 15（已发现-未索引 0，自 7/13 已为 0；已抓取-未索引 4）/ 曝光 288 / 点击 4 / CTR 1.4% / 排名 35.3 / 查询 94；Pinterest 1,391 月浏览 / 5 Board（用户人工确认，出站待确认）/ GA4 30 活跃（US 7，较 7/13 增加 1；2 个 Referral session；首次用户来源仍为 direct/none）/ Semrush 引用域名 12、外链 28、关键词 20、Authority Score 2（用户人工确认） | Brand Outreach Aorkuler 收口 + Homerunpet v2 D0 均为 Sent-confirmed；Guest Post PHP 最终稿已提交（审核中） | Week 11 建议 Continue**
+**最后更新：2026-07-19 周日 Week 11 定稿 | Snapshot 8（7/19 浏览器实测）：114 页 / 索引 33 / 未索引 15（已发现-未索引 0；已抓取-未索引 4）/ 3 个月 288 展示、4 点击、CTR 1.4%、排名 35.3；最近 7 天 9 展示、0 点击、排名 51.1（前期 65.6）/ GA4 最近 7 天 22 活跃、20 新用户、36 PV、Referral 2、Unassigned 1、Organic 0、Key events 0 / Pinterest 1,391 月浏览、5 Board（用户人工确认，出站待确认）/ Semrush 12 RD、28 backlinks、20 keywords、AS 2（用户人工确认） | Pretty Happy Pets 已启动编辑/兽医审稿并将在 Google Doc 留评论；对方承诺 Week 11 提供 2-3 个给 SmartPetGuide 的选题与样稿 | Brand：Aorkuler 已关闭；Homerunpet 等待回复 | Week 11 Continue，索引任务降级、查询/页面/权威验证升级**
 
-> 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 10 默认不扩页；35-40% 时间用于外链/编辑型分发，25-30% 用于 GSC 与现有页加固，20-25% 用于战略 GEO/VOC 回填，Pinterest 只做低成本维护。
+> 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 11 默认不扩页；已命中索引 30+ 触发条件，35-40% 时间用于外链/编辑型分发，25-30% 用于已索引页面查询、CTR 与必要的未索引维护，20-25% 用于战略 GEO/VOC 缺口回填，Pinterest 只做低成本维护。
 
 > 月度战略：`docs/month-2-strategy-2026-07-13-to-2026-08-09.md`。本文件按周滚动拆解；除非命中战略触发条件，不在周中改变月度方向。
 
@@ -12,7 +12,7 @@
 
 ### 日期防呆规则（Claude Code 必读）
 
-> 当前校准点：**2026-07-13 是周一**。当前工作周为 **2026-07-13 周一 → 2026-07-17 周五**。
+> 当前校准点：**2026-07-19 是周日**。下一工作周为 **2026-07-20 周一 → 2026-07-26 周日**。
 
 1. 任何涉及"今天/明天/下周/周五"的任务，先在终端运行 `Get-Date -Format "yyyy-MM-dd dddd"`，以系统日期为准，不凭模型记忆推断。
 2. 记录排期时必须写绝对日期 + 星期；如果用户给了相对日期，先转换为绝对日期。
@@ -75,28 +75,33 @@
 | 周四 | 7/16 | ✅ 加固现有可链接资产：`pet-tech-statistics` / 3-year TCO 数据、来源层与跨页口径已统一 | ✅ 5 个已核验编辑型目标（BarkyTech/GlobalPETS/Purely Wholesome/Upper Pawside/PetsAnalysis）；✅ Pretty Happy Pets 最终稿已提交（PDF + Google Docs） | ✅ `3923c55` 已推送；Vercel `dpl_BmJMYkw3ik83z1uWDdhb9A9Fda9k` READY，生产 HTML 核验通过；等待 Guest Post 编辑/兽医审核 |
 | 周五 | 7/17 | ✅ Snapshot 7 周快照 + Week 10 周复盘 + GEO 综合复检 + crawler/Cloudflare 核对（确认 Vercel 直连） | ✅ D22 第 3 周决策记录（Continue） | ✅ Week 10 全部收盘，Week 11 方向已定 |
 
-### Week 11 排班（7/20-7/24）— Continue，权重不变
+### Week 11 排班（7/20-7/26）— Continue，索引触发后的执行重心调整
 
-> Week 10 复盘结论：已索引 22→33，已抓取-未索引 8→4；已发现-未索引从 7/13 起一直为 0，并非本周 8→0。外联有初步接受信号但未落链，Brand Outreach 样本仍小。Week 11 暂不调整权重分配（外链 35-40% / GSC 25-30% / GEO 20-25% / Pinterest 维护），继续消化现有资产并观察剩余 4 页。
+> Week 10 复盘结论：已索引 22→33，已抓取-未索引 8→4；已发现-未索引从 7/13 起一直为 0，并非本周 8→0。Pretty Happy Pets 已启动编辑/兽医审稿，并承诺 Week 11 提供 2-3 个反向投稿提案；这属于编辑关系进展，不提前计为发布、落链或互换合作。Week 11 保持外链 35-40% / GSC 25-30% / GEO 20-25% / Pinterest 维护，但 GSC 份额内部从“催索引”转向“已索引页面查询、排名、CTR 与渠道归因”。
 
 | 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
 |:--:|------|------|------|------|
-| 周一 | 7/20 | 刷新 GSC/GA4/Pinterest 基线；GSC URL Inspection ×5（4 已抓取-未索引页 + 1 高价值页） | 确认 Pretty Happy Pets 审核进度；Aorkuler/Homerunpet 状态复核 | Snapshot 更新，外联状态同步 |
-| 周二 | 7/21 | Guest Post Round 4 草拟：5 个目标 Researched → Drafted | — | 5 封模板就绪（Ready for human） |
-| 周三 | 7/22 | 根据 GSC 查询信号做 1-2 个现有页加固（优先高曝光零点击页） | — | 加固页有前后记录，build 通过 |
-| 周四 | 7/23 | 外链或编辑资产维护（pet-tech-statistics 数据更新或新数据页） | — | 至少 1 个可链接资产刷新 |
-| 周五 | 7/24 | GSC/GA4 周快照 + 周复盘 | 外链回复/品牌回复/索引变化复盘 | Week 11 周报 + Continue/Adjust/Stop |
+| 周一 | 7/20 | 建 GA4 渠道归因基线：查清 Referral 2、Unassigned 1 的 source/medium 与 landing page；在完整 Events 报告核对 affiliate/outbound | Pretty Happy Pets 简短确认回信由用户发送；只复核 Homerunpet，不联系 Aorkuler | 非 Direct 会话可解释；事件可见性结论有证据；外联状态同步 |
+| 周二 | 7/21 | Round 4 第一批：GlobalPETS + The Upper Pawside 两个不同资产角度完成定制 pitch | 用户审核并发送 2 封；其余 3 个保持 Researched | 2 封 Sent-confirmed；CRM/目标表记录时间、角度与 UTM |
+| 周三 | 7/22 | 页面强化 #1：审计 `cat-wont-drink-from-water-fountain` 当前查询、首屏答案、来源和内链；有真实缺口才修改 | 监看 PHP Google Doc 评论，不主动催发布时间 | 页面有前后证据；若修改则 build/日期/生成页通过 |
+| 周四 | 7/23 | 页面强化 #2：检查 `litter-robot-5-vs-litter-robot-4` 与 `introduce-cat-to-automatic-litter-box` 新展示；最多选择 1 页加固 | 生成 feeder VOC coverage-gap matrix，避免重复 Week 9 已完成工作 | 1 页以内实质加固；coverage-gap matrix 区分已覆盖/真实缺口 |
+| 周五 | 7/24 | Snapshot 9：GSC 最近 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest 出站；拆解 GPS 页下降查询 | 复核 Round 4 第一批回复；无信号不立即发送剩余 3 封 | 周快照、查询/页面变化、渠道判断完整 |
+| 周六 | 7/25 | 缓冲：处理 PHP 编辑/兽医评论或修订稿；没有评论则不制造任务 | 检查对方 2-3 个提案是否到达；按相关性、原创性、来源质量独立审核 | 评论闭环或明确等待；不承诺 reciprocal/dofollow |
+| 周日 | 7/26 | Week 11 复盘；消费已由知识库主控修正后的 AI Signal/VOC 输出 | 根据首批 2 封反馈决定剩余 3 封：Continue / Revise / Hold | Week 12 决策，不以发送数量替代回复/接受/落链 |
 
 **Week 11 固定动作**
 
-- 周一至周五：GSC URL Inspection ×5（4 已抓取-未索引轮换 + 1 高价值页）。
-- 周五：周度量快照 + 周复盘。
+- 4 个已抓取-未索引页面只在发生实质页面改动、URL 状态变化或验证到期时做 URL Inspection；不再每日机械提交 5 个。
+- 每周至少做 2 次已索引页面的 query/page 复盘，优先真实新增展示页和高展示零点击页。
+- Round 4 先发 2 封，至少观察 48-72 小时；没有回复或内容反馈时，不机械发送剩余 3 封。
+- Pretty Happy Pets：只处理 Google Doc 评论和对方主动提供的提案；若 7/26 前无任何更新，最早 7/27 轻量跟进一次。
+- 周五：周度量快照；周日：周复盘和下一周决策。
 - 仅在发生真实页面改动或 URL 变化后重提 sitemap。
 
-**Week 10 固定动作**
+**Week 10 固定动作（历史计划，已收盘）**
 
 - 每次 Claude Code 开工先读 `docs/claude-execution-guardrails.md`，按其中的事实、日期、外联和收工规则执行。
-- 周一至周五：GSC URL Inspection ×5，分配为 3 个未索引/近期加固页 + 2 个已有曝光的高价值页。
+- 周一、周三各做一次 GSC URL Inspection ×5；Week 10 已完成，Week 11 不再沿用每日/高频机械提交。
 - ~~周一：确认 `date-trace.txt` 用途~~ → 7/16 已确认被 `content-dates.json` 替代并完成清理。
 - 周五：用 30 分钟完成一次 GEO 综合复检 + crawler/Cloudflare 一次性核对；只记录综合缺口，不再拆技术任务。
 - 仅在发生真实页面改动或 URL 变化后重提 sitemap；不为了制造抓取信号只刷新日期。
@@ -118,7 +123,7 @@
 - 每周处理 2-4 个现有高价值页或未索引页；新内容保持 0-2 篇、由 GSC/VOC 触发。
 - 每周固定 3-5 小时外链/PR：编辑型投稿、资源页、记者需求、可链接数据资产；目标每月新增 2-5 个相关引用域名。
 - GEO 保留为现有页的 `identity + source + date + answerability` 审计；技术存活检查周度 5 分钟，综合评分月度一次。
-- Brand Outreach 继续 email-first 小样本实验；每批最多 3 个品牌，根据回复再扩。
+- Brand Outreach 继续 email-first 小样本实验；Aorkuler 进入关系维护，只有 Homerunpet 或其他新品牌出现认真回复时才考虑扩量，每批最多 3 个品牌。
 - Pinterest 保持周度 10-20 分钟维护；出站点击破 0 后再讨论恢复发布。
 - 每周日继续消费 AI Radar、L2 VOC、Weekly Review、Knowledge Health 和 Dashboard 信号，再决定下一周权重。
 
@@ -231,7 +236,7 @@
 |------|------|------|:--:|
 | Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D13 已执行，D14 起按 7/6 周一校正 |
 | A | Amazon affiliate conversion：5 页决策模块 + 2 指南 CTA + 全站审核 | `docs/monetization/task-a-amazon-affiliate-conversion.md` | ✅ 完成 |
-| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 6 品牌完成首轮验证，1/6 回复；Wave 1/2 已闭环，Week 10 只做 Aorkuler 收口 + 1 个 email-first v2 小试点 |
+| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 6 品牌完成首轮验证，1/6 回复；Aorkuler 正向评价报告但暂不实施，已关闭为 not now；Homerunpet v2 等待回复，不扩名单 |
 
 ### 内容选题引擎（6/26 起）
 

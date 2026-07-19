@@ -2,6 +2,7 @@
 
 > 创建日期：2026-07-16。目标：5 个高相关编辑型/资源页目标（非目录、非公开售链站）。
 > 策略：用 SmartPetGuide 的 linkable assets（pet-tech-statistics / TCO 数据 / 订阅成本分析）作为 pitch 素材。
+> Week 11 执行校准（2026-07-19）：不一次性发送 5 封。第一批只做 GlobalPETS + The Upper Pawside，观察 48-72 小时后再决定剩余 3 个。
 
 ## Target List
 
@@ -22,6 +23,18 @@
 | 3 | Purely Wholesome | info@purelywholesome.com | Researched — not sent | Pet/animal-care contributor page verified; 800-3,000 words |
 | 4 | The Upper Pawside | info@upperpawside.com | Researched — not sent | 30K-reader claim and 750-1,500-word guideline published on contributor page |
 | 5 | PetsAnalysis | admin@petsanalysis.com | Researched — not sent | Product reviews accepted; stated response time 5-7 business days |
+
+## Week 11 Send Sequence
+
+| 批次 | 目标 | 计划日期 | 当前状态 | 决策规则 |
+|------|------|------|------|------|
+| Batch A | GlobalPETS / PETS International | 2026-07-21 | Researched — draft next | 用订阅疲劳与 3 年成本行业数据，不提 backlink |
+| Batch A | The Upper Pawside | 2026-07-21 | Researched — draft next | 用 dog GPS no-fee TCO，避免与 PHP fountain 稿件重复 |
+| Hold | BarkyTech | 最早 2026-07-24 | Researched — hold | 先确认数据图表能否满足其图片要求 |
+| Hold | Purely Wholesome | 最早 2026-07-24 | Researched — hold | PHP 同主题仍在审稿，暂不重复发送 fountain 主题 |
+| Hold | PetsAnalysis | 最早 2026-07-24 | Researched — hold | 等首批反馈；其偏好兽医/行业作者，需强化研究边界 |
+
+**发送闸门：**Batch A 人工发送后至少观察 48-72 小时。收到回复、编辑问题或明确内容反馈时，可复制有效角度；零反馈时先修改 pitch/资产，不把剩余发送数当成果。
 
 ## Pitch Assets (Linkable Assets)
 

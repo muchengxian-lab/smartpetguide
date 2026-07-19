@@ -176,7 +176,7 @@ press@smartpetguide.net
 |:--:|------|:--:|------|
 | 1 | PetPlace.com | ❌ 未发送 | D0 起邮箱未找到（petplace.com/write-for-us 无公开编辑邮箱），标注为 unresolved |
 | 2 | EntirelyPets.com | ❌ 未发送 | D0 起邮箱未找到（entirelypets.com/guest-blogger.html 无公开编辑邮箱），标注为 unresolved |
-| 3 | Pretty Happy Pets | ✅ **Draft submitted 7/16** | 7/14 人工确认接受；7/16 已在原邮件线程提交约 2,099 字最终稿，附 PDF 与 Google Docs 链接；等待编辑/兽医审核 |
+| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started** | 7/16 已提交约 2,099 字最终稿；7/19 对方确认编辑与兽医团队已开始审核，修改意见将直接写入 Google Doc；对方将在 Week 11 提供 2-3 个给 SmartPetGuide 的选题与样稿 |
 | 4 | Your Vet Online | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 | 5 | LenoxVet | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 
@@ -189,11 +189,31 @@ press@smartpetguide.net
 - SmartPetGuide 回复：2026-07-14 人工已发送；承诺 2026-07-17 前交稿，并请对方另行提供 2-3 个选题与相关写作样稿，所有外部投稿按受众匹配、原创性和来源质量独立审核。
 - 最终交稿：2026-07-16 已在原邮件线程回复；邮件附 `Pretty-Happy-Pets-Stainless-Steel-vs-Plastic-Cat-Fountains.pdf`，并提供 Google Docs 链接。最终稿约 2,099 词，含 FAQ、来源和 Author bio。
 
+### #3 Pretty Happy Pets — 审稿启动回复（2026-07-19）
+
+- 对方确认已经由 editorial team 与 veterinary team 开始审核稿件。
+- 如需修改，对方会直接在 Google Doc 添加评论；当前不需要主动重发附件或询问发布时间。
+- 对方正在准备 2-3 个拟投 SmartPetGuide 的主题与相关写作样稿，并承诺下周发送。
+- 建议立即在原邮件线程简短确认一次；随后等待 Google Doc 评论和对方提案。双方稿件继续独立审核，不建立 reciprocal/dofollow 承诺。
+
+**建议回复：**
+
+```text
+Hi Pretty Happy Pets Team,
+
+Thanks for the update. I appreciate you and your editorial and veterinary teams taking the time to review the draft. I’ll keep an eye on the Google Doc and will be happy to address any comments there.
+
+I’m also looking forward to seeing the topic proposals and writing samples next week. Once they arrive, I’ll review them against SmartPetGuide’s editorial guidelines and get back to you with the best fit.
+
+Best,
+Chengxian Yang
+```
+
 ### 下一步行动
 
 | # | 事项 | 类型 | 说明 |
 |:--:|------|:--:|------|
 | 1 | **Pretty Happy Pets 投稿稿** | Submitted | ✅ 7/16 已提交约 2,099-word 最终稿：Markdown 源稿 + PDF 附件 + Google Docs 链接；无 affiliate 链接，未沿用无法证明的 18,500 reviews / $61 / 2-week acne claims |
 | 2 | **回复确认收悉** | 人工 | ✅ 7/14 已发送；已告知 7/17 前提交 draft |
-| 3 | **外部投稿审核决定** | 等待对方 | 等待其提供 2-3 个选题与写作样稿；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
-| 4 | **编辑/兽医审核** | 等待对方 | 等待 Pretty Happy Pets 的修改意见、采用确认或发布时间；未收到反馈前不重复追发稿件 |
+| 3 | **外部投稿审核决定** | Week 11 等待对方 | 对方已确认将提供 2-3 个选题与写作样稿；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
+| 4 | **编辑/兽医审核** | 审核已启动 | 监看 Google Doc 评论并及时修改；不主动追问发布时间。若 7/26 前完全无更新，最早 7/27 轻量跟进一次 |

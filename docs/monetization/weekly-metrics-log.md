@@ -138,7 +138,7 @@
 | Task A（后台基建） | ✅ 完成 | — |
 | Wave 1 外联 | 1/4 回复 | Aorkuler 已收到快照+7/8 check-in；3 品牌 D7 闭环已发（KittySpout/YEAPAW/Elspet，均无回复） |
 | Wave 2 外联 | 2/5 已发 | WOPET + Petlibro D3 跟进 7/6；3 品牌联系方式已查 |
-| Guest Post | ✅ 5/5 已发 | Round 3 |
+| Guest Post | D0 实发 3/5 | Round 3；2 个无公开邮箱未发送，7/14 已复核口径 |
 
 ### 联系方式补齐
 
@@ -211,7 +211,7 @@
 
 #### 变现 Sprint
 - [x] Wave 1 D7 闭环 ×3（KittySpout/YEAPAW/Elspet）+ Aorkuler check-in
-- [x] Guest Post Round 3 5/5 已发
+- [x] Guest Post Round 3 D0 实发 3/5；其中 2 个无公开邮箱未发送，D7 跟进 2 个
 - [x] D19 外联 v2 复盘（CRM + push）
 - [x] WOPET + Petlibro D3 跟进（7/6）
 - [x] WOPET + Petlibro D7 闭环（7/10 人工）
@@ -485,7 +485,7 @@
 #### 外链 & 分发
 - [x] Pretty Happy Pets 最终稿提交（2,099 词，PDF + Google Docs）
 - [x] Round 4 编辑型目标 5 个 Researched
-- [x] Brand Outreach：Aorkuler 最终 check-in + Homerunpet v2 D0（7/15）
+- [x] Brand Outreach：Aorkuler 最终 check-in（7/15）→ 7/17 正向评价后明确暂不实施，礼貌回信已发并关闭为 not now；Homerunpet v2 D0（7/15）等待回复
 
 #### 数据 & 文档
 - [x] Snapshot 5（7/13）+ Snapshot 6（7/15）+ Snapshot 7（7/17）
@@ -500,17 +500,63 @@
 |:--:|------|:--:|
 | 1 | 7/13 GSC URL Inspection ×5 | ✅ |
 | 2 | 7/15 GSC URL Inspection ×5 | ✅ |
-| 3 | Aorkuler final check-in（7/15） | ✅ Sent-confirmed |
+| 3 | Aorkuler final check-in（7/15）+ closure reply（7/17） | ✅ Closed — not now (positive)；快照质量获认可，不再跟进 |
 | 4 | Homerunpet v2 D0（7/15） | ✅ Sent-confirmed |
 | 5 | Pinterest 出站点击后台确认 | 待查 |
 
 ### Week 10 → Week 11 续转
 
-- GSC 4 个"已抓取-未索引"继续 URL Inspection 轮换
-- Guest Post Round 4 从 Researched → Drafted → Sent（人工）
-- Brand Outreach 根据 Aorkuler/Homerunpet 回复情况决定下一步
+- GSC 已达到 33；4 个"已抓取-未索引"只在实质变更/状态变化时做 URL Inspection，主要精力转向 query/page 与 CTR
+- Guest Post Round 4 先发 2 封（GlobalPETS + The Upper Pawside），观察 48-72 小时后再决定剩余 3 封
+- Brand Outreach 只根据 Homerunpet 或其他新品牌的认真回复决定下一步；Aorkuler 已关闭并进入触发式关系维护，不触发扩量
 - Pinterest 出站确认后决定是否维持当前策略
 - GEO Score 月度复检建议 8/1
+
+---
+
+## Snapshot 8 — 2026-07-19（Week 10 周日最终复核）
+
+### GSC
+
+| 指标 | 当前值 | 说明 |
+|------|:--:|------|
+| 已索引 / 未索引 | **33 / 15** | discovered-not-indexed 0；crawled-not-indexed 4 |
+| 3 个月 | **4 clicks / 288 impressions / CTR 1.4% / position 35.3** | 与 7/17 基本持平 |
+| 最近 7 天 | **0 clicks / 9 impressions / position 51.1** | 前 7 天 12 impressions / 65.6；展示 -25%，排名改善 14.5 位 |
+
+**最近 7 天页面信号：**
+
+- `cat-wont-drink-from-water-fountain/`：4 impressions vs 1，当前最清晰增量页。
+- `litter-robot-5-vs-litter-robot-4/`：1 vs 0，新出现展示。
+- `introduce-cat-to-automatic-litter-box/`：1 vs 0，新出现展示。
+- `how-to-clean-cat-water-fountain/`：0 vs 3，需观察但不立即重写。
+
+### GA4（最近 7 天）
+
+| 指标 | 当前值 | vs 上期 |
+|------|:--:|:--:|
+| Active users | **22** | -12% |
+| New users | **20** | -20% |
+| Page views | **36** | +38.5% |
+| User engagement | **30** | +50% |
+| Session start | **25** | 持平 |
+| Scroll | **6** | -40% |
+| Key events | **0** | — |
+
+**会话渠道：** Direct 23 / Referral 2 / Unassigned 1 / Organic Search 0。下周必须查 source/medium + landing page；Direct 不等同于品牌或自然流量。affiliate/outbound 未在当前首页 Top 5 中出现，仍需完整 Events 报告验证。
+
+### 外链与编辑合作
+
+- Pretty Happy Pets：7/19 确认 editorial + veterinary review 已启动；Google Doc 将承载修改意见。
+- 对方承诺 Week 11 提供 2-3 个拟投 SmartPetGuide 的主题与样稿；收到后独立审核，不承诺 reciprocal/dofollow。
+- Round 4：5 个目标仍未发送；Week 11 改为 2 + 3 分批。
+- Brand：Aorkuler Closed — not now (positive)；Homerunpet Sent — awaiting reply。
+
+### 数据边界
+
+- Pinterest 继续使用用户确认值 1,391 月浏览 / 5 Board；出站仍待后台核验。
+- Semrush 继续使用用户 7/17 人工确认值 12 RD / 28 backlinks / 20 keywords / AS 2；新增 RD 的具体 URL 未识别。
+- 本快照不把 PHP 审稿、对方提案承诺或 Round 4 排期计为落链/发送结果。
 
 ---
 

@@ -7,7 +7,7 @@
 
 | # | Brand | Category | Product | Website | Contact | 3 Key Findings | Status | Sent | Follow-up | Notes |
 |:--:|------|------|------|------|------|------|:--:|------|------|------|
-| 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Final check-in sent 7/15 | 7/1 | 7/8, 7/15 final | John replied 7/2, snapshot PDF sent 7/2. Check-in sent 7/8. Final check-in sent 7/15 — ball in their court. No further follow-up unless they reach out. |
+| 1 | Aorkuler | GPS Tracker | Aorkuler GPS Dog Tracker | aorkuler.com | john@aorkuler.com | (1) No-subscription angle is strongest differentiator vs Tractive (2) Off-grid use case under-explained in product listing (3) Low review count (480) — need more social proof | Closed — not now (positive) | 7/1 | 7/8, 7/15 final, 7/17 closure reply | John replied 7/17 with positive feedback on the snapshot, but is not implementing changes while existing Amazon and DTC initiatives are in progress. Chengxian sent a no-pressure acknowledgement on 7/17. No further follow-up; revisit only after 60-90 days with a material trigger or if John reaches out. |
 | 2 | Homerunpet | Water Fountain | Wireless Smart Fountain | homerunpet.com | contact@homerunpet.com | (1) Only wireless fountain under $60 — unique positioning not surfaced on product page (2) Motion sensor feature buried in description (3) No comparison content vs corded fountains | Sent — awaiting reply | 7/15 | — | v2 D0 sent 7/15. Email-first pilot. A-format title. Budget wireless, strong story. |
 | 3 | KittySpout | Water Fountain | Stainless Steel Fountain | kittyspout.com | 表单 (kittyspout.com/pages/contact-us) | (1) Dishwasher-safe angle underused — key difference vs Pioneer Pet (2) Mid-price ($50) position unclear vs $39/$93 alternatives (3) 800 reviews — needs more social proof | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
 | 4 | YEAPAW | Water Fountain | Stainless Steel Fountain | yeapaw.com | 表单 (yeapaw.com/pages/contact) | (1) Pumpless tech is unique but poorly explained in listing (2) Only 1,200 reviews — differentiation story needed (3) No content comparing magnetic induction vs traditional pumps | D7 sent — closed | 7/1 | 7/8 | No reply after 3 touches; closed per D7 sequence |
@@ -766,6 +766,23 @@ Best,
 Chengxian Yang
 press@smartpetguide.net
 ```
+
+---
+
+## D23 Aorkuler 回复与机会收口（✅ 2026-07-17）
+
+### 实际结果
+
+- John 明确认可 visibility snapshot 的研究和分析质量。
+- Aorkuler 当前已有 Amazon 与 DTC 策略在执行，希望先完成现有计划，因此现阶段不考虑实施本次建议。
+- Chengxian 已于 7/17 发送简短确认邮件：理解其安排、停止主动推进、不附加新方案或付费提议。
+
+### 状态边界
+
+- CRM 状态更新为 `Closed — not now (positive)`，不是 `Lost — quality objection`。
+- 这是 Aorkuler 原有回复链路的最终结果，不新增一个品牌回复，不重复计入“认真回复”。
+- 本次结果不触发 PETKIT/Catit 扩量；Brand Outreach 继续只观察 Homerunpet v2 小试点。
+- 不设置自动跟进。最早 60-90 天后，仅在新品、官网/渠道策略变化、现有项目结束或新的可见性数据出现时考虑重新联系；John 主动来信除外。
 
 ---
 
