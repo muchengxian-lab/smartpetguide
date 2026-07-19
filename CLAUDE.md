@@ -13,7 +13,7 @@ Before executing any new monetization work, read these files in order:
 
 ## Current Special Sprint
 
-The active business experiment is the SmartPetGuide monetization validation sprint. Task A is complete; Week 10 uses a small-sample Brand Outreach validation rather than broad CRM expansion:
+The active business experiment is the SmartPetGuide monetization validation sprint. Task A is complete; Week 11 prioritizes editorial distribution, query/page improvement, and attribution without broad CRM or page expansion:
 
 | Track | 定位 | 周期 |
 |------|------|------|
@@ -30,23 +30,24 @@ Key files:
 
 Current order:
 
-1. Read the guardrails, active Week 10 plan, 30-day schedule, and CRM.
+1. Read the guardrails, the active Week 11 row in `task_plan.md`, the latest `progress.md` entry, and the current decisions at the top of `findings.md`.
 2. Keep Task A in maintenance mode; do not add conversion infrastructure without a measured gap.
-3. Brand Outreach: close Aorkuler once if needed and run only the Homerunpet email-first v2 pilot.
-4. Track `Drafted`, `Ready for human`, `Sent-confirmed`, `Replied`, and `Placed` separately.
+3. Editorial Outreach Round 4 is staged 2 + 3: prepare GlobalPETS and The Upper Pawside first, then wait 48-72 hours before deciding on the other three.
+4. Brand Outreach: Aorkuler is `Closed — not now (positive)` and must not be contacted again; Homerunpet remains `Sent — awaiting reply`.
+5. Track `Drafted`, `Ready for human`, `Scheduled`, `Sent-confirmed`, `Replied`, `Accepted`, and `Placed` separately.
 
 ## Non-Negotiable Rules
 
 - Before any date-sensitive planning or status update, run `Get-Date -Format "yyyy-MM-dd dddd"` in the project shell and use that output as the source of truth. Do not infer weekdays from model memory.
 - When the user says today/tomorrow/next week/Friday, convert it to an absolute date in the note you are editing.
-- For the current sprint calibration: 2026-07-13 is Monday; the current work week is 2026-07-13 Monday through 2026-07-17 Friday.
+- For the current sprint calibration: 2026-07-19 is Sunday; Week 11 runs from 2026-07-20 Monday through 2026-07-26 Sunday.
 - Before saving schedule edits, re-check the current and next-week calendar. Do not repeat the prior drift where July 4 was labeled Friday, July 7 Monday, or July 11 Friday.
 - Do not send emails, submit forms, create external accounts, or contact brands. Generate templates and CRM rows only.
 - Do not claim hands-on testing unless the repository already contains proof for that specific product.
 - Do not sell paid rankings or paid first-place recommendations.
 - Sponsored placements, if implemented later, must be explicitly labeled and must not change editorial rankings.
 - Preserve the site positioning: research-backed, independently written, based on verified owner reviews, product specs, BSR signals, and marketplace data.
-- Run `npm run build` after code or page changes.
+- Run `npm.cmd run build` after code or page changes on this Windows checkout.
 - Update `progress.md` after completing a task and update `task_plan.md` status if a sprint item changes.
 - Never batch-refresh article `modifiedDate` values. Update dates per page only after a meaningful content or data change, using `src/data/content-dates.json`.
 - Do not invent owner quotes or precise statistics. Exact quotes require a traceable URL and source ledger; otherwise use conservative paraphrase.
@@ -54,3 +55,5 @@ Current order:
 - Derive counts from source/build output rather than copying an earlier summary.
 - Do not use `git add -A`; preserve unrelated and untracked user files.
 - Do not mark an email or form as sent unless the user explicitly confirms the external action.
+- The Pretty Happy Pets acknowledgement is scheduled by the user for 2026-07-20 13:00 Asia/Shanghai. It is `Scheduled — not sent-confirmed`; do not send a duplicate and do not promote it to `Sent-confirmed` merely because the scheduled time has passed.
+- Use `docs/claude-week11-execution-prompt-template.md` as the Week 11 session contract and complete its file-sync matrix before closing work.

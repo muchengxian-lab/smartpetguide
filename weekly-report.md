@@ -83,7 +83,7 @@
 2. 建立 GA4 渠道归因基线：查清 Referral 2、Unassigned 1、landing page 与 affiliate/outbound 事件可见性。
 3. Guest Post Round 4 先发 GlobalPETS + The Upper Pawside 两封；观察 48-72 小时后再决定剩余 3 封。
 4. 页面工作优先 `cat-wont-drink-from-water-fountain`，并观察两个新出现展示的猫砂盆页面；最多加固 2 页，不新增 URL。
-5. Pretty Happy Pets 立即简短确认一次，随后只处理 Google Doc 评论和独立审核对方提案；7/26 前不主动催发布时间。
+5. Pretty Happy Pets 确认回信已定时 7/20 13:00 Asia/Shanghai（当前 Scheduled，未确认实际发送）；不得重复发送，随后只处理 Google Doc 评论和独立审核对方提案；7/26 前不主动催发布时间。
 6. Aorkuler 不再跟进；Homerunpet 未出现认真回复则不扩 PETKIT/Catit。Pinterest 只验证出站，不新增 Pin。
 7. AI Signal 自动化修复已拆为独立交接清单，由知识库主控对话处理；本站只消费修正后的周报/VOC。
 

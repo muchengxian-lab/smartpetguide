@@ -12,15 +12,15 @@
 Claude Code 在执行任何相关工作前必须先读：
 
 1. 根目录 `CLAUDE.md`
-2. `docs/claude-execution-guardrails.md` — Week 10 防错与验收规则
+2. `docs/claude-execution-guardrails.md` — Week 11 防错与验收规则
 3. `docs/month-2-strategy-2026-07-13-to-2026-08-09.md` — 四周方向、目标与触发条件
-4. `task_plan.md` 顶部 Week 10 活跃区
+4. `task_plan.md` 顶部 Week 11 活跃区与当天排班
 5. `docs/monetization/README.md` — 合并决策说明
 6. `docs/monetization/30-day-schedule.md` — 合并版逐日排期
 7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
 8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
-推荐顺序：先执行 A（后台基建，3 天做完不等结果），再执行 Brand Outreach（`/for-brands/` → 免费快照 → 付费审计 $199/$499/$1,200，一个品牌只收一封邮件）。
+当前顺序：Task A 只维护；先按 GSC/GA4 真实信号加固现有页，再做编辑型 Round 4 分批外联。Brand Outreach 不扩量，只等待 Homerunpet；Aorkuler 已关闭。
 
 禁止自动发邮件、提交外部表单、联系品牌、伪造联系人/流量/销售数据，禁止把付费合作写成编辑推荐排名。
 
@@ -42,7 +42,7 @@ Claude Code 在执行任何相关工作前必须先读：
 
 ## 当前阶段
 
-Week 10 已于 2026-07-13 周一开始。7/13 Snapshot 5 基线：114 页、Pinterest 1,423 月浏览（出站 0）、GSC 索引 22 / 点击 4 / 曝光 282 / CTR 1.4% / 排名 35、引用域名 12（Semrush 计数，待核验）、GA4 活跃用户 29/7天（21/29 Singapore，Organic Search 0）、GEO Score 74。Brand Outreach 首轮 6 品牌验证完成，回复 1/6，Wave 1/2 已闭环。已抓取未索引 8 页全部确认处置。
+Week 11 为 2026-07-20 周一至 2026-07-26 周日。7/19 Snapshot 8：114 页；GSC 33 indexed / 15 unindexed（discovered-not-indexed 0、crawled-not-indexed 4），3 个月 288 impressions / 4 clicks；GA4 最近 7 天 22 active / 20 new / Organic 0；Pinterest 1,391 月浏览 / 5 Board（出站待确认）；Semrush 12 RD / 28 backlinks / 20 keywords / AS 2（用户确认）。Pretty Happy Pets 正在编辑/兽医审稿，确认回信已由用户定时在 7/20 13:00 Asia/Shanghai 发送，当前只能记为 `Scheduled — not sent-confirmed`。
 90 天目标：150-180 页 / 60-100 索引 / 25-40 引用域名 / GEO Score 85+。
 
 ## 核心策略
@@ -52,10 +52,14 @@ Week 10 已于 2026-07-13 周一开始。7/13 Snapshot 5 基线：114 页、Pint
 - 每周 3-5 小时编辑型外链/PR，区分发送、回复、接受和落链
 - GEO 只做现有页的 identity/source/date/answerability，不再开技术 GEO 冲刺
 - Pinterest 只维护，出站点击破 0 前不恢复铺量
+- Round 4 先发 GlobalPETS + The Upper Pawside 两封，等待 48-72 小时后再决定余下三个
+- 自动化修复不在本仓库执行；只读取 `docs/ai-signal-automation-optimization-handoff-2026-07-19.md` 了解边界
 
 ## 工作流
 
 任何执行先遵守 `docs/claude-execution-guardrails.md`。每天最多 3 个 P0；修改 2-3 项后做一次 diff/build/status 检查。
+
+Week 11 开工使用 `docs/claude-week11-execution-prompt-template.md`；收工前逐项完成其中的文件同步矩阵，不得只改页面而漏更计划/进度，也不得只改日志而漏验收源码和线上状态。
 
 写文章前调用 `seo-content-optimizer` → `article-content` 写 → `verify` 验证
 设计改动用 `frontend-design`
