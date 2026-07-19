@@ -686,6 +686,12 @@ SmartPetGuide 对应的目标：
 - 代码审计显示自定义 `outbound_click` 只覆盖 Amazon 和社交域名，不代表所有外链；GA4 增强型衡量的通用外链事件仍是 `click`。后续报告必须区分两者，避免把自定义事件名理解成全站外链。
 - 决策：归因基线保留为每周一次 10-15 分钟检查，固定记录 session source/medium、landing page、事件和非 Direct 质量；当前流量不足以做多触点模型或复杂探索报表。
 
+### 交付验证
+
+- `npm.cmd run verify` 通过：114 pages；日期校验 100 个内容页、113 个 sitemap URL。
+- 内容提交 `c16fed1` 已推送；Vercel 生产部署 `dpl_3aBD1YkE7pMY45cgmJzMr9j5sSfS` READY，生产页标题、7/20 更新时间、三型号表、来源链接和计算器正常。
+- 计算器在线验证：54g/天、3餐、10份共62g → 6.2g/份、3份/餐、55.8g/天、+1.8g；低于半份时返回不可排程提醒。
+
 ### 本次工具错误
 
 - `mcporter` 的 PowerShell shim 被执行策略阻止；切换 `mcporter.cmd` 后发现本机未配置 `exa` MCP server。已停止重复重试并改用官方来源联网检索。
