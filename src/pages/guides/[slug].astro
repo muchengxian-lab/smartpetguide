@@ -464,20 +464,26 @@ const guideMap: Record<string, { title: string; description: string; quickAnswer
     ],
   },
   "feeder-portion-size-guide": {
-    title: "Automatic Feeder Portion Size Guide 2026 — How Much to Feed Your Pet",
-    description: "Learn how to set the right portion sizes on your automatic pet feeder. Kibble grams by weight, meals per day, and adjusting for weight management.",
+    title: "Automatic Feeder Portion Size Guide: Grams & Cups (2026)",
+    description: "Convert automatic feeder portions to grams with a 10-dispense calibration, model-specific examples, and a simple calculator for your feeder and kibble.",
+    quickAnswer: "One automatic-feeder 'portion' is not a universal number of grams. Dispense 10 portions of your usual kibble, weigh the total, then divide by 10. To set each meal, divide your label- or veterinarian-based daily gram target by meals per day, then divide again by the measured grams per portion.",
     sections: [
-      { heading: "How Do Automatic Feeder Portions Work?", body: "Most <dfn>automatic pet feeder</dfn>s measure food in 'portions' rather than cups or grams. One portion typically equals 5-10 grams of kibble (about 1-2 tablespoons), but this varies by brand. The Petlibro Granary dispenses ~5g per portion, the WOPET ~6g, and the PETKIT Fresh Element ~8g. This means '5 portions' could be 25g on one feeder and 40g on another. Always check your feeder's manual for the exact grams-per-portion, and weigh the first few dispenses with a kitchen scale to confirm. Once you know your feeder's portion size, multiply: if your cat needs 40g per meal and your feeder does 5g/portion, set it to 8 portions." },
-      { heading: "How Much Should You Feed Your Cat Per Meal?", body: "An average adult cat (10 lbs / 4.5 kg) needs about 200-250 calories per day, or roughly 40-60g of dry kibble. Split across 2-3 meals, that's 20-30g per meal. Use this quick reference: <strong>8 lb cat:</strong> 30-40g/day (10-15g × 3 meals). <strong>10 lb cat:</strong> 40-50g/day (15-25g × 2-3 meals). <strong>12 lb cat:</strong> 50-60g/day (20-30g × 2-3 meals). <strong>15+ lb cat:</strong> 60-75g/day (25-35g × 2-3 meals). Always check your specific kibble's calorie density on the bag — a high-protein food may need smaller portions than a grain-heavy one. If your cat is gaining weight on these amounts, reduce by 10-15% and recheck after 2 weeks. Most feeder apps let you set different portion sizes per meal, so you can do a larger breakfast and smaller dinner." },
-      { heading: "How Much Should You Feed Your Dog Per Meal?", body: "Dogs vary far more than cats, so use weight-based guidelines. As a starting point: <strong>Small dog (10-20 lbs):</strong> 80-150g/day, split into 2-3 meals. <strong>Medium dog (20-50 lbs):</strong> 150-300g/day, split into 2 meals. <strong>Large dog (50-90 lbs):</strong> 300-500g/day, split into 2 meals. <strong>Extra large (90+ lbs):</strong> 500-700g/day, split into 2 meals. These are averages — active dogs need more, senior dogs need less. For large dogs, you may need a feeder with a bigger hopper (6L+) and the ability to dispense large portions. The WOPET feeder's 6L hopper and 1-20 portion range make it the best fit for big dogs. Check the kibble bag for the manufacturer's feeding chart, which is calibrated to that specific food's calorie density. Weigh your dog every 2-4 weeks and adjust portions by 10% up or down." },
-      { heading: "How to Adjust Portions for Weight Loss or Gain", body: "Portion control is why automatic feeders beat free-feeding. Here's the systematic approach: <strong>Step 1:</strong> Weigh your pet and determine ideal weight (ask your vet). <strong>Step 2:</strong> Feed for ideal weight, not current weight. An overweight 14 lb cat gets portions for a 10 lb cat (~40-50g/day). <strong>Step 3:</strong> Reduce portions by 10-15% from current intake — never more than 20% at once. <strong>Step 4:</strong> Re-weigh after 2 weeks. Aim for 0.5-1% body weight loss per week for cats, 1-2% for dogs. <strong>Step 5:</strong> Once at target weight, increase to maintenance portions slowly (+5% per week) until weight stabilizes. Most smart feeders track feeding history in the app — use this to see exactly what your pet ate over the past week and correlate with weight changes. For multi-pet homes, feeders with RFID tag recognition (like the Petlibro Granary with optional RFID collar tag) prevent the wrong pet from eating the weight-loss portions." },
-      { heading: "Common Portion Mistakes to Avoid", body: "<strong>Trusting the 'cup' measurement:</strong> one person's 'cup' of kibble can vary by 20% depending on how densely it's scooped. Always use grams. <strong>Forgetting treats:</strong> those 5-10 dental treats per day add 30-50 calories — about 10-15% of a cat's daily intake. Either account for treats in the portion total or switch to low-calorie treats. <strong>Not adjusting for season:</strong> outdoor cats and dogs burn 10-20% more calories in winter staying warm. Indoor pets with consistent temperatures don't need seasonal adjustments. <strong>Free-feeding alongside scheduled meals:</strong> if you use an automatic feeder for scheduled meals, remove all other food sources. A cat who gets 4 scheduled portions plus unlimited grazing from a bowl will gain weight. <strong>Ignoring kibble size changes:</strong> switching from small kibble to large kibble can change how much fits in each portion. Re-weigh the first few dispenses after switching foods." },
-      { heading: "How to Test If Your Feeder Dispenses Accurately", body: "Not all feeders are precise. Even good ones can vary by 1-2g per portion, which adds up over a week. Test yours: <strong>1.</strong> Place a kitchen scale under the dispenser chute. <strong>2.</strong> Trigger 5 portions and record each weight in grams. <strong>3.</strong> Trigger another 5 portions. <strong>4.</strong> Calculate the average per portion and the variance (highest minus lowest). A good feeder has variance under 10% (e.g., 5g ± 0.5g). If variance exceeds 15%, contact support — the dispenser mechanism may need calibration or replacement. The Petlibro Granary is the most consistent we've analyzed at ~4.8-5.2g per portion. The WOPET can vary 5-7g. Also test whether portions change as the hopper empties — some feeders dispense less when the hopper is under 25% full because there's less weight pushing food into the mechanism. If yours does this, refill when the hopper hits 25% instead of letting it run to empty." },
+      { heading: "What Does One Automatic Feeder Portion Mean?", body: "A <dfn>portion</dfn> is one turn or step of a feeder's dispensing mechanism, not a standard unit of weight. The same rotor volume can hold different weights of round, flat, fresh, or broken kibble. Even official specifications for some feeders describe a portion by volume, while others give an approximate weight. Use your exact model's manual as a starting point, then measure the feeder with the food you actually use." },
+      { heading: "How Do You Measure Grams per Portion?", body: "<strong>1.</strong> Fill the hopper with the kibble you normally use. <strong>2.</strong> Put an empty bowl on a kitchen scale and tare it to zero. <strong>3.</strong> Manually dispense 10 portions into the bowl. <strong>4.</strong> Divide the total weight by 10. That is your working grams-per-portion number. A 10-portion test smooths out small differences between individual dispenses. Repeat once if the result looks unusual, and test again after changing kibble or the dispensing wheel." },
+      { heading: "How Do You Calculate Portions per Meal?", body: "Use two short equations: <strong>target grams per meal = target daily grams / meals per day</strong>, then <strong>portions per meal = target grams per meal / measured grams per portion</strong>. Example: a daily target of 54g across three meals is 18g per meal. If your 10-dispense test measures 6.2g per portion, 18 / 6.2 = 2.9, so the nearest available setting is three portions. That schedule would dispense about 55.8g per day. This is arithmetic, not a feeding recommendation; the calculator below lets you use your own numbers." },
+      { heading: "How Do You Convert Feeder Portions to Cups?", body: "Grams are the more repeatable unit, but you can estimate cups if a recipe or routine uses volume. First weigh one level cup of the same kibble. Then calculate <strong>cups per portion = measured grams per portion / measured grams per cup</strong>. If your model's manufacturer publishes a portion volume, use it only for that exact model. Do not copy a cup conversion from another feeder or another kibble." },
+      { heading: "Where Should Your Daily Gram Target Come From?", body: "Start with the feeding guide for your exact food, because calorie density varies by recipe. Then adjust with your veterinarian based on species, ideal weight, age, activity, neuter status, treats, health conditions, and body condition score. The <a href='https://www.aaha.org/resources/5-ways-to-know-how-much-to-feed-your-pet/' rel='noopener' target='_blank'>American Animal Hospital Association</a> describes the package guide as a starting point rather than a universal prescription, and its <a href='https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2021-nutrition-and-weight-management/resourcepdfs/nutritiongl_table6.pdf' rel='noopener' target='_blank'>nutrition guidance</a> recommends weighing food in grams when precision matters." },
+      { heading: "When Should You Recalibrate?", body: "Run the 10-dispense test again when you change kibble brand, recipe, shape, or bag; install a different rotor or dispensing wheel; clean and reassemble the mechanism; or notice an unexplained change in the bowl or your pet's weight trend. The PETKIT Fresh Element SOLO manual also notes that a low food level can reduce the amount dispensed, so checking once with a partly depleted hopper can reveal whether refill level matters on your unit." },
+      { heading: "Common Portion-Setting Mistakes", body: "<strong>Using another model's number:</strong> even feeders from the same brand can use different mechanisms. <strong>Testing one dispense:</strong> a 10-dispense sample is more useful than a single turn. <strong>Changing kibble without recalibrating:</strong> shape and density change how the rotor fills. <strong>Ignoring treats or hand-fed food:</strong> the feeder controls only part of total intake. <strong>Rounding without checking the daily result:</strong> multiply the chosen whole-portion setting back out so you can see the projected daily difference. <strong>Using the calculator as medical advice:</strong> it converts units; it does not decide how much your pet should eat." },
+      { heading: "Sources and Safety Notes", body: "Model examples on this page come from the manufacturers' own materials: <a href='https://ca.petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301' rel='noopener' target='_blank'>PETLIBRO's portion guide</a>, the <a href='https://wopet.com/uploads/admin/file/20240104/20240104105552_15863.pdf' rel='noopener' target='_blank'>WOPET F01 Plus manual</a>, and the <a href='https://instructions.petkit.com/D4_V1.2_20220713.pdf' rel='noopener' target='_blank'>PETKIT Fresh Element SOLO P570 manual</a>. Approximate manufacturer values are not a substitute for weighing your own output. Ask your veterinarian before changing intake for weight loss, growth, pregnancy, illness, or a therapeutic diet." },
     ],
     faqs: [
-      { q: "How do I know if I'm feeding my pet too much?", a: "The rib test: run your hands along your pet's sides. You should feel the ribs with a thin layer of fat — like the back of your hand. If ribs are hard to find, reduce portions by 10-15%. If ribs are visibly protruding, increase portions. Weigh your pet monthly and track the trend. A 0.5-2% weekly weight change in either direction is a sign to adjust." },
-      { q: "Can I mix wet and dry food with an automatic feeder?", a: "Automatic feeders only dispense dry kibble — wet food clogs the mechanism and spoils at room temperature. If you feed a mix of wet and dry, use the feeder for the dry portion and manually serve wet food at a different meal. For example: feeder dispenses dry breakfast and lunch, you serve wet food for dinner. This gives you the convenience of automation while still providing the hydration benefits of wet food." },
-      { q: "What if my feeder dispenses different amounts each time?", a: "Small variations (under 1g) are normal. If variance exceeds 2g per portion, try: cleaning the dispenser mechanism (kibble dust can clog it), checking for kibble jams in the hopper outlet, and making sure the feeder is on a level surface. If the problem persists, switch to a feeder with better portion consistency — the Petlibro Granary has the tightest portion control we've verified, typically within 0.3g." },
+      { q: "How many grams is one automatic feeder portion?", a: "There is no universal grams-per-portion value. It depends on the feeder mechanism and the kibble's size, shape, and density. Dispense 10 portions, weigh the total, and divide by 10." },
+      { q: "How much is one PETLIBRO Granary portion?", a: "PETLIBRO lists one portion for Granary models PLAF005, PLAF006, PLAF103, and PLAF203 as about 20ml, or about 1/12 cup. The company also says actual weight varies with the food, so weigh your own 10-portion sample." },
+      { q: "How much is one WOPET F01 Plus portion?", a: "The WOPET F01 Plus manual lists approximately 5g with the small dispensing wheel and 10g with the large wheel. It notes that different food can produce a slight difference, so treat those as starting estimates." },
+      { q: "Can I convert feeder portions to cups?", a: "Yes, but use your own kibble. Weigh one level cup, then divide your measured grams per portion by the grams in that cup. Grams are usually more repeatable for daily portioning." },
+      { q: "How often should I recalibrate my feeder?", a: "Recalibrate whenever you change kibble, change or reinstall the dispensing wheel, clean the dispensing mechanism, or notice a change in output. It is also useful to compare a full hopper with a partly depleted one." },
+      { q: "What if my target meal is smaller than one portion?", a: "Do not assume one portion is close enough. If the target is below half a measured portion, the feeder cannot match it accurately at that meal frequency. Ask your veterinarian whether to use fewer scheduled meals, choose a feeder with finer control, or handle part of the food another way." },
     ],
   },
   "fountain-filter-guide": {
@@ -863,6 +869,83 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
       </div>
     )}
 
+    {slug === "feeder-portion-size-guide" && (
+      <>
+        <section class="mt-8 rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
+          <h2 class="font-display text-xl font-bold text-forest">Official Portion Examples for Three Exact Models</h2>
+          <p class="mt-3 leading-relaxed text-bark-muted">These values are model-specific starting points, not universal conversions. Manufacturers still recommend accounting for the food you load.</p>
+          <div class="mt-5 overflow-x-auto">
+            <table class="w-full min-w-[680px] border-collapse text-left text-sm">
+              <thead>
+                <tr class="border-b-2 border-sage-dark/30 text-forest">
+                  <th class="px-3 py-3 font-semibold">Feeder model</th>
+                  <th class="px-3 py-3 font-semibold">Manufacturer value</th>
+                  <th class="px-3 py-3 font-semibold">Important qualifier</th>
+                  <th class="px-3 py-3 font-semibold">Official source</th>
+                </tr>
+              </thead>
+              <tbody class="text-bark-muted">
+                <tr class="border-b border-sage-dark/20">
+                  <td class="px-3 py-3 font-medium text-forest">PETLIBRO Granary PLAF005 / 006 / 103 / 203</td>
+                  <td class="px-3 py-3">About 20ml, or 1/12 cup</td>
+                  <td class="px-3 py-3">Actual weight varies with kibble size, shape, freshness, and thickness.</td>
+                  <td class="px-3 py-3"><a class="underline underline-offset-2" href="https://ca.petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301" target="_blank" rel="noopener">PETLIBRO guide</a></td>
+                </tr>
+                <tr class="border-b border-sage-dark/20">
+                  <td class="px-3 py-3 font-medium text-forest">WOPET F01 Plus</td>
+                  <td class="px-3 py-3">About 5g with the small wheel; 10g with the large wheel</td>
+                  <td class="px-3 py-3">The manual notes a slight difference with different food.</td>
+                  <td class="px-3 py-3"><a class="underline underline-offset-2" href="https://wopet.com/uploads/admin/file/20240104/20240104105552_15863.pdf" target="_blank" rel="noopener">WOPET manual</a></td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-3 font-medium text-forest">PETKIT Fresh Element SOLO P570</td>
+                  <td class="px-3 py-3">About 10g per fixed-volume serving</td>
+                  <td class="px-3 py-3">Pellet size, density, and a low hopper can change actual output.</td>
+                  <td class="px-3 py-3"><a class="underline underline-offset-2" href="https://instructions.petkit.com/D4_V1.2_20220713.pdf" target="_blank" rel="noopener">PETKIT manual</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="mt-8 rounded-2xl border border-honey/40 bg-gradient-to-br from-honey/5 to-cream p-6 shadow-sm md:p-8">
+          <h2 class="font-display text-2xl font-bold text-forest">Feeder Portion Calculator</h2>
+          <p class="mt-2 leading-relaxed text-bark-muted">Enter the daily target from your food label or veterinarian and the result of your own calibration test. The calculation stays in your browser.</p>
+          <form id="portion-calculator-form" class="mt-6 grid gap-5 sm:grid-cols-2">
+            <label class="block text-sm font-semibold text-forest">
+              Target food per day (g)
+              <input class="mt-2 w-full rounded-xl border border-sage-dark/40 bg-white px-4 py-3 font-normal text-bark outline-none focus:border-forest focus:ring-2 focus:ring-forest/10" type="number" name="dailyGrams" min="0.1" step="0.1" inputmode="decimal" required />
+            </label>
+            <label class="block text-sm font-semibold text-forest">
+              Meals per day
+              <input class="mt-2 w-full rounded-xl border border-sage-dark/40 bg-white px-4 py-3 font-normal text-bark outline-none focus:border-forest focus:ring-2 focus:ring-forest/10" type="number" name="mealsPerDay" min="1" step="1" inputmode="numeric" required />
+            </label>
+            <label class="block text-sm font-semibold text-forest">
+              Portions in calibration test
+              <input class="mt-2 w-full rounded-xl border border-sage-dark/40 bg-white px-4 py-3 font-normal text-bark outline-none focus:border-forest focus:ring-2 focus:ring-forest/10" type="number" name="calibrationPortions" min="1" step="1" value="10" inputmode="numeric" required />
+            </label>
+            <label class="block text-sm font-semibold text-forest">
+              Calibration test total (g)
+              <input class="mt-2 w-full rounded-xl border border-sage-dark/40 bg-white px-4 py-3 font-normal text-bark outline-none focus:border-forest focus:ring-2 focus:ring-forest/10" type="number" name="calibrationWeight" min="0.1" step="0.1" inputmode="decimal" required />
+            </label>
+            <button class="rounded-xl bg-forest px-5 py-3 font-semibold text-white transition-colors hover:bg-forest-dark sm:col-span-2" type="submit">Calculate feeder setting</button>
+          </form>
+
+          <div id="portion-calculator-result" class="mt-6 hidden rounded-xl border border-sage-dark/30 bg-white p-5" aria-live="polite">
+            <dl class="grid gap-4 sm:grid-cols-2">
+              <div><dt class="text-sm text-bark-muted">Measured grams per portion</dt><dd id="portion-result-grams" class="mt-1 text-xl font-bold text-forest"></dd></div>
+              <div><dt class="text-sm text-bark-muted">Target grams per meal</dt><dd id="portion-result-meal" class="mt-1 text-xl font-bold text-forest"></dd></div>
+              <div><dt class="text-sm text-bark-muted">Nearest whole-portion setting</dt><dd id="portion-result-setting" class="mt-1 text-xl font-bold text-forest"></dd></div>
+              <div><dt class="text-sm text-bark-muted">Projected food per day</dt><dd id="portion-result-projected" class="mt-1 text-xl font-bold text-forest"></dd></div>
+              <div><dt class="text-sm text-bark-muted">Difference from daily target</dt><dd id="portion-result-difference" class="mt-1 text-xl font-bold text-forest"></dd></div>
+            </dl>
+            <p id="portion-result-warning" class="mt-4 rounded-lg bg-honey/10 p-3 text-sm leading-relaxed text-bark-muted"></p>
+          </div>
+          <p class="mt-4 text-xs leading-relaxed text-bark-muted/80">This calculator converts your measurements into the nearest whole-portion setting. It does not set a safe calorie target or replace veterinary advice.</p>
+        </section>
+      </>
+    )}
+
     <div class="mt-10 space-y-8">
       {guide.sections.map((s) => (
         <section class="rounded-2xl border border-sage-dark/30 bg-white p-6 shadow-sm md:p-8">
@@ -1072,3 +1155,55 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
     <p class="mt-8 text-xs text-bark-muted/70 border-t border-sage-dark/20 pt-4">Written by <a href="/about/#author" class="underline decoration-sage-dark/50 underline-offset-2">Chengxian Yang</a>. Data sourced from verified owner reviews, manufacturer specifications, and marketplace data as of July 2026. Individual experiences may vary.</p>
   </article>
 </BaseLayout>
+
+<script>
+  const portionForm = document.querySelector("#portion-calculator-form");
+
+  if (portionForm instanceof HTMLFormElement) {
+    const result = document.querySelector("#portion-calculator-result");
+    const gramsOutput = document.querySelector("#portion-result-grams");
+    const mealOutput = document.querySelector("#portion-result-meal");
+    const settingOutput = document.querySelector("#portion-result-setting");
+    const projectedOutput = document.querySelector("#portion-result-projected");
+    const differenceOutput = document.querySelector("#portion-result-difference");
+    const warningOutput = document.querySelector("#portion-result-warning");
+
+    portionForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const values = new FormData(portionForm);
+      const dailyGrams = Number(values.get("dailyGrams"));
+      const mealsPerDay = Number(values.get("mealsPerDay"));
+      const calibrationPortions = Number(values.get("calibrationPortions"));
+      const calibrationWeight = Number(values.get("calibrationWeight"));
+
+      if (![dailyGrams, mealsPerDay, calibrationPortions, calibrationWeight].every((value) => Number.isFinite(value) && value > 0)) return;
+
+      const gramsPerPortion = calibrationWeight / calibrationPortions;
+      const gramsPerMeal = dailyGrams / mealsPerDay;
+      const exactPortions = gramsPerMeal / gramsPerPortion;
+
+      if (gramsOutput) gramsOutput.textContent = `${gramsPerPortion.toFixed(1)} g`;
+      if (mealOutput) mealOutput.textContent = `${gramsPerMeal.toFixed(1)} g`;
+
+      if (exactPortions < 0.5) {
+        if (settingOutput) settingOutput.textContent = "Below 1 portion";
+        if (projectedOutput) projectedOutput.textContent = "Not schedulable";
+        if (differenceOutput) differenceOutput.textContent = "—";
+        if (warningOutput) warningOutput.textContent = `Your target is ${exactPortions.toFixed(2)} portion per meal. This feeder cannot closely match it with a whole-portion setting at this meal frequency. Do not round up automatically; ask your veterinarian about meal frequency or use a feeder with finer control.`;
+      } else {
+        const nearestSetting = Math.round(exactPortions);
+        const projectedDaily = nearestSetting * gramsPerPortion * mealsPerDay;
+        const difference = projectedDaily - dailyGrams;
+        const differencePrefix = difference > 0 ? "+" : "";
+
+        if (settingOutput) settingOutput.textContent = `${nearestSetting} ${nearestSetting === 1 ? "portion" : "portions"} per meal`;
+        if (projectedOutput) projectedOutput.textContent = `${projectedDaily.toFixed(1)} g`;
+        if (differenceOutput) differenceOutput.textContent = `${differencePrefix}${difference.toFixed(1)} g per day`;
+        if (warningOutput) warningOutput.textContent = `The exact result is ${exactPortions.toFixed(2)} portions per meal. Because most feeders accept whole portions, verify the projected daily total before saving the schedule.`;
+      }
+
+      result?.classList.remove("hidden");
+    });
+  }
+</script>

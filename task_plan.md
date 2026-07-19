@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-20 周一 00:00 Week 11 开工前校准 | Snapshot 8（7/19 浏览器实测）：114 页 / 索引 33 / 未索引 15（已发现-未索引 0；已抓取-未索引 4）/ 3 个月 288 展示、4 点击、CTR 1.4%、排名 35.3；最近 7 天 9 展示、0 点击、排名 51.1（前期 65.6）/ GA4 最近 7 天 22 活跃、20 新用户、36 PV、Referral 2、Unassigned 1、Organic 0、Key events 0 / Pinterest 1,391 月浏览、5 Board（用户人工确认，出站待确认）/ Semrush 12 RD、28 backlinks、20 keywords、AS 2（用户人工确认） | Pretty Happy Pets 已启动编辑/兽医审稿；确认回信已由用户定时在 7/20 13:00 Asia/Shanghai 发送，当前为 Scheduled — not sent-confirmed；对方承诺 Week 11 提供 2-3 个给 SmartPetGuide 的选题与样稿 | Brand：Aorkuler 已关闭；Homerunpet 等待回复 | Week 11 Continue，索引任务降级、查询/页面/权威验证升级**
+**最后更新：2026-07-20 周一 01:05 Week 11 执行中 | Snapshot 8（7/19 浏览器实测）：114 页 / 索引 33 / 未索引 15（已发现-未索引 0；已抓取-未索引 4）/ 3 个月 288 展示、4 点击、CTR 1.4%、排名 35.3；最近 7 天 9 展示、0 点击、排名 51.1（前期 65.6）/ GA4 最近 7 天 22 活跃、20 新用户、36 PV、Referral 2、Unassigned 1、Organic 0、Key events 0；7/13-7/19 完整报告确认 Referral 2 均来自 IndieHackers 并落到两篇 feeder review，Unassigned 1 为 `(not set)`，affiliate/outbound 0 / Pinterest 1,391 月浏览、5 Board（用户人工确认，出站待确认）/ Semrush 12 RD、28 backlinks、20 keywords、AS 2（用户人工确认） | Pretty Happy Pets 已启动编辑/兽医审稿；确认回信已由用户定时在 7/20 13:00 Asia/Shanghai 发送，当前为 Scheduled — not sent-confirmed；对方承诺 Week 11 提供 2-3 个给 SmartPetGuide 的选题与样稿 | Brand：Aorkuler 已关闭；Homerunpet 等待回复 | Week 11 Continue，索引任务降级、查询/页面/权威验证升级**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 11 默认不扩页；已命中索引 30+ 触发条件，35-40% 时间用于外链/编辑型分发，25-30% 用于已索引页面查询、CTR 与必要的未索引维护，20-25% 用于战略 GEO/VOC 缺口回填，Pinterest 只做低成本维护。
 
@@ -81,10 +81,10 @@
 
 | 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
 |:--:|------|------|------|------|
-| 周一 | 7/20 | 建 GA4 渠道归因基线：查清 Referral 2、Unassigned 1 的 source/medium 与 landing page；在完整 Events 报告核对 affiliate/outbound | Pretty Happy Pets 简短确认回信已定时 13:00 Asia/Shanghai，Claude 不重复发送；只复核 Homerunpet，不联系 Aorkuler | 非 Direct 会话可解释；事件可见性结论有证据；邮件仅在用户确认实际发送后改为 Sent-confirmed |
+| 周一 | 7/20 | ✅ 建立 GA4 渠道归因基线：Referral 2 均为 `indiehackers.com / referral`，分别落到 Petlibro/WOPET feeder review；Unassigned 1 为 `(not set)`；完整 Events 确认 affiliate/outbound 0 | ✅ recurring feeder portion signal 转化为现有换算页深度升级：官方型号口径 + 10 次称重 + 计算器；Pretty Happy Pets 回信仍定时 13:00，Claude 不重复发送 | ✅ 非 Direct 会话与 landing page 可解释；事件定义边界已记录；114 页 build、日期、生成页和计算器双路径交互通过；Git/生产状态待本次收工闭环；邮件仅在用户确认实际发送后改为 Sent-confirmed |
 | 周二 | 7/21 | Round 4 第一批：GlobalPETS + The Upper Pawside 两个不同资产角度完成定制 pitch | 用户审核并发送 2 封；其余 3 个保持 Researched | 用户确认实际发送后才记 2 封 Sent-confirmed；只在 Round 4 目标表记录时间、角度与 UTM，不写 Brand CRM |
 | 周三 | 7/22 | 页面强化 #1：审计 `cat-wont-drink-from-water-fountain` 当前查询、首屏答案、来源和内链；有真实缺口才修改 | 监看 PHP Google Doc 评论，不主动催发布时间 | 页面有前后证据；若修改则 build/日期/生成页通过 |
-| 周四 | 7/23 | 页面强化 #2：检查 `litter-robot-5-vs-litter-robot-4` 与 `introduce-cat-to-automatic-litter-box` 新展示；最多选择 1 页加固 | 生成 feeder VOC coverage-gap matrix，避免重复 Week 9 已完成工作 | 1 页以内实质加固；coverage-gap matrix 区分已覆盖/真实缺口 |
+| 周四 | 7/23 | 页面强化 #2：检查 `litter-robot-5-vs-litter-robot-4` 与 `introduce-cat-to-automatic-litter-box` 新展示；最多选择 1 页加固 | feeder 份量换算信号已于 7/20 提前完成证据审计和页面深化，不再重复生成 coverage-gap matrix；空出的时段用于 PHP 评论或 Round 4 回复处理 | 1 页以内实质加固；份量换算页只观察表现，不继续堆同题内容 |
 | 周五 | 7/24 | Snapshot 9：GSC 最近 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest 出站；拆解 GPS 页下降查询 | 复核 Round 4 第一批回复；无信号不立即发送剩余 3 封 | 周快照、查询/页面变化、渠道判断完整 |
 | 周六 | 7/25 | 缓冲：处理 PHP 编辑/兽医评论或修订稿；没有评论则不制造任务 | 检查对方 2-3 个提案是否到达；按相关性、原创性、来源质量独立审核 | 评论闭环或明确等待；不承诺 reciprocal/dofollow |
 | 周日 | 7/26 | Week 11 复盘；消费已由知识库主控修正后的 AI Signal/VOC 输出 | 根据首批 2 封反馈决定剩余 3 封：Continue / Revise / Hold | Week 12 决策，不以发送数量替代回复/接受/落链 |

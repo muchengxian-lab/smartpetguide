@@ -665,6 +665,32 @@ SmartPetGuide 对应的目标：
 - **新站第一周数据量太小**：即使全部是真实的也不足以做方向判断
 - **交叉验证必须有操作日志支撑**：不能凭"那天做了某件事"就推断
 
+## 2026-07-20 喂食器份量换算与 GA4 归因基线核验
+
+### 喂食器换算页：信号判断与事实边界
+
+- W28/W29 VOC 里的“1 portion 到底是多少克/多少杯”重复出现，但跨周 YouTube 原始样本有明显重叠；这是稳定的常青问题，不是突然增长的新热点。因此保留现有 URL 深化，不新建内容集群。
+- 现页把“portion”写成通用 5-10g，并直接给猫狗每日克数、减重比例和品牌精度阈值，证据不足且容易被当成个体化喂食建议。新版应把核心答案改成：**portion 是具体型号的转子体积单位，克数取决于型号、转子与当前颗粒；用同一批粮做 10 次出粮称重校准。**
+- 已核验的官方型号示例：
+  - PETLIBRO Granary `PLAF005/006/103/203`：官方写明 1 portion 约 20ml / 1/12 cup，并明确实际重量受颗粒大小、形状、新鲜度和厚度影响。来源：<https://ca.petlibro.com/pages/how-much-is-in-one-feeding-portion-plaf001-002-101-102-plaf003-004-plaf005-006-103-203-plaf008-plaf107-plaf108-plaf301>
+  - WOPET Pioneer `F01 Plus`：小转轮约 5g，大转轮约 10g；不同颗粒会有轻微差异。来源：<https://test.wopet.com/support-center/user-guide-of-wopet-pioneer-automatic-pet-feeder/> 与官方 PDF <https://wopet.com/uploads/admin/file/20240104/20240104105552_15863.pdf>
+  - PETKIT Fresh Element SOLO `P570`：说明书写明固定体积分份，每份约 10g；颗粒大小/密度和低粮位会改变实际重量。来源：<https://instructions.petkit.com/D4_V1.2_20220713.pdf>
+- AAHA 2021 指南建议用克重秤而非量杯提升精度，并提醒商业包装喂食建议可能高估需求；每日目标应结合理想体重、BCS、食物热量密度和兽医判断。来源：<https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2021-nutrition-and-weight-management/resourcepdfs/nutritiongl_table6.pdf>、<https://www.aaha.org/resources/5-ways-to-know-how-much-to-feed-your-pet/>
+- 页面差异化交付：型号示例表 + 10 次称重流程 + 公式 + 浏览器端计算器；不再提供统一猫/狗克数表，也不把计算器结果表述为医疗或减重方案。
+
+### GA4 归因基线：值得做，但只做最小闭环
+
+- 7/13-7/19 完整流量获取报告确认：Referral 2 均为 `indiehackers.com / referral`，分别落到 `/reviews/petlibro-granary-review` 与 `/reviews/wopet-automatic-feeder-review`。前者平均互动 2分48秒，后者 2秒，说明这不是完全无意义的噪声，并验证了喂食器评测确实获得外部发现。
+- Unassigned 1 的 source/medium 与 landing page 均为 `(not set)`，0 engaged session、约 10 秒、仅 1 个事件；当前按不完整采集/低质量流量噪声观察，不投入配置修复。
+- 完整 Events 报告（7/13-7/19）共 104 个事件：`page_view` 33、`user_engagement` 27、`session_start` 22、`first_visit` 17、`scroll` 5；`affiliate_click` 与 `outbound_click` 未出现，因此该窗口确认为 0。
+- 代码审计显示自定义 `outbound_click` 只覆盖 Amazon 和社交域名，不代表所有外链；GA4 增强型衡量的通用外链事件仍是 `click`。后续报告必须区分两者，避免把自定义事件名理解成全站外链。
+- 决策：归因基线保留为每周一次 10-15 分钟检查，固定记录 session source/medium、landing page、事件和非 Direct 质量；当前流量不足以做多触点模型或复杂探索报表。
+
+### 本次工具错误
+
+- `mcporter` 的 PowerShell shim 被执行策略阻止；切换 `mcporter.cmd` 后发现本机未配置 `exa` MCP server。已停止重复重试并改用官方来源联网检索。
+- PowerShell 会把未加引号的 `@eNN` 当成 splatting；`agent-browser.cmd` 引用元素必须写成 `'@eNN'`。
+
 ---
 *每次调研后更新此文件*
 

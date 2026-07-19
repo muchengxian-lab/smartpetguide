@@ -545,6 +545,23 @@
 
 **会话渠道：** Direct 23 / Referral 2 / Unassigned 1 / Organic Search 0。下周必须查 source/medium + landing page；Direct 不等同于品牌或自然流量。affiliate/outbound 未在当前首页 Top 5 中出现，仍需完整 Events 报告验证。
 
+### GA4 归因基线 — 2026-07-20（完整日期窗口 7/13-7/19）
+
+> 使用已登录 GA4 的 Traffic acquisition、Landing page + source/medium 与完整 Events 报告交叉核对。固定完整日期窗口，避免把 7/20 未结束的数据混入基线。
+
+| 归因层 | 核验结果 | 当前判断 |
+|------|------|------|
+| Referral | **2 sessions，均为 `indiehackers.com / referral`** | 首次把 Referral 2 归因到明确来源，不再只记录渠道总数 |
+| Referral landing #1 | `/reviews/petlibro-granary-review`：1 session，平均互动 **2m48s** | 有实际阅读深度，保留为有效外部发现样本 |
+| Referral landing #2 | `/reviews/wopet-automatic-feeder-review`：1 session，平均互动 **2s** | 低互动，单独观察，不与前一会话合并评价 |
+| Unassigned | **1 session**；source/medium 与 landing page 均为 `(not set)`；0 engaged session、约 10s、1 event | 暂按不完整采集/低质量噪声观察，不为 1 个样本改 GA4 配置 |
+| Events | **104 total**：page_view 33 / user_engagement 27 / session_start 22 / first_visit 17 / scroll 5 | 与完成日期窗口对应；不和 Snapshot 8 的滚动首页数值混用 |
+| 自定义商业事件 | `affiliate_click` **0** / `outbound_click` **0** | 已在完整 Events 报告确认，不再使用“未出现在 Top 5”代替 0 值 |
+
+**数据边界：** Traffic acquisition 表头总计显示 22 sessions，但可见渠道行 Direct 20 + Referral 2 + Unassigned 1 合计为 23；保留该 GA4 UI/口径不一致，不强行重写成一个“干净总数”。代码审计同时确认，站内自定义 `outbound_click` 只覆盖 Amazon 与社交域名，不等同于 GA4 增强型衡量的通用外链 `click`。
+
+**执行决策：** 这项基线值得保留，因为它已证明 IndieHackers 能把访问带到两篇喂食器评测；但样本仍很小。后续每周用 10-15 分钟记录 `source/medium → landing page → engagement → affiliate/outbound`，不做多触点模型，不因 Unassigned 1 启动配置工程。
+
 ### 外链与编辑合作
 
 - Pretty Happy Pets：7/19 确认 editorial + veterinary review 已启动；Google Doc 将承载修改意见。
