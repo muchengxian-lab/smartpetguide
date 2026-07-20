@@ -59,10 +59,10 @@ C:\Users\Administrator\smartpetguide
 
 三、Week 11 日期闸门
 
-- 7/20 周一：GA4 Referral 2、Unassigned 1 的 source/medium 与 landing page；完整 Events 中核对 affiliate/outbound。Pretty Happy Pets 邮件只记录 Scheduled 状态，禁止重复发送。
+- 7/20 周一：✅ GA4 Referral 2、Unassigned 1 的 source/medium、landing page 与完整 Events 已核对；Pretty Happy Pets 确认回信已由用户于 13:00 实际发送，状态为 `Sent-confirmed`，禁止重复发送。
 - 7/21 周二：为 GlobalPETS + The Upper Pawside 定制两封不同资产角度的 Round 4 pitch。Claude 只准备到 `Ready for human`；只有用户确认实际发送后才写 `Sent-confirmed`。
 - 7/22 周三：审计 cat-wont-drink-from-water-fountain；先查 query、首屏答案、来源和内链，只有真实缺口才修改。
-- 7/23 周四：检查 litter-robot-5-vs-litter-robot-4 与 introduce-cat-to-automatic-litter-box 的新展示，最多选择一页实质加固；同时做 feeder VOC coverage-gap matrix，避免重复 Week 9 已覆盖工作。
+- 7/23 周四：检查 litter-robot-5-vs-litter-robot-4 与 introduce-cat-to-automatic-litter-box 的新展示，最多选择一页实质加固；feeder portion conversion 已于 7/20 完成证据审计和现有页深化，不再制作重复的 coverage-gap matrix，空出的时段只处理 PHP 评论或 Round 4 回复。
 - 7/24 周五：Snapshot 9，核对 GSC 最近 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest outbound 和 GPS 页查询下降；无反馈不发送 Round 4 剩余三封。
 - 7/25 周六：只处理 Pretty Happy Pets 的真实 Google Doc 评论或对方主动发来的提案；没有新内容就明确等待，不制造任务。
 - 7/26 周日：Week 11 周复盘，决定 Round 4 剩余三封 Continue / Revise / Hold，并形成 Week 12 计划。
@@ -136,10 +136,10 @@ C:\Users\Administrator\smartpetguide
 
 | 日期 | 主要任务 | 最低项目文件同步 |
 |------|------|------|
-| 7/20 | GA4 归因；PHP 邮件 Scheduled | `progress.md`、`task_plan.md`、`weekly-metrics-log.md`；邮件实际发送确认后再更新 `round3` |
+| 7/20 | ✅ GA4 归因完成；feeder portion 页深化完成；PHP 邮件 `Sent-confirmed` | 已同步 `progress.md`、`task_plan.md`、`weekly-metrics-log.md`、`findings.md`、`round3` 与页面交付记录 |
 | 7/21 | Round 4 首批两封 | `round4-editorial-targets.md`、`progress.md`、`task_plan.md`；用户确认后再写 Sent-confirmed |
 | 7/22 | 饮水页审计/必要加固 | 目标源码（如修改）、`content-dates.json`（如实质修改）、`progress.md`、`task_plan.md` |
-| 7/23 | 猫砂盆页信号；coverage-gap | 目标源码（如修改）、`content-dates.json`（如实质修改）、`progress.md`、`task_plan.md`、稳定结论写 `findings.md` |
+| 7/23 | 猫砂盆页信号；不重复执行已完成的 feeder coverage-gap | 目标源码（如修改）、`content-dates.json`（如实质修改）、`progress.md`、`task_plan.md`、稳定结论写 `findings.md` |
 | 7/24 | Snapshot 9 | `weekly-metrics-log.md`、`progress.md`、`task_plan.md`、`weekly-report.md` |
 | 7/25 | PHP 评论/对方提案 | `round3-guest-post-targets.md`、`progress.md`、`task_plan.md`；有指标变化再同步 metrics |
 | 7/26 | 周复盘与 Week 12 决策 | `weekly-report.md`、`task_plan.md`、`findings.md`、`progress.md`、`weekly-metrics-log.md`；命中触发条件才改战略书 |
