@@ -57,7 +57,7 @@
 - Claude 只准备研究、名单、文案和 CRM 更新，不自动发邮件、提交表单或联系品牌。
 - 只有用户明确确认实际发送后，状态才能从 `Ready for human` 或 `Scheduled` 改为 `Sent-confirmed`；定时发送尚未发生时只能写 `Scheduled`。
 - Guest Post 的“已发送”不等于“获得外链”；周报分别统计 Sent、Reply、Accepted、Placed、Referring domain。
-- Pretty Happy Pets 确认回信已由用户定时在 **2026-07-20 13:00 Asia/Shanghai** 发送；不得重复发送，也不得仅因时间已过就推断发送成功。收到用户确认后才更新 `Sent-confirmed`。
+- Pretty Happy Pets 确认回信已由用户于 **2026-07-20 13:00 Asia/Shanghai** 实际发送，当前为 `Sent-confirmed`；不得重复发送。
 - Brand Outreach 每批最多 3 个品牌；Aorkuler 已关闭，不再联系；Homerunpet 只等待回复。Round 4 是独立的编辑型外联，首批只处理 GlobalPETS + The Upper Pawside。
 
 ## 文件同步矩阵

@@ -176,7 +176,7 @@ press@smartpetguide.net
 |:--:|------|:--:|------|
 | 1 | PetPlace.com | ❌ 未发送 | D0 起邮箱未找到（petplace.com/write-for-us 无公开编辑邮箱），标注为 unresolved |
 | 2 | EntirelyPets.com | ❌ 未发送 | D0 起邮箱未找到（entirelypets.com/guest-blogger.html 无公开编辑邮箱），标注为 unresolved |
-| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started** | 7/16 已提交约 2,099 字最终稿；7/19 对方确认编辑与兽医团队已开始审核；确认回信已定时 7/20 13:00 Asia/Shanghai，当前为 `Scheduled — not sent-confirmed`；对方将在 Week 11 提供 2-3 个给 SmartPetGuide 的选题与样稿 |
+| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started** | 7/16 已提交约 2,099 字最终稿；7/19 对方确认编辑与兽医团队已开始审核；确认回信已于 7/20 13:00 Asia/Shanghai 实际发送，当前为 `Sent-confirmed`；对方将在 Week 11 提供 2-3 个给 SmartPetGuide 的选题与样稿 |
 | 4 | Your Vet Online | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 | 5 | LenoxVet | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 
@@ -194,7 +194,7 @@ press@smartpetguide.net
 - 对方确认已经由 editorial team 与 veterinary team 开始审核稿件。
 - 如需修改，对方会直接在 Google Doc 添加评论；当前不需要主动重发附件或询问发布时间。
 - 对方正在准备 2-3 个拟投 SmartPetGuide 的主题与相关写作样稿，并承诺下周发送。
-- 用户已在原邮件线程设置定时发送：2026-07-20 13:00 Asia/Shanghai。当前只记为 `Scheduled — not sent-confirmed`；不得重复发送，实际发送状态等待用户确认。随后等待 Google Doc 评论和对方提案。双方稿件继续独立审核，不建立 reciprocal/dofollow 承诺。
+- 用户已于 2026-07-20 13:00 Asia/Shanghai 在原邮件线程实际发送确认回信，当前状态为 `Sent-confirmed`。随后等待 Google Doc 评论和对方提案。双方稿件继续独立审核，不建立 reciprocal/dofollow 承诺。
 
 **建议回复：**
 
@@ -215,6 +215,6 @@ Chengxian Yang
 |:--:|------|:--:|------|
 | 1 | **Pretty Happy Pets 投稿稿** | Submitted | ✅ 7/16 已提交约 2,099-word 最终稿：Markdown 源稿 + PDF 附件 + Google Docs 链接；无 affiliate 链接，未沿用无法证明的 18,500 reviews / $61 / 2-week acne claims |
 | 2 | **回复确认收悉** | 人工 | ✅ 7/14 已发送；已告知 7/17 前提交 draft |
-| 3 | **审稿启动确认回信** | Scheduled | 用户已定时 2026-07-20 13:00 Asia/Shanghai 发送；未确认实际发送前不得写 Sent-confirmed，也不得重复发送 |
+| 3 | **审稿启动确认回信** | Sent-confirmed | 用户已于 2026-07-20 13:00 Asia/Shanghai 实际发送；等待 Google Doc 评论和对方提案 |
 | 4 | **外部投稿审核决定** | Week 11 等待对方 | 对方已确认将提供 2-3 个选题与写作样稿；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
 | 5 | **编辑/兽医审核** | 审核已启动 | 监看 Google Doc 评论并及时修改；不主动追问发布时间。若 7/26 前完全无更新，最早 7/27 轻量跟进一次 |

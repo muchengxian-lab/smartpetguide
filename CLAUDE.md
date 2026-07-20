@@ -55,5 +55,5 @@ Current order:
 - Derive counts from source/build output rather than copying an earlier summary.
 - Do not use `git add -A`; preserve unrelated and untracked user files.
 - Do not mark an email or form as sent unless the user explicitly confirms the external action.
-- The Pretty Happy Pets acknowledgement is scheduled by the user for 2026-07-20 13:00 Asia/Shanghai. It is `Scheduled — not sent-confirmed`; do not send a duplicate and do not promote it to `Sent-confirmed` merely because the scheduled time has passed.
+- The Pretty Happy Pets acknowledgement was sent by the user at 2026-07-20 13:00 Asia/Shanghai. It is now `Sent-confirmed`; do not send a duplicate.
 - Use `docs/claude-week11-execution-prompt-template.md` as the Week 11 session contract and complete its file-sync matrix before closing work.

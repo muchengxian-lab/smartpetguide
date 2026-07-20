@@ -565,7 +565,7 @@
 ### 外链与编辑合作
 
 - Pretty Happy Pets：7/19 确认 editorial + veterinary review 已启动；Google Doc 将承载修改意见。
-- 审稿启动确认回信已由用户定时在 7/20 13:00 Asia/Shanghai 发送；当前为 `Scheduled — not sent-confirmed`，不得重复发送或按时间自动晋级。
+- 审稿启动确认回信已由用户于 7/20 13:00 Asia/Shanghai 实际发送；当前为 `Sent-confirmed`。
 - 对方承诺 Week 11 提供 2-3 个拟投 SmartPetGuide 的主题与样稿；收到后独立审核，不承诺 reciprocal/dofollow。
 - Round 4：5 个目标仍未发送；Week 11 改为 2 + 3 分批。
 - Brand：Aorkuler Closed — not now (positive)；Homerunpet Sent — awaiting reply。

@@ -42,7 +42,7 @@ Claude Code 在执行任何相关工作前必须先读：
 
 ## 当前阶段
 
-Week 11 为 2026-07-20 周一至 2026-07-26 周日。7/19 Snapshot 8：114 页；GSC 33 indexed / 15 unindexed（discovered-not-indexed 0、crawled-not-indexed 4），3 个月 288 impressions / 4 clicks；GA4 最近 7 天 22 active / 20 new / Organic 0；Pinterest 1,391 月浏览 / 5 Board（出站待确认）；Semrush 12 RD / 28 backlinks / 20 keywords / AS 2（用户确认）。Pretty Happy Pets 正在编辑/兽医审稿，确认回信已由用户定时在 7/20 13:00 Asia/Shanghai 发送，当前只能记为 `Scheduled — not sent-confirmed`。
+Week 11 为 2026-07-20 周一至 2026-07-26 周日。7/19 Snapshot 8：114 页；GSC 33 indexed / 15 unindexed（discovered-not-indexed 0、crawled-not-indexed 4），3 个月 288 impressions / 4 clicks；GA4 最近 7 天 22 active / 20 new / Organic 0；Pinterest 1,391 月浏览 / 5 Board（出站待确认）；Semrush 12 RD / 28 backlinks / 20 keywords / AS 2（用户确认）。Pretty Happy Pets 正在编辑/兽医审稿，确认回信已由用户于 7/20 13:00 Asia/Shanghai 实际发送，当前为 `Sent-confirmed`。
 90 天目标：150-180 页 / 60-100 索引 / 25-40 引用域名 / GEO Score 85+。
 
 ## 核心策略

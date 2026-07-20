@@ -50,7 +50,7 @@ C:\Users\Administrator\smartpetguide
 - Pinterest：1,391 月浏览 / 5 Board，用户人工确认；outbound 待后台确认。
 - Semrush：12 referring domains / 28 backlinks / 20 keywords / Authority Score 2，用户人工确认；新增 RD 的具体 URL 尚未识别。
 - Pretty Happy Pets：稿件处于 editorial + veterinary review；评论会写入 Google Doc；对方承诺本周提供 2-3 个拟投 SmartPetGuide 的主题和样稿。
-- Pretty Happy Pets 确认回信已由用户定时在 2026-07-20 13:00 Asia/Shanghai 发送，当前状态是 `Scheduled — not sent-confirmed`。不要重复发送、不要编辑定时邮件；即使时间已过，也必须等用户明确确认实际发送后才能写 `Sent-confirmed`。
+- Pretty Happy Pets 确认回信已由用户于 2026-07-20 13:00 Asia/Shanghai 实际发送，当前状态是 `Sent-confirmed`。不再重复发送。
 - Round 4 五个目标仍未发送。首批只有 GlobalPETS + The Upper Pawside；其余三个至少等待 48-72 小时后再决定。
 - Aorkuler：`Closed — not now (positive)`，不再联系；Homerunpet：`Sent — awaiting reply`。
 - AI Signal / 知识库自动化修复由另一个主控对话执行。本仓库只读取 docs/ai-signal-automation-optimization-handoff-2026-07-19.md 了解边界，并消费修正后的结果；不得在这里修改自动化或 Signal/Experiment 状态。
