@@ -9,7 +9,7 @@
 - 新页面默认 0；只有 GSC 查询或跨来源 VOC 明确触发时才新增，单周最多 2 页。
 - GEO 只做现有页的 `identity + source + date + quickAnswer + answerability`，不再启动新的技术 GEO 冲刺。
 - 索引已达到 33；4 个已抓取未索引页面只按实质变化维护，主力转向 query/page、排名、CTR 和渠道归因。
-- Round 4 按 2 + 3 分批；Brand Outreach 不扩量，Aorkuler 已关闭，只观察 Homerunpet。
+- Round 4 按 2 + 3 分批；Batch A 两封已于 7/21 `Sent-confirmed` 并进入观察，剩余三封保持 hold。Brand Outreach 不扩量，Aorkuler 已关闭，只观察 Homerunpet。
 
 ## Week 9 暴露的问题
 
@@ -23,6 +23,7 @@
 | 编辑结果误判 | `are-self-cleaning-litter-boxes-worth-it` 被标记 Edit 失败，实际内容已落地 | 工具报错后先查目标文件、`git diff` 和构建结果，再判定成功/失败；不凭工具消息直接写状态 |
 | 计数手工猜测 | llms 页面分类数、索引页数和页面总数发生过漂移 | 页面数从 build/dist/sitemap 计算；内容字段从源码检索；私有指标只用当次后台快照，不补猜测值 |
 | 外部动作口径混写 | “邮件文案已备”“人工已发”“收到回复”曾出现在不同文件的不同状态 | 固定使用 `Drafted`、`Ready for human`、`Sent-confirmed`、`Replied`、`Placed`；没有用户确认不得写 Sent |
+| 已发正文与仓库证据混写 | 人工发送后，仓库复用稿可能继续修订；UTM 备注也可能未真正附在链接上 | `Sent-confirmed` 只证明动作发生；另记 exact-body/UTM 是否 verified。发送后修订必须标为 reuse copy，不得反向改写成当时已发送内容 |
 | 一次任务过密 | 同时处理过多小项后出现遗漏和重复修复 | 每天最多 3 个 P0；完成 2-3 个任务后做一次 diff/build/status 检查 |
 | 项目文件漏更新 | 页面、外联、数据或战略状态只更新了一个文件 | 收工前逐项执行“文件同步矩阵”，每个变化必须说明已更新文件或明确 `N/A` 理由 |
 
@@ -40,6 +41,7 @@
 - 不把单条 Reddit、YouTube、Amazon 评论写成事实；High claim 至少需要跨来源重复或官方规格支持。
 - 不生成无法追溯的引号。不能保留原话来源时，改为不带引号的保守概括。
 - 所有百分比、寿命、故障率、节省金额和性能数字必须有可追溯来源；估算必须明确假设和日期。
+- 对外价格/TCO 必须优先核对官方产品页和计划页，区分完整套装、替换件、标价、促销价与月费等值；涉及预付方案时不得把月费等值写成实际结账金额。
 - 先审计目标页是否已有相关答案，再决定修改；已有覆盖时记录“无需修改”，不重复堆内容。
 - `quickAnswer` 只补有明确用户问题和页面缺口的页面，不追求机械覆盖率。
 
@@ -58,7 +60,7 @@
 - 只有用户明确确认实际发送后，状态才能从 `Ready for human` 或 `Scheduled` 改为 `Sent-confirmed`；定时发送尚未发生时只能写 `Scheduled`。
 - Guest Post 的“已发送”不等于“获得外链”；周报分别统计 Sent、Reply、Accepted、Placed、Referring domain。
 - Pretty Happy Pets 确认回信已由用户于 **2026-07-20 13:00 Asia/Shanghai** 实际发送，当前为 `Sent-confirmed`；不得重复发送。
-- Brand Outreach 每批最多 3 个品牌；Aorkuler 已关闭，不再联系；Homerunpet 只等待回复。Round 4 是独立的编辑型外联，首批只处理 GlobalPETS + The Upper Pawside。
+- Brand Outreach 每批最多 3 个品牌；Aorkuler 已关闭，不再联系；Homerunpet 只等待回复。Round 4 是独立的编辑型外联；GlobalPETS + The Upper Pawside 已发送，只观察回复，剩余三封保持 hold。
 
 ## 文件同步矩阵
 

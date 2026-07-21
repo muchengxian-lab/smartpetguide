@@ -18,7 +18,15 @@
 
 **发现**：当前仍未验证哪一种 linkable asset / pitch 能稳定获得编辑回复。一次发送 5 封会把目标质量、资产角度和邮件文案混在一个小样本中。
 
-**决策**：7/21 先发送 GlobalPETS（订阅疲劳/TCO 行业角度）和 The Upper Pawside（dog GPS no-fee TCO）。等待 48-72 小时后再决定 BarkyTech、Purely Wholesome、PetsAnalysis；PHP fountain 稿仍在审阅时不向 Purely Wholesome 重复推相同主题。
+**决策**：GlobalPETS（订阅疲劳/TCO 行业角度）和 The Upper Pawside（dog GPS no-fee TCO）已于 7/21 晚间由用户实际发送。等待 48-72 小时后再决定 BarkyTech、Purely Wholesome、PetsAnalysis；PHP fountain 稿仍在审阅时不向 Purely Wholesome 重复推相同主题。
+
+### Round 4 发送后事实审计暴露价格与归因证据缺口
+
+**发现**：仓库保存的两封 Batch A 文案把 Aorkuler 完整套装写成 `$129`，并将 Tractive 写成 `$50 + $8-20/月`；这些数字既与当时站内支撑页不一致，也与 2026-07-21 官方页面不符。官方核验口径为：Aorkuler 完整套装 `$249.99`；Tractive 稳定标价采用促销前 `$79`，当前预付计划折算为 `$5-10/月`。原稿还把 500+ review / 26-device 数据扩大为“thousands”和“#1 objection”。
+
+**决策**：当前页面和可复用外联稿统一改用官方标价，并把 Tractive 三年数字写成“按当前广告月费的 36 个月等值 `$259-439`”；同时明确预付方案的实际结账金额会因期限不同而变化。以后价格/TCO 必须记录官方来源、核验日期、完整套装/替换件、标价/促销价和付款期限，不能只引用搜索摘要或旧站内数字。
+
+**归因边界**：用户确认了发送动作，因此状态保持 `Sent-confirmed`；但仓库不能证明实际已发正文的逐字内容和 UTM。发送后修订稿只标为 corrected reuse copy，本批 exact-body/UTM 记为 `unverified`，不补写成已追踪，也不主动补发更正邮件；若对方回复，使用修正后的数据继续沟通。
 
 ### AI Signal 自动化修复单独移交
 

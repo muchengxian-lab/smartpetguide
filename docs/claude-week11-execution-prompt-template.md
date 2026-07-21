@@ -51,7 +51,7 @@ C:\Users\Administrator\smartpetguide
 - Semrush：12 referring domains / 28 backlinks / 20 keywords / Authority Score 2，用户人工确认；新增 RD 的具体 URL 尚未识别。
 - Pretty Happy Pets：稿件处于 editorial + veterinary review；评论会写入 Google Doc；对方承诺本周提供 2-3 个拟投 SmartPetGuide 的主题和样稿。
 - Pretty Happy Pets 确认回信已由用户于 2026-07-20 13:00 Asia/Shanghai 实际发送，当前状态是 `Sent-confirmed`。不再重复发送。
-- Round 4 五个目标仍未发送。首批只有 GlobalPETS + The Upper Pawside；其余三个至少等待 48-72 小时后再决定。
+- Round 4 Batch A 的 GlobalPETS + The Upper Pawside 已由用户于 7/21 晚间实际发送，状态为 `Sent-confirmed`；不得重复发送。发送后事实审计已修正仓库中的复用稿，但实际已发正文的逐字内容和 UTM 无法从仓库独立验证，归因保持 `unverified`。其余三个最早 7/24 再根据回复决定，当前保持 hold。
 - Aorkuler：`Closed — not now (positive)`，不再联系；Homerunpet：`Sent — awaiting reply`。
 - AI Signal / 知识库自动化修复由另一个主控对话执行。本仓库只读取 docs/ai-signal-automation-optimization-handoff-2026-07-19.md 了解边界，并消费修正后的结果；不得在这里修改自动化或 Signal/Experiment 状态。
 
@@ -60,7 +60,7 @@ C:\Users\Administrator\smartpetguide
 三、Week 11 日期闸门
 
 - 7/20 周一：✅ GA4 Referral 2、Unassigned 1 的 source/medium、landing page 与完整 Events 已核对；Pretty Happy Pets 确认回信已由用户于 13:00 实际发送，状态为 `Sent-confirmed`，禁止重复发送。
-- 7/21 周二：为 GlobalPETS + The Upper Pawside 定制两封不同资产角度的 Round 4 pitch。Claude 只准备到 `Ready for human`；只有用户确认实际发送后才写 `Sent-confirmed`。
+- 7/21 周二：✅ GlobalPETS + The Upper Pawside 两封 Round 4 pitch 已实际发送并进入观察；✅ 发送后审计已修正本地复用稿、GPS 官方价格和 UTM 证据边界。不得重发或把 `unverified` 归因补写成已追踪。
 - 7/22 周三：审计 cat-wont-drink-from-water-fountain；先查 query、首屏答案、来源和内链，只有真实缺口才修改。
 - 7/23 周四：检查 litter-robot-5-vs-litter-robot-4 与 introduce-cat-to-automatic-litter-box 的新展示，最多选择一页实质加固；feeder portion conversion 已于 7/20 完成证据审计和现有页深化，不再制作重复的 coverage-gap matrix，空出的时段只处理 PHP 评论或 Round 4 回复。
 - 7/24 周五：Snapshot 9，核对 GSC 最近 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest outbound 和 GPS 页查询下降；无反馈不发送 Round 4 剩余三封。
@@ -137,7 +137,7 @@ C:\Users\Administrator\smartpetguide
 | 日期 | 主要任务 | 最低项目文件同步 |
 |------|------|------|
 | 7/20 | ✅ GA4 归因完成；feeder portion 页深化完成；PHP 邮件 `Sent-confirmed` | 已同步 `progress.md`、`task_plan.md`、`weekly-metrics-log.md`、`findings.md`、`round3` 与页面交付记录 |
-| 7/21 | Round 4 首批两封 | `round4-editorial-targets.md`、`progress.md`、`task_plan.md`；用户确认后再写 Sent-confirmed |
+| 7/21 | ✅ Round 4 首批两封已发送；✅ 发送后事实/UTM 返修 | 已同步 `round4-editorial-targets.md`、GPS/TCO 页面与数据、`content-dates.json`、`progress.md`、`task_plan.md`、`findings.md` 和 guardrails；实际已发正文归因仍为 unverified |
 | 7/22 | 饮水页审计/必要加固 | 目标源码（如修改）、`content-dates.json`（如实质修改）、`progress.md`、`task_plan.md` |
 | 7/23 | 猫砂盆页信号；不重复执行已完成的 feeder coverage-gap | 目标源码（如修改）、`content-dates.json`（如实质修改）、`progress.md`、`task_plan.md`、稳定结论写 `findings.md` |
 | 7/24 | Snapshot 9 | `weekly-metrics-log.md`、`progress.md`、`task_plan.md`、`weekly-report.md` |

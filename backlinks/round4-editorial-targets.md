@@ -19,9 +19,9 @@
 | # | Site | Contact | Status | Notes |
 |:--:|------|------|:--:|------|
 | 1 | BarkyTech | editor@barkytech.com | Researched — not sent | Pet tech niche match; requires photos with submissions |
-| 2 | GlobalPETS / PETS International | content@pets.nl | **Sent-confirmed** | Sent 7/21 evening; subscription fatigue angle with TCO data. Observe 48–72h |
+| 2 | GlobalPETS / PETS International | content@pets.nl | **Sent-confirmed** | Manual send confirmed 7/21 evening. Post-send audit corrected the local reuse copy; exact sent-body wording/UTM is unverified. Observe 48–72h |
 | 3 | Purely Wholesome | info@purelywholesome.com | Researched — not sent | Pet/animal-care contributor page verified; 800-3,000 words |
-| 4 | The Upper Pawside | info@upperpawside.com | **Sent-confirmed** | Sent 7/21 evening; GPS no-fee TCO angle for dog owners. Observe 48–72h |
+| 4 | The Upper Pawside | info@upperpawside.com | **Sent-confirmed** | Manual send confirmed 7/21 evening. Post-send audit corrected the local reuse copy; exact sent-body wording/UTM is unverified. Observe 48–72h |
 | 5 | PetsAnalysis | admin@petsanalysis.com | Researched — not sent | Product reviews accepted; stated response time 5-7 business days |
 
 ## Week 11 Send Sequence
@@ -36,9 +36,9 @@
 
 **发送闸门：**Batch A 人工发送后至少观察 48-72 小时。收到回复、编辑问题或明确内容反馈时，可复制有效角度；零反馈时先修改 pitch/资产，不把剩余发送数当成果。
 
-## Batch A Pitch Drafts (2026-07-21)
+## Batch A Pitch Record + Corrected Reuse Copy (2026-07-21)
 
-> Claude 准备到 `Ready for human`；只有用户确认实际发送后才更新为 `Sent-confirmed`。
+> 用户已确认两封邮件实际发送，因此状态为 `Sent-confirmed`。下方正文已在发送后按 2026-07-21 官方价格完成事实修正，仅供对方回复、后续提纲或未来外联复用；它不是实际已发正文的逐字证据。实际发送链接是否带 UTM 无法从仓库独立验证，因此本批归因记为 `unverified`，不补写成已追踪。
 
 ### 1. GlobalPETS / PETS International
 
@@ -52,19 +52,19 @@ I run SmartPetGuide, an independent research site that analyzes verified owner r
 
 Proposed topic: "Subscription Fatigue in Pet Tech — What 3-Year Cost Data Shows About Consumer Value"
 
-The piece uses original data analysis to examine a tension your readers will recognize: pet tech brands are increasingly moving to subscription models, but consumer data consistently shows subscription cost is the #1 purchase objection across GPS, cameras, and litter boxes.
+The piece uses original data analysis to examine a tension your readers will recognize: recurring costs are becoming a more visible purchase filter in pet cameras and GPS trackers, while proprietary consumables create a similar long-term cost question in other categories.
 
 Key findings the article would present:
 
-- Subscription vs one-time: A $79 pet camera costs $295–$465 over 3 years once subscription fees are included. A $129 one-time GPS tracker saves $209–$641 versus a $50 device with a $8–$20/month plan.
-- Category breakdown: GPS trackers have the widest subscription cost spread ($0–$240/year); cameras are shifting toward local storage and one-time models; automatic feeders remain largely subscription-free.
-- Consumer behavior: Across thousands of verified Amazon reviews, "no subscription" and "hidden monthly fee" are the most repeated purchase objections in GPS and camera categories.
+- Subscription vs one-time: Tractive lists its tracker at $79 before promotions and currently offers plans equivalent to $5–$10 per month. Aorkuler's complete off-grid kit is $249.99 with no monthly fee, creating an approximate 17–34 month break-even window at those rates.
+- Category breakdown: GPS trackers combine hardware and cellular-plan costs; cameras increasingly offer local-storage alternatives; automatic feeders remain largely subscription-free.
+- Consumer behavior: In our current dataset of 500+ verified owner reviews across 26 devices, "no subscription" is the fastest-growing purchase filter across the GPS and camera content we track.
 - The industry response: Brands like Aorkuler (radio-frequency, no cell network) and xpai/eufy (local storage cameras) are building anti-subscription positioning into their hardware design.
 
 The article would be data-driven but accessible — not a research paper. I'd cite our published statistics page and 3-year cost methodology, and can adapt the piece to your editorial style and length.
 
-Sample of our data work: https://smartpetguide.net/pet-tech-statistics/
-Relevant analysis: https://smartpetguide.net/guides/smart-pet-devices-subscription-cost/
+Sample of our data work: https://smartpetguide.net/pet-tech-statistics/?utm_source=globalpets&utm_medium=editorial-outreach&utm_campaign=round-4
+Relevant analysis: https://smartpetguide.net/guides/smart-pet-devices-subscription-cost/?utm_source=globalpets&utm_medium=editorial-outreach&utm_campaign=round-4
 
 Happy to discuss angle, format, or additional data points. Let me know if this topic interests your readers.
 
@@ -75,7 +75,7 @@ press@smartpetguide.net
 
 **Pitch 资产角度**：行业趋势 + 原创数据分析（TCO/订阅疲劳），面向宠物行业专业人士
 **引用资产**：`pet-tech-statistics` + `smart-pet-devices-subscription-cost`
-**UTM**：`?utm_source=globalpets&utm_medium=editorial-outreach&utm_campaign=round-4`
+**UTM for reuse copy**：已直接附在正文两条 URL；实际已发正文是否含 UTM 为 `unverified`，不追溯改写。
 
 ### 2. The Upper Pawside
 
@@ -94,18 +94,18 @@ Most GPS tracker reviews focus on features. This piece focuses on what dog owner
 The article would compare three real options with transparent 3-year math:
 
 - A $33 no-fee tracker: the budget pick. No monthly cost, basic tracking.
-- A $129 radio-frequency tracker (Aorkuler): one hardware purchase, zero subscription forever, works without cell service. 3-year total: $129.
-- A $50 cellular tracker (Tractive) with $8–$20/month plans: 3-year total $338–$770. Included as the honest benchmark — best feature set, but you pay for it.
+- A $249.99 radio-frequency tracker kit (Aorkuler): one hardware purchase, zero subscription, and no cell service required. 3-year equivalent total: $249.99.
+- A $79 list-price cellular tracker (Tractive) with current plans equivalent to $5–$10/month: 3-year equivalent total $259–$439 if current prices hold. Actual checkout cost depends on the billing term because plans are prepaid.
 
 Beyond the cost table, the piece covers:
 - When a subscription actually makes sense (frequent escape artists, wide roaming range)
 - When radio-frequency is enough (hikes, campsites, backyards without cell coverage)
 - What "no subscription" actually means — and the trade-offs in range and real-time tracking
 
-The angle is practical and research-backed: I've analyzed verified owner reviews, manufacturer specs, and real cost data. No affiliate links, no brand deals. Written for dog owners making a $33–$770 decision.
+The angle is practical and research-backed: I've analyzed verified owner reviews, manufacturer specs, and current official pricing. No affiliate links, no brand deals. Written for dog owners comparing a $33 budget device with subscription and off-grid alternatives.
 
-Sample of our research style: https://smartpetguide.net/best/gps-trackers-no-monthly-fee/
-Cost methodology example: https://smartpetguide.net/guides/smart-pet-devices-subscription-cost/
+Sample of our research style: https://smartpetguide.net/best/gps-trackers-no-monthly-fee/?utm_source=upperpawside&utm_medium=editorial-outreach&utm_campaign=round-4
+Cost methodology example: https://smartpetguide.net/guides/smart-pet-devices-subscription-cost/?utm_source=upperpawside&utm_medium=editorial-outreach&utm_campaign=round-4
 
 Happy to adapt to your 750–1,500 word guidelines. Let me know if this topic works for your readers.
 
@@ -116,7 +116,7 @@ press@smartpetguide.net
 
 **Pitch 资产角度**：消费者实用对比 + 透明 3 年成本计算，面向狗主
 **引用资产**：`gps-trackers-no-monthly-fee` + `smart-pet-devices-subscription-cost`
-**UTM**：`?utm_source=upperpawside&utm_medium=editorial-outreach&utm_campaign=round-4`
+**UTM for reuse copy**：已直接附在正文两条 URL；实际已发正文是否含 UTM 为 `unverified`，不追溯改写。
 
 ## Pitch Assets (Linkable Assets)
 
