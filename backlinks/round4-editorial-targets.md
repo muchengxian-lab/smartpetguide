@@ -19,17 +19,17 @@
 | # | Site | Contact | Status | Notes |
 |:--:|------|------|:--:|------|
 | 1 | BarkyTech | editor@barkytech.com | Researched — not sent | Pet tech niche match; requires photos with submissions |
-| 2 | GlobalPETS / PETS International | content@pets.nl | **Ready for human** | Trade-publication pitch drafted 7/21; subscription fatigue angle with TCO data |
+| 2 | GlobalPETS / PETS International | content@pets.nl | **Sent-confirmed** | Sent 7/21 evening; subscription fatigue angle with TCO data. Observe 48–72h |
 | 3 | Purely Wholesome | info@purelywholesome.com | Researched — not sent | Pet/animal-care contributor page verified; 800-3,000 words |
-| 4 | The Upper Pawside | info@upperpawside.com | **Ready for human** | Consumer pitch drafted 7/21; GPS no-fee TCO angle for dog owners |
+| 4 | The Upper Pawside | info@upperpawside.com | **Sent-confirmed** | Sent 7/21 evening; GPS no-fee TCO angle for dog owners. Observe 48–72h |
 | 5 | PetsAnalysis | admin@petsanalysis.com | Researched — not sent | Product reviews accepted; stated response time 5-7 business days |
 
 ## Week 11 Send Sequence
 
 | 批次 | 目标 | 计划日期 | 当前状态 | 决策规则 |
 |------|------|------|------|------|
-| Batch A | GlobalPETS / PETS International | 2026-07-21 | **Ready for human** | 订阅疲劳+3年TCO行业数据角度；引用 pet-tech-statistics + subscription cost 页 |
-| Batch A | The Upper Pawside | 2026-07-21 | **Ready for human** | Dog GPS no-fee TCO 消费者角度；引用 GPS best list + subscription cost 页 |
+| Batch A | GlobalPETS / PETS International | 2026-07-21 | **Sent-confirmed** | 订阅疲劳+3年TCO行业数据；已发送，观察 48–72h |
+| Batch A | The Upper Pawside | 2026-07-21 | **Sent-confirmed** | Dog GPS no-fee TCO 消费者角度；已发送，观察 48–72h |
 | Hold | BarkyTech | 最早 2026-07-24 | Researched — hold | 先确认数据图表能否满足其图片要求 |
 | Hold | Purely Wholesome | 最早 2026-07-24 | Researched — hold | PHP 同主题仍在审稿，暂不重复发送 fountain 主题 |
 | Hold | PetsAnalysis | 最早 2026-07-24 | Researched — hold | 等首批反馈；其偏好兽医/行业作者，需强化研究边界 |
