@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-22 周三 22:31 Week 11 | cat-wont-drink-from-water-fountain 内容、来源与内链整改完成：删除不可追溯的精确比例/性能断言，补权威来源与安全边界，保留 6 处产品评测内链和 4 条 Related Resources；modifiedDate 保持 7/22 | GSC 页面级当前 query/索引状态未独立核验，不再由站点级桶位推断 | Round 4 Batch A 已发送进入观察；其余三封 hold | PHP 无新评论仅为 Claude 当日记录，Codex 无可用文档登录态独立复核**
+**最后更新：2026-07-22 周三 22:39 Week 11 | cat-wont-drink-from-water-fountain 内容、来源与内链整改完成并上线：删除不可追溯的精确比例/性能断言，补权威来源与安全边界，保留 6 处产品评测内链和 4 条 Related Resources；modifiedDate 保持 7/22 | 内容提交 `45df37d` 已推送，Vercel `dpl_2TDuju71VVBEusbq7SaPnV4Vvbxn` READY，生产 HTML 通过 | GSC 页面级当前 query/索引状态未独立核验，不再由站点级桶位推断 | Round 4 Batch A 已发送进入观察；其余三封 hold | PHP 无新评论仅为 Claude 当日记录，Codex 无可用文档登录态独立复核**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 11 默认不扩页；已命中索引 30+ 触发条件，35-40% 时间用于外链/编辑型分发，25-30% 用于已索引页面查询、CTR 与必要的未索引维护，20-25% 用于战略 GEO/VOC 缺口回填，Pinterest 只做低成本维护。
 
@@ -83,7 +83,7 @@
 |:--:|------|------|------|------|
 | 周一 | 7/20 | ✅ 建立 GA4 渠道归因基线：Referral 2 均为 `indiehackers.com / referral`，分别落到 Petlibro/WOPET feeder review；Unassigned 1 为 `(not set)`；完整 Events 确认 affiliate/outbound 0 | ✅ recurring feeder portion signal 转化为现有换算页深度升级：官方型号口径 + 10 次称重 + 计算器；Pretty Happy Pets 回信已于 13:00 实际发送，`Sent-confirmed` | ✅ 非 Direct 会话与 landing page 可解释；事件定义边界已记录；114 页 build、日期、生成页和计算器双路径交互通过；`c16fed1` 已推送，Vercel `dpl_3aBD1YkE7pMY45cgmJzMr9j5sSfS` READY，生产页内容与计算器通过；邮件仅在用户确认实际发送后改为 Sent-confirmed |
 | 周二 | 7/21 | ✅ Round 4 第一批：GlobalPETS + The Upper Pawside 已发送（Sent-confirmed）；✅ 发送后事实审计修正复用稿与 GPS/TCO 页面 | 其余 3 个保持 Researched — hold；实际已发正文/UTM 为 unverified，不重发 | ✅ 发送状态、官方价格、TCO 假设、内容日期与 Claude 活跃入口已同步；7/24 再按回复决定，不写 Brand CRM |
-| 周三 | 7/22 | ✅ 页面强化 #1 内容整改：`cat-wont-drink-from-water-fountain` 已补来源/安全边界并删除不可追溯数字，保留产品评测内链与 Related Resources；⚠ GSC 页面级 query/索引状态待可用登录态核验，不得由站点级桶位推断 | PHP Google Doc“无新评论”为 Claude 当日记录；Codex 未继承文档登录态，未独立复核 | ✅ `npm.cmd run verify` 114 页、日期和生成 HTML 通过；commit/push/生产证据完成后回写 |
+| 周三 | 7/22 | ✅ 页面强化 #1 内容整改：`cat-wont-drink-from-water-fountain` 已补来源/安全边界并删除不可追溯数字，保留产品评测内链与 Related Resources；⚠ GSC 页面级 query/索引状态待可用登录态核验，不得由站点级桶位推断 | PHP Google Doc“无新评论”为 Claude 当日记录；Codex 未继承文档登录态，未独立复核 | ✅ `npm.cmd run verify` 114 页；`45df37d` 已推送，Vercel `dpl_2TDuju71VVBEusbq7SaPnV4Vvbxn` READY，首页/目标页 200，线上 HTML 与本地生成页哈希一致 |
 | 周四 | 7/23 | 页面强化 #2：检查 `litter-robot-5-vs-litter-robot-4` 与 `introduce-cat-to-automatic-litter-box` 新展示；最多选择 1 页加固 | feeder 份量换算信号已于 7/20 提前完成证据审计和页面深化，不再重复生成 coverage-gap matrix；空出的时段用于 PHP 评论或 Round 4 回复处理 | 1 页以内实质加固；份量换算页只观察表现，不继续堆同题内容 |
 | 周五 | 7/24 | Snapshot 9：GSC 最近 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest 出站；拆解 GPS 页下降查询 | 复核 Round 4 第一批回复；无信号不立即发送剩余 3 封 | 周快照、查询/页面变化、渠道判断完整 |
 | 周六 | 7/25 | 缓冲：处理 PHP 编辑/兽医评论或修订稿；没有评论则不制造任务 | 检查对方 2-3 个提案是否到达；按相关性、原创性、来源质量独立审核 | 评论闭环或明确等待；不承诺 reciprocal/dofollow |
