@@ -61,7 +61,7 @@ C:\Users\Administrator\smartpetguide
 
 - 7/20 周一：✅ GA4 Referral 2、Unassigned 1 的 source/medium、landing page 与完整 Events 已核对；Pretty Happy Pets 确认回信已由用户于 13:00 实际发送，状态为 `Sent-confirmed`，禁止重复发送。
 - 7/21 周二：✅ GlobalPETS + The Upper Pawside 两封 Round 4 pitch 已实际发送并进入观察；✅ 发送后审计已修正本地复用稿、GPS 官方价格和 UTM 证据边界。不得重发或把 `unverified` 归因补写成已追踪。
-- 7/22 周三：审计 cat-wont-drink-from-water-fountain；先查 query、首屏答案、来源和内链，只有真实缺口才修改。
+- 7/22 周三：✅ cat-wont-drink-from-water-fountain 的首屏答案、来源表达和内链已整改；不可追溯比例/性能断言已删除并补权威来源。GSC 页面级当前 query/索引状态仍待可用登录态核验，禁止用站点级 crawled-not-indexed 总数推断该 URL 状态；后续只补数据核验，不重复改写页面。
 - 7/23 周四：检查 litter-robot-5-vs-litter-robot-4 与 introduce-cat-to-automatic-litter-box 的新展示，最多选择一页实质加固；feeder portion conversion 已于 7/20 完成证据审计和现有页深化，不再制作重复的 coverage-gap matrix，空出的时段只处理 PHP 评论或 Round 4 回复。
 - 7/24 周五：Snapshot 9，核对 GSC 最近 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest outbound 和 GPS 页查询下降；无反馈不发送 Round 4 剩余三封。
 - 7/25 周六：只处理 Pretty Happy Pets 的真实 Google Doc 评论或对方主动发来的提案；没有新内容就明确等待，不制造任务。
@@ -138,7 +138,7 @@ C:\Users\Administrator\smartpetguide
 |------|------|------|
 | 7/20 | ✅ GA4 归因完成；feeder portion 页深化完成；PHP 邮件 `Sent-confirmed` | 已同步 `progress.md`、`task_plan.md`、`weekly-metrics-log.md`、`findings.md`、`round3` 与页面交付记录 |
 | 7/21 | ✅ Round 4 首批两封已发送；✅ 发送后事实/UTM 返修 | 已同步 `round4-editorial-targets.md`、GPS/TCO 页面与数据、`content-dates.json`、`progress.md`、`task_plan.md`、`findings.md` 和 guardrails；实际已发正文归因仍为 unverified |
-| 7/22 | 饮水页审计/必要加固 | 目标源码（如修改）、`content-dates.json`（如实质修改）、`progress.md`、`task_plan.md` |
+| 7/22 | ✅ 饮水页内容/来源/内链整改；GSC 页面级状态待登录态核验 | 已同步目标源码、`progress.md`、`task_plan.md`、`findings.md` 与 metrics 解释边界；`content-dates.json` 已是同日 7/22，无需重复改值 |
 | 7/23 | 猫砂盆页信号；不重复执行已完成的 feeder coverage-gap | 目标源码（如修改）、`content-dates.json`（如实质修改）、`progress.md`、`task_plan.md`、稳定结论写 `findings.md` |
 | 7/24 | Snapshot 9 | `weekly-metrics-log.md`、`progress.md`、`task_plan.md`、`weekly-report.md` |
 | 7/25 | PHP 评论/对方提案 | `round3-guest-post-targets.md`、`progress.md`、`task_plan.md`；有指标变化再同步 metrics |

@@ -1,5 +1,33 @@
 # 发现与决策
 
+## 2026-07-22 饮水页来源审计整改
+
+### 饮水机偏好应按个体差异表达，不应承诺普遍提升饮水量
+
+**发现**：一项 14 只猫完成的随机交叉研究没有发现静水、循环水和自由落水系统之间的平均饮水量存在显著差异，但少数个体显示出不同水源偏好。Cornell Feline Health Center 同样指出，饮水机会帮助部分猫，但个体偏好不同。原页面的“多数猫会转用”“约 5% 永不接受”“15-20% 立即适应”等比例没有可追溯来源。
+
+**来源**：
+- https://pubmed.ncbi.nlm.nih.gov/30303439/
+- https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration
+
+**决策**：删除无来源适应比例、听力倍数、通用分贝排名和“饮水机必然提高饮水量”暗示；页面改为个体偏好、渐进引入、保留其他水源和异常时就医的保守口径。
+
+### 渐进引入、资源分离和清洁有权威指南支持
+
+**发现**：International Cat Care 建议先让猫接触未开机的饮水机，再加水，最后启动电机；同时建议水源放在安静、易接近且远离猫砂的位置，不直接贴着食物，并按说明定期拆洗和更换滤芯。Feline Veterinary Medical Association 建议在环境中提供多个、彼此分开的食物、水和如厕资源。
+
+**来源**：
+- https://icatcare.org/resources/cat-carer-guide-encouraging-your-cat-to-drink.pdf
+- https://catvets.com/resource/setting-up-for-success/
+
+**决策**：页面保留 8 个排查方向，但每项改为可观察、可逆的测试步骤；删除强迫撤掉旧水碗、未经说明书批准的无滤芯运行和气味转移技巧。
+
+### GSC Performance 与 Page Indexing 不能互相反推
+
+**发现**：Snapshot 8 记录该页 4 impressions vs 1，同时记录全站 `crawled-not-indexed = 4`；这两项不能证明该页当前属于或不属于该索引桶。7/22 首次执行日志使用全站桶位断言该页状态，证据不足。
+
+**决策**：在可用登录态完成页面级查询与 URL Inspection 前，该页当前索引状态保持 `unverified`。页面内容整改可以关闭，但 GSC 数据核验必须单列，不能用站点汇总替代。
+
 ## Week 11 校准决策（2026-07-19）
 
 ### 索引 30+ 触发条件已经命中，GSC 工作必须换挡

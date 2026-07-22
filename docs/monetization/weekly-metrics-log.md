@@ -531,6 +531,8 @@
 - `introduce-cat-to-automatic-litter-box/`：1 vs 0，新出现展示。
 - `how-to-clean-cat-water-fountain/`：0 vs 3，需观察但不立即重写。
 
+**索引解释边界（2026-07-22 更正）：** 上述 Performance 页面数据与全站 `crawled-not-indexed = 4` 是不同报告口径。`cat-wont-drink-from-water-fountain/` 的 4 次展示不能单独证明当前 URL Inspection 状态，全站 4 个未索引 URL 也不能反推该页仍在该桶中；在页面级后台复核前，当前索引状态记为 `unverified`，只保留 4 vs 1 的展示事实。
+
 ### GA4（最近 7 天）
 
 | 指标 | 当前值 | vs 上期 |
