@@ -1,5 +1,30 @@
 # 发现与决策
 
+## 2026-07-23 GSC 猫砂盆页信号与 LR5 vs LR4 整改
+
+### 最近 7 天归零时，用 28 天页面证据选择目标，不把旧展示写成新增增长
+
+**发现**：GSC Performance 于 2026-07-23 实测，全站最近 7 天为 0 clicks / 12 impressions / CTR 0% / average position 21.4。`litter-robot-5-vs-litter-robot-4/` 与 `introduce-cat-to-automatic-litter-box/` 在最近 7 天都为 0 clicks / 0 impressions；扩大到最近 28 天后，前者为 4 impressions / average position 37.3，出现 `litter robot 5 vs 4`（1 impression / position 46）和 `litter robot 4 vs 5`（1 impression），后者只有 1 impression / position 68，对应 `how to transition cats to litter robot`。
+
+**决策**：本轮只加固 LR5 vs LR4。理由是它在 28 天窗口内有更强的页面信号和直接购买比较意图；不把两个页面最近 7 天的 0 展示表述成增长，也不凭 Performance 报告推断 URL Inspection / 索引状态。猫咪过渡指南保留观察，不为凑任务改写。
+
+### 比较页应分开写官方事实与购买判断，并删除不可追溯的动态数字
+
+**发现**：旧页混用了无当前来源的噪音分贝、review count、WasteID 准确率、长期 firmware 承诺和“可避免急诊/诊断疾病”暗示。2026-07-23 官方页面可稳定支持的差异包括：LR5 / LR4 美国基础价 $799 / $699；支持体重 3-30 lb / 3-25 lb；建议最多 5 / 4 只猫；单猫抽屉间隔约 10 / 8 天；LR5 有 WasteID、彩色 LCD、略大内部空间与内置地毯支持，LR4 在厚地毯或不平地面上建议使用可选 Carpet Tray 改善 SmartScale 准确性。两者均含 90 天试用与一年保修，三年保修均可加购 $100。
+
+**来源**：
+- https://www.whisker.com/blog/litter-robot-4-vs-5
+- https://www.litter-robot.com/litter-robot-5.html
+- https://www.litter-robot.com/litter-robot-4.html
+
+**决策**：页面首屏明确 `$100` 价差和“新买家 vs 现有 LR4 用户”两类决策；WasteID 只写日常趋势监测，不写医疗诊断。动态 review count、无可比测试条件的 dB、准确率和医疗收益断言全部删除；制造商支持只作为 manufacturer claims 标注，不伪装成独立实测。
+
+### 外部编辑反馈截至 7/23 仍为等待
+
+**发现**：已登录浏览器独立核对 Pretty Happy Pets Google Doc，界面显示 `0 条新评论`；邮件线程最后一封仍是我方 7/20 13:00 回复。GlobalPETS 与 The Upper Pawside 两封 7/21 Round 4 线程也都只有我方发件，没有对方回复。
+
+**决策**：今天不发送、不催问、不把等待计为回复。剩余 BarkyTech / Purely Wholesome / PetsAnalysis 继续 hold，按 7/24 与 7/26 的既定闸门决定；Pretty Happy Pets 最早仍是 7/27 在完全无更新时轻量跟进。
+
 ## 2026-07-22 饮水页来源审计整改
 
 ### 饮水机偏好应按个体差异表达，不应承诺普遍提升饮水量

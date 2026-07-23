@@ -49,32 +49,80 @@ interface CompareData {
   skipIf?: string;
   bestAlternative?: string;
   whatOwnersSay?: { praise: string; complaints: string };
+  takeaways?: string[];
+  methodNote?: string;
+  dataNote?: string;
+  sourceNote?: string;
+  sources?: { label: string; href: string }[];
 }
 
 const compareMap: Record<string, CompareData> = {
   "litter-robot-5-vs-litter-robot-4": {
     title: "Litter-Robot 5 vs Litter-Robot 4 (2026) — Should You Upgrade?",
-    description: "Head-to-head comparison: Litter-Robot 5 vs Litter-Robot 4. WasteID health tracking, larger interior, LCD screen — is the $799 upgrade worth $100 more than the proven $699 LR4?",
-    productAId: "litter-robot-5",
-    productBId: "litter-robot-4",
-    winner: "The Litter-Robot 5 wins for new buyers — the $100 premium over the LR4 buys WasteID health tracking, a larger globe, a readable LCD screen, carpet-friendly design, and a platform that will receive firmware updates for years. The LR4 wins for budget-conscious buyers or anyone upgrading from an older model — it's still an excellent box at $699 with 12,500+ reviews and proven long-term reliability. If you have a cat with health concerns (diabetes, kidney disease, FLUTD), the WasteID #1 vs #2 tracking alone justifies the LR5. If you have healthy cats and just want to stop scooping, the LR4 at $100 less is the smarter buy.",
+    description: "Litter-Robot 5 vs 4 compared on current $799/$699 pricing, WasteID, cat-size limits, carpet use, and whether the $100 upgrade makes sense.",
+    productA: {
+      ...allProducts.get("litter-robot-5"),
+      rating: 4.5,
+      pros: [
+        "WasteID distinguishes urine from feces for cycle timing and routine monitoring",
+        "Supports cats from 3-30 lb and households with up to five cats",
+        "Color LCD, larger interior, and built-in carpet compatibility",
+      ],
+      cons: [
+        "$100 higher base price than Litter-Robot 4",
+        "No integrated camera; that is reserved for Litter-Robot 5 Pro",
+        "Connected features require 2.4 GHz Wi-Fi",
+      ],
+    },
+    productB: {
+      ...allProducts.get("litter-robot-4"),
+      rating: 4.5,
+      pros: [
+        "$699 base price keeps the same core automatic sifting experience",
+        "SmartScale weight tracking and Whisker app activity history",
+        "Supports up to four cats and works with the LitterHopper accessory",
+      ],
+      cons: [
+        "No WasteID urine-versus-feces distinction",
+        "Narrower supported weight range of 3-25 lb",
+        "Optional Carpet Tray is recommended for accurate weight readings on thick carpet or uneven floors",
+      ],
+    },
+    winner: "For a first-time buyer, choose Litter-Robot 5 if the $100 premium is reasonable and you value WasteID, more headroom, a larger drawer, a color LCD, or built-in carpet support. Choose Litter-Robot 4 if you want the same core self-cleaning function for $699. Existing LR4 owners should usually keep it unless one of those specific upgrades solves a real problem in their home. WasteID and weight trends support routine monitoring; they do not diagnose illness.",
+    takeaways: [
+      "New buyer: LR5 adds WasteID, more room, a larger drawer, an LCD, and built-in carpet support for $100 more",
+      "Existing LR4 owner: keep it unless a specific LR5 upgrade solves a current limitation",
+      "Official US base prices checked July 23, 2026: LR5 $799; LR4 $699",
+      "Both include a 90-day in-home trial and a one-year WhiskerCare warranty",
+    ],
+    methodNote: "How we compare: current official US prices and specifications first, then a separate buying judgment based on which differences solve a real household need.",
     comparisonRows: [
       ["Price", "$799", "$699"],
-      ["Health Tracking", "WasteID: #1 vs #2 detection", "Weight tracking only"],
-      ["Screen", "Full-color LCD display", "LED light bar only"],
-      ["Interior Size", "Larger globe, more headroom", "Standard globe"],
-      ["Cat Capacity", "Up to 5 cats by weight", "Up to 4 cats by weight"],
-      ["Carpet Use", "Built-in carpet compatibility", "Requires $30 carpet tray kit"],
-      ["Noise Level", "Under 55 dB (QuietSift)", "~40 dB"],
-      ["Warranty", "1 year", "1 year"],
-      ["Reviews", "850+ (new model)", "12,500+ (proven)"],
-      ["Best For", "Health-conscious / multi-cat homes", "Budget / proven reliability"],
+      ["Waste-Type Identification", "WasteID distinguishes urine from feces", "No waste-type identification"],
+      ["Weight Tracking", "SmartScale in the Whisker app", "SmartScale in the Whisker app"],
+      ["Display", "Full-color LCD", "Buttons and LED light bar"],
+      ["Interior", "Slightly larger globe with more headroom", "Standard LR4 globe"],
+      ["Supported Cat Weight", "3-30 lb", "3-25 lb"],
+      ["Suggested Household", "Up to 5 cats", "Up to 4 cats"],
+      ["One-Cat Drawer Interval", "Up to about 10 days", "Up to about 8 days"],
+      ["Carpet Use", "Built-in carpet tray; suitable for any flooring", "Works on carpet; optional tray improves SmartScale accuracy"],
+      ["Warranty", "1 year included; 3 years available for $100", "1 year included; 3 years available for $100"],
+      ["In-Home Trial", "90 days", "90 days"],
+      ["Wi-Fi for Connected Features", "2.4 GHz", "2.4 GHz"],
     ],
     faqs: [
-      { q: "Is WasteID on the LR5 actually useful?", a: "If your cat has diabetes, kidney disease, or FLUTD — yes, extremely useful. Knowing whether your cat is peeing more or less than normal is an early warning system for these conditions. For healthy cats, WasteID is a nice-to-have, not a must-have. Whisker claims ~70% accuracy distinguishing #1 from #2, improving with firmware updates." },
-      { q: "Should I upgrade from LR4 to LR5?", a: "Only if: (1) your cat has health issues that WasteID would help track, (2) your large cat seems cramped in the LR4, or (3) you really want the LCD screen and carpet compatibility. If your LR4 works fine and your cat is healthy, the upgrade isn't compelling — the core experience (auto-sifting, odor control, app alerts) is very similar." },
-      { q: "Which one is quieter?", a: "The LR4 runs at ~40dB. The LR5 is rated 'under 55dB' for its QuietSift mode. In practice, both are quiet enough that you won't notice them over household background noise. The LR4 is technically quieter, but the difference is negligible in real-world use." },
-      { q: "Does the LR5 require proprietary supplies like the LR4?", a: "Neither requires proprietary litter — both work with any clay-clumping litter. Both use carbon filters ($25/pack) and waste drawer liners. The LR5's LitterHopper accessory is not backward-compatible with the LR4, and the LR4's LitterHopper doesn't work with the LR5. If you're invested in LR4 accessories, upgrading means replacing those too." },
+      { q: "Is the Litter-Robot 5 worth $100 more than the Litter-Robot 4?", a: "It is worth the extra $100 when you will use WasteID, need the 3-30 lb weight range or five-cat support, place the unit on carpet, or value the larger drawer and LCD. If those differences do not solve a specific problem, the $699 Litter-Robot 4 provides the same core automatic sifting and app-based weight tracking for less." },
+      { q: "Should an existing Litter-Robot 4 owner upgrade to Litter-Robot 5?", a: "Usually not. Keep a working LR4 unless your cat needs more interior room, your household exceeds its supported range, carpet affects weight readings, or you specifically want WasteID and the LCD. The day-to-day self-cleaning function is similar, so the LR5 is a targeted upgrade rather than a necessary replacement." },
+      { q: "What does WasteID on Litter-Robot 5 actually do?", a: "WasteID distinguishes urine from feces. Whisker says the unit waits longer for urine clumps to form and cycles sooner after solid waste, while recording routine information in the app. It is a monitoring feature, not a medical diagnosis; discuss meaningful changes in bathroom habits with a veterinarian." },
+      { q: "Which model is better for large cats or multi-cat homes?", a: "Whisker lists the LR5 for cats from 3-30 lb and households with up to five cats. The LR4 is listed for cats from 3-25 lb and up to four cats. Both have a 15.75-inch entry, while Whisker describes the LR5 as having more interior headroom." },
+      { q: "Do Litter-Robot 4 and 5 work on carpet?", a: "The LR5 has a built-in carpet tray and is listed for any flooring. The LR4 still functions on carpet, but Whisker recommends its optional Carpet Tray on carpet 3 mm or thicker or on uneven flooring to improve SmartScale weight accuracy." },
+    ],
+    dataNote: "US list prices and manufacturer specifications checked July 23, 2026. Whisker is the manufacturer, so supported-cat counts, drawer intervals, and feature descriptions are manufacturer claims; retailer prices and bundles can change.",
+    sourceNote: "Specifications and US list prices were checked against Whisker's official Litter-Robot 4 and Litter-Robot 5 product pages and its May 2026 model comparison. No hands-on testing is claimed. Individual experiences may vary.",
+    sources: [
+      { label: "Whisker: Litter-Robot 4 vs 5", href: "https://www.whisker.com/blog/litter-robot-4-vs-5" },
+      { label: "Litter-Robot 5 product page", href: "https://www.litter-robot.com/litter-robot-5.html" },
+      { label: "Litter-Robot 4 product page", href: "https://www.litter-robot.com/litter-robot-4.html" },
     ],
   },
   "litter-robot-5-vs-leos-loo-too": {
@@ -456,9 +504,9 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
     <p class="mt-3 text-lg leading-relaxed text-bark-muted">{data.description}</p>
 
     <!-- Trust line -->
-    <p class="mt-3 text-sm text-bark-muted/80 italic">How we compare: We analyze verified owner reviews and product specs — <a href="/about/" class="underline decoration-honey/50 hover:text-honey">learn more about our research process</a></p>
+    <p class="mt-3 text-sm text-bark-muted/80 italic">{data.methodNote || "How we compare: We analyze verified owner reviews and product specs"} — <a href="/about/" class="underline decoration-honey/50 hover:text-honey">learn more about our research process</a></p>
 
-    <Takeaways items={[
+    <Takeaways items={data.takeaways || [
       `Winner: ${data.winner.substring(0, 100)}...`,
       `${productA.name} — $${productA.price} | ${productA.rating}★`,
       `${productB.name} — ${typeof productB.price === 'number' ? '$' + productB.price : productB.price} | ${productB.rating}★`,
@@ -501,7 +549,14 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
     <!-- Data Snapshot -->
     <div class="mt-10 rounded-2xl border border-sage-dark/30 bg-cream/50 p-5">
       <p class="text-sm font-bold uppercase tracking-wide text-bark-muted">Data Snapshot</p>
-      <p class="mt-1 text-sm leading-relaxed text-bark-muted">Prices and ratings as of July 2026. Comparison based on manufacturer specifications, verified Amazon owner reviews, and marketplace data. Individual experiences may vary.</p>
+      <p class="mt-1 text-sm leading-relaxed text-bark-muted">{data.dataNote || "Prices and ratings as of July 2026. Comparison based on manufacturer specifications, verified Amazon owner reviews, and marketplace data. Individual experiences may vary."}</p>
+      {data.sources && (
+        <p class="mt-3 text-sm leading-relaxed text-bark-muted">
+          Official sources: {data.sources.map((source, index) => (
+            <><a href={source.href} target="_blank" rel="noopener" class="font-medium text-forest underline decoration-honey/50 underline-offset-2 hover:text-honey">{source.label}</a>{index < data.sources!.length - 1 ? " · " : ""}</>
+          ))}
+        </p>
+      )}
     </div>
 
     <!-- Feature Comparison Table -->
@@ -586,6 +641,6 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
       <p class="mt-4 text-center text-xs text-bark-muted/70">As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure/" class="underline">Learn more</a></p>
     </div>
 
-    <p class="mt-8 text-xs text-bark-muted/70 border-t border-sage-dark/20 pt-4">Written by <a href="/about/#author" class="underline decoration-sage-dark/50 underline-offset-2">Chengxian Yang</a>. Data sourced from Amazon.com verified purchase reviews, manufacturer specifications, and product listings as of July 2026. Prices and ratings reflect current marketplace data at time of research. Individual experiences may vary.</p>
+    <p class="mt-8 text-xs text-bark-muted/70 border-t border-sage-dark/20 pt-4">Written by <a href="/about/#author" class="underline decoration-sage-dark/50 underline-offset-2">Chengxian Yang</a>. {data.sourceNote || "Data sourced from Amazon.com verified purchase reviews, manufacturer specifications, and product listings as of July 2026. Prices and ratings reflect current marketplace data at time of research. Individual experiences may vary."}</p>
   </article>
 </BaseLayout>

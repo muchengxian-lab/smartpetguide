@@ -533,6 +533,20 @@
 
 **索引解释边界（2026-07-22 更正）：** 上述 Performance 页面数据与全站 `crawled-not-indexed = 4` 是不同报告口径。`cat-wont-drink-from-water-fountain/` 的 4 次展示不能单独证明当前 URL Inspection 状态，全站 4 个未索引 URL 也不能反推该页仍在该桶中；在页面级后台复核前，当前索引状态记为 `unverified`，只保留 4 vs 1 的展示事实。
 
+### 2026-07-23 页面级 GSC 检查（非 Snapshot 9）
+
+> 本段只记录周四页面选择证据；Coverage/索引数量未刷新，周五 Snapshot 9 仍按完整口径执行。
+
+| 范围 | 窗口 | Clicks | Impressions | Average position | 查询证据 |
+|------|------|:--:|:--:|:--:|------|
+| 全站 | 最近 7 天 | 0 | **12** | **21.4** | 本次只用于当前站点 Performance 背景 |
+| `litter-robot-5-vs-litter-robot-4/` | 最近 7 天 | 0 | 0 | 0 | 无查询展示 |
+| `litter-robot-5-vs-litter-robot-4/` | 最近 28 天 | 0 | **4** | **37.3** | `litter robot 5 vs 4`：1 / 46；`litter robot 4 vs 5`：1 impression；其余受 GSC 聚合/隐私限制未逐词显示 |
+| `introduce-cat-to-automatic-litter-box/` | 最近 7 天 | 0 | 0 | 0 | 无查询展示 |
+| `introduce-cat-to-automatic-litter-box/` | 最近 28 天 | 0 | **1** | **68** | `how to transition cats to litter robot`：1 / 68 |
+
+**执行判断：** 两页最近 7 天都没有新增展示，不宣称增长。LR5 vs LR4 在 28 天窗口有更强信号且查询与商业比较意图直接对齐，因此本轮只加固该页；过渡指南保持观察。Performance 数据不证明当前 URL Inspection / Page Indexing 状态。
+
 ### GA4（最近 7 天）
 
 | 指标 | 当前值 | vs 上期 |
