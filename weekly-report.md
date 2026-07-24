@@ -83,9 +83,39 @@
 2. 建立 GA4 渠道归因基线：查清 Referral 2、Unassigned 1、landing page 与 affiliate/outbound 事件可见性。
 3. Guest Post Round 4 先发 GlobalPETS + The Upper Pawside 两封；观察 48-72 小时后再决定剩余 3 封。
 4. 页面工作优先 `cat-wont-drink-from-water-fountain`，并观察两个新出现展示的猫砂盆页面；最多加固 2 页，不新增 URL。
-5. Pretty Happy Pets 确认回信已定时 7/20 13:00 Asia/Shanghai（当前 Scheduled，未确认实际发送）；不得重复发送，随后只处理 Google Doc 评论和独立审核对方提案；7/26 前不主动催发布时间。
+5. Pretty Happy Pets 确认回信已于 7/20 13:00 Asia/Shanghai 实际发送（`Sent-confirmed`）；不得重复发送，随后只处理 Google Doc 评论和独立审核对方提案；7/26 前不主动催发布时间。
 6. Aorkuler 不再跟进；Homerunpet 未出现认真回复则不扩 PETKIT/Catit。Pinterest 只验证出站，不新增 Pin。
 7. AI Signal 自动化修复已拆为独立交接清单，由知识库主控对话处理；本站只消费修正后的周报/VOC。
+
+## Week 11 周五快照（截至 7/24，周日复盘前）
+
+| 指标 | 当前值 | 对照 / 判断 |
+|------|:--:|------|
+| 页面数 | **114** | 本周未新增 URL |
+| GSC 已索引 / 未索引 | **33 / 15** | 持平；已抓取未索引 4、已发现未索引 0 |
+| GSC 完整 7 天 | **0 clicks / 11 impressions / position 22.2** | 前期 0 / 15 / 61；曝光 -26.7%，排名改善 38.8 位，仍无点击 |
+| GSC 3 个月 | **4 clicks / 299 impressions / CTR 1.3% / position 34.8** | 累计曝光缓慢增加 |
+| GA4 完整 7 天 | **24 sessions / 7 engaged / 88 events** | 前期 31 / 21 / 151；Referral 2→0，Bing organic 1 但首页 0 秒 |
+| GA4 商业事件 | **affiliate 0 / outbound 0** | 完整 Events 报告确认 |
+| Pinterest 7 天 | **26 impressions / 0 outbound** | 后台显示 impressions -53% |
+| Pinterest 30 天 | **969 impressions / 0 outbound** | 后台显示 impressions -63% |
+| Guest Post | **PHP 审稿等待；Round 4 Batch A 0/2 回复** | Google Doc 0 条新评论；剩余三封 hold 到 7/26 |
+| Semrush | **12 RD / 28 backlinks / 20 keywords / AS 2** | 沿用 7/17 用户确认值，7/24 未刷新 |
+
+### Week 11 截至周五完成
+
+- GA4 归因基线已建立，并在 Snapshot 9 用第二个完整 7 天窗口复核：IndieHackers 引荐未延续，当前只有 1 个低互动 Bing 会话。
+- feeder portion 换算页已完成官方口径、称重与计算器升级；本周后续数据出现 2 个 Direct sessions / 平均互动 22 秒，不重复改页。
+- Round 4 首批 GlobalPETS + The Upper Pawside 已发送；48-72 小时后仍无回复，剩余三封没有机械扩量。
+- 饮水问题页与 LR5 vs LR4 各完成一次证据驱动加固；周五不因小样本再次改页。
+- Snapshot 9 完成 GSC / GA4 / Pinterest / PHP / Round 4 核对；今日无源码变化，不重提 sitemap。
+
+### 周末剩余闸门
+
+1. 7/25 只处理 PHP 实际评论或对方提案；没有反馈则继续等待。
+2. 7/26 完成 Week 11 周复盘，结合首批两封零回复决定剩余三封 Continue / Revise / Hold。
+3. 若 PHP 到 7/26 仍完全无更新，最早 7/27 轻量跟进一次；不询问发布时间，不承诺 reciprocal/dofollow。
+4. Month 2 战略资源比例与北极星未触发调整；战略书保持不变。
 
 ## Week 8（6/30-7/3）收盘
 

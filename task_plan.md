@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-23 周四 Week 11 | GSC 实测：全站最近 7 天 0 clicks / 12 impressions / position 21.4；两个候选页最近 7 天均 0 impressions，最近 28 天 LR5 vs LR4 为 4 impressions / position 37.3，猫咪过渡指南为 1 / 68 | LR5 vs LR4 官方价格/规格、升级判断、WasteID 医疗边界与来源层已加固并上线；`19646bd` 已推送，Vercel `dpl_787t2WyjZMGnPp6D1H8XpwLPS22t` READY，生产 HTML 与本地哈希一致；sitemap 7/23 成功重提、113 URLs | Pretty Happy Pets Google Doc 0 条新评论；两封 Round 4 线程均无对方回复，剩余三封继续 hold**
+**最后更新：2026-07-24 周五 Week 11 Snapshot 9 | GSC 完整 7 天（7/15-7/21）0 clicks / 11 impressions / position 22.2，对比前 7 天 0 / 15 / 61：曝光 -4、排名改善 38.8 位；索引仍为 33 / 15 | GA4 完整 7 天（7/17-7/23）24 sessions / 7 engaged / 88 events，对比前期 31 / 21 / 151；Referral 2→0，新增 1 个 Bing organic 会话但落地首页且 0 秒互动 | Pinterest 7 天 26 impressions（界面显示 -53%）/ 0 outbound；30 天 969 impressions / 0 outbound | Pretty Happy Pets Google Doc 0 条新评论且 8 天未修改；Round 4 首批两封均无回复，剩余三封继续 hold 到 7/26 决策**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 11 默认不扩页；已命中索引 30+ 触发条件，35-40% 时间用于外链/编辑型分发，25-30% 用于已索引页面查询、CTR 与必要的未索引维护，20-25% 用于战略 GEO/VOC 缺口回填，Pinterest 只做低成本维护。
 
@@ -85,7 +85,7 @@
 | 周二 | 7/21 | ✅ Round 4 第一批：GlobalPETS + The Upper Pawside 已发送（Sent-confirmed）；✅ 发送后事实审计修正复用稿与 GPS/TCO 页面 | 其余 3 个保持 Researched — hold；实际已发正文/UTM 为 unverified，不重发 | ✅ 发送状态、官方价格、TCO 假设、内容日期与 Claude 活跃入口已同步；7/24 再按回复决定，不写 Brand CRM |
 | 周三 | 7/22 | ✅ 页面强化 #1 内容整改：`cat-wont-drink-from-water-fountain` 已补来源/安全边界并删除不可追溯数字，保留产品评测内链与 Related Resources；⚠ GSC 页面级 query/索引状态待可用登录态核验，不得由站点级桶位推断 | PHP Google Doc“无新评论”为 Claude 当日记录；Codex 未继承文档登录态，未独立复核 | ✅ `npm.cmd run verify` 114 页；`45df37d` 已推送，Vercel `dpl_2TDuju71VVBEusbq7SaPnV4Vvbxn` READY，首页/目标页 200，线上 HTML 与本地生成页哈希一致 |
 | 周四 | 7/23 | ✅ 页面强化 #2：GSC 实测两个候选页最近 7 天均 0 impressions；最近 28 天 `litter-robot-5-vs-litter-robot-4` 为 4 impressions / position 37.3，强于过渡指南的 1 / 68，故只加固 LR5 vs LR4 | ✅ feeder 份量换算不重复执行；✅ PHP Google Doc 0 条新评论；✅ GlobalPETS / The Upper Pawside 邮件线程均无新回复，剩余三封继续 hold | ✅ 只改 1 页：官方 $799/$699、规格、升级判断、WasteID 非诊断边界和来源已核正；`19646bd` 已推送，Vercel READY，线上哈希一致；sitemap 7/23 成功重提、113 URLs |
-| 周五 | 7/24 | Snapshot 9：GSC 最近 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest 出站；拆解 GPS 页下降查询 | 复核 Round 4 第一批回复；无信号不立即发送剩余 3 封 | 周快照、查询/页面变化、渠道判断完整 |
+| 周五 | 7/24 | ✅ Snapshot 9：GSC 完整 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest 出站；GPS 主专题页两期均未进入页面明细，当前只见 `compare gps prices` 与 Aorkuler 各 1 impression，样本不足不改页 | ✅ Round 4 第一批两封仍无回复；PHP Google Doc 0 条新评论，剩余 3 封继续 hold | ✅ 周快照、查询/页面变化、渠道判断与外联闸门完整；纯数据/文档日，不改站点、不重提 sitemap |
 | 周六 | 7/25 | 缓冲：处理 PHP 编辑/兽医评论或修订稿；没有评论则不制造任务 | 检查对方 2-3 个提案是否到达；按相关性、原创性、来源质量独立审核 | 评论闭环或明确等待；不承诺 reciprocal/dofollow |
 | 周日 | 7/26 | Week 11 复盘；消费已由知识库主控修正后的 AI Signal/VOC 输出 | 根据首批 2 封反馈决定剩余 3 封：Continue / Revise / Hold | Week 12 决策，不以发送数量替代回复/接受/落链 |
 

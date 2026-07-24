@@ -594,6 +594,80 @@
 
 ---
 
+## Snapshot 9 — 2026-07-24（Week 11 周五完整窗口）
+
+> Codex 使用已登录 Chrome 后台独立复核 GSC、GA4、Pinterest、Gmail 与 Pretty Happy Pets Google Doc。GSC 使用后台可用的完整日期 7/15-7/21 对比 7/08-7/14；GA4 使用完整日期 7/17-7/23 对比 7/10-7/16；Pinterest 同时记录过去 7 天和过去 30 天。Semrush 今日未刷新，继续沿用 7/17 用户人工确认值并明确标记为旧快照。
+
+### GSC
+
+| 指标 | 7/15-7/21 | 7/08-7/14 | 变化 |
+|------|:--:|:--:|:--:|
+| Clicks | **0** | 0 | — |
+| Impressions | **11** | 15 | **-4（-26.7%）** |
+| CTR | **0%** | 0% | — |
+| Average position | **22.2** | 61 | **改善 38.8 位** |
+
+**当前可见查询（均 1 impression）：** `compare gps prices`（position 14）、`cat won't drink from fountain`、`chewy water fountain for cats`、`cat drinking from fountain`。GSC 隐私/聚合限制下只显示 4 条查询，不用它们强行解释全部 11 次站点展示。
+
+**GPS 拆解：** 当前页面表中 Aorkuler review 有 1 impression；`best/gps-trackers-no-monthly-fee` 在当前和前一窗口都未进入页面明细。前一窗口的可见查询也没有 GPS 词。结论不是“GPS 页又下跌”，而是当前样本不足；`compare gps prices` 的单次展示不足以触发页面返工。
+
+**当前索引与 3 个月基线：**
+
+| 指标 | 7/24 当前值 | 说明 |
+|------|:--:|------|
+| 已索引 / 未索引 | **33 / 15** | 与 Snapshot 8 持平 |
+| 网页会自动重定向 | **5** | 验证失败；仍为历史/预期跳转集合，不新增源码动作 |
+| 重定向错误 | **3** | 验证已开始 |
+| 备用网页（适当规范标记） | **1** | 验证已开始 |
+| 已抓取-尚未编入索引 | **4** | 验证已开始 |
+| 重复网页，Google 选择不同规范 | **2** | 验证已开始 |
+| 已发现-尚未编入索引 | **0** | 验证已通过 |
+| 3 个月 Performance | **4 clicks / 299 impressions / CTR 1.3% / position 34.8** | 点击持平；累计曝光继续缓慢增加 |
+
+### GA4（完整 7 天对照）
+
+| 指标 | 7/17-7/23 | 7/10-7/16 | 变化 |
+|------|:--:|:--:|:--:|
+| Sessions | **24** | 31 | **-22.6%** |
+| Engaged sessions | **7** | 21 | **-66.7%** |
+| Engagement rate | **29.17%** | 67.74% | **-38.57 pct points** |
+| Avg. engagement / session | **8s** | 11s | -3s |
+| Events | **88** | 151 | **-41.7%** |
+| Page views | **28** | 42 | **-33.3%** |
+| Active / new users | **22 / 21** | 30 / 29 | 口径与相邻完整窗口一致 |
+| Key events | **0** | 0 | — |
+
+**渠道变化：** 当前 Direct 23 / Organic Search 1 / Referral 0；前期 Direct 29 / Referral 2 / Organic Search 0。上周 `indiehackers.com / referral` 的 2 个引荐会话没有延续；当前唯一自然搜索为 `bing / organic`，落地 `/`、平均互动 0 秒，不能算有效增长。
+
+**当前 landing page + source/medium：** `/` Direct 16 sessions；`/guides/feeder-portion-size-guide` Direct 2 sessions、平均互动 22 秒；`(not set)` Direct 1；`/for-brands`、饮水问题页、subscription-cost、统计页各 1 个 Direct session；`/` Bing organic 1 session、0 秒。
+
+**Events：** 88 total = page_view 28 / session_start 25 / first_visit 22 / user_engagement 8 / scroll 3 / form_start 2。完整事件表只有这 6 个事件名，`affiliate_click` **0** / `outbound_click` **0**。
+
+### Pinterest
+
+| 窗口 | Impressions | Engagement | Outbound clicks | Saves | Audience |
+|------|:--:|:--:|:--:|:--:|:--:|
+| 过去 7 天 | **26**（后台显示 -53%） | 0 | **0** | 0 | 2（+100%） |
+| 过去 30 天 | **969**（后台显示 -63%） | 0 | **0** | 0 | 4（-33%） |
+
+**判断：** 7/17 尚未正常渲染的 outbound 指标今天已明确核验为 0。分发没有转化信号，不新增 Pin、不恢复铺量。
+
+### 外链与编辑合作
+
+- GlobalPETS / PETS International：7/21 我方邮件仍是线程唯一消息，**0 reply**。
+- The Upper Pawside：7/21 我方邮件仍是线程唯一消息，**0 reply**。
+- Pretty Happy Pets：线程最后一封仍为我方 7/20 13:00 回复；Google Doc 显示 **0 条新评论**、上次修改在 8 天前；对方承诺的 2-3 个主题/样稿尚未到达。
+- BarkyTech / Purely Wholesome / PetsAnalysis：继续 `Researched — hold`，不因首批零回复在周五机械发送；7/26 周复盘再决定 Continue / Revise / Hold。
+
+### 本次执行判断
+
+1. GSC 曝光小幅下降但平均排名改善；仍无点击，优先继续观察完整窗口，不再对 GPS 或猫砂盆页做同周重复修改。
+2. GA4 会话和互动均下降；IndieHackers 引荐未延续，Bing 1 个会话质量不足。feeder portion 的 2 个 Direct sessions / 22 秒是唯一可复用使用信号，但页面本周已完成升级，不重复改。
+3. Pinterest 和商业点击均为 0；维持低成本维护。
+4. 今日无站点源码或 URL 变化，不重提 sitemap，不触发内容部署；月度资源比例、北极星和触发条件未变化，战略书 N/A。
+
+---
+
 ## 历史附录：Snapshot 6 — 2026-07-15（GSC 局部刷新 + CTR 优化）
 
 > 本节只刷新 GSC 和本次页面交付状态；GA4、Pinterest、引用域名继续沿用 7/13 Snapshot 5，未重新测量，不与新数据混合。

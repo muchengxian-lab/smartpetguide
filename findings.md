@@ -1,5 +1,25 @@
 # 发现与决策
 
+## 2026-07-24 Snapshot 9：排名改善未转化为点击，渠道与分发继续收缩
+
+### GSC 的小样本排名改善值得观察，但不足以触发 GPS 页面返工
+
+**发现**：GSC 完整日期窗口 2026-07-15 至 2026-07-21 为 0 clicks / 11 impressions / CTR 0% / average position 22.2；前一完整窗口 2026-07-08 至 2026-07-14 为 0 / 15 / 0% / 61。曝光减少 4（-26.7%），但平均排名改善 38.8 位。当前可见查询中 `compare gps prices` 只有 1 impression / position 14；Aorkuler review 在当前页面表中只有 1 impression，`best/gps-trackers-no-monthly-fee` 在两期页面明细均未出现。GSC 页面表与站点总计可能因同一结果页出现多个本站 URL 而不完全相加。
+
+**决策**：不把单个 `compare gps prices` 展示写成 GPS 集群恢复，也不把主专题页未进入表格写成新一轮下跌。当前是样本不足而非新的页面缺口；至少再观察一个完整 7 天窗口，除非出现稳定查询簇或页面级点击，否则不重复改 GPS 页。
+
+### GA4 已从引荐深读回落到 Direct 为主，feeder portion 仍是唯一可复用内容信号
+
+**发现**：完整窗口 2026-07-17 至 2026-07-23 为 24 sessions / 7 engaged sessions / 29.17% engagement rate / 8 秒平均互动 / 88 events；前一窗口 2026-07-10 至 2026-07-16 为 31 / 21 / 67.74% / 11 秒 / 151。当前渠道为 Direct 23、Organic Search 1、Referral 0；前期为 Direct 29、Referral 2、Organic 0。唯一自然搜索来自 `bing / organic`，落地首页、平均互动 0 秒。`feeder-portion-size-guide` 获得 2 个 Direct sessions，平均互动 22 秒；完整 Events 报告中 `affiliate_click` 与 `outbound_click` 均为 0。
+
+**决策**：IndieHackers Referral 2 没有延续，不能继续放大为已验证稳定渠道；Bing 1 也不构成增长。保留每周 10-15 分钟的固定归因核对，并继续把 feeder portion 视为现有页深度使用信号，但本周已完成该页升级，不重复扩写。
+
+### Pinterest 与编辑外联都没有扩量信号
+
+**发现**：Pinterest 过去 7 天为 26 impressions（后台显示较前期下降 53%）、0 engagement、0 outbound clicks、0 saves；过去 30 天为 969 impressions、0 outbound clicks。GlobalPETS 与 The Upper Pawside 线程截至 7/24 都只有 7/21 我方发件；Pretty Happy Pets 线程最后一封仍是 7/20 我方回复，Google Doc 显示 0 条新评论且上次修改为 8 天前。
+
+**决策**：不新增 Pin，不发送 Round 4 剩余三封，不催 PHP。7/26 周日结合整周数据决定 Round 4 是 Continue / Revise / Hold；若 PHP 到 7/26 仍完全无更新，最早 7/27 只做一次轻量跟进。
+
 ## 2026-07-23 GSC 猫砂盆页信号与 LR5 vs LR4 整改
 
 ### 最近 7 天归零时，用 28 天页面证据选择目标，不把旧展示写成新增增长

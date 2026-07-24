@@ -45,13 +45,13 @@ C:\Users\Administrator\smartpetguide
 
 - Week 11：2026-07-20 周一至 2026-07-26 周日。
 - 站点：114 pages。
-- GSC Coverage 继续沿用 Snapshot 8 的 33 indexed / 15 unindexed、discovered-not-indexed 0、crawled-not-indexed 4；Performance 已于 7/23 刷新为全站最近 7 天 12 impressions / 0 clicks / position 21.4。两个 7/23 候选页最近 7 天均为 0 impressions；最近 28 天 LR5 vs LR4 为 4 impressions / position 37.3，猫咪过渡指南为 1 / 68。不得把不同日期或报告口径混成一个新快照。
-- GA4 最近 7 天：22 active / 20 new / 36 page views；Direct 23 / Referral 2 / Unassigned 1 / Organic Search 0 / key events 0。
-- Pinterest：1,391 月浏览 / 5 Board，用户人工确认；outbound 待后台确认。
+- GSC Snapshot 9 已于 7/24 完成：Coverage 为 33 indexed / 15 unindexed、discovered-not-indexed 0、crawled-not-indexed 4；完整 Performance 窗口 7/15-7/21 为 0 clicks / 11 impressions / position 22.2，前一完整窗口 7/08-7/14 为 0 / 15 / 61。GPS 主专题页两期均未进入页面明细，当前只见 `compare gps prices` 与 Aorkuler 各 1 impression，样本不足，不得据此重复改 GPS 页。7/23 的页面级 28 天 LR5 vs LR4 4 impressions / 37.3 与猫咪过渡指南 1 / 68 仍是独立窗口，不得混入 Snapshot 9 的完整 7 天对照。
+- GA4 Snapshot 9 完整窗口 7/17-7/23：22 active / 21 new / 28 page views / 24 sessions / 7 engaged / 88 events；Direct 23 / Organic Search 1（`bing / organic` 落地首页、0 秒）/ Referral 0 / key events 0 / affiliate 0 / outbound 0。前一完整窗口 7/10-7/16 为 31 sessions / 21 engaged / 151 events；不得继续沿用 Referral 2 作为当前值。
+- Pinterest Snapshot 9：过去 7 天 26 impressions（后台显示 -53%）/ 0 outbound；过去 30 天 969 impressions（后台显示 -63%）/ 0 outbound。7/17 的 1,391 月浏览 / outbound 待确认已是历史快照，不得继续当作当前值。
 - Semrush：12 referring domains / 28 backlinks / 20 keywords / Authority Score 2，用户人工确认；新增 RD 的具体 URL 尚未识别。
 - Pretty Happy Pets：稿件处于 editorial + veterinary review；评论会写入 Google Doc；对方承诺本周提供 2-3 个拟投 SmartPetGuide 的主题和样稿。
 - Pretty Happy Pets 确认回信已由用户于 2026-07-20 13:00 Asia/Shanghai 实际发送，当前状态是 `Sent-confirmed`。不再重复发送。
-- Round 4 Batch A 的 GlobalPETS + The Upper Pawside 已由用户于 7/21 晚间实际发送，状态为 `Sent-confirmed`；不得重复发送。发送后事实审计已修正仓库中的复用稿，但实际已发正文的逐字内容和 UTM 无法从仓库独立验证，归因保持 `unverified`。其余三个最早 7/24 再根据回复决定，当前保持 hold。
+- Round 4 Batch A 的 GlobalPETS + The Upper Pawside 已由用户于 7/21 晚间实际发送，状态为 `Sent-confirmed`；不得重复发送。7/24 已复核两条线程均无对方回复，发送后事实审计已修正仓库中的复用稿，但实际已发正文的逐字内容和 UTM 无法从仓库独立验证，归因保持 `unverified`。其余三个继续 hold 到 7/26 周日决策，不因零回复机械发送。
 - Aorkuler：`Closed — not now (positive)`，不再联系；Homerunpet：`Sent — awaiting reply`。
 - AI Signal / 知识库自动化修复由另一个主控对话执行。本仓库只读取 docs/ai-signal-automation-optimization-handoff-2026-07-19.md 了解边界，并消费修正后的结果；不得在这里修改自动化或 Signal/Experiment 状态。
 
@@ -63,7 +63,7 @@ C:\Users\Administrator\smartpetguide
 - 7/21 周二：✅ GlobalPETS + The Upper Pawside 两封 Round 4 pitch 已实际发送并进入观察；✅ 发送后审计已修正本地复用稿、GPS 官方价格和 UTM 证据边界。不得重发或把 `unverified` 归因补写成已追踪。
 - 7/22 周三：✅ cat-wont-drink-from-water-fountain 的首屏答案、来源表达和内链已整改；不可追溯比例/性能断言已删除并补权威来源。GSC 页面级当前 query/索引状态仍待可用登录态核验，禁止用站点级 crawled-not-indexed 总数推断该 URL 状态；后续只补数据核验，不重复改写页面。
 - 7/23 周四：✅ 已核对两个候选页；最近 7 天均为 0 impressions，最近 28 天 LR5 vs LR4 为 4 impressions / position 37.3，猫咪过渡指南为 1 / 68，因此只加固 LR5 vs LR4。✅ 已核对 PHP Google Doc 为 0 条新评论；GlobalPETS / The Upper Pawside 均无回复。不得重复改页、重做 feeder coverage-gap 或发送剩余三封。
-- 7/24 周五：Snapshot 9，核对 GSC 最近 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest outbound 和 GPS 页查询下降；无反馈不发送 Round 4 剩余三封。
+- 7/24 周五：✅ Snapshot 9 已完成；GSC 排名改善但无点击，GA4 会话/互动下降，Pinterest outbound 0，GPS 样本不足不改页；外联无反馈，Round 4 剩余三封继续 hold。
 - 7/25 周六：只处理 Pretty Happy Pets 的真实 Google Doc 评论或对方主动发来的提案；没有新内容就明确等待，不制造任务。
 - 7/26 周日：Week 11 周复盘，决定 Round 4 剩余三封 Continue / Revise / Hold，并形成 Week 12 计划。
 
@@ -140,6 +140,6 @@ C:\Users\Administrator\smartpetguide
 | 7/21 | ✅ Round 4 首批两封已发送；✅ 发送后事实/UTM 返修 | 已同步 `round4-editorial-targets.md`、GPS/TCO 页面与数据、`content-dates.json`、`progress.md`、`task_plan.md`、`findings.md` 和 guardrails；实际已发正文归因仍为 unverified |
 | 7/22 | ✅ 饮水页内容/来源/内链整改；GSC 页面级状态待登录态核验 | 已同步目标源码、`progress.md`、`task_plan.md`、`findings.md` 与 metrics 解释边界；`content-dates.json` 已是同日 7/22，无需重复改值 |
 | 7/23 | ✅ GSC 页面信号核对；✅ 只加固 LR5 vs LR4；✅ PHP / Round 4 无新反馈 | 已同步目标源码、`content-dates.json`、`progress.md`、`task_plan.md`、`findings.md` 与 `weekly-metrics-log.md`；不得重复执行 feeder coverage-gap 或重发邮件 |
-| 7/24 | Snapshot 9 | `weekly-metrics-log.md`、`progress.md`、`task_plan.md`、`weekly-report.md` |
+| 7/24 | ✅ Snapshot 9：GSC / GA4 / Pinterest / PHP / Round 4 已复核；GPS 样本不足不改页 | 已同步 `weekly-metrics-log.md`、`progress.md`、`task_plan.md`、`weekly-report.md`、`findings.md`；纯数据/文档日，不改源码、不重提 sitemap |
 | 7/25 | PHP 评论/对方提案 | `round3-guest-post-targets.md`、`progress.md`、`task_plan.md`；有指标变化再同步 metrics |
 | 7/26 | 周复盘与 Week 12 决策 | `weekly-report.md`、`task_plan.md`、`findings.md`、`progress.md`、`weekly-metrics-log.md`；命中触发条件才改战略书 |
