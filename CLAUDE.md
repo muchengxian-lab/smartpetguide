@@ -13,7 +13,7 @@ Before executing any new monetization work, read these files in order:
 
 ## Current Special Sprint
 
-The active business experiment is the SmartPetGuide monetization validation sprint. Task A is complete; Week 11 prioritizes editorial distribution, query/page improvement, and attribution without broad CRM or page expansion:
+The active business experiment is the SmartPetGuide monetization validation sprint. Task A is complete; Week 12 closes the 30-day sprint and uses one feeder-reliability validation cluster plus one attribution experiment without broad CRM or page expansion:
 
 | Track | 定位 | 周期 |
 |------|------|------|
@@ -30,9 +30,9 @@ Key files:
 
 Current order:
 
-1. Read the guardrails, the active Week 11 row in `task_plan.md`, the latest `progress.md` entry, and the current decisions at the top of `findings.md`.
+1. Read the guardrails, the active Week 12 row in `task_plan.md`, the latest `progress.md` entry, and the current decisions at the top of `findings.md`.
 2. Keep Task A in maintenance mode; do not add conversion infrastructure without a measured gap.
-3. Editorial Outreach Round 4 is staged 2 + 3: prepare GlobalPETS and The Upper Pawside first, then wait 48-72 hours before deciding on the other three.
+3. Editorial Outreach Round 4 Batch A was sent on 7/21 and is still 0/2 replies; keep BarkyTech, Purely Wholesome, and PetsAnalysis on Hold unless a real editorial response changes the evidence.
 4. Brand Outreach: Aorkuler is `Closed — not now (positive)` and must not be contacted again; Homerunpet remains `Sent — awaiting reply`.
 5. Track `Drafted`, `Ready for human`, `Scheduled`, `Sent-confirmed`, `Replied`, `Accepted`, and `Placed` separately.
 
@@ -40,7 +40,7 @@ Current order:
 
 - Before any date-sensitive planning or status update, run `Get-Date -Format "yyyy-MM-dd dddd"` in the project shell and use that output as the source of truth. Do not infer weekdays from model memory.
 - When the user says today/tomorrow/next week/Friday, convert it to an absolute date in the note you are editing.
-- For the current sprint calibration: 2026-07-19 is Sunday; Week 11 runs from 2026-07-20 Monday through 2026-07-26 Sunday.
+- For the current sprint calibration: 2026-07-26 is Sunday; Week 12 runs from 2026-07-27 Monday through 2026-08-02 Sunday.
 - Before saving schedule edits, re-check the current and next-week calendar. Do not repeat the prior drift where July 4 was labeled Friday, July 7 Monday, or July 11 Friday.
 - Do not send emails, submit forms, create external accounts, or contact brands. Generate templates and CRM rows only.
 - Do not claim hands-on testing unless the repository already contains proof for that specific product.
@@ -56,4 +56,4 @@ Current order:
 - Do not use `git add -A`; preserve unrelated and untracked user files.
 - Do not mark an email or form as sent unless the user explicitly confirms the external action.
 - The Pretty Happy Pets acknowledgement was sent by the user at 2026-07-20 13:00 Asia/Shanghai. It is now `Sent-confirmed`; do not send a duplicate.
-- Use `docs/claude-week11-execution-prompt-template.md` as the Week 11 session contract and complete its file-sync matrix before closing work.
+- Use `docs/claude-week12-execution-prompt-template.md` as the Week 12 session contract and complete its file-sync matrix before closing work. The Week 11 template is historical only.

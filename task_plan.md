@@ -1,8 +1,8 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-24 周五 Week 11 Snapshot 9 | GSC 完整 7 天（7/15-7/21）0 clicks / 11 impressions / position 22.2，对比前 7 天 0 / 15 / 61：曝光 -4、排名改善 38.8 位；索引仍为 33 / 15 | GA4 完整 7 天（7/17-7/23）24 sessions / 7 engaged / 88 events，对比前期 31 / 21 / 151；Referral 2→0，新增 1 个 Bing organic 会话但落地首页且 0 秒互动 | Pinterest 7 天 26 impressions（界面显示 -53%）/ 0 outbound；30 天 969 impressions / 0 outbound | Pretty Happy Pets Google Doc 0 条新评论且 8 天未修改；Round 4 首批两封均无回复，剩余三封继续 hold 到 7/26 决策**
+**最后更新：2026-07-26 周日 Week 11 收盘 / Week 12 排期 | GSC 完整 7 天（7/18-7/24）0 clicks / 19 impressions / position 21.7，对比前 7 天 0 / 9 / 51.1：曝光 +10（+111.1%）、排名改善 29.4 位，但仍无点击；索引仍为 33 / 15 | GA4 最近 7 天 29 active / 28 new / 36 page views / 121 events；渠道表可见 Direct 28 / Unassigned 2 / Organic Search 1 / Referral 0，唯一自然搜索为 Bing；affiliate/outbound/key events 均为 0 | Pinterest 30 天 801 impressions / 0 outbound，继续不发布 | Pretty Happy Pets Google Doc 0 条新评论、对方提案未到；Round 4 首批两封均无回复，剩余三封 Week 12 继续 Hold | Semrush 沿用 7/17 用户确认的 12 RD / 28 backlinks / 20 keywords / AS 2，未刷新 | guides 源码 quickAnswer 14/38**
 
-> 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 11 默认不扩页；已命中索引 30+ 触发条件，35-40% 时间用于外链/编辑型分发，25-30% 用于已索引页面查询、CTR 与必要的未索引维护，20-25% 用于战略 GEO/VOC 缺口回填，Pinterest 只做低成本维护。
+> 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
 
 > 月度战略：`docs/month-2-strategy-2026-07-13-to-2026-08-09.md`。本文件按周滚动拆解；除非命中战略触发条件，不在周中改变月度方向。
 
@@ -12,7 +12,7 @@
 
 ### 日期防呆规则（Claude Code 必读）
 
-> 当前校准点：**2026-07-19 是周日**。下一工作周为 **2026-07-20 周一 → 2026-07-26 周日**。
+> 当前校准点：**2026-07-26 是周日**。下一工作周为 **2026-07-27 周一 → 2026-08-02 周日**。
 
 1. 任何涉及"今天/明天/下周/周五"的任务，先在终端运行 `Get-Date -Format "yyyy-MM-dd dddd"`，以系统日期为准，不凭模型记忆推断。
 2. 记录排期时必须写绝对日期 + 星期；如果用户给了相对日期，先转换为绝对日期。
@@ -20,7 +20,7 @@
 
 | 体系 | 文件 | 角色 | 节奏 |
 |------|------|------|------|
-| **Week 10 索引+权威+战略 GEO** | `task_plan.md`（本文件） | 日常执行引擎 | 每天 ~2-3h，周一至周五 |
+| **Week 12 验证+归因+月度 GEO** | `task_plan.md`（本文件） | 日常执行引擎 | 每天最多 3 个 P0，周一至周日按闸门执行 |
 | **Month 2 四周战略** | `docs/month-2-strategy-2026-07-13-to-2026-08-09.md` | 目标、资源比例、触发条件 | 7/13-8/9；每周日复盘，不按天写死 |
 | **30 天变现 Sprint** | `docs/monetization/30-day-schedule.md` | 商业验证轨道 | D1-D30，与 Week 排班协调 |
 
@@ -86,8 +86,8 @@
 | 周三 | 7/22 | ✅ 页面强化 #1 内容整改：`cat-wont-drink-from-water-fountain` 已补来源/安全边界并删除不可追溯数字，保留产品评测内链与 Related Resources；⚠ GSC 页面级 query/索引状态待可用登录态核验，不得由站点级桶位推断 | PHP Google Doc“无新评论”为 Claude 当日记录；Codex 未继承文档登录态，未独立复核 | ✅ `npm.cmd run verify` 114 页；`45df37d` 已推送，Vercel `dpl_2TDuju71VVBEusbq7SaPnV4Vvbxn` READY，首页/目标页 200，线上 HTML 与本地生成页哈希一致 |
 | 周四 | 7/23 | ✅ 页面强化 #2：GSC 实测两个候选页最近 7 天均 0 impressions；最近 28 天 `litter-robot-5-vs-litter-robot-4` 为 4 impressions / position 37.3，强于过渡指南的 1 / 68，故只加固 LR5 vs LR4 | ✅ feeder 份量换算不重复执行；✅ PHP Google Doc 0 条新评论；✅ GlobalPETS / The Upper Pawside 邮件线程均无新回复，剩余三封继续 hold | ✅ 只改 1 页：官方 $799/$699、规格、升级判断、WasteID 非诊断边界和来源已核正；`19646bd` 已推送，Vercel READY，线上哈希一致；sitemap 7/23 成功重提、113 URLs |
 | 周五 | 7/24 | ✅ Snapshot 9：GSC 完整 7 天 vs 前 7 天、GA4 渠道/事件、Pinterest 出站；GPS 主专题页两期均未进入页面明细，当前只见 `compare gps prices` 与 Aorkuler 各 1 impression，样本不足不改页 | ✅ Round 4 第一批两封仍无回复；PHP Google Doc 0 条新评论，剩余 3 封继续 hold | ✅ 周快照、查询/页面变化、渠道判断与外联闸门完整；纯数据/文档日，不改站点、不重提 sitemap |
-| 周六 | 7/25 | 缓冲：处理 PHP 编辑/兽医评论或修订稿；没有评论则不制造任务 | 检查对方 2-3 个提案是否到达；按相关性、原创性、来源质量独立审核 | 评论闭环或明确等待；不承诺 reciprocal/dofollow |
-| 周日 | 7/26 | Week 11 复盘；消费已由知识库主控修正后的 AI Signal/VOC 输出 | 根据首批 2 封反馈决定剩余 3 封：Continue / Revise / Hold | Week 12 决策，不以发送数量替代回复/接受/落链 |
+| 周六 | 7/25 | ✅ PHP 无新评论或修订要求，按缓冲规则明确等待 | ✅ 对方 2-3 个提案/样稿未到；未制造任务 | ✅ 不承诺 reciprocal/dofollow，不改页面 |
+| 周日 | 7/26 | ✅ Week 11 复盘；已消费 W30 AI Signal/VOC，并区分站点任务与知识库自动化故障 | ✅ 首批 2 封仍无回复；剩余 3 封决定为 Week 12 继续 Hold | ✅ Week 12 排期形成；不以发送数量替代回复/接受/落链 |
 
 **Week 11 固定动作**
 
@@ -97,6 +97,50 @@
 - Pretty Happy Pets：确认回信已于 7/20 13:00 Asia/Shanghai 实际发送（`Sent-confirmed`）；现在只处理 Google Doc 评论和对方主动提供的提案。不得重复发送；若 7/26 前无任何更新，最早 7/27 轻量跟进一次。
 - 周五：周度量快照；周日：周复盘和下一周决策。
 - 仅在发生真实页面改动或 URL 变化后重提 sitemap。
+
+### Week 11 收盘结论（2026-07-26）
+
+- **执行完成度好于结果完成度**：本周完成归因基线、3 个现有页证据驱动优化、Round 4 首批发送和全量周末复核；但 GSC 仍为 0 点击，GA4 商业事件仍为 0，Pinterest outbound 仍为 0，编辑外联没有新回复或落链。
+- **搜索信号在改善但样本仍小**：完整 7 天 impressions 9→19、average position 51.1→21.7；不把排名改善写成流量突破，也不为单次查询继续返工 GPS 页。
+- **Feeder Reliability 设为 Week 12 唯一主验证集群**：W30 多源信号中 jamming/portion 为 High，GA4 也出现 portion guide 使用；现有 jamming 与 portion 页面已有覆盖，所以必须先检查 `jamming / portion-calibration / travel-power-failover` 的真实缺口。
+- **外联止损**：GlobalPETS / The Upper Pawside 首批 0/2 回复，BarkyTech / Purely Wholesome / PetsAnalysis 继续 Hold；Pretty Happy Pets 最早 7/27 只允许一次轻量跟进，此后等待真实评论、提案或采用消息。
+- **30 天变现 Sprint 到决策日再定案**：7/29 分开评估 Task A、Brand Outreach 与 Editorial/Guest Post，不把 PHP 编辑关系进展混入 Brand 付费验证。
+
+### Week 12 排班（2026-07-27 至 2026-08-02）— Continue，战术收敛为单集群验证
+
+| 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
+|:--:|------|------|------|------|
+| 周一 | 7/27 | 记录 `EXP-44C79107` 是否作为唯一 Active 的明确决定；推荐 Activate，但在用户/知识库主控确认前不得改实验状态 | 若 PHP 仍无评论/提案，准备一封原线程轻量跟进；实际发送为 human-only，用户确认前只可标 `Ready for human` | 唯一实验选择有明确 yes/no 与证据；PHP 不询问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold |
+| 周二 | 7/28 | 对 GSC 的 4 个 `已抓取-尚未编入索引` URL 做五类分诊：技术阻塞 / 模板重复 / 证据不足 / 需求弱 / 等待重评 | 完成 D29 文档清理，只标记历史/废弃入口，不扩大内容改动 | 4/4 URL 有页面级证据和处置类别；无实质变化不做 URL Inspection、不改源码 |
+| 周三 | 7/29 | 完成 30 天变现 Sprint D30 复盘 | 分开给出 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Outreach Pause/Iterate、Editorial Continue cautiously，若有新回复则重算 | 回复率、付费信号、编辑关系和下一步逐轨记录；`30-day-schedule.md` 与相关日志同步 |
+| 周四 | 7/30 | Feeder Reliability coverage-gap：逐项核对 jamming、portion/calibration、backup-power/travel failover | 只有确认具体缺口时，最多加固 1 个现有页面 | 先查生成页/生产页/Git；无缺口写 `No change needed`；不新建 URL、不做广泛重写 |
+| 周五 | 7/31 | GSC 两个完整 7 天 query/page 对照；GA4 `source/medium → landing page → engagement → events`；Pinterest 10 分钟检查 | 观察 feeder portion 计算器使用，不在无基线时宣称 uplift | 新快照写入 metrics/progress/weekly report；保留 GA4 UI 31 channel sessions vs 30 `session_start` 的口径差异；不发 Pin |
+| 周六 | 8/1 | 月度 GEO 复检：identity / source / date / quickAnswer / answerability 与 crawler 存活 | 仅在实际 stale/diff 清单支持时刷新 `llms.txt` / `llms-full.txt` 和跨页事实 | 有明确审计清单；只改命中项；若改站点资产则 build、push、Vercel 和线上 HTML 全闭环 |
+| 周日 | 8/2 | Week 12 周复盘，消费 W31 AI Radar 并决定 Week 13 唯一主集群 | 复核 `EXP-44C79107`、PHP/Round 4 与 30 天 Sprint 后续 | 形成 Week 13 排期；只按真实结果调整月度战略，自动化故障继续由知识库主控处理 |
+
+**Week 12 固定动作与闸门**
+
+- 新 URL 配额为 **0**；8/1 月度资产复检之外，全周最多 1 个有证据缺口的现有页实质修改。
+- Feeder Reliability 是唯一主验证集群；jamming、portion/calibration 已有覆盖时不得重复堆内容，travel/power failover 只有在覆盖审计证明缺口后才进入页面。
+- GA4 归因候选实验 `EXP-44C79107` 必须是唯一 Active；用户/知识库主控未确认前只记录推荐，不在本站仓库擅自激活实验。
+- Pretty Happy Pets 只允许 7/27 起一次轻量跟进；外部发送必须由用户确认后才能从 `Ready for human` 改为 `Sent-confirmed`。
+- BarkyTech / Purely Wholesome / PetsAnalysis 全周默认 Hold；只有首批回复或明确编辑反馈才重开，不因零回复机械扩量。
+- Pinterest 不发布新 Pin；Semrush 未成功登录刷新时明确沿用 7/17 旧快照，不伪装成 Week 12 新数据。
+- GSC 的 4 个已抓取未索引 URL 分诊不是实验；只在真实页面变化、URL 状态变化或验证到期时做 Inspection。
+- AI Signal 日报的 7/25、7/26 runner 错误属于知识库自动化 P0，本项目只消费修正后的周报/VOC，不在 Week 12 站点排期中修复。
+- 每日最多 3 个 P0；每次收工必须更新 `progress.md`，其他文件按事实变化同步或明确写 N/A。
+- 纯文档日不 build、不部署；源码/页面/站点数据有变化时才执行 `npm.cmd run verify`、明确暂存、提交推送、Vercel READY、HTTP 200 与生产 HTML 验证。
+
+### Week 12 成功标准
+
+| 维度 | 周目标 | 不算完成 |
+|------|------|------|
+| 数据归因 | 完成 1 次等长 GSC 对照和 1 次 GA4 source→landing→engagement→events 复核 | 只抄首页总数；强行抹平 GA4 UI 口径差异 |
+| Feeder 验证 | 3 个子问题 coverage-gap 3/3；最多 1 个已有页按证据加固 | 为完成配额新建页面或重复改 jamming/portion |
+| 索引 | 4 个 crawled-not-indexed URL 4/4 分诊 | 机械 URL Inspection ×5；把 Performance 当索引状态 |
+| 外联 | PHP 一次轻量跟进进入 `Ready for human` 或用户确认后的 `Sent-confirmed`；Round 4 保持可解释状态 | 把未发送写成 Sent；把审稿写成 Placed/Backlink won |
+| 变现 | 7/29 对 3 条轨道分别给出 Keep / Iterate / Pause | 只给整个项目一个笼统结论 |
+| GEO | 8/1 月度审计有命中清单和必要修复；无缺口时明确 No change needed | 为刷新日期而批量改文件 |
 
 **Week 10 固定动作（历史计划，已收盘）**
 

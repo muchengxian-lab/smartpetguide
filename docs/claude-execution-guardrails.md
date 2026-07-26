@@ -1,22 +1,24 @@
 # Claude Execution Guardrails
 
-> 生效日期：2026-07-19。用途：减少 Claude 在任务执行、事实引用、日期、状态同步和批量修改上的重复错误。每次开始 SmartPetGuide 任务前读取。
+> 生效日期：2026-07-26。用途：减少 Claude 在任务执行、事实引用、日期、状态同步和批量修改上的重复错误。每次开始 SmartPetGuide 任务前读取。
 
-## Week 11 方向
+## Week 12 方向
 
 - 主目标：让现有页面获得索引、引用、回复和分发，不追求任务数量或页面数量。
-- 时间权重：外链/编辑型分发 35-40%；GSC 与现有页加固 25-30%；战略 GEO/VOC 20-25%；Pinterest 只维护。
-- 新页面默认 0；只有 GSC 查询或跨来源 VOC 明确触发时才新增，单周最多 2 页。
+- 时间权重：外链/编辑型分发 35-40%；GSC 与现有页加固 25-30%；战略 GEO/VOC 20-25%；维护 10-15%，Pinterest 只观察。
+- Week 12 新页面固定为 0；Feeder Reliability coverage-gap 命中具体缺口时，最多加固 1 个现有页面。
 - GEO 只做现有页的 `identity + source + date + quickAnswer + answerability`，不再启动新的技术 GEO 冲刺。
 - 索引已达到 33；4 个已抓取未索引页面只按实质变化维护，主力转向 query/page、排名、CTR 和渠道归因。
-- Round 4 按 2 + 3 分批；Batch A 两封已于 7/21 `Sent-confirmed` 并进入观察，剩余三封保持 hold。Brand Outreach 不扩量，Aorkuler 已关闭，只观察 Homerunpet。
+- Feeder Reliability 是唯一主验证集群；先审计 jamming、portion/calibration、travel/power failover，已有覆盖时记录 No change needed。
+- `EXP-44C79107` 是唯一建议 Active 的 GA4 归因候选；用户/知识库主控确认前不得越界改实验账本。
+- Round 4 Batch A 两封已于 7/21 `Sent-confirmed`，截至 7/26 为 0/2 replies；剩余三封 Week 12 保持 Hold。Brand Outreach 不扩量，Aorkuler 已关闭，只观察 Homerunpet。
 
 ## Week 9 暴露的问题
 
 | 问题 | 实际表现 | 下周防错规则 |
 |------|------|------|
 | 日期与阶段漂移 | 旧指令仍写 Week 9；历史上曾把星期写错 | 每次先运行 `Get-Date -Format "yyyy-MM-dd dddd"`；所有排期写绝对日期，不从 Day/Week 公式推算星期 |
-| 当前指令互相冲突 | 根目录与 `.claude/CLAUDE.md` 曾停留在 Week 10 或更早方向 | `task_plan.md` 顶部活跃区、本文件和 Week 11 提示词优先；历史计划只作背景 |
+| 当前指令互相冲突 | 根目录与 `.claude/CLAUDE.md` 曾停留在旧 Week 方向 | `task_plan.md` 顶部活跃区、本文件和 Week 12 提示词优先；Week 11 及更早计划只作背景 |
 | 状态/数字漂移 | `quickAnswer` 实际 13/38，汇总仍写 8/38；CRM 顶部停在 D3 | 汇总数字必须用 Git、源码、构建或当前 CRM 明细复算；同一任务结束时同步当前事实文件 |
 | 批量日期失真 | 模板改动曾把约 100 页 `modifiedDate` 一次刷新到 7/10 | 只有页面内容发生实质变化才更新该页日期；禁止按模板类型统一刷新日期；日期从 `content-dates.json` 逐页维护 |
 | VOC 证据过度表达 | 曾写入无可核验来源的 owner quotes 和 70-90%、30-50% 等精确数字 | 原话必须有 URL、采集日期和 source ledger；否则只做保守转述；数字必须能追溯到明确来源或标为 editorial scenario |

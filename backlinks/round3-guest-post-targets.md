@@ -176,7 +176,7 @@ press@smartpetguide.net
 |:--:|------|:--:|------|
 | 1 | PetPlace.com | ❌ 未发送 | D0 起邮箱未找到（petplace.com/write-for-us 无公开编辑邮箱），标注为 unresolved |
 | 2 | EntirelyPets.com | ❌ 未发送 | D0 起邮箱未找到（entirelypets.com/guest-blogger.html 无公开编辑邮箱），标注为 unresolved |
-| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started** | 7/16 已提交约 2,099 字最终稿；7/19 对方确认编辑与兽医团队已开始审核；确认回信已于 7/20 13:00 Asia/Shanghai 实际发送，当前为 `Sent-confirmed`；对方将在 Week 11 提供 2-3 个给 SmartPetGuide 的选题与样稿 |
+| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started** | 7/16 已提交约 2,099 字最终稿；7/19 对方确认编辑与兽医团队已开始审核；确认回信已于 7/20 13:00 Asia/Shanghai 实际发送，当前为 `Sent-confirmed`；截至 7/26 Google Doc 0 新评论、对方 2-3 个选题与样稿未到，最早 7/27 只准备一次轻量跟进 |
 | 4 | Your Vet Online | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 | 5 | LenoxVet | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 
@@ -216,5 +216,5 @@ Chengxian Yang
 | 1 | **Pretty Happy Pets 投稿稿** | Submitted | ✅ 7/16 已提交约 2,099-word 最终稿：Markdown 源稿 + PDF 附件 + Google Docs 链接；无 affiliate 链接，未沿用无法证明的 18,500 reviews / $61 / 2-week acne claims |
 | 2 | **回复确认收悉** | 人工 | ✅ 7/14 已发送；已告知 7/17 前提交 draft |
 | 3 | **审稿启动确认回信** | Sent-confirmed | 用户已于 2026-07-20 13:00 Asia/Shanghai 实际发送；等待 Google Doc 评论和对方提案 |
-| 4 | **外部投稿审核决定** | Week 11 等待对方 | 对方已确认将提供 2-3 个选题与写作样稿；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
-| 5 | **编辑/兽医审核** | 审核已启动 | 监看 Google Doc 评论并及时修改；不主动追问发布时间。若 7/26 前完全无更新，最早 7/27 轻量跟进一次 |
+| 4 | **外部投稿审核决定** | Week 12 等待对方 | 截至 7/26 提案尚未到；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
+| 5 | **编辑/兽医审核** | 审核已启动 — 等待 | 截至 7/26 Google Doc 0 新评论；7/27 若仍无更新，只准备一次原线程轻量跟进供用户发送，不主动追问发布时间 |

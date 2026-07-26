@@ -1,5 +1,37 @@
 # 发现与决策
 
+## 2026-07-26 Week 11 收盘与 Week 12 决策
+
+### 搜索可见性改善，但转化结果仍未出现
+
+**发现**：GSC 最新完整 7 天 2026-07-18 至 2026-07-24 为 0 clicks / 19 impressions / CTR 0% / average position 21.7；前一完整窗口 2026-07-11 至 2026-07-17 为 0 / 9 / 0% / 51.1。展示增加 10（+111.1%），平均排名改善 29.4 位；3 个月累计为 4 clicks / 307 impressions / CTR 1.3% / position 34.5。索引仍为 33 / 15，4 个 crawled-not-indexed 未退出。当前查询跨 GPS、饮水和 fountain 使用问题，但每条可见查询只有 1 impression。
+
+**决策**：Week 12 继续观察等长窗口，不把排名改善写成流量增长，也不因单个查询返工 GPS 页。4 个 crawled-not-indexed URL 先按技术阻塞、模板重复、证据不足、需求弱、等待重评五类分诊；这是一项索引诊断，不是实验，也不自动触发 URL Inspection。
+
+### Feeder Reliability 是唯一值得深入的站点集群，但不是新页面许可
+
+**发现**：W30 AI Signal 的 feeder jamming / portion calibration 在 Amazon、PAA 和 YouTube 三类来源重复出现，共 12 条去重证据、7 个独立单元；GA4 最近 7 天的热门内容中 feeder portion guide 有 3 page views。另一方面，站内 `stop-automatic-feeder-from-jamming` 与 `feeder-portion-size-guide` 已覆盖核心 jamming、份量换算、官方口径与称重校准，因此信号重复不等于现有页面仍有缺口。travel / backup-power failover 相比之下可能仍有覆盖不足，但需要从生成页、生产页和 Git 逐项验证。
+
+**决策**：Week 12 将 Feeder Reliability 设为唯一主验证集群，先做 `jamming / portion-calibration / travel-power-failover` coverage-gap 3/3。已有覆盖时记录 `No change needed`；只有出现具体、可验证且有来源支撑的缺口时，最多加固 1 个现有页面。新 URL 配额为 0，不重复扩写 calculator，也不在没有基线时宣称 uplift。
+
+### GA4 归因基线值得转为唯一 Active 候选实验
+
+**发现**：GA4 最近 7 天为 29 active / 28 new / 36 page views / 121 events；渠道表可见 Direct 28、Unassigned 2、Organic Search 1、Referral 0，唯一自然搜索仍为 Bing。事件为 page_view 36 / session_start 30 / first_visit 30 / user_engagement 18 / scroll 5 / form_start 2，affiliate_click、outbound_click 和 key events 都为 0。渠道行合计 31 sessions，而 session_start 为 30，属于 GA4 UI/口径边界，不能人为抹平。
+
+**决策**：`EXP-44C79107`（source/medium → landing page → engagement → events 基线）是 Week 12 唯一建议激活的实验，因为它直接验证当前漏斗瓶颈且无需制造流量或改站点。实际 Active 状态仍需用户/知识库主控明确确认；本站排期只记录推荐，不越界修改知识库实验账本。
+
+### 外联和 30 天变现 Sprint 进入止损决策
+
+**发现**：Pretty Happy Pets 截至 7/26 仍为编辑/兽医审稿，Google Doc 0 条新评论，对方承诺的 2-3 个提案与样稿未到。GlobalPETS / The Upper Pawside 两封 7/21 pitch 均无回复；BarkyTech / Purely Wholesome / PetsAnalysis 尚未发送。Brand Outreach 仍只有 Aorkuler 的正向 not-now 回复，没有第二个认真回复、付费 beta 或实施意愿。
+
+**决策**：PHP 最早 7/27 在原线程做一次轻量跟进，不问发布时间、不要求 reciprocal/dofollow；实际发送必须由用户确认。Round 4 剩余三封 Week 12 继续 Hold。7/29 对三条轨道分别裁决：Task A 默认 Keep，Brand Outreach 默认 Pause/Iterate，Editorial/Guest Post 默认 Continue cautiously；若此前出现新回复，再按真实证据调整。
+
+### Month 2 战略不改，自动化故障继续隔离
+
+**发现**：当前仍未出现需要调整 Month 2 北极星、资源比例或新页面上限的触发条件。W30 AI Signal 在 7/25 与 7/26 出现 runner BadRequestError，属于知识库自动化完整性问题，不是 SmartPetGuide 内容缺口。
+
+**决策**：月度战略保持 Continue，资源比例维持外链/编辑 35-40%、GSC/SEO 25-30%、GEO/VOC 20-25%、维护 10-15%。本站只消费修正后的 W31 输出；自动化修复仍由独立知识库主控执行。
+
 ## 2026-07-24 Snapshot 9：排名改善未转化为点击，渠道与分发继续收缩
 
 ### GSC 的小样本排名改善值得观察，但不足以触发 GPS 页面返工

@@ -668,6 +668,65 @@
 
 ---
 
+## Snapshot 10 — 2026-07-26（Week 11 周日最终复核）
+
+> GSC 使用后台最新可用的两个完整 7 天窗口；GA4 使用最近 7 天界面并保留渠道表与事件表的原始口径差异；Pinterest 使用 2026-06-26 至 2026-07-26 的 30 天窗口。Semrush 本次无法刷新，继续明确沿用 7/17 用户确认值。
+
+### GSC
+
+| 指标 | 7/18-7/24 | 7/11-7/17 | 变化 |
+|------|:--:|:--:|:--:|
+| Clicks | **0** | 0 | — |
+| Impressions | **19** | 9 | **+10（+111.1%）** |
+| CTR | **0%** | 0% | — |
+| Average position | **21.7** | 51.1 | **改善 29.4 位** |
+
+**当前可见查询（均 1 impression）：** `compare gps prices`、`cat won't drink from fountain`、`chewy water fountain for cats`、`how do i get my cat to drink from a water fountain`、`cat drinking from fountain`。前一窗口可见 `petguide`、`wopet vs furbo`、`how to transition cats to litter robot`，也均为 1 impression。查询层仍是低样本，不足以触发同页重复改写。
+
+| 索引 / 累计指标 | 7/26 当前值 | 说明 |
+|------|:--:|------|
+| 已索引 / 未索引 | **33 / 15** | 与 7/24 持平 |
+| 网页会自动重定向 | **5** | 验证失败；没有新源码证据 |
+| 重定向错误 | **3** | 验证已开始 |
+| 备用网页（适当规范标记） | **1** | 验证已开始 |
+| 已抓取-尚未编入索引 | **4** | 验证已开始；Week 12 做五类分诊 |
+| Google 选择不同规范 | **2** | 验证已开始 |
+| 已发现-尚未编入索引 | **0** | 验证已通过 |
+| 3 个月 Performance | **4 clicks / 307 impressions / CTR 1.3% / position 34.5** | 累计曝光继续增加，点击持平 |
+
+### GA4（最近 7 天）
+
+| 指标 | 当前值 |
+|------|:--:|
+| Active users | **29** |
+| New users | **28** |
+| Page views | **36** |
+| Events | **121** |
+| Key events | **0** |
+
+**渠道表可见值：** Direct 28 / Unassigned 2 / Organic Search 1 / Referral 0，共 31 sessions；Organic Search 为 `bing / organic` 1。完整事件表为 page_view 36 / session_start 30 / first_visit 30 / user_engagement 18 / scroll 5 / form_start 2，共 121 events；`affiliate_click` 0 / `outbound_click` 0。
+
+**口径边界：** 渠道行合计 31 sessions，而 `session_start` 为 30。保留 GA4 UI 的原始差异，不强行合成一个数字。feeder portion guide 在热门内容中有 3 page views，只能作为使用信号，不能在没有改版前后基线时宣称计算器带来 uplift。
+
+### Pinterest、Semrush 与外联
+
+| 项目 | 7/26 当前值 | 判断 |
+|------|:--:|------|
+| Pinterest 30 天 | **801 impressions / 0 engagement / 0 outbound / 0 saves / audience 8** | 后台显示 impressions -61%；不恢复发布 |
+| Pinterest 7 天 | **本次未形成可靠刷新** | 日期切换后页面 hydration 不稳定；不沿用 7/24 的 26 冒充新值 |
+| Semrush | **12 RD / 28 backlinks / 20 keywords / AS 2** | 沿用 7/17 用户确认旧快照；本次登录页未刷新成功 |
+| Pretty Happy Pets | **0 新评论 / 0 新提案** | 稿件仍在 editorial + veterinary review；最早 7/27 一次轻量跟进 |
+| Round 4 Batch A | **0/2 replies** | GlobalPETS / The Upper Pawside 无回复；剩余三封继续 Hold |
+
+### Week 12 数据决策
+
+1. 搜索曝光与排名改善但仍无点击；不改 GPS 页，周五继续等长窗口 query/page 对照。
+2. 推荐把 `EXP-44C79107` 作为唯一 Active 的 GA4 归因实验；实际状态由用户/知识库主控确认。
+3. Feeder Reliability 做 coverage-gap 3/3；最多加固 1 个已有页，不新建 URL。
+4. Pinterest 不发布；Semrush 未刷新前继续标注旧快照；外联没有反馈时不扩量。
+
+---
+
 ## 历史附录：Snapshot 6 — 2026-07-15（GSC 局部刷新 + CTR 优化）
 
 > 本节只刷新 GSC 和本次页面交付状态；GA4、Pinterest、引用域名继续沿用 7/13 Snapshot 5，未重新测量，不与新数据混合。

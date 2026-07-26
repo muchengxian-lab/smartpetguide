@@ -4163,3 +4163,61 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - `docs/claude-week11-execution-prompt-template.md`：更新 7/24 基线、Round 4 hold 闸门和日级完成状态。
 - `progress.md`：本日志。
 - Month 2 资源比例、北极星和触发条件未变化，战略书 N/A；外联状态没有从 Sent-confirmed 晋级，round3/round4 目标表 N/A；无站点源码变化，build / Vercel / 生产页验证 N/A。
+
+---
+
+## 会话：2026-07-26 周日 — Week 11 收盘与 Week 12 正式排期
+
+### 开工与已有修改
+
+- [x] 系统日期按 2026-07-26 周日执行；本次是周复盘与下一周排期，不提前执行 7/27-8/2 的日级任务。
+- [x] 开工时唯一未提交修改为 `task_plan.md` 顶部 `quickAnswer 14/38` 校准；已核对属于当前真实源码统计，保留并整合进 Week 12 基线，没有覆盖或丢弃。
+- [x] 已读取 Week 11 计划/周报/发现/进度、30 天变现排期、Round 4 状态与 Claude Week 11 执行入口。
+
+### Week 11 最终数据与外部状态
+
+- [x] GSC 完整 7 天 7/18-7/24：0 clicks / 19 impressions / CTR 0% / position 21.7；前一窗口 7/11-7/17 为 0 / 9 / 0% / 51.1。3 个月为 4 / 307 / 1.3% / 34.5；索引仍为 33 / 15。
+- [x] GA4 最近 7 天：29 active / 28 new / 36 page views / 121 events；渠道表 Direct 28 / Unassigned 2 / Organic Search 1 / Referral 0，事件表 session_start 30，保留 31 vs 30 的 UI 口径差异；affiliate/outbound/key events 均为 0。
+- [x] Pinterest 30 天：801 impressions / 0 engagement / 0 outbound / 0 saves / audience 8；7 天窗口未稳定刷新，不补造新值。
+- [x] Semrush 未登录刷新，沿用 7/17 用户确认的 12 RD / 28 backlinks / 20 keywords / AS 2，并明确标记旧快照。
+- [x] PHP 仍为 editorial + veterinary review，Google Doc 0 条新评论、2-3 个提案/样稿未到；GlobalPETS / The Upper Pawside 仍为 0/2 replies；Round 4 剩余三封继续 Hold。
+
+### Week 12 决策与排期
+
+- [x] Month 2 北极星与资源比例保持不变，战略结论 Continue；战术收敛为 Feeder Reliability 唯一主验证集群、新 URL 0、最多 1 个证据驱动的现有页修改。
+- [x] `EXP-44C79107` 设为唯一建议 Active 的候选实验；在用户/知识库主控确认前不修改知识库实验状态。
+- [x] 7/27-8/2 日级闸门已写入 `task_plan.md`：唯一实验/PHP 跟进准备 → 4 URL 分诊 → D30 分轨裁决 → feeder coverage-gap → 周度数据 → 月度 GEO → 周复盘。
+- [x] 30 天 Sprint D27 标记完成；D30 要求分别对 Task A、Brand Outreach、Editorial/Guest Post 给出 Keep / Iterate / Pause。
+- [x] Claude Week 11 模板标记为历史，新增 Week 12 唯一活跃模板，包含开工检查、事实锁定、日期闸门、文件同步矩阵、外部动作状态和收工验证。
+- [x] AI Signal 7/25、7/26 runner 错误继续隔离到知识库主控，不进入本站 Week 12 执行范围。
+
+### 修改文件
+
+- `task_plan.md`：Week 11 收盘、Week 12 日级排期、固定闸门、成功标准与 14/38 校准。
+- `weekly-report.md`：Week 11 周日最终报告与 Week 12 摘要。
+- `findings.md`：单集群、单实验、外联止损和战略不变的稳定决策。
+- `docs/monetization/weekly-metrics-log.md`：Snapshot 10。
+- `docs/monetization/30-day-schedule.md`：D27 完成及 D28-D30 收口规则。
+- `docs/month-2-strategy-2026-07-13-to-2026-08-09.md`：只同步 Week 12 已定战术与 quickAnswer 14/38；北极星、资源比例和触发条件不变。
+- `backlinks/round4-editorial-targets.md`：Batch A 0/2 回复与剩余三封 Week 12 Hold。
+- `backlinks/round3-guest-post-targets.md`：PHP 截至 7/26 仍无评论/提案，并加入 7/27 一次轻量跟进闸门。
+- `docs/claude-week11-execution-prompt-template.md`：历史归档提示。
+- `docs/claude-week12-execution-prompt-template.md`：Week 12 唯一活跃执行入口。
+- `CLAUDE.md`、`.claude/CLAUDE.md`、`docs/claude-execution-guardrails.md`：活跃周期、入口、基线和 Week 12 硬闸门。
+- `progress.md`：本日志。
+
+### 验收边界
+
+- 本次只修改计划与证据文档，没有站点源码、页面数据或 URL 变化，因此 `npm.cmd run verify`、Vercel 部署、线上 HTTP/HTML 和 sitemap 提交均为 N/A。
+- Month 2 北极星、资源比例和触发条件未变化；战略书只做 Week 12 战术同步，不改其他章节。
+- PHP 没有新的发送/回复结果；`round3` 只同步等待事实与 7/27 计划，用户实际发送前不得晋级状态。
+- `docs/monetization/brand-outreach-crm.md`：Brand 状态无变化，N/A；7/29 分轨裁决时再按实际结果同步。
+
+### 本地一致性验收
+
+- [x] 系统日期与日历复核：2026-07-26 为周日；7/27-8/2 依次为周一至周日。
+- [x] `quickAnswer` 从 `src/pages/guides/[slug].astro` 重新计数为 14，不沿用旧汇总。
+- [x] Week 12 模板引用的 7 个核心文件均存在；Markdown code fence 为偶数，7 个日级日期全部存在。
+- [x] 活跃入口中不再残留 Week 11 prompt/日期；GSC 19 / 21.7、GA4 29 / 121、Pinterest 801、Round 4 0/2、14/38 与 `EXP-44C79107` 已跨计划、周报、发现、metrics、strategy、guardrails 和 Claude 入口核对。
+- [x] `git diff --check` 通过；新建 Week 12 模板也以 no-index diff 单独检查，无 whitespace error。仅有 Windows LF→CRLF 提示。
+- [x] 所有变更均为 `.md` 计划/证据文档；无 `src/`、站点数据或 URL 变化，因此 build、部署、线上页和 sitemap 验证 N/A。

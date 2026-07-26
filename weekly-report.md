@@ -110,12 +110,47 @@
 - 饮水问题页与 LR5 vs LR4 各完成一次证据驱动加固；周五不因小样本再次改页。
 - Snapshot 9 完成 GSC / GA4 / Pinterest / PHP / Round 4 核对；今日无源码变化，不重提 sitemap。
 
-### 周末剩余闸门
+### 周末收口闸门（已于 7/26 执行）
 
-1. 7/25 只处理 PHP 实际评论或对方提案；没有反馈则继续等待。
-2. 7/26 完成 Week 11 周复盘，结合首批两封零回复决定剩余三封 Continue / Revise / Hold。
-3. 若 PHP 到 7/26 仍完全无更新，最早 7/27 轻量跟进一次；不询问发布时间，不承诺 reciprocal/dofollow。
-4. Month 2 战略资源比例与北极星未触发调整；战略书保持不变。
+1. 7/25 PHP 无实际评论或对方提案，已按规则继续等待。
+2. 7/26 已完成 Week 11 周复盘；Round 4 剩余三封决定为 Week 12 继续 Hold。
+3. PHP 截至 7/26 仍无更新，最早 7/27 只做一次轻量跟进；不询问发布时间，不承诺 reciprocal/dofollow。
+4. Month 2 战略资源比例与北极星未调整；Week 12 战术段已同步。
+
+## Week 11（7/20-7/26）收盘
+
+| 指标 | 周日最终复核 | 对照 / 判断 |
+|------|:--:|------|
+| 页面数 | **114** | 持平；本周 0 个新 URL |
+| quickAnswer | **14/38** | Git/源码校准值；不作为机械覆盖 KPI |
+| GSC 已索引 / 未索引 | **33 / 15** | 持平；已抓取未索引 4、已发现未索引 0 |
+| GSC 完整 7 天 | **0 clicks / 19 impressions / CTR 0% / position 21.7** | 前 7 天 0 / 9 / 0% / 51.1；展示 +111.1%，排名改善 29.4 位，仍无点击 |
+| GSC 3 个月 | **4 clicks / 307 impressions / CTR 1.3% / position 34.5** | 累计曝光增加，点击未增加 |
+| GA4 最近 7 天 | **29 active / 28 new / 36 page views / 121 events** | 渠道表可见 Direct 28 / Unassigned 2 / Organic Search 1 / Referral 0；唯一 organic 为 Bing |
+| GA4 商业事件 | **affiliate 0 / outbound 0 / key events 0** | 完整事件表未出现商业转化 |
+| Pinterest 30 天 | **801 impressions / 0 outbound / audience 8** | 后台显示 impressions -61%；7 天刷新未稳定渲染，不补造新值 |
+| Guest Post / Editorial | **PHP 仍在审稿；Round 4 Batch A 0/2 回复** | Google Doc 0 条新评论；对方 2-3 个提案/样稿未到；剩余三封 Hold |
+| Semrush | **12 RD / 28 backlinks / 20 keywords / AS 2** | 沿用 7/17 用户确认值，7/26 未登录刷新 |
+
+### 本周完成与结果判断
+
+- 建立并复核 GA4 归因基线；当前外部发现没有形成稳定渠道，商业点击仍为 0。
+- 完成 feeder portion 计算器/官方口径升级、饮水问题页来源整改和 LR5 vs LR4 证据驱动加固；没有新增 URL。
+- Round 4 首批两封实际发送并观察，未收到回复；没有把剩余发送量当成果。
+- GSC 展示和平均排名改善，但仍无点击，属于搜索可见性早期信号，不是流量突破。
+- W30 AI Signal 只支持把 Feeder Reliability 作为下一周唯一验证集群；现有页面已覆盖大部分 jamming/portion 问题，必须先查缺口。
+- AI Signal runner 在 7/25 与 7/26 失败属于知识库自动化问题，继续由独立主控处理，不混入本站交付。
+
+### Week 12 计划（7/27-8/2）
+
+1. 周一记录 `EXP-44C79107` 是否作为唯一 Active 的明确决定；推荐激活，但由用户/知识库主控确认。PHP 若仍无更新，只准备一次轻量跟进供用户发送。
+2. 周二对 4 个已抓取未索引 URL 做五类分诊，不机械提交 URL Inspection。
+3. 周三完成 30 天变现 Sprint，分别对 Task A、Brand Outreach、Editorial/Guest Post 给出 Keep / Iterate / Pause。
+4. 周四只做 Feeder Reliability coverage-gap；最多加固 1 个现有页，新 URL 配额为 0。
+5. 周五刷新 GSC、GA4 和 Pinterest；周六完成月度 GEO/llms 复检；周日形成 Week 13 计划。
+6. Round 4 剩余三封、Pinterest 新 Pin、GPS 同周返工继续暂停；只有新回复或明确证据才能解除闸门。
+
+**战略判断**：Month 2 的北极星和资源比例不调整，结论仍为 Continue；战略书的 Week 12 战术段已同步为单集群、单实验、0 新 URL 和可验证止损点，其他战略章节不改。
 
 ## Week 8（6/30-7/3）收盘
 
