@@ -4221,3 +4221,51 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] 活跃入口中不再残留 Week 11 prompt/日期；GSC 19 / 21.7、GA4 29 / 121、Pinterest 801、Round 4 0/2、14/38 与 `EXP-44C79107` 已跨计划、周报、发现、metrics、strategy、guardrails 和 Claude 入口核对。
 - [x] `git diff --check` 通过；新建 Week 12 模板也以 no-index diff 单独检查，无 whitespace error。仅有 Windows LF→CRLF 提示。
 - [x] 所有变更均为 `.md` 计划/证据文档；无 `src/`、站点数据或 URL 变化，因此 build、部署、线上页和 sitemap 验证 N/A。
+
+---
+
+## 会话：2026-07-27 周一 — 唯一 GA4 实验决定与 PHP 跟进准备
+
+### 开工确认
+
+- [x] 系统日期：2026-07-27 周一 19:46 Asia/Shanghai；执行 Week 12 周一排班，不提前执行 7/28 之后任务。
+- [x] Git：HEAD `b2474b8`，`origin/master...HEAD = 0 0`，开工工作区干净。
+- [x] 今日最多 3 个 P0：确认 `EXP-44C79107` 唯一实验建议；实时复核 PHP 邮件/Google Doc；无更新时准备一次原线程轻量跟进。
+- [x] 外部动作边界：Claude 不发送邮件、不激活知识库实验；实际发送与实验 Active 状态均等待用户确认。
+
+### 浏览器核对进度与错误
+
+- 已连接用户先前登录的 Chrome CDP 9222；Gmail 搜索结果页正常可读。
+- `agent-browser find text ... click --exact` 返回成功但页面未进入线程，仍停留在搜索结果。这次尝试不计为线程核验；下一步改用 DOM/页面结构定位，不重复同一方法。
+- 改用 DOM 检查时首次定位到目标标题元素，但 agent-browser 检测到 daemon 版本不匹配并自动重启；随后旧动态 DOM id 已失效。下一步将在单次脚本内重新查找标题并点击其可交互祖先，避免复用失效 id。
+- daemon 重启后的单次 DOM 查询未重新找到目标节点，但 URL/标题仍确认停在 Gmail 的 `Pretty Happy Pets` 搜索结果；停止继续猜动态 id。下一步改用可视截图/坐标或稳定的 Gmail 行结构，不重复前三种失败路径。
+- 截图首次写入 `C:\tmp` 被操作系统拒绝访问；未在项目中生成文件。改用本会话允许写入的 visualization 目录保存临时截图。
+- 可视截图成功确认 Gmail 目标行仍为 6 封、最后活动 7月20日。坐标点击因 agent-browser 的 DOM/可视坐标上下文不一致，返回了与当前 Gmail URL 不相符的隐藏元素文本；没有进入线程，也没有发送或修改任何邮件。停止继续点击该行，采用搜索结果日期作为“无新邮件”活动证据，并转向独立核对 Google Doc。
+- Drive 交互树成功定位目标共享 DOCX。第一次传入未加引号的 `@e51` 被 PowerShell 当作语法而缺少 click 参数；加引号后单击只选中文件、未打开。下一步重新 snapshot 后双击选中行；不复用旧 ref。
+- 重新 snapshot 后使用新 ref 双击成功，目标共享 DOCX 已在 Google Docs 新标签打开。该文件实际是共享的 Word 文档，而不是 Google 原生文档；后续只核对评论与修改状态，不编辑正文。
+- Google Docs 编辑器实时显示“0 条新评论”和“上次修改是在 11 天前进行的”；本次没有编辑正文。结合 Gmail 线程无 7/20 后活动，已满足准备一次轻量跟进的证据闸门。
+- 浏览器切换首次使用 `tab 2` 与当前 CLI 版本不符；错误提示要求稳定 id `t2`，改用 `tab t2` 后成功。Gmail 搜索 `Homerunpet` 只返回“1 行”计数但没有可见会话细节，无法实时确认回复状态；不沿用空白结果猜 0。
+- 可视截图补足 Homerunpet 边界：唯一邮件行为我方 Yang Chengxian、7/15、主题 `3 observations about the Homerunpet Wireless Fountain`，无对方回复。Pretty Happy Pets 搜索结果中的 Round 4 两封也仍为我方 7/21 邮件。
+- 本地只读核对知识库 W30 Weekly Review 与 Experiment Ledger：当前 Active=0，`EXP-44C79107` 仍为 `Open / Backlog` 且是唯一建议候选；本站记录 Yes/推荐 Activate，但不越界写知识库状态。
+
+### 执行结果与文件同步
+
+- [x] 已形成 D28 唯一实验结论：`EXP-44C79107` 值得作为唯一 Active；SmartPetGuide 项目内记录为 Yes / 推荐 Activate，知识库账本仍等待用户或知识库主控确认。
+- [x] 已形成 Pretty Happy Pets 原线程轻量跟进稿，状态严格保持 `Ready for human`；没有发送邮件、没有重新附稿、没有更改外部 Google Docs/DOCX。
+- [x] 已同步 `task_plan.md`、`findings.md`、`docs/monetization/30-day-schedule.md`、`backlinks/round3-guest-post-targets.md`、`backlinks/round4-editorial-targets.md` 与本进度日志。
+- [x] Round 4 继续 0/2，剩余 BarkyTech / Purely Wholesome / PetsAnalysis 保持 Hold；Homerunpet 继续 `Sent — awaiting reply`。
+
+### 验收边界
+
+- 新 GSC / GA4 / Pinterest / Semrush 数据快照：N/A，今天没有刷新数据源，继续引用 Snapshot 10 和已标注日期的 Semrush 旧快照。
+- `metrics-log.md` / 周报 / Month 2 战略书：N/A，今天没有新增指标、策略转向或月度资源比例变化。
+- `brand-outreach-crm.md`：N/A，Homerunpet 状态未变化；实时 0 reply 证据已写入 `findings.md`，不重复制造 CRM 状态变更。
+- `CLAUDE.md` / 执行护栏：N/A，今天没有发现新的规则缺口或修改自动化边界。
+- 站点源码、生成页、URL、sitemap、build、Vercel 部署与线上页面：N/A，本次只有 Markdown 计划、证据和外联状态文档更新。
+- 知识库实验账本：N/A（只读核对），未获得明确激活确认，继续保持 `Open / Backlog`，没有跨仓库写入。
+
+### 提交前验证
+
+- [x] `git diff --check` 通过；仅有 Windows LF→CRLF 提示。
+- [x] 变更范围为 6 个预期 Markdown 文件，没有 `src/`、`dist/`、配置、URL 或外部发送动作。
+- [x] 跨文件措辞一致：PHP=`Ready for human`、Round 4=`0/2`、Homerunpet=`0 reply`、`EXP-44C79107`=`推荐 Activate / 实际待确认`。

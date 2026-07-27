@@ -176,7 +176,7 @@ press@smartpetguide.net
 |:--:|------|:--:|------|
 | 1 | PetPlace.com | ❌ 未发送 | D0 起邮箱未找到（petplace.com/write-for-us 无公开编辑邮箱），标注为 unresolved |
 | 2 | EntirelyPets.com | ❌ 未发送 | D0 起邮箱未找到（entirelypets.com/guest-blogger.html 无公开编辑邮箱），标注为 unresolved |
-| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started** | 7/16 已提交约 2,099 字最终稿；7/19 对方确认编辑与兽医团队已开始审核；确认回信已于 7/20 13:00 Asia/Shanghai 实际发送，当前为 `Sent-confirmed`；截至 7/26 Google Doc 0 新评论、对方 2-3 个选题与样稿未到，最早 7/27 只准备一次轻量跟进 |
+| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started / follow-up Ready for human** | 7/16 已提交约 2,099 字最终稿；截至 7/27 Gmail 线程仍为 6 封、最后活动 7/20，共享 DOCX 0 条新评论且 11 天未修改；一次轻量跟进已准备，尚未发送 |
 | 4 | Your Vet Online | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 | 5 | LenoxVet | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 
@@ -209,6 +209,23 @@ Best,
 Chengxian Yang
 ```
 
+### #3 Pretty Happy Pets — 轻量跟进（2026-07-27，Ready for human）
+
+> 在原邮件线程直接回复；不更改主题，不重新附 PDF/DOCX，不添加新链接。下方只是待人工发送稿，用户确认实际发送前不得标 `Sent-confirmed`。
+
+```text
+Hi Pretty Happy Pets Team,
+
+Just checking in on the fountain draft I sent over. I know it is with your editorial and veterinary teams, so there is no rush — I just wanted to see whether you need any changes or additional sources from me.
+
+I would also still be glad to review the topic ideas and writing samples you mentioned for SmartPetGuide whenever they are ready.
+
+Best,
+Chengxian Yang
+```
+
+**状态**：`Ready for human`。理由：截至 2026-07-27，邮件线程无 7/20 后活动，共享 DOCX 显示 0 条新评论、11 天未修改。该邮件不询问发布时间，不承诺 reciprocal/dofollow。
+
 ### 下一步行动
 
 | # | 事项 | 类型 | 说明 |
@@ -216,5 +233,5 @@ Chengxian Yang
 | 1 | **Pretty Happy Pets 投稿稿** | Submitted | ✅ 7/16 已提交约 2,099-word 最终稿：Markdown 源稿 + PDF 附件 + Google Docs 链接；无 affiliate 链接，未沿用无法证明的 18,500 reviews / $61 / 2-week acne claims |
 | 2 | **回复确认收悉** | 人工 | ✅ 7/14 已发送；已告知 7/17 前提交 draft |
 | 3 | **审稿启动确认回信** | Sent-confirmed | 用户已于 2026-07-20 13:00 Asia/Shanghai 实际发送；等待 Google Doc 评论和对方提案 |
-| 4 | **外部投稿审核决定** | Week 12 等待对方 | 截至 7/26 提案尚未到；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
-| 5 | **编辑/兽医审核** | 审核已启动 — 等待 | 截至 7/26 Google Doc 0 新评论；7/27 若仍无更新，只准备一次原线程轻量跟进供用户发送，不主动追问发布时间 |
+| 4 | **外部投稿审核决定** | Week 12 等待对方 | 截至 7/27 提案尚未到；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
+| 5 | **编辑/兽医审核轻量跟进** | **Ready for human** | 7/27 实时核对无邮件/评论更新后已准备；仅在原线程人工回复一次，不问发布时间、不重新附稿；用户实际发送后才改 `Sent-confirmed` |

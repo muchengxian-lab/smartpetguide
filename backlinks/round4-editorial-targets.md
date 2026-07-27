@@ -2,7 +2,7 @@
 
 > 创建日期：2026-07-16。目标：5 个高相关编辑型/资源页目标（非目录、非公开售链站）。
 > 策略：用 SmartPetGuide 的 linkable assets（pet-tech-statistics / TCO 数据 / 订阅成本分析）作为 pitch 素材。
-> Week 12 执行校准（2026-07-26）：GlobalPETS + The Upper Pawside 于 7/21 实际发送，至 7/26 仍为 0/2 回复。剩余 BarkyTech + Purely Wholesome + PetsAnalysis 继续 Hold；只有首批回复或明确编辑反馈才重开，不因零回复机械发送。
+> Week 12 执行校准（2026-07-27 实时复核）：GlobalPETS + The Upper Pawside 于 7/21 实际发送，至 7/27 仍为 0/2 回复。剩余 BarkyTech + Purely Wholesome + PetsAnalysis 继续 Hold；只有首批回复或明确编辑反馈才重开，不因零回复机械发送。
 
 ## Target List
 
@@ -19,17 +19,17 @@
 | # | Site | Contact | Status | Notes |
 |:--:|------|------|:--:|------|
 | 1 | BarkyTech | editor@barkytech.com | Researched — not sent | Pet tech niche match; requires photos with submissions |
-| 2 | GlobalPETS / PETS International | content@pets.nl | **Sent-confirmed — awaiting reply** | Manual send confirmed 7/21 evening；截至 7/26 线程仍只有我方邮件。Post-send audit corrected the local reuse copy; exact sent-body wording/UTM is unverified |
+| 2 | GlobalPETS / PETS International | content@pets.nl | **Sent-confirmed — awaiting reply** | Manual send confirmed 7/21 evening；截至 7/27 搜索结果仍只有我方 7/21 邮件。Post-send audit corrected the local reuse copy; exact sent-body wording/UTM is unverified |
 | 3 | Purely Wholesome | info@purelywholesome.com | Researched — not sent | Pet/animal-care contributor page verified; 800-3,000 words |
-| 4 | The Upper Pawside | info@upperpawside.com | **Sent-confirmed — awaiting reply** | Manual send confirmed 7/21 evening；截至 7/26 线程仍只有我方邮件。Post-send audit corrected the local reuse copy; exact sent-body wording/UTM is unverified |
+| 4 | The Upper Pawside | info@upperpawside.com | **Sent-confirmed — awaiting reply** | Manual send confirmed 7/21 evening；截至 7/27 搜索结果仍只有我方 7/21 邮件。Post-send audit corrected the local reuse copy; exact sent-body wording/UTM is unverified |
 | 5 | PetsAnalysis | admin@petsanalysis.com | Researched — not sent | Product reviews accepted; stated response time 5-7 business days |
 
 ## Week 12 Continuation Decision
 
 | 批次 | 目标 | 计划日期 | 当前状态 | 决策规则 |
 |------|------|------|------|------|
-| Batch A | GlobalPETS / PETS International | 2026-07-21 | **Sent-confirmed — awaiting reply** | 订阅疲劳+3年TCO行业数据；截至 7/26 为 0 reply，不重复发送 |
-| Batch A | The Upper Pawside | 2026-07-21 | **Sent-confirmed — awaiting reply** | Dog GPS no-fee TCO 消费者角度；截至 7/26 为 0 reply，不重复发送 |
+| Batch A | GlobalPETS / PETS International | 2026-07-21 | **Sent-confirmed — awaiting reply** | 订阅疲劳+3年TCO行业数据；截至 7/27 为 0 reply，不重复发送 |
+| Batch A | The Upper Pawside | 2026-07-21 | **Sent-confirmed — awaiting reply** | Dog GPS no-fee TCO 消费者角度；截至 7/27 为 0 reply，不重复发送 |
 | Hold | BarkyTech | Week 12 不排发送 | Researched — hold | 只有首批回复或图片资产得到明确编辑认可才重开 |
 | Hold | Purely Wholesome | Week 12 不排发送 | Researched — hold | PHP 同主题仍在审稿，避免重复 pitch fountain 主题 |
 | Hold | PetsAnalysis | Week 12 不排发送 | Researched — hold | 首批无反馈；其偏好兽医/行业作者，现阶段不扩量 |

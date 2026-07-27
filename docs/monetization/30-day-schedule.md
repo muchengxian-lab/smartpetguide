@@ -66,7 +66,7 @@ Task A（Amazon 联盟）降级为后台基建——花 3 天一次性做完页�
 | D25 | 2026-07-24 | Review | 比较 Round 4 首批的回复、编辑问题与零反馈 | 决定剩余 3 封 Continue / Revise / Hold | 不把发送数量当成果 |
 | D26 | 2026-07-25 | Editorial | 若 PHP 有评论则修订；若对方提案到达则独立审核 | 人工确认修改或选题决定 | 不承诺 reciprocal/dofollow |
 | D27 | 2026-07-26 | Review | ✅ 已汇总 GA4 归因、编辑合作、Homerunpet 与 Round 4 信号 | ✅ Week 12 维持资源比例，战术收敛为单集群/单实验/外联止损 | Week 11 收盘已写入周报、计划和 metrics |
-| D28 | 2026-07-27 | Review | 比较 Aorkuler 正向 not-now、Homerunpet/Batch A 零回复与 PHP 审稿进展；识别可复制信号 | 确认 `EXP-44C79107` 是否为唯一 Active；若 PHP 仍无更新，审核一次轻量跟进 | 信号对比记录；不把 editorial 回复混入 Brand 回复率 |
+| D28 | 2026-07-27 | Review | ✅ 已比较 Aorkuler 正向 not-now、Homerunpet 0 reply、Batch A 0/2 replies 与 PHP 审稿无更新；当前可复制的是证据型交付/编辑关系，不是发送量 | **待用户确认**：`EXP-44C79107` 推荐为唯一 Active；PHP 一次轻量跟进已 `Ready for human` | ✅ 信号对比已记录；editorial 进展未混入 Brand 回复率；未扩名单、未发送邮件 |
 | D29 | 2026-07-28 | Cleanup | 最终文档清理，只标记所有「历史/废弃」模板和过期入口 | 无 | 活跃入口唯一指向 Week 12；不做内容扩写 |
 | D30 | 2026-07-29 | Decision | 产出 30 天总结：Amazon 基建、Brand 回复/意向、Editorial 关系、GA4 商业事件与下一步建议 | 分别选择 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause | 最终 sprint 复盘写入 `progress.md`；默认建议 Task A Keep、Brand Pause/Iterate、Editorial Continue cautiously，按当天新证据调整 |
 

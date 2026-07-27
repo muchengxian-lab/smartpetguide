@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-26 周日 Week 11 收盘 / Week 12 排期 | GSC 完整 7 天（7/18-7/24）0 clicks / 19 impressions / position 21.7，对比前 7 天 0 / 9 / 51.1：曝光 +10（+111.1%）、排名改善 29.4 位，但仍无点击；索引仍为 33 / 15 | GA4 最近 7 天 29 active / 28 new / 36 page views / 121 events；渠道表可见 Direct 28 / Unassigned 2 / Organic Search 1 / Referral 0，唯一自然搜索为 Bing；affiliate/outbound/key events 均为 0 | Pinterest 30 天 801 impressions / 0 outbound，继续不发布 | Pretty Happy Pets Google Doc 0 条新评论、对方提案未到；Round 4 首批两封均无回复，剩余三封 Week 12 继续 Hold | Semrush 沿用 7/17 用户确认的 12 RD / 28 backlinks / 20 keywords / AS 2，未刷新 | guides 源码 quickAnswer 14/38**
+**最后更新：2026-07-27 周一 Week 12 D28 | `EXP-44C79107` 项目决定为 Yes / 推荐作为唯一 Active，知识库实际激活等待用户确认 | Pretty Happy Pets Gmail 线程仍为 6 封且最后活动 7/20；共享 DOCX 0 条新评论、11 天未修改，一次轻量跟进已准备为 `Ready for human` | Homerunpet 仅见我方 7/15 邮件、0 reply；Round 4 Batch A 仍为 0/2 replies，剩余三封 Hold | Snapshot 10 基线不变：GSC 33 / 15、完整 7 天 0 clicks / 19 impressions / position 21.7；GA4 29 active / 121 events / affiliate 0 / outbound 0；Pinterest 30 天 801 impressions / 0 outbound；Semrush 沿用 7/17 旧快照 | guides 源码 quickAnswer 14/38**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
 
@@ -110,7 +110,7 @@
 
 | 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
 |:--:|------|------|------|------|
-| 周一 | 7/27 | 记录 `EXP-44C79107` 是否作为唯一 Active 的明确决定；推荐 Activate，但在用户/知识库主控确认前不得改实验状态 | 若 PHP 仍无评论/提案，准备一封原线程轻量跟进；实际发送为 human-only，用户确认前只可标 `Ready for human` | 唯一实验选择有明确 yes/no 与证据；PHP 不询问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold |
+| 周一 | 7/27 | ✅ 项目决定 Yes：推荐 `EXP-44C79107` 作为唯一 Active；知识库实际激活等待用户确认 | ✅ PHP 邮件/共享 DOCX 已实时复核，无新邮件/评论；一次原线程轻量跟进已准备为 `Ready for human`，未发送；Homerunpet 与 Round 4 仍无回复 | ✅ 唯一实验有明确 yes/no 与证据；跟进不问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold；无页面改动 |
 | 周二 | 7/28 | 对 GSC 的 4 个 `已抓取-尚未编入索引` URL 做五类分诊：技术阻塞 / 模板重复 / 证据不足 / 需求弱 / 等待重评 | 完成 D29 文档清理，只标记历史/废弃入口，不扩大内容改动 | 4/4 URL 有页面级证据和处置类别；无实质变化不做 URL Inspection、不改源码 |
 | 周三 | 7/29 | 完成 30 天变现 Sprint D30 复盘 | 分开给出 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Outreach Pause/Iterate、Editorial Continue cautiously，若有新回复则重算 | 回复率、付费信号、编辑关系和下一步逐轨记录；`30-day-schedule.md` 与相关日志同步 |
 | 周四 | 7/30 | Feeder Reliability coverage-gap：逐项核对 jamming、portion/calibration、backup-power/travel failover | 只有确认具体缺口时，最多加固 1 个现有页面 | 先查生成页/生产页/Git；无缺口写 `No change needed`；不新建 URL、不做广泛重写 |

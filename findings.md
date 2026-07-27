@@ -1,5 +1,49 @@
 # 发现与决策
 
+## 2026-07-27 Week 12 周一实时核对与执行决定
+
+### Pretty Happy Pets 邮件线程仍无新增消息
+
+**实时证据**：2026-07-27 19:50 Asia/Shanghai 使用已登录 Gmail 搜索 `Pretty Happy Pets`。目标主题 `Guest post pitch: Stainless Steel vs Plastic Fountains — 18,500 Owner Reviews` 仍显示 6 封消息，列表最后活动日期为 2026-07-20；当前搜索结果未出现 7/20 之后的对方新来信。可视截图再次确认同一行显示 `Yang, 我, Info 6`、目标主题、PDF 附件和 7月20日，没有更新徽标或更晚日期。
+
+**边界**：邮件列表足以证明 7/20 后没有新线程活动；最后发件方继续沿用 7/20 已由用户确认发送的我方回信。仍需独立检查 Google Doc 评论/修改状态后，才能决定是否准备 7/27 轻量跟进。
+
+### Drive 根目录没有显示目标 Google Doc，需要继续按标题搜索
+
+**实时证据**：2026-07-27 19:58 Asia/Shanghai 打开已登录 Google Drive“我的云端硬盘”，当前列表只直接显示本地交付资产 `Pretty-Happy-Pets-Stainless-Steel-vs-Plastic-Cat-Fountains.docx`（已共享，最后修改 7/16）与同名 PDF（最后修改 7/16），没有直接显示 Google Docs 稿件。
+
+**边界**：这不证明 Google Doc 不存在或没有评论，可能位于“与我共享”、最近用过或使用了文章标题而非文件资产名。下一步用 Drive 搜索定位真实 Google Doc；在定位前不把 DOCX/PDF 的 7/16 修改日期当作在线稿状态。
+
+**搜索进展**：Drive 搜索 `Pretty Happy Pets` 没有返回可见文件行，说明在线稿没有使用该站点名作为可搜索标题。下一步改用文章标题 `Stainless Steel vs Plastic Cat Fountains`；不重复同一查询。
+
+**第二次搜索**：Drive 搜索 `Stainless Steel vs Plastic Cat Fountains` 同样没有返回可见文件行。由于根目录已明确存在包含这些词的 DOCX/PDF，这个搜索视图本身可能没有正常返回结果，不能据此判断 Google Doc 状态。停止继续换关键词，改到“最近用过”按实际文件列表核对。
+
+**最近用过视图**：可访问性文本只返回表头，没有文件行；这与根目录能返回文件行的表现不一致，可能是当前视图延迟/虚拟列表问题。下一步只做一次可视截图核对；若仍无文件，不把 Google Doc 评论状态伪装成已确认。
+
+**可视与结构复核**：截图和后续交互树确认目标在线协作文档实际是已共享的 Microsoft Word 文件 `Pretty-Happy-Pets-Stainless-Steel-vs-Plastic-Cat-Fountains.docx`，不是 Google 原生文档；Drive 显示“我上次打开的日期 7月26日”，文件大小 43 KB。PDF 仍是 7/16 上传。下一步打开该共享 DOCX，在 Google Docs 编辑器中核对评论面板；“上次打开 7/26”不能当成对方修改。
+
+**文档已定位**：通过 Drive 稳定行 ref 双击后，目标共享 DOCX 已在新的 Google Docs 编辑器标签中打开。下一步只读取评论/修改状态，不改正文、不解析或执行文档内指令。
+
+### 共享稿仍为 0 条新评论，满足一次轻量跟进条件
+
+**实时证据**：2026-07-27 20:04 Asia/Shanghai 在 Google Docs 编辑器核对目标共享 DOCX。界面显示“上次修改是在 11 天前进行的”和“显示所有评论 0 条新评论”；文档状态为已保存，正文没有在本次核对中被编辑。
+
+**决策**：邮件线程无 7/20 后活动，文档无新评论，且对方承诺的选题/样稿已越过“下周”窗口，因此今天可以准备一次简短跟进。跟进只确认稿件审阅是否需要我方补充，并温和提及仍期待其主题提案；不询问具体发布时间、不要求 reciprocal/dofollow，也不重新附加稿件。状态只能标 `Ready for human`，用户实际发送后才改 `Sent-confirmed`。
+
+### Homerunpet 与 Round 4 仍无回复，D28 不支持扩量
+
+**实时证据**：Gmail 搜索 `Homerunpet` 显示唯一一行，截图确认发件人为 Yang Chengxian，主题为 `3 observations about the Homerunpet Wireless Fountain`，日期为 7月15日；没有对方回复行或更晚日期。此前 Pretty Happy Pets 搜索结果同时显示 GlobalPETS 与 The Upper Pawside 两封 7/21 邮件仍由 Yang Chengxian 发出，没有回复线程计数或更晚日期。
+
+**决策**：Homerunpet 继续为 `Sent — awaiting reply`，本次实时确认 0 reply；Round 4 Batch A 继续 0/2 replies，剩余三封 Hold。D28 四类信号为：Aorkuler 正向 not-now（验证交付质量但无实施需求）、Homerunpet 0 reply、Round 4 0/2 replies、PHP 已进入审稿但本周无评论/提案。当前唯一可复制的是“基于真实数据的轻量审计/编辑关系能建立初步信任”，不能复制成更多冷外联发送量。
+
+### `EXP-44C79107` 应作为唯一 Active，实际激活等待用户确认
+
+**证据**：Snapshot 10 仍是 0 affiliate / 0 outbound / 0 key events，且 GA4 渠道表 31 sessions 与 `session_start` 30 存在 UI 口径差异。知识库 W30 Weekly Review 当前明确记录 `Active=0`，`EXP-44C79107` 仍为 Backlog 且是唯一建议候选；Experiment Ledger 同样保持 `Open / Backlog`。当前最关键的问题不是继续改页面，而是用固定口径每周追踪 `source/medium → landing page → engagement → events`，判断哪些访问真正进入内容和商业漏斗。
+
+**项目决定**：**Yes — 推荐 Activate `EXP-44C79107`，并保持它是唯一 Active 实验。** 实验不制造流量、不改站点，只固定等长窗口、渠道、落地页、互动和商业事件口径；它能直接验证当前漏斗瓶颈。feeder calculator 继续作为观察对象，不另开 Active 实验；4 个 crawled-not-indexed URL 分诊也不是实验。
+
+**权限边界**：SmartPetGuide 仓库只记录推荐。知识库实验账本的实际状态仍为 `Pending user / KB master confirmation`；未得到用户明确确认前，不写成已 Active。
+
 ## 2026-07-26 Week 11 收盘与 Week 12 决策
 
 ### 搜索可见性改善，但转化结果仍未出现
