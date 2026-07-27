@@ -213,6 +213,8 @@ Chengxian Yang
 
 > 在原邮件线程直接回复；不更改主题，不重新附 PDF/DOCX，不添加新链接。下方只是待人工发送稿，用户确认实际发送前不得标 `Sent-confirmed`。
 
+> **建议发送窗口（尚未 Scheduled）**：2026-07-28 周二 20:30 Asia/Shanghai。Pretty Happy Pets 官方 contributor 页面只说明读者覆盖 US / UK / Canada，没有公开编辑团队所在地；该时段大致重叠英国下午与美国东部工作日上午。若错过，顺延到下一个工作日同一时段，不在中国时间深夜追发。
+
 ```text
 Hi Pretty Happy Pets Team,
 
@@ -224,7 +226,7 @@ Best,
 Chengxian Yang
 ```
 
-**状态**：`Ready for human`。理由：截至 2026-07-27，邮件线程无 7/20 后活动，共享 DOCX 显示 0 条新评论、11 天未修改。该邮件不询问发布时间，不承诺 reciprocal/dofollow。
+**状态**：`Ready for human`，不是 `Scheduled`。理由：截至 2026-07-27，邮件线程无 7/20 后活动，共享 DOCX 显示 0 条新评论、11 天未修改。该邮件不询问发布时间，不承诺 reciprocal/dofollow。
 
 ### 下一步行动
 

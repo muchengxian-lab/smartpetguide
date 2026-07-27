@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-27 周一 Week 12 D28 | `EXP-44C79107` 项目决定为 Yes / 推荐作为唯一 Active，知识库实际激活等待用户确认 | Pretty Happy Pets Gmail 线程仍为 6 封且最后活动 7/20；共享 DOCX 0 条新评论、11 天未修改，一次轻量跟进已准备为 `Ready for human` | Homerunpet 仅见我方 7/15 邮件、0 reply；Round 4 Batch A 仍为 0/2 replies，剩余三封 Hold | Snapshot 10 基线不变：GSC 33 / 15、完整 7 天 0 clicks / 19 impressions / position 21.7；GA4 29 active / 121 events / affiliate 0 / outbound 0；Pinterest 30 天 801 impressions / 0 outbound；Semrush 沿用 7/17 旧快照 | guides 源码 quickAnswer 14/38**
+**最后更新：2026-07-27 周一 Week 12 D28 | `EXP-44C79107` 已由用户确认并激活为唯一 Active，Review 8/2；只做每周 10-15 分钟 GA4 渠道基线，不加工具、不另开归因实验 | Pretty Happy Pets Gmail 线程仍为 6 封且最后活动 7/20；共享 DOCX 0 条新评论、11 天未修改，一次轻量跟进已准备为 `Ready for human` | Homerunpet 仅见我方 7/15 邮件、0 reply；Round 4 Batch A 仍为 0/2 replies，剩余三封 Hold | Snapshot 10 基线不变：GSC 33 / 15、完整 7 天 0 clicks / 19 impressions / position 21.7；GA4 29 active / 121 events / affiliate 0 / outbound 0；Pinterest 30 天 801 impressions / 0 outbound；Semrush 沿用 7/17 旧快照 | guides 源码 quickAnswer 14/38**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
 
@@ -110,7 +110,7 @@
 
 | 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
 |:--:|------|------|------|------|
-| 周一 | 7/27 | ✅ 项目决定 Yes：推荐 `EXP-44C79107` 作为唯一 Active；知识库实际激活等待用户确认 | ✅ PHP 邮件/共享 DOCX 已实时复核，无新邮件/评论；一次原线程轻量跟进已准备为 `Ready for human`，未发送；Homerunpet 与 Round 4 仍无回复 | ✅ 唯一实验有明确 yes/no 与证据；跟进不问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold；无页面改动 |
+| 周一 | 7/27 | ✅ 用户已确认，`EXP-44C79107` 已激活为唯一 Active；Review 8/2，只做每周 10-15 分钟轻量 GA4 渠道基线 | ✅ PHP 邮件/共享 DOCX 已实时复核，无新邮件/评论；一次原线程轻量跟进已准备为 `Ready for human`，未发送；Homerunpet 与 Round 4 仍无回复 | ✅ 生命周期重建为 38 total / Active 1 / Backlog 31；跟进不问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold；无页面改动 |
 | 周二 | 7/28 | 对 GSC 的 4 个 `已抓取-尚未编入索引` URL 做五类分诊：技术阻塞 / 模板重复 / 证据不足 / 需求弱 / 等待重评 | 完成 D29 文档清理，只标记历史/废弃入口，不扩大内容改动 | 4/4 URL 有页面级证据和处置类别；无实质变化不做 URL Inspection、不改源码 |
 | 周三 | 7/29 | 完成 30 天变现 Sprint D30 复盘 | 分开给出 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Outreach Pause/Iterate、Editorial Continue cautiously，若有新回复则重算 | 回复率、付费信号、编辑关系和下一步逐轨记录；`30-day-schedule.md` 与相关日志同步 |
 | 周四 | 7/30 | Feeder Reliability coverage-gap：逐项核对 jamming、portion/calibration、backup-power/travel failover | 只有确认具体缺口时，最多加固 1 个现有页面 | 先查生成页/生产页/Git；无缺口写 `No change needed`；不新建 URL、不做广泛重写 |
@@ -122,7 +122,7 @@
 
 - 新 URL 配额为 **0**；8/1 月度资产复检之外，全周最多 1 个有证据缺口的现有页实质修改。
 - Feeder Reliability 是唯一主验证集群；jamming、portion/calibration 已有覆盖时不得重复堆内容，travel/power failover 只有在覆盖审计证明缺口后才进入页面。
-- GA4 归因候选实验 `EXP-44C79107` 必须是唯一 Active；用户/知识库主控未确认前只记录推荐，不在本站仓库擅自激活实验。
+- GA4 归因实验 `EXP-44C79107` 已于 7/27 获用户明确确认并成为唯一 Active；Review 8/2。全周只维护一次 10-15 分钟基线，不增加 attribution tooling，不另开归因实验。
 - Pretty Happy Pets 只允许 7/27 起一次轻量跟进；外部发送必须由用户确认后才能从 `Ready for human` 改为 `Sent-confirmed`。
 - BarkyTech / Purely Wholesome / PetsAnalysis 全周默认 Hold；只有首批回复或明确编辑反馈才重开，不因零回复机械扩量。
 - Pinterest 不发布新 Pin；Semrush 未成功登录刷新时明确沿用 7/17 旧快照，不伪装成 Week 12 新数据。

@@ -57,14 +57,14 @@ C:\Users\Administrator\smartpetguide
 - Round 4：GlobalPETS + The Upper Pawside 于 7/21 实际发送，状态 Sent-confirmed — awaiting reply，截至 7/26 为 0/2 replies。BarkyTech / Purely Wholesome / PetsAnalysis Week 12 默认 Hold。
 - Brand Outreach：Aorkuler Closed — not now (positive)，不再跟进；Homerunpet Sent — awaiting reply。没有第二个认真回复、付费 beta 或实施信号。
 - W30 AI Signal：feeder jamming / portion calibration 为唯一 High 站点信号；现有 jamming 与 portion 页面已覆盖大量核心问题，必须先做 coverage-gap。WiFi/app/offline 为 Reinforce/Watch；travel/power failover 可能有缺口，但需要本地与生产证据。
-- `EXP-44C79107`（GA4 source/medium → landing page → engagement → events）是唯一建议 Active 的实验；用户/知识库主控明确确认前，不得在本站或知识库擅自改状态。
+- `EXP-44C79107`（GA4 source/medium → landing page → engagement → events）已于 7/27 获用户确认并激活为唯一 Active；Review 8/2，只维护每周 10-15 分钟基线，不增加 attribution tooling，不另开归因实验。
 - 7/25、7/26 AI Signal runner BadRequestError 属于知识库自动化 P0，由另一个主控对话处理。本项目只消费修正后的输出，不修改自动化脚本、Signal 或 Experiment 账本。
 
 如果用户确认、实时后台、Git、源码、构建或线上结果与上述快照不同，以新证据为准，并同步所有受影响项目文件；不得静默混用新旧口径。
 
 三、Week 12 日期闸门
 
-- 7/27 周一：记录 `EXP-44C79107` 是否作为唯一 Active 的明确决定；若 PHP 仍无评论/提案，准备一次原线程轻量跟进。实际发送为 human-only，用户确认前最多标 Ready for human。Round 4 剩余三封继续 Hold。
+- 7/27 周一：`EXP-44C79107` 已获用户确认并激活为唯一 Active；若 PHP 仍无评论/提案，准备一次原线程轻量跟进。实际发送为 human-only，用户确认前最多标 Ready for human。Round 4 剩余三封继续 Hold。
 - 7/28 周二：对 4 个 crawled-not-indexed URL 做 4/4 五类分诊；先检查页面级证据，不用站点总桶反推 URL。完成 D29 文档清理，只标历史/废弃入口，不扩大内容改动。
 - 7/29 周三：完成 30 天变现 Sprint D30。Task A、Brand Outreach、Editorial/Guest Post 必须分开给 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Pause/Iterate、Editorial Continue cautiously，但必须按当天新证据重算。
 - 7/30 周四：Feeder Reliability coverage-gap 3/3：jamming、portion/calibration、backup-power/travel failover。先查源码、dist/生成页、生产页与 Git；只有发现具体缺口时最多改 1 个现有页面。无缺口则记录 No change needed。

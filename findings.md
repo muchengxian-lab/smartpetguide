@@ -36,13 +36,13 @@
 
 **决策**：Homerunpet 继续为 `Sent — awaiting reply`，本次实时确认 0 reply；Round 4 Batch A 继续 0/2 replies，剩余三封 Hold。D28 四类信号为：Aorkuler 正向 not-now（验证交付质量但无实施需求）、Homerunpet 0 reply、Round 4 0/2 replies、PHP 已进入审稿但本周无评论/提案。当前唯一可复制的是“基于真实数据的轻量审计/编辑关系能建立初步信任”，不能复制成更多冷外联发送量。
 
-### `EXP-44C79107` 应作为唯一 Active，实际激活等待用户确认
+### `EXP-44C79107` 已由用户确认并激活为唯一 Active
 
-**证据**：Snapshot 10 仍是 0 affiliate / 0 outbound / 0 key events，且 GA4 渠道表 31 sessions 与 `session_start` 30 存在 UI 口径差异。知识库 W30 Weekly Review 当前明确记录 `Active=0`，`EXP-44C79107` 仍为 Backlog 且是唯一建议候选；Experiment Ledger 同样保持 `Open / Backlog`。当前最关键的问题不是继续改页面，而是用固定口径每周追踪 `source/medium → landing page → engagement → events`，判断哪些访问真正进入内容和商业漏斗。
+**证据**：Snapshot 10 仍是 0 affiliate / 0 outbound / 0 key events，且 GA4 渠道表 31 sessions 与 `session_start` 30 存在 UI 口径差异。W30 Weekly Review 截至 7/26 的历史快照为 `Active=0`，并把 `EXP-44C79107` 列为唯一建议候选；用户已于 2026-07-27 明确确认激活。当前最关键的问题不是继续改页面，而是用固定口径每周追踪 `source/medium → landing page → engagement → events`，判断哪些访问真正进入内容和商业漏斗。
 
-**项目决定**：**Yes — 推荐 Activate `EXP-44C79107`，并保持它是唯一 Active 实验。** 实验不制造流量、不改站点，只固定等长窗口、渠道、落地页、互动和商业事件口径；它能直接验证当前漏斗瓶颈。feeder calculator 继续作为观察对象，不另开 Active 实验；4 个 crawled-not-indexed URL 分诊也不是实验。
+**项目决定**：**Activated-confirmed — `EXP-44C79107` 是唯一 Active 实验，Review 2026-08-02。** 实验不制造流量、不改站点，只固定等长窗口、渠道、落地页、互动和商业事件口径；它能直接验证当前漏斗瓶颈。feeder calculator 继续作为观察对象，不另开 Active 实验；4 个 crawled-not-indexed URL 分诊也不是实验。
 
-**权限边界**：SmartPetGuide 仓库只记录推荐。知识库实验账本的实际状态仍为 `Pending user / KB master confirmation`；未得到用户明确确认前，不写成已 Active。
+**执行边界**：用户确认只授权激活该轻量观察实验，不授权新增归因工具、制造流量、改站点或启动第二个实验。知识库持久化 override 与生成账本应保持 `Open / Active`，其余实验继续 Backlog。
 
 ## 2026-07-26 Week 11 收盘与 Week 12 决策
 
@@ -62,7 +62,7 @@
 
 **发现**：GA4 最近 7 天为 29 active / 28 new / 36 page views / 121 events；渠道表可见 Direct 28、Unassigned 2、Organic Search 1、Referral 0，唯一自然搜索仍为 Bing。事件为 page_view 36 / session_start 30 / first_visit 30 / user_engagement 18 / scroll 5 / form_start 2，affiliate_click、outbound_click 和 key events 都为 0。渠道行合计 31 sessions，而 session_start 为 30，属于 GA4 UI/口径边界，不能人为抹平。
 
-**决策**：`EXP-44C79107`（source/medium → landing page → engagement → events 基线）是 Week 12 唯一建议激活的实验，因为它直接验证当前漏斗瓶颈且无需制造流量或改站点。实际 Active 状态仍需用户/知识库主控明确确认；本站排期只记录推荐，不越界修改知识库实验账本。
+**决策**：`EXP-44C79107`（source/medium → landing page → engagement → events 基线）已于 7/27 获用户确认并激活为 Week 12 唯一 Active，因为它直接验证当前漏斗瓶颈且无需制造流量或改站点。Review 8/2；其余实验继续 Backlog。
 
 ### 外联和 30 天变现 Sprint 进入止损决策
 

@@ -4269,3 +4269,35 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] `git diff --check` 通过；仅有 Windows LF→CRLF 提示。
 - [x] 变更范围为 6 个预期 Markdown 文件，没有 `src/`、`dist/`、配置、URL 或外部发送动作。
 - [x] 跨文件措辞一致：PHP=`Ready for human`、Round 4=`0/2`、Homerunpet=`0 reply`、`EXP-44C79107`=`推荐 Activate / 实际待确认`。
+
+---
+
+## 会话：2026-07-27 周一 — 用户确认激活 GA4 归因实验
+
+### 用户决定与执行边界
+
+- [x] 用户明确确认激活 `EXP-44C79107`；该确认满足知识库“同时最多 1 个 Capacity=Active”的人工闸门。
+- [x] 实验保持 `Status=Open / Decision=Adjust / Capacity=Active`，Review Date 为 2026-08-02；激活不等于 Continue、Completed 或 Proven。
+- [x] 执行动作仍只有每周 10-15 分钟 `source/medium → landing page → engagement → downstream events` 基线；不安装新归因工具、不制造流量、不改站点、不启动第二个实验。
+- [x] 其余实验继续 Backlog；feeder calculator 只观察 outcome，4 个 crawled-not-indexed URL 继续作为常规分诊而非实验。
+
+### Pretty Happy Pets 发送时间
+
+- [x] 官方 contributor 页面只说明读者覆盖 US / UK / Canada，没有公开编辑团队所在地，无法把收件方假定为单一时区。
+- [x] 建议人工发送窗口为 **2026-07-28 周二 20:30 Asia/Shanghai**，大致重叠英国下午和美国东部工作日上午；错过则顺延到下一个工作日同一时段。
+- [x] 邮件仍为 `Ready for human`，不是 `Scheduled` 或 `Sent-confirmed`；继续在原线程回复，不改主题、不重新附稿。
+
+### 文件同步范围
+
+- [x] SmartPetGuide：`task_plan.md`、`findings.md`、Month 2 战略书、Claude 执行护栏、Week 12 活跃模板、30 天排期、Round 3 外联记录与本日志。
+- [x] 知识库：持久化 lifecycle override 由 Backlog 改为 Active；生成账本、生命周期计数、当前项目页、Snapshot/Audit 和健康/看板在同一轮闭环。
+- [x] W30 周报中的 Active=0 保留为截至 7/26 的历史快照，不反向改写；当前状态以 7/27 override、Experiment Ledger 和项目事实层为准。
+- [x] 7/27 生命周期重建实时结果为 **38 experiments / 1 Active / 31 Backlog / 5 Completed / 22 overdue**。总数与 Backlog 没有按昨日的 37/31 简单减一，是因为当前 Decision Queue 又产生了 1 个新候选；以生成 JSON 为准，不强行套用旧计数。
+
+### 提交前验收
+
+- [x] `lifecycle.json` 解析确认当前只有 1 个 Active：`EXP-44C79107 / Open / Adjust / Review 2026-08-02 / Active`。
+- [x] 生成的 `AI Signal Experiment Ledger.md` 与持久化 `lifecycle-overrides.json` 均已显示 `Open / Active`；不是只手改生成账本。
+- [x] `git diff --check` 通过；SmartPetGuide 只有 8 个预期 Markdown 文件变化，没有 `src/`、站点数据、URL 或配置变化。
+- [x] 本次 build、Vercel、线上页面和 sitemap 验证 N/A；实验激活与邮件时间建议都不改变站点产物。
+- [x] Pretty Happy Pets 邮件没有发送也没有排程；用户实际设置定时发送后才可从 `Ready for human` 改为 `Scheduled`。
