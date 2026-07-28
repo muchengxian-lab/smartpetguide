@@ -35,6 +35,7 @@ Current order:
 3. Editorial Outreach Round 4 Batch A was sent on 7/21 and is still 0/2 replies; keep BarkyTech, Purely Wholesome, and PetsAnalysis on Hold unless a real editorial response changes the evidence.
 4. Brand Outreach: Aorkuler is `Closed — not now (positive)` and must not be contacted again; Homerunpet remains `Sent — awaiting reply`.
 5. Track `Drafted`, `Ready for human`, `Scheduled`, `Sent-confirmed`, `Replied`, `Accepted`, and `Placed` separately.
+6. Before the next content expansion, fix the review template's structured-data semantics: do not reuse Amazon third-party ratings as SmartPetGuide `AggregateRating` or author `reviewRating`, and do not invent Merchant shipping/return policies for affiliate pages.
 
 ## Non-Negotiable Rules
 
@@ -56,4 +57,5 @@ Current order:
 - Do not use `git add -A`; preserve unrelated and untracked user files.
 - Do not mark an email or form as sent unless the user explicitly confirms the external action.
 - The Pretty Happy Pets acknowledgement was sent by the user at 2026-07-20 13:00 Asia/Shanghai. It is now `Sent-confirmed`; do not send a duplicate.
+- The one permitted Pretty Happy Pets editorial follow-up was also sent by the user on 2026-07-28 in the original thread. It is `Sent-confirmed`; do not send another follow-up unless the editor first replies with a concrete request.
 - Use `docs/claude-week12-execution-prompt-template.md` as the Week 12 session contract and complete its file-sync matrix before closing work. The Week 11 template is historical only.

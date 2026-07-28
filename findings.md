@@ -1,5 +1,28 @@
 # 发现与决策
 
+## 2026-07-28 GSC 索引、购物与增强功能下降诊断
+
+### 下降主因是索引/富结果资格集合收缩，不是当前 schema 语法报错
+
+**实时证据**：GSC 四类报告均更新于 2026-07-27。Product snippets 当前 1 valid / 0 invalid，Merchant listings 1 / 0，Breadcrumb 10 / 0，Review snippets 2 / 0；过去 90 天均未检测到严重问题。Product 与 Merchant 当前唯一 URL 都是 `/reviews/petlibro-granary-review/`；Review 的 2 个有效项也是同一 Petlibro URL 下的两个同名项目，不是两个唯一页面。Breadcrumb 近期约 15→10，降幅 5，与 Page Indexing 的 33→28 同为 -5。GSC 人工处置措施和安全问题均显示“未检测到任何问题”。
+
+**本地产物对照**：`dist` 仍有 109 页输出 `BreadcrumbList`、26 页输出 `Review` + `Product`、25 页输出 `AggregateRating`。因此 GSC 的 10 / 1 / 2 不是站点 schema 库存。Google 官方文档也明确说明：富结果报告只显示样本，只有已索引页面会出现，索引页面减少会带来结构化数据项减少；即使标记正确也不保证展示富结果。
+
+**判断边界**：现有证据强烈支持“索引下降 + 抽样/资格评估”是四类有效项同步下降的主因，但没有逐 URL 的历史迁移记录，不能把 Breadcrumb -5 与 indexed -5 写成已证明的一一因果。Page Indexing 已索引首屏还包含 Catit review，但它没有进入当前 Product/Review 明细，说明已索引只是必要条件，不保证富结果资格。
+
+### 当前模板存在独立的 Review / Merchant 语义合规风险
+
+**发现**：Review 模板把 `products.json` 中来自 Amazon 的评分与评论量写入 `Product.aggregateRating`，并把同一外部平均分写成 Chengxian Yang 的 `Review.reviewRating`；同时 `Offer.url` 指向 Amazon，但 SmartPetGuide 本身不负责销售、配送或退货。Google Review snippet 规范明确禁止聚合其他网站的 reviews/ratings；Merchant listing 只适用于用户能从该商家页面购买商品的页面。
+
+**决策**：不要为消除 Merchant 的 `shippingDetails` / `hasMerchantReturnPolicy` 警告而编造本站政策。应单独做一次模板合规修复：移除第三方 Amazon 评分在 `aggregateRating` / 作者 `reviewRating` 中的复用，并停止把联盟评测页表达成本站 Merchant Offer；若未来要保留作者评分，必须先建立、展示并执行真实的 SmartPetGuide 编辑评分方法。修复后只对 Petlibro、Catit 和 1 个高价值 review 做 Rich Results Test + URL Inspection，再等待重抓，不批量催索引。
+
+### 影响与优先级
+
+- **索引 33→28：高影响。** 未索引页面不能稳定参与普通搜索，应优先处理 2 个重复页和 5 个证据不足页，而不是追求总数。
+- **Product / Review 有效项下降：中等影响。** 主要损失是价格、评分、优缺点等富展示及潜在 CTR，不等于普通排名被处罚。
+- **Breadcrumb 15→10：低至中等影响。** 主要影响搜索结果路径展示；HTML 导航、canonical 与站内链接仍正常。
+- **Merchant 2→1 与两个 warning：低影响。** 本站是内容/联盟研究站而不是卖家；Merchant 数量不是当前业务 KPI，也不应通过虚构运费/退货政策优化。
+
 ## 2026-07-28 Week 12 周二 GSC 索引分诊
 
 ### 实时 Page Indexing 总桶已变化，Snapshot 10 不能继续当今日现状

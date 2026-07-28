@@ -4420,3 +4420,95 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [ ] 首次首页校验把 PowerShell 变量命名为 `$home`，与只读环境变量 `$HOME` 大小写不敏感冲突，报 `VariableNotWritable`；该次 `HomeStatus=0` 无效。下一次改用 `$homeResponse`，不沿用无效结果。
 - [x] 改用 `$homeResponse` 后生产首页返回 200，预期首页 title 存在；首页验证闭环。
 - [x] 首次推送后 `origin/master...HEAD = 0 0`；最终工作区将在补写本生产验证记录并再次推送后复核。
+
+---
+
+## 会话：2026-07-28 周二 — GSC 索引、购物与增强功能下降诊断
+
+### 开工与用户确认
+
+- [x] 用户确认 Pretty Happy Pets 轻量跟进邮件已于 2026-07-28 晚间在原线程实际发送；状态可从 `Ready for human` 更新为 `Sent-confirmed`，不得再次发送。
+- [x] 开工 Git：`origin/master...HEAD = 0 0`，工作区干净；当前 HEAD `c9f73ac`。
+- [x] 本次先诊断 GSC Indexing、Shopping 与 Enhancements 的实际趋势、明细和影响；在证据完成前不把面板下降直接解释为技术故障，也不批量改页面。
+- [x] 浏览器仅有用户闲鱼标签 `t1`，已保留不动；新建带标签 `gsc` 的 GSC 只读标签并进入 `sc-domain:smartpetguide.net`。
+
+### GSC 概述实时值
+
+- [x] 2026-07-28 晚间 GSC 概述当前卡片：HTTPS 10 有效 / 0 非 HTTPS；购物为产品摘要 1 有效 / 0 无效、商家信息 1 / 0；增强功能为路径 10 / 0、评价摘要 2 / 0。
+- [x] 当前四类结构化/体验报告都没有“无效”网页；用户看到的是有效项数量下降或趋势变化，不等同于新增结构化数据错误。
+- [x] 概述的无障碍树没有给出折线历史点或下降日期，不能只凭当前卡片解释原因；下一步逐个打开产品摘要、商家信息、路径和评价摘要报告读取趋势与示例。
+- [ ] 第一次用 `find text "产品摘要" click --exact` 返回 Done，但重新 snapshot 仍停在概述页；该点击没有形成导航，不计为报告已打开。下一步使用概述卡片中的明确“打开报告”按钮 ref，并在点击后核对 URL/标题，不重复文本点击。
+- [ ] 第一次传入未加引号的 `@e81` 时 PowerShell 将其当作语法，agent-browser 报 `Missing arguments for: click`；页面未变化。改为引用 `'@e81'` 后点击成功，下一步重新 snapshot 验证导航。
+- [ ] 卡片“打开报告”按钮 `e81` 点击后仍停留概述页，因此不计为成功。已改点侧栏实际链接 `e90`；下一步核对 URL/标题，若仍失败则读取 link href 并直接导航，不再重复 click。
+- [x] 侧栏 `e90` 实际导航成功到 `/search-console/r/product`，报告标题“产品摘要”。当前为 **1 个有效网页 / 0 个无效网页 / 无严重问题**。
+- [x] 产品摘要当前下降不是因为 GSC 检出 Product 严重错误；报告明确有效项仍可作为富媒体结果，0 invalid。下一步读取折线日期和有效示例 URL，判断是检测范围缩小、页面退出索引还是模板标记变化。
+- [ ] 首次指定 visualization 绝对路径执行 `screenshot --full` 没有返回错误，但目标文件未生成，随后 `view_image` 报找不到文件；没有视觉证据可用。下一步改用 agent-browser 自动临时路径截图并读取其实际返回路径，不重复假定文件已写入。
+- [x] 改用 agent-browser 自动临时路径后截图可读。产品摘要报告最后更新为 **2026-07-27**；图表显示约 6/28 从 1 个有效页开始，7 月上旬升至 2、短暂到 3，7 月下旬从 2 降到当前 1。
+- [x] 产品摘要全程红色无效项为 0，页面下方显示过去 90 天未检测到任何问题。由此可排除“Product 标记报错导致整体掉光”；更像有效资格/索引样本集合缩小。下一步读取当前有效示例 URL，并与源码中的 Product 标记覆盖数比较。
+- [x] 产品摘要当前唯一有效示例是 `https://smartpetguide.net/reviews/petlibro-granary-review/`，字段名称 `Petlibro Granary Camera Feeder`；表中“上次检测到问题”显示 2026-07-15，但当前状态有效且 invalid=0。
+- [x] 这说明 GSC 产品摘要报告并不是站内 Product 标记覆盖清单，而是 Google 当前识别/纳入富结果资格的 URL 集合；下一步需与本地 review 模板中实际输出的 JSON-LD 数量对照。
+
+### 商家信息报告
+
+- [x] 商家信息当前为 **1 个有效网页 / 0 个无效网页 / 无严重问题**。
+- [x] 当前唯一有效项有 2 个非严重警告：缺少 `offers.hasMerchantReturnPolicy` 与 `offers.shippingDetails`，各影响 1 项，验证未启动。
+- [x] 这些是改进展示的可选/建议字段，不是导致页面失去商家信息资格的 critical error；是否补充必须先确认本站是否能提供真实配送与退货政策，不能编造政策数据。
+- [ ] 商家信息页再次执行 `screenshot --full` 时没有返回保存路径，无法证明文件已生成；改用普通 viewport screenshot 后得到实际临时路径。后续不再依赖该页 full screenshot。
+- [x] 商家信息报告最后更新 **2026-07-27**；趋势与产品摘要几乎同步：约 6/25 从 1 开始、7 月初升到 2、短暂到 3，7 月下旬从 2 降到 1，invalid 始终 0。
+- [x] 产品摘要与商家信息同时从 2→1，且两者都没有 critical error，强烈指向同一批 Product URL 的“被 Google 纳入报告/索引的集合”缩小，而不是两个独立 schema 同时坏掉。已进入商家信息有效项清单，下一步确认 URL。
+- [x] 商家信息当前唯一有效 URL 也为 `https://smartpetguide.net/reviews/petlibro-granary-review/`，与产品摘要完全相同；这进一步支持“共同 URL 集合变化”判断。
+- [x] 已切换到增强功能“路径”报告，下一步核对有效/无效、趋势和示例 URL，判断 10 的下降是否同样由索引样本集合变化造成。
+
+### 路径（Breadcrumb）报告
+
+- [x] 路径当前为 **10 个有效网页 / 0 个无效网页 / 无严重问题**。
+- [x] 当前没有 Breadcrumb critical error；有效数下降本身不表示站点导航或 Breadcrumb JSON-LD 语法损坏。
+- [ ] 本次普通 screenshot 也出现“命令成功完成但未返回保存路径”的不稳定行为；没有据此假定截图存在。下一步优先用 DOM/报告明细读取，必要时只再尝试一次自动临时截图。
+- [x] 已进入“有效的项目数”明细并读取完整 10 URL：`gps-trackers-no-monthly-fee`、`lr5-vs-amazon-basics-cost`、`automatic-feeder-wifi-keeps-disconnecting`、`smart-pet-devices-subscription-cost`、`pet-tech-statistics`、`stainless-steel-cat-fountains`、`petlibro-granary-review`、`stop-automatic-feeder-from-jamming`、`cat-breaking-into-automatic-feeder`、`wopet-vs-petlibro`。
+- [x] 这 10 项是当前被 Google 纳入 Breadcrumb 富结果报告的 URL，不是站点全部 Breadcrumb 标记的覆盖清单。因此“10 个有效”不能反推其余页面缺少 Breadcrumb，也不能把有效数下降直接当成模板故障。
+- [x] 改用侧栏真实 href 直接导航后稳定读取报告；上次更新同为 **2026-07-27**，过去 90 天无问题，invalid 全程为 0。
+- [x] SVG 柱状数据表明 Breadcrumb 近期约从 15 降到 10，降幅 **5**；这与 Page Indexing 的 33→28 同为 -5 且更新时间一致，是“索引/报告资格集合收缩带动增强项计数下降”的强相关证据，但未取得逐 URL 历史迁移记录前不写成已证明的因果。
+
+### 评价摘要（Review snippets）报告
+
+- [x] 已打开独立报告并核对当前为 **2 个有效网页 / 0 个无效网页 / 无严重问题**。
+- [x] 与产品摘要、商家信息和路径一致，当前没有 Review snippet critical error；下一步读取趋势与 2 个有效示例，并与站点实际 Review/Product JSON-LD 覆盖对照。
+- [x] 报告正文确认上次更新为 **2026-07-27**，过去 90 天未检测到任何问题；当前值 2、invalid 0。
+- [ ] 评价摘要页自动截图再次没有返回保存路径，未把它当作可用证据；已改用 DOM/SVG 只读提取，并成功读取更新时间、坐标轴与当前计数。后续不再重复依赖截图路径。
+- [x] SVG 只读提取显示 Review 有效项在 7 月后段从约 4 逐步降到当前 2，红色无效项始终为 0；下降方向与索引及 Product 报告同步，而不是某日突然出现 schema error。
+- [x] “2 个有效”明细实际上是同一个 URL `https://smartpetguide.net/reviews/petlibro-granary-review/` 下的两个同名 `Petlibro Granary Camera Feeder` 项，而不是 2 个唯一页面。由此确认 GSC 卡片计数可能是有效 item 数，不能机械当作唯一 URL 数；此前 4→2 很可能是另一个 Product URL 退出当前识别/资格集合。
+- [ ] 从评价摘要明细页切回路径时沿用了旧 snapshot 的 `e58`，GSC 已刷新引用并返回 `Unknown ref`，页面未变化；随后的 DOM 提取仍是评价摘要，不误记为 Breadcrumb。下一步重新 snapshot 取得新 ref 后再切换。
+- [ ] 即使重新 snapshot 后，GSC 明细页的侧栏 ref 仍在下一条命令中失效并再次返回 `Unknown ref`；已停止重复 ref 点击。下一步改为只读解析侧栏“路径”链接的真实 href 后直接导航，并在导航后核对 URL/标题。
+
+### 本地模板与构建产物对照
+
+- [x] 源码确认 Review 模板在 `src/pages/reviews/[slug].astro` 输出 1 个 `Review`，其 `itemReviewed` 为 `Product`，并在评级/评论量满足门槛时输出 `AggregateRating` 与 `reviewRating`；Breadcrumb 组件独立输出 `BreadcrumbList`。
+- [x] 当前 `dist` 实际覆盖：`BreadcrumbList` **109 个 HTML 页面**、`Review` **26 页**、`Product` **26 页**、`AggregateRating` **25 页**。与 GSC 的 Breadcrumb 10、Product 唯一 URL 1、Review 唯一 URL 1 明显不同，证明 GSC 报告不是 schema 全站库存，而是 Google 当前抓取、识别并纳入富结果资格的子集。
+- [ ] 首次用 `rg` 拼接带引号的 JSON-LD 固定字符串时，PowerShell/参数传递后的匹配意外返回 0；已用 `Get-Content -Raw -Encoding UTF8` 的精确 `Contains()` 重算并取得上面计数，不沿用错误的 0。
+- [x] Merchant 两个警告字段在模板中确实未输出；但站点是内容/联盟研究站，不是履约商家。没有自有配送与退货政策的真实事实时，不应为消除警告伪造 `shippingDetails` 或 `hasMerchantReturnPolicy`。
+
+### Google 官方口径核对
+
+- [ ] 按 agent-reach 搜索规范首次调用 `mcporter` 时命中 Windows PowerShell 执行策略，`mcporter.ps1` 被禁止；改用 `mcporter.cmd` 后 Exa 元数据仍未加载，位置参数调用失败。已停止重复相同写法，下一步先检查 mcporter 可用服务/显式参数格式；若 Exa 服务不可用，再直接读取 Google 官方文档 URL。
+- [x] `mcporter list` 确认当前只有离线的 `node_repl`，没有可调用的 Exa；已按技能回退策略改用 Web 搜索，并限定 Google Search Central / Search Console 官方来源。
+- [x] Google 官方“结构化数据项缺失/下降”文档明确说明：富结果报告只显示页面样本；只有已索引页面会出现；索引页面减少会带来结构化数据项减少；严重标记错误和抽样变化也是可能因素。本次 GSC 为 invalid=0，且本地标记仍存在，因此“索引下降 + 抽样/资格集合变化”比 schema 语法损坏更符合现有证据。
+- [x] Google 官方同时说明：结构化数据正确也不保证一定展示富结果；结构化数据人工处置只影响富结果资格，不直接影响普通网页排名。本次未见 invalid 或 manual action 证据。
+- [x] Google Product 官方口径区分：Product snippets 适用于不能在本站直接购买的产品评测/聚合页；Merchant listings 只适用于用户能在该页从该商家购买的页面，不适用于仅链接到第三方卖家的页面。SmartPetGuide 应优先维护 Product snippets，不应把 Merchant 警告当作当前 P0。
+- [x] Google Review snippet 官方规范明确禁止聚合其他网站的 reviews/ratings。当前模板将 `products.json` 中的 Amazon 评分/评论量输出为 `Product.aggregateRating`，又把同一外部平均分输出成由 Chengxian Yang 给出的 `Review.reviewRating`；这是 Rich Results Test 可能不报语法错的语义/政策风险，应作为结构化数据模板修复，而不是继续补 Merchant 字段。
+- [x] 本站页面正文可见同一评分与评论量，但来源是 Amazon owner reviews；“页面上可见”只满足可见性要求，不能抵消“不得聚合其他网站评分”的官方规则。
+- [x] GSC“人工处置措施”当前显示 **未检测到任何问题**，可排除现有 manual action 作为本轮富结果下降的直接原因。
+- [x] GSC“安全问题”当前同样显示 **未检测到任何问题**；本轮下降没有安全处罚或人工处罚证据。
+
+### 结论、文件同步与验收
+
+- [x] 诊断结论：Indexing 33→28 与 Breadcrumb 约 15→10 同为 -5；Product/Merchant 约 2→1、Review 约 4→2，四类 invalid 均为 0 且同在 7/27 更新。主因按“索引减少 + 富结果资格/抽样变化”处理，不按全站 schema 语法故障处理。
+- [x] 独立必修项：Review 模板不得继续把 Amazon 第三方评分/评论量标成本站 `AggregateRating` 或 Chengxian Yang 的 `reviewRating`；联盟页不补虚构的 Merchant shipping/return policy。该项进入下一源码窗口，本会话只做诊断与计划同步，未擅自改 26 页模板。
+- [x] Pretty Happy Pets 一次轻量跟进已按用户确认更新为 `Sent-confirmed`；等待真实编辑评论/采用消息/提案，不再发送第二次跟进。
+- [x] 已同步 `task_plan.md`、`findings.md`、`progress.md`、`weekly-metrics-log.md`、`30-day-schedule.md`、Round 3 外联记录、根/项目 Claude 入口、执行护栏与 Week 12 活跃提示词。
+- [x] `weekly-report.md` N/A：今天是周二，本次不是周五/周日完整快照；Month 2 战略书 N/A：北极星、资源比例和触发条件未改变；站点源码/页面/日期 N/A：本会话没有执行模板修复。
+- [x] `git diff --check` 通过；本次只有 10 个预期 Markdown 文件变化。纯文档/诊断会话不运行 build、不触发 Vercel 部署。
+- [x] 已关闭本会话创建的 GSC 标签 `t4`；用户原有闲鱼标签 `t1` 保留未动。
+- [ ] 首次用侧栏 anchor 的 `textContent.trim()==="网页"` 定位 Page Indexing 链接返回 `found=false`；DOM 显示真实文本包含图标字串 `file_copy网页`。已改为按可见文本结尾/aria 语义匹配，不继续使用全等匹配。
+- [x] 已进入 28 个“已编入索引”示例明细；首屏 10 条包含 2 个 review URL：`catit-pixi-fountain-review`（7/22 抓取）与 `petlibro-granary-review`（7/15 抓取）。其中 Catit 已索引但未出现在当前 Product/Review 富结果明细，说明“已索引”是必要条件但不保证进入富结果报告；抽样、资格评估与重抓处理仍会影响计数。
+- [x] 首屏其余 8 条与 Breadcrumb 当前有效清单重合，进一步支持 Breadcrumb 报告与当前已索引样本集合高度联动。
+- [ ] 尝试把已索引明细的每页行数从 10 切到 100：agent-browser `select` 返回成功但 UI 仍选中 10；随后 DOM 点击 100 也未改变分页状态。没有把 10 条首屏误当完整 28 条，后续如需全量清单改用分页或导出；本次诊断已有足够证据，不为凑清单继续反复操作。

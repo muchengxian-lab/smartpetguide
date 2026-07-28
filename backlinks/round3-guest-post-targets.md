@@ -176,7 +176,7 @@ press@smartpetguide.net
 |:--:|------|:--:|------|
 | 1 | PetPlace.com | ❌ 未发送 | D0 起邮箱未找到（petplace.com/write-for-us 无公开编辑邮箱），标注为 unresolved |
 | 2 | EntirelyPets.com | ❌ 未发送 | D0 起邮箱未找到（entirelypets.com/guest-blogger.html 无公开编辑邮箱），标注为 unresolved |
-| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started / follow-up Ready for human** | 7/16 已提交约 2,099 字最终稿；截至 7/27 Gmail 线程仍为 6 封、最后活动 7/20，共享 DOCX 0 条新评论且 11 天未修改；一次轻量跟进已准备，尚未发送 |
+| 3 | Pretty Happy Pets | ✅ **Editorial + veterinary review started / follow-up Sent-confirmed** | 7/16 已提交约 2,099 字最终稿；一次轻量跟进已由用户于 7/28 在原线程实际发送。当前继续等待编辑/兽医评论与 2-3 个提案，不重复发送 |
 | 4 | Your Vet Online | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 | 5 | LenoxVet | ✅ Sent-confirmed | D7 闭环邮件已由人工发送 |
 
@@ -209,11 +209,11 @@ Best,
 Chengxian Yang
 ```
 
-### #3 Pretty Happy Pets — 轻量跟进（2026-07-27，Ready for human）
+### #3 Pretty Happy Pets — 轻量跟进（2026-07-28，Sent-confirmed）
 
-> 在原邮件线程直接回复；不更改主题，不重新附 PDF/DOCX，不添加新链接。下方只是待人工发送稿，用户确认实际发送前不得标 `Sent-confirmed`。
+> 用户已确认于 2026-07-28 在原邮件线程实际发送；没有更改主题、重新附 PDF/DOCX 或添加新链接。下方保留实际发送前准备的文案用于审计，不得再次发送。
 
-> **建议发送窗口（尚未 Scheduled）**：2026-07-28 周二 20:30 Asia/Shanghai。Pretty Happy Pets 官方 contributor 页面只说明读者覆盖 US / UK / Canada，没有公开编辑团队所在地；该时段大致重叠英国下午与美国东部工作日上午。若错过，顺延到下一个工作日同一时段，不在中国时间深夜追发。
+> **发送状态**：`Sent-confirmed`。用户只确认发送动作，仓库不推断对方已读、回复、接受发布或形成外链。
 
 ```text
 Hi Pretty Happy Pets Team,
@@ -226,7 +226,7 @@ Best,
 Chengxian Yang
 ```
 
-**状态**：`Ready for human`，不是 `Scheduled`。理由：截至 2026-07-27，邮件线程无 7/20 后活动，共享 DOCX 显示 0 条新评论、11 天未修改。该邮件不询问发布时间，不承诺 reciprocal/dofollow。
+**状态**：`Sent-confirmed`。用户于 2026-07-28 确认已实际发送；该邮件不询问发布时间，不承诺 reciprocal/dofollow。下一步只等待真实编辑评论、采用/发布时间确认或对方提案，不再发送第二次跟进。
 
 ### 下一步行动
 
@@ -236,4 +236,4 @@ Chengxian Yang
 | 2 | **回复确认收悉** | 人工 | ✅ 7/14 已发送；已告知 7/17 前提交 draft |
 | 3 | **审稿启动确认回信** | Sent-confirmed | 用户已于 2026-07-20 13:00 Asia/Shanghai 实际发送；等待 Google Doc 评论和对方提案 |
 | 4 | **外部投稿审核决定** | Week 12 等待对方 | 截至 7/27 提案尚未到；收到后仅按相关性、原创性和来源质量独立审核，不承诺 reciprocal/dofollow 链接 |
-| 5 | **编辑/兽医审核轻量跟进** | **Ready for human** | 7/27 实时核对无邮件/评论更新后已准备；仅在原线程人工回复一次，不问发布时间、不重新附稿；用户实际发送后才改 `Sent-confirmed` |
+| 5 | **编辑/兽医审核轻量跟进** | **Sent-confirmed** | 用户已于 7/28 在原线程实际发送一次；不问发布时间、不重新附稿。后续等待真实评论/回复，不重复跟进 |

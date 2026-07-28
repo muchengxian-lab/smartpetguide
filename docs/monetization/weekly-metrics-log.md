@@ -790,3 +790,18 @@
 **9/9 分类：** 技术阻塞 0 / 模板重复 2 / 证据不足 5 / 搜索需求弱 1 / 等待重评 1。9 个规范 URL 均在线 200、自指 canonical、无 `noindex`、存在生成页和 sitemap；无尾斜杠 automatic feeder 样本为正常 308 到规范页。完整 URL、抓取日期与处置见 `findings.md`。
 
 **本次动作：** 不做机械 URL Inspection，不批量改页；只删除 `fountain-filter-guide` 中发现的无来源漂白剂饮水建议并改为保守的厂商手册/清洁边界。其余证据不足页面排入后续来源审计，重复页在保留 query/链接证据后再决定合并与 301。
+
+### Shopping / Enhancements Checkpoint — 2026-07-28
+
+> 四类报告均更新于 2026-07-27；本节记录富结果有效项与语义审计，不把它们当作唯一 URL 库存或普通排名指标。
+
+| GSC 报告 | 当前有效 / 无效 | 实时证据与判断 |
+|------|:--:|------|
+| Product snippets | **1 / 0** | 唯一 URL 为 Petlibro Granary review；近期约 2→1 |
+| Merchant listings | **1 / 0** | 同一 Petlibro URL；2 个非严重 warning 为缺 shipping/return policy，不应为联盟站编造 |
+| Breadcrumb | **10 / 0** | 近期约 15→10；-5 与 indexed 33→28 同步，但只记强相关，不写一一因果 |
+| Review snippets | **2 / 0** | 2 个 item 都属于同一 Petlibro URL；近期约 4→2，不是 2 个唯一页面 |
+
+**构建产物对照：** `dist` 有 109 页 `BreadcrumbList`、26 页 `Review` + `Product`、25 页 `AggregateRating`。GSC 富结果报告只是当前已索引/被识别/抽样的子集；Google 官方也说明索引下降会减少结构化数据项，且正确标记不保证展示。
+
+**风险与后续：** GSC 人工处置措施和安全问题均为 0；当前下降没有处罚证据。但 Review 模板把 Amazon 第三方评分/评论量复用为本站 `AggregateRating` 与作者 `reviewRating`，并输出指向 Amazon 的 Merchant `Offer`，不符合 Google Review/Merchant 语义边界。下一源码窗口优先做模板合规修复；不补虚构的配送/退货字段。

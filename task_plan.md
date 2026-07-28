@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-28 周二 Week 12 D29 | 昨日 `40a8267` 已补推到 `origin/master` | GSC 7/28 实时 Indexing 为 28 indexed / 23 unindexed，crawled-not-indexed 已从旧快照 4 变为 9；9/9 分诊完成：技术阻塞 0 / 模板重复 2 / 证据不足 5 / 搜索需求弱 1 / 等待重评 1 | D29 活跃入口已核对：Week 12 唯一活跃，Week 11 历史归档 | `fountain-filter-guide` 的无来源漂白剂建议已做最小安全修正 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍保留为 7/26 历史基线，今天未刷新**
+**最后更新：2026-07-28 周二 Week 12 D29 | GSC 7/28 实时 Indexing 为 28 indexed / 23 unindexed，crawled-not-indexed 9；9/9 分诊完成 | Shopping/Enhancements 同步核对：Product 1/0、Merchant 1/0、Breadcrumb 10/0、Review 2/0，均无严重问题；下降主要与索引/富结果资格集合收缩相关，但 Review 模板复用 Amazon 评分存在独立语义合规风险 | Pretty Happy Pets 一次轻量跟进已由用户在原线程实际发送，状态 `Sent-confirmed`，不得重复发送 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
 
@@ -111,7 +111,7 @@
 | 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
 |:--:|------|------|------|------|
 | 周一 | 7/27 | ✅ 用户已确认，`EXP-44C79107` 已激活为唯一 Active；Review 8/2，只做每周 10-15 分钟轻量 GA4 渠道基线 | ✅ PHP 邮件/共享 DOCX 已实时复核，无新邮件/评论；一次原线程轻量跟进已准备为 `Ready for human`，未发送；Homerunpet 与 Round 4 仍无回复 | ✅ 生命周期重建为 38 total / Active 1 / Backlog 31；跟进不问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold；无页面改动 |
-| 周二 | 7/28 | ✅ GSC 实时清单由旧 4 条更新为 9 条并完成 9/9 五类分诊：技术 0 / 重复 2 / 证据 5 / 需求弱 1 / 等待 1 | ✅ D29 活跃入口核对完成；Week 11 已历史归档。发现 1 条真实安全缺口后只最小修正 filter guide，不扩写其他页面 | ✅ 9/9 有源码、构建、sitemap、线上 200/canonical、抓取日期与内容证据；未做 URL Inspection；页面变更按 build/部署闭环 |
+| 周二 | 7/28 | ✅ GSC 实时清单由旧 4 条更新为 9 条并完成 9/9 五类分诊；✅ Shopping/Enhancements 下降诊断：四类 invalid 均为 0，索引/样本集合联动为主因，并发现 Amazon rating / Merchant Offer 的独立 schema 合规风险 | ✅ D29 活跃入口核对完成；✅ PHP 一次轻量跟进已由用户在原线程实际发送，`Sent-confirmed`；不重复发送 | ✅ 9/9 页面证据闭环；Shopping/Enhancements 与 `dist`/Google 官方规则完成交叉验证；人工处置与安全问题均为 0；schema 修复进入下一源码窗口，不伪造运费/退货政策 |
 | 周三 | 7/29 | 完成 30 天变现 Sprint D30 复盘 | 分开给出 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Outreach Pause/Iterate、Editorial Continue cautiously，若有新回复则重算 | 回复率、付费信号、编辑关系和下一步逐轨记录；`30-day-schedule.md` 与相关日志同步 |
 | 周四 | 7/30 | Feeder Reliability coverage-gap：逐项核对 jamming、portion/calibration、backup-power/travel failover | 只有确认具体缺口时，最多加固 1 个现有页面 | 先查生成页/生产页/Git；无缺口写 `No change needed`；不新建 URL、不做广泛重写 |
 | 周五 | 7/31 | GSC 两个完整 7 天 query/page 对照；GA4 `source/medium → landing page → engagement → events`；Pinterest 10 分钟检查 | 观察 feeder portion 计算器使用，不在无基线时宣称 uplift | 新快照写入 metrics/progress/weekly report；保留 GA4 UI 31 channel sessions vs 30 `session_start` 的口径差异；不发 Pin |
@@ -127,6 +127,7 @@
 - BarkyTech / Purely Wholesome / PetsAnalysis 全周默认 Hold；只有首批回复或明确编辑反馈才重开，不因零回复机械扩量。
 - Pinterest 不发布新 Pin；Semrush 未成功登录刷新时明确沿用 7/17 旧快照，不伪装成 Week 12 新数据。
 - GSC 7/28 实时显示 9 个已抓取未索引 URL；9/9 分诊不是实验。只在真实页面变化、URL 状态变化或验证到期时做 Inspection。
+- Review/Product schema 下一源码窗口必须做语义合规修复：不得把 Amazon 第三方评分写成本站 `AggregateRating` 或作者 `reviewRating`，不得为联盟页编造 Merchant 配送/退货政策；修复后只抽测 Petlibro、Catit 与 1 个高价值 review。
 - AI Signal 日报的 7/25、7/26 runner 错误属于知识库自动化 P0，本项目只消费修正后的周报/VOC，不在 Week 12 站点排期中修复。
 - 每日最多 3 个 P0；每次收工必须更新 `progress.md`，其他文件按事实变化同步或明确写 N/A。
 - 纯文档日不 build、不部署；源码/页面/站点数据有变化时才执行 `npm.cmd run verify`、明确暂存、提交推送、Vercel READY、HTTP 200 与生产 HTML 验证。

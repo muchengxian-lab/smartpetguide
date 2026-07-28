@@ -22,7 +22,7 @@ Task A（Amazon 联盟）降级为后台基建——花 3 天一次性做完页�
 
 - **已完成阶段**：D0-D13（2026-06-29 ~ 2026-07-03，部分阶段压缩执行）
 - **当前里程碑**：首轮 6 品牌验证完成，回复率 1/6（17%）；Aorkuler 认可交付质量但暂不实施，已关闭为 `not now (positive)`。
-- **最新执行**：D27 已于 7/26 完成 Week 11 复盘；Homerunpet email-first v2 仍等待回复，Round 4 Batch A 为 0/2 回复，Pretty Happy Pets 仍在审稿。
+- **最新执行**：D29 已于 7/28 完成活跃入口清理；Homerunpet email-first v2 仍等待回复，Round 4 Batch A 为 0/2 回复，Pretty Happy Pets 仍在审稿且一次轻量跟进已 `Sent-confirmed`。
 - **当前阻塞**：尚无第二个品牌认真回复、付费 beta 或实施信号。D30 必须把 Task A、Brand Outreach 与 Editorial/Guest Post 分开裁决；编辑合作进展不得算成 Brand 付费验证。
 - **日期校准**：2026-07-26 是周日；下一工作周为 2026-07-27 周一至 2026-08-02 周日。D 编号代表阶段，不等于自然日。
 
@@ -67,7 +67,7 @@ Task A（Amazon 联盟）降级为后台基建——花 3 天一次性做完页�
 | D26 | 2026-07-25 | Editorial | 若 PHP 有评论则修订；若对方提案到达则独立审核 | 人工确认修改或选题决定 | 不承诺 reciprocal/dofollow |
 | D27 | 2026-07-26 | Review | ✅ 已汇总 GA4 归因、编辑合作、Homerunpet 与 Round 4 信号 | ✅ Week 12 维持资源比例，战术收敛为单集群/单实验/外联止损 | Week 11 收盘已写入周报、计划和 metrics |
 | D28 | 2026-07-27 | Review | ✅ 已比较 Aorkuler 正向 not-now、Homerunpet 0 reply、Batch A 0/2 replies 与 PHP 审稿无更新；当前可复制的是证据型交付/编辑关系，不是发送量 | ✅ 用户已确认：`EXP-44C79107` 已激活为唯一 Active；PHP 一次轻量跟进已 `Ready for human` | ✅ 生命周期重建为 38 total / Active 1 / Backlog 31；editorial 进展未混入 Brand 回复率；未扩名单、未发送邮件 |
-| D29 | 2026-07-28 | Cleanup | 最终文档清理，只标记所有「历史/废弃」模板和过期入口 | 无 | 活跃入口唯一指向 Week 12；不做内容扩写 |
+| D29 | 2026-07-28 | Cleanup | ✅ 最终文档清理完成；活跃入口唯一指向 Week 12；同时完成 GSC Indexing 与 Shopping/Enhancements 下降诊断 | ✅ Pretty Happy Pets 一次轻量跟进已在原线程实际发送，`Sent-confirmed` | ✅ 不扩写内容、不重复发信；GSC 四类富结果 invalid 均为 0，Review/Product schema 语义合规修复进入下一源码窗口 |
 | D30 | 2026-07-29 | Decision | 产出 30 天总结：Amazon 基建、Brand 回复/意向、Editorial 关系、GA4 商业事件与下一步建议 | 分别选择 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause | 最终 sprint 复盘写入 `progress.md`；默认建议 Task A Keep、Brand Pause/Iterate、Editorial Continue cautiously，按当天新证据调整 |
 
 ## 周里程碑

@@ -8,7 +8,8 @@
 - 时间权重：外链/编辑型分发 35-40%；GSC 与现有页加固 25-30%；战略 GEO/VOC 20-25%；维护 10-15%，Pinterest 只观察。
 - Week 12 新页面固定为 0；Feeder Reliability coverage-gap 命中具体缺口时，最多加固 1 个现有页面。
 - GEO 只做现有页的 `identity + source + date + quickAnswer + answerability`，不再启动新的技术 GEO 冲刺。
-- 索引已达到 33；4 个已抓取未索引页面只按实质变化维护，主力转向 query/page、排名、CTR 和渠道归因。
+- 7/28 实时索引为 28 / 23，crawled-not-indexed 为 9；9/9 已完成五类分诊。不得继续把 7/26 的 33 / 15 / 4 当现状，也不得为恢复总数机械 Inspection。
+- Shopping/Enhancements 当前 Product 1/0、Merchant 1/0、Breadcrumb 10/0、Review 2/0，四类 invalid 均为 0，人工处置与安全问题均为 0。Review 模板存在独立语义风险：不得把 Amazon 第三方评分写成本站 `AggregateRating` 或作者 `reviewRating`，不得为联盟页编造 Merchant 运费/退货政策。
 - Feeder Reliability 是唯一主验证集群；先审计 jamming、portion/calibration、travel/power failover，已有覆盖时记录 No change needed。
 - `EXP-44C79107` 已于 7/27 获用户确认并激活为唯一 Active；只维护每周 10-15 分钟 GA4 渠道基线，Review 8/2，不增加归因工具、不启动第二个实验。
 - Round 4 Batch A 两封已于 7/21 `Sent-confirmed`，截至 7/26 为 0/2 replies；剩余三封 Week 12 保持 Hold。Brand Outreach 不扩量，Aorkuler 已关闭，只观察 Homerunpet。
@@ -62,6 +63,7 @@
 - 只有用户明确确认实际发送后，状态才能从 `Ready for human` 或 `Scheduled` 改为 `Sent-confirmed`；定时发送尚未发生时只能写 `Scheduled`。
 - Guest Post 的“已发送”不等于“获得外链”；周报分别统计 Sent、Reply、Accepted、Placed、Referring domain。
 - Pretty Happy Pets 确认回信已由用户于 **2026-07-20 13:00 Asia/Shanghai** 实际发送，当前为 `Sent-confirmed`；不得重复发送。
+- Pretty Happy Pets 一次轻量审稿跟进已由用户于 **2026-07-28** 在原线程实际发送，当前为 `Sent-confirmed`；等待真实评论/回复，不得发送第二次跟进。
 - Brand Outreach 每批最多 3 个品牌；Aorkuler 已关闭，不再联系；Homerunpet 只等待回复。Round 4 是独立的编辑型外联；GlobalPETS + The Upper Pawside 已发送，只观察回复，剩余三封保持 hold。
 
 ## 文件同步矩阵
