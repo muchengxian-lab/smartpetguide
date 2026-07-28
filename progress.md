@@ -4520,11 +4520,11 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - 已确认评测模板把 Amazon 第三方评分/评论量输出为本站 `Product.aggregateRating`，并同时作为 Chengxian Yang 的 `Review.reviewRating`；联盟购买链接还被标成 Merchant `Offer`。本轮按 Google 富结果语义边界修复，不补虚构的 shipping/return 字段。
 
 ### 本轮计划
-- [ ] 删除不合规的 Review/Product/Offer/AggregateRating JSON-LD，保留 Article 与 Breadcrumb。
-- [ ] 将评测页可见评分明确标注为 Amazon customer rating，避免来源混淆。
-- [ ] 完成 build、日期校验、生成 HTML 结构化数据计数与多页抽查。
-- [ ] 推送并验证 Vercel 生产页；随后核对 GSC 原因桶，仅对已真正解决的整桶问题启动验证。
-- [ ] 同步 `task_plan.md`、`findings.md`、周指标/执行记录并收口 Git。
+- [x] 删除不合规的 Review/Product/Offer/AggregateRating JSON-LD，保留 Article 与 Breadcrumb。
+- [x] 将评测页可见评分明确标注为 Amazon customer rating，避免来源混淆。
+- [x] 完成 build、日期校验、生成 HTML 结构化数据计数与多页抽查。
+- [x] 推送并验证 Vercel 生产页；随后核对 GSC 原因桶，仅对已真正解决的整桶问题启动验证。
+- [x] 同步 `task_plan.md`、`findings.md`、周指标/执行记录并收口 Git。
 
 ### 本地实现与验证
 - [x] `src/pages/reviews/[slug].astro` 已删除第三方 Amazon 评分衍生的 `Review` / `Product` / `Offer` / `AggregateRating` JSON-LD；页面仍由 `BaseLayout` 与 `Breadcrumb` 输出 Article/Breadcrumb。
@@ -4533,11 +4533,33 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] `npm.cmd run verify` 通过：114 页 build；100 个内容页日期通过；26/26 review 页 Article/Breadcrumb 与 Amazon 来源标注通过，Review/Product/Offer/AggregateRating 为 0。
 - [x] 已连接用户登录的 Chrome，仅新建本会话专用 `gsc` 标签；原闲鱼标签 `t1` 未触碰。
 - [x] GSC 7/28 页面索引实时值复核仍为 28 indexed / 23 unindexed；6 个原因桶计数和状态未变：自动重定向 8（失败）、重定向错误 4（失败）、crawled-not-indexed 9（失败）、备用规范页 1（已开始）、Google 选择不同规范 1（已开始）、discovered-not-indexed 0（已通过）。
-- [ ] 首次点击“重定向错误”时，PowerShell 把未加引号的 `@e36` 当作 shell 语法，`agent-browser` 返回 `Missing arguments for: click`；页面没有发生变化。后续统一给 ref 加单引号，不重复错误写法。
+- [x] 首次点击“重定向错误”时，PowerShell 把未加引号的 `@e36` 当作 shell 语法，`agent-browser` 返回 `Missing arguments for: click`；页面没有发生变化。后续统一给 ref 加单引号，已成功进入并处理目标报告。
 - [x] “重定向错误”4 条实时 URL 已取到：无尾斜杠的 `/reviews/wopet-automatic-feeder-review`（7/13 抓取）；以及带尾斜杠的 `/guides/smart-home-pet-devices/`、`/guides/best-no-subscription-cameras/`（均 6/23）、`/reviews/amazon-basics-litter-box-review/`（5/25）。下一步逐条核对当前 HTTP 跳转链、最终状态和 canonical，再决定是否整桶验证。
 - [x] 当前 HTTP 复核：无尾斜杠 WOPET URL 为单跳 `308` 到带尾斜杠规范 URL；其余 3 条当前均直接 `200`。GSC 上一轮验证详情为 3 条“待定”+ 1 条“失败”，提供“开始新的验证”按钮；尚未点击。
 - [x] 验证详情“待定”表明确列出 3 个当前 200 URL，因此唯一失败项可由集合差集确定为无尾斜杠 WOPET URL。该 URL 当前的单跳 308 属于预期 canonicalization，不是坏链；旧验证很可能把预期跳转本身继续计为 redirect error。暂不重复点整桶验证，先检查站内是否仍引用无尾斜杠 URL。
 - [x] 源码、`llms.txt`、RSS、sitemap 与当前生成 HTML 中的 WOPET 内链均使用带尾斜杠规范 URL；`vercel.json` 也明确 `trailingSlash: true`。没有发现站内继续制造无尾斜杠入口。因 4 条现状已从不可跟随/旧状态变为 3×200 + 1×单跳 308，待生产部署完成后可对“重定向错误”启动一次新的整桶验证。
 - [x] “网页会自动重定向”8 条明细已核对：5 条为历史无尾斜杠 URL（pet-travel、Catit、Honeytour、self-cleaning guide、Aorkuler），2 条为历史 HTTP 首页，另 1 条为带尾斜杠 `/reviews/nofee-gps-tracker-review/`。前 7 条显然属于预期 HTTPS/尾斜杠规范化；最后 1 条需单独查最终目标。该原因本身通常是正常排除，不因状态栏显示旧“失败”就机械验证。
 - [x] No-Fee GPS 规范 URL 当前直接返回 200，因此自动重定向桶无需代码修复或整桶验证；等待 Google 自然重抓更新旧样本。
-- [ ] 首次 `git add` 因沙箱对 `.git/index.lock` 写入返回 `Permission denied`，没有文件被暂存。已保留所有改动，下一次改用已批准的 Git 权限执行相同的明确文件列表。
+- [x] 首次 `git add` 因沙箱对 `.git/index.lock` 写入返回 `Permission denied`，没有文件被暂存；改用已批准的 Git 权限后按相同明确文件列表成功暂存、提交与推送。
+
+### 提交、部署与生产验证
+- [x] 明确暂存 12 个目标文件后提交 `146b9fb fix: remove third-party review schema`，并推送至 `origin/master`；推送后 `origin/master...HEAD=0/0`。
+- [x] Vercel 生产部署 `dpl_2j8VeYUk8iiXNo1UoyaHe5Y8NfZS` 为 `READY`。
+- [x] 生产首页、Petlibro、Catit、LR5 HTML 已下载抽查；三个评测页均保留 Article/Breadcrumb、显示 `Amazon customer rating`，且 Review/Product/Offer/AggregateRating 均为 false/0。
+- [x] 首次生产 HTML 汇总命令误用了 PowerShell 只读变量 `$HOME`，导致首页那一行读成环境变量；三个目标评测页结果不受影响。改用 `$homeHtml` 重跑后，首页 37,965 字节且含 `<title>`，方法已修正。
+
+### GSC 外部动作
+- [x] 已在“重定向错误 → 验证详情”点击一次“开始新的验证”；首个 1.3 秒快照尚未刷新，等待 3 秒后按钮消失，状态变为 **待定 4 / 失败 0**，确认新一轮整桶验证已成功启动。
+- [x] Petlibro URL Inspection 当前显示“网址已收录到 Google”；点击请求后页面正文出现“已请求编入索引 / 已将网址添加到优先抓取队列”，确认重抓请求成功。旧抓取快照仍显示 Product 1、Merchant 1、Breadcrumb 1、Review 2，需等待 Google 用新生产 HTML 替换，不能把旧快照当修复未生效。
+- [x] Catit URL Inspection 当前显示已收录；首次沿用旧 ref 时 agent-browser 错配到旧表格元素，改为文字/角色定位后短暂出现“糟糕！出了点问题”，但随后页面出现“已请求编入索引”确认层。按最终 UI 状态记为请求成功；未再重复提交。
+- [x] `fountain-filter-guide` URL Inspection 确认为“已抓取 - 尚未编入索引”，上次抓取 2026-06-27，抓取与索引许可均为是、self-canonical 正确；其 7/28 安全/来源实质更新晚于上次抓取。本轮请求后出现“已请求编入索引”，已加入优先抓取队列。
+- [x] `cat-wont-drink-from-water-fountain` 当前同为 crawled-not-indexed，上次抓取 2026-07-09；抓取/索引许可与 self-canonical 均正确，其 7/22 内容整改晚于上次抓取。本轮“已请求编入索引”确认成功。
+- [x] LR5 review 已收录；作为第三个模板/高价值 review 抽样，本轮“已请求编入索引”确认成功。至此精准重抓共 5 个：Petlibro、Catit、LR5、fountain-filter、cat-wont-drink；不再扩大到其余 23 个 review 或全部 9 个未索引 URL。
+- [x] 已关闭本会话创建的 GSC 标签 `t5`；用户原闲鱼标签 `t1` 保留且未触碰。
+
+### 文件同步与边界
+- [x] 已同步 `task_plan.md`、`findings.md`、`progress.md`、周指标日志、30 天排期、根/项目 Claude 入口、执行 guardrails 与 Week 12 活跃提示词。
+- [x] `content-dates.json` N/A：本轮是模板展示归因与结构化数据合规修复，没有把 26 篇正文事实或编辑结论伪装成同日更新，禁止批量刷新页面日期。
+- [x] `weekly-report.md` N/A：今天是周二，不提前生成周五/周日完整快照；最新 GSC 动作已进入 metrics/progress/task plan。
+- [x] Month 2 战略书 N/A：北极星、资源比例、唯一实验和触发条件均未改变；本轮是既定合规必修项与 GSC 技术收口。
+- [x] 本轮计划全部完成：源码修复、回归检查、构建、部署、生产 HTML、GSC 分桶验证决策与精准重抓均已闭环。

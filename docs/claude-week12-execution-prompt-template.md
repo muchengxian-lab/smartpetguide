@@ -66,7 +66,7 @@ C:\Users\Administrator\smartpetguide
 三、Week 12 日期闸门
 
 - 7/27 周一：`EXP-44C79107` 已获用户确认并激活为唯一 Active；若 PHP 仍无评论/提案，准备一次原线程轻量跟进。实际发送为 human-only，用户确认前最多标 Ready for human。Round 4 剩余三封继续 Hold。
-- 7/28 周二：已按实时清单对 9 个 crawled-not-indexed URL 完成 9/9 五类分诊；D29 活跃入口核对完成；Review/Product schema 合规修复及 26/26 防回归检查完成；重定向错误 4 条现状为 3×200 + 1×单跳 308，部署后启动新验证；自动重定向 8 与 crawled-not-indexed 9 不做机械整桶验证；PHP 跟进已 `Sent-confirmed`，不得重复发送。
+- 7/28 周二：已按实时清单对 9 个 crawled-not-indexed URL 完成 9/9 五类分诊；D29 活跃入口核对完成；Review/Product schema 合规修复及 26/26 防回归检查已部署；重定向错误新验证已启动（待定 4 / 失败 0）；Petlibro、Catit、LR5、fountain-filter、cat-wont-drink 共 5 个 URL 已精准请求重抓；自动重定向 8 与 crawled-not-indexed 9 未机械整桶验证；PHP 跟进已 `Sent-confirmed`，不得重复发送。
 - 7/29 周三：完成 30 天变现 Sprint D30。Task A、Brand Outreach、Editorial/Guest Post 必须分开给 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Pause/Iterate、Editorial Continue cautiously，但必须按当天新证据重算。
 - 7/30 周四：Feeder Reliability coverage-gap 3/3：jamming、portion/calibration、backup-power/travel failover。先查源码、dist/生成页、生产页与 Git；只有发现具体缺口时最多改 1 个现有页面。无缺口则记录 No change needed。
 - 7/31 周五：GSC 两个完整 7 天 query/page 对照；GA4 source/medium → landing → engagement → events；Pinterest 10 分钟检查。观察 calculator 使用，不宣称无基线 uplift，不发 Pin。

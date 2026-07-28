@@ -805,3 +805,5 @@
 **修复前构建产物对照：** `dist` 曾有 109 页 `BreadcrumbList`、26 页 `Review` + `Product`、25 页 `AggregateRating`。GSC 富结果报告只是当前已索引/被识别/抽样的子集；Google 官方也说明索引下降会减少结构化数据项，且正确标记不保证展示。
 
 **修复结果：** GSC 人工处置措施和安全问题均为 0，当前下降没有处罚证据。7/28 已完成模板合规修复：26 个评测页不再输出由 Amazon 第三方评分/评论量和联盟链接衍生的 Review/Product/Offer/AggregateRating，保留 Article/Breadcrumb，并把可见评分明确标成 Amazon 来源；未补虚构的配送/退货字段。`npm.cmd run verify` 的 26/26 防回归检查通过。Google 重抓后 Product/Merchant/Review 有效项进一步减少属于预期口径变化，不等于普通网页被降权或删除索引。
+
+**部署与重抓：** `146b9fb` 已推送，Vercel 生产部署 `dpl_2j8VeYUk8iiXNo1UoyaHe5Y8NfZS` READY；Petlibro、Catit、LR5 生产 HTML 抽查与本地一致。GSC“重定向错误”已启动新验证（待定 4 / 失败 0）；上述 3 个 review 和 2 个确有内容更新的 crawled-not-indexed 页面已请求重抓。自动重定向 8 与 crawled-not-indexed 9 未做机械整桶验证。

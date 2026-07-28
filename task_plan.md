@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-28 周二 Week 12 D29 | GSC 7/28 实时 Indexing 为 28 indexed / 23 unindexed，crawled-not-indexed 9；9/9 分诊完成 | Review/Product 语义合规修复已完成：26 个评测页移除第三方 Amazon 评分衍生的 Review/Product/Offer/AggregateRating，并保留 Article/Breadcrumb；重定向错误 4 条现状为 3×200 + 1×单跳 308，部署后启动新验证；自动重定向 8 条不做整桶验证 | Pretty Happy Pets 一次轻量跟进已由用户在原线程实际发送，状态 `Sent-confirmed`，不得重复发送 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
+**最后更新：2026-07-28 周二 Week 12 D29 | GSC 7/28 实时 Indexing 为 28 indexed / 23 unindexed，crawled-not-indexed 9；9/9 分诊完成 | Review/Product 语义合规修复已部署：26 个评测页移除第三方 Amazon 评分衍生的 Review/Product/Offer/AggregateRating，并保留 Article/Breadcrumb；重定向错误新验证已启动（待定 4 / 失败 0）；Petlibro、Catit、LR5、fountain-filter、cat-wont-drink 共 5 个 URL 已精准请求重抓；自动重定向 8 与 crawled-not-indexed 9 不做整桶验证 | Pretty Happy Pets 跟进 `Sent-confirmed`，不得重复发送 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
 
@@ -111,7 +111,7 @@
 | 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
 |:--:|------|------|------|------|
 | 周一 | 7/27 | ✅ 用户已确认，`EXP-44C79107` 已激活为唯一 Active；Review 8/2，只做每周 10-15 分钟轻量 GA4 渠道基线 | ✅ PHP 邮件/共享 DOCX 已实时复核，无新邮件/评论；一次原线程轻量跟进已准备为 `Ready for human`，未发送；Homerunpet 与 Round 4 仍无回复 | ✅ 生命周期重建为 38 total / Active 1 / Backlog 31；跟进不问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold；无页面改动 |
-| 周二 | 7/28 | ✅ GSC 9/9 五类分诊；✅ Shopping/Enhancements 下降诊断；✅ Review/Product schema 合规修复与 26/26 回归检查；✅ 自动重定向 8 / 重定向错误 4 分桶核对 | ✅ D29 活跃入口核对完成；✅ PHP 一次轻量跟进已由用户在原线程实际发送，`Sent-confirmed`；不重复发送 | ✅ 114 页 verify；评测页仅保留 Article/Breadcrumb，Amazon rating 明确来源；重定向错误 4 条部署后启动新验证，自动重定向与 crawled-not-indexed 不机械整桶验证 |
+| 周二 | 7/28 | ✅ GSC 9/9 五类分诊；✅ Shopping/Enhancements 下降诊断；✅ Review/Product schema 合规修复与 26/26 回归检查；✅ 自动重定向 8 / 重定向错误 4 分桶核对 | ✅ D29 活跃入口核对；✅ PHP 跟进 `Sent-confirmed`；✅ 重定向错误新验证；✅ 5 个 URL 精准请求重抓 | ✅ `146b9fb` 已推送、Vercel READY、生产 HTML 通过；重定向验证待定 4/失败 0；自动重定向与 crawled-not-indexed 未机械整桶验证 |
 | 周三 | 7/29 | 完成 30 天变现 Sprint D30 复盘 | 分开给出 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Outreach Pause/Iterate、Editorial Continue cautiously，若有新回复则重算 | 回复率、付费信号、编辑关系和下一步逐轨记录；`30-day-schedule.md` 与相关日志同步 |
 | 周四 | 7/30 | Feeder Reliability coverage-gap：逐项核对 jamming、portion/calibration、backup-power/travel failover | 只有确认具体缺口时，最多加固 1 个现有页面 | 先查生成页/生产页/Git；无缺口写 `No change needed`；不新建 URL、不做广泛重写 |
 | 周五 | 7/31 | GSC 两个完整 7 天 query/page 对照；GA4 `source/medium → landing page → engagement → events`；Pinterest 10 分钟检查 | 观察 feeder portion 计算器使用，不在无基线时宣称 uplift | 新快照写入 metrics/progress/weekly report；保留 GA4 UI 31 channel sessions vs 30 `session_start` 的口径差异；不发 Pin |
