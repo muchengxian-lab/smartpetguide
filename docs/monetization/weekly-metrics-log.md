@@ -770,3 +770,23 @@
 - SEO 提交 `c42b9a1` 已推送至 `origin/master`；Vercel 生产部署 `dpl_FjC2DxWF4siygZSn5LuhidoQZR4R` 为 `READY`。
 - 主页、robots、sitemap 和三个目标页线上均返回 200；目标页生产 HTML 的 title/meta、canonical、日期与决策内容核验通过。
 - 观察窗口：14-28 天；期间不反复改标题，以页面点击、CTR 和平均排名判断效果。
+
+---
+
+## Indexing Checkpoint — 2026-07-28（Week 12 周二）
+
+> 本节只记录 GSC Page Indexing 实时状态与页面级分诊；没有刷新 Performance、GA4、Pinterest 或 Semrush。Snapshot 10 的 7/26 数值保留为历史基线，不与本次混合。
+
+| GSC Page Indexing | 7/28 实时值 | 状态 |
+|------|:--:|------|
+| 已索引 / 未索引 | **28 / 23** | 与 Snapshot 10 的 33 / 15 不同；不据总桶直接解释为页面流失 |
+| 网页会自动重定向 | **8** | 验证失败 |
+| 重定向错误 | **4** | 验证失败 |
+| 已抓取-尚未编入索引 | **9** | 验证失败；已完成 9/9 页面级分诊 |
+| 备用网页（适当规范标记） | **1** | 验证已开始 |
+| Google 选择不同规范 | **1** | 验证已开始 |
+| 已发现-尚未编入索引 | **0** | 验证通过 |
+
+**9/9 分类：** 技术阻塞 0 / 模板重复 2 / 证据不足 5 / 搜索需求弱 1 / 等待重评 1。9 个规范 URL 均在线 200、自指 canonical、无 `noindex`、存在生成页和 sitemap；无尾斜杠 automatic feeder 样本为正常 308 到规范页。完整 URL、抓取日期与处置见 `findings.md`。
+
+**本次动作：** 不做机械 URL Inspection，不批量改页；只删除 `fountain-filter-guide` 中发现的无来源漂白剂饮水建议并改为保守的厂商手册/清洁边界。其余证据不足页面排入后续来源审计，重复页在保留 query/链接证据后再决定合并与 301。

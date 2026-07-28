@@ -20,7 +20,7 @@ Claude Code 在执行任何相关工作前必须先读：
 7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
 8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
-当前顺序：Task A 只维护；Week 12 先完成 GA4 唯一实验决定、GSC 4 URL 分诊和 30 天 Sprint 分轨裁决，再做 Feeder Reliability coverage-gap。Round 4 剩余三封继续 Hold；Brand Outreach 不扩量，只等待 Homerunpet；Aorkuler 已关闭。
+当前顺序：Task A 只维护；GA4 唯一实验决定与 GSC 7/28 实时 9 URL 分诊已完成，下一步是 7/29 的 30 天 Sprint 分轨裁决，再做 Feeder Reliability coverage-gap。Round 4 剩余三封继续 Hold；Brand Outreach 不扩量，只等待 Homerunpet；Aorkuler 已关闭。
 
 禁止自动发邮件、提交外部表单、联系品牌、伪造联系人/流量/销售数据，禁止把付费合作写成编辑推荐排名。
 
@@ -42,7 +42,7 @@ Claude Code 在执行任何相关工作前必须先读：
 
 ## 当前阶段
 
-Week 12 为 2026-07-27 周一至 2026-08-02 周日。7/26 Snapshot 10：114 页；GSC 33 indexed / 15 unindexed，完整 7 天 0 clicks / 19 impressions / position 21.7，3 个月 307 impressions / 4 clicks；GA4 最近 7 天 29 active / 28 new / 36 page views / 121 events，affiliate/outbound/key events 0；Pinterest 30 天 801 impressions / 0 outbound；Semrush 沿用 7/17 的 12 RD / 28 backlinks / 20 keywords / AS 2。Pretty Happy Pets 仍在编辑/兽医审稿，Google Doc 0 新评论；Round 4 Batch A 0/2 回复。
+Week 12 为 2026-07-27 周一至 2026-08-02 周日。7/26 Snapshot 10：114 页；完整 7 天 GSC Performance 为 0 clicks / 19 impressions / position 21.7，3 个月 307 impressions / 4 clicks；GA4 最近 7 天 29 active / 28 new / 36 page views / 121 events，affiliate/outbound/key events 0；Pinterest 30 天 801 impressions / 0 outbound；Semrush 沿用 7/17 的 12 RD / 28 backlinks / 20 keywords / AS 2。7/28 实时 GSC Indexing 已变为 28 indexed / 23 unindexed，其中 crawled-not-indexed 9，不能再沿用 Snapshot 10 的 33 / 15 / 4 当现状。Pretty Happy Pets 仍在编辑/兽医审稿，Google Doc 0 新评论；Round 4 Batch A 0/2 回复。
 90 天目标：150-180 页 / 60-100 索引 / 25-40 引用域名 / GEO Score 85+。
 
 ## 核心策略

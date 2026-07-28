@@ -1,5 +1,49 @@
 # 发现与决策
 
+## 2026-07-28 Week 12 周二 GSC 索引分诊
+
+### 实时 Page Indexing 总桶已变化，Snapshot 10 不能继续当今日现状
+
+**实时证据**：2026-07-28 19:56 Asia/Shanghai 使用用户已登录的 GSC `sc-domain:smartpetguide.net` 读取“网页索引编制”。当前显示 **已编入索引 28 / 未编入索引 23**；未索引明细为：网页会自动重定向 8（失败）、重定向错误 4（失败）、已抓取-尚未编入索引 9（失败）、备用网页 1（已开始）、Google 选择不同规范 1（已开始）、已发现-尚未编入索引 0（已通过）。六行合计 23。
+
+**边界**：这与 Snapshot 10 的 33 / 15 / crawled 4 明显不同，旧快照只能保留为 7/26 历史值。当前还不能仅凭总桶断言“5 个页面掉出索引”或“新增 5 个内容问题”；必须打开 9 个 crawled-not-indexed 示例，核对更新时间、URL 类型、canonical/redirect 与实际页面后再分类。
+
+**执行结果**：已读取 9 个示例并完成页面级核对；未点击 Validate Fix 或 URL Inspection。9 个规范 URL 均在线 200、自指 canonical、无 noindex、存在生成页与 sitemap，因此没有统一技术阻塞。
+
+### 当前不是计划中的 4 个，而是 9 个页面级样本
+
+**实时证据**：详情页标题为“已抓取 - 尚未编入索引”，2026-07-28 19:59 Asia/Shanghai 显示 9 个 URL 及上次抓取日期：
+
+| URL | 上次抓取 |
+|---|---|
+| `/guides/cat-wont-drink-from-water-fountain/` | 2026-07-09 |
+| `/guides/introduce-cat-to-automatic-litter-box/` | 2026-07-09 |
+| `/for-brands/` | 2026-07-01 |
+| `/guides/self-cleaning-litter-box-buying-guide/` | 2026-06-28 |
+| `/guides/how-to-clean-cat-water-fountain/` | 2026-06-27 |
+| `/guides/litter-box-introduction-guide/` | 2026-06-27 |
+| `/guides/fountain-filter-guide/` | 2026-06-27 |
+| `/guides/wet-food-automatic-feeder-guide/` | 2026-06-27 |
+| `/guides/automatic-feeder-buying-guide` | 2026-06-14 |
+
+**决策边界**：原计划按 4/4 分诊已经被实时后台推翻，今天改为 9/9 分诊。所有上次抓取都早于 7/28，且前两页在抓取后曾有内容整改，因此“等待 Google 重抓”可能适用，但必须逐页核对当前 200/canonical/indexability、源码与生成页、内容重复/证据和内部链接后再定类。
+
+### 9/9 最终分诊与处置
+
+| URL | 主分类 | 页面级证据 | 处置 |
+|---|---|---|---|
+| `/guides/cat-wont-drink-from-water-fountain/` | 等待重评 | 7/22 修改晚于 7/9 抓取；线上 200；4 个权威来源与安全边界已上线 | 等待 Google 重抓；不重复改页、不机械 Inspection |
+| `/guides/introduce-cat-to-automatic-litter-box/` | 模板重复 | 与旧 introduction guide 覆盖同一“自动猫砂盆过渡”意图；此页更完整且有首页入口 | 作为保留候选；合并前先保留历史 query/链接证据 |
+| `/for-brands/` | 搜索需求弱 | B2B 服务转化页，目标不是宠物主人信息搜索；技术正常 | 保留可访问，不为索引数硬扩写 |
+| `/guides/self-cleaning-litter-box-buying-guide/` | 证据不足 | 约 887 词、0 个内容级外部来源；含精确价格、成本和 owner quote | 后续来源审计；无来源精确数字先删除或保守化 |
+| `/guides/how-to-clean-cat-water-fountain/` | 证据不足 | 约 1,346 词、0 个内容级外部来源；含卫生/健康与材料主张 | 后续来源审计；优先核对医疗与清洁安全表述 |
+| `/guides/litter-box-introduction-guide/` | 模板重复 | 与新 introduction 页主意图和过渡步骤高度重叠 | 合并/301 候选；今天不直接改 URL |
+| `/guides/fountain-filter-guide/` | 证据不足 | 0 个内容级外部来源；含健康、成本、滤芯寿命及不安全漂白剂建议 | 已删除漂白剂饮水建议；其余主张进入后续证据审计 |
+| `/guides/wet-food-automatic-feeder-guide/` | 证据不足 | 0 个内容级外部来源；含食品安全、产品状态与兽医建议 | 后续优先核对 FDA/兽医与厂商一手来源 |
+| `/guides/automatic-feeder-buying-guide` | 证据不足 | 无尾斜杠样本正常 308 到规范页；规范页仅约 572 词且 0 个内容级外部来源 | 不改 redirect；后续补足可追溯决策证据或并入更强支柱页 |
+
+**分类汇总**：技术阻塞 0 / 模板重复 2 / 证据不足 5 / 搜索需求弱 1 / 等待重评 1，共 9。今天不批量改 9 页，不提交 URL Inspection；只修复 filter guide 中发现的明确安全风险。旧 4 条计划值从所有活跃入口降级为历史值。
+
 ## 2026-07-27 Week 12 周一实时核对与执行决定
 
 ### Pretty Happy Pets 邮件线程仍无新增消息

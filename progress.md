@@ -4301,3 +4301,111 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] `git diff --check` 通过；SmartPetGuide 只有 8 个预期 Markdown 文件变化，没有 `src/`、站点数据、URL 或配置变化。
 - [x] 本次 build、Vercel、线上页面和 sitemap 验证 N/A；实验激活与邮件时间建议都不改变站点产物。
 - [x] Pretty Happy Pets 邮件没有发送也没有排程；用户实际设置定时发送后才可从 `Ready for human` 改为 `Scheduled`。
+
+---
+
+## 会话：2026-07-28 周二 — 4 个 crawled-not-indexed URL 五类分诊与 D29 清理
+
+### 开工恢复
+
+- [x] 系统日期：2026-07-28 周二 19:53 Asia/Shanghai；按 Week 12 周二排班执行，不提前做 7/29 D30 复盘。
+- [x] 开工 Git：HEAD `40a8267`，工作区 clean，最初 `origin/master...HEAD = 0 1`；昨日两次 push 与 `ls-remote` 的网络失败已保留在知识库审计。
+- [x] 今日首次补推成功：`093b0c6..40a8267 master -> master`；昨日实验激活提交已到远端。
+- [x] 今日 P0：读取 GSC 当前 4 个 crawled-not-indexed URL；逐页五类分诊；完成 D29 活跃入口清理并收工提交。
+
+### 浏览器进度
+
+- [x] 已连接用户登录态 Chrome CDP 9222；仅有闲鱼标签 `t1`，未触碰。
+- [x] 新建 GSC Page Indexing 标签并进入 `sc-domain:smartpetguide.net`；后续只读 URL 列表和状态，不点击 Validate Fix 或 URL Inspection。
+
+### GSC 总桶实时变化
+
+- [x] 7/28 当前 Page Indexing 为 indexed 28 / unindexed 23；旧 Snapshot 10 的 33 / 15 已降级为 7/26 历史快照。
+- [x] 当前未索引：redirect 8、redirect error 4、crawled-not-indexed 9、alternate canonical 1、Google-selected canonical 1、discovered-not-indexed 0；合计 23。
+- [x] 已点击进入 crawled-not-indexed 详情页，下一步读取 9 个 URL；在页面级证据完成前不把总桶变化直接解释成索引丢失或页面质量下降。
+- [ ] 第一次点击 GSC 单元格 ref 返回成功但页面未导航；随后精确文本定位因 GSC 可访问性文本中的空格/短横线结构差异返回 `Element not found`。这两次都不计为已进入详情。下一步改用单次 DOM 脚本定位包含“已抓取”和“尚未编入索引”的表格行并点击，不重复 ref/精确文本路径。
+- [x] 内联 DOM 脚本第一次经 `.cmd` 传参时引号被剥离，报 `ReferenceError: tr is not defined`；未改变页面。改用 base64 编码脚本后稳定找到目标 `TR/TD`，返回完整行文本和 9 个网页，并触发点击。下一步重新 snapshot 验证是否真正进入详情，不凭脚本 `found=true` 直接宣称成功。
+- [x] 重新 snapshot 确认已真正进入详情页；GSC 当前列出 9 个 URL，不是计划中的 4 个。上次抓取从 6/14 至 7/9，完整清单已写入 `findings.md`。
+- [x] 可视截图已保存到本会话 visualization 目录，不进入项目仓库；未点击 Validate Fix、URL Inspection 或导出。
+- [x] 今日验收口径随实时证据调整为 9/9 五类分诊；不因旧计划数字减少核对范围。
+
+### 本地页面证据初查
+
+- [x] 9 个 GSC URL 均能映射到当前源码：8 个动态 guide 来自 `src/pages/guides/[slug].astro`，`/for-brands/` 来自 `src/pages/for-brands.astro`。
+- [x] 9 个对应生成页全部存在于 `dist/`，且全部出现在 `dist/sitemap-0.xml`；页面不是“源码或构建产物缺失”。
+- [x] 8 个 guide 的 sitemap `lastmod` 与 `src/data/content-dates.json` 一致；`/for-brands/` 为静态商业入口，sitemap 当前没有 `lastmod`。
+- [x] 已确认这些 URL 有站内入口，并非完全孤立页；后续仍需核对标题、canonical、robots、主题重叠和线上响应后再分类。
+- [ ] Windows 下对 `public\sitemap*.xml`、`dist\sitemap*.xml`、`src\pages\for-brands*` 直接传入 `rg` 时通配符未展开，返回路径语法错误；已改用 `rg --files` 找到精确文件名，不重复同一路径写法。
+- [ ] 首次批量元数据提取把 PowerShell `foreach` 代码块直接接管道，触发 `An empty pipe element is not allowed`；未写入文件。下一步改为数组累积后统一格式化输出。
+- [ ] `dist/sitemap-0.xml` 为单行 XML，直接 `rg` 输出过长但已确认 9 个 URL 全部存在；后续改用解析或定向匹配，不再打印整行。
+- [x] 改用数组累积后完成 9 页生成 HTML 元数据核对：全部有唯一自指 canonical，未发现 `noindex`；title 与 H1 均存在。
+- [x] 生成页正文体量约 572–1634 词；`automatic-feeder-buying-guide` 仅约 572 词，明显低于其余 guide，是“证据不足/内容薄弱”候选，不能仅凭 HTTP 200 判定质量无问题。
+- [x] 当前技术层初判没有源码缺失、构建缺失、sitemap 缺失、canonical 缺失或 noindex 阻塞；下一步用线上响应验证这一结论，并检查近义页面是否互相竞争。
+- [x] 站内入口核对显示 9 页均至少进入 guide 索引、首页、review/breed 相关推荐或动态 related-links 体系；不是零入口孤儿页。
+- [x] 标题结构确认 `/introduce-cat-to-automatic-litter-box/` 与 `/litter-box-introduction-guide/` 同时覆盖“让猫适应自动/自清洁猫砂盆”的相同主意图，虽一个更偏 5 步过渡、一个含购买/摆放/维护，但搜索意图高度重叠，是明确的模板重复/关键词内耗候选。
+- [x] `/automatic-feeder-buying-guide/` 只有 5 个简短主题段落与 2 个 FAQ；相较其余 guide 内容深度明显不足，继续归入“证据不足”候选。
+- [x] `/for-brands/` 是完整的 B2B 服务/转化页，页面目标是品牌合作而非宠物主人信息检索；若技术验证正常，更适合归“搜索需求弱”，不应为追求索引数硬扩写。
+- [ ] 首次一次性读取多个源码区段与完整 `for-brands.astro` 产生工具输出截断；没有据此推断被截断内容。后续改用生成页标题清单和精确区段核对，避免再读取无关大段。
+
+### 线上页面核对
+
+- [x] 重新列出浏览器标签：保留用户闲鱼 `t1` 不动，GSC 详情为 `t2`；新建 SmartPetGuide 线上只读标签用于同源批量核验。
+- [x] 线上首页 `https://smartpetguide.net/` 正常打开；下一步从该同源页面批量读取 9 个 URL 的 HTTP、最终 URL、canonical、robots 与 H1，不逐个干扰 GSC 标签。
+- [x] 新站点标签稳定 id 为 `t3`，已切换并确认线上首页标题与 URL 正常；GSC `t2` 仍保留原状态。
+- [ ] 第一次在工具编排层尝试生成 base64 时该隔离 JS 环境没有 `btoa`，脚本在调用浏览器前即失败；未影响浏览器。已改为 PowerShell 本地编码。
+- [ ] 当前 agent-browser 版本不支持全局 `--tab t3` 参数，返回 `Unknown command: --tab`；未执行页面脚本。已按该版本要求先 `tab t3` 再执行 eval，不重复使用全局参数。
+- [x] 线上同源批量核验完成：9 个目标规范 URL 全部直接返回 200，最终 URL 与自指 canonical 一致，均无 `noindex`，H1 正常；本地构建与线上部署内容一致。
+- [x] GSC 中无尾斜杠的 `/guides/automatic-feeder-buying-guide` 线上会 308 永久重定向到尾斜杠规范 URL，跟随后 200；这是正常规范化，不是当前技术故障。GSC 仍将旧样本列入 crawled-not-indexed，优先判“等待重判”中的历史 URL 形态，同时单独评估规范页内容质量。
+- [ ] 首次外部来源提取只匹配双引号 `href="..."`，漏掉 `set:html` 保留的单引号链接，因而“只有 Google Fonts”的初步结论无效并已撤回；下一步用单双引号兼容规则重新计数，不能沿用错误证据。
+- [x] 精确源码核对显示 `cat-wont-drink-from-water-fountain` 已包含 International Cat Care、Feline Veterinary Medical Association、Cornell 和 PubMed 等可点击来源，且 7/22 修改日晚于 GSC 7/9 最后抓取；该页目前优先属于“等待重判”，不是证据不足。
+- [x] 旧 `/litter-box-introduction-guide/` 与新 `/introduce-cat-to-automatic-litter-box/` 不只是标题接近，正文都采用并排旧箱、断电适应、逐步启用、拒用排查等同一流程；确认归“模板重复”，后续应合并而非同时扩写。
+- [ ] 第二次读取较大源码区段仍因相邻无关 guide 内容导致输出截断；关键目标块已读到，但后续只做 slug 定向提取，不再扩大区段。
+- [ ] 第一次改写单双引号外链正则时 PowerShell 字符串转义错误，解析阶段报 `Unexpected token`；未执行扫描、未写文件。已改用 PowerShell backtick 转义双引号。
+- [x] 修正后的外部证据计数：`cat-wont-drink-from-water-fountain` 有 4 个内容级来源；其余 7 个目标 guide 均为 0。后 7 页涉及的精确价格、评论量、健康/食品安全、失败率或时间表主张目前没有页面级可点击来源，归类时按“证据不足”处理，除非存在更强的模板重复主因。
+
+### 今日边界复核
+
+- [x] `task_plan.md` 明确要求 7/28 做五类分诊和 D29 历史入口清理；无实质变化不做 URL Inspection、不改源码。实时 9 条替代旧 4 条后，仍保持不机械提交 Inspection 的闸门。
+- [x] Week 12 全周新 URL 配额 0，最多实质加固 1 个现有页；不会因索引数下降批量改 9 页或刷新日期。
+- [ ] 第一次搜索模板时引用了不存在的 `docs/month2-strategy.md` 和 `docs/claude-week12-prompt-template.md`，`rg` 对这两个路径报文件不存在；已由 `task_plan.md` 和 `rg --files` 找到真实文件名，后续用精确路径。
+- [x] 当前实际模板文件为 `docs/claude-week11-execution-prompt-template.md` 与 `docs/claude-week12-execution-prompt-template.md`；下一步核对 CLAUDE 活跃入口是否只指向 Week 12，并为 Week 11 加清晰历史标记。
+- [x] `fountain-filter-guide` 中发现无来源且表述不安全的漂白剂建议；这属于真实页面安全缺口，不是为刷新日期制造改动。若源码修复，将只做最小删除/保守替换，并按站点变更执行完整构建与上线验证。
+
+### D29 活跃入口清理结论
+
+- [x] 根 `CLAUDE.md` 已明确指定 Week 12 模板为会话合同，并写明 Week 11 模板仅历史；`.claude/CLAUDE.md` 同样只把 Week 12 作为开工入口。
+- [x] `docs/claude-week11-execution-prompt-template.md` 首屏已有“历史归档 / 不得再作活跃入口 / 改用 Week 12”的醒目标记；不需要重复增加第二套归档文案。
+- [x] `docs/claude-week12-execution-prompt-template.md` 首屏明确“唯一活跃入口”；D29 历史/废弃入口清理已经满足。今天只需把活跃文件中的实时 GSC 4 条更新为 9 条，避免明天继续漏查。
+- [x] D29 不扩写历史模板正文、不删除归档文件；Week 11 继续保留审计价值。
+
+### 9/9 五类分诊结论
+
+- [x] 技术阻塞 0：9 个规范 URL 均为线上 200、自指 canonical、无 noindex、存在 sitemap 与生成页；唯一无尾斜杠样本为正常 308 规范化。
+- [x] 模板重复 2：`introduce-cat-to-automatic-litter-box` 与 `litter-box-introduction-guide` 覆盖同一过渡意图；前者作为保留候选，后者作为合并/301 候选，今天不直接改 URL。
+- [x] 证据不足 5：self-cleaning buying、fountain cleaning、fountain filter、wet-food feeder、automatic-feeder buying；均无内容级可点击外部来源，且存在精确健康/成本/产品/评论量主张，其中 filter 页先做最小安全修正。
+- [x] 搜索需求弱 1：`/for-brands/` 是 B2B 转化入口，不为宠物主人信息查询服务；保留可访问，不为索引数硬扩写。
+- [x] 等待重评 1：`cat-wont-drink-from-water-fountain` 已于 7/22 完成 4 个权威来源和安全边界整改，晚于 GSC 7/9 抓取；页面与线上技术均正常，等待 Google 重抓。
+
+### 已执行的最小修复与活跃文件同步
+
+- [x] 已将 `fountain-filter-guide` 的 filter-free FAQ 改为“先查手册、每天换水、按说明清洁、尽快恢复兼容滤芯”，明确禁止把漂白剂或其他清洁剂加入饮水；`modifiedDate` 逐页更新为 2026-07-28。
+- [x] 只修改这一页的安全表述，没有借机扩写其余 8 页、创建 URL 或批量刷新日期；符合 Week 12 单页上限。
+- [x] 已同步 `task_plan.md`、`findings.md`、`.claude/CLAUDE.md` 与 Week 12 活跃模板，把当前索引 28/23、9/9 分诊和分类汇总写入；Snapshot 10 Performance/GA4/Pinterest/Semrush 继续保留为历史基线。
+- [x] D29 清理无需修改 Week 11 历史模板：其首屏已明确归档，Week 12 首屏已明确唯一活跃。保留历史文件，不重复加标记。
+- [x] 首轮 `git diff --check` 通过，仅有 Windows LF→CRLF 提示；当前 7 个预期文件变化，无用户无关文件。
+- [x] 已追加 `docs/monetization/weekly-metrics-log.md` 的 2026-07-28 Indexing Checkpoint；只记录 Page Indexing 和 9/9 分诊，没有伪造新的 Performance、GA4、Pinterest 或 Semrush 快照。
+- [x] `npm.cmd run verify` 通过：Astro **114 pages**，日期校验 **100 content pages / 61 conservative modified dates / 113 sitemap URLs（100 with lastmod）**。
+- [x] 目标生成页核对通过：新安全文本存在，旧 `add a drop of unscented bleach per liter` 在 `src/` 与 `dist/` 均为 0，canonical 正常，`2026-07-28` 修改日期已进入 HTML。
+- [x] 活跃入口旧值搜索只命中 `findings.md` 的 7/27、7/26 有日期历史段；根入口、`.claude` 当前态、Week 12 模板和 `task_plan.md` 当前排班均已使用 9/9，不再把 4 条当现状。
+
+### 文件同步矩阵
+
+| 本次事实/状态变化 | 应更新文件 | 结果 |
+|---|---|---|
+| GSC Indexing 28/23、crawled 9 与 9/9 分诊 | `weekly-metrics-log.md`、`progress.md`、`task_plan.md`、`findings.md` | 已更新 |
+| 页面真实安全缺口 | guide 源码、`content-dates.json`、`progress.md`、`task_plan.md`、`findings.md` | 已更新 |
+| D29 活跃/历史入口 | `.claude/CLAUDE.md`、Week 12 模板；Week 11 归档模板只读核对 | 已更新当前态；历史模板无需重复修改 |
+| 周五/周日综合周报 | `weekly-report.md` | N/A：今天是周二，只刷新 Indexing，不伪造完整周快照 |
+| 月度北极星、资源比例、触发条件 | Month 2 战略书 | N/A：五类分诊与单条安全修正未触发战略调整 |
+| 外联、邮件、Brand CRM | Round 3/4、CRM、30-day schedule | N/A：今天没有外部回复、发送或轨道裁决 |
+| Claude 全局规则 | 根 `CLAUDE.md`、execution guardrails | N/A：规则未改变，只更新了活跃模板的实时数据和完成状态 |

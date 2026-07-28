@@ -48,7 +48,7 @@ C:\Users\Administrator\smartpetguide
 - 日期：2026-07-27 周一至 2026-08-02 周日。
 - 站点：114 pages；guides 源码 quickAnswer 为 14/38。Week 12 新 URL 配额为 0，不以 quickAnswer 覆盖率作为机械 KPI。
 - GSC Snapshot 10：完整窗口 7/18-7/24 为 0 clicks / 19 impressions / CTR 0% / position 21.7；前一窗口 7/11-7/17 为 0 / 9 / 0% / 51.1。展示 +10（+111.1%）、排名改善 29.4 位，但仍无点击。3 个月为 4 clicks / 307 impressions / CTR 1.3% / position 34.5。
-- GSC Indexing：33 indexed / 15 unindexed；自动重定向 5（验证失败）、重定向错误 3（验证已开始）、备用规范页 1（验证已开始）、crawled-not-indexed 4（验证已开始）、Google 选择不同规范 2（验证已开始）、discovered-not-indexed 0（验证通过）。4 个 crawled-not-indexed URL 的五类分诊不是实验。
+- GSC Indexing：7/28 实时为 28 indexed / 23 unindexed；自动重定向 8（失败）、重定向错误 4（失败）、备用规范页 1（已开始）、crawled-not-indexed 9（失败）、Google 选择不同规范 1（已开始）、discovered-not-indexed 0（已通过）。Snapshot 10 的 33 / 15 / 4 只作 7/26 历史基线。9 个 crawled-not-indexed URL 已完成五类分诊，这不是实验。
 - GSC 当前可见 query 均只有 1 impression，包括 compare gps prices、cat won't drink from fountain、chewy water fountain for cats、how do i get my cat to drink from a water fountain、cat drinking from fountain。不得用单次查询启动 GPS 或 fountain 同周返工。
 - GA4 最近 7 天：29 active / 28 new / 36 page views / 121 events。渠道表可见 Direct 28 / Unassigned 2 / Organic Search 1 / Referral 0；事件为 page_view 36 / session_start 30 / first_visit 30 / user_engagement 18 / scroll 5 / form_start 2；affiliate_click 0 / outbound_click 0 / key events 0。渠道行 31 sessions 与 session_start 30 的差异必须原样保留。
 - Pinterest 30 天（6/26-7/26）：801 impressions / 0 engagement / 0 outbound / 0 saves / audience 8，后台显示 impressions -61%。7 天窗口本次未形成可靠刷新，不得沿用 7/24 的 26 冒充新值。Week 12 不发布新 Pin。
@@ -65,7 +65,7 @@ C:\Users\Administrator\smartpetguide
 三、Week 12 日期闸门
 
 - 7/27 周一：`EXP-44C79107` 已获用户确认并激活为唯一 Active；若 PHP 仍无评论/提案，准备一次原线程轻量跟进。实际发送为 human-only，用户确认前最多标 Ready for human。Round 4 剩余三封继续 Hold。
-- 7/28 周二：对 4 个 crawled-not-indexed URL 做 4/4 五类分诊；先检查页面级证据，不用站点总桶反推 URL。完成 D29 文档清理，只标历史/废弃入口，不扩大内容改动。
+- 7/28 周二：已按实时清单对 9 个 crawled-not-indexed URL 完成 9/9 五类分诊（技术 0 / 重复 2 / 证据 5 / 需求弱 1 / 等待 1）；D29 活跃入口核对完成。没有机械 URL Inspection；只对 filter guide 的真实安全缺口做最小修正。
 - 7/29 周三：完成 30 天变现 Sprint D30。Task A、Brand Outreach、Editorial/Guest Post 必须分开给 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Pause/Iterate、Editorial Continue cautiously，但必须按当天新证据重算。
 - 7/30 周四：Feeder Reliability coverage-gap 3/3：jamming、portion/calibration、backup-power/travel failover。先查源码、dist/生成页、生产页与 Git；只有发现具体缺口时最多改 1 个现有页面。无缺口则记录 No change needed。
 - 7/31 周五：GSC 两个完整 7 天 query/page 对照；GA4 source/medium → landing → engagement → events；Pinterest 10 分钟检查。观察 calculator 使用，不宣称无基线 uplift，不发 Pin。
