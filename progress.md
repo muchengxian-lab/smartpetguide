@@ -4563,3 +4563,13 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] `weekly-report.md` N/A：今天是周二，不提前生成周五/周日完整快照；最新 GSC 动作已进入 metrics/progress/task plan。
 - [x] Month 2 战略书 N/A：北极星、资源比例、唯一实验和触发条件均未改变；本轮是既定合规必修项与 GSC 技术收口。
 - [x] 本轮计划全部完成：源码修复、回归检查、构建、部署、生产 HTML、GSC 分桶验证决策与精准重抓均已闭环。
+## 会话：2026-07-28 周二 — schema 修复后的 Week 12 / Month 2 计划微调
+
+- [x] 开工确认 `HEAD=80f6018`，工作区干净，`origin/master...HEAD=0/0`；系统时间为 2026-07-28 周二。
+- [x] 微调边界：不改变 Month 2 北极星、资源比例、Feeder 唯一主集群、新 URL 配额或内容日期；只修正周五数据判读、周日三档决策和 Claude 防重复操作规则。
+- [x] 7/28 固化为 Rich Results 口径断点；Product/Merchant/Review 与普通 Page Indexing、query/page 分开记录。
+- [x] 7/31 增加 Page Indexing 28 基线、重定向验证和 5 个精准重抓 URL 的只读复核；不重复 URL Inspection。
+- [x] 8/2 增加三档闸门：普通索引 ≥30 继续，26-29 观察且不扩页，<25 或核心页掉索引才启用既有索引应急规则。
+- [x] 已同步 `task_plan.md`、Month 2 战略书、`findings.md`、`progress.md`、Claude guardrails 与 Week 12 活跃提示词。
+- [x] `weekly-report.md` / metrics / 30-day schedule N/A：本轮没有新后台数据、外联状态或 D30 结论；只调整未来判读和排期。
+- [x] 站点源码、页面、`content-dates.json`、build、Vercel N/A：纯计划文档微调，不制造页面更新时间或部署任务。

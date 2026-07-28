@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-28 周二 Week 12 D29 | GSC 7/28 实时 Indexing 为 28 indexed / 23 unindexed，crawled-not-indexed 9；9/9 分诊完成 | Review/Product 语义合规修复已部署：26 个评测页移除第三方 Amazon 评分衍生的 Review/Product/Offer/AggregateRating，并保留 Article/Breadcrumb；重定向错误新验证已启动（待定 4 / 失败 0）；Petlibro、Catit、LR5、fountain-filter、cat-wont-drink 共 5 个 URL 已精准请求重抓；自动重定向 8 与 crawled-not-indexed 9 不做整桶验证 | Pretty Happy Pets 跟进 `Sent-confirmed`，不得重复发送 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
+**最后更新：2026-07-28 周二 Week 12 D29 | GSC 7/28 实时 Indexing 为 28 indexed / 23 unindexed，crawled-not-indexed 9；9/9 分诊完成 | Review/Product 语义合规修复已部署：26 个评测页移除第三方 Amazon 评分衍生的 Review/Product/Offer/AggregateRating，并保留 Article/Breadcrumb；重定向错误新验证已启动（待定 4 / 失败 0）；Petlibro、Catit、LR5、fountain-filter、cat-wont-drink 共 5 个 URL 已精准请求重抓；自动重定向 8 与 crawled-not-indexed 9 不做整桶验证 | 计划微调：7/28 设为 Rich Results 口径断点，7/31 分轨复核，8/2 按 ≥30 / 26-29 / <25 三档决策 | Pretty Happy Pets 跟进 `Sent-confirmed`，不得重复发送 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
 
@@ -114,9 +114,9 @@
 | 周二 | 7/28 | ✅ GSC 9/9 五类分诊；✅ Shopping/Enhancements 下降诊断；✅ Review/Product schema 合规修复与 26/26 回归检查；✅ 自动重定向 8 / 重定向错误 4 分桶核对 | ✅ D29 活跃入口核对；✅ PHP 跟进 `Sent-confirmed`；✅ 重定向错误新验证；✅ 5 个 URL 精准请求重抓 | ✅ `146b9fb` 已推送、Vercel READY、生产 HTML 通过；重定向验证待定 4/失败 0；自动重定向与 crawled-not-indexed 未机械整桶验证 |
 | 周三 | 7/29 | 完成 30 天变现 Sprint D30 复盘 | 分开给出 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Outreach Pause/Iterate、Editorial Continue cautiously，若有新回复则重算 | 回复率、付费信号、编辑关系和下一步逐轨记录；`30-day-schedule.md` 与相关日志同步 |
 | 周四 | 7/30 | Feeder Reliability coverage-gap：逐项核对 jamming、portion/calibration、backup-power/travel failover | 只有确认具体缺口时，最多加固 1 个现有页面 | 先查生成页/生产页/Git；无缺口写 `No change needed`；不新建 URL、不做广泛重写 |
-| 周五 | 7/31 | GSC 两个完整 7 天 query/page 对照；GA4 `source/medium → landing page → engagement → events`；Pinterest 10 分钟检查 | 观察 feeder portion 计算器使用，不在无基线时宣称 uplift | 新快照写入 metrics/progress/weekly report；保留 GA4 UI 31 channel sessions vs 30 `session_start` 的口径差异；不发 Pin |
+| 周五 | 7/31 | GSC 两个完整 7 天 query/page 对照 + Page Indexing 28 基线复核；只读检查重定向错误验证与 5 个精准重抓 URL，不重复提交 | GA4 `source/medium → landing page → engagement → events`；Pinterest 10 分钟检查；观察 feeder portion 计算器使用 | 以 7/28 为 Rich Results 口径断点，Product/Merchant/Review 不做修复前后同比；分别记录普通索引、query/page、验证状态与 GA4 口径差异；不发 Pin |
 | 周六 | 8/1 | 月度 GEO 复检：identity / source / date / quickAnswer / answerability 与 crawler 存活 | 仅在实际 stale/diff 清单支持时刷新 `llms.txt` / `llms-full.txt` 和跨页事实 | 有明确审计清单；只改命中项；若改站点资产则 build、push、Vercel 和线上 HTML 全闭环 |
-| 周日 | 8/2 | Week 12 周复盘，消费 W31 AI Radar 并决定 Week 13 唯一主集群 | 复核 `EXP-44C79107`、PHP/Round 4 与 30 天 Sprint 后续 | 形成 Week 13 排期；只按真实结果调整月度战略，自动化故障继续由知识库主控处理 |
+| 周日 | 8/2 | Week 12 周复盘，消费 W31 AI Radar；按索引三档决定 Week 13：≥30 继续、26-29 观察、<25 或核心页掉索引则启用既有索引应急规则 | 复核 `EXP-44C79107`、PHP/Round 4 与 30 天 Sprint 后续 | 形成 Week 13 排期；Rich Results 下降不单独触发战略调整；只有普通索引/核心页或既有月度触发条件命中才调整资源，自动化故障仍由知识库主控处理 |
 
 **Week 12 固定动作与闸门**
 
@@ -127,6 +127,8 @@
 - BarkyTech / Purely Wholesome / PetsAnalysis 全周默认 Hold；只有首批回复或明确编辑反馈才重开，不因零回复机械扩量。
 - Pinterest 不发布新 Pin；Semrush 未成功登录刷新时明确沿用 7/17 旧快照，不伪装成 Week 12 新数据。
 - GSC 7/28 实时显示 9 个已抓取未索引 URL；9/9 分诊不是实验。只在真实页面变化、URL 状态变化或验证到期时做 Inspection。
+- 7/28 是结构化数据口径断点：Product/Merchant/Review 后续下降可能是合规撤标后的预期结果，不与修复前有效项直接同比，也不据此反推普通索引或排名。
+- Petlibro、Catit、LR5、fountain-filter、cat-wont-drink 共 5 个 URL 已精准请求重抓；本周不再追加或重复 URL Inspection，除非出现新的实质页面变化或明确失败状态。
 - Review/Product schema 语义合规修复已完成：不得重新把 Amazon 第三方评分写成本站 `AggregateRating` / 作者 `reviewRating`，不得重新输出联盟 Merchant `Offer`，不得编造配送/退货政策；`npm run verify` 已加入 26 个评测页的防回归检查。
 - AI Signal 日报的 7/25、7/26 runner 错误属于知识库自动化 P0，本项目只消费修正后的周报/VOC，不在 Week 12 站点排期中修复。
 - 每日最多 3 个 P0；每次收工必须更新 `progress.md`，其他文件按事实变化同步或明确写 N/A。
@@ -136,9 +138,9 @@
 
 | 维度 | 周目标 | 不算完成 |
 |------|------|------|
-| 数据归因 | 完成 1 次等长 GSC 对照和 1 次 GA4 source→landing→engagement→events 复核 | 只抄首页总数；强行抹平 GA4 UI 口径差异 |
+| 数据归因 | 完成 1 次等长 GSC 对照和 1 次 GA4 source→landing→engagement→events 复核；明确标注 7/28 Rich Results 口径断点 | 只抄首页总数；强行抹平 GA4 UI 口径差异；把合规撤标后的富结果下降当普通索引下降 |
 | Feeder 验证 | 3 个子问题 coverage-gap 3/3；最多 1 个已有页按证据加固 | 为完成配额新建页面或重复改 jamming/portion |
-| 索引 | 7/28 实时 9 个 crawled-not-indexed URL 9/9 分诊 | 机械 URL Inspection ×5；把 Performance 当索引状态；沿用旧 4 条漏查 |
+| 索引 | 9/9 分诊已完成；7/31 记录普通索引、重定向验证与 5 个精准重抓状态，8/2 按 ≥30 / 26-29 / <25或核心页掉索引三档决策 | 重复提交已入队 URL；把 Rich Results 或 Performance 当 Page Indexing；继续沿用旧 33/15/4 口径 |
 | 外联 | PHP 一次轻量跟进进入 `Ready for human` 或用户确认后的 `Sent-confirmed`；Round 4 保持可解释状态 | 把未发送写成 Sent；把审稿写成 Placed/Backlink won |
 | 变现 | 7/29 对 3 条轨道分别给出 Keep / Iterate / Pause | 只给整个项目一个笼统结论 |
 | GEO | 8/1 月度审计有命中清单和必要修复；无缺口时明确 No change needed | 为刷新日期而批量改文件 |
