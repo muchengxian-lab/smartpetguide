@@ -4409,3 +4409,14 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 | 月度北极星、资源比例、触发条件 | Month 2 战略书 | N/A：五类分诊与单条安全修正未触发战略调整 |
 | 外联、邮件、Brand CRM | Round 3/4、CRM、30-day schedule | N/A：今天没有外部回复、发送或轨道裁决 |
 | Claude 全局规则 | 根 `CLAUDE.md`、execution guardrails | N/A：规则未改变，只更新了活跃模板的实时数据和完成状态 |
+
+### 提交、推送与生产验证
+
+- [x] 明确暂存 8 个预期文件；`git diff --cached --check` 通过，没有暂存无关文件。
+- [x] 提交 `d09c167`（`fix: triage GSC indexing pages and remove unsafe bleach advice`）已推送：`40a8267..d09c167 master -> master`。
+- [x] Vercel production deployment `dpl_HxXrJn3yVq81vu5W8ggnoiwAnULK` 为 `READY`，生产别名包含 `smartpetguide.net` 与 `www.smartpetguide.net`。
+- [x] 生产目标页返回 200；新安全文本存在，旧漂白剂建议不存在，自指 canonical 与 `2026-07-28` 修改日期均存在。
+- [x] 生产 `sitemap-0.xml` 返回 200，包含 filter guide 规范 URL 与 `<lastmod>2026-07-28`。
+- [ ] 首次首页校验把 PowerShell 变量命名为 `$home`，与只读环境变量 `$HOME` 大小写不敏感冲突，报 `VariableNotWritable`；该次 `HomeStatus=0` 无效。下一次改用 `$homeResponse`，不沿用无效结果。
+- [x] 改用 `$homeResponse` 后生产首页返回 200，预期首页 title 存在；首页验证闭环。
+- [x] 首次推送后 `origin/master...HEAD = 0 0`；最终工作区将在补写本生产验证记录并再次推送后复核。
