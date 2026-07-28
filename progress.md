@@ -4569,7 +4569,7 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] 微调边界：不改变 Month 2 北极星、资源比例、Feeder 唯一主集群、新 URL 配额或内容日期；只修正周五数据判读、周日三档决策和 Claude 防重复操作规则。
 - [x] 7/28 固化为 Rich Results 口径断点；Product/Merchant/Review 与普通 Page Indexing、query/page 分开记录。
 - [x] 7/31 增加 Page Indexing 28 基线、重定向验证和 5 个精准重抓 URL 的只读复核；不重复 URL Inspection。
-- [x] 8/2 增加三档闸门：普通索引 ≥30 继续，26-29 观察且不扩页，<25 或核心页掉索引才启用既有索引应急规则。
+- [x] 8/2 增加三档闸门：普通索引 ≥30 继续，25-29 观察且不扩页，<25 或核心页掉索引才启用既有索引应急规则；观察档覆盖边界值 25。
 - [x] 已同步 `task_plan.md`、Month 2 战略书、`findings.md`、`progress.md`、Claude guardrails 与 Week 12 活跃提示词。
 - [x] `weekly-report.md` / metrics / 30-day schedule N/A：本轮没有新后台数据、外联状态或 D30 结论；只调整未来判读和排期。
 - [x] 站点源码、页面、`content-dates.json`、build、Vercel N/A：纯计划文档微调，不制造页面更新时间或部署任务。

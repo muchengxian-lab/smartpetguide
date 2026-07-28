@@ -71,7 +71,7 @@ C:\Users\Administrator\smartpetguide
 - 7/30 周四：Feeder Reliability coverage-gap 3/3：jamming、portion/calibration、backup-power/travel failover。先查源码、dist/生成页、生产页与 Git；只有发现具体缺口时最多改 1 个现有页面。无缺口则记录 No change needed。
 - 7/31 周五：GSC 两个完整 7 天 query/page 对照 + Page Indexing 28 基线复核；只读检查重定向错误验证和 5 个精准重抓 URL，不重复提交。7/28 是 Rich Results 口径断点，Product/Merchant/Review 不做修复前后同比，也不反推普通索引。GA4 source/medium → landing → engagement → events；Pinterest 10 分钟检查。观察 calculator 使用，不宣称无基线 uplift，不发 Pin。
 - 8/1 周六：月度 GEO 复检 identity / source / date / quickAnswer / answerability 与 crawler 存活。只有实际 stale/diff 清单支持时才更新 llms.txt / llms-full.txt 或跨页事实；站点资产变化必须走 build/deploy/线上验证。
-- 8/2 周日：Week 12 复盘，消费 W31 AI Radar；普通索引 ≥30 继续、26-29 观察且不扩页、<25 或核心页掉索引才启用既有索引应急规则。复核唯一实验、PHP/Round 4、D30 决策，形成 Week 13 唯一主集群与排期；Rich Results 单独下降不触发月度战略修改。
+- 8/2 周日：Week 12 复盘，消费 W31 AI Radar；普通索引 ≥30 继续、25-29 观察且不扩页、<25 或核心页掉索引才启用既有索引应急规则。复核唯一实验、PHP/Round 4、D30 决策，形成 Week 13 唯一主集群与排期；Rich Results 单独下降不触发月度战略修改。
 
 只执行系统日期对应任务和已经到期但未闭环的项目。未来日期只能保持 Planned/Pending，不得提前标完成。
 
