@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "validate:dates": "node scripts/validate-content-dates.mjs",
-    "verify": "npm run build && npm run validate:dates"
+    "validate:review-schema": "node scripts/validate-review-schema.mjs",
+    "verify": "npm run build && npm run validate:dates && npm run validate:review-schema"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

@@ -67,7 +67,7 @@ Task A（Amazon 联盟）降级为后台基建——花 3 天一次性做完页�
 | D26 | 2026-07-25 | Editorial | 若 PHP 有评论则修订；若对方提案到达则独立审核 | 人工确认修改或选题决定 | 不承诺 reciprocal/dofollow |
 | D27 | 2026-07-26 | Review | ✅ 已汇总 GA4 归因、编辑合作、Homerunpet 与 Round 4 信号 | ✅ Week 12 维持资源比例，战术收敛为单集群/单实验/外联止损 | Week 11 收盘已写入周报、计划和 metrics |
 | D28 | 2026-07-27 | Review | ✅ 已比较 Aorkuler 正向 not-now、Homerunpet 0 reply、Batch A 0/2 replies 与 PHP 审稿无更新；当前可复制的是证据型交付/编辑关系，不是发送量 | ✅ 用户已确认：`EXP-44C79107` 已激活为唯一 Active；PHP 一次轻量跟进已 `Ready for human` | ✅ 生命周期重建为 38 total / Active 1 / Backlog 31；editorial 进展未混入 Brand 回复率；未扩名单、未发送邮件 |
-| D29 | 2026-07-28 | Cleanup | ✅ 最终文档清理完成；活跃入口唯一指向 Week 12；同时完成 GSC Indexing 与 Shopping/Enhancements 下降诊断 | ✅ Pretty Happy Pets 一次轻量跟进已在原线程实际发送，`Sent-confirmed` | ✅ 不扩写内容、不重复发信；GSC 四类富结果 invalid 均为 0，Review/Product schema 语义合规修复进入下一源码窗口 |
+| D29 | 2026-07-28 | Cleanup | ✅ 最终文档清理、GSC Indexing/Enhancements 诊断、Review/Product schema 合规修复与重定向原因桶核对完成 | ✅ Pretty Happy Pets 一次轻量跟进已在原线程实际发送，`Sent-confirmed` | ✅ 26/26 评测页防回归检查通过；自动重定向不机械验证，重定向错误部署后启动新验证；不扩写内容、不重复发信 |
 | D30 | 2026-07-29 | Decision | 产出 30 天总结：Amazon 基建、Brand 回复/意向、Editorial 关系、GA4 商业事件与下一步建议 | 分别选择 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause | 最终 sprint 复盘写入 `progress.md`；默认建议 Task A Keep、Brand Pause/Iterate、Editorial Continue cautiously，按当天新证据调整 |
 
 ## 周里程碑

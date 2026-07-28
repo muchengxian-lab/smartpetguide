@@ -443,6 +443,7 @@ if (!reviewDates) throw new Error(`Missing content date registry entry: reviews/
 const pubDate = reviewDates.publishDate;
 const modDate = reviewDates.modifiedDate;
 const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+const hasAmazonRating = Boolean(product?.rating && product?.reviewCount && product.reviewCount > 0);
 ---
 
 <BaseLayout title={review.title} description={review.description} type="article" publishDate={pubDate} modifiedDate={modDate}>
@@ -477,7 +478,9 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
 
     <!-- Key Takeaways -->
     <Takeaways items={[
-      `Rating: ${"★".repeat(Math.round(product?.rating || 0))}${"☆".repeat(5 - Math.round(product?.rating || 0))} (${(product?.reviewCount || 0).toLocaleString()} reviews)`,
+      hasAmazonRating
+        ? `Amazon customer rating: ${"★".repeat(Math.round(product?.rating || 0))}${"☆".repeat(5 - Math.round(product?.rating || 0))} (${(product?.reviewCount || 0).toLocaleString()} ratings)`
+        : "Amazon customer rating: not yet established",
       `Price: $${product?.price || 0}`,
       `Best for: ${(product?.bestFor || []).slice(0, 3).join(" / ")}`,
       `Bottom line: ${(product?.pros || [])[0] || ""}`,
@@ -493,10 +496,14 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
             <p class="text-sm text-bark-muted">About <strong class="text-forest">${Math.round(product.price / 36)}/mo</strong> over 3 years</p>
           )}
         </div>
-        <span class="flex items-center gap-1 text-honey text-lg">
-          {"★".repeat(Math.round(product?.rating || 0))}
-          <span class="text-bark-muted text-sm">({(product?.reviewCount || 0).toLocaleString()} reviews)</span>
-        </span>
+        {hasAmazonRating ? (
+          <span class="flex items-center gap-1 text-honey text-lg">
+            {"★".repeat(Math.round(product?.rating || 0))}
+            <span class="text-bark-muted text-sm">Amazon customer rating ({(product?.reviewCount || 0).toLocaleString()} ratings)</span>
+          </span>
+        ) : (
+          <span class="text-sm text-bark-muted">Amazon customer rating not yet established</span>
+        )}
       </div>
       <a href={product?.amazonUrl || "#"} target="_blank" rel="nofollow sponsored noopener"
          class="mt-5 inline-flex items-center gap-2 rounded-xl bg-honey px-8 py-3 font-bold text-white shadow-sm transition-all hover:bg-honey-dark hover:shadow-md active:scale-[0.98]">
@@ -680,27 +687,4 @@ const displayMod = new Date(modDate + "T12:00:00").toLocaleDateString("en-US", {
     </div>
   </article>
 
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Review",
-    url: Astro.url.href,
-    itemReviewed: {
-      "@type": "Product",
-      name: product?.name || review.title,
-      description: review.description,
-      image: product?.imageUrl || "",
-      brand: { "@type": "Brand", name: product?.brand || "" },
-      offers: { "@type": "Offer", price: String(product?.price || 0), priceCurrency: "USD", availability: "https://schema.org/InStock", url: product?.amazonUrl || "" },
-      ...(product?.rating && product?.reviewCount >= 10 ? {
-        aggregateRating: { "@type": "AggregateRating", ratingValue: product.rating, bestRating: 5, ratingCount: product.reviewCount }
-      } : {}),
-    },
-    ...(product?.rating && product?.reviewCount >= 10 ? {
-      reviewRating: { "@type": "Rating", ratingValue: product.rating, bestRating: 5 }
-    } : {}),
-    author: { "@type": "Person", name: "Chengxian Yang", url: "https://smartpetguide.net/about/#author", sameAs: ["https://medium.com/@muchengxian", "https://www.pinterest.com/muchengxian/", "https://www.wikidata.org/wiki/Q140290653"] },
-    datePublished: pubDate,
-    dateModified: modDate,
-    publisher: { "@type": "Organization", name: "SmartPetGuide", url: "https://smartpetguide.net/", sameAs: ["https://www.pinterest.com/muchengxian/", "https://medium.com/@muchengxian", "https://flipboard.com/@755g287", "https://www.wikidata.org/wiki/Q140290653"] },
-  })} />
 </BaseLayout>

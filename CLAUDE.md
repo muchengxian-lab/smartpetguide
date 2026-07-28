@@ -35,7 +35,7 @@ Current order:
 3. Editorial Outreach Round 4 Batch A was sent on 7/21 and is still 0/2 replies; keep BarkyTech, Purely Wholesome, and PetsAnalysis on Hold unless a real editorial response changes the evidence.
 4. Brand Outreach: Aorkuler is `Closed — not now (positive)` and must not be contacted again; Homerunpet remains `Sent — awaiting reply`.
 5. Track `Drafted`, `Ready for human`, `Scheduled`, `Sent-confirmed`, `Replied`, `Accepted`, and `Placed` separately.
-6. Before the next content expansion, fix the review template's structured-data semantics: do not reuse Amazon third-party ratings as SmartPetGuide `AggregateRating` or author `reviewRating`, and do not invent Merchant shipping/return policies for affiliate pages.
+6. The review template's structured-data compliance fix is complete. Do not reintroduce Amazon third-party ratings as SmartPetGuide `AggregateRating` or author `reviewRating`; do not emit affiliate links as Merchant `Offer`, and do not invent shipping/return policies. Keep `npm run verify`'s review-schema regression check passing.
 
 ## Non-Negotiable Rules
 

@@ -1363,3 +1363,20 @@ SmartPetGuide 对应的目标：
 
 ---
 *每次调研后更新此文件*
+## 2026-07-28 Review/Product schema 修复与 GSC 验证边界
+
+### 合规修复完成，富结果数量后续下降属于预期口径变化
+
+**实现**：评测模板已移除由 Amazon 第三方评分、评论量与联盟购买链接衍生的 `Review`、`Product`、`Offer`、`AggregateRating` JSON-LD。页面可见评分统一标成 `Amazon customer rating`；无评论量时显示 `not yet established`。Article 与 Breadcrumb 保留，未虚构本站编辑评分、配送或退货政策。
+
+**验证**：`npm.cmd run verify` 构建 114 页并通过日期校验；新增回归检查覆盖 26/26 评测页，确认 Article/Breadcrumb 均存在、Amazon 来源可见、四类禁用标记为 0。Petlibro、Catit 与 LR5 生成页人工抽查一致。
+
+**报表解释**：Google 重抓后，Product snippets、Merchant listings 与 Review snippets 的有效项可能进一步减少或从报告消失。这是主动撤下不满足语义边界的富结果资格，不是普通索引或排名被删除；普通 Article/Breadcrumb 和页面内容仍保留。
+
+### “验证修复”按原因桶处理，不按按钮状态机械点击
+
+**重定向错误 4**：GSC 明细为 WOPET 无尾斜杠旧 URL + 3 个历史 URL。当前 HTTP 已是 3 条直接 200、WOPET 单跳 308 到带尾斜杠 200；源码、llms、RSS、sitemap 与生成 HTML 均只引用规范 URL。生产部署复核后可启动一次新的整桶验证，让 Google 重抓并重新分类。
+
+**网页会自动重定向 8**：7 条是预期 HTTP→HTTPS 或无尾斜杠→带尾斜杠规范化；剩余 No-Fee GPS URL 当前已直接 200。该原因大多是正常排除，不应为了清零报告要求旧 URL 被索引，也不启动整桶验证。
+
+**已抓取未索引 9**：本轮 schema 修复与这 9 个 URL 不同类，不能用它作为整桶验证依据。仍按既有五类分诊处理；只对发生实质改动且抓取时间落后的个别 URL 做 URL Inspection，请求重抓不等于保证收录。

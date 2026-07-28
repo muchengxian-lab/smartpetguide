@@ -9,7 +9,7 @@
 - Week 12 新页面固定为 0；Feeder Reliability coverage-gap 命中具体缺口时，最多加固 1 个现有页面。
 - GEO 只做现有页的 `identity + source + date + quickAnswer + answerability`，不再启动新的技术 GEO 冲刺。
 - 7/28 实时索引为 28 / 23，crawled-not-indexed 为 9；9/9 已完成五类分诊。不得继续把 7/26 的 33 / 15 / 4 当现状，也不得为恢复总数机械 Inspection。
-- Shopping/Enhancements 当前 Product 1/0、Merchant 1/0、Breadcrumb 10/0、Review 2/0，四类 invalid 均为 0，人工处置与安全问题均为 0。Review 模板存在独立语义风险：不得把 Amazon 第三方评分写成本站 `AggregateRating` 或作者 `reviewRating`，不得为联盟页编造 Merchant 运费/退货政策。
+- Shopping/Enhancements 7/28 抓取前基线为 Product 1/0、Merchant 1/0、Breadcrumb 10/0、Review 2/0，四类 invalid 均为 0，人工处置与安全问题均为 0。Review 模板语义风险已修复：评测页不再输出由 Amazon 评分/联盟链接衍生的 Review/Product/Offer/AggregateRating；不得回滚该修复，也不得编造 Merchant 运费/退货政策。Google 重抓后 Product/Merchant/Review 有效项减少属于预期。
 - Feeder Reliability 是唯一主验证集群；先审计 jamming、portion/calibration、travel/power failover，已有覆盖时记录 No change needed。
 - `EXP-44C79107` 已于 7/27 获用户确认并激活为唯一 Active；只维护每周 10-15 分钟 GA4 渠道基线，Review 8/2，不增加归因工具、不启动第二个实验。
 - Round 4 Batch A 两封已于 7/21 `Sent-confirmed`，截至 7/26 为 0/2 replies；剩余三封 Week 12 保持 Hold。Brand Outreach 不扩量，Aorkuler 已关闭，只观察 Homerunpet。

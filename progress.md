@@ -4512,3 +4512,32 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] 已进入 28 个“已编入索引”示例明细；首屏 10 条包含 2 个 review URL：`catit-pixi-fountain-review`（7/22 抓取）与 `petlibro-granary-review`（7/15 抓取）。其中 Catit 已索引但未出现在当前 Product/Review 富结果明细，说明“已索引”是必要条件但不保证进入富结果报告；抽样、资格评估与重抓处理仍会影响计数。
 - [x] 首屏其余 8 条与 Breadcrumb 当前有效清单重合，进一步支持 Breadcrumb 报告与当前已索引样本集合高度联动。
 - [ ] 尝试把已索引明细的每页行数从 10 切到 100：agent-browser `select` 返回成功但 UI 仍选中 10；随后 DOM 点击 100 也未改变分页状态。没有把 10 条首屏误当完整 28 条，后续如需全量清单改用分页或导出；本次诊断已有足够证据，不为凑清单继续反复操作。
+## 会话：2026-07-28 周二 — Review/Product schema 合规修复与 GSC 验证决策
+
+### 开工基线
+- 用户已授权立即修复，并要求判断 GSC 索引问题是否应点击“验证修复”。
+- 开工 Git 状态干净：`HEAD=9f30904`，`origin/master...HEAD=0/0`。
+- 已确认评测模板把 Amazon 第三方评分/评论量输出为本站 `Product.aggregateRating`，并同时作为 Chengxian Yang 的 `Review.reviewRating`；联盟购买链接还被标成 Merchant `Offer`。本轮按 Google 富结果语义边界修复，不补虚构的 shipping/return 字段。
+
+### 本轮计划
+- [ ] 删除不合规的 Review/Product/Offer/AggregateRating JSON-LD，保留 Article 与 Breadcrumb。
+- [ ] 将评测页可见评分明确标注为 Amazon customer rating，避免来源混淆。
+- [ ] 完成 build、日期校验、生成 HTML 结构化数据计数与多页抽查。
+- [ ] 推送并验证 Vercel 生产页；随后核对 GSC 原因桶，仅对已真正解决的整桶问题启动验证。
+- [ ] 同步 `task_plan.md`、`findings.md`、周指标/执行记录并收口 Git。
+
+### 本地实现与验证
+- [x] `src/pages/reviews/[slug].astro` 已删除第三方 Amazon 评分衍生的 `Review` / `Product` / `Offer` / `AggregateRating` JSON-LD；页面仍由 `BaseLayout` 与 `Breadcrumb` 输出 Article/Breadcrumb。
+- [x] 评分可见文案统一为 `Amazon customer rating`；评论量为 0 时显示 `not yet established`，不再出现“5 星 / 0 reviews”的误导组合。
+- [x] 新增 `scripts/validate-review-schema.mjs` 并接入 `npm run verify`，用于防止上述不合规标记回归。
+- [x] `npm.cmd run verify` 通过：114 页 build；100 个内容页日期通过；26/26 review 页 Article/Breadcrumb 与 Amazon 来源标注通过，Review/Product/Offer/AggregateRating 为 0。
+- [x] 已连接用户登录的 Chrome，仅新建本会话专用 `gsc` 标签；原闲鱼标签 `t1` 未触碰。
+- [x] GSC 7/28 页面索引实时值复核仍为 28 indexed / 23 unindexed；6 个原因桶计数和状态未变：自动重定向 8（失败）、重定向错误 4（失败）、crawled-not-indexed 9（失败）、备用规范页 1（已开始）、Google 选择不同规范 1（已开始）、discovered-not-indexed 0（已通过）。
+- [ ] 首次点击“重定向错误”时，PowerShell 把未加引号的 `@e36` 当作 shell 语法，`agent-browser` 返回 `Missing arguments for: click`；页面没有发生变化。后续统一给 ref 加单引号，不重复错误写法。
+- [x] “重定向错误”4 条实时 URL 已取到：无尾斜杠的 `/reviews/wopet-automatic-feeder-review`（7/13 抓取）；以及带尾斜杠的 `/guides/smart-home-pet-devices/`、`/guides/best-no-subscription-cameras/`（均 6/23）、`/reviews/amazon-basics-litter-box-review/`（5/25）。下一步逐条核对当前 HTTP 跳转链、最终状态和 canonical，再决定是否整桶验证。
+- [x] 当前 HTTP 复核：无尾斜杠 WOPET URL 为单跳 `308` 到带尾斜杠规范 URL；其余 3 条当前均直接 `200`。GSC 上一轮验证详情为 3 条“待定”+ 1 条“失败”，提供“开始新的验证”按钮；尚未点击。
+- [x] 验证详情“待定”表明确列出 3 个当前 200 URL，因此唯一失败项可由集合差集确定为无尾斜杠 WOPET URL。该 URL 当前的单跳 308 属于预期 canonicalization，不是坏链；旧验证很可能把预期跳转本身继续计为 redirect error。暂不重复点整桶验证，先检查站内是否仍引用无尾斜杠 URL。
+- [x] 源码、`llms.txt`、RSS、sitemap 与当前生成 HTML 中的 WOPET 内链均使用带尾斜杠规范 URL；`vercel.json` 也明确 `trailingSlash: true`。没有发现站内继续制造无尾斜杠入口。因 4 条现状已从不可跟随/旧状态变为 3×200 + 1×单跳 308，待生产部署完成后可对“重定向错误”启动一次新的整桶验证。
+- [x] “网页会自动重定向”8 条明细已核对：5 条为历史无尾斜杠 URL（pet-travel、Catit、Honeytour、self-cleaning guide、Aorkuler），2 条为历史 HTTP 首页，另 1 条为带尾斜杠 `/reviews/nofee-gps-tracker-review/`。前 7 条显然属于预期 HTTPS/尾斜杠规范化；最后 1 条需单独查最终目标。该原因本身通常是正常排除，不因状态栏显示旧“失败”就机械验证。
+- [x] No-Fee GPS 规范 URL 当前直接返回 200，因此自动重定向桶无需代码修复或整桶验证；等待 Google 自然重抓更新旧样本。
+- [ ] 首次 `git add` 因沙箱对 `.git/index.lock` 写入返回 `Permission denied`，没有文件被暂存。已保留所有改动，下一次改用已批准的 Git 权限执行相同的明确文件列表。

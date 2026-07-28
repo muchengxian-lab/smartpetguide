@@ -802,6 +802,6 @@
 | Breadcrumb | **10 / 0** | 近期约 15→10；-5 与 indexed 33→28 同步，但只记强相关，不写一一因果 |
 | Review snippets | **2 / 0** | 2 个 item 都属于同一 Petlibro URL；近期约 4→2，不是 2 个唯一页面 |
 
-**构建产物对照：** `dist` 有 109 页 `BreadcrumbList`、26 页 `Review` + `Product`、25 页 `AggregateRating`。GSC 富结果报告只是当前已索引/被识别/抽样的子集；Google 官方也说明索引下降会减少结构化数据项，且正确标记不保证展示。
+**修复前构建产物对照：** `dist` 曾有 109 页 `BreadcrumbList`、26 页 `Review` + `Product`、25 页 `AggregateRating`。GSC 富结果报告只是当前已索引/被识别/抽样的子集；Google 官方也说明索引下降会减少结构化数据项，且正确标记不保证展示。
 
-**风险与后续：** GSC 人工处置措施和安全问题均为 0；当前下降没有处罚证据。但 Review 模板把 Amazon 第三方评分/评论量复用为本站 `AggregateRating` 与作者 `reviewRating`，并输出指向 Amazon 的 Merchant `Offer`，不符合 Google Review/Merchant 语义边界。下一源码窗口优先做模板合规修复；不补虚构的配送/退货字段。
+**修复结果：** GSC 人工处置措施和安全问题均为 0，当前下降没有处罚证据。7/28 已完成模板合规修复：26 个评测页不再输出由 Amazon 第三方评分/评论量和联盟链接衍生的 Review/Product/Offer/AggregateRating，保留 Article/Breadcrumb，并把可见评分明确标成 Amazon 来源；未补虚构的配送/退货字段。`npm.cmd run verify` 的 26/26 防回归检查通过。Google 重抓后 Product/Merchant/Review 有效项进一步减少属于预期口径变化，不等于普通网页被降权或删除索引。
