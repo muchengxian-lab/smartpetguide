@@ -16,14 +16,14 @@ Task A（Amazon 联盟）降级为后台基建——花 3 天一次性做完页�
 ## 执行顺序
 
 1. **Task A（后台基建）** — ✅ D1-D3 已完成（2026-06-29）
-2. **Brand Outreach（B+C 合并）** — 🔄 D4-D27 已复盘，D28-D30 于 7/27-7/29 完成最终裁决
+2. **Brand Outreach（B+C 合并）** — ✅ D4-D30 已完成；7/29 最终裁决为暂停冷外联，仅保留触发式再评估
 
 ## 执行进度
 
-- **已完成阶段**：D0-D13（2026-06-29 ~ 2026-07-03，部分阶段压缩执行）
-- **当前里程碑**：首轮 6 品牌验证完成，回复率 1/6（17%）；Aorkuler 认可交付质量但暂不实施，已关闭为 `not now (positive)`。
-- **最新执行**：D29 已于 7/28 完成活跃入口清理；Homerunpet email-first v2 仍等待回复，Round 4 Batch A 为 0/2 回复，Pretty Happy Pets 仍在审稿且一次轻量跟进已 `Sent-confirmed`。
-- **当前阻塞**：尚无第二个品牌认真回复、付费 beta 或实施信号。D30 必须把 Task A、Brand Outreach 与 Editorial/Guest Post 分开裁决；编辑合作进展不得算成 Brand 付费验证。
+- **已完成阶段**：D0-D30（2026-06-29 ~ 2026-07-29，部分阶段压缩执行）
+- **最终里程碑**：7 个实际联系品牌中 1 个回复（Aorkuler，1/7 = 14.3%）；其认可交付质量但暂不实施。付费 beta、预算讨论、实施信号均为 0。
+- **D30 实时核对**：截至 7/29 20:22，Homerunpet 仍只有我方 7/15 邮件；Round 4 Batch A 仍为 0/2 回复；Pretty Happy Pets 最新是我方 7/28 跟进，共享 DOCX 显示 0 条新评论、上次修改在 13 天前。
+- **最终裁决**：Task A `Keep — maintenance only`；Brand Outreach `Pause — cold outbound`，只在暖线索、明确预算/痛点或 60-90 天后的实质触发下再评估；Editorial/Guest Post `Continue cautiously`，只推进已有审稿/回复，不扩发送量。
 - **日期校准**：2026-07-26 是周日；下一工作周为 2026-07-27 周一至 2026-08-02 周日。D 编号代表阶段，不等于自然日。
 
 ## Operating Rules
@@ -68,7 +68,17 @@ Task A（Amazon 联盟）降级为后台基建——花 3 天一次性做完页�
 | D27 | 2026-07-26 | Review | ✅ 已汇总 GA4 归因、编辑合作、Homerunpet 与 Round 4 信号 | ✅ Week 12 维持资源比例，战术收敛为单集群/单实验/外联止损 | Week 11 收盘已写入周报、计划和 metrics |
 | D28 | 2026-07-27 | Review | ✅ 已比较 Aorkuler 正向 not-now、Homerunpet 0 reply、Batch A 0/2 replies 与 PHP 审稿无更新；当前可复制的是证据型交付/编辑关系，不是发送量 | ✅ 用户已确认：`EXP-44C79107` 已激活为唯一 Active；PHP 一次轻量跟进已 `Ready for human` | ✅ 生命周期重建为 38 total / Active 1 / Backlog 31；editorial 进展未混入 Brand 回复率；未扩名单、未发送邮件 |
 | D29 | 2026-07-28 | Cleanup | ✅ 最终文档清理、GSC Indexing/Enhancements 诊断、Review/Product schema 合规修复与重定向原因桶核对完成 | ✅ Pretty Happy Pets 一次轻量跟进已在原线程实际发送，`Sent-confirmed` | ✅ `146b9fb` 已部署；26/26 防回归通过；重定向错误新验证待定 4/失败 0；5 个 URL 精准请求重抓；不扩写内容、不重复发信 |
-| D30 | 2026-07-29 | Decision | 产出 30 天总结：Amazon 基建、Brand 回复/意向、Editorial 关系、GA4 商业事件与下一步建议 | 分别选择 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause | 最终 sprint 复盘写入 `progress.md`；默认建议 Task A Keep、Brand Pause/Iterate、Editorial Continue cautiously，按当天新证据调整 |
+| D30 | 2026-07-29 | Decision | ✅ 30 天总结完成：Amazon 基建、Brand 回复/意向、Editorial 关系、GA4 商业事件与下一步已分轨复盘 | ✅ Task A Keep（maintenance only）；Brand Outreach Pause（cold outbound）；Editorial/Guest Post Continue cautiously | ✅ 最终结论同步至 schedule、CRM、Round 4、metrics、月度战略、task plan、findings 与 progress；不把编辑合作计入 Brand 成功 |
+
+## D30 最终裁决（2026-07-29）
+
+| 轨道 | 30 天证据 | 裁决 | 下一步与重开条件 |
+|------|------|------|------|
+| Task A — Amazon 联盟基建 | 5 个决策模块、2 个 guide CTA、26 个产品 affiliate tag、模板 `rel="sponsored"` 与 GA4 事件代码均保留；最新已验证 GA4 基线仍为 `affiliate_click=0`、`outbound_click=0`、key events=0 | **Keep — maintenance only** | 不追加 CTA、不因零事件返工。周五继续轻量观察；只有真实点击或明确页面缺口才进入现有页优化 |
+| Brand Outreach | 7 个实际联系品牌中 1 个回复（14.3%）；Aorkuler 认可报告但不实施；Homerunpet 14 天 0 reply；付费 beta / 预算 / 实施信号均为 0 | **Pause — cold outbound** | PETKIT/Catit 和新名单不发送。暖入站、明确预算/痛点、产品/渠道实质变化，或 Aorkuler 60-90 天后出现新触发时再评估；不是按日期自动重启 |
+| Editorial / Guest Post | Pretty Happy Pets 已接受选题并进入 editorial + veterinary review；稿件已交、7/28 已做一次跟进，但尚无评论、发布或落链。Round 4 Batch A 为 0/2 | **Continue cautiously** | PHP 只处理真实评论、提案、采用或发布消息；Round 4 剩余 3 封继续 Hold；没有编辑反馈时不扩量、不重复跟进 |
+
+**边界：**编辑接受、审稿和未来可能的 guest post 是关系/权威信号，不是 Brand 付费验证。`EXP-44C79107` 仍是唯一 Active 实验，D30 不新增实验或归因工具。
 
 ## 周里程碑
 

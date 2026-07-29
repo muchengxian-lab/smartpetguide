@@ -1,5 +1,17 @@
 # 发现与决策
 
+## 2026-07-29 30 天变现 Sprint D30 最终裁决
+
+**实时证据**：截至 20:22 Asia/Shanghai，Pretty Happy Pets 线程最新仍是我方 7/28 跟进，共享 DOCX 显示 0 条新评论、上次修改在 13 天前；Homerunpet 线程仍只有我方 7/15 邮件；GlobalPETS 与 The Upper Pawside 线程都仍只有我方 7/21 邮件。没有新的编辑回复、品牌回复、评论或采用证据。
+
+**Task A — Keep, maintenance only**：26 个产品 affiliate tag、模板 sponsored 关系、决策模块与 GA4 商业事件代码仍在；最近已验证 GA4 为 affiliate 0 / outbound 0 / key events 0。低流量下的零事件不足以否定基建，但也不支持继续追加 CTA。
+
+**Brand Outreach — Pause, cold outbound**：实际联系 7 个品牌，1 个回复（14.3%）；Aorkuler 认可交付但不实施，Homerunpet 14 天零回复，付费 beta、预算讨论和实施信号均为 0。PETKIT/Catit 和新名单不发送；只有暖入站、明确预算/痛点或实质品牌变化才重评。
+
+**Editorial / Guest Post — Continue cautiously**：Pretty Happy Pets 的接受与审稿是唯一明确正向关系信号，但尚未形成评论、采用、发布或落链；Round 4 仍 0/2。只处理已有关系的真实反馈，不重复跟进、不扩剩余三封。编辑进展不计入 Brand 付费验证。
+
+**实验边界**：D30 不新增实验；`EXP-44C79107` 继续作为唯一 Active，7/31 刷新归因链，8/2 Review。
+
 ## 2026-07-28 Week 12 计划微调：改判读，不改战略方向
 
 **不变项**：Month 2 北极星、外链/GSC/GEO/维护资源比例、Feeder Reliability 唯一主集群、新 URL 配额 0、最多加固 1 个有证据缺口的现有页均不变。Review/Product 合规修复属于风险收口，不建立新的技术工作流。

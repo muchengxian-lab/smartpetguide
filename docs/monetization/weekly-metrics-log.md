@@ -807,3 +807,17 @@
 **修复结果：** GSC 人工处置措施和安全问题均为 0，当前下降没有处罚证据。7/28 已完成模板合规修复：26 个评测页不再输出由 Amazon 第三方评分/评论量和联盟链接衍生的 Review/Product/Offer/AggregateRating，保留 Article/Breadcrumb，并把可见评分明确标成 Amazon 来源；未补虚构的配送/退货字段。`npm.cmd run verify` 的 26/26 防回归检查通过。Google 重抓后 Product/Merchant/Review 有效项进一步减少属于预期口径变化，不等于普通网页被降权或删除索引。
 
 **部署与重抓：** `146b9fb` 已推送，Vercel 生产部署 `dpl_2j8VeYUk8iiXNo1UoyaHe5Y8NfZS` READY；Petlibro、Catit、LR5 生产 HTML 抽查与本地一致。GSC“重定向错误”已启动新验证（待定 4 / 失败 0）；上述 3 个 review 和 2 个确有内容更新的 crawled-not-indexed 页面已请求重抓。自动重定向 8 与 crawled-not-indexed 9 未做机械整桶验证。
+
+---
+
+## Sprint D30 Final Decision — 2026-07-29
+
+> 今天不刷新 GSC/GA4/Pinterest 周窗口；下一次完整数据快照仍按 7/31 排班。本节使用最近一次已验证 GA4 商业事件基线和 7/29 Gmail 实时核对，避免伪造同日数据。
+
+| 轨道 | D30 事实 | 最终决定 |
+|------|------|------|
+| Task A | 基建仍在；最近已验证 GA4 为 affiliate 0 / outbound 0 / key events 0 | **Keep — maintenance only** |
+| Brand Outreach | 7 个实际联系品牌，1 个回复（14.3%）；付费 beta、预算、实施信号均为 0；Homerunpet 14 天 0 reply | **Pause — cold outbound** |
+| Editorial / Guest Post | PHP 已进入编辑/兽医审稿，7/28 已跟进；截至 7/29 无新回复。Round 4 Batch A 0/2 | **Continue cautiously** |
+
+**下一步：**Brand 新名单和 Round 4 剩余三封均不发送；只处理真实入站与 PHP 编辑反馈。`EXP-44C79107` 保持唯一 Active，7/31 刷新固定归因链，8/2 复核。

@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-28 周二 Week 12 D29 | GSC 7/28 实时 Indexing 为 28 indexed / 23 unindexed，crawled-not-indexed 9；9/9 分诊完成 | Review/Product 语义合规修复已部署：26 个评测页移除第三方 Amazon 评分衍生的 Review/Product/Offer/AggregateRating，并保留 Article/Breadcrumb；重定向错误新验证已启动（待定 4 / 失败 0）；Petlibro、Catit、LR5、fountain-filter、cat-wont-drink 共 5 个 URL 已精准请求重抓；自动重定向 8 与 crawled-not-indexed 9 不做整桶验证 | 计划微调：7/28 设为 Rich Results 口径断点，7/31 分轨复核，8/2 按 ≥30 / 25-29 / <25 三档决策 | Pretty Happy Pets 跟进 `Sent-confirmed`，不得重复发送 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
+**最后更新：2026-07-29 周三 Week 12 D30 | 30 天变现 Sprint 已收口：Task A `Keep — maintenance only`；Brand Outreach `Pause — cold outbound`；Editorial/Guest Post `Continue cautiously` | 7 个实际联系品牌 1 个回复（14.3%），付费 beta / 预算 / 实施信号均为 0；Homerunpet 已 `Closed — no response`；Round 4 Batch A 仍 0/2，剩余三封 Hold | Pretty Happy Pets 最新仍是我方 7/28 跟进，不重复发送 | GSC 继续沿用 7/28 实时 28 indexed / 23 unindexed / crawled-not-indexed 9；7/31 分轨复核，8/2 按 ≥30 / 25-29 / <25 三档决策 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
 
@@ -104,7 +104,7 @@
 - **搜索信号在改善但样本仍小**：完整 7 天 impressions 9→19、average position 51.1→21.7；不把排名改善写成流量突破，也不为单次查询继续返工 GPS 页。
 - **Feeder Reliability 设为 Week 12 唯一主验证集群**：W30 多源信号中 jamming/portion 为 High，GA4 也出现 portion guide 使用；现有 jamming 与 portion 页面已有覆盖，所以必须先检查 `jamming / portion-calibration / travel-power-failover` 的真实缺口。
 - **外联止损**：GlobalPETS / The Upper Pawside 首批 0/2 回复，BarkyTech / Purely Wholesome / PetsAnalysis 继续 Hold；Pretty Happy Pets 最早 7/27 只允许一次轻量跟进，此后等待真实评论、提案或采用消息。
-- **30 天变现 Sprint 到决策日再定案**：7/29 分开评估 Task A、Brand Outreach 与 Editorial/Guest Post，不把 PHP 编辑关系进展混入 Brand 付费验证。
+- **30 天变现 Sprint 已于 7/29 分轨收口**：Task A 保留为维护型基建；Brand 冷外联暂停；Editorial/Guest Post 只谨慎推进已有关系。PHP 编辑进展不计入 Brand 付费验证。
 
 ### Week 12 排班（2026-07-27 至 2026-08-02）— Continue，战术收敛为单集群验证
 
@@ -112,7 +112,7 @@
 |:--:|------|------|------|------|
 | 周一 | 7/27 | ✅ 用户已确认，`EXP-44C79107` 已激活为唯一 Active；Review 8/2，只做每周 10-15 分钟轻量 GA4 渠道基线 | ✅ PHP 邮件/共享 DOCX 已实时复核，无新邮件/评论；一次原线程轻量跟进已准备为 `Ready for human`，未发送；Homerunpet 与 Round 4 仍无回复 | ✅ 生命周期重建为 38 total / Active 1 / Backlog 31；跟进不问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold；无页面改动 |
 | 周二 | 7/28 | ✅ GSC 9/9 五类分诊；✅ Shopping/Enhancements 下降诊断；✅ Review/Product schema 合规修复与 26/26 回归检查；✅ 自动重定向 8 / 重定向错误 4 分桶核对 | ✅ D29 活跃入口核对；✅ PHP 跟进 `Sent-confirmed`；✅ 重定向错误新验证；✅ 5 个 URL 精准请求重抓 | ✅ `146b9fb` 已推送、Vercel READY、生产 HTML 通过；重定向验证待定 4/失败 0；自动重定向与 crawled-not-indexed 未机械整桶验证 |
-| 周三 | 7/29 | 完成 30 天变现 Sprint D30 复盘 | 分开给出 Task A、Brand Outreach、Editorial/Guest Post 的 Keep / Iterate / Pause；默认建议 Task A Keep、Brand Outreach Pause/Iterate、Editorial Continue cautiously，若有新回复则重算 | 回复率、付费信号、编辑关系和下一步逐轨记录；`30-day-schedule.md` 与相关日志同步 |
+| 周三 | 7/29 | ✅ 完成 30 天变现 Sprint D30 分轨复盘 | ✅ Task A Keep — maintenance only；✅ Brand Outreach Pause — cold outbound；✅ Editorial/Guest Post Continue cautiously | ✅ 7 个品牌 1 回复、0 付费/预算/实施信号；Homerunpet 收口；PHP/Round 4 实时复核；schedule、CRM、metrics、战略书与执行入口同步 |
 | 周四 | 7/30 | Feeder Reliability coverage-gap：逐项核对 jamming、portion/calibration、backup-power/travel failover | 只有确认具体缺口时，最多加固 1 个现有页面 | 先查生成页/生产页/Git；无缺口写 `No change needed`；不新建 URL、不做广泛重写 |
 | 周五 | 7/31 | GSC 两个完整 7 天 query/page 对照 + Page Indexing 28 基线复核；只读检查重定向错误验证与 5 个精准重抓 URL，不重复提交 | GA4 `source/medium → landing page → engagement → events`；Pinterest 10 分钟检查；观察 feeder portion 计算器使用 | 以 7/28 为 Rich Results 口径断点，Product/Merchant/Review 不做修复前后同比；分别记录普通索引、query/page、验证状态与 GA4 口径差异；不发 Pin |
 | 周六 | 8/1 | 月度 GEO 复检：identity / source / date / quickAnswer / answerability 与 crawler 存活 | 仅在实际 stale/diff 清单支持时刷新 `llms.txt` / `llms-full.txt` 和跨页事实 | 有明确审计清单；只改命中项；若改站点资产则 build、push、Vercel 和线上 HTML 全闭环 |
@@ -170,7 +170,7 @@
 - 每周处理 2-4 个现有高价值页或未索引页；新内容保持 0-2 篇、由 GSC/VOC 触发。
 - 每周固定 3-5 小时外链/PR：编辑型投稿、资源页、记者需求、可链接数据资产；目标每月新增 2-5 个相关引用域名。
 - GEO 保留为现有页的 `identity + source + date + answerability` 审计；技术存活检查周度 5 分钟，综合评分月度一次。
-- Brand Outreach 继续 email-first 小样本实验；Aorkuler 进入关系维护，只有 Homerunpet 或其他新品牌出现认真回复时才考虑扩量，每批最多 3 个品牌。
+- Brand Outreach 冷外联已在 D30 暂停；不再启动新名单或后续批次。只有暖入站、明确预算/痛点或品牌出现实质变化时，才重新评估最多 3 个 email-first 目标。
 - Pinterest 保持周度 10-20 分钟维护；出站点击破 0 后再讨论恢复发布。
 - 每周日继续消费 AI Radar、L2 VOC、Weekly Review、Knowledge Health 和 Dashboard 信号，再决定下一周权重。
 
@@ -281,9 +281,9 @@
 
 | Track | 目标 | 执行文件 | 状态 |
 |------|------|------|:--:|
-| Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | D0-D13 已执行，D14 起按 7/6 周一校正 |
+| Schedule | 30 天排期（合并版）：A→Brand Outreach 两轨道 | `docs/monetization/30-day-schedule.md` | ✅ D0-D30 已于 2026-07-29 完成并分轨裁决 |
 | A | Amazon affiliate conversion：5 页决策模块 + 2 指南 CTA + 全站审核 | `docs/monetization/task-a-amazon-affiliate-conversion.md` | ✅ 完成 |
-| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | 🔄 6 品牌完成首轮验证，1/6 回复；Aorkuler 正向评价报告但暂不实施，已关闭为 not now；Homerunpet v2 等待回复，不扩名单 |
+| Brand Outreach | B+C 合并：`/for-brands/` → 免费快照 → 付费审计 | `docs/monetization/task-b-brand-partnerships.md` + `task-c-pet-tech-visibility-audit.md` | ⏸ D30 Pause — cold outbound；7 品牌 1 回复，0 付费/预算/实施信号；只在暖入站或实质触发下重开 |
 
 ### 内容选题引擎（6/26 起）
 

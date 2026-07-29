@@ -61,3 +61,10 @@
 | 8 | `/guides/best-no-subscription-cameras/` | 加底部 CTA |
 | 9 | `/guides/are-automatic-feeders-worth-it-for-one-cat/` | 加底部 CTA |
 | 10 | `/reviews/litter-robot-5-review/` | LR5 ASIN 修复（等确认） |
+
+## D30 最终状态（2026-07-29）
+
+- **裁决：Keep — maintenance only。** Task A 的目标是建立合规的变现基础设施，不是用低流量 30 天窗口证明收入。
+- 当前源码仍保留 26 个带 `smartpetgui0a-20` 的产品链接、Review/Compare/Best/Guide 的 `rel="nofollow sponsored noopener"` 路径、Review/Compare 决策模块和 GA4 `affiliate_click` / `outbound_click` 事件代码。
+- 最新已验证 GA4 基线仍为 `affiliate_click=0`、`outbound_click=0`、key events=0；这说明尚无商业结果，不说明跟踪代码或 Task A 基建失败。
+- 后续只在模板/产品链接实质变化时回归检查；不为制造动作继续加 CTA。LR5 搜索链接保留为已知低优先级项，只有确认可靠 ASIN 后才替换。
