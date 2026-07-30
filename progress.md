@@ -4611,4 +4611,5 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] 已同步目标源码、`content-dates.json`、`task_plan.md`、`findings.md`、`progress.md`、根/项目 Claude 入口与 Week 12 活跃提示词。
 - [x] `weekly-metrics-log.md`、`weekly-report.md` N/A：今天没有刷新 GSC/GA4/Pinterest/Semrush，周五 7/31 才写等长窗口快照。
 - [x] Month 2 战略书 N/A：本轮执行既定 Feeder Reliability coverage-gap，没有改变北极星、资源比例、实验或触发条件。
-- [ ] Git 提交、push、Vercel READY、HTTP 200 与生产 HTML：待本会话下一步闭环。
+- [x] 页面与同步文件提交为 `4119edc fix: strengthen feeder travel failover guidance` 并推送至 `origin/master`；Vercel 生产部署 `dpl_5bkfSTS9r5QkFrxcUdg6mzU4Ao3m` 为 READY。
+- [x] 生产首页与 `/guides/pet-travel-monitoring-guide/` 均为 HTTP 200；线上 HTML 含 `dateModified=2026-07-30`、RSPCA/Cats Protection 链接、离线排程与预先安排人工检查，旧不安全 FAQ 文案不存在。
