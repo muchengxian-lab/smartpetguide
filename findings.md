@@ -1400,3 +1400,17 @@ SmartPetGuide 对应的目标：
 **网页会自动重定向 8**：7 条是预期 HTTP→HTTPS 或无尾斜杠→带尾斜杠规范化；剩余 No-Fee GPS URL 当前已直接 200。该原因大多是正常排除，不应为了清零报告要求旧 URL 被索引，也不启动整桶验证。
 
 **已抓取未索引 9**：本轮 schema 修复与这 9 个 URL 不同类，不能用它作为整桶验证依据。仍按既有五类分诊处理；本轮只对发生实质改动且抓取时间落后的 `fountain-filter-guide`（上次抓取 6/27）与 `cat-wont-drink-from-water-fountain`（上次抓取 7/9）请求重抓。另对模板抽样 Petlibro、Catit、LR5 请求重抓。5 个 URL 均出现“已请求编入索引”，但请求入队不等于保证收录或富结果展示。
+
+## 2026-07-30 Feeder Reliability coverage-gap 结论
+
+### 3/3 覆盖审计
+
+- **Jamming — PASS / No change needed**：`stop-automatic-feeder-from-jamming` 的源码、dist 与生产页已有清堵步骤、重置/再校准、常见故障模式、断电、电池、份量偏差、失败提醒及旅行兜底；继续扩写只会重复堆内容。
+- **Portion/calibration — PASS / No change needed**：`feeder-portion-size-guide` 已有 10 次出粮称重法、三款具体型号的官方起点、浏览器端计算器、整数份量误差提醒与重新校准条件；不需要为反复信号再建 URL。
+- **Backup-power/travel failover — GAP CONFIRMED / 1-page fix**：主旅行指南虽有备用电源、钥匙联系人和故障提醒，但旧文把摄像头/喂食器写得接近可替代人工照看，且建议猫一周仅每 2-3 天查看一次。RSPCA 要求离家时必须由负责的人照看宠物；Cats Protection 建议猫 sitter 至少每天两次，幼猫、老年猫或有健康问题者更频繁。因此只加固 `/guides/pet-travel-monitoring-guide/`，补足离线排程、电源/联网同时失败、预先安排人工检查和报警后的即时上门动作。
+
+### 边界
+
+- Week 12 新 URL 仍为 0，实质内容修改只发生在 1 个 slug；jamming 与 portion 页面未刷新日期。
+- `traveling-with-pets-smart-tech` 仍保留较旧的宽松 sitter 表述。由于本周最多 1 个现有页的硬闸门已用完，本周不再改第二页；将其作为 Week 13 跨页一致性候选，不影响主旅行指南已形成完整 failover 路径的结论。
+- 本次没有新 GSC、GA4、Pinterest 或 Semrush 快照，不改变 Month 2 北极星、资源比例、唯一实验或索引三档触发条件。

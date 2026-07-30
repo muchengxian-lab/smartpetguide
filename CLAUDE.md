@@ -13,7 +13,7 @@ Before executing any new monetization work, read these files in order:
 
 ## Current Special Sprint
 
-The active business experiment is the SmartPetGuide monetization validation sprint. Task A is complete; Week 12 closes the 30-day sprint and uses one feeder-reliability validation cluster plus one attribution experiment without broad CRM or page expansion:
+The SmartPetGuide monetization validation sprint reached its D30 decision on 2026-07-29: Task A is `Keep — maintenance only`, Brand Outreach is `Pause — cold outbound`, and Editorial/Guest Post is `Continue cautiously`. Week 12 now executes one feeder-reliability validation cluster plus one attribution experiment without broad CRM or page expansion:
 
 | Track | 定位 | 周期 |
 |------|------|------|
@@ -33,7 +33,7 @@ Current order:
 1. Read the guardrails, the active Week 12 row in `task_plan.md`, the latest `progress.md` entry, and the current decisions at the top of `findings.md`.
 2. Keep Task A in maintenance mode; do not add conversion infrastructure without a measured gap.
 3. Editorial Outreach Round 4 Batch A was sent on 7/21 and is still 0/2 replies; keep BarkyTech, Purely Wholesome, and PetsAnalysis on Hold unless a real editorial response changes the evidence.
-4. Brand Outreach: Aorkuler is `Closed — not now (positive)` and must not be contacted again; Homerunpet remains `Sent — awaiting reply`.
+4. Brand Outreach: Aorkuler is `Closed — not now (positive)` and Homerunpet is `Closed — no response`; neither should be contacted again without new inbound evidence.
 5. Track `Drafted`, `Ready for human`, `Scheduled`, `Sent-confirmed`, `Replied`, `Accepted`, and `Placed` separately.
 6. The review template's structured-data compliance fix is complete. Do not reintroduce Amazon third-party ratings as SmartPetGuide `AggregateRating` or author `reviewRating`; do not emit affiliate links as Merchant `Offer`, and do not invent shipping/return policies. Keep `npm run verify`'s review-schema regression check passing.
 

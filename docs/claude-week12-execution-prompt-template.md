@@ -57,7 +57,7 @@ C:\Users\Administrator\smartpetguide
 - Pretty Happy Pets：稿件仍在 editorial + veterinary review；截至 7/26 Google Doc 0 条新评论，对方承诺的 2-3 个提案/样稿未到。一次轻量跟进已由用户于 7/28 在原线程实际发送，状态 `Sent-confirmed`；不得再次发送，只等待真实评论、采用消息或对方提案。
 - Round 4：GlobalPETS + The Upper Pawside 于 7/21 实际发送，状态 Sent-confirmed — awaiting reply；7/29 实时核对两个线程仍各只有我方邮件，0/2 replies。BarkyTech / Purely Wholesome / PetsAnalysis Week 12 默认 Hold。
 - D30 最终裁决：Task A `Keep — maintenance only`；Brand Outreach `Pause — cold outbound`；Editorial/Guest Post `Continue cautiously`。7 个实际联系品牌 1 个回复（14.3%），付费 beta / 预算 / 实施信号为 0；Homerunpet 已 `Closed — no response`。不得重新启动新 Brand 名单。
-- W30 AI Signal：feeder jamming / portion calibration 为唯一 High 站点信号；现有 jamming 与 portion 页面已覆盖大量核心问题，必须先做 coverage-gap。WiFi/app/offline 为 Reinforce/Watch；travel/power failover 可能有缺口，但需要本地与生产证据。
+- W30 AI Signal：feeder jamming / portion calibration 为唯一 High 站点信号。7/30 coverage-gap 已完成 3/3：jamming 与 portion/calibration 的源码、dist 和生产页覆盖通过，均为 `No change needed`；travel/power failover 在主旅行指南确认缺口并只加固 1 页，补入 offline schedule、断电/联网多故障、预先安排人工检查及 RSPCA/Cats Protection 来源。
 - `EXP-44C79107`（GA4 source/medium → landing page → engagement → events）已于 7/27 获用户确认并激活为唯一 Active；Review 8/2，只维护每周 10-15 分钟基线，不增加 attribution tooling，不另开归因实验。
 - 7/25、7/26 AI Signal runner BadRequestError 属于知识库自动化 P0，由另一个主控对话处理。本项目只消费修正后的输出，不修改自动化脚本、Signal 或 Experiment 账本。
 
@@ -68,7 +68,7 @@ C:\Users\Administrator\smartpetguide
 - 7/27 周一：`EXP-44C79107` 已获用户确认并激活为唯一 Active；若 PHP 仍无评论/提案，准备一次原线程轻量跟进。实际发送为 human-only，用户确认前最多标 Ready for human。Round 4 剩余三封继续 Hold。
 - 7/28 周二：已按实时清单对 9 个 crawled-not-indexed URL 完成 9/9 五类分诊；D29 活跃入口核对完成；Review/Product schema 合规修复及 26/26 防回归检查已部署；重定向错误新验证已启动（待定 4 / 失败 0）；Petlibro、Catit、LR5、fountain-filter、cat-wont-drink 共 5 个 URL 已精准请求重抓；自动重定向 8 与 crawled-not-indexed 9 未机械整桶验证；PHP 跟进已 `Sent-confirmed`，不得重复发送。
 - 7/29 周三：30 天变现 Sprint D30 已完成并同步。Task A Keep — maintenance only；Brand Outreach Pause — cold outbound；Editorial/Guest Post Continue cautiously。不得重复复盘、重开 Homerunpet/PETKIT/Catit 或发送 Round 4 剩余三封。
-- 7/30 周四：Feeder Reliability coverage-gap 3/3：jamming、portion/calibration、backup-power/travel failover。先查源码、dist/生成页、生产页与 Git；只有发现具体缺口时最多改 1 个现有页面。无缺口则记录 No change needed。
+- 7/30 周四：Feeder Reliability coverage-gap 已完成 3/3。jamming、portion/calibration 均为 `No change needed`；`/guides/pet-travel-monitoring-guide/` 已补足 backup-power/travel failover，`modifiedDate=2026-07-30`。新 URL 0、实质修改 1 页；不得重复执行或继续改第二页。
 - 7/31 周五：GSC 两个完整 7 天 query/page 对照 + Page Indexing 28 基线复核；只读检查重定向错误验证和 5 个精准重抓 URL，不重复提交。7/28 是 Rich Results 口径断点，Product/Merchant/Review 不做修复前后同比，也不反推普通索引。GA4 source/medium → landing → engagement → events；Pinterest 10 分钟检查。观察 calculator 使用，不宣称无基线 uplift，不发 Pin。
 - 8/1 周六：月度 GEO 复检 identity / source / date / quickAnswer / answerability 与 crawler 存活。只有实际 stale/diff 清单支持时才更新 llms.txt / llms-full.txt 或跨页事实；站点资产变化必须走 build/deploy/线上验证。
 - 8/2 周日：Week 12 复盘，消费 W31 AI Radar；普通索引 ≥30 继续、25-29 观察且不扩页、<25 或核心页掉索引才启用既有索引应急规则。复核唯一实验、PHP/Round 4、D30 决策，形成 Week 13 唯一主集群与排期；Rich Results 单独下降不触发月度战略修改。
@@ -144,7 +144,7 @@ C:\Users\Administrator\smartpetguide
 | 7/27 | 唯一实验决定 + PHP 一次轻量跟进准备 | `progress.md`、`task_plan.md`；有外联状态变化再同步 `round3`，实验账本由知识库主控更新 |
 | 7/28 | ✅ 9/9 URL 五类分诊 + D29 清理与 schema 合规修复已完成 | progress、task plan、findings、metrics 与技术日志已同步；不沿用旧 4 条口径 |
 | 7/29 | ✅ 30 天 Sprint D30 分轨裁决已完成 | schedule、CRM、Round 4、metrics、战略书、guardrails、findings、progress 与 task plan 已同步；不重复执行 |
-| 7/30 | Feeder coverage-gap 3/3 | `progress.md`、`task_plan.md`；有页面改动再同步目标源码、日期与 `findings.md` |
+| 7/30 | ✅ Feeder coverage-gap 3/3 已完成；主旅行指南 1 页加固 | 已同步 `progress.md`、`task_plan.md`、目标源码、日期与 `findings.md`；不得重复执行或继续改第二页 |
 | 7/31 | GSC/GA4/Pinterest 周快照 | `weekly-metrics-log.md`、`progress.md`、`task_plan.md`、`weekly-report.md` |
 | 8/1 | 月度 GEO / llms / crawler 复检 | `progress.md`、`task_plan.md`；只更新命中缺口的站点资产，战略变化才改战略书 |
 | 8/2 | Week 12 复盘 + Week 13 排期 | `weekly-report.md`、`task_plan.md`、`findings.md`、`progress.md`；必要时 metrics/战略书 |

@@ -4585,3 +4585,30 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] `EXP-44C79107` 继续作为唯一 Active，D30 未新增实验、归因工具或站点任务。
 - [x] 已同步 monetization README、30-day schedule、Amazon log、Brand CRM、weekly metrics、Round 4、Month 2 战略书、task plan、Claude guardrails/提示词、findings、lessons 与 progress。
 - [x] `weekly-report.md` N/A：今天是周三且没有刷新完整数据窗口；7/31 再写周快照。站点源码、页面、`content-dates.json`、build、Vercel N/A：本轮只有项目文档和状态收口。
+
+## 会话：2026-07-30 周四 — Feeder Reliability coverage-gap 3/3
+
+### 开工与审计
+
+- [x] 系统时间确认 2026-07-30 周四；开工时 `HEAD=51ee377`、工作区 clean、`origin/master...HEAD=0/0`。
+- [x] 按 Week 12 周四边界核对 jamming、portion/calibration、backup-power/travel failover 的源码、dist、生产 HTML 与 Git；新 URL 配额保持 0。
+- [x] Jamming 为 `PASS / No change needed`：生产页已有卡粮排查、重置/再校准、断电、电池、份量与旅行失败兜底。
+- [x] Portion/calibration 为 `PASS / No change needed`：生产页已有 10 次称重校准、具体型号官方值、计算器与误差提醒。
+- [x] Travel/power 确认缺口：主旅行指南已有设备层兜底，但旧 FAQ 的“一周只用喂食器、每 2-3 天检查”与权威动物福利建议不一致；同时缺少离线排程和多个设备同时离线时的人工应急路径。
+- [x] agent-reach 的 Exa 后端当前未配置；按技能回退为 Web 搜索，并只采用 RSPCA 与 Cats Protection 官方页面。没有使用论坛、商家博客或不可追溯健康断言。
+
+### 页面修复
+
+- [x] 只加固 `/guides/pet-travel-monitoring-guide/` 这 1 个现有页面：明确设备不能替代人工照看；补入离线排程测试、电池/UPS/物理钥匙多层兜底、预先安排 sitter、报警后的即时上门与兽医联系方式。
+- [x] FAQ 改为自动喂食器、饮水机和摄像头不能让猫安全地独处一周，并链接 RSPCA / Cats Protection 权威建议。
+- [x] 仅将该 slug 的 `modifiedDate` 从 2026-07-21 更新为 2026-07-30；jamming 与 portion 页面日期不变。
+- [x] `traveling-with-pets-smart-tech` 的旧宽松 sitter 表述登记为 Week 13 跨页一致性候选；本周 1 页硬闸门已用完，不继续修改第二页。
+
+### 验证与文件同步
+
+- [x] `npm.cmd run verify` 构建成功；独立复核 `validate:dates` 为 100 个内容页 / 61 个保守 modified dates / 113 个 sitemap URL，`validate:review-schema` 为 26/26 通过。
+- [x] `dist` 共 113 个 `index.html`；目标页生成 HTML 含 `dateModified=2026-07-30`、RSPCA、Cats Protection、离线排程与人工检查内容，旧不安全 FAQ 文案已消失。
+- [x] 已同步目标源码、`content-dates.json`、`task_plan.md`、`findings.md`、`progress.md`、根/项目 Claude 入口与 Week 12 活跃提示词。
+- [x] `weekly-metrics-log.md`、`weekly-report.md` N/A：今天没有刷新 GSC/GA4/Pinterest/Semrush，周五 7/31 才写等长窗口快照。
+- [x] Month 2 战略书 N/A：本轮执行既定 Feeder Reliability coverage-gap，没有改变北极星、资源比例、实验或触发条件。
+- [ ] Git 提交、push、Vercel READY、HTTP 200 与生产 HTML：待本会话下一步闭环。

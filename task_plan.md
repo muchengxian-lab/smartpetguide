@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-07-29 周三 Week 12 D30 | 30 天变现 Sprint 已收口：Task A `Keep — maintenance only`；Brand Outreach `Pause — cold outbound`；Editorial/Guest Post `Continue cautiously` | 7 个实际联系品牌 1 个回复（14.3%），付费 beta / 预算 / 实施信号均为 0；Homerunpet 已 `Closed — no response`；Round 4 Batch A 仍 0/2，剩余三封 Hold | Pretty Happy Pets 最新仍是我方 7/28 跟进，不重复发送 | GSC 继续沿用 7/28 实时 28 indexed / 23 unindexed / crawled-not-indexed 9；7/31 分轨复核，8/2 按 ≥30 / 25-29 / <25 三档决策 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
+**最后更新：2026-07-30 周四 Week 12 | Feeder Reliability coverage-gap 已完成 3/3：jamming 与 portion/calibration 线上覆盖通过、无需重复修改；travel/power failover 在主旅行指南确认缺口并完成 1 页加固 | 30 天变现 Sprint 维持 D30 裁决：Task A `Keep — maintenance only`；Brand Outreach `Pause — cold outbound`；Editorial/Guest Post `Continue cautiously` | GSC 继续沿用 7/28 实时 28 indexed / 23 unindexed / crawled-not-indexed 9；7/31 分轨复核，8/2 按 ≥30 / 25-29 / <25 三档决策 | Snapshot 10 的 Performance、GA4、Pinterest、Semrush 仍为 7/26 历史基线**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
 
@@ -113,7 +113,7 @@
 | 周一 | 7/27 | ✅ 用户已确认，`EXP-44C79107` 已激活为唯一 Active；Review 8/2，只做每周 10-15 分钟轻量 GA4 渠道基线 | ✅ PHP 邮件/共享 DOCX 已实时复核，无新邮件/评论；一次原线程轻量跟进已准备为 `Ready for human`，未发送；Homerunpet 与 Round 4 仍无回复 | ✅ 生命周期重建为 38 total / Active 1 / Backlog 31；跟进不问发布时间、不要求 reciprocal/dofollow；Round 4 剩余 3 封仍 Hold；无页面改动 |
 | 周二 | 7/28 | ✅ GSC 9/9 五类分诊；✅ Shopping/Enhancements 下降诊断；✅ Review/Product schema 合规修复与 26/26 回归检查；✅ 自动重定向 8 / 重定向错误 4 分桶核对 | ✅ D29 活跃入口核对；✅ PHP 跟进 `Sent-confirmed`；✅ 重定向错误新验证；✅ 5 个 URL 精准请求重抓 | ✅ `146b9fb` 已推送、Vercel READY、生产 HTML 通过；重定向验证待定 4/失败 0；自动重定向与 crawled-not-indexed 未机械整桶验证 |
 | 周三 | 7/29 | ✅ 完成 30 天变现 Sprint D30 分轨复盘 | ✅ Task A Keep — maintenance only；✅ Brand Outreach Pause — cold outbound；✅ Editorial/Guest Post Continue cautiously | ✅ 7 个品牌 1 回复、0 付费/预算/实施信号；Homerunpet 收口；PHP/Round 4 实时复核；schedule、CRM、metrics、战略书与执行入口同步 |
-| 周四 | 7/30 | Feeder Reliability coverage-gap：逐项核对 jamming、portion/calibration、backup-power/travel failover | 只有确认具体缺口时，最多加固 1 个现有页面 | 先查生成页/生产页/Git；无缺口写 `No change needed`；不新建 URL、不做广泛重写 |
+| 周四 | 7/30 | ✅ Feeder Reliability coverage-gap 3/3：jamming 与 portion/calibration 均为 `No change needed`；✅ backup-power/travel failover 确认具体缺口 | ✅ 仅加固 `/guides/pet-travel-monitoring-guide/`：补 offline schedule、断电多故障兜底、预先安排人工检查与权威来源 | ✅ 新 URL 0、实质修改 1 页；`modifiedDate=2026-07-30`；113 个 HTML、100 个内容日期、26/26 review schema 回归通过；待提交推送与生产验收 |
 | 周五 | 7/31 | GSC 两个完整 7 天 query/page 对照 + Page Indexing 28 基线复核；只读检查重定向错误验证与 5 个精准重抓 URL，不重复提交 | GA4 `source/medium → landing page → engagement → events`；Pinterest 10 分钟检查；观察 feeder portion 计算器使用 | 以 7/28 为 Rich Results 口径断点，Product/Merchant/Review 不做修复前后同比；分别记录普通索引、query/page、验证状态与 GA4 口径差异；不发 Pin |
 | 周六 | 8/1 | 月度 GEO 复检：identity / source / date / quickAnswer / answerability 与 crawler 存活 | 仅在实际 stale/diff 清单支持时刷新 `llms.txt` / `llms-full.txt` 和跨页事实 | 有明确审计清单；只改命中项；若改站点资产则 build、push、Vercel 和线上 HTML 全闭环 |
 | 周日 | 8/2 | Week 12 周复盘，消费 W31 AI Radar；按索引三档决定 Week 13：≥30 继续、25-29 观察、<25 或核心页掉索引则启用既有索引应急规则 | 复核 `EXP-44C79107`、PHP/Round 4 与 30 天 Sprint 后续 | 形成 Week 13 排期；Rich Results 下降不单独触发战略调整；只有普通索引/核心页或既有月度触发条件命中才调整资源，自动化故障仍由知识库主控处理 |
