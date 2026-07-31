@@ -821,3 +821,69 @@
 | Editorial / Guest Post | PHP 已进入编辑/兽医审稿，7/28 已跟进；截至 7/29 无新回复。Round 4 Batch A 0/2 | **Continue cautiously** |
 
 **下一步：**Brand 新名单和 Round 4 剩余三封均不发送；只处理真实入站与 PHP 编辑反馈。`EXP-44C79107` 保持唯一 Active，7/31 刷新固定归因链，8/2 复核。
+
+---
+
+## Snapshot 11 — 2026-07-31（Week 12 周五完整复核）
+
+> 数据边界：GSC Performance 使用最新两个完整且等长的 7 天窗口（2026-07-23—07-29 vs 07-16—07-22）；Page Indexing 总表最后更新于 7/24，另以 7/31 URL Inspection 记录页面级新状态。GA4 使用 2026-07-24—07-30。Pinterest 使用自有 Pin、排除 repin 与 paid 的后台只读数据，最新可用日为 7/29。Semrush 本次未刷新，7/17 值仅保留为历史快照。
+
+### GSC Performance：完整 7 天对照
+
+| 指标 | 7/23-7/29 | 7/16-7/22 | 变化 |
+|------|:--:|:--:|:--:|
+| 点击 | **0** | **0** | 持平 |
+| 展示 | **9** | **14** | **-5（-35.7%）** |
+| CTR | **0%** | **0%** | 持平 |
+| 平均排名 | **22.6** | **19.0** | **变差 3.6 位** |
+
+**查询明细边界：** 最新窗口可见 `how do i get my cat to drink from a water fountain` 为 1 impression / position 49。前一窗口可见 `compare gps prices`、`cat won't drink from fountain`、`chewy water fountain for cats`、`cat drinking from fountain`，各 1 impression；GSC 隐私过滤后的查询行不等于属性总展示。
+
+**页面变化：** `/guides/cat-breaking-into-automatic-feeder/` 为 3 vs 1（+2）；`/guides/cat-wont-drink-from-water-fountain/` 为 3 vs 6（-3）；首页 1 vs 1；LR5 review 与 subscription-cost guide 各由 0 增至 1。前一期另有多个 1-2 impression 页面本期未出现。页面行与属性总计使用不同聚合/隐私口径，不能用页面行加总覆盖属性总值。
+
+### GSC 普通索引、验证与 Rich Results
+
+| 报告 | 当前值 / 状态 | 判断 |
+|------|:--:|------|
+| 已索引 / 未索引 | **28 / 23** | 与 7/28 相同；Page Indexing 报告最后更新 7/24，存在滞后 |
+| 网页会自动重定向 | **8 / 验证失败** | 多数为预期规范化，不启动整桶验证 |
+| 已抓取-尚未编入索引 | **9 / 验证失败** | 不因总桶重复请求；继续页面级判断 |
+| 重定向错误 | **4 / 验证已开始** | 7/28 新验证仍在运行，不重复点击 |
+| 备用网页（适当 canonical） | **1 / 验证已开始** | 继续等待 |
+| Google 选择不同 canonical | **1 / 验证已开始** | 继续等待 |
+| 已发现-尚未编入索引 | **0 / 验证通过** | 持平 |
+
+**5 个 7/28 精准重抓 URL 的 7/31 只读结果：** Petlibro Granary review、Catit PIXI review、Litter-Robot 5 review 均已索引；`cat-wont-drink-from-water-fountain` 已由“已抓取未索引”转为“网址已收录到 Google”；`fountain-filter-guide` 仍为“已抓取-尚未编入索引”，最后抓取 2026-06-27，允许抓取/索引、自指 canonical、抓取成功。今天没有再次请求索引。
+
+**7/28 口径断点后的 Rich Results：** Product snippets **0 valid / 0 invalid**、Merchant listings **0 / 0**、Review snippets **0 / 0**、Breadcrumb **8 / 0**、HTTPS **7 / 0**。前三项归零符合撤除不合规 Review/Product/Merchant 标记后的预期路径，不与修复前数量做普通同比，也不解释为页面被删除索引。
+
+### GA4 固定归因链（7/24-7/30）
+
+| 层级 | 实测结果 |
+|------|------|
+| 总体 | **33 sessions / 20 engaged sessions / 60.61% engagement / 10 秒平均互动 / 143 events / 0 key events** |
+| Channel → source/medium | Direct → `(direct) / (none)`：33 sessions、20 engaged、142 events；Unassigned → `(not set)`：1 session、0 engaged、1 event；Organic Search / Referral 没有可见行 |
+| Landing | 首页 8 sessions / 31 秒；obesity guide 2 / 4 秒；maintenance schedule 2 / 0 秒；Honeytour review 2 / 5 秒；其余大多为 1 session |
+| Events | `page_view` 37、`session_start` 33、`first_visit` 32、`user_engagement` 35、`scroll` 6；`affiliate_click`、`outbound_click` 未出现，按 0 记录 |
+| Feeder portion | `/guides/feeder-portion-size-guide`：**1 Direct session / 1 active / 1 new / 2 秒 / 0 key event** |
+
+**GA4 口径边界：** 报告总 sessions 为 33，但渠道行 Direct 33 + Unassigned 1 合计 34；保留 UI 原始差异，不人为调平。当前只能确认基线与使用痕迹，不能宣称 feeder portion 产生 uplift 或转化。
+
+### Pinterest 维护快照
+
+| 窗口 | Impressions | Engagements | Pin clicks | Saves | Outbound clicks |
+|------|:--:|:--:|:--:|:--:|:--:|
+| 近 7 天 | **2,003** | **9** | **8** | **1** | **0** |
+| 对照变化 | **-9.82%** | **-25%** | **-33.33%** | 无可比值 | 无可比值 |
+| 近 30 天 | **11,617** | **65** | **57** | **6** | **4** |
+| 对照变化 | **+18.11%** | **+54.76%** | **+67.65%** | **+50%** | **-42.86%** |
+
+**Pinterest 边界与决定：** 后台主体未正常渲染，但已登录业务页的官方只读 metrics summary 请求返回 READY，最新数据日为 7/29；没有使用旧截图补值。本次明确使用自有 Pin、排除 repin/paid 的服务端汇总，与 7/26 UI 快照的采集路径/过滤上下文不同，因此不把历史 801→当前 11,617 写成增长。展示和站内互动存在，但近 7 天 outbound 为 0，故继续 10 分钟维护模式，不发布新 Pin。
+
+### Snapshot 11 决策
+
+1. GSC 报告总桶未变，但 URL Inspection 已确认一个饮水问题页入索引；8/2 应结合更新后的普通索引总桶再触发三档决策，不用滞后报告提前升级应急响应。
+2. Performance 由 14 降到 9 impressions 且仍 0 clicks；样本不足，不改标题、不批量加固、不重提 sitemap。
+3. `EXP-44C79107` 已获得固定链路的第二次可复核快照，但当前几乎全为 Direct、商业事件为 0；8/2 只评估实验是否继续收集，不把“有会话”误写成归因成功。
+4. feeder portion 本期 1 session / 2 秒 / key 0，维持观察，不再扩写计算器。
+5. Pinterest 维持维护、不发 Pin；Semrush 未刷新前继续显式标注 7/17 历史值。

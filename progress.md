@@ -4613,3 +4613,39 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] Month 2 战略书 N/A：本轮执行既定 Feeder Reliability coverage-gap，没有改变北极星、资源比例、实验或触发条件。
 - [x] 页面与同步文件提交为 `4119edc fix: strengthen feeder travel failover guidance` 并推送至 `origin/master`；Vercel 生产部署 `dpl_5bkfSTS9r5QkFrxcUdg6mzU4Ao3m` 为 READY。
 - [x] 生产首页与 `/guides/pet-travel-monitoring-guide/` 均为 HTTP 200；线上 HTML 含 `dateModified=2026-07-30`、RSPCA/Cats Protection 链接、离线排程与预先安排人工检查，旧不安全 FAQ 文案不存在。
+
+## 会话：2026-07-31 周五 — Week 12 周度数据复核
+
+- [x] 开工基线：系统时间 2026-07-31 周五；`HEAD=3936037`，工作区 clean，`origin/master...HEAD=0/0`。
+- [x] 今日范围锁定为 GSC 两个完整 7 天窗口 + Page Indexing/验证状态、GA4 source/medium → landing → engagement → events、Pinterest 维护快照；没有改页面、发 Pin、重复提交 URL 或重提 sitemap。
+
+### 浏览器与权限恢复
+
+- [x] 默认 `agent-browser` 会话无返回后，使用 `doctor --offline --quick` 清理旧残留并确认用户 Chrome 的 CDP 9222；显式连接后由用户完成 Google 登录。
+- [x] 用户关闭页签后重新连接同一浏览器并打开 GSC，确认 `sc-domain:smartpetguide.net`、GA4 与 Pinterest 都保持登录态。
+- [x] 全程只读：没有读取或填写账号、密码、验证码；没有点击 GSC“验证修复”或“请求编入索引”。
+
+### GSC 完整窗口与索引状态
+
+- [x] Performance 最新完整 7 天 2026-07-23—07-29：0 clicks / 9 impressions / CTR 0% / average position 22.6；前一完整 7 天 07-16—07-22：0 / 14 / 0% / 19.0。展示 -35.7%，排名变差 3.6 位，仍为小样本。
+- [x] 页面变化重点：feeder break-in 3 vs 1；cat-wont-drink 3 vs 6；首页 1 vs 1；LR5 review 与 subscription-cost guide 各新增 1 impression。属性总计与页面行存在 GSC 聚合/隐私口径差异，未用页面行强行调平。
+- [x] Page Indexing 仍为 28 indexed / 23 unindexed：自动重定向 8 failed、crawled-not-indexed 9 failed、重定向错误 4 started、备用 canonical 1 started、Google 选不同 canonical 1 started、discovered-not-indexed 0 passed。报告最后更新 7/24，明确标记为滞后总表。
+- [x] 5 个精准 URL 只读复核：Petlibro、Catit、LR5 review 均已索引；`cat-wont-drink-from-water-fountain` 已入索引；`fountain-filter-guide` 仍为 6/27 抓取后的 crawled-not-indexed。没有再次请求索引。
+- [x] 7/28 schema 断点后的当前 Rich Results：Product 0/0、Merchant 0/0、Review 0/0、Breadcrumb 8/0、HTTPS 7/0；前三项归零按合规撤标后的预期结果记录，不解释为普通索引下降。
+
+### GA4 固定归因链
+
+- [x] 2026-07-24—07-30：33 sessions / 20 engaged / 60.61% engagement / 10 秒平均互动 / 143 events / 0 key events。
+- [x] Direct → `(direct)/(none)` 为 33 sessions / 20 engaged / 142 events；Unassigned → `(not set)` 为 1 / 0 / 1；Organic Search 与 Referral 无可见行。GA4 报告总计 33，但渠道行合计 34，保留 UI 原始差异。
+- [x] feeder portion landing 为 1 Direct session / 1 active / 1 new / 2 秒 / 0 key event；`affiliate_click`、`outbound_click` 未出现，按 0 记录。当前只证明有一次使用，不证明 uplift 或转化。
+
+### Pinterest 维护快照
+
+- [x] Pinterest 业务页登录有效，但 analytics 主体未正常渲染；改读该登录页发出的官方只读 metrics summary，返回 READY，最新数据日 7/29，没有用旧截图补值。
+- [x] 近 7 天：2,003 impressions / 9 engagements / 8 Pin clicks / 1 save / 0 outbound；近 30 天：11,617 / 65 / 57 / 6 / 4。口径为自有 Pin、排除 repin 和 paid。
+- [x] 结论保持维护模式：有展示与站内互动，但近 7 天外链点击仍为 0；今天没有发布 Pin。当前 30 天只读采集路径与 7/26 UI 快照不同，未把 801→11,617 写成增长；Semrush 未刷新，继续将 7/17 数值标为历史值。
+
+### 写回与收工边界
+
+- [x] 已更新 `docs/monetization/weekly-metrics-log.md`（Snapshot 11）、`weekly-report.md`、`task_plan.md`、`findings.md`、`.claude/CLAUDE.md`、`docs/claude-execution-guardrails.md`、Week 12 活跃提示词与本节，避免下一会话重复执行 7/31；Month 2 北极星、资源比例和触发条件未变化，战略书 N/A。
+- [x] 今日只有数据与文档改动；站点源码、页面、sitemap 均未变化，因此 build、Vercel deploy 与生产页验收 N/A。

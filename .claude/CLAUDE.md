@@ -20,7 +20,7 @@ Claude Code 在执行任何相关工作前必须先读：
 7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
 8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
-当前顺序：Task A 只维护；GA4 唯一实验、GSC 7/28 实时 9 URL 分诊、Shopping/Enhancements 下降诊断、Review/Product schema 合规修复与 7/29 D30 裁决均已完成。7/30 Feeder Reliability coverage-gap 也已完成：jamming 与 portion/calibration 无需重复修改，主旅行指南已补足 offline schedule、断电/联网多故障和人工照看兜底。下一步只按 7/31 排班读取新数据。Pretty Happy Pets 跟进已 `Sent-confirmed`，不得重复发送；Round 4 剩余三封继续 Hold。
+当前顺序：Task A 只维护；GA4 唯一实验、GSC 9 URL 分诊、Shopping/Enhancements 诊断、Review/Product schema 合规修复、D30 裁决、Feeder Reliability coverage-gap 与 7/31 Snapshot 11 均已完成。下一步只按 8/1 排班做月度 GEO/llms 复检，不得重复执行 7/31 后台检查。Pretty Happy Pets 跟进已 `Sent-confirmed`，不得重复发送；Round 4 剩余三封继续 Hold。
 
 禁止自动发邮件、提交外部表单、联系品牌、伪造联系人/流量/销售数据，禁止把付费合作写成编辑推荐排名。
 
@@ -42,7 +42,7 @@ Claude Code 在执行任何相关工作前必须先读：
 
 ## 当前阶段
 
-Week 12 为 2026-07-27 周一至 2026-08-02 周日。7/26 Snapshot 10：114 页；完整 7 天 GSC Performance 为 0 clicks / 19 impressions / position 21.7，3 个月 307 impressions / 4 clicks；GA4 最近 7 天 29 active / 28 new / 36 page views / 121 events，affiliate/outbound/key events 0；Pinterest 30 天 801 impressions / 0 outbound；Semrush 沿用 7/17 的 12 RD / 28 backlinks / 20 keywords / AS 2。7/28 实时 GSC Indexing 为 28 indexed / 23 unindexed、crawled-not-indexed 9；修复前 Shopping/Enhancements 为 Product 1/0、Merchant 1/0、Breadcrumb 10/0、Review 2/0，人工处置与安全问题均为 0。Review/Product 合规修复已移除评测页第三方评分/联盟 Offer 富结果标记，Google 重抓后 Product/Merchant/Review 数量下降属于预期。7/30 Feeder Reliability coverage-gap 已完成 3/3，并只实质修改主旅行指南 1 页。Pretty Happy Pets 仍在编辑/兽医审稿，一次轻量跟进已由用户实际发送；Round 4 Batch A 0/2 回复。
+Week 12 为 2026-07-27 周一至 2026-08-02 周日。7/31 Snapshot 11：114 页；GSC 最新完整 7 天为 0 clicks / 9 impressions / position 22.6，对照前期 0 / 14 / 19.0；Page Indexing 总表仍为 28 indexed / 23 unindexed、crawled-not-indexed 9，但报告最后更新 7/24，URL Inspection 已确认饮水问题页新入索引、filter guide 仍待重抓。重定向错误 4 的验证仍“已开始”；Product/Merchant/Review 为 0/0、Breadcrumb 8/0，符合 7/28 合规撤标后的预期口径。GA4 7/24-7/30 为 33 sessions / 20 engaged / 143 events / 0 key events，feeder portion 仅 1 Direct session / 2 秒。Pinterest 近 7 天为 2,003 impressions / 9 engagements / 0 outbound；近 30 天后台只读口径为 11,617 / 65 / 4 outbound，不能与 7/26 不同采集路径的 801 机械同比。Semrush 仍沿用 7/17 的 12 RD / 28 backlinks / 20 keywords / AS 2。Pretty Happy Pets 仍在编辑/兽医审稿，一次轻量跟进已由用户实际发送；Round 4 Batch A 0/2 回复。
 90 天目标：150-180 页 / 60-100 索引 / 25-40 引用域名 / GEO Score 85+。
 
 ## 核心策略

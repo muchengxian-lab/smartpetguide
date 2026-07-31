@@ -8,8 +8,8 @@
 - 时间权重：外链/编辑型分发 35-40%；GSC 与现有页加固 25-30%；战略 GEO/VOC 20-25%；维护 10-15%，Pinterest 只观察。
 - Week 12 新页面固定为 0；Feeder Reliability coverage-gap 命中具体缺口时，最多加固 1 个现有页面。
 - GEO 只做现有页的 `identity + source + date + quickAnswer + answerability`，不再启动新的技术 GEO 冲刺。
-- 7/28 实时索引为 28 / 23，crawled-not-indexed 为 9；9/9 已完成五类分诊。不得继续把 7/26 的 33 / 15 / 4 当现状，也不得为恢复总数机械 Inspection。
-- Shopping/Enhancements 7/28 抓取前基线为 Product 1/0、Merchant 1/0、Breadcrumb 10/0、Review 2/0，四类 invalid 均为 0，人工处置与安全问题均为 0。Review 模板语义风险已修复：评测页不再输出由 Amazon 评分/联盟链接衍生的 Review/Product/Offer/AggregateRating；不得回滚该修复，也不得编造 Merchant 运费/退货政策。Google 重抓后 Product/Merchant/Review 有效项减少属于预期。
+- 7/31 Page Indexing 总表仍为 28 / 23、crawled-not-indexed 9，但报告最后更新 7/24；当天 URL Inspection 已确认 `cat-wont-drink-from-water-fountain` 新入索引，`fountain-filter-guide` 仍待重抓。9/9 分诊仍有效；不得用滞后总桶重复或批量 Inspection。
+- Shopping/Enhancements 7/31 为 Product 0/0、Merchant 0/0、Review 0/0、Breadcrumb 8/0、HTTPS 7/0。Review 模板语义风险已修复：评测页不再输出由 Amazon 评分/联盟链接衍生的 Review/Product/Offer/AggregateRating；不得回滚该修复，也不得编造 Merchant 运费/退货政策。Product/Merchant/Review 归零属于合规撤标后的预期口径变化。
 - 7/28 是 Rich Results 口径断点。7/31 和 8/2 必须把普通 Page Indexing、query/page 与 Product/Merchant/Review 分开记录；不得用合规撤标后的富结果下降推断降权或掉索引。
 - 5 个精准 URL Inspection 已完成入队，本周不得重复提交或扩成批量催索引。8/2 只按普通索引三档决策：≥30 继续、25-29 观察、<25 或核心页掉索引才启用既有索引应急规则。
 - Feeder Reliability 是唯一主验证集群；先审计 jamming、portion/calibration、travel/power failover，已有覆盖时记录 No change needed。

@@ -1,5 +1,15 @@
 # 发现与决策
 
+## 2026-07-31 周五数据复核：总表滞后时以 URL 级证据约束动作
+
+**GSC 实时证据**：最新完整 7 天（7/23-7/29）为 0 clicks / 9 impressions / position 22.6，前一完整 7 天为 0 / 14 / 19.0；这是小样本回落，不支持继续改标题或批量加固。Page Indexing 总表仍为 28 indexed / 23 unindexed，且页面显示最后更新 7/24；同日 URL Inspection 已确认 `cat-wont-drink-from-water-fountain` 从 7/28 的已抓取未索引转为已收录，而 `fountain-filter-guide` 仍停留在 6/27 抓取后的未索引状态。
+
+**决策**：当 Page Indexing 总表与当天 URL Inspection 不同步时，不用滞后的总桶重复点击验证或请求索引；保留两层证据并等待报告更新。重定向错误 4 的新验证仍为“已开始”，5 个精准 URL 今天只读复核，没有再次提交。
+
+**归因与分发证据**：GA4 7/24-7/30 为 33 sessions / 20 engaged / 143 events / 0 key events，几乎全部为 Direct；feeder portion 只有 1 Direct session / 2 秒 / key 0。Pinterest 近 7 天为 2,003 impressions / 9 engagements / 8 Pin clicks / 1 save / 0 outbound。两条轨道都有使用或展示，但都没有形成外部发现与商业结果。
+
+**决策**：`EXP-44C79107` 继续作为固定观察链到 8/2 Review；当前不宣称 uplift。Pinterest 继续维护、不发 Pin；feeder portion 不重复扩写。8/2 的索引三档仍以届时更新后的普通索引/核心页状态为准，Rich Results 归零不单独触发战略调整。
+
 ## 2026-07-29 30 天变现 Sprint D30 最终裁决
 
 **实时证据**：截至 20:22 Asia/Shanghai，Pretty Happy Pets 线程最新仍是我方 7/28 跟进，共享 DOCX 显示 0 条新评论、上次修改在 13 天前；Homerunpet 线程仍只有我方 7/15 邮件；GlobalPETS 与 The Upper Pawside 线程都仍只有我方 7/21 邮件。没有新的编辑回复、品牌回复、评论或采用证据。

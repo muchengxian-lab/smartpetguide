@@ -47,12 +47,12 @@ C:\Users\Administrator\smartpetguide
 
 - 日期：2026-07-27 周一至 2026-08-02 周日。
 - 站点：114 pages；guides 源码 quickAnswer 为 14/38。Week 12 新 URL 配额为 0，不以 quickAnswer 覆盖率作为机械 KPI。
-- GSC Snapshot 10：完整窗口 7/18-7/24 为 0 clicks / 19 impressions / CTR 0% / position 21.7；前一窗口 7/11-7/17 为 0 / 9 / 0% / 51.1。展示 +10（+111.1%）、排名改善 29.4 位，但仍无点击。3 个月为 4 clicks / 307 impressions / CTR 1.3% / position 34.5。
-- GSC Indexing：7/28 实时为 28 indexed / 23 unindexed；自动重定向 8（失败）、重定向错误 4（失败）、备用规范页 1（已开始）、crawled-not-indexed 9（失败）、Google 选择不同规范 1（已开始）、discovered-not-indexed 0（已通过）。Snapshot 10 的 33 / 15 / 4 只作 7/26 历史基线。9 个 crawled-not-indexed URL 已完成五类分诊，这不是实验。
-- GSC Shopping / Enhancements：7/28 抓取前基线为 Product 1/0、Merchant 1/0、Breadcrumb 10/0、Review 2/0，四类均无严重问题；人工处置与安全问题均为 0。Review 模板的独立语义风险已于 7/28 修复：26 个评测页不再输出由 Amazon 评分/联盟链接衍生的 Review/Product/Offer/AggregateRating，并保留 Article/Breadcrumb；禁止回滚或用虚构运费/退货政策消除 warning。Google 重抓后前三类有效项减少属于预期。
+- GSC Snapshot 11：完整窗口 7/23-7/29 为 0 clicks / 9 impressions / CTR 0% / position 22.6；前一窗口 7/16-7/22 为 0 / 14 / 0% / 19.0。展示 -5（-35.7%）、排名变差 3.6 位，仍为小样本，不启动页面返工。
+- GSC Indexing：7/31 总表仍为 28 indexed / 23 unindexed；自动重定向 8（失败）、重定向错误 4（已开始）、备用规范页 1（已开始）、crawled-not-indexed 9（失败）、Google 选择不同规范 1（已开始）、discovered-not-indexed 0（已通过）。总表最后更新 7/24，URL Inspection 已确认 Petlibro/Catit/LR5 与 `cat-wont-drink` 已索引，`fountain-filter-guide` 仍待重抓。不得用滞后总桶重复提交。
+- GSC Shopping / Enhancements：7/31 为 Product 0/0、Merchant 0/0、Review 0/0、Breadcrumb 8/0、HTTPS 7/0。Review 模板的独立语义风险已于 7/28 修复：26 个评测页不再输出由 Amazon 评分/联盟链接衍生的 Review/Product/Offer/AggregateRating，并保留 Article/Breadcrumb；前三类归零属于预期口径变化，不得回滚或据此推断普通掉索引。
 - GSC 当前可见 query 均只有 1 impression，包括 compare gps prices、cat won't drink from fountain、chewy water fountain for cats、how do i get my cat to drink from a water fountain、cat drinking from fountain。不得用单次查询启动 GPS 或 fountain 同周返工。
-- GA4 最近 7 天：29 active / 28 new / 36 page views / 121 events。渠道表可见 Direct 28 / Unassigned 2 / Organic Search 1 / Referral 0；事件为 page_view 36 / session_start 30 / first_visit 30 / user_engagement 18 / scroll 5 / form_start 2；affiliate_click 0 / outbound_click 0 / key events 0。渠道行 31 sessions 与 session_start 30 的差异必须原样保留。
-- Pinterest 30 天（6/26-7/26）：801 impressions / 0 engagement / 0 outbound / 0 saves / audience 8，后台显示 impressions -61%。7 天窗口本次未形成可靠刷新，不得沿用 7/24 的 26 冒充新值。Week 12 不发布新 Pin。
+- GA4 7/24-7/30：33 sessions / 20 engaged / 143 events / 0 key events。Direct → `(direct)/(none)` 为 33 sessions / 142 events，Unassigned → `(not set)` 为 1 / 1；Organic Search / Referral 无可见行。报告总 sessions 33 与渠道行合计 34 的 UI 差异必须原样保留；feeder portion 为 1 Direct session / 2 秒 / key 0，不宣称 uplift。
+- Pinterest 近 7 天：2,003 impressions / 9 engagements / 8 Pin clicks / 1 save / 0 outbound；近 30 天只读后台口径为 11,617 / 65 / 57 / 6 / 4。两者均为自有 Pin、排除 repin/paid，最新数据日 7/29；该 30 天采集路径与 7/26 UI 快照不同，不把 801→11,617 写成增长。Week 12 不发布新 Pin。
 - Semrush：继续沿用 7/17 用户确认值 12 RD / 28 backlinks / 20 keywords / AS 2；刷新失败时写旧快照，不伪装成当前值。
 - Pretty Happy Pets：稿件仍在 editorial + veterinary review；截至 7/26 Google Doc 0 条新评论，对方承诺的 2-3 个提案/样稿未到。一次轻量跟进已由用户于 7/28 在原线程实际发送，状态 `Sent-confirmed`；不得再次发送，只等待真实评论、采用消息或对方提案。
 - Round 4：GlobalPETS + The Upper Pawside 于 7/21 实际发送，状态 Sent-confirmed — awaiting reply；7/29 实时核对两个线程仍各只有我方邮件，0/2 replies。BarkyTech / Purely Wholesome / PetsAnalysis Week 12 默认 Hold。
@@ -69,7 +69,7 @@ C:\Users\Administrator\smartpetguide
 - 7/28 周二：已按实时清单对 9 个 crawled-not-indexed URL 完成 9/9 五类分诊；D29 活跃入口核对完成；Review/Product schema 合规修复及 26/26 防回归检查已部署；重定向错误新验证已启动（待定 4 / 失败 0）；Petlibro、Catit、LR5、fountain-filter、cat-wont-drink 共 5 个 URL 已精准请求重抓；自动重定向 8 与 crawled-not-indexed 9 未机械整桶验证；PHP 跟进已 `Sent-confirmed`，不得重复发送。
 - 7/29 周三：30 天变现 Sprint D30 已完成并同步。Task A Keep — maintenance only；Brand Outreach Pause — cold outbound；Editorial/Guest Post Continue cautiously。不得重复复盘、重开 Homerunpet/PETKIT/Catit 或发送 Round 4 剩余三封。
 - 7/30 周四：Feeder Reliability coverage-gap 已完成 3/3。jamming、portion/calibration 均为 `No change needed`；`/guides/pet-travel-monitoring-guide/` 已补足 backup-power/travel failover，`modifiedDate=2026-07-30`。新 URL 0、实质修改 1 页；不得重复执行或继续改第二页。
-- 7/31 周五：GSC 两个完整 7 天 query/page 对照 + Page Indexing 28 基线复核；只读检查重定向错误验证和 5 个精准重抓 URL，不重复提交。7/28 是 Rich Results 口径断点，Product/Merchant/Review 不做修复前后同比，也不反推普通索引。GA4 source/medium → landing → engagement → events；Pinterest 10 分钟检查。观察 calculator 使用，不宣称无基线 uplift，不发 Pin。
+- 7/31 周五：已完成 Snapshot 11。GSC 0/9/22.6 vs 0/14/19.0；Page Indexing 总表仍 28/23 但 URL Inspection 已确认饮水问题页入索引；重定向错误验证仍“已开始”，5 个精准 URL 未重复提交。GA4 33 sessions / 143 events / key 0；Pinterest 近 7 天 2,003 impressions / outbound 0。不得重复执行今天的后台检查。
 - 8/1 周六：月度 GEO 复检 identity / source / date / quickAnswer / answerability 与 crawler 存活。只有实际 stale/diff 清单支持时才更新 llms.txt / llms-full.txt 或跨页事实；站点资产变化必须走 build/deploy/线上验证。
 - 8/2 周日：Week 12 复盘，消费 W31 AI Radar；普通索引 ≥30 继续、25-29 观察且不扩页、<25 或核心页掉索引才启用既有索引应急规则。复核唯一实验、PHP/Round 4、D30 决策，形成 Week 13 唯一主集群与排期；Rich Results 单独下降不触发月度战略修改。
 

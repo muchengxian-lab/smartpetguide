@@ -152,6 +152,28 @@
 
 **战略判断**：Month 2 的北极星和资源比例不调整，结论仍为 Continue；战略书的 Week 12 战术段已同步为单集群、单实验、0 新 URL 和可验证止损点，其他战略章节不改。
 
+## Week 12 周五快照（截至 2026-07-31）
+
+| 指标 | 当前值 | 对照 / 判断 |
+|------|:--:|------|
+| GSC 完整 7 天 | **0 clicks / 9 impressions / CTR 0% / position 22.6** | 7/23-7/29 对照 7/16-7/22 的 0 / 14 / 0% / 19.0；展示 -35.7%，排名变差 3.6 位，仍属小样本 |
+| GSC Page Indexing | **28 indexed / 23 unindexed** | 报告最后更新 7/24，未反映当天 URL Inspection；重定向错误验证仍“已开始” |
+| 5 个精准 URL | **4 indexed / 1 pending** | Petlibro、Catit、LR5 与饮水问题页已索引；filter guide 仍为 6/27 抓取后未索引 |
+| GA4 7 天 | **33 sessions / 20 engaged / 143 events** | 7/24-7/30；60.61% engagement，平均 10 秒，key events 0 |
+| GA4 归因 | **Direct 33；Unassigned 1；Organic/Referral 0** | 渠道明细行合计 34、报告总计 33，保留 GA4 UI 原始差异 |
+| feeder portion | **1 Direct session / 2 秒 / key 0** | 只有使用痕迹，没有增长或转化证据，不重复改页 |
+| Pinterest 7 天 | **2,003 impressions / 9 engagements / 8 Pin clicks / 1 save / 0 outbound** | 自有 Pin、排除 repin/paid；展示较前期 -9.82% |
+| Pinterest 30 天 | **11,617 impressions / 65 engagements / 57 Pin clicks / 6 saves / 4 outbound** | 数据截至 7/29；API 自身对照展示 +18.11%、outbound -42.86%；与 7/26 UI 快照路径不同，不机械同比 |
+| Semrush | **未刷新** | 继续把 7/17 的 12 RD / 28 backlinks / 20 keywords / AS 2 标作历史值 |
+
+### 今日判断
+
+- GSC 总桶没有刷新，但 URL 级结果已有改善：`cat-wont-drink-from-water-fountain` 已入索引；不能因为滞后的 28/23 报告重复请求或批量改页。
+- 最近 7 天展示由 14 降到 9，且仍为 0 点击；新增展示集中在 feeder break-in、LR5 与 subscription-cost 等零散页面，不足以触发标题或正文返工。
+- GA4 仍几乎全部依赖 Direct，商业事件为 0；`EXP-44C79107` 有稳定基线，但尚未证明外部发现或 feeder portion 转化。
+- Pinterest 有自然展示与站内互动，但 7 天 outbound 为 0；继续维护模式，不恢复 Pin 铺量。
+- 今日为纯后台核对与文档同步：没有源码、页面、sitemap、索引请求或 Pinterest 发布动作，build/deploy 为 N/A。
+
 ## Week 8（6/30-7/3）收盘
 
 | 指标 | 数值 | vs 上次记录 |
