@@ -4675,3 +4675,6 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] 构建后定向复核：26/26 `dist/reviews/*` 均有 `Research basis` 和 `/how-we-research/` 链接，禁止的 Review/Product/Offer/AggregateRating 仍为 0；方法页含 2026-08-01 更新日且旧“15% complaint rate”假设不存在；两个 dist llms 资产均为 8/1，`llms-full` 含 114 generated / 42 guides。
 - [x] 已同步 `GEO-AUDIT-REPORT.md`、`task_plan.md`、`findings.md`、`.claude/CLAUDE.md` 与 Week 12 活跃提示词；修正历史表中 7/1 分数误写 77→74，当前 79 的环比因此保持 +5。
 - [x] `weekly-metrics-log.md`、`weekly-report.md` N/A：今天未刷新 GSC/GA4/Pinterest/Semrush，周日 8/2 复盘才汇总；Month 2 战略书 N/A：北极星、资源比例和触发条件均未变化；`docs/claude-execution-guardrails.md` N/A：没有新增执行规则。
+- [x] 页面与同步文件提交为 `8498637 fix: refresh GEO transparency assets` 并推送至 `origin/master`；Vercel 生产部署 `dpl_AzjZ9NjGQGX66VKaZNQpxComxfCF` 为 READY。
+- [x] 生产验收：Vercel 首页、`llms.txt`、`llms-full.txt`、`/how-we-research/`、Petlibro 与 WOPET 两个代表评测页均 HTTP 200；两个 llms 资产显示 8/1 与新入口/计数/schema 边界；方法页有新标题/日期且无旧 500+ / 15% 断言；两个评测页均有 Research basis，禁止的 Review/Product/Offer/AggregateRating 为 0。
+- [x] 线上汇总脚本首次使用 `$home` 时触发 PowerShell 只读 `$HOME` 变量冲突；已改为 `$homepageResponse` 后一次通过。`vercel inspect --format=json --wait` 本次只返回 fetching 文本，随后改用普通 `vercel inspect` 取得部署 ID 与 READY 状态。
