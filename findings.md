@@ -1,5 +1,13 @@
 # 发现与决策
 
+## 2026-08-01 月度 GEO 复检：技术就绪不是当前增长瓶颈
+
+**实测证据**：按与 7/1 相同的手工评分框架，GEO readiness 为 79/100（7/1 为 74）。100 个已登记内容页全部具备 Chengxian Yang 身份、日期、单 H1、Article + FAQPage + BreadcrumbList；Review 模板的可见 source/method cue 从 7/26 补到 26/26；12 个 robots 声明的 AI User-Agent 访问生产首页均为 HTTP 200。`llms.txt` / `llms-full.txt` 确认从 7/11 起 stale，已按 114 generated / 113 indexable、42 guides、当前研究方法和 Review/Product schema 边界刷新。
+
+**决策**：本轮真实缺口已用模板、方法页和两个 llms 资产最小修复。Quick Answer 保持 14/38，不为覆盖率批量补写；Review 页不批量刷新日期，也不恢复由第三方 Amazon 评分衍生的 Review/Product/Offer/AggregateRating。GEO 79 未命中月度战略调整条件，下一阶段仍优先外部编辑权威、索引与可验证结果，不新增 crawler/schema/页面技术冲刺。
+
+**证据边界**：统一 source cue 只说明研究范围与方法，不替代逐条事实引用；7/28 标出的 7 个低来源指南仍需由查询、索引、使用或安全证据逐页排序。Wikidata 当天只读请求被对端中止，不能据此判断实体失效；沿用的只是 7/1 历史已验证状态，待后续网络可用时再查。
+
 ## 2026-07-31 周五数据复核：总表滞后时以 URL 级证据约束动作
 
 **GSC 实时证据**：最新完整 7 天（7/23-7/29）为 0 clicks / 9 impressions / position 22.6，前一完整 7 天为 0 / 14 / 19.0；这是小样本回落，不支持继续改标题或批量加固。Page Indexing 总表仍为 28 indexed / 23 unindexed，且页面显示最后更新 7/24；同日 URL Inspection 已确认 `cat-wont-drink-from-water-fountain` 从 7/28 的已抓取未索引转为已收录，而 `fountain-filter-guide` 仍停留在 6/27 抓取后的未索引状态。

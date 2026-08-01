@@ -1,5 +1,56 @@
 # GEO Audit Report: SmartPetGuide
 
+> **Current audit:** 2026-08-01. Latest manual score: **79/100**. The June 18 and July 1 sections below are retained as historical snapshots; their page counts, Review/Product schema notes, and platform metrics are not current facts.
+
+## August 1, 2026 Monthly Re-Audit
+
+### Current Score
+
+| Category | Score | Weight | Weighted | Change vs 7/1 | Evidence |
+|------|:--:|:--:|:--:|:--:|------|
+| AI Citability | **84** | 25% | 21.0 | +12 | 100/100 content pages have FAQ structure and source/method cues after the review-template fix; all page types expose a standalone decision pattern; 14/38 eligible guides have Quick Answer |
+| Brand Authority | **54** | 20% | 10.8 | +2 | The Wikidata/entity footprint was last verified on 7/1 and editorial relationship work exists, but the last verified Semrush baseline is still only 12 referring domains and no new guest-post placement is confirmed |
+| Content E-E-A-T | **88** | 20% | 17.6 | +6 | Chengxian Yang is visible on 100/100 content pages, `/about/#author` and `/how-we-research/` disclose identity, method, affiliate boundary, non-hands-on scope, source types, and uncertainty |
+| Technical GEO | **92** | 15% | 13.8 | +2 | 12/12 declared AI User-Agents returned HTTP 200; robots, llms, sitemap, HTTPS, canonical and Vercel delivery remain healthy; llms assets refreshed to 8/1 |
+| Schema & Structured Data | **84** | 10% | 8.4 | +1 | 100/100 dated content pages have Article + FAQPage + BreadcrumbList; one qualifying guide has HowTo; third-party Amazon ratings are no longer misrepresented as first-party Review/Product/Offer schema |
+| Platform Optimization | **74** | 10% | 7.4 | -1 | Pinterest has impressions and on-platform engagement but 7-day outbound remains 0; no verified YouTube/LinkedIn or new AI citation outcome |
+| **Overall GEO Score** |  |  | **79.0 → 79/100** | **+5** | Target 80 narrowly missed; the limiting factor is external authority/outcomes, not technical crawlability |
+
+> This is a consistent manual readiness score, not a Google, OpenAI, or third-party ranking metric. It is useful for month-over-month gap tracking only.
+
+### Full-Site Evidence
+
+| Check | Result | Decision |
+|------|:--:|------|
+| Dated content inventory | **100** = Best 10 / Breed 7 / Compare 15 / Guides 42 / Reviews 26 | Matches `content-dates.json`; 114 pages generated and 113 indexable URLs remain the site-level counts |
+| Identity | **100/100** pages show Chengxian Yang | PASS; named author links to `/about/#author` |
+| Date | **100/100** have registered `dateModified` and one H1 | PASS; dates were not batch-refreshed during this audit |
+| Core schema | **100/100** Article + FAQPage + BreadcrumbList | PASS; Review/Product schema stays intentionally absent on all 26 affiliate reviews |
+| Source/method cue | **81/100 before → 100/100 after** | Review template was the only structural gap: 7/26 reviews had a visible data-source cue before; all 26 now show common research basis, non-hands-on boundary, and methodology link |
+| Answerability | Best 10/10 top pick; Compare 15/15 winner; Review 26/26 verdict; Breed 7/7 Quick Answer; Guide 42/42 FAQ and 14 Quick Answers | PASS; do not mechanically expand Quick Answer coverage |
+| HowTo | **1** qualifying guide | PASS; only the feeder-jamming page currently matches the explicit numbered-fix rule |
+| AI crawler access | **12/12 HTTP 200** | PASS; Server is Vercel and no Cloudflare-specific blocking headers were observed |
+| `llms.txt` / `llms-full.txt` | **200 but stale before audit; refreshed to 2026-08-01** | Corrected old page counts, author identity, research boundary, schema state, and key July updates |
+
+### Changes Made
+
+1. Added a visible research-basis and non-hands-on boundary to the Review template without restoring third-party Review/Product schema or refreshing all review dates.
+2. Updated `/how-we-research/` to distinguish owner reports from controlled evidence, marketplace snapshots from real-time proof, and provisional new-product coverage from established reliability.
+3. Refreshed both llms assets with current counts, author, methodology, schema boundary, feeder calibration, and travel-failover facts.
+4. Corrected this report so the historical 7/1 Review Schema gain is no longer presented as current implementation.
+
+### Remaining Gaps and Decision
+
+- **No critical technical GEO issue.** Do not add more crawler directives, new schema types, or new URLs for score-chasing.
+- **Brand authority remains the main ceiling.** The Pretty Happy Pets draft is still under review and does not count as placement or backlink; the last Semrush baseline is historical until refreshed.
+- **Source cue is not claim-level proof.** The 7/28 evidence audit still identified seven low-source guides; handle them only when query/index/usage evidence or a safety issue prioritizes a page, not as a batch rewrite.
+- **Quick Answer stays 14/38.** Page types already expose verdicts, winners, top picks, FAQs, and breed answers. Additional Quick Answers require a real user-question gap.
+- **Score 79 does not trigger a strategy change.** Continue Month 2's existing focus on indexing, editorial authority, and existing-page evidence. Re-score quarterly unless a major identity/schema/platform change occurs.
+
+---
+
+## Historical Baseline — June 18 and July 1, 2026
+
 **Audit Date:** 2026-06-18
 **URL:** https://smartpetguide.net
 **Business Type:** Publisher (Affiliate Content Site)
@@ -32,7 +83,7 @@ SmartPetGuide has strong technical GEO infrastructure and comprehensive Schema c
 |------|:--:|:--:|------|
 | 2026-06-18 (initial) | 62 | — | Pre-fix baseline |
 | 2026-06-18 (post-fix) | 70 | +8 | llms.txt + llms-full.txt + Organization Schema |
-| **2026-07-01 (monthly re-audit)** | **77** | **+7** | Review Schema 增强 + 评价摘要 2→4 + llms-full.txt 更新 + guide citation cue 全覆盖 + 首页 social proof + 85 Pin + Wikidata 存活 |
+| **2026-07-01 (monthly re-audit)** | **74** | **+4** | Review Schema 增强 + 评价摘要 2→4 + llms-full.txt 更新 + guide citation cue 全覆盖 + 首页 social proof + 85 Pin + Wikidata 存活 |
 
 ---
 

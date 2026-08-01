@@ -4649,3 +4649,29 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 
 - [x] 已更新 `docs/monetization/weekly-metrics-log.md`（Snapshot 11）、`weekly-report.md`、`task_plan.md`、`findings.md`、`.claude/CLAUDE.md`、`docs/claude-execution-guardrails.md`、Week 12 活跃提示词与本节，避免下一会话重复执行 7/31；Month 2 北极星、资源比例和触发条件未变化，战略书 N/A。
 - [x] 今日只有数据与文档改动；站点源码、页面、sitemap 均未变化，因此 build、Vercel deploy 与生产页验收 N/A。
+
+## 会话：2026-08-01 周六 — 月度 GEO / llms / crawler 复检
+
+- [x] 开工基线：系统时间 2026-08-01 周六 18:59 Asia/Shanghai；`HEAD=5c0d152`，工作区 clean，`origin/master...HEAD=0/0`。
+- [x] 今日只执行 Week 12 周六排班：identity / source / date / quickAnswer / answerability、`llms.txt` / `llms-full.txt` 与 crawler 存活；不提前执行 8/2 周复盘，不检查或发送外联邮件。
+- [x] 现有工具盘点：`package.json` 只有 build/date/review-schema 验证，没有独立 geo-audit runner；本次按已有 `GEO-AUDIT-REPORT.md` 评分框架和源码/生成页/线上证据复核。
+- [x] 已确认首个真实 stale：`public/llms.txt` 与 `public/llms-full.txt` 文件时间和可见 `Last updated` 均停在 2026-07-11，未反映 7/14-7/30 的来源整改、feeder portion calculator、Review/Product schema 合规撤标和 travel failover 更新；进入精确差异审计，不直接批量重写。
+- [ ] 正在核对 identity/source/date/quickAnswer/answerability 的实际覆盖与 llms 两文件具体缺口，并做线上 crawler 存活检查。
+- [x] 工具错误记录：一次并行 `rg --files src/pages src/content src/data` 因仓库不存在 `src/content` 返回 exit 1，导致同批读取未返回；已改为只读取实际存在的 `src/pages` 与 `src/data`，不重复相同命令。
+- [x] 工具错误记录：第二次并行覆盖扫描中，末尾一个无匹配 `rg` 返回 exit 1，使同批输出被包装器丢弃；同时确认 `content-dates.json` 不是扁平对象。后续扫描均显式把“无匹配”当合法结果，并按真实 JSON 结构统计，不再让单个只读检查中断整批。
+- [x] Crawler 线上存活：robots 中明确列出的 12 个 AI User-Agent（GPTBot、ChatGPT-User、OAI-SearchBot、PerplexityBot、Google-Extended、GoogleOther、CCBot、anthropic-ai、Claude-User、cohere-ai、Meta-ExternalAgent、Applebot）访问生产首页均返回 HTTP 200。
+- [x] 基础设施仍为 Vercel 直连：生产首页 `Server: Vercel`、HTTP 200、无 Cloudflare 响应头；live `llms.txt` 8,772 bytes、`llms-full.txt` 6,646 bytes、robots 587 bytes、sitemap-0 20,026 bytes。
+- [x] 生产 `llms.txt` / `llms-full.txt` 与本地一样仍显示 `Last updated: July 11, 2026`，确认 stale 不是本地未部署造成，而是需要本次实际刷新。
+- [x] 生成页全量结构扫描：`content-dates.json` 有 100 个内容条目（best 10 / breed 7 / compare 15 / guides 42 / reviews 26），对应 `dist` 100/100 存在；100/100 单 H1、Chengxian Yang identity、`dateModified`、Breadcrumb、Article、FAQ schema 均通过。`dist` 总计 113 个 `index.html`。
+- [x] 扫描脚本错误记录：一次 PowerShell 汇总因 `foreach (...) { ... } | Format-Table` 产生 `empty pipe element` 解析错误；已保留上一轮成功的核心覆盖结果，后续改为先收集 `$summary` 再格式化，不重复该语法。
+- [x] Answerability / schema 复核：100 个内容页均有 Article + FAQPage + Breadcrumb；HowTo 仅 1 页（feeder jamming，符合当前自动检测规则）。Best 10/10 有 top-pick 决策、Compare 15/15 有 winner、Review 26/26 有 verdict、Breed 7/7 有 Quick Answer；Guide 为 14 个 Quick Answer，保持 14/38 目标口径，不机械补齐。
+- [x] Source 维度命中真实模板缺口：Best 10/10、Breed 7/7、Compare 15/15、Guide 42/42 有可见来源/方法 cue；Review 只有 7/26 在 `whatOwnersSay` 模块显示数据来源，另 19 页只有外链和更新时间，缺统一的研究依据与非 hands-on 边界。计划只改 Review 模板一次，不批量刷新 26 页日期。
+- [x] Wikidata 存活检查首次以 `curl` 访问 `Special:EntityData/Q140290653.json` 时连接被对端中止并返回 code 000；此为外部网络失败，不据此判实体失效，后续改用不同只读入口验证。
+- [x] 已修 Review 模板 source gap：26 个评测页统一显示研究依据、非 hands-on 边界与 `/how-we-research/` 链接；未批量改 26 个内容日期，也未恢复 Review/Product/AggregateRating schema。
+- [x] 已校正 `/how-we-research/`：更新时间改为 2026-08-01；删除把 owner review 当科学 failure rate、把 marketplace snapshot 写成实时价格历史、以及“低于 50 条不覆盖”的失实硬规则；改为可复核的来源类型、样本局限和新产品不确定性边界。
+- [x] 已刷新 `public/llms.txt` 至 2026-08-01：保留 114 generated / 113 indexable，改成当前研究边界，并加入 feeder portion calculator 与 pet travel failover 两个重要现有页入口。
+- [x] 已刷新 `public/llms-full.txt`：修正 101→114、Best 9→10、Guide 31→42、SmartPetGuide Team→Chengxian Yang；删除 Petlibro RFID 错误和“48 小时内评测”承诺；同步 Review/Product schema 合规撤标、owner-review 样本局限与 7/20-7/30 的关键页面能力。
+- [x] `npm.cmd run verify` 通过：Astro 构建 114 页；日期校验 100 content pages / 61 conservative modified dates / 113 sitemap URLs；Review schema 回归 26/26 通过，仍只有 Article/Breadcrumb，Amazon 可见评分明确归因，Review/Product/Offer/AggregateRating 为 0。
+- [x] 构建后定向复核：26/26 `dist/reviews/*` 均有 `Research basis` 和 `/how-we-research/` 链接，禁止的 Review/Product/Offer/AggregateRating 仍为 0；方法页含 2026-08-01 更新日且旧“15% complaint rate”假设不存在；两个 dist llms 资产均为 8/1，`llms-full` 含 114 generated / 42 guides。
+- [x] 已同步 `GEO-AUDIT-REPORT.md`、`task_plan.md`、`findings.md`、`.claude/CLAUDE.md` 与 Week 12 活跃提示词；修正历史表中 7/1 分数误写 77→74，当前 79 的环比因此保持 +5。
+- [x] `weekly-metrics-log.md`、`weekly-report.md` N/A：今天未刷新 GSC/GA4/Pinterest/Semrush，周日 8/2 复盘才汇总；Month 2 战略书 N/A：北极星、资源比例和触发条件均未变化；`docs/claude-execution-guardrails.md` N/A：没有新增执行规则。

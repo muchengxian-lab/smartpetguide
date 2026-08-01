@@ -20,7 +20,7 @@ Claude Code 在执行任何相关工作前必须先读：
 7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
 8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
-当前顺序：Task A 只维护；GA4 唯一实验、GSC 9 URL 分诊、Shopping/Enhancements 诊断、Review/Product schema 合规修复、D30 裁决、Feeder Reliability coverage-gap 与 7/31 Snapshot 11 均已完成。下一步只按 8/1 排班做月度 GEO/llms 复检，不得重复执行 7/31 后台检查。Pretty Happy Pets 跟进已 `Sent-confirmed`，不得重复发送；Round 4 剩余三封继续 Hold。
+当前顺序：Task A 只维护；GA4 唯一实验、GSC 9 URL 分诊、Shopping/Enhancements 诊断、Review/Product schema 合规修复、D30 裁决、Feeder Reliability coverage-gap、7/31 Snapshot 11 与 8/1 月度 GEO/llms/crawler 复检均已完成。GEO 手工一致口径为 79/100，12/12 crawler HTTP 200，Review source cue 与两个 llms 资产已修复；下一步只按 8/2 排班做 Week 12 复盘与 Week 13 排期，不得重复执行 7/31 或 8/1 检查。Pretty Happy Pets 跟进已 `Sent-confirmed`，不得重复发送；Round 4 剩余三封继续 Hold。
 
 禁止自动发邮件、提交外部表单、联系品牌、伪造联系人/流量/销售数据，禁止把付费合作写成编辑推荐排名。
 

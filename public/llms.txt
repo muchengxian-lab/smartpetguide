@@ -1,10 +1,10 @@
 # SmartPetGuide
 
-> Research-backed reviews of smart pet devices. Based on verified owner data and real-world analysis. Last updated: July 11, 2026. 114 pages generated, 113 indexable sitemap URLs.
+> Research-backed reviews of smart pet devices. Based on owner-review patterns, manufacturer documentation, and marketplace snapshots. Last updated: August 1, 2026. 114 pages generated, 113 indexable sitemap URLs.
 
 ## About
 
-SmartPetGuide provides honest, research-backed reviews of automatic pet feeders, self-cleaning litter boxes, smart water fountains, pet cameras, and GPS trackers. We analyze thousands of verified Amazon reviews to find the best pet tech, with no sponsored placements.
+SmartPetGuide provides independent research on automatic pet feeders, self-cleaning litter boxes, smart water fountains, pet cameras, and GPS trackers. We compare manufacturer specifications, marketplace snapshots, and aggregated owner-review patterns. Pages do not claim hands-on testing unless explicitly stated, and paid placement does not determine rankings.
 
 ## Key Pages
 
@@ -79,10 +79,12 @@ SmartPetGuide provides honest, research-backed reviews of automatic pet feeders,
 - [Cat Won't Drink From Fountain? 8 Fixes](https://smartpetguide.net/guides/cat-wont-drink-from-water-fountain/)
 - [Feeder WiFi Keeps Disconnecting? 6 Fixes](https://smartpetguide.net/guides/automatic-feeder-wifi-keeps-disconnecting/)
 - [Stop Feeder From Jamming: 7 Fixes](https://smartpetguide.net/guides/stop-automatic-feeder-from-jamming/)
+- [Automatic Feeder Portion-to-Grams Guide + Calculator](https://smartpetguide.net/guides/feeder-portion-size-guide/)
 - [Introduce Cat to Automatic Litter Box](https://smartpetguide.net/guides/introduce-cat-to-automatic-litter-box/)
 - [How to Clean a Cat Water Fountain](https://smartpetguide.net/guides/how-to-clean-cat-water-fountain/)
 - [Smart Pet Devices for Apartment Living](https://smartpetguide.net/guides/smart-pet-devices-apartment-living/)
 - [The True Cost: Subscription vs One-Time](https://smartpetguide.net/guides/smart-pet-devices-subscription-cost/)
+- [Pet Travel Monitoring and Device Failover Guide](https://smartpetguide.net/guides/pet-travel-monitoring-guide/)
 - [Beginner's Guide to Smart Pet Devices](https://smartpetguide.net/guides/first-smart-pet-device-guide/)
 - [Best Pet Tech Under $50](https://smartpetguide.net/guides/best-pet-tech-under-50/)
 - [Wet Food Automatic Feeder Guide](https://smartpetguide.net/guides/wet-food-automatic-feeder-guide/)

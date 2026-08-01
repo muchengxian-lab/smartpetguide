@@ -70,7 +70,7 @@ C:\Users\Administrator\smartpetguide
 - 7/29 周三：30 天变现 Sprint D30 已完成并同步。Task A Keep — maintenance only；Brand Outreach Pause — cold outbound；Editorial/Guest Post Continue cautiously。不得重复复盘、重开 Homerunpet/PETKIT/Catit 或发送 Round 4 剩余三封。
 - 7/30 周四：Feeder Reliability coverage-gap 已完成 3/3。jamming、portion/calibration 均为 `No change needed`；`/guides/pet-travel-monitoring-guide/` 已补足 backup-power/travel failover，`modifiedDate=2026-07-30`。新 URL 0、实质修改 1 页；不得重复执行或继续改第二页。
 - 7/31 周五：已完成 Snapshot 11。GSC 0/9/22.6 vs 0/14/19.0；Page Indexing 总表仍 28/23 但 URL Inspection 已确认饮水问题页入索引；重定向错误验证仍“已开始”，5 个精准 URL 未重复提交。GA4 33 sessions / 143 events / key 0；Pinterest 近 7 天 2,003 impressions / outbound 0。不得重复执行今天的后台检查。
-- 8/1 周六：月度 GEO 复检 identity / source / date / quickAnswer / answerability 与 crawler 存活。只有实际 stale/diff 清单支持时才更新 llms.txt / llms-full.txt 或跨页事实；站点资产变化必须走 build/deploy/线上验证。
+- 8/1 周六：已完成月度 GEO 复检。手工一致口径 79/100；100/100 identity/date/core schema/source cue、12/12 crawler HTTP 200；Review source cue 从 7/26 修复到 26/26，研究方法边界和两个 stale llms 资产已刷新。Quick Answer 保持 14/38，不得重复审计或为覆盖率批量改页。
 - 8/2 周日：Week 12 复盘，消费 W31 AI Radar；普通索引 ≥30 继续、25-29 观察且不扩页、<25 或核心页掉索引才启用既有索引应急规则。复核唯一实验、PHP/Round 4、D30 决策，形成 Week 13 唯一主集群与排期；Rich Results 单独下降不触发月度战略修改。
 
 只执行系统日期对应任务和已经到期但未闭环的项目。未来日期只能保持 Planned/Pending，不得提前标完成。
@@ -146,5 +146,5 @@ C:\Users\Administrator\smartpetguide
 | 7/29 | ✅ 30 天 Sprint D30 分轨裁决已完成 | schedule、CRM、Round 4、metrics、战略书、guardrails、findings、progress 与 task plan 已同步；不重复执行 |
 | 7/30 | ✅ Feeder coverage-gap 3/3 已完成；主旅行指南 1 页加固 | 已同步 `progress.md`、`task_plan.md`、目标源码、日期与 `findings.md`；不得重复执行或继续改第二页 |
 | 7/31 | GSC/GA4/Pinterest 周快照 | `weekly-metrics-log.md`、`progress.md`、`task_plan.md`、`weekly-report.md` |
-| 8/1 | 月度 GEO / llms / crawler 复检 | `progress.md`、`task_plan.md`；只更新命中缺口的站点资产，战略变化才改战略书 |
+| 8/1 | ✅ 月度 GEO / llms / crawler 复检已完成 | 已同步报告、progress、task plan、findings、Review/方法页与两个 llms 资产；月度战略未变化，不改战略书 |
 | 8/2 | Week 12 复盘 + Week 13 排期 | `weekly-report.md`、`task_plan.md`、`findings.md`、`progress.md`；必要时 metrics/战略书 |
