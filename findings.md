@@ -1,5 +1,19 @@
 # 发现与决策
 
+## 2026-08-02 Week 12 收盘：执行完成，但外部增长结果仍需收缩验证
+
+**交付与结果必须分开计分**：Week 12 的 7/7 日级排班、0 新 URL、1 个现有页加固、D30 分轨裁决、周度数据和 8/1 GEO/生产复检均完成，执行为 Green；但最新完整 GSC 7 天仍为 0 clicks / 9 impressions，GA4 key events 0，Pinterest 7 天 outbound 0，Round 4 最新已验证为 0/2，PHP 尚未发布或落链，增长结果为 Adjust。
+
+**索引裁决是观察，不是下降定论**：8/2 GSC Page Indexing 仍显示 28 indexed / 23 unindexed，但页面明确最后更新于 7/24；URL Inspection 已有 4 indexed / 1 pending 的较新证据。Week 13 采用 25-29 观察档，只有报告更新时间推进、URL 级状态变化或核心页掉出索引时才行动；不重复已入队请求、不整桶 Validate Fix、不把 Rich Results 变化反推普通索引。
+
+**W31 Radar 只增加证据约束，不增加页面任务**：AI Signal 日报 5/7；VOC 158 raw / 144 deduplicated，YouTube 124 条占去重证据 86.1%，source balance 为 Warning。WiFi/app/offline 的跨来源信号已有现有页覆盖，jamming/portion 没有新的多源增量；旅行/断电主指南已在 7/30 修复，VOC 的“无维护记录”描述已落后于项目事实。决策是 Reinforce evidence / No change needed，而不是重复改页或新建 URL。
+
+**Month 2 当前是临时 Adjust，不是 Stop**：四项 Continue 条件中，PHP 编辑接受是唯一明确满足项；索引 30+ 与曝光增长的组合未满足，Aorkuler 是已有正向 not-now 基线且没有第二个认真回复，真实 affiliate/outbound/Pinterest 点击尚未形成可归因闭环。月度方向、资源比例和停止事项不变，8/9 再做最终裁决。
+
+**Week 13 的两条轨道**：Feeder Reliability 继续作为唯一内容验证集群；Pretty Happy Pets 作为既有编辑权威关系维护，不构成第二个内容集群。新 URL 0，最多只允许 1 个由安全/事实一致性证据触发的现有页最小修复；`EXP-44C79107` 继续为唯一 Active，Review 8/9，不增加工具或第二实验。
+
+**数据质量状态：Share with caveats。** Git/build/生产/GEO 交付为高置信度；完整周 GSC/GA4/Pinterest 可用于小样本方向判断；Page Indexing、Semrush、8/2 邮件状态和不同采集路径的 Pinterest 30 天值必须带新鲜度/可比性说明。Direct 会话不得写成 Organic/Referral 获取。
+
 ## 2026-08-01 月度 GEO 复检：技术就绪不是当前增长瓶颈
 
 **实测证据**：按与 7/1 相同的手工评分框架，GEO readiness 为 79/100（7/1 为 74）。100 个已登记内容页全部具备 Chengxian Yang 身份、日期、单 H1、Article + FAQPage + BreadcrumbList；Review 模板的可见 source/method cue 从 7/26 补到 26/26；12 个 robots 声明的 AI User-Agent 访问生产首页均为 HTTP 200。`llms.txt` / `llms-full.txt` 确认从 7/11 起 stale，已按 114 generated / 113 indexable、42 guides、当前研究方法和 Review/Product schema 边界刷新。

@@ -4678,3 +4678,48 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] 页面与同步文件提交为 `8498637 fix: refresh GEO transparency assets` 并推送至 `origin/master`；Vercel 生产部署 `dpl_AzjZ9NjGQGX66VKaZNQpxComxfCF` 为 READY。
 - [x] 生产验收：Vercel 首页、`llms.txt`、`llms-full.txt`、`/how-we-research/`、Petlibro 与 WOPET 两个代表评测页均 HTTP 200；两个 llms 资产显示 8/1 与新入口/计数/schema 边界；方法页有新标题/日期且无旧 500+ / 15% 断言；两个评测页均有 Research basis，禁止的 Review/Product/Offer/AggregateRating 为 0。
 - [x] 线上汇总脚本首次使用 `$home` 时触发 PowerShell 只读 `$HOME` 变量冲突；已改为 `$homepageResponse` 后一次通过。`vercel inspect --format=json --wait` 本次只返回 fetching 文本，随后改用普通 `vercel inspect` 取得部署 ID 与 READY 状态。
+
+## 会话：2026-08-02 周日 — Week 12、8 月 1 日与 W31 雷达收盘复盘
+
+### 开工与来源基线
+
+- [x] 系统时间确认 2026-08-02 周日 23:33 Asia/Shanghai；`HEAD=f99353c`，工作区 clean，`origin/master...HEAD=0/0`。
+- [x] 已读取项目 `task_plan.md`、`progress.md`、`findings.md`、Month 2 战略、Week 12 周五快照，以及知识库 `AI Agent Entry.md` 后再消费 W31 周报/VOC；项目文件与 Git 优先于阶段性 KB 摘要。
+- [x] 8/1 专项交付已确认完整闭环：GEO 79/100、100/100 内容页 identity/date/core schema/source cue、Review source cue 7/26→26/26、12/12 crawler HTTP 200、两个 llms 资产刷新、114 页 build、推送与生产验收均通过；没有引用、流量或转化 uplift 证据。
+
+### W31 AI Radar / VOC 初步结论
+
+- [x] W31 AI Signal Weekly Review：日报 5/7，五次可用运行均 healthy；7/28、7/29 为 No Run，不回填。当前唯一 Active 仍为 `EXP-44C79107`，本周 Review=`Adjust`、Review Date 延至 8/9；不增加 attribution tooling 或第二个实验。
+- [x] W31 SmartPetGuide VOC：158 raw / 144 deduplicated；PAA 18、Amazon 16、YouTube 124，YouTube 占去重证据 86.1%，`source_balance=Warning`。WiFi/app/offline 为 Medium 跨源信号，但现有三页 fact layer 已覆盖，只 Reinforce evidence，不改页。
+- [x] VOC 的 travel/power 项写“无维护覆盖记录”与项目 7/30 已加固 travel guide 的当前事实冲突；以项目源码、Git 和 Accepted Handoff 为准，将该建议降级为 stale coverage note，不重复修改页面。
+- [x] 雷达对 8/1 GEO、Feeder coverage-gap 与 GA4 baseline 的 Handoff 均为 Accepted / Adjust：交付可信，但均未证明搜索、引用或商业结果。
+- [x] 浏览器只读连接首次运行 `agent-browser --cdp 9222 tab` 返回 exit 0 但无页签输出；不把空输出当已核验，下一步改用 doctor/显式连接诊断，不重复同一命令。
+- [x] `agent-browser doctor --offline --quick` 确认现有 `xianyu-radar` 会话正常；该会话保留用户闲鱼页签，并新开 GSC 页签完成只读复核。
+- [x] GSC Page Indexing 截至今晚仍显示 28 indexed / 23 unindexed，且明确标注“上次更新日期 2026/7/24”；自动重定向 8 failed、crawled-not-indexed 9 failed、重定向错误 4 started、备用 canonical 1 started、Google 选不同 canonical 1 started、discovered-not-indexed 0 passed。该总表不具备 8/2 新鲜度，三档裁决只能保留“25-29 观察”并由 URL 级 4/1 约束，不能宣称从 33 真实掉到 28。
+- [x] 首次点击 GSC `@e85` 时 PowerShell 将未加引号的 `@e85` 解析掉，CLI 报 `Missing arguments for: click`；已改用 `find role link click --name "网页"` 成功打开报告，不重复该失败写法。
+
+### KPI 数据质量与战略裁决
+
+- [x] 周度完整窗口沿用 7/31 已锁定的可比口径：GSC 7/23-7/29 为 0 clicks / 9 impressions / position 22.6，对照 0 / 14 / 19.0；GA4 7/24-7/30 为 33 sessions / 20 engaged / 143 events / key 0；Pinterest 近 7 天为 2,003 impressions / 9 engagements / outbound 0。
+- [x] Page Indexing 28/23 明确为最后更新 7/24 的延迟总表；URL 级 4 indexed / 1 pending 为较新约束。结论为 25-29 观察档，不写 33→28 实时净下降，不整桶 Validate Fix，不重复已入队 Inspection。
+- [x] 数据质量分级完成：Git/build/生产/GEO 交付为高置信度；小样本 GSC/GA4/Pinterest 可用于方向判断但不可外推；Page Indexing、Semrush、8/2 邮件状态和不同采集路径 Pinterest 30 天值必须带 caveat。总体为 `Share with caveats`。
+- [x] Direct 与真实获取分开：33 Direct sessions 不能作为 Organic/Referral 增长；feeder portion 的 1 Direct session / 2 秒也不构成页面 uplift 或新实验依据。
+- [x] Month 2 四项 Continue 条件当前只明确满足 PHP 编辑接受 1 项；索引+曝光组合未满足，Aorkuler 是已有 positive not-now 基线且没有第二个认真回复，真实点击未形成可归因闭环。临时裁决为 `Adjust — keep the site, narrow execution`，不是 Stop；8/9 再做最终判定。
+- [x] Week 13 继续以 Feeder Reliability 为唯一内容验证簇；PHP 作为编辑权威关系轨道单独维护。新 URL 0，最多只允许 1 个由安全/事实一致性证据触发的现有页最小修复；`EXP-44C79107` 继续唯一 Active，Review 8/9。
+
+### 浏览器失败记录与证据边界
+
+- [x] 尝试切换 GSC 7 天窗口时，`agent-browser` PowerShell shim 被本机执行策略拦截；按错误改用 `agent-browser.cmd`，未原样重试。
+- [x] `.cmd` 语义点击运行超过约 40 秒无输出后主动终止；随后 `snapshot -i` 返回 `Auto-launch failed: CDP response channel closed`，说明既有已登录会话已断开。没有继续猜测 UI 数据，也没有关闭或改动用户原有闲鱼页签。
+- [x] 因会话中断，8/2 没有形成新的完整 7 天 Performance 快照，也没有重新读取 PHP / GlobalPETS / The Upper Pawside 邮件。报告沿用最后一次已验证状态，并把这两项列为 8/3 只读核对，不写成今晚实时结论。
+
+### 周报、计划与 Week 13 入口同步
+
+- [x] `weekly-report.md` 新增 Week 12 周日收盘报告，包含 Executive Summary、KPI scorecard、8/1 专项复盘、W31 Radar/VOC、Month 2 中期裁决、Week 13 计划与 caveats。
+- [x] `task_plan.md` 标记 8/2 完成，新增 Week 12 收盘矩阵、8/3-8/9 日级排班和硬闸门；顶部活跃周期切换到 Week 13。
+- [x] `findings.md` 记录执行/增长分离、索引观察档、W31 source-balance 约束、Month 2 临时 Adjust 与 Week 13 双轨边界。
+- [x] 新增 `docs/claude-week13-execution-prompt-template.md`，并同步 `CLAUDE.md`、`.claude/CLAUDE.md`、`docs/claude-execution-guardrails.md` 的日期、活跃入口、事实锁定和防漏文件矩阵。
+- [x] `docs/month-2-strategy-2026-07-13-to-2026-08-09.md` N/A：未命中改变月度北极星、资源比例或停止事项的触发条件；Week 13 战术由 `task_plan.md` 承担，8/9 月度终盘再更新战略文件。
+- [x] `docs/monetization/weekly-metrics-log.md` N/A：本次没有比 Snapshot 11 更新且同口径的完整窗口，不重复写同一快照。
+- [x] `backlinks/round3-guest-post-targets.md`、`backlinks/round4-editorial-targets.md` N/A：浏览器会话断开后没有新的已验证邮件/评论状态，不能凭假设改外联记录。
+- [x] 站点源码、内容日期、sitemap、页面和配置 N/A：本次为复盘/排期/执行入口同步；build、Vercel 部署与线上 HTML 验证均 N/A。

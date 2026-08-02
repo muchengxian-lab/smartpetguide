@@ -1,8 +1,8 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-08-01 周六 Week 12 | 月度 GEO 复检已完成：手工一致口径 79/100（7/1 为 74），100/100 内容页 identity/date/core schema/source cue 通过，Review 模板修复前 source cue 7/26、修复后 26/26；12/12 AI crawler 返回 HTTP 200 | `llms.txt` / `llms-full.txt` 已从 7/11 stale 快照刷新至 8/1，114 generated / 113 indexable、42 guides 与当前 Review/Product schema 边界已对齐 | 月度方向不变，主要瓶颈仍是外部权威与可验证结果 | 8/2 仍按 ≥30 / 25-29 / <25 三档决策**
+**最后更新：2026-08-02 周日 Week 12 收盘 | 7/7 日级排班均已执行；8/1 GEO 79/100、100/100 内容页基础事实层与 12/12 AI crawler 通过，但 GSC 完整 7 天仍为 0 clicks / 9 impressions、GA4 key events 0、Pinterest 7 天 outbound 0 | W31 AI Radar 日报 5/7、唯一实验 `EXP-44C79107` 继续 Adjust 至 8/9；VOC 144 条去重证据但 YouTube 占 86.1%，source balance 为 Warning | Page Indexing 仍显示 28/23 且最后更新 7/24，因此 Week 13 进入 25-29 观察档：0 新 URL、不重复索引请求、不新增技术 GEO 冲刺**
 
-> 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 12 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一主验证集群为 **Feeder Reliability**，但必须先做 coverage-gap 审计，再决定是否最多加固 1 个现有页面。
+> 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 13 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一内容验证集群仍为 **Feeder Reliability**；Pretty Happy Pets 只作为既有编辑权威关系维护，不构成第二个内容集群。
 
 > 月度战略：`docs/month-2-strategy-2026-07-13-to-2026-08-09.md`。本文件按周滚动拆解；除非命中战略触发条件，不在周中改变月度方向。
 
@@ -12,7 +12,7 @@
 
 ### 日期防呆规则（Claude Code 必读）
 
-> 当前校准点：**2026-07-26 是周日**。下一工作周为 **2026-07-27 周一 → 2026-08-02 周日**。
+> 当前校准点：**2026-08-02 是周日**。下一工作周为 **2026-08-03 周一 → 2026-08-09 周日**。
 
 1. 任何涉及"今天/明天/下周/周五"的任务，先在终端运行 `Get-Date -Format "yyyy-MM-dd dddd"`，以系统日期为准，不凭模型记忆推断。
 2. 记录排期时必须写绝对日期 + 星期；如果用户给了相对日期，先转换为绝对日期。
@@ -20,7 +20,7 @@
 
 | 体系 | 文件 | 角色 | 节奏 |
 |------|------|------|------|
-| **Week 12 验证+归因+月度 GEO** | `task_plan.md`（本文件） | 日常执行引擎 | 每天最多 3 个 P0，周一至周日按闸门执行 |
+| **Week 13 月度收盘+外部验证** | `task_plan.md`（本文件） | 日常执行引擎 | 每天最多 3 个 P0，周一至周日按闸门执行 |
 | **Month 2 四周战略** | `docs/month-2-strategy-2026-07-13-to-2026-08-09.md` | 目标、资源比例、触发条件 | 7/13-8/9；每周日复盘，不按天写死 |
 | **30 天变现 Sprint** | `docs/monetization/30-day-schedule.md` | 商业验证轨道 | D1-D30，与 Week 排班协调 |
 
@@ -116,7 +116,7 @@
 | 周四 | 7/30 | ✅ Feeder Reliability coverage-gap 3/3：jamming 与 portion/calibration 均为 `No change needed`；✅ backup-power/travel failover 确认具体缺口 | ✅ 仅加固 `/guides/pet-travel-monitoring-guide/`：补 offline schedule、断电多故障兜底、预先安排人工检查与权威来源 | ✅ 新 URL 0、实质修改 1 页；`modifiedDate=2026-07-30`；113 个 HTML、100 个内容日期、26/26 review schema 回归通过；`4119edc` 已推送、Vercel READY、首页/目标页 200、生产 HTML 通过 |
 | 周五 | 7/31 | ✅ GSC 两个完整 7 天 query/page 对照 + Page Indexing 28 基线复核；✅ 重定向错误验证仍为“已开始”；✅ 5 个精准 URL 只读检查，未重复提交 | ✅ GA4 `source/medium → landing page → engagement → events`；✅ Pinterest 7 天 / 30 天维护快照；✅ feeder portion 使用复核 | ✅ Snapshot 11：GSC 0/9/22.6 vs 0/14/19.0；报告仍 28/23，但 1 个饮水页已由 URL Inspection 确认入索引；GA4 33 sessions / 143 events / key 0；Pinterest 7 天 2,003 impressions / outbound 0；不改页、不发 Pin |
 | 周六 | 8/1 | ✅ 月度 GEO 复检：100/100 identity/date/core schema/source cue；answerability 按页面类型通过，Quick Answer 保持 14/38；12/12 crawler HTTP 200 | ✅ 命中真实 stale/diff：Review 模板 source cue 7/26→26/26、研究方法页边界校正、`llms.txt` / `llms-full.txt` 从 7/11 刷新到 8/1 | ✅ GEO 79/100；114 页 build、100 内容日期、113 sitemap URL、26/26 review-schema 回归通过；`8498637` 已推送，Vercel `dpl_AzjZ9NjGQGX66VKaZNQpxComxfCF` READY，首页/llms/方法页/代表评测页生产核验通过 |
-| 周日 | 8/2 | Week 12 周复盘，消费 W31 AI Radar；按索引三档决定 Week 13：≥30 继续、25-29 观察、<25 或核心页掉索引则启用既有索引应急规则 | 复核 `EXP-44C79107`、PHP/Round 4 与 30 天 Sprint 后续 | 形成 Week 13 排期；Rich Results 下降不单独触发战略调整；只有普通索引/核心页或既有月度触发条件命中才调整资源，自动化故障仍由知识库主控处理 |
+| 周日 | 8/2 | ✅ Week 12 周复盘并消费 W31 AI Radar/VOC；Page Indexing 28/23 但最后更新 7/24，按 25-29 观察档排 Week 13 | ✅ `EXP-44C79107` 维持 Adjust、Review 延至 8/9；PHP/Round 4 沿用最新已验证状态，不因浏览器会话中断猜测新回复 | ✅ Week 13 排期形成；执行完成度与增长结果分开裁决，月度北极星/资源比例/停止事项不变 |
 
 **Week 12 固定动作与闸门**
 
@@ -144,6 +144,40 @@
 | 外联 | PHP 一次轻量跟进进入 `Ready for human` 或用户确认后的 `Sent-confirmed`；Round 4 保持可解释状态 | 把未发送写成 Sent；把审稿写成 Placed/Backlink won |
 | 变现 | 7/29 对 3 条轨道分别给出 Keep / Iterate / Pause | 只给整个项目一个笼统结论 |
 | GEO | 8/1 月度审计有命中清单和必要修复；无缺口时明确 No change needed | 为刷新日期而批量改文件 |
+
+### Week 12 收盘裁决（2026-08-02）
+
+| 维度 | 结果 | 裁决 |
+|------|------|------|
+| 排班与交付 | 7/7 日级排班执行；新 URL 0，实质内容仅加固 1 页；8/1 技术资产复检和生产验证完成 | **Green — execution complete** |
+| 搜索 | GSC 完整 7 天 0 clicks / 9 impressions / position 22.6，对照 0 / 14 / 19.0；Page Indexing 28/23 为 7/24 延迟总表，URL 级 4 indexed / 1 pending | **Amber — observe, no bulk action** |
+| 获取与转化 | GA4 33 sessions / 20 engaged / 143 events / key 0；Direct 不是自然或引荐获取证明 | **Red — no acquisition proof** |
+| 分发与权威 | Pinterest 7 天 outbound 0；Round 4 Batch A 最新已验证 0/2；PHP 已接受并审稿，但尚无发布/落链 | **Amber — one editorial signal, no placement** |
+| GEO / AI readiness | GEO 79/100（+5），100/100 基础事实层、12/12 crawler、llms 资产通过 | **Green readiness / no growth uplift** |
+| W31 Radar / VOC | 日报 5/7；VOC 144 条去重，YouTube 占 86.1%；WiFi/offline 信号已有页面覆盖 | **Warning — reinforce evidence, no new page** |
+
+**总裁决：`Adjust — keep the site, narrow execution`。** Month 2 的四项 Continue 条件目前只有 PHP 编辑接受可明确计入；Aorkuler 是已有的正向 not-now 基线且没有第二个认真回复，索引+曝光组合、真实点击两项未满足。未触发 Stop，也未触发改变月度资源比例的条件。
+
+### Week 13 排班（2026-08-03 至 2026-08-09）— 月度收盘周
+
+| 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
+|:--:|------|------|------|------|
+| 周一 | 8/3 | 建立 Week 13 冻结基线：读取最新完整 GSC 28 天 query/page 与 Page Indexing 更新时间；只确认 Feeder Reliability 现有 URL 优先级 | 只读核对 PHP / Round 4 是否有真实新回复 | 不改页、不发信；新数据与 7/31 Snapshot 11 分层记录 |
+| 周二 | 8/4 | 对 Feeder Reliability 现有可链接资产做一次 pitch-readiness 审计，选择 1 个可被编辑引用的证据角度 | 若 PHP 有评论则处理；无评论则等待，不重复跟进 | 产出 1 个明确资产角度或 `No change needed`，不创建 URL |
+| 周三 | 8/5 | 对 Week 12 留下的跨页 sitter / failover 一致性候选做证据审计 | 只有安全边界确有冲突才允许最小修复 | 最多 1 个现有页；无缺口则只记录，不刷新日期 |
+| 周四 | 8/6 | 复核 9 个索引样本中唯一 pending 和验证状态；不重复已入队请求 | Round 4 剩余 3 封继续 Hold；只处理真实 inbound | 不以总桶滞后触发批量改页或 Validate Fix |
+| 周五 | 8/7 | 刷新最后一个完整周的 GSC、GA4、Pinterest；Semrush 可用才刷新 | 复核 `EXP-44C79107` 的 source→landing→engagement→events | 形成 Snapshot 12；Direct、Organic、Referral 和商业事件分开报告 |
+| 周六 | 8/8 | 建立 Month 2 证据矩阵：索引/查询、编辑权威、Brand、点击四项逐条判定 | 草拟 Month 3 的 Continue / Adjust / Stop 选项，不提前定案 | 只整理证据，不重复 8/1 GEO 审计，不改站点 |
+| 周日 | 8/9 | 消费 W32 AI Radar/VOC，完成 Month 2 最终复盘与 `EXP-44C79107` Review | 对 PHP、Round 4、Pinterest、Brand 分轨裁决 | 输出 Month 3 战略、Week 14 排期；每项结果注明新鲜度与证据边界 |
+
+**Week 13 硬闸门**
+
+- 新 URL 固定为 0；只有 8/5 的安全/事实一致性审计命中明确缺口时，最多最小修复 1 个现有页。
+- Feeder Reliability 是唯一内容验证集群；PHP/fountain 是编辑关系轨道，不借审稿关系扩成第二个页面集群。
+- `EXP-44C79107` 继续为唯一 Active，Review 8/9；不增加工具、不制造流量、不启动第二实验。
+- PHP 不再主动跟进；Round 4 剩余 3 封、Brand 冷外联、Pinterest 新 Pin 全部 Hold。
+- Page Indexing 只有在报告更新时间推进或 URL 级状态变化时行动；28/23 旧总表不能当 8/2 新鲜快照。
+- 8/9 才做 Month 2 最终 Continue / Adjust / Stop；此前只允许周级目标 URL、集群权重和 P0 微调。
 
 **Week 10 固定动作（历史计划，已收盘）**
 

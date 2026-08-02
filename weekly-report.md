@@ -174,6 +174,69 @@
 - Pinterest 有自然展示与站内互动，但 7 天 outbound 为 0；继续维护模式，不恢复 Pin 铺量。
 - 今日为纯后台核对与文档同步：没有源码、页面、sitemap、索引请求或 Pinterest 发布动作，build/deploy 为 N/A。
 
+## Week 12 周日收盘报告（2026-08-02）
+
+### Executive Summary
+
+Week 12 的执行完成度为 **Green**：7/7 日级排班均已执行，0 个新 URL、仅 1 个现有页实质加固，GSC/GA4/Pinterest 周检、D30 变现裁决和 8/1 月度 GEO/生产复检均闭环。增长结果仍为 **Adjust**：最新完整 GSC 7 天仍是 0 clicks / 9 impressions，GA4 key events 0，Pinterest 7 天 outbound 0，Round 4 最新已验证为 0/2 回复，PHP 尚未发布或落链。
+
+这不是站点技术失败。8/1 的 GEO 79/100、100/100 内容页基础事实层、12/12 AI crawler 和 114 页构建证明站点具备抓取、理解和引用准备度；当前瓶颈是外部发现、编辑权威和可验证点击。Month 2 北极星与资源比例不变，Week 13 进入 25-29 索引观察档：继续 0 新 URL，Feeder Reliability 保持唯一内容验证簇，PHP 仅维护既有编辑关系。
+
+### KPI scorecard
+
+| 维度 | Week 12 证据 | 状态 | 解释 |
+|------|------|:--:|------|
+| 排班 / 交付 | 7/7 天执行；1 个现有页加固；0 新 URL | Green | 计划内工作完整，未用任务数量制造页面 |
+| GSC 表现 | 0 clicks / 9 impressions / position 22.6；前期 0 / 14 / 19.0 | Red | 展示 -35.7%，仍是极小样本；没有搜索点击 |
+| Page Indexing | 28 indexed / 23 unindexed；URL 级 4 indexed / 1 pending | Amber | 总表最后更新 7/24，不是 8/2 实时状态；不可宣称 33→28 的真实净下降 |
+| GA4 | 33 sessions / 20 engaged / 143 events / key 0 | Red | 几乎全是 Direct；Direct 不等于 Organic/Referral 获取 |
+| Pinterest | 7 天 2,003 impressions / 9 engagements / outbound 0 | Amber | 有站内分发信号，仍无稳定出站结果 |
+| 编辑权威 | PHP Accepted / under review；Round 4 最新 0/2；Placed 0 | Amber | 有 1 个真实编辑信号，没有落链 |
+| Brand | 7 个实际联系品牌、1 个 Aorkuler 正向 not-now；付费/预算/实施 0 | Red | 交付质量被认可，但没有第二个认真回复或商业需求 |
+| GEO readiness | 79/100（7/1 为 74）；100/100 基础事实层；12/12 crawler | Green | 技术就绪，不能写成流量或 AI 引用增长 |
+
+### 8 月 1 日专项复盘
+
+- **完成内容**：按 7/1 同一手工口径重评 GEO；100 个内容页 identity/date/core schema/source cue 通过，Review source cue 从 7/26 修复至 26/26；研究方法页校正了证据与实测边界；`llms.txt` / `llms-full.txt` 从 7/11 stale 快照刷新到 8/1；12/12 AI User-Agent 访问生产首页为 HTTP 200。
+- **验证结果**：GEO 79/100；`npm.cmd run verify` 通过 114 generated pages、100 content dates、113 sitemap URLs、26/26 review-schema regression；生产部署 READY，首页、llms、方法页和代表评测页通过线上核验。
+- **价值判断**：这次不是为了追分。它修复了 3 个真实漂移：Review 模板缺 source cue、研究方法边界不清、两个 llms 资产陈旧。Quick Answer 仍保持 14/38，没有批量补写或刷新日期。
+- **结果边界**：没有新的 GSC 点击、GA4 商业事件、AI citation referral 或编辑落链，所以 8/1 应记为“技术与事实层交付成功”，不能记为“增长成功”。
+
+### W31 AI Radar / VOC 对计划的影响
+
+- AI Signal 日报完成 5/7，五次可用运行均 healthy；7/28、7/29 为 No Run，不补猜。`EXP-44C79107` 维持 `Open / Active / Adjust`，Review 延至 8/9；第三观察窗 33 sessions / 20 engaged / 143 events / key 0，没有可重复的 qualified referral。
+- W31 VOC 为 158 raw / 144 deduplicated：PAA 18、Amazon 16、YouTube 124。YouTube 占去重证据 86.1%，`source_balance=Warning`；因此只把跨来源 Medium 信号用于审计，不用单一平台热度批量改页。
+- WiFi/app/offline 仍是跨来源 Medium 信号，但现有 feeder 页面已有覆盖；jamming/portion 只有低来源增量，且 Week 12 coverage-gap 已判 `No change needed`。旅行/断电主指南已在 7/30 修复，VOC 中“无维护记录”的描述比项目事实旧，不能重复改同一页。
+- 雷达对 Week 13 的净新增动作只有两个：继续观察唯一归因实验；在编辑可引用角度上强化 Feeder Reliability 现有资产。**不新增页面、不启动第二实验。**
+
+### Month 2 中期裁决
+
+| Continue 条件 | 截至 8/2 | 判定 |
+|------|------|:--:|
+| 索引 30+ 且曝光/查询继续增长 | 总表 28 且延迟；完整周曝光 14→9 | 未满足 |
+| 至少 1 个相关编辑接受或真实落链 | PHP 已接受并进入编辑/兽医审稿 | 已满足 1 项 |
+| 新增至少 1 个品牌认真回复 | Aorkuler 为已有正向 not-now 基线；无第二个认真回复 | 未满足 |
+| 首次真实 affiliate/outbound/Pinterest 点击 | GA4 key 0；Pinterest 7 天 outbound 0；30 天 4 次来自不同采集路径，未形成可归因闭环 | 未确认 |
+
+**临时结论：1/4 明确满足，`Adjust — keep the site, narrow execution`。** 这不等于 Stop。月度周期到 8/9 才最终裁决；在此之前不改变 35-40% 编辑分发、25-30% GSC、20-25% GEO/VOC、10-15% 维护的资源比例。
+
+### Week 13 计划（8/3-8/9）
+
+1. 8/3 冻结最新 GSC 28 天 query/page 与 Page Indexing 更新时间，选择 Feeder Reliability 现有 URL，不改页。
+2. 8/4 审计 1 个 Feeder 可链接资产/编辑引用角度；有明确缺口才形成最小改进提案。
+3. 8/5 复核 sitter/failover 跨页安全一致性；最多修 1 个现有页，无缺口则 `No change needed`。
+4. 8/6 只读复核 pending URL 和验证状态；不重复 URL Inspection 或 Validate Fix。
+5. 8/7 形成 Snapshot 12，并 Review `EXP-44C79107` 的完整归因链。
+6. 8/8 建立 Month 2 四项成功条件证据矩阵；不重复 GEO 审计。
+7. 8/9 消费 W32 Radar/VOC，完成 Month 2 最终裁决、Month 3 战略与 Week 14 排期。
+
+### Caveats / pending verification
+
+- 8/2 尝试刷新 GSC 时，PowerShell 首次被脚本执行策略拦截；改用 `agent-browser.cmd` 后已登录会话的 CDP 通道关闭。因此没有把 7/24 延迟的 28/23 改写成 8/2 实时值。
+- PHP、GlobalPETS 与 The Upper Pawside 没有在本次断开的浏览器会话中重新读取；周报沿用最后一次已验证状态，不宣称今晚仍无新邮件。Week 13 周一只读核对即可。
+- Pinterest 30 天 11,617 / 65 / 57 / 6 / 4 与早期 UI 快照采集路径不同；只作背景，不用来证明增长或真实站点会话。
+- Semrush 仍沿用用户 7/17 确认的 12 RD / 28 backlinks / 20 keywords / AS 2，不能写成 8/2 新快照。
+
 ## Week 8（6/30-7/3）收盘
 
 | 指标 | 数值 | vs 上次记录 |

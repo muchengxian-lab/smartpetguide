@@ -1,28 +1,29 @@
 # Claude Execution Guardrails
 
-> 生效日期：2026-07-26。用途：减少 Claude 在任务执行、事实引用、日期、状态同步和批量修改上的重复错误。每次开始 SmartPetGuide 任务前读取。
+> 生效日期：2026-08-02。用途：减少 Claude 在任务执行、事实引用、日期、状态同步和批量修改上的重复错误。每次开始 SmartPetGuide 任务前读取。
 
-## Week 12 方向
+## Week 13 方向
 
 - 主目标：让现有页面获得索引、引用、回复和分发，不追求任务数量或页面数量。
 - 时间权重：外链/编辑型分发 35-40%；GSC 与现有页加固 25-30%；战略 GEO/VOC 20-25%；维护 10-15%，Pinterest 只观察。
-- Week 12 新页面固定为 0；Feeder Reliability coverage-gap 命中具体缺口时，最多加固 1 个现有页面。
-- GEO 只做现有页的 `identity + source + date + quickAnswer + answerability`，不再启动新的技术 GEO 冲刺。
+- Week 13 新页面固定为 0；只有 8/5 安全/事实一致性审计命中具体缺口时，最多最小修复 1 个现有页面。
+- GEO 只消费信号并维护现有事实层；8/1 月度审计已完成，不重复 technical GEO、crawler、llms 或 quickAnswer 冲刺。
 - 7/31 Page Indexing 总表仍为 28 / 23、crawled-not-indexed 9，但报告最后更新 7/24；当天 URL Inspection 已确认 `cat-wont-drink-from-water-fountain` 新入索引，`fountain-filter-guide` 仍待重抓。9/9 分诊仍有效；不得用滞后总桶重复或批量 Inspection。
 - Shopping/Enhancements 7/31 为 Product 0/0、Merchant 0/0、Review 0/0、Breadcrumb 8/0、HTTPS 7/0。Review 模板语义风险已修复：评测页不再输出由 Amazon 评分/联盟链接衍生的 Review/Product/Offer/AggregateRating；不得回滚该修复，也不得编造 Merchant 运费/退货政策。Product/Merchant/Review 归零属于合规撤标后的预期口径变化。
-- 7/28 是 Rich Results 口径断点。7/31 和 8/2 必须把普通 Page Indexing、query/page 与 Product/Merchant/Review 分开记录；不得用合规撤标后的富结果下降推断降权或掉索引。
-- 5 个精准 URL Inspection 已完成入队，本周不得重复提交或扩成批量催索引。8/2 只按普通索引三档决策：≥30 继续、25-29 观察、<25 或核心页掉索引才启用既有索引应急规则。
-- Feeder Reliability 是唯一主验证集群；先审计 jamming、portion/calibration、travel/power failover，已有覆盖时记录 No change needed。
-- `EXP-44C79107` 已于 7/27 获用户确认并激活为唯一 Active；只维护每周 10-15 分钟 GA4 渠道基线，Review 8/2，不增加归因工具、不启动第二个实验。
+- 7/28 是 Rich Results 口径断点。Week 13 必须把普通 Page Indexing、query/page 与 Product/Merchant/Review 分开记录；不得用合规撤标后的富结果下降推断降权或掉索引。
+- 5 个精准 URL Inspection 已完成入队，Week 13 不重复提交或扩成批量催索引。8/2 因总表最后更新 7/24，已进入 25-29 观察档；只有报告更新时间推进、URL 级状态变化或核心价值页掉索引时才行动。
+- Feeder Reliability 是唯一内容验证集群；WiFi/app/offline、jamming、portion/calibration、travel/power failover 已有覆盖时记录 No change needed。Pretty Happy Pets 是编辑权威关系，不借机扩成第二个页面集群。
+- `EXP-44C79107` 是唯一 Active；W31 Review=`Adjust`，Review Date 延至 8/9。只维护每周 10-15 分钟 GA4 渠道基线，不增加归因工具、不启动第二个实验。
 - D30 已于 7/29 完成：Task A `Keep — maintenance only`；Brand Outreach `Pause — cold outbound`；Editorial/Guest Post `Continue cautiously`。7 个实际联系品牌只有 Aorkuler 1 个回复（14.3%），付费 beta、预算和实施信号均为 0。
-- Round 4 Batch A 两封已于 7/21 `Sent-confirmed`，截至 7/29 为 0/2 replies；剩余三封 Week 12 保持 Hold。Aorkuler 已关闭，Homerunpet 已 `Closed — no response`，不得重新启动 Brand 新名单。
+- Round 4 Batch A 两封已于 7/21 `Sent-confirmed`，截至最后一次已验证为 0/2 replies；剩余三封 Week 13 保持 Hold。Pretty Happy Pets 已于 7/28 完成唯一一次跟进，不得再主动跟进；Aorkuler 已关闭，Homerunpet 已 `Closed — no response`，不得重新启动 Brand 新名单。
+- W31 VOC 为 158 raw / 144 deduplicated，但 YouTube 占 86.1%，source balance 为 Warning。单平台重复信号不得触发新页；先核对项目当前覆盖，知识库 coverage note 与项目 Git 冲突时以项目事实为准。
 
 ## Week 9 暴露的问题
 
 | 问题 | 实际表现 | 下周防错规则 |
 |------|------|------|
 | 日期与阶段漂移 | 旧指令仍写 Week 9；历史上曾把星期写错 | 每次先运行 `Get-Date -Format "yyyy-MM-dd dddd"`；所有排期写绝对日期，不从 Day/Week 公式推算星期 |
-| 当前指令互相冲突 | 根目录与 `.claude/CLAUDE.md` 曾停留在旧 Week 方向 | `task_plan.md` 顶部活跃区、本文件和 Week 12 提示词优先；Week 11 及更早计划只作背景 |
+| 当前指令互相冲突 | 根目录与 `.claude/CLAUDE.md` 曾停留在旧 Week 方向 | `task_plan.md` 顶部活跃区、本文件和 Week 13 提示词优先；Week 12 及更早计划只作背景 |
 | 状态/数字漂移 | `quickAnswer` 实际 13/38，汇总仍写 8/38；CRM 顶部停在 D3 | 汇总数字必须用 Git、源码、构建或当前 CRM 明细复算；同一任务结束时同步当前事实文件 |
 | 批量日期失真 | 模板改动曾把约 100 页 `modifiedDate` 一次刷新到 7/10 | 只有页面内容发生实质变化才更新该页日期；禁止按模板类型统一刷新日期；日期从 `content-dates.json` 逐页维护 |
 | VOC 证据过度表达 | 曾写入无可核验来源的 owner quotes 和 70-90%、30-50% 等精确数字 | 原话必须有 URL、采集日期和 source ledger；否则只做保守转述；数字必须能追溯到明确来源或标为 editorial scenario |
