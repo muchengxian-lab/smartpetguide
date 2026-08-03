@@ -4723,3 +4723,47 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] `docs/monetization/weekly-metrics-log.md` N/A：本次没有比 Snapshot 11 更新且同口径的完整窗口，不重复写同一快照。
 - [x] `backlinks/round3-guest-post-targets.md`、`backlinks/round4-editorial-targets.md` N/A：浏览器会话断开后没有新的已验证邮件/评论状态，不能凭假设改外联记录。
 - [x] 站点源码、内容日期、sitemap、页面和配置 N/A：本次为复盘/排期/执行入口同步；build、Vercel 部署与线上 HTML 验证均 N/A。
+
+## 会话：2026-08-03 周一 — Week 13 冻结基线与外联只读核对
+
+### 开工确认
+
+- [x] 系统时间：2026-08-03 周一 20:02 Asia/Shanghai；只执行 Week 13 周一排班，不提前执行 8/4 资产审计或 8/5 页面一致性任务。
+- [x] Git 基线：`HEAD=793e3d7`，`origin/master...HEAD=0/0`，开工工作区 clean；最近提交为 Week 12 收盘与 Week 13 排期。
+- [x] session-catchup 无输出，未发现上一会话未同步上下文；已重新读取 `task_plan.md`、`progress.md`、`findings.md`、Week 13 活跃提示词和 guardrails。
+- [x] 今日最多 3 个 P0：① GSC 最新完整 28 天 query/page + Page Indexing 更新时间；② Feeder Reliability 现有 URL 优先级；③ PHP / Round 4 只读核对。
+- [x] 今日硬闸门：不改页面、不发邮件、不请求索引、不点击 Validate Fix；外部内容仅提取事实。预计只更新 `progress.md`、`task_plan.md`；若出现新的同口径 GSC 快照再同步 `docs/monetization/weekly-metrics-log.md`，若外联状态真实变化再同步对应 Round 文件。
+
+### 浏览器连接记录
+
+- [x] `agent-browser doctor --offline --quick` 清理了已退出的旧 `xianyu-radar` daemon；Windows 进程命令行仍确认用户的独立 Chrome 正在 `127.0.0.1:9222` 运行，未关闭或重启该浏览器。
+- [x] 第一次在默认沙箱中运行 `agent-browser.cmd --cdp 9222 tab --json` 超过 30 秒无输出，已主动终止；不把空输出当成无页签或无登录。下一次改为请求允许的非沙箱本地 CDP 连接，不原样在同一权限下重试。
+- [x] 非沙箱下同一 CLI 页签命令仍无输出，第二次改为 Chrome 本地 `/json/list` 读取，确认只有用户闲鱼主页签；随后使用已加载的 Playwright 通过同一 CDP 新开 GSC 工作页签，未关闭或导航闲鱼页签。
+- [x] GSC 概述实时可读且保持登录：28 indexed / 23 unindexed，图表最新日期仍为 7/24；HTTPS 5/0、Breadcrumb 5/0、Product/Merchant/Review 均 0/0。总桶仍不具备 8/3 新鲜度，继续观察、不触发页面或索引动作。
+- [x] GSC Performance 实时更新到 8/1（UI 显示 4 小时前）；默认 3 个月为 4 clicks / 312 impressions / CTR 1.3% / position 34.2。首次切换 28 天时 URL 已变化但表格仍是旧累计并显示 Loading，未把 312 误记为 28 天值；下一步延长等待后重读。
+- [x] 延长等待后的 28 天窗口成功加载：2026-07-05—2026-08-01 为 0 clicks / 44 impressions / CTR 0% / position 37.8；共 15 个可见查询、21 个可见页面。
+- [x] 页面前十：`cat-wont-drink` 14、首页 9、`cat-breaking-into-automatic-feeder` 5、filter/cleaning fountain 各 3、how-we-research / Honeytour / feeder-jamming 各 2、statistics / Aorkuler 各 1。
+- [x] Feeder 周一冻结优先级：`cat-breaking-into-automatic-feeder` 第一、`stop-automatic-feeder-from-jamming` 第二；portion 页面未进前十，不以重复雷达信号替代当前 GSC 页面证据。今天不改页，留给 8/4 做 1 个 pitch-readiness 审计。
+- [x] 展开页面行数时首次直接点击可见文本 `50` 被 GSC 下拉层拦截并超时；错误显示当前选中项实际为 `role=option / data-value=10`。下一次改为先操作选中 option，再点击 `data-value=50`，不重复文本点击。
+- [x] 改用 option 控件后成功展开全部 21 页；`feeder-portion-size-guide` 不在完整清单，确认 portion 不是被前十截断。Feeder URL 优先级不变。
+- [x] Gmail `u/0` 登录态为 `muchengxian@gmail.com`；首次搜索 Pretty Happy Pets 只渲染会话外壳、无结果行，不能写“无新邮件”。下一步改用发件地址/账户路径，不把未渲染误判为 0 reply。
+- [x] 改用 `from:/to:` 地址搜索后成功读取 PHP：线程共 7 封，最新仍为我方 7/28 跟进；没有对方新回复、编辑评论通知或更晚日期，继续 Accepted / under review，不重复跟进。
+- [x] 合并搜索 `content@pets.nl` 与 `info@upperpawside.com` 返回 2 个线程，最新均为我方 7/21 pitch；没有对方发件行或更晚日期，Round 4 Batch A 继续 0/2，剩余三封 Hold。
+
+### 周一冻结基线结论
+
+- [x] GSC 28 天：7/5-8/1 为 0 clicks / 44 impressions / CTR 0% / position 37.8；15 queries / 21 pages，数据更新到 8/1。
+- [x] Page Indexing：28/23，图表仍只到 7/24；没有新的总桶或 URL 级状态变化，不做 Inspection / Validate Fix / 页面改动。
+- [x] Feeder priority：`cat-breaking-into-automatic-feeder` 5 impressions > `stop-automatic-feeder-from-jamming` 2；portion 0 个可见页面行。8/4 先审计第一观察 URL 的可链接资产契合度。
+- [x] 外联：PHP 最新 7/28 我方跟进；Round 4 最新 7/21 我方发送，0/2 replies。今天无邮件草稿、发送或状态升级。
+- [x] 已关闭本次新开的 GSC/Gmail 工作页签，Chrome 仅保留用户原有闲鱼页签；未关闭或导航用户页签。
+- [x] 临时只读 CDP helper `C:\tmp\spg_browser_read.js` 已在完成核对后删除，不进入项目仓库或提交。
+
+### 文件同步矩阵
+
+- [x] 新 GSC 28 天冻结基线 → `docs/monetization/weekly-metrics-log.md`、`findings.md`、`progress.md`、`task_plan.md`、根/项目 Claude 入口与 Week 13 活跃模板。
+- [x] PHP / Round 4 实时状态无升级但新鲜度推进 → `backlinks/round3-guest-post-targets.md`、`backlinks/round4-editorial-targets.md`、`findings.md`、`progress.md`、`task_plan.md` 与活跃入口。
+- [x] `weekly-report.md` N/A：今天是周一冻结基线，不提前改周日复盘；周五 Snapshot 12 / 周日收盘再同步。
+- [x] Month 2 战略书 N/A：未命中月度触发条件，资源比例、北极星和停止事项不变。
+- [x] GA4 / Pinterest / Semrush N/A：今天没有刷新，继续按 8/7 Snapshot 12 排班。
+- [x] 站点源码、内容日期、sitemap、页面与配置 N/A：今天 0 页面改动；build、Vercel、生产 HTML 均 N/A。

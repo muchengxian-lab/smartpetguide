@@ -887,3 +887,35 @@
 3. `EXP-44C79107` 已获得固定链路的第二次可复核快照，但当前几乎全为 Direct、商业事件为 0；8/2 只评估实验是否继续收集，不把“有会话”误写成归因成功。
 4. feeder portion 本期 1 session / 2 秒 / key 0，维持观察，不再扩写计算器。
 5. Pinterest 维持维护、不发 Pin；Semrush 未刷新前继续显式标注 7/17 历史值。
+
+---
+
+## Week 13 Monday Freeze Baseline — 2026-08-03
+
+> 这是周一 28 天方向基线，不替代 Snapshot 11 的两个完整 7 天同比，也不提前命名为 Snapshot 12。GSC Performance 已更新到 2026-08-01；Page Indexing 图表仍只到 7/24。今天未刷新 GA4、Pinterest 或 Semrush。
+
+### GSC 28 天（2026-07-05—2026-08-01）
+
+| 指标 | 当前值 | 解释 |
+|------|:--:|------|
+| 点击 | **0** | 没有搜索点击 |
+| 展示 | **44** | 15 个可见查询、21 个可见页面 |
+| CTR | **0%** | 与零点击一致 |
+| 平均排名 | **37.8** | 小样本方向值，不与 7 天 position 22.6 混算 |
+| Page Indexing | **28 / 23** | 图表最新仍为 7/24；不是 8/3 新鲜总桶 |
+
+### 页面级优先级
+
+| 页面 | 28 天展示 | 周一决定 |
+|------|:--:|------|
+| `cat-wont-drink-from-water-fountain` | **14** | 全站当前第一展示页；今天不重复改页 |
+| 首页 | **9** | 观察 |
+| `cat-breaking-into-automatic-feeder` | **5** | Feeder Reliability 第一观察 URL；进入 8/4 pitch-readiness 审计 |
+| `stop-automatic-feeder-from-jamming` | **2** | Feeder 第二观察 URL；已有覆盖，不重复扩写 |
+| `feeder-portion-size-guide` | **0 个可见页面行** | 完整 21 页清单仍未出现；不以雷达重复信号覆盖 GSC 证据 |
+
+### 外联只读状态
+
+- Pretty Happy Pets：线程 7 封，最新仍为我方 7/28 跟进；无新回复或评论通知。
+- GlobalPETS / The Upper Pawside：最新仍为我方 7/21 两封 pitch；Batch A 继续 0/2 replies。
+- 本日动作：不发邮件、不请求索引、不改页。GA4 / Pinterest / Semrush 为 N/A，按 8/7 Snapshot 12 排班刷新。

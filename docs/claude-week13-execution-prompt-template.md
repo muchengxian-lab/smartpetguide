@@ -38,6 +38,7 @@ C:\Users\Administrator\smartpetguide
 - Week 12：7/7 日级排班完成；新 URL 0；实质内容修改 1 页。执行 Green，增长结果 Adjust。
 - 站点：114 generated pages / 113 indexable sitemap URLs / 100 内容页；guides quickAnswer 14/38，不机械补全。
 - GSC Snapshot 11：完整窗口 7/23-7/29 为 0 clicks / 9 impressions / CTR 0% / position 22.6，对照 7/16-7/22 的 0 / 14 / 0% / 19.0。小样本下降不触发批量页面返工。
+- Week 13 Monday Freeze：GSC 28 天 7/5-8/1 为 0 clicks / 44 impressions / CTR 0% / position 37.8；15 queries / 21 pages。Feeder URL 顺序为 `cat-breaking-into-automatic-feeder` 5 impressions、`stop-automatic-feeder-from-jamming` 2，portion 页面无可见行。该 28 天窗口与 Snapshot 11 的 7 天同比分层记录。
 - Page Indexing：最后已读为 28 indexed / 23 unindexed，但报告明确最后更新 7/24；URL Inspection 较新证据为 4 indexed / 1 pending。Week 13 是 25-29 观察档，不得宣称 33→28 是 8/2 实时净下降。
 - 5 个精准 URL 已在 7/28 请求重抓；不得重复或扩大 Inspection。只有报告更新时间推进、URL 级状态变化、验证失败或核心价值页掉索引才行动。
 - Rich Results：7/28 是合规口径断点。Review/Product/AggregateRating/Merchant Offer 撤标不得回滚；Product/Merchant/Review 的下降或归零不能反推普通索引/排名。
@@ -53,7 +54,7 @@ C:\Users\Administrator\smartpetguide
 
 三、日期闸门
 
-- 8/3：冻结最新完整 GSC 28 天 query/page、Page Indexing 更新时间和 Feeder 现有 URL 优先级；只读核对 PHP/Round 4。不得改页或发信。
+- 8/3：✅ 已完成。GSC 28 天 0/44/37.8；Page Indexing 28/23 且图表只到 7/24；Feeder priority 为 break-in 5 > jamming 2，portion 无可见行。PHP 最新仍为我方 7/28 跟进，Round 4 最新仍为我方 7/21 两封、0/2 replies；0 改页、0 发信、0 索引动作，不得重复执行。
 - 8/4：只审计 1 个 Feeder Reliability 现有可链接资产/编辑引用角度。没有明确证据缺口则写 No change needed。
 - 8/5：只审计 Week 12 留下的 sitter/failover 跨页安全一致性。命中真实冲突时最多最小修复 1 个现有页；否则不改日期。
 - 8/6：只读复核 9 个索引样本中的 pending URL、报告更新时间和验证状态；不重复已入队请求或整桶 Validate Fix。
@@ -107,7 +108,7 @@ C:\Users\Administrator\smartpetguide
 
 | 日期 | 主要任务 | 最低项目文件同步 |
 |------|------|------|
-| 8/3 | GSC 28 天/索引更新时间 + 外联只读核对 | `progress.md`、`task_plan.md`；新快照才更新 metrics |
+| 8/3 | ✅ GSC 28 天/索引更新时间 + 外联只读核对已完成 | 已同步 progress、task plan、findings、metrics、Round 3/4 与活跃入口；不得重复 |
 | 8/4 | Feeder 可链接资产/pitch-readiness | `progress.md`；稳定结论才更新 `findings.md` |
 | 8/5 | sitter/failover 跨页一致性 | `progress.md`；若改页则源码、日期、task plan、findings |
 | 8/6 | pending URL/验证状态 | `progress.md`、`task_plan.md`；新索引快照才更新 metrics |

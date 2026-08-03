@@ -228,6 +228,8 @@ Chengxian Yang
 
 **状态**：`Sent-confirmed`。用户于 2026-07-28 确认已实际发送；该邮件不询问发布时间，不承诺 reciprocal/dofollow。下一步只等待真实编辑评论、采用/发布时间确认或对方提案，不再发送第二次跟进。
 
+**Week 13 只读检查（2026-08-03）**：Gmail 按 `info@prettyhappypets.com` 收发件地址搜索，线程共 7 封，列表最新仍是我方 7/28 跟进；没有对方新回复、编辑评论通知或更晚日期。状态继续为 `Accepted / editorial + veterinary review`，不准备或发送第二次跟进。
+
 ### 下一步行动
 
 | # | 事项 | 类型 | 说明 |

@@ -1,5 +1,23 @@
 # 发现与决策
 
+## 2026-08-03 Week 13 周一冻结基线：GSC 总桶仍未刷新
+
+**实时概述证据**：2026-08-03 通过用户已登录 Chrome 只读打开 `sc-domain:smartpetguide.net`。GSC 概述仍显示 28 个网页已编入索引 / 23 个未编入索引，索引图表的最新横轴日期仍为 2026-07-24；因此它不是 8/3 新鲜索引总数。增强功能当前显示 HTTPS 5/0、Breadcrumb 5/0、Product 0/0、Merchant 0/0、Review 0/0。
+
+**当前边界**：Week 13 继续按 25-29 观察档执行。普通 Page Indexing 与 7/28 合规撤标后的 Rich Results 继续分开；在报告更新时间推进或 URL 级状态变化前，不重复 URL Inspection、不批量 Validate Fix，也不因 Breadcrumb/HTTPS 样本数量变化改站点。
+
+**Performance 新鲜度**：效果报告显示“上次更新日期 4 小时前”，数据截至 2026-08-01；默认 3 个月累计为 4 clicks / 312 impressions / CTR 1.3% / average position 34.2。当前 Top queries 仍是低样本：`wopet vs furbo` 7 impressions，Petlibro Granary 与 Aorkuler 各 4，其余头部多为 3。首次选择 28 天后 URL 已带 `num_of_days=28`，但表格仍显示旧累计且处于 Loading；该次输出不计为 28 天快照，等待完成后再记录。
+
+**28 天冻结窗口**：完成加载后的 2026-07-05—2026-08-01 为 0 clicks / 44 impressions / CTR 0% / average position 37.8；15 个可见查询中只有 `wopet vs furbo` 达到 2 impressions，其余头部均为 1。页面前十中，`cat-wont-drink-from-water-fountain` 14、首页 9、`cat-breaking-into-automatic-feeder` 5、`fountain-filter-guide` 与 `how-to-clean-cat-water-fountain` 各 3、`stop-automatic-feeder-from-jamming` 2。
+
+**Feeder Reliability 周一优先级**：只按当前 28 天页面证据，`cat-breaking-into-automatic-feeder` 是 feeder 现有页的第一观察 URL，`stop-automatic-feeder-from-jamming` 第二；portion-calibration 未进入前十，不能因雷达反复出现就排到查询证据之前。今天只冻结优先级，不改页；8/4 的 pitch-readiness 审计先从第一观察 URL 与已有可链接资产的契合度开始。
+
+**全量页面确认**：展开 50 行后，28 天窗口共 21 个可见页面；`feeder-portion-size-guide` 不在清单中，确认不是“前十被截断”。除前十外仅有 WOPET、Petlibro、WOPET vs Petlibro 等 11 页各 1 impression；没有第二个 feeder 页面超过 jamming 页。
+
+**邮件实时核对**：同一 Chrome 中 Gmail `u/0` 已登录为 `muchengxian@gmail.com`。首次按名称搜索只返回会话外壳，改用收发件地址后成功读取：Pretty Happy Pets 线程共 7 封，列表最新仍是我方 2026-07-28 跟进；GlobalPETS 与 The Upper Pawside 合并搜索只显示我方 2026-07-21 两封 pitch，没有更新日期、对方发件行或新增线程消息。当前 PHP 仍为 Accepted / editorial + veterinary review、无新评论/回复；Round 4 Batch A 仍为 0/2 replies。
+
+**外联决定**：今天不准备或发送第二次 PHP 跟进，不发送 Round 4 剩余三封。零回复继续只作为 Hold 证据，不把等待天数变成发送许可；若后续出现编辑请求、评论、采用或发布时间确认，再按真实 inbound 单独处理。
+
 ## 2026-08-02 Week 12 收盘：执行完成，但外部增长结果仍需收缩验证
 
 **交付与结果必须分开计分**：Week 12 的 7/7 日级排班、0 新 URL、1 个现有页加固、D30 分轨裁决、周度数据和 8/1 GEO/生产复检均完成，执行为 Green；但最新完整 GSC 7 天仍为 0 clicks / 9 impressions，GA4 key events 0，Pinterest 7 天 outbound 0，Round 4 最新已验证为 0/2，PHP 尚未发布或落链，增长结果为 Adjust。

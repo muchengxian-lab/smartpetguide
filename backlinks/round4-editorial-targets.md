@@ -36,6 +36,10 @@
 
 **发送闸门：**Batch A 已超过首个 48-72 小时观察窗但仍无回复。D30 最终裁决继续 Hold，Week 12 不因等待时间继续增加而自动发送剩余三封；只有收到回复、编辑问题或明确内容反馈，且能说明应复制或修正的角度时，才重新排期。零反馈不是正向验证，剩余发送数也不是成果。
 
+## Week 13 Monday Checkpoint — 2026-08-03
+
+Gmail 合并搜索 `content@pets.nl` 与 `info@upperpawside.com`，只显示我方 2026-07-21 的 GlobalPETS / The Upper Pawside 两封 pitch；没有对方发件行、更晚日期或新增线程消息。Batch A 继续 **0/2 replies**，BarkyTech / Purely Wholesome / PetsAnalysis 继续 Hold；今天不准备或发送任何新邮件。
+
 ## Batch A Pitch Record + Corrected Reuse Copy (2026-07-21)
 
 > 用户已确认两封邮件实际发送，因此状态为 `Sent-confirmed`。下方正文已在发送后按 2026-07-21 官方价格完成事实修正，仅供对方回复、后续提纲或未来外联复用；它不是实际已发正文的逐字证据。实际发送链接是否带 UTM 无法从仓库独立验证，因此本批归因记为 `unverified`，不补写成已追踪。

@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-08-02 周日 Week 12 收盘 | 7/7 日级排班均已执行；8/1 GEO 79/100、100/100 内容页基础事实层与 12/12 AI crawler 通过，但 GSC 完整 7 天仍为 0 clicks / 9 impressions、GA4 key events 0、Pinterest 7 天 outbound 0 | W31 AI Radar 日报 5/7、唯一实验 `EXP-44C79107` 继续 Adjust 至 8/9；VOC 144 条去重证据但 YouTube 占 86.1%，source balance 为 Warning | Page Indexing 仍显示 28/23 且最后更新 7/24，因此 Week 13 进入 25-29 观察档：0 新 URL、不重复索引请求、不新增技术 GEO 冲刺**
+**最后更新：2026-08-03 周一 Week 13 | GSC 28 天冻结窗口（7/5-8/1）为 0 clicks / 44 impressions / position 37.8；Page Indexing 仍为 28/23 且图表只到 7/24 | Feeder Reliability 现有页优先级：`cat-breaking-into-automatic-feeder` 5 impressions > `stop-automatic-feeder-from-jamming` 2，portion 页不在完整 21 页清单 | PHP 最新仍为我方 7/28 跟进，Round 4 最新仍为我方 7/21 两封 pitch、0/2 replies | 今天 0 页面改动、0 邮件、0 索引动作；8/4 只做一个 pitch-readiness 审计**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 13 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一内容验证集群仍为 **Feeder Reliability**；Pretty Happy Pets 只作为既有编辑权威关系维护，不构成第二个内容集群。
 
@@ -162,7 +162,7 @@
 
 | 天 | 日期 | P0 主任务 | 分发 / 变现 | 验收标准 |
 |:--:|------|------|------|------|
-| 周一 | 8/3 | 建立 Week 13 冻结基线：读取最新完整 GSC 28 天 query/page 与 Page Indexing 更新时间；只确认 Feeder Reliability 现有 URL 优先级 | 只读核对 PHP / Round 4 是否有真实新回复 | 不改页、不发信；新数据与 7/31 Snapshot 11 分层记录 |
+| 周一 | 8/3 | ✅ 冻结 GSC 28 天：7/5-8/1 为 0 clicks / 44 impressions / position 37.8；Page Indexing 仍 28/23 且图表只到 7/24；Feeder priority 为 break-in 5 > jamming 2，portion 无可见页面行 | ✅ PHP 最新仍是我方 7/28 跟进；Round 4 两线程最新仍是我方 7/21 pitch，0/2 replies | ✅ 不改页、不发信、不请求索引；新 28 天基线与 Snapshot 11 的完整 7 天窗口分层记录 |
 | 周二 | 8/4 | 对 Feeder Reliability 现有可链接资产做一次 pitch-readiness 审计，选择 1 个可被编辑引用的证据角度 | 若 PHP 有评论则处理；无评论则等待，不重复跟进 | 产出 1 个明确资产角度或 `No change needed`，不创建 URL |
 | 周三 | 8/5 | 对 Week 12 留下的跨页 sitter / failover 一致性候选做证据审计 | 只有安全边界确有冲突才允许最小修复 | 最多 1 个现有页；无缺口则只记录，不刷新日期 |
 | 周四 | 8/6 | 复核 9 个索引样本中唯一 pending 和验证状态；不重复已入队请求 | Round 4 剩余 3 封继续 Hold；只处理真实 inbound | 不以总桶滞后触发批量改页或 Validate Fix |

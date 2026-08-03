@@ -32,7 +32,7 @@ Current order:
 
 1. Read the guardrails, the active Week 13 row in `task_plan.md`, the latest `progress.md` entry, and the current decisions at the top of `findings.md`.
 2. Keep Task A in maintenance mode; do not add conversion infrastructure without a measured gap.
-3. Editorial Outreach Round 4 Batch A was sent on 7/21 and is still 0/2 replies; keep BarkyTech, Purely Wholesome, and PetsAnalysis on Hold unless a real editorial response changes the evidence.
+3. Week 13 Monday is complete: the 7/5-8/1 GSC window is 0 clicks / 44 impressions / position 37.8; feeder break-in (5 impressions) is the first feeder observation URL, jamming (2) is second, and portion has no visible page row. Round 4 Batch A was live-checked on 8/3 and remains 0/2 replies; keep BarkyTech, Purely Wholesome, and PetsAnalysis on Hold unless a real editorial response changes the evidence.
 4. Brand Outreach: Aorkuler is `Closed — not now (positive)` and Homerunpet is `Closed — no response`; neither should be contacted again without new inbound evidence.
 5. Track `Drafted`, `Ready for human`, `Scheduled`, `Sent-confirmed`, `Replied`, `Accepted`, and `Placed` separately.
 6. The review template's structured-data compliance fix is complete. Do not reintroduce Amazon third-party ratings as SmartPetGuide `AggregateRating` or author `reviewRating`; do not emit affiliate links as Merchant `Offer`, and do not invent shipping/return policies. Keep `npm run verify`'s review-schema regression check passing.

@@ -20,7 +20,7 @@ Claude Code 在执行任何相关工作前必须先读：
 7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
 8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
-当前顺序：Week 12 已收盘，7/7 排班完成；执行 Green、增长结果 Adjust。Week 13 只按 8/3-8/9 排班执行 Month 2 收盘：Feeder Reliability 是唯一内容验证簇，Pretty Happy Pets 是既有编辑关系轨道，`EXP-44C79107` 是唯一 Active 且 Review 8/9。新 URL 0，不重复 8/1 GEO/llms/crawler 检查，不重复已入队 URL Inspection，不增加归因工具或第二实验。Pretty Happy Pets 7/28 跟进已 `Sent-confirmed`，不得再次主动跟进；Round 4 剩余三封继续 Hold。
+当前顺序：Week 13 周一已完成。GSC 7/5-8/1 为 0 clicks / 44 impressions / position 37.8；Page Indexing 仍为 28/23 且图表只到 7/24。Feeder 现有页顺序为 break-in 5 > jamming 2，portion 不在完整 21 页清单；8/4 只审计 break-in 页与现有可链接资产的 pitch-readiness，不提前改页。PHP 最新仍是我方 7/28 跟进；Round 4 最新仍是我方 7/21 两封 pitch、0/2 replies。新 URL 0，不重复 GEO/Inspection，不发信；`EXP-44C79107` 仍是唯一 Active、Review 8/9。
 
 禁止自动发邮件、提交外部表单、联系品牌、伪造联系人/流量/销售数据，禁止把付费合作写成编辑推荐排名。
 
@@ -42,7 +42,7 @@ Claude Code 在执行任何相关工作前必须先读：
 
 ## 当前阶段
 
-Week 13 为 2026-08-03 周一至 2026-08-09 周日。Week 12 收盘：114 页；GSC 最新完整 7 天为 0 clicks / 9 impressions / position 22.6，对照前期 0 / 14 / 19.0；Page Indexing 总表仍为 28 indexed / 23 unindexed、crawled-not-indexed 9，但报告最后更新 7/24，URL 级证据为 4 indexed / 1 pending。重定向错误 4 的验证仍“已开始”；Product/Merchant/Review 撤标后的归零不得回滚或反推普通索引。GA4 7/24-7/30 为 33 sessions / 20 engaged / 143 events / 0 key events，Direct 不计自然/引荐获取。Pinterest 近 7 天为 2,003 impressions / 9 engagements / 0 outbound；近 30 天不同采集路径的 11,617 / 65 / 4 outbound 只作背景。Semrush 仍沿用 7/17 的 12 RD / 28 backlinks / 20 keywords / AS 2。GEO 79/100、100/100 基础事实层和 12/12 crawler 是 readiness，不是增长 uplift。PHP 仍按最后已验证状态处于编辑/兽医审稿；Round 4 Batch A 最新已验证 0/2。
+Week 13 为 2026-08-03 周一至 2026-08-09 周日。8/3 冻结基线：GSC 28 天（7/5-8/1）0 clicks / 44 impressions / position 37.8；完整 7 天历史对照仍为 0/9/22.6 vs 0/14/19.0。Page Indexing 总表仍为 28 indexed / 23 unindexed、crawled-not-indexed 9，图表只到 7/24；URL 级证据仍为 4 indexed / 1 pending。Feeder 现有页为 break-in 5 impressions、jamming 2、portion 无可见页面行。GA4 仍沿用 7/24-7/30 的 33 sessions / 20 engaged / 143 events / key 0；Pinterest、Semrush 均未在周一刷新。GEO 79/100 是 readiness，不是增长 uplift。PHP 8/3 实时只读仍以我方 7/28 跟进为最新；Round 4 Batch A 仍 0/2。
 90 天目标：150-180 页 / 60-100 索引 / 25-40 引用域名 / GEO Score 85+。
 
 ## 核心策略
