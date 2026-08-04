@@ -1,5 +1,15 @@
 # 发现与决策
 
+## 2026-08-04 Feeder Reliability pitch-readiness 审计
+
+**选择的候选角度**：保留“Before Calling Your Cat Food-Obsessed, Calibrate the Feeder: Why One ‘Portion’ Is Not a Standard Measure”。候选落链为现有 `/guides/feeder-portion-size-guide/`：页面提供 10 次出粮称重法、具体型号资料、AAHA 营养边界和显示整数份量偏差的浏览器计算器。完整审计卡见 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`。
+
+**最终来源验真未通过**：PETLIBRO 官方页支持 Granary 约 20 ml / 1/12 cup 且实际输出受食物属性影响；PETKIT P570 手册支持 fixed-volume serving 约 10 g、颗粒大小/密度与低料位会改变输出；AAHA 支持把包装喂食量当起点、按个体情况咨询兽医并使用克秤提高精度。WOPET 官方 F01 Plus 支持页也明确写“小轮约 5g / 大轮约 10g”，但当前页面链接的是另一份只写“一份约 10g”的 PDF。事实可证，页面 citation 不匹配；因此候选角度成立，现有落链页仍为 **HOLD / not pitch-ready**。
+
+**为什么不直接推 break-in 页**：`cat-breaking-into-automatic-feeder` 的 5 impressions 说明它是本周第一观察 URL，但曝光不是引用质量证明。该页当前仍有 “proven fixes from real owners” 及未配页面级来源的热量、餐次、适应周期、RFID 和品牌防撬断言；它可以提供问题场景，不能被包装成 owner-review 研究或编辑证据页。
+
+**边界与行动**：本次只保留“先校准实际克数，再判断行为或设备问题”的可复现实测框架；不宣称喂少是撬食的常见原因，不给统一热量/餐次，不引用无账本 owner 数量，也不做品牌防撬排名。今天按排班只审计，0 页面、0 新 URL、0 邮件、0 索引动作。8/5 的唯一页面窗口优先把 WOPET citation 换成已验证的官方支持页并做生产验收；若该页已改，sitter/failover 只能只读审计，不得再改第二页。Round 4 剩余三封继续 Hold。
+
 ## 2026-08-03 Week 13 周一冻结基线：GSC 总桶仍未刷新
 
 **实时概述证据**：2026-08-03 通过用户已登录 Chrome 只读打开 `sc-domain:smartpetguide.net`。GSC 概述仍显示 28 个网页已编入索引 / 23 个未编入索引，索引图表的最新横轴日期仍为 2026-07-24；因此它不是 8/3 新鲜索引总数。增强功能当前显示 HTTPS 5/0、Breadcrumb 5/0、Product 0/0、Merchant 0/0、Review 0/0。

@@ -4767,3 +4767,58 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] Month 2 战略书 N/A：未命中月度触发条件，资源比例、北极星和停止事项不变。
 - [x] GA4 / Pinterest / Semrush N/A：今天没有刷新，继续按 8/7 Snapshot 12 排班。
 - [x] 站点源码、内容日期、sitemap、页面与配置 N/A：今天 0 页面改动；build、Vercel、生产 HTML 均 N/A。
+## 会话：2026-08-04 周二 — Week 13 Feeder pitch-readiness 审计
+
+### 开工与边界
+
+- [x] 系统日期确认 2026-08-04（周二，Asia/Shanghai）；开工 `HEAD=f47b353`，`origin/master...HEAD=0/0`，工作区 clean。
+- [x] `session-catchup.py` 无输出，未发现上一会话未同步上下文；今天只执行 Week 13 周二任务：审计 1 个现有 Feeder Reliability 可链接资产/编辑引用角度。
+- [x] 硬边界：不改线上页面、不创建新 URL、不发邮件、不请求索引；最终只输出 1 个具体角度或 `No change needed`。
+- [x] Repo Search doctor 通过，仓库 profile 可用；ask 运行 ID `1da81948-6d00-4736-ac3b-6611c3852dbd`。推荐入口包含 guide 动态页、研究方法页和任务计划，但未直接覆盖全部可链接资产，后续按推荐入口读取并补查明确缺失文件。
+
+### 第一轮定位
+
+- [x] `cat-breaking-into-automatic-feeder` 是现有实用型问题解决页，并与 portion、jamming、WiFi/offline 等现有 Feeder Reliability 页面形成组合；它不是独立的第一方数据研究页。
+- [x] `docs/research/week-9-voc-source-ledger.md` 已明确否决多项无可追溯来源的喂食器百分比、故障率和品牌保证。今天的候选角度只能按可复核的“可靠性检查框架”表达，不能包装成 owner-review 统计、故障率研究或品牌排名。
+- [x] 已逐段核对 break-in 页面、相关辅助页、`pet-tech-statistics` 与 `how-we-research`；仅 portion-calibration 方法达到本次可复核编辑用途要求。
+
+### 目标页初审
+
+- [x] 目标页当前使用 “proven fixes from real owners” 等研究型措辞，但正文没有来源段或可复核样本台账；不能把它对外描述成 owner-review 数据研究。
+- [x] 页面还包含未在现有来源账本中支撑的热量/餐次、适应周期、品牌防撬能力和 RFID 行为等具体断言。今天不越过排班修改页面，但这些断言使该 URL 暂不适合作为编辑引用证据页。
+- [x] 已完成 portion、jamming、WiFi/offline 与统计页筛选；portion 的可复查称重/换算方法通过，其余页面不作本次证据页。
+
+### 辅助资产筛选
+
+- [x] `pet-tech-statistics` 的 “500+ verified owner reviews” 没有配套样本账本，不能作为本次 Feeder Reliability 编辑引用依据。
+- [x] jamming 页仍有 “~70%” 等无来源成功率和过度确定的设备损坏措辞，不选作本次编辑背书目标。
+- [x] 当前唯一可继续验证的候选角度是 portion 页的 **10 次出粮称重校准**：先确认 app 中的 portion 与实际克数，再判断 break-in 是否可能与喂食设置偏差有关；该角度不依赖品牌排名或 owner-review 统计。
+- [x] 已复核 portion 页的官方来源、计算器和免责声明；最终通过窄角度，不通过 break-in 数据研究包装。
+
+### 错误记录
+
+- [x] 首次并行检查 `dist` portion 页时，PowerShell 将带 `<` 与嵌套引号的 `rg` 正则误解析为重定向，报 `Missing file specification after redirection operator`；该批结果未采信。已拆开命令并用普通关键词完成复核。
+
+### Pitch-readiness 候选与最终来源验真
+
+- [x] **保留的唯一候选角度：**“Before Calling Your Cat Food-Obsessed, Calibrate the Feeder: Why One ‘Portion’ Is Not a Standard Measure”。候选落链为 `/guides/feeder-portion-size-guide/`，break-in 页只提供问题场景，不作为证据页。
+- [x] 来源验真 PASS：PETLIBRO 官方页支持 Granary 约 20 ml / 1/12 cup 及实际输出差异；PETKIT P570 手册支持约 10g、颗粒属性与低料位影响；AAHA 支持包装指南只作起点并咨询兽医。
+- [x] 来源验真 FAIL：当前所链 WOPET F01 Plus quick-start PDF 只写 one portion about 10g，不支持页面“小轮 5g / 大轮 10g”；随后找到的 WOPET 官方 F01 Plus 支持页明确支持 5g/10g。事实成立但 citation 错配，候选落链仍为 HOLD / not pitch-ready。
+- [x] 计算器复核：按 `calibration weight / portions`、`daily target / meals` 计算，显示最近整数份设置、预计每日克数与偏差；小于 0.5 portion 时不自动向上取整，并提醒咨询兽医。
+- [x] 安全边界：不得写成猫撬食“通常由喂少造成”、不得给统一热量/餐次、不得宣称分析了多少 owners、不得推广具体品牌防撬排名。该角度是可复现实测方法，不是医学结论或故障率研究。
+
+### 文件同步矩阵
+
+- [x] 新增 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`，保存 HOLD 候选角度、复用段落、来源错配、禁用断言和不发送闸门。
+- [x] 已同步 `task_plan.md`、`findings.md`、`progress.md`、根 `CLAUDE.md`、`.claude/CLAUDE.md` 与 Week 13 活跃模板；8/4 标记完成，8/5 优先把 portion 页换成已验证的 WOPET 官方支持链接，随后 sitter/failover 只读审计。
+- [x] `backlinks/round4-editorial-targets.md` N/A：今天没有发送、回复、接受或落链状态变化，剩余三封继续 Hold；审计卡不等于新 Round 4 发送项。
+- [x] `weekly-report.md`、周度指标日志、Month 2 战略书 N/A：今天没有新数据快照、周复盘或月度触发条件变化。
+- [x] 站点源码、内容日期、sitemap、构建与部署 N/A：今天 0 页面、0 新 URL；现有 production portion URL 已核对为 HTTP 200。来源验真暴露的 WOPET 错配进入 8/5 唯一页面修复窗口。
+
+### 验收记录
+
+- [x] 生产 `/guides/feeder-portion-size-guide/` 返回 HTTP 200（Vercel）；今天无源码变更，因此 build/deploy 为 N/A，不把可访问性误写成 citation 已修复。
+- [x] 2026-08-04 直接复读官方来源：PETLIBRO 与 PETKIT 支持各自页面限定值；AAHA 支持包装指南起点、兽医个体化与克秤精度；WOPET F01 Plus 官方支持页支持 5g/10g，但当前所链 PDF 不支持该细分，HOLD 结论成立。
+- [x] Repo Search feedback 已回传 `partial`（run `1da81948-6d00-4736-ac3b-6611c3852dbd`）：推荐入口命中 guide/method/task plan，但漏掉统计页、Week 9 来源账本和 Round 4 文件。
+- [x] 提交前验证：`git diff --check` 通过；变更范围仅为 6 个活跃/记录文档与 1 个新审计卡，未命中 `src/`、`public/`、构建或部署配置。Git commit/push 与远端 0/0 由收工命令和 Git 历史留证，不在完成前预写哈希。
+- [x] 首次 `git diff --cached --check` 检出新审计卡日期/状态行的 Markdown 双空格换行（trailing whitespace）；已改为空行分段并重新暂存，不沿用失败结果。

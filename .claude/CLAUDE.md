@@ -20,7 +20,7 @@ Claude Code 在执行任何相关工作前必须先读：
 7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
 8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
-当前顺序：Week 13 周一已完成。GSC 7/5-8/1 为 0 clicks / 44 impressions / position 37.8；Page Indexing 仍为 28/23 且图表只到 7/24。Feeder 现有页顺序为 break-in 5 > jamming 2，portion 不在完整 21 页清单；8/4 只审计 break-in 页与现有可链接资产的 pitch-readiness，不提前改页。PHP 最新仍是我方 7/28 跟进；Round 4 最新仍是我方 7/21 两封 pitch、0/2 replies。新 URL 0，不重复 GEO/Inspection，不发信；`EXP-44C79107` 仍是唯一 Active、Review 8/9。
+当前顺序：Week 13 周二已完成。Feeder pitch-readiness 审计保留“先校准再判断”的候选角度；WOPET 官方 F01 Plus 支持页可证明小轮约 5g/大轮约 10g，但 portion 页当前链接的是只写约 10g 的另一 PDF，因此资产为 HOLD；break-in 页也只作场景。审计卡为 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`，不得发送。8/5 优先用唯一一页额度更换 citation 并验收；随后 sitter/failover 只读审计，不能再改第二页。新 URL 0，不重复 GEO/Inspection，不发信；`EXP-44C79107` 仍是唯一 Active、Review 8/9。
 
 禁止自动发邮件、提交外部表单、联系品牌、伪造联系人/流量/销售数据，禁止把付费合作写成编辑推荐排名。
 
