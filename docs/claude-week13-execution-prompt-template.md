@@ -52,12 +52,13 @@ C:\Users\Administrator\smartpetguide
 - 8/1 GEO：79/100；100/100 identity/date/core schema/source cue，12/12 AI crawler HTTP 200；llms 资产与 Review source cue 已修复。不得重复月度 GEO 审计、批量补 quickAnswer 或刷新日期。
 - W31 Radar：日报 5/7；VOC 158 raw / 144 deduplicated，YouTube 占 86.1%，source balance Warning。WiFi/app/offline 已有页面覆盖，jamming/portion 不重复改；travel/power 主指南已于 7/30修复，知识库旧 coverage note 不得触发重复工作。
 - Week 13 Tuesday Audit：保留一个候选角度——先用 10 次出粮称重法校准实际克数，再解释 food-seeking/break-in 行为。WOPET 官方 F01 Plus 支持页可证明小轮约 5g/大轮约 10g，但当前 portion 页链接的是只写约 10g 的另一 PDF；资产因 citation mismatch 为 HOLD，break-in 页也只作场景。审计卡在 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`，不得发送。
+- Week 13 Wednesday Closure：portion 页两处 WOPET citation 已换为已验证的 F01 Plus 官方支持页，`modifiedDate=2026-08-05`；完整 verify、Vercel READY 与生产 HTML 通过，旧 PDF 已从目标页消失。审计资产升级为 Approved for matched future use，但不构成自动发送许可。sitter/failover 只读审计为主指南 PASS、旧 `traveling-with-pets-smart-tech` FAIL / queued；Week 13 唯一一页额度已用完。
 
 三、日期闸门
 
 - 8/3：✅ 已完成。GSC 28 天 0/44/37.8；Page Indexing 28/23 且图表只到 7/24；Feeder priority 为 break-in 5 > jamming 2，portion 无可见行。PHP 最新仍为我方 7/28 跟进，Round 4 最新仍为我方 7/21 两封、0/2 replies；0 改页、0 发信、0 索引动作，不得重复执行。
 - 8/4：✅ 已完成。保留“先校准再判断”候选角度，但 portion 页因 WOPET 来源错配未通过 pitch-readiness；break-in 页不作证据页。0 页面、0 新 URL、0 邮件、0 索引动作，不得重复执行。
-- 8/5：优先把 portion 页 WOPET citation 换成已验证的 F01 Plus 官方支持页并做 build/生产验收；之后只读审计 sitter/failover。全日最多改 1 个现有页，不得因第二个缺口再改第二页。
+- 8/5：✅ 已完成。Portion 页两处 WOPET citation、页面日期、完整 verify 与生产验收通过；资产解除 HOLD。sitter/failover 只读审计确认主指南 PASS、旧旅行页 FAIL / queued；全日只改 1 个现有页，0 新 URL、0 邮件、0 索引动作，不得重复执行。
 - 8/6：只读复核 9 个索引样本中的 pending URL、报告更新时间和验证状态；不重复已入队请求或整桶 Validate Fix。
 - 8/7：形成 Snapshot 12：GSC 完整周、GA4 source→landing→engagement→events、Pinterest；Semrush 可用才刷新。不得提前做 8/9 月度裁决。
 - 8/8：建立 Month 2 四项成功条件证据矩阵，准备 Month 3 选项；不重复 8/1 GEO 或改站点。
@@ -111,7 +112,7 @@ C:\Users\Administrator\smartpetguide
 |------|------|------|
 | 8/3 | ✅ GSC 28 天/索引更新时间 + 外联只读核对已完成 | 已同步 progress、task plan、findings、metrics、Round 3/4 与活跃入口；不得重复 |
 | 8/4 | ✅ Feeder 可链接资产/pitch-readiness 已完成 | 已同步 HOLD 审计卡、progress、task plan、findings 与活跃入口；0 页面/邮件/索引动作，不得重复 |
-| 8/5 | portion 来源最小修复 + sitter/failover 只读审计 | portion 源码/日期、progress、task plan、findings、审计卡；只允许 1 个页面改动 |
+| 8/5 | ✅ portion 来源最小修复 + sitter/failover 只读审计已完成 | 已同步 portion 源码/日期、progress、task plan、findings、审计卡与活跃入口；只改 1 个页面，不得重复 |
 | 8/6 | pending URL/验证状态 | `progress.md`、`task_plan.md`；新索引快照才更新 metrics |
 | 8/7 | Snapshot 12 + 唯一实验归因链 | metrics、progress、task plan、weekly report |
 | 8/8 | Month 2 证据矩阵 | progress、task plan；不提前改战略书 |

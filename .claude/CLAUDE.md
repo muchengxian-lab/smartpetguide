@@ -20,7 +20,7 @@ Claude Code 在执行任何相关工作前必须先读：
 7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
 8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
-当前顺序：Week 13 周二已完成。Feeder pitch-readiness 审计保留“先校准再判断”的候选角度；WOPET 官方 F01 Plus 支持页可证明小轮约 5g/大轮约 10g，但 portion 页当前链接的是只写约 10g 的另一 PDF，因此资产为 HOLD；break-in 页也只作场景。审计卡为 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`，不得发送。8/5 优先用唯一一页额度更换 citation 并验收；随后 sitter/failover 只读审计，不能再改第二页。新 URL 0，不重复 GEO/Inspection，不发信；`EXP-44C79107` 仍是唯一 Active、Review 8/9。
+当前顺序：Week 13 周三已完成。Portion 页两处 WOPET citation 已换成可证明小轮约 5g / 大轮约 10g 的 F01 Plus 官方支持页，页面日期、完整 verify、Vercel READY 与生产 HTML 均通过；审计卡已升级为 Approved for matched future use，但没有自动发送许可。sitter/failover 只读审计确认主旅行指南 PASS，旧 `traveling-with-pets-smart-tech` FAIL / queued；Week 13 的唯一一页额度已用完，不得继续改第二页。下一项只做 8/6 pending URL 与验证状态只读复核。新 URL 0，不重复 GEO/Inspection，不发信；`EXP-44C79107` 仍是唯一 Active、Review 8/9。
 
 禁止自动发邮件、提交外部表单、联系品牌、伪造联系人/流量/销售数据，禁止把付费合作写成编辑推荐排名。
 

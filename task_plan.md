@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-08-04 周二 Week 13 | Feeder pitch-readiness 审计完成：保留“先校准再判断”候选角度；WOPET 官方支持页可证明 5g/10g 轮组说法，但 `feeder-portion-size-guide` 当前链接的另一份 PDF 只写约 10g，资产因 citation mismatch 为 HOLD；break-in 页也不作证据页 | 今天 0 页面、0 新 URL、0 邮件、0 索引动作 | 8/5 优先更正 portion 页来源链接并验收；随后 sitter/failover 只读审计、不得再改第二页**
+**最后更新：2026-08-05 周三 Week 13 | `feeder-portion-size-guide` 两处 WOPET citation 已换为可证明小轮约 5g / 大轮约 10g 的 F01 Plus 官方支持页，完整 verify、Vercel READY 与生产 HTML 均通过，审计资产从 HOLD 升级为 Approved for matched future use；今天仅改 1 个现有页、0 新 URL、0 邮件、0 索引动作 | sitter/failover 只读审计确认主旅行指南 PASS、旧 `traveling-with-pets-smart-tech` FAIL / queued，今天未改第二页 | 下一项为 8/6 pending URL 与验证状态只读复核**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 13 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一内容验证集群仍为 **Feeder Reliability**；Pretty Happy Pets 只作为既有编辑权威关系维护，不构成第二个内容集群。
 
@@ -164,7 +164,7 @@
 |:--:|------|------|------|------|
 | 周一 | 8/3 | ✅ 冻结 GSC 28 天：7/5-8/1 为 0 clicks / 44 impressions / position 37.8；Page Indexing 仍 28/23 且图表只到 7/24；Feeder priority 为 break-in 5 > jamming 2，portion 无可见页面行 | ✅ PHP 最新仍是我方 7/28 跟进；Round 4 两线程最新仍是我方 7/21 pitch，0/2 replies | ✅ 不改页、不发信、不请求索引；新 28 天基线与 Snapshot 11 的完整 7 天窗口分层记录 |
 | 周二 | 8/4 | ✅ 已完成 Feeder Reliability pitch-readiness 审计；保留“Before Calling Your Cat Food-Obsessed, Calibrate the Feeder”候选；正确 WOPET 官方支持页已找到，但当前页面链接了只写约 10g 的另一 PDF，因此资产 HOLD；break-in 页不作证据页 | ✅ 没有新的已验证 inbound 证据；沿用 8/3 最新邮件状态等待，不发信，Round 4 剩余三封继续 Hold | ✅ 产出 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`；0 页面、0 新 URL、0 外部动作；明确 1 个 citation 待修阻断 |
-| 周三 | 8/5 | 优先把 portion 页 WOPET 来源换成已验证的 F01 Plus 官方支持页并完成生产验收；随后只读审计 Week 12 sitter/failover 跨页候选 | 不发新 pitch；只有页面与来源一致且线上复核通过，审计卡才可从 HOLD 升级 | 全日最多 1 个现有页；若 portion 已修，sitter/failover 即使发现缺口也只排队、不改第二页 |
+| 周三 | 8/5 | ✅ portion 页两处 WOPET 来源已换成已验证的 F01 Plus 官方支持页，`modifiedDate=2026-08-05`；✅ sitter/failover 跨页只读审计完成，主旅行指南 PASS、旧旅行页 FAIL / queued | ✅ 页面与来源一致且生产复核通过，审计卡升级为 Approved for matched future use；未发送新 pitch | ✅ 全日只改 1 个现有页；114 页 build、日期/review schema、Vercel READY、HTTP 200 与线上 HTML 全部通过；旧旅行页未改 |
 | 周四 | 8/6 | 复核 9 个索引样本中唯一 pending 和验证状态；不重复已入队请求 | Round 4 剩余 3 封继续 Hold；只处理真实 inbound | 不以总桶滞后触发批量改页或 Validate Fix |
 | 周五 | 8/7 | 刷新最后一个完整周的 GSC、GA4、Pinterest；Semrush 可用才刷新 | 复核 `EXP-44C79107` 的 source→landing→engagement→events | 形成 Snapshot 12；Direct、Organic、Referral 和商业事件分开报告 |
 | 周六 | 8/8 | 建立 Month 2 证据矩阵：索引/查询、编辑权威、Brand、点击四项逐条判定 | 草拟 Month 3 的 Continue / Adjust / Stop 选项，不提前定案 | 只整理证据，不重复 8/1 GEO 审计，不改站点 |
@@ -172,7 +172,7 @@
 
 **Week 13 硬闸门**
 
-- 新 URL 固定为 0；只有 8/5 的安全/事实一致性审计命中明确缺口时，最多最小修复 1 个现有页。
+- 新 URL 固定为 0；8/5 的唯一一页事实一致性额度已由 portion citation 修复使用，旧旅行页冲突只排队，Week 13 不再新增页面修改。
 - Feeder Reliability 是唯一内容验证集群；PHP/fountain 是编辑关系轨道，不借审稿关系扩成第二个页面集群。
 - `EXP-44C79107` 继续为唯一 Active，Review 8/9；不增加工具、不制造流量、不启动第二实验。
 - PHP 不再主动跟进；Round 4 剩余 3 封、Brand 冷外联、Pinterest 新 Pin 全部 Hold。

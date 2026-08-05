@@ -1,5 +1,13 @@
 # 发现与决策
 
+## 2026-08-05 Portion citation 修复与旅行照护跨页审计
+
+**来源阻断已解除**：`feeder-portion-size-guide` 的 Sources 段与型号表原来都指向只写“一份约 10g”的 WOPET quick-start PDF。两处现已统一改为 WOPET F01 Plus 官方支持页；该页明确区分小轮一份约 5g、大轮一份约 10g，并提醒不同食物会有轻微差异。页面日期只更新这一条 slug；完整 build、日期校验、review schema、Vercel READY 和生产 HTML 均通过，旧 PDF 已从线上目标页消失。因此 8/4 的候选角度可从 HOLD 升级为 **Approved for matched future use**，但这不是自动发送许可，Round 4 剩余三封继续 Hold。
+
+**旅行照护审计**：`pet-travel-monitoring-guide` 继续 PASS / no change needed：它把设备限定为监控与备援，明确预先安排人类照护、钥匙、兽医联系人和故障后的即时上门。旧 `traveling-with-pets-smart-tech` 则 FAIL / queued：其中“猫离开 1–2 晚不一定需要 sitter”及 FAQ 的“48 小时只靠 feeder/fountain/camera”与主指南、RSPCA“不得在无人负责照护时独留宠物”及 Cats Protection“可靠 sitter 至少每天到访两次”不一致。8/5 的一页额度已用于 portion 修复，因此今天只登记该冲突，不改第二页；它是下一次获准的单页事实/安全修复候选。
+
+**执行边界**：今天 1 个现有页修改、0 新 URL、0 邮件、0 索引请求。`weekly-report.md`、周指标日志与 Month 2 战略书均 N/A：没有新数据快照、周复盘或月度触发条件变化。
+
 ## 2026-08-04 Feeder Reliability pitch-readiness 审计
 
 **选择的候选角度**：保留“Before Calling Your Cat Food-Obsessed, Calibrate the Feeder: Why One ‘Portion’ Is Not a Standard Measure”。候选落链为现有 `/guides/feeder-portion-size-guide/`：页面提供 10 次出粮称重法、具体型号资料、AAHA 营养边界和显示整数份量偏差的浏览器计算器。完整审计卡见 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`。

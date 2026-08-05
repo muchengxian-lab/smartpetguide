@@ -4867,3 +4867,24 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] `pet-travel-monitoring-guide`：PASS / no change needed；当前文案与 RSPCA、Cats Protection 的人类照护、紧急联系人和定期到访边界一致。
 - [x] `traveling-with-pets-smart-tech`：FAIL / queued；旧“1–2 晚不一定需要 sitter”和“48 小时只靠 feeder/fountain/camera”口径与权威来源及主指南冲突。今天因一页硬闸门不改，列为下一次获准的单页事实/安全修复候选。
 - [x] 今日未修改第二页、未创建新 URL、未执行邮件或索引动作。
+
+### 首次提交与部署等待
+
+- [x] 页面修复、日期与阶段进度以 `61aa341 fix: correct feeder portion source citation` 提交并推送至 `origin/master`。
+- [x] 首次 `vercel inspect ... --wait` 同样被工具侧 1 秒超时提前终止（exit 124），未形成部署状态结论；已停止短超时启动方式，改用命令自身的 3 分钟等待上限。
+- [x] 正常时限下第一次 `vercel inspect smartpetguide.net --format=json --wait --timeout 3m` 以 exit 0 返回，但输出仅到 `Fetching deployment`、未给出可核验 JSON/READY 字段；不把该次空状态输出写成部署已验证，继续用普通 inspect 与生产 HTML 双重确认。
+
+### 生产验收与状态升级
+
+- [x] 普通 `vercel inspect smartpetguide.net --wait --timeout 3m` 确认生产部署 `dpl_47xm7xT4ZicGvRi8mEC7F8EnGZoD` 为 Ready，创建时间 2026-08-05 19:10:07 +08，域名别名包含 `smartpetguide.net` 与 `www.smartpetguide.net`。
+- [x] 生产 `/guides/feeder-portion-size-guide/` HTTP 200；正确 WOPET URL 2 处、正确标签 2 处、`2026-08-05` 可见、旧 PDF 不存在、calculator 存在。8/4 审计卡的 citation blocker 已解除。
+- [x] 审计卡状态升级为 `Approved asset angle — citation corrected and production-verified`；这只批准资产可用于未来匹配机会，不自动授权发送，Round 4 剩余三封继续 Hold。
+
+### 文件同步矩阵
+
+- [x] 页面事实变化 → `src/pages/guides/[slug].astro`、`src/data/content-dates.json`、审计卡、`findings.md`、`progress.md`、`task_plan.md` 与根/项目 Claude 活跃入口、Week 13 模板。
+- [x] `weekly-report.md` / 周指标日志 N/A：今天没有新的 GSC、GA4、Pinterest 或 Semrush 快照，也不是周复盘日。
+- [x] Month 2 战略书 N/A：北极星、资源比例、停止事项与 8/9 最终裁决条件均未变化；今天是既定事实一致性修复。
+- [x] Round 3/4 外联文件 N/A：没有新邮件、回复、接受、发布或落链；审计资产批准不改变发送状态。
+- [x] `docs/claude-execution-guardrails.md` N/A：执行规则未变化，只推进日级状态；活跃入口已更新，避免下一会话重复 8/5。
+- [x] Repo Search feedback 已回传 `partial`（run `d17188a0-571e-4231-bcb4-053d08dd6eb7`）：推荐入口命中动态 guide 与 task plan，但漏掉 `content-dates.json` 和本次审计卡；已按协议记录 used/missing files。
