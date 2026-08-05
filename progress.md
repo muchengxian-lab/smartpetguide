@@ -4822,3 +4822,48 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] Repo Search feedback 已回传 `partial`（run `1da81948-6d00-4736-ac3b-6611c3852dbd`）：推荐入口命中 guide/method/task plan，但漏掉统计页、Week 9 来源账本和 Round 4 文件。
 - [x] 提交前验证：`git diff --check` 通过；变更范围仅为 6 个活跃/记录文档与 1 个新审计卡，未命中 `src/`、`public/`、构建或部署配置。Git commit/push 与远端 0/0 由收工命令和 Git 历史留证，不在完成前预写哈希。
 - [x] 首次 `git diff --cached --check` 检出新审计卡日期/状态行的 Markdown 双空格换行（trailing whitespace）；已改为空行分段并重新暂存，不沿用失败结果。
+## 会话：2026-08-05 周三 — Portion citation 修复与 sitter/failover 只读审计
+
+### 开工与硬边界
+
+- [x] 系统日期确认 2026-08-05（周三，Asia/Shanghai）；开工 `HEAD=cbe9d2a`，`origin/master...HEAD=0/0`，工作区 clean。
+- [x] 今日顺序：先把 `feeder-portion-size-guide` 的 WOPET citation 换成 8/4 已验证的 F01 Plus 官方支持页并完成源码、构建、推送、生产验收；随后只读审计 sitter/failover 跨页候选。
+- [x] 页面配额：全日最多修改 1 个现有页，固定为 portion 页；即使 sitter/failover 再发现缺口，也只能记录和排队，不改第二页。
+- [x] 外部边界：0 新 URL、0 邮件、0 索引请求；不解除 pitch HOLD，直到正确来源已在生产页可见且全链路验证通过。
+
+### 恢复与仓库路由
+
+- [x] `session-catchup.py` 无输出，未发现上一会话遗留未同步上下文；8/4 审计卡、`task_plan.md` 与 `findings.md` 对 8/5 的优先级一致。
+- [x] Repo Search doctor 通过；ask run `d17188a0-571e-4231-bcb4-053d08dd6eb7` 推荐动态 guide、layout、method、FAQ 等入口。它命中 portion 所在文件，但没有直接定位 sitter/failover 两条 slug 与 `content-dates.json`，后续以推荐文件为起点并用精确 `rg` 补齐。
+
+### 精确定位
+
+- [x] Portion 页共有 2 个可见 WOPET citation 指向旧 PDF：`Sources and Safety Notes` 与三型号表；FAQ 只有受正确官方支持页支撑的 5g/10g 文本，不需要改写。
+- [x] 最小页面补丁固定为：把上述 2 个 href 换成 `https://test.wopet.com/support-center/user-guide-of-wopet-pioneer-automatic-pet-feeder/`，链接标签改为可辨认的 `WOPET F01 Plus support guide`；不动计算器、FAQ、PETLIBRO/PETKIT 内容。
+- [x] Sitter/failover 初扫发现旧 `traveling-with-pets-smart-tech` 仍写“猫离开 1–2 晚不一定需要 sitter”，与 7/30 主旅行指南“技术不能替代预先安排的人类照护”边界冲突；今天只读完成后记录，不改第二页。
+
+### 修改前审计结论
+
+- [x] `pet-travel-monitoring-guide` 的现行安全边界通过：明确技术只是监控/备援，不能替代预先安排的人类照护；包含离线、断电、卡粮、钥匙、兽医联系人和即时上门路径。
+- [x] `traveling-with-pets-smart-tech` 的旧表述不通过：除“1–2 晚不一定需要 sitter”外，FAQ 还把 48 小时 feeder/fountain/camera 组合写成可接受方案，只要求邻居待命；该页进入下一次允许的单页修复队列，今天不改。
+- [x] `content-dates.json` 中 portion 页原 `modifiedDate=2026-07-20`；本次仅在实际修改该页后更新为 `2026-08-05`，不批量刷新其他页面日期。
+
+### 页面最小修复
+
+- [x] Portion 页两处 WOPET 引用均已改为经核对的 F01 Plus 官方支持页，链接标签统一为 `WOPET F01 Plus support guide`。
+- [x] Portion 页 `modifiedDate` 已更新为 `2026-08-05`；计算器、FAQ、PETLIBRO/PETKIT 示例和其他页面均未改动。
+
+### 验证过程记录
+
+- [x] 首次 `npm.cmd run verify` 被工具侧 1 秒超时提前终止（exit 124），没有形成可采信的构建结论；已明确归类为执行参数错误，并以正常时限完整重跑。
+- [x] 2026-08-05 复读 RSPCA 官方页面：离开宠物时必须安排负责照护的人，并留下明确照护说明、兽医与紧急联系人；该证据支持主旅行指南，反证旧页的设备替代照护表述。
+- [x] 正常时限下 `npm.cmd run verify` 完整通过：Astro 构建 114 pages；日期校验为 100 content pages / 61 conservative modified dates / 113 sitemap URLs（100 with lastmod）；review schema 26/26 通过。
+- [x] 首次并行 `rg` 定向验证中，“旧 PDF 不存在”按预期返回 exit 1，但工具包装器因此把整批标成失败并吞掉另一条输出；未把该批结果采信为内容失败，改用单次布尔断言逐项输出。
+- [x] Cats Protection 官方页面复核：建议在猫留在家中时安排可靠 sitter 至少每天到访两次，并留下紧急联系人、兽医、食物/药物和照护说明；主旅行指南继续 PASS，旧页冲突继续 FAIL / queued。
+- [x] 本地生成页定向断言通过：正确 WOPET URL 2 处、正确链接标签 2 处、`2026-08-05` 可见、旧 PDF 与旧标签均不存在、portion calculator 仍存在。
+
+### Sitter/failover 只读审计结论
+
+- [x] `pet-travel-monitoring-guide`：PASS / no change needed；当前文案与 RSPCA、Cats Protection 的人类照护、紧急联系人和定期到访边界一致。
+- [x] `traveling-with-pets-smart-tech`：FAIL / queued；旧“1–2 晚不一定需要 sitter”和“48 小时只靠 feeder/fountain/camera”口径与权威来源及主指南冲突。今天因一页硬闸门不改，列为下一次获准的单页事实/安全修复候选。
+- [x] 今日未修改第二页、未创建新 URL、未执行邮件或索引动作。
