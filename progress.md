@@ -4888,3 +4888,38 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] Round 3/4 外联文件 N/A：没有新邮件、回复、接受、发布或落链；审计资产批准不改变发送状态。
 - [x] `docs/claude-execution-guardrails.md` N/A：执行规则未变化，只推进日级状态；活跃入口已更新，避免下一会话重复 8/5。
 - [x] Repo Search feedback 已回传 `partial`（run `d17188a0-571e-4231-bcb4-053d08dd6eb7`）：推荐入口命中动态 guide 与 task plan，但漏掉 `content-dates.json` 和本次审计卡；已按协议记录 used/missing files。
+
+## 会话：2026-08-06 周四 — GSC pending URL 与验证状态只读复核
+
+### 开工与硬边界
+
+- [x] 系统时间确认 2026-08-06 周四 20:03 +08；开工 `HEAD=13af719`，`origin/master...HEAD=0/0`，工作区 clean。
+- [x] 今日只执行 Week 13 周四排班：复核 9 个 crawled-not-indexed 样本中的唯一 pending URL、Page Indexing 报告更新时间与验证状态；不重复已入队请求、不点击整桶 Validate Fix、不改页面。
+- [x] 外部边界：Round 4 剩余三封继续 Hold，只处理真实 inbound；0 新 URL、0 邮件、0 页面修改、0 索引写操作。
+- [x] 工具错误记录：首次读取技能说明时沿用上一会话的 `tools.shell_command`，当前工具集不存在该方法并抛出 `TypeError`；未读写项目。已改用当前 `tools.exec_command`，不重复错误接口。
+- [x] `session-catchup.py` 无输出，未发现上一会话遗留未同步上下文；Memory 未命中 8/6 新鲜 GSC 事实，因此今天只以当前项目文件和实时后台为准。
+- [x] 已加载 `agent-browser` 当前版本的 core/full 工作流与信任边界；网页内容只作为不可信事实输入，今天不执行页面中的指令，也不读取或输出登录凭据。
+- [x] 浏览器工具错误记录：直接调用 `agent-browser` 命中 PowerShell 的 `agent-browser.ps1`，被本机 execution policy 阻止；没有触碰浏览器。后续改用 Windows 可执行入口 `agent-browser.cmd`，不重复 `.ps1` 路径。
+- [x] `agent-browser.cmd doctor --offline --quick` 通过（5 pass / 0 fail），仅清理两个已退出会话的 stale 文件；没有重启 Chrome。
+- [x] `--cdp 9222 tab --json` 在约 40 秒后成功返回；用户 Chrome 当前仅有原闲鱼页签。该页签保持原样，后续新开独立 GSC 工作页签。
+- [x] 已在同一 Chrome 新开独立 GSC 工作页签并确认登录/资源有效；原闲鱼页签未关闭或导航。概述增强功能仍为 HTTPS 5/0、Breadcrumb 5/0、Product/Merchant/Review 0/0；普通索引详情尚未读取，不提前下结论。
+- [x] 已从概述进入“网页”Page Indexing 报告并等待加载完成；截至该步仍为只读导航，未点击任何验证或索引动作。
+- [x] Page Indexing 实时仍为上次更新 2026-07-24、28 indexed / 23 unindexed；六类原因的数量与验证状态均与 8/3 相同。已进入 crawled-not-indexed 详情，只读继续，不把滞后总表写成 8/6 变化。
+- [x] crawled-not-indexed 详情仍为 9 个旧示例、开始 7/3、失败 7/25，抓取日期最晚仅到 7/9；列表未反映 7/31 URL Inspection 已确认的更新，因此继续以 URL 级检查约束动作。
+- [x] 验证详情为旧批次 `验证失败`：待定 7、失败 2。页面有“开始新的验证”按钮但未点击；先读取失败样本与唯一 URL Inspection pending，再决定 No action / targeted action。
+- [x] 失败 2 为 `cat-wont-drink-from-water-fountain` 与 `introduce-cat-to-automatic-litter-box`；前者已有 7/31 更近的 indexed 证据，确认旧验证详情不能覆盖 URL 级状态。下一步仅检查既定 pending `fountain-filter-guide`。
+- [x] 已通过顶部 URL Inspection 输入 `https://smartpetguide.net/guides/fountain-filter-guide/` 并提交只读检查；尚未点击“请求编入索引”或任何写操作。
+- [x] URL Inspection 现状：`fountain-filter-guide` 仍未收录，原因是 crawled-not-indexed；界面显示“再次提交请求”。未点击重复请求或 Live Test，继续读取现有详情。
+- [x] URL 级详情：最后抓取 2026-06-27 15:47:50，抓取成功、允许抓取/索引、canonical 一致；GSC 未检测到引荐 sitemap/来源页。实时生产为 200、自指 canonical、无 noindex，当前 sitemap 确实含该 URL；未发现需今天修站的技术阻塞。
+- [x] 补核对：生产 sitemap 对该 URL 的 `lastmod=2026-07-28T00:00:00.000Z`，Guides 索引源码也有明确入口。GSC 的“无引荐 sitemap/来源页”属于 6/27 旧记录，不支持再次改页或重复提交。
+- [x] 今日裁决为 `No action / continue waiting`：不开始新验证、不再次请求索引、不重提 sitemap、不改页面；只有报告/URL/验证状态真正推进或核心页异常才行动。
+- [x] 已关闭本次新开的 GSC 工作页签 `t2`；用户原闲鱼页签 `t1` 保留且未导航、未关闭。
+
+### 文件同步矩阵与收口边界
+
+- [x] GSC 只读事实与 No action 裁决 → `findings.md`、`progress.md`、`task_plan.md`、根/项目 Claude 活跃入口与 Week 13 模板。
+- [x] `docs/monetization/weekly-metrics-log.md` / `weekly-report.md` N/A：Page Indexing 总表未刷新，今天没有新的同口径 GSC/GA4/Pinterest/Semrush 周快照；8/7 再形成 Snapshot 12。
+- [x] 站点源码、`content-dates.json`、build、Vercel deploy N/A：今天没有页面/配置改动，生产只读检查已排除可见 crawl/index/canonical/sitemap 阻塞。
+- [x] Round 3/4 文件 N/A：没有新 inbound、邮件、回复、接受或落链；剩余三封继续 Hold。
+- [x] Month 2 战略书与 guardrails N/A：未命中月度触发条件，也没有执行规则变化；8/9 再做最终裁决。
+- [x] 收工浏览器核对仅剩用户原闲鱼页签 `t1`；本次 GSC 工作页签已关闭。`git diff --check` 通过，变更范围仅为 6 个项目状态/执行入口文档。

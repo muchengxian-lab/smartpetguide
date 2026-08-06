@@ -1,5 +1,27 @@
 # 发现与决策
 
+## 2026-08-06 GSC pending URL 与验证状态复核
+
+**浏览器基线**：已通过用户现有 Chrome 的 CDP 9222 新开独立 GSC 页签，登录账号与资源均有效，当前资源为 `sc-domain:smartpetguide.net`；原闲鱼页签未关闭、未导航。概述页当前可见 HTTPS 5/0、Breadcrumb 5/0、Product 0/0、Merchant 0/0、Review 0/0，与 8/3 记录一致；这些增强功能样本不用于推断普通 Page Indexing。
+
+**动作边界执行结果**：全程只读完成 Page Indexing、旧验证详情与唯一 pending URL 检查；没有点击请求索引、Live Test、开始新的验证或 Validate Fix。
+
+**Page Indexing 总表仍滞后**：2026-08-06 实时打开后仍显示上次更新 2026-07-24、28 indexed / 23 unindexed。未索引明细仍是自动重定向 8（失败）、crawled-not-indexed 9（失败）、重定向错误 4（已开始）、备用网页 1（已开始）、Google 选择不同 canonical 1（已开始）、discovered-not-indexed 0（已通过）。该总表与 8/3 完全一致，不能当作 8/6 新鲜净变化，也不触发批量页面或验证动作。
+
+**crawled-not-indexed 详情未刷新**：详情页同样停在 2026-07-24，显示开始日期 2026-07-03、失败日期 2026-07-25、受影响 9。九个示例及抓取日期没有推进：`cat-wont-drink` / `introduce-cat-to-automatic-litter-box`（7/9），`for-brands`（7/1），`self-cleaning-litter-box-buying-guide`（6/28），`how-to-clean-cat-water-fountain`、`litter-box-introduction-guide`、`fountain-filter-guide`、`wet-food-automatic-feeder-guide`（6/27），以及无尾斜杠显示的 `automatic-feeder-buying-guide`（6/14）。样本表不能覆盖 7/31 已确认 `cat-wont-drink` 入索引的 URL 级新证据。
+
+**旧验证详情**：crawled-not-indexed 的验证整体为“验证失败”，开始 2026-07-03、失败 2026-07-25；详情分为待定 7、失败 2，并提供“开始新的验证”按钮。该按钮今天明确不点击：这是旧批次结果，且待定表仍包含 `fountain-filter-guide` 等旧抓取日期 URL；必须先读 URL 级较新状态，不能用重新跑整桶验证替代诊断。
+
+**失败 2 的组成**：旧验证失败样本是 `cat-wont-drink-from-water-fountain` 与 `introduce-cat-to-automatic-litter-box`，两者表内抓取日期均为 2026-07-09。至少前者已在 7/31 URL Inspection 被确认入索引，直接证明“失败 2”不是当前 URL 状态清单；今天不重启该旧批次验证。
+
+**唯一既定 pending URL 的实时状态**：2026-08-06 URL Inspection 显示 `https://smartpetguide.net/guides/fountain-filter-guide/` “网址尚未收录到 Google”，原因仍为“已抓取 - 尚未编入索引”。操作区显示“请求编入索引 / 再次提交请求”，说明现有请求已在队列语境中；今天不重复提交，也不运行 Live Test，先读取现有索引详情。
+
+**URL 级诊断**：GSC 记录的最后抓取为 2026-06-27 15:47:50，Googlebot Smartphone 抓取成功，允许抓取、允许索引，用户 canonical 与 Google canonical 都是所检查 URL；但报告未检测到引荐 sitemap 或引荐来源页。实时生产复核为 HTTP 200、自指 canonical、无 noindex，且当前 `sitemap-0.xml` 确实包含该 URL，足以排除可见 robots/noindex/canonical/缺 sitemap 阻塞。
+
+**站点侧反证补全**：生产 sitemap 的该 URL 条目为 `lastmod=2026-07-28T00:00:00.000Z`；源码的 Guides 索引也显式列出并链接 `fountain-filter-guide`。因此 GSC 的“未检测到引荐 sitemap/来源页”是 6/27 旧 URL Inspection 记录，不是当前站点缺 sitemap 或零入口的证据。当前最合适裁决是等待已提交请求被 Google 重新处理，不改页、不重提 sitemap、不再次请求索引。
+
+**8/6 最终裁决：No action / continue waiting。** Page Indexing 总表及旧验证详情均未刷新；唯一 pending URL 仍停在 6/27 抓取，但站点当前 200、可抓取/索引、自指 canonical、存在 Guides 入口并进入带 7/28 lastmod 的 sitemap。没有新技术缺口、核心页掉索引或验证到期证据，因此不点击“开始新的验证”、不再次请求索引、不重提 sitemap、不改页面。下一次仅在报告更新时间推进、该 URL 重抓/入索引、验证状态变化或核心页异常时行动。
+
 ## 2026-08-05 Portion citation 修复与旅行照护跨页审计
 
 **来源阻断已解除**：`feeder-portion-size-guide` 的 Sources 段与型号表原来都指向只写“一份约 10g”的 WOPET quick-start PDF。两处现已统一改为 WOPET F01 Plus 官方支持页；该页明确区分小轮一份约 5g、大轮一份约 10g，并提醒不同食物会有轻微差异。页面日期只更新这一条 slug；完整 build、日期校验、review schema、Vercel READY 和生产 HTML 均通过，旧 PDF 已从线上目标页消失。因此 8/4 的候选角度可从 HOLD 升级为 **Approved for matched future use**，但这不是自动发送许可，Round 4 剩余三封继续 Hold。
