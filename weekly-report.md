@@ -237,6 +237,24 @@ Week 12 的执行完成度为 **Green**：7/7 日级排班均已执行，0 个�
 - Pinterest 30 天 11,617 / 65 / 57 / 6 / 4 与早期 UI 快照采集路径不同；只作背景，不用来证明增长或真实站点会话。
 - Semrush 仍沿用用户 7/17 确认的 12 RD / 28 backlinks / 20 keywords / AS 2，不能写成 8/2 新快照。
 
+## Week 13 周五快照（2026-08-07，周日复盘前）
+
+| 维度 | Snapshot 12 | 判断 |
+|------|------|------|
+| GSC 完整周 | **0 clicks / 5 impressions / position 64.0**；前周 0 / 9 / 22.6 | 曝光 -44.4%，排名恶化 41.4 位；极小样本，不改页 |
+| Page Indexing | **28 indexed / 23 unindexed**，仍最后更新 7/24 | 滞后总表；继续 No action |
+| GA4 7 天 | **36 sessions / 14 engaged / 38.89% / 8 秒 / 150 events / key 0** | sessions 略升但互动质量下降 |
+| 归因 / 转化 | Direct 36、Unassigned 7；Organic/Referral 无可见行；affiliate/outbound 0 | 没有获客或商业结果证据 |
+| feeder portion | **0 sessions / 0 key event** | 上周 1 Direct session 未延续 |
+| Pinterest | 可审计自然/自有 Pin 路径：7 天 **2 impressions / outbound 0**；30 天 136 / 0 | 与 Hub 9,375 / 57 / 5 属不同口径，不机械同比 |
+| Semrush | **N/A** | 未登录且结果串域；7/17 历史值不冒充新快照 |
+
+### 周五判断
+
+- `EXP-44C79107` 继续 Active / collect 到 8/9：总 sessions 与 events 小幅增加，但参与质量、portion 使用和商业事件均未改善，不能宣称 uplift。
+- 搜索与分发的共同瓶颈仍是有效发现和点击，不是站点技术故障；今天没有页面、索引、邮件或 Pin 动作。
+- 8/8 只建立 Month 2 四项证据矩阵；8/9 才结合 W32 Radar/VOC 做正式月度裁决和 Week 14 排期。
+
 ## Week 8（6/30-7/3）收盘
 
 | 指标 | 数值 | vs 上次记录 |

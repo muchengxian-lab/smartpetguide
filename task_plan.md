@@ -1,6 +1,6 @@
 ﻿# SmartPetGuide 任务计划
 
-**最后更新：2026-08-06 周四 Week 13 | GSC Page Indexing 总表与 crawled-not-indexed 详情仍停在 2026-07-24：28 indexed / 23 unindexed，旧验证为待定 7 / 失败 2；唯一既定 pending `fountain-filter-guide` 实时仍未收录、最后抓取 6/27，但生产 200、允许抓取/索引、canonical 一致、Guides 有入口且 sitemap lastmod 为 7/28，未发现新技术阻塞 | 今日裁决 No action：0 页面、0 新 URL、0 邮件、0 索引/验证写操作 | 下一项为 8/7 Snapshot 12：GSC/GA4/Pinterest 与唯一归因实验链**
+**最后更新：2026-08-07 周五 Week 13 | Snapshot 12 完成：GSC 完整周 0 clicks / 5 impressions / position 64.0（前周 0 / 9 / 22.6）；Page Indexing 仍是 7/24 的 28/23 滞后总表；GA4 7/31-8/6 为 36 sessions / 14 engaged / 150 events / key 0，Organic/Referral 与商业事件均无可见结果；feeder portion landing 为 0；Pinterest 可审计自然/自有 Pin 路径 7 天 2 impressions / outbound 0，Semrush 因未登录且结果串域 N/A | `EXP-44C79107` 继续 Active / collect，8/9 正式 Review | 下一项为 8/8 Month 2 四项证据矩阵，不改站点、不提前定案**
 
 > 核心策略：从“完成更多页面”切换到“让现有页面获得索引、引用与分发”。Week 13 继续不扩页；保持 35-40% 外链/编辑型分发、25-30% GSC/SEO、20-25% GEO/VOC、10-15% 维护。唯一内容验证集群仍为 **Feeder Reliability**；Pretty Happy Pets 只作为既有编辑权威关系维护，不构成第二个内容集群。
 
@@ -166,7 +166,7 @@
 | 周二 | 8/4 | ✅ 已完成 Feeder Reliability pitch-readiness 审计；保留“Before Calling Your Cat Food-Obsessed, Calibrate the Feeder”候选；正确 WOPET 官方支持页已找到，但当前页面链接了只写约 10g 的另一 PDF，因此资产 HOLD；break-in 页不作证据页 | ✅ 没有新的已验证 inbound 证据；沿用 8/3 最新邮件状态等待，不发信，Round 4 剩余三封继续 Hold | ✅ 产出 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`；0 页面、0 新 URL、0 外部动作；明确 1 个 citation 待修阻断 |
 | 周三 | 8/5 | ✅ portion 页两处 WOPET 来源已换成已验证的 F01 Plus 官方支持页，`modifiedDate=2026-08-05`；✅ sitter/failover 跨页只读审计完成，主旅行指南 PASS、旧旅行页 FAIL / queued | ✅ 页面与来源一致且生产复核通过，审计卡升级为 Approved for matched future use；未发送新 pitch | ✅ 全日只改 1 个现有页；114 页 build、日期/review schema、Vercel READY、HTTP 200 与线上 HTML 全部通过；旧旅行页未改 |
 | 周四 | 8/6 | ✅ Page Indexing 总表/9 个旧样本/验证详情与唯一 pending `fountain-filter-guide` 已只读复核；总表仍停 7/24，URL 最后抓取仍为 6/27 | ✅ Round 4 剩余 3 封继续 Hold；没有新 inbound、邮件或外部动作 | ✅ No action：生产 200、可抓取/索引、canonical/内链/sitemap 均通过；未重启整桶验证、未重复请求索引、未改页 |
-| 周五 | 8/7 | 刷新最后一个完整周的 GSC、GA4、Pinterest；Semrush 可用才刷新 | 复核 `EXP-44C79107` 的 source→landing→engagement→events | 形成 Snapshot 12；Direct、Organic、Referral 和商业事件分开报告 |
+| 周五 | 8/7 | ✅ GSC 完整周与 Page Indexing 新鲜度、GA4 固定归因链、Pinterest 两条后台路径已复核；Semrush 登录不可用且串域结果已拒绝采信 | ✅ `EXP-44C79107` 中期复核：Direct 与 Unassigned 分开，Organic/Referral/商业事件均无可见结果；portion landing 0 | ✅ Snapshot 12 形成；0 页面、0 新 URL、0 外部动作，不提前做 8/9 月度裁决 |
 | 周六 | 8/8 | 建立 Month 2 证据矩阵：索引/查询、编辑权威、Brand、点击四项逐条判定 | 草拟 Month 3 的 Continue / Adjust / Stop 选项，不提前定案 | 只整理证据，不重复 8/1 GEO 审计，不改站点 |
 | 周日 | 8/9 | 消费 W32 AI Radar/VOC，完成 Month 2 最终复盘与 `EXP-44C79107` Review | 对 PHP、Round 4、Pinterest、Brand 分轨裁决 | 输出 Month 3 战略、Week 14 排期；每项结果注明新鲜度与证据边界 |
 

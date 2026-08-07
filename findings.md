@@ -1,5 +1,23 @@
 # 发现与决策
 
+## 2026-08-07 Snapshot 12 — 周五数据刷新
+
+**GSC 最新完整 7 天**：已登录 `sc-domain:smartpetguide.net` 的 Performance 报告，界面显示“上次更新日期：5 小时前”；图表可访问性文本明确窗口为 **2026-07-30—2026-08-05**。该窗口为 0 clicks / 5 impressions / CTR 0% / average position 64.0；上一同口径完整周 2026-07-23—2026-07-29 为 0 / 9 / 0% / 22.6。结论是曝光继续处于极低样本并从 9 降到 5，平均排名恶化 41.4 位；这不是点击下降（两周都为 0），也不足以归因到某次页面改动。当前仅有两个可见查询各 1 impression，均为 Litter-Robot 5 排空意图。
+
+**采集边界**：默认 3 个月视图的 4 clicks / 316 impressions / 1.3% CTR / 34.7 position 不计入 Snapshot 12；只有切到 `num_of_days=7` 且确认准确日期后的 7 天值才采用。GSC 只读操作未请求索引、未启动或重启验证、未改过滤器以外的外部状态。
+
+**Page Indexing 新鲜度**：8/7 实时复核仍显示上次更新 **2026-07-24**、28 indexed / 23 unindexed；原因与状态继续为自动重定向 8（失败）、crawled-not-indexed 9（失败）、重定向错误 4（已开始）、备用网页 1（已开始）、Google 选择不同 canonical 1（已开始）、discovered-not-indexed 0（已通过）。这不是 8/7 的新鲜索引净变化，昨天对唯一 pending URL 的 URL 级检查仍优先于该滞后总表；今天继续 No action，不启动整桶验证、不重复请求索引。
+
+**GA4 固定窗口与渠道**：Traffic acquisition 已明确切到 **2026-07-31—2026-08-06**，为 36 sessions / 14 engaged sessions / 38.89% engagement rate / 8 秒平均每次会话互动 / 150 events / 0 key events。渠道明细为 Direct → `(direct)/(none)` 36 sessions、14 engaged、139 events；Unassigned → `(not set)` 7 sessions、0 engaged、11 events；Organic Search 与 Referral 没有可见行。报告总 sessions=36，而可见渠道行 36+7=43，继续保留 GA4 UI 原始差异，不人为调平；Direct 只代表缺少可见来源，不能写成自然搜索或引荐增长。
+
+**Landing 与 feeder portion**：同一窗口 Landing page 报告总计 36 sessions / 36 active / 36 new / 8 秒 / key 0，共 22 个可见 landing；首页为 15 Direct sessions，另有 7 sessions 落在无 landing 名的 `(not set)`。精确检索 `/guides/feeder-portion-size-guide` 返回 **0 sessions / 0 active / 0 new / 0 秒 / key 0**；上周的 1 Direct session / 2 秒没有延续。因此 `EXP-44C79107` 当前没有 feeder portion 使用或转化 uplift 证据，且仍没有可见 Organic/Referral 获客。
+
+**Events 与实验观察**：同一窗口 Events 报告使用 100% 可用数据且仅有 5 行：`page_view 40`、`first_visit 36`、`session_start 36`、`user_engagement 36`、`scroll 2`，合计正好 150；`affiliate_click=0`、`outbound_click=0`、key events 0、收入 $0。相较上周，sessions 33→36、events 143→150，但 engaged sessions 20→14、engagement rate 60.61%→38.89%、平均互动 10s→8s；这不是增长或转化证据。`EXP-44C79107` 保持 Active / collect，正式 Review Date 仍为 8/9。
+
+**Pinterest 可比路径**：完整 Analytics 明确使用 `content_type=organic`、`include_curated=created`（自然 / 自有 Pin），指标更新于 2 天前且实时数据不可用。显示窗口 2026-07-31—08-07 为 2 impressions / 0 engagements / 0 Pin clicks / 0 outbound / 0 saves；2026-07-08—08-07 为 136 / 0 / 0 / 0 / 0。Business Hub 同时显示近 30 天 9,375 impressions / 57 engagements / 5 saves，证明两个界面存在不同聚合/归属口径；本快照采用日期与过滤器可审计的 Analytics 值，Hub 只作旁证，不与 Snapshot 11 的服务端路径机械同比。Pinterest 继续 10 分钟维护模式，本周不发新 Pin。
+
+**Semrush**：当前浏览器未登录，页面弹出注册限制；更关键的是输入框虽为 `smartpetguide.net`，结果主体却显示 `ebay.com` 和占位式关键词，因此本次读数不可采信。Snapshot 12 标记 N/A；7/17 用户确认的 AS 2 / 12 referring domains / 28 backlinks / 20 organic keywords 只保留为历史背景，不冒充 8/7 新鲜值。
+
 ## 2026-08-06 GSC pending URL 与验证状态复核
 
 **浏览器基线**：已通过用户现有 Chrome 的 CDP 9222 新开独立 GSC 页签，登录账号与资源均有效，当前资源为 `sc-domain:smartpetguide.net`；原闲鱼页签未关闭、未导航。概述页当前可见 HTTPS 5/0、Breadcrumb 5/0、Product 0/0、Merchant 0/0、Review 0/0，与 8/3 记录一致；这些增强功能样本不用于推断普通 Page Indexing。

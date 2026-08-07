@@ -42,10 +42,10 @@ C:\Users\Administrator\smartpetguide
 - Page Indexing：最后已读为 28 indexed / 23 unindexed，但报告明确最后更新 7/24；URL Inspection 较新证据为 4 indexed / 1 pending。Week 13 是 25-29 观察档，不得宣称 33→28 是 8/2 实时净下降。
 - 5 个精准 URL 已在 7/28 请求重抓；不得重复或扩大 Inspection。只有报告更新时间推进、URL 级状态变化、验证失败或核心价值页掉索引才行动。
 - Rich Results：7/28 是合规口径断点。Review/Product/AggregateRating/Merchant Offer 撤标不得回滚；Product/Merchant/Review 的下降或归零不能反推普通索引/排名。
-- GA4 7/24-7/30：33 sessions / 20 engaged / 143 events / key 0；Direct 为主，Organic/Referral 没有可见结果。Direct 不等于自然或引荐获取。
+- GA4 Snapshot 12（7/31-8/6）：36 sessions / 14 engaged / 150 events / key 0；Direct 36、Unassigned 7，Organic/Referral 没有可见行，portion landing 与 affiliate/outbound 均为 0。Direct 不等于自然或引荐获取；报告总计与可见渠道行差异原样保留。
 - `EXP-44C79107` 是唯一 Active；W31 Review=`Adjust`、Review Date=8/9。不加 attribution tooling、不制造流量、不启动第二实验。
-- Pinterest 近 7 天：2,003 impressions / 9 engagements / 8 Pin clicks / 1 save / 0 outbound。30 天 11,617 / 65 / 57 / 6 / 4 来自不同采集路径，只作背景，不与旧 UI 机械同比。Week 13 不发新 Pin。
-- Semrush 仍沿用用户 7/17 确认的 12 RD / 28 backlinks / 20 keywords / AS 2；未登录刷新时明确写历史值。
+- Pinterest Snapshot 12 可审计 Analytics 路径（自然 / 自有 Pin）：7 天 2 impressions / 0 engagements / 0 Pin clicks / 0 saves / 0 outbound；30 天 136 / 0 / 0 / 0 / 0。Business Hub 同时显示 9,375 impressions / 57 engagements / 5 saves，属于不同聚合口径，只作旁证，不拼接趋势。Week 13 不发新 Pin。
+- Semrush 8/7 未登录且结果主体串到 `ebay.com` 占位数据，本次 N/A；用户 7/17 确认的 12 RD / 28 backlinks / 20 keywords / AS 2 只能标为历史值。
 - Pretty Happy Pets：Accepted / editorial + veterinary review；稿件已交，7/28 唯一一次跟进已 Sent-confirmed。没有编辑先发具体请求时不得再跟进；Accepted/Review 不等于 Placed/Backlink won。
 - Round 4：GlobalPETS + The Upper Pawside 已 Sent-confirmed，最后已验证 0/2 replies；BarkyTech / Purely Wholesome / PetsAnalysis Hold。只处理真实 inbound，不机械发剩余三封。
 - Brand：Task A Keep — maintenance only；Brand cold outreach Pause；Editorial Continue cautiously。Aorkuler Closed — not now，Homerunpet Closed — no response。
@@ -54,6 +54,7 @@ C:\Users\Administrator\smartpetguide
 - Week 13 Tuesday Audit：保留一个候选角度——先用 10 次出粮称重法校准实际克数，再解释 food-seeking/break-in 行为。WOPET 官方 F01 Plus 支持页可证明小轮约 5g/大轮约 10g，但当前 portion 页链接的是只写约 10g 的另一 PDF；资产因 citation mismatch 为 HOLD，break-in 页也只作场景。审计卡在 `backlinks/feeder-reliability-pitch-readiness-2026-08-04.md`，不得发送。
 - Week 13 Wednesday Closure：portion 页两处 WOPET citation 已换为已验证的 F01 Plus 官方支持页，`modifiedDate=2026-08-05`；完整 verify、Vercel READY 与生产 HTML 通过，旧 PDF 已从目标页消失。审计资产升级为 Approved for matched future use，但不构成自动发送许可。sitter/failover 只读审计为主指南 PASS、旧 `traveling-with-pets-smart-tech` FAIL / queued；Week 13 唯一一页额度已用完。
 - Week 13 Thursday Closure：Page Indexing 总表与 crawled-not-indexed 验证详情仍停在 2026-07-24；唯一既定 pending `fountain-filter-guide` 仍未收录、最后抓取 6/27，但生产 200、可抓取/索引、canonical/Guides 入口/sitemap 均正常。裁决 No action，不重启验证、不重复请求索引、不改页、不重提 sitemap。
+- Week 13 Friday Closure：Snapshot 12 已完成。GSC 7/30-8/5 为 0 clicks / 5 impressions / position 64.0，对照前周 0 / 9 / 22.6；Page Indexing 仍为 7/24 的 28/23 滞后总表。GA4 7/31-8/6 为 36 sessions / 14 engaged / 150 events / key 0，Organic/Referral、affiliate/outbound 与 portion landing 均无可见结果。Pinterest 可审计自然/自有 Pin 路径 7 天 2 impressions / outbound 0，Business Hub 为不同聚合口径；Semrush 未登录且串域，本次 N/A。`EXP-44C79107` 继续 Active / collect，8/9 正式 Review。
 
 三、日期闸门
 
@@ -61,7 +62,7 @@ C:\Users\Administrator\smartpetguide
 - 8/4：✅ 已完成。保留“先校准再判断”候选角度，但 portion 页因 WOPET 来源错配未通过 pitch-readiness；break-in 页不作证据页。0 页面、0 新 URL、0 邮件、0 索引动作，不得重复执行。
 - 8/5：✅ 已完成。Portion 页两处 WOPET citation、页面日期、完整 verify 与生产验收通过；资产解除 HOLD。sitter/failover 只读审计确认主指南 PASS、旧旅行页 FAIL / queued；全日只改 1 个现有页，0 新 URL、0 邮件、0 索引动作，不得重复执行。
 - 8/6：✅ 已完成。Page Indexing 总表仍停 7/24，旧验证待定 7 / 失败 2；`fountain-filter-guide` 仍 crawled-not-indexed，但站点侧无新技术阻塞。No action；0 页面、0 新 URL、0 邮件、0 索引/验证写操作，不得重复执行。
-- 8/7：形成 Snapshot 12：GSC 完整周、GA4 source→landing→engagement→events、Pinterest；Semrush 可用才刷新。不得提前做 8/9 月度裁决。
+- 8/7：✅ 已完成 Snapshot 12。GSC 0/5/64.0 vs 0/9/22.6；Page Indexing 仍停 7/24；GA4 36 sessions / 14 engaged / 150 events / key 0，portion landing 与商业事件为 0；Pinterest 可审计路径 7 天 2 impressions / outbound 0；Semrush N/A。0 页面、0 外部动作，不得重复执行。
 - 8/8：建立 Month 2 四项成功条件证据矩阵，准备 Month 3 选项；不重复 8/1 GEO 或改站点。
 - 8/9：消费 W32 Radar/VOC，Review `EXP-44C79107`，完成 Month 2 Continue/Adjust/Stop、Month 3 战略和 Week 14 排期。
 
@@ -115,6 +116,6 @@ C:\Users\Administrator\smartpetguide
 | 8/4 | ✅ Feeder 可链接资产/pitch-readiness 已完成 | 已同步 HOLD 审计卡、progress、task plan、findings 与活跃入口；0 页面/邮件/索引动作，不得重复 |
 | 8/5 | ✅ portion 来源最小修复 + sitter/failover 只读审计已完成 | 已同步 portion 源码/日期、progress、task plan、findings、审计卡与活跃入口；只改 1 个页面，不得重复 |
 | 8/6 | ✅ pending URL/验证状态只读复核已完成 | 已同步 progress、task plan、findings 与活跃入口；没有新鲜总表快照，metrics N/A |
-| 8/7 | Snapshot 12 + 唯一实验归因链 | metrics、progress、task plan、weekly report |
+| 8/7 | ✅ Snapshot 12 + 唯一实验归因链已完成 | 已同步 metrics、progress、task plan、weekly report、findings 与活跃入口；不得重复 |
 | 8/8 | Month 2 证据矩阵 | progress、task plan；不提前改战略书 |
 | 8/9 | Month 2 最终复盘 + Month 3/Week 14 | weekly report、task plan、findings、progress、战略文件与下一周活跃入口 |

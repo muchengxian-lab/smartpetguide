@@ -20,7 +20,7 @@ Claude Code 在执行任何相关工作前必须先读：
 7. `docs/monetization/task-c-pet-tech-visibility-audit.md` — 原始 Task C（已合并，保留供参考）
 8. `docs/monetization/task-b-brand-partnerships.md` — 原始 Task B（已合并，保留供参考）
 
-当前顺序：Week 13 周四已完成。GSC Page Indexing 总表与旧验证详情仍停在 2026-07-24；唯一既定 pending `fountain-filter-guide` 仍为 crawled-not-indexed、最后抓取 6/27，但生产 200、允许抓取/索引、canonical 正确、Guides 有入口且 sitemap lastmod 为 7/28。裁决为 No action：不重启验证、不重复请求索引、不改页、不重提 sitemap。下一项只做 8/7 Snapshot 12 的 GSC/GA4/Pinterest 与归因链。新 URL 0，不发信；`EXP-44C79107` 仍是唯一 Active、Review 8/9。
+当前顺序：Week 13 周五 Snapshot 12 已完成。GSC 最新完整周为 0 clicks / 5 impressions / position 64.0（前周 0 / 9 / 22.6），Page Indexing 仍是 7/24 的 28/23 滞后总表；GA4 为 36 sessions / 14 engaged / 150 events / key 0，Organic/Referral 与商业事件均无可见结果，portion landing 为 0。Pinterest 可审计自然/自有 Pin 路径近 7 天为 2 impressions / outbound 0；Semrush 未登录且结果串域，本次 N/A。`EXP-44C79107` 继续唯一 Active / collect，8/9 正式 Review。下一项只做 8/8 Month 2 四项证据矩阵；新 URL 0、不改站点、不提前定案。
 
 禁止自动发邮件、提交外部表单、联系品牌、伪造联系人/流量/销售数据，禁止把付费合作写成编辑推荐排名。
 
@@ -42,7 +42,7 @@ Claude Code 在执行任何相关工作前必须先读：
 
 ## 当前阶段
 
-Week 13 为 2026-08-03 周一至 2026-08-09 周日。8/3 冻结基线：GSC 28 天（7/5-8/1）0 clicks / 44 impressions / position 37.8；完整 7 天历史对照仍为 0/9/22.6 vs 0/14/19.0。Page Indexing 总表仍为 28 indexed / 23 unindexed、crawled-not-indexed 9，图表只到 7/24；URL 级证据仍为 4 indexed / 1 pending。Feeder 现有页为 break-in 5 impressions、jamming 2、portion 无可见页面行。GA4 仍沿用 7/24-7/30 的 33 sessions / 20 engaged / 143 events / key 0；Pinterest、Semrush 均未在周一刷新。GEO 79/100 是 readiness，不是增长 uplift。PHP 8/3 实时只读仍以我方 7/28 跟进为最新；Round 4 Batch A 仍 0/2。
+Week 13 为 2026-08-03 周一至 2026-08-09 周日。8/7 Snapshot 12：GSC 完整周 7/30-8/5 为 0 clicks / 5 impressions / position 64.0，对照前周 0 / 9 / 22.6；Page Indexing 总表仍为 28 indexed / 23 unindexed、crawled-not-indexed 9，最后更新 7/24。GA4 7/31-8/6 为 36 sessions / 14 engaged / 150 events / key 0，Direct 36、Unassigned 7，Organic/Referral 无可见行，portion landing 0。Pinterest 可审计自然/自有 Pin 路径 7 天为 2 / 0 / 0 / 0 / 0，30 天为 136 / 0 / 0 / 0 / 0；Business Hub 9,375 / 57 / 5 属不同口径。Semrush 本次 N/A。GEO 79/100 是 readiness，不是增长 uplift；PHP/Round 4 状态未在今天改变。
 90 天目标：150-180 页 / 60-100 索引 / 25-40 引用域名 / GEO Score 85+。
 
 ## 核心策略

@@ -919,3 +919,47 @@
 - Pretty Happy Pets：线程 7 封，最新仍为我方 7/28 跟进；无新回复或评论通知。
 - GlobalPETS / The Upper Pawside：最新仍为我方 7/21 两封 pitch；Batch A 继续 0/2 replies。
 - 本日动作：不发邮件、不请求索引、不改页。GA4 / Pinterest / Semrush 为 N/A，按 8/7 Snapshot 12 排班刷新。
+
+---
+
+## Snapshot 12 — 2026-08-07（Week 13 周五完整复核）
+
+> 数据边界：GSC Performance 使用最新两个完整且等长的 7 天窗口（2026-07-30—08-05 vs 07-23—07-29）；Page Indexing 总表仍最后更新于 7/24。GA4 使用 2026-07-31—08-06。Pinterest 主口径使用完整 Analytics 中可明确日期与过滤器的自然 / 自有 Pin 数据，指标更新于 2 天前且实时数据不可用；Business Hub 作为不同聚合口径旁证。Semrush 当前未登录且返回串域占位结果，本次 N/A。
+
+### GSC Performance：完整 7 天对照
+
+| 指标 | 7/30-8/5 | 7/23-7/29 | 变化 |
+|------|:--:|:--:|:--:|
+| 点击 | **0** | **0** | 持平 |
+| 展示 | **5** | **9** | **-4（-44.4%）** |
+| CTR | **0%** | **0%** | 持平 |
+| 平均排名 | **64.0** | **22.6** | **变差 41.4 位** |
+
+**查询与索引边界：** 本期仅有两个可见查询各 1 impression，都是 Litter-Robot 5 排空意图；可见行只覆盖 2/5 impressions，不用隐私过滤行覆盖属性总计。Page Indexing 仍显示上次更新 2026-07-24、28 indexed / 23 unindexed；自动重定向 8（失败）、crawled-not-indexed 9（失败）、重定向错误 4（已开始）、备用网页 1（已开始）、Google 选择不同 canonical 1（已开始）、discovered-not-indexed 0（已通过）。没有新鲜总桶或技术阻塞，继续 No action，不启动验证、不重复请求索引。
+
+### GA4 固定归因链（7/31-8/6）
+
+| 层级 | 实测结果 |
+|------|------|
+| 总体 | **36 sessions / 14 engaged sessions / 38.89% engagement / 8 秒平均互动 / 150 events / 0 key events** |
+| Channel → source/medium | Direct → `(direct) / (none)`：36 sessions、14 engaged、139 events；Unassigned → `(not set)`：7 sessions、0 engaged、11 events；Organic Search / Referral 没有可见行 |
+| Landing | 首页 15 Direct sessions；`(not set)` 7；共 22 行 |
+| Events | `page_view` 40、`first_visit` 36、`session_start` 36、`user_engagement` 36、`scroll` 2；五行合计 150，因此 `affiliate_click=0`、`outbound_click=0` |
+| Feeder portion | `/guides/feeder-portion-size-guide` 精确过滤：**0 sessions / 0 active / 0 new / 0 秒 / 0 key event** |
+
+**GA4 判断：** 报告总 sessions 为 36，但可见渠道行 Direct 36 + Unassigned 7 合计 43；保留 UI 原始差异。相较 7/24-7/30，sessions 33→36、events 143→150，但 engaged sessions 20→14、engagement rate 60.61%→38.89%、平均互动 10s→8s；Direct 不是 Organic/Referral 证明，当前没有 acquisition、portion uplift 或商业转化证据。
+
+### Pinterest 维护快照
+
+| 可审计 Analytics 路径 | Impressions | Engagements | Pin clicks | Saves | Outbound clicks |
+|------|:--:|:--:|:--:|:--:|:--:|
+| 7/31-8/7 | **2** | **0** | **0** | **0** | **0** |
+| 7/8-8/7 | **136** | **0** | **0** | **0** | **0** |
+
+**Pinterest 口径边界：** 主路径明确为 `content_type=organic`、`include_curated=created`，即自然内容 / 自有 Pin；指标更新于 2 天前，实时数据不可用。Business Hub 同时显示近 30 天 9,375 impressions / 57 engagements / 5 saves，说明两个界面聚合/归属不同；Hub 不提供同一套完整五项和准确日期，因此只作旁证。不得把 Hub、Analytics 或 Snapshot 11 的服务端汇总拼成趋势；继续维护模式，不发新 Pin。
+
+### Semrush 与 Snapshot 12 决策
+
+- Semrush 当前页显示 Log In / Sign Up 与注册限制，输入框虽为 `smartpetguide.net`，主体却串到 `ebay.com` 和占位关键词；本次 N/A。7/17 的 AS 2 / 12 referring domains / 28 backlinks / 20 organic keywords 仅为历史背景。
+- `EXP-44C79107` 保持唯一 Active / collect：流量量级略升但质量下降，portion landing 与商业事件均为 0；正式 Review Date 仍为 8/9。
+- 今日 0 页面、0 新 URL、0 邮件/Pin、0 索引/验证写操作；不提前做 Month 2 最终 Continue / Adjust / Stop。

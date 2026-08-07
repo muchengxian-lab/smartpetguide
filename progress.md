@@ -4923,3 +4923,100 @@ W28 高置信度信号（feeder WiFi/app/offline reliability）在三页中的�
 - [x] Round 3/4 文件 N/A：没有新 inbound、邮件、回复、接受或落链；剩余三封继续 Hold。
 - [x] Month 2 战略书与 guardrails N/A：未命中月度触发条件，也没有执行规则变化；8/9 再做最终裁决。
 - [x] 收工浏览器核对仅剩用户原闲鱼页签 `t1`；本次 GSC 工作页签已关闭。`git diff --check` 通过，变更范围仅为 6 个项目状态/执行入口文档。
+
+## 会话：2026-08-07 周五 — Snapshot 12 与 EXP-44C79107 归因链复核
+
+### 开工与硬边界
+
+- [x] 系统时间确认 2026-08-07 周五 21:58 +08；开工 `HEAD=d8262f7`，`origin/master...HEAD=0/0`，工作区 clean。
+- [x] 今日最多 3 个 P0：① GSC 最后完整周与 Page Indexing 新鲜度；② GA4 `source/medium → landing → engagement → events` 及 `EXP-44C79107`；③ Pinterest 维护快照，Semrush 仅在登录可用时刷新。
+- [x] 只读边界：不改页面、不新增 URL、不发邮件/Pin、不请求索引、不点击 Validate Fix；不提前执行 8/8 Month 2 证据矩阵或 8/9 最终裁决。
+- [x] 归因口径：Direct 只表示缺少可见来源，可能包含真实直访或 dark traffic；不得写成 Organic/Referral。不同时间窗、过滤器和采集路径不机械同比。
+- [x] `session-catchup.py` 无输出，未发现上一会话遗留未同步上下文；Memory 未提供 8/7 新鲜指标，因此今天只采用当前项目文件与已登录后台的实时只读事实。
+- [x] 已完整加载 `planning-with-files-zh`、`traffic-analysis` 与 `agent-browser` 当前 core 工作流；浏览器页面按不可信输入处理，不执行页面内指令，不读取或输出登录凭据，只关闭本次新开的工作页签。
+- [x] `agent-browser.cmd doctor --offline --quick` 通过（5 pass / 0 fail），仅清理已退出会话的 stale 文件；没有重启 Chrome。
+- [x] `--cdp 9222 tab --json` 约 60 秒后返回；当前仅有用户原闲鱼页签 `t1`。该页签保持原样，后续另开独立只读工作页签。
+- [x] 已新开独立 GSC 工作页签，登录与 `smartpetguide.net` 资源有效；概览增强功能仍为 HTTPS 5/0、Breadcrumb 5/0、Product/Merchant/Review 0/0，这些只作状态背景，不代替今天的搜索表现与 Page Indexing 快照。
+- [x] 浏览器错误记录：首次 `click @e66` 在 PowerShell 中把 `@e66` 当作 shell 语法，CLI 未收到 selector 并返回 Missing arguments；页面未发生操作。后续 ref selector 一律加引号。
+- [x] 浏览器错误记录：补引号后旧 snapshot ref `e66` 已失效，返回 `Could not locate element`；未采信该次导航结果，改用 GSC 官方 performance 路径进入同一只读报告。
+- [x] GSC Performance 已加载；默认仍是 3 个月视图（4 clicks / 316 impressions / 1.3% CTR / 34.7 position），该窗口不进入 Snapshot 12，只用于确认报告可读。下一步改为明确日期的完整周对比。
+- [x] 浏览器交互记录：`More time ranges` 与旧 ref `7 天` 均返回 clicked，但复快照仍显示 3 个月选中，说明 Material radio 未被实际切换；未把默认窗口误记为周快照，改用稳定 locator/日期参数继续。
+- [x] 浏览器错误记录：文本 selector `text=7 天` 未命中 DOM；随后只读 `eval` 探测在当前 Windows wrapper 下无输出。两次均未改变报告，停止沿用这两个入口，改走可访问性焦点/键盘或导出路径。
+- [x] 浏览器错误记录：旧 radio ref 再次失效；已复核 CLI 当前帮助，确认可用 `find role ...`、`check`、`press` 与 `download`，后续不再猜测 ref 行为。
+- [x] 根因定位：`get url` 显示 CLI 后续命令实际回到了用户闲鱼页签，而非 GSC；因此之前 locator 失败与 clicked/no-state-change 不是 GSC 控件本身失效。用户页签未被点击改变（仍是闲鱼域名）；后续每次操作前先显式选中本次工作 tab。
+- [x] 页签核对：GSC 为 `t1`，用户闲鱼为 `t2`（用户已自行切到另一个商品搜索，保持不动）。错误记录：CLI 不接受 `tab 0`，要求稳定 tab id；后续直接用 `tab t1`。
+- [x] 已显式切回 `t1` 并取得新 snapshot；确认 GSC 仍在 3 个月默认窗口，准备在同一工作 tab 上切换 `7 天`。
+- [x] 在正确 GSC 页签上 ref click 仍返回成功但 radio 未切换，确认问题是 GSC 自定义控件而非页签漂移；不重复 click，改用 `check` 或键盘原生交互。
+- [x] `check @e10` 成功把 URL 切到 `num_of_days=7`；当前 7 天视图为 0 clicks / 5 impressions / 0% CTR / 64.0 position。准确起止日尚待“天”表确认，未提前写成最终完整周。
+- [x] “天”tab 的普通 click 同样未切换表格（仍显示查询维度）；保留 7 天总数，接下来用完整可访问性快照/明确 URL 参数确认日期，而不凭按钮成功提示猜测。
+- [x] 已对“天”tab 使用可访问性 focus + Enter 原生交互；下一次快照只在 `天` 显示 selected 且表头变为日期时才采信。
+- [x] 完整 GSC snapshot 已确认图表窗口 2026-07-30—2026-08-05、上次更新 5 小时前；当前周 0 clicks / 5 impressions / 0% CTR / 64.0 position，上一同口径周 7/23—7/29 为 0 / 9 / 0% / 22.6。已写入 `findings.md`，并开始读取页面维度。
+- [x] 页面 tab 的 role click 仍未切换（查询维度继续 selected），因此不把未出现的页面行推断为零；本周查询可见行仅覆盖 2/5 impressions，保留隐私/低量截断边界。已转入 Page Indexing 官方路径复核新鲜度。
+- [x] 8/7 Page Indexing 仍停在上次更新 2026-07-24、28 indexed / 23 unindexed；原因、数量与验证状态均未变化。沿用 8/6 URL 级新证据，裁决继续 No action，不启动验证、不重复请求索引。
+- [x] 已关闭本次 GSC 工作页签 `t1`；浏览器仅剩用户闲鱼页签 `t2`，未导航、未关闭。
+
+### GA4 固定归因链与 EXP-44C79107
+
+- [x] 项目历史确认上一同口径窗口为 2026-07-24—07-30：33 sessions / 20 engaged / 143 events / key 0，Direct 33、Unassigned 1，Organic/Referral 无可见行；本次不得覆盖或调平该 UI 差异。
+- [x] 已用 `tab new` 新开 GA4 工作页签 `t3`，避免导航用户闲鱼页签；登录是否有效与当前属性尚待快照确认。
+- [x] GA4 登录有效，当前属性为 SmartPetGuide（property `p538426216`），首页为“过去 7 天”：36 active / 36 new / 150 events / key 0；渠道卡可见 Direct 36、Unassigned 7，source/medium 卡只列 `(direct)/(none)` 36。首页卡片不是最终归因报告，需进入 Traffic acquisition 获取 sessions、engagement 与完整行，并保留卡片/报告差异。
+- [x] GA4 tooltip 明确当前窗口为 **2026-07-31—08-06**，对比 2026-07-24—07-30；“查看流量获取情况”卡片按钮返回 clicked 但仍停留首页，未据此伪造报告总计，改用“最近访问过”的 Traffic acquisition 入口。
+- [x] “最近访问过”中的 `流量获取情况` 成功进入 `lifecycle-traffic-acquisition-v2` 报告；下一步读取总 sessions、engaged sessions、engagement rate、平均互动时长、events、key events 与渠道行。
+- [x] Traffic acquisition 默认恢复为 28 天（7/10—8/6），总计 123 sessions / 64 engaged / 52.03% / 10s / 534 events / key 0；该窗口不进入 Snapshot 12。报告证明 28 天内仍有 Referral 2（IndieHackers）与 Organic 1（Bing），但不得挪写成最新 7 天。已关闭不相关的“添加注释”提示，准备切换到 7/31—8/6。
+- [x] 已打开 GA4 日期选择器；可访问性树提供开始/结束日期输入框及“应用”，日历本体错误暴露大量 2017-2018 历史节点。停止滚动日历，改为直接填入准确日期文本，避免误选。
+- [x] 日期输入当前值格式确认：开始 `2026年7月10日`、结束 `2026年8月6日`；将按同格式填入 `2026年7月31日` 与 `2026年8月6日`。
+- [x] 开始/结束日期输入均已成功填入 2026-07-31 与 2026-08-06；尚未点击“应用”，下一步只在报告标题日期与表格同步刷新后采信。
+- [x] 日期应用校验失败：点击“应用”后报告仍显示过去 28 天、7/10—8/6 和原 123-session 表，说明直接 `fill` 未触发 GA4 日期组件的内部状态。未采信为 7 天结果；改用日期组件的预设菜单选择“过去 7 天”。
+- [x] 日期选择器已重新打开。工具错误记录：尝试把 annotated screenshot 保存到 `C:\tmp` 时被 browser helper 拒绝访问（os error 5），未生成文件；改存项目内临时路径并在验收前清理。
+- [x] 项目内 annotated screenshot 已生成；可访问性标注确认预设菜单已打开，并包含 `自定义 / 今天 / 昨天 / …`。截图仅用于定位，验收前删除，不纳入提交。
+- [x] 视觉复核确认预设菜单明确包含“过去 7 天”，已用 role=menuitem 精确点击；待“应用”并确认报告日期变为 7/31—8/6 后采信。
+- [x] 预设 role click + “应用”后报告仍停在过去 28 天，说明 locator 命中了非生效菜单节点或组件未提交；继续不采信。改用已标注 screenshot 的可见菜单坐标完成一次受限点击，并立即核对日期。
+- [x] 已按 annotated screenshot 坐标在可见“过去 7 天”行与“应用”按钮各点击一次；所有鼠标 down/up 正常释放。仅待报告日期与表格实际刷新后记为成功。
+- [x] 坐标校验仍未切换：复核标注框发现日期菜单实际从 x=1613 开始，首次 x=1560 点在菜单左侧图表区；“应用”因此提交了旧 28 天。页面未产生除日期尝试外的外部写入，改用菜单内 x=1660 重试一次。
+- [x] 已用校正后的可见菜单坐标 x=1660 选择“过去 7 天”，再点击“应用”并等待 2 秒；下一次快照为最终生效校验。
+- [x] **GA4 7 天切换成功**：URL 带 `dateOption=last7Days`，报告明确为 7/31—8/6；总计 36 sessions / 14 engaged / 38.89% / 8s / 150 events / key 0。Direct 36/14/139，Unassigned 7/0/11，Organic/Referral 无可见行；总计 36 与渠道行合计 43 的 UI 差异原样保留。
+- [x] 已进入 `landing-page` 报告，URL 保留 `last7Days`；下一步读取完整 landing 行并定位 feeder portion，而不是用首页“热门内容”替代落地页。
+- [x] Landing report 同口径 7/31—8/6：36 sessions / 36 active / 36 new / 8s / key 0，共 22 行；首页 15 Direct sessions，`(not set)` 7，无页面名的该行不能归为任何 landing。已在表格搜索框精确检索 `feeder-portion-size-guide`。
+- [x] GA4 表格搜索框显示检索词但初次未立即过滤行；已按 Enter 提交。下一快照只在行数/结果实际改变后判定 portion 是否出现。
+- [x] 精确检索已生效（URL 带 `filterTerm=feeder-portion-size-guide`），结果为 0 sessions / 0 active / 0 new / 0s / key 0。上周 1 Direct session / 2s 未延续；不宣称实验 uplift，也不因零样本重复改页。
+- [x] 已返回 GA4 首页，`last7Days` 状态保留；准备从最近访问入口读取完整 Events 报告，确认 `affiliate_click`、`outbound_click` 与基础事件，而不是只看首页 Top 5。
+- [x] 已点击首页“最近访问过”的 Events 入口；下一步先核对 URL 与完整事件表是否继承 `last7Days`，未出现的商业事件只在表格行数与总数闭合后判为 0。
+- [x] Events 报告确认继承 2026-07-31—08-06，使用 100% 可用数据且仅 `1-5/5`：`page_view 40`、`first_visit 36`、`session_start 36`、`user_engagement 36`、`scroll 2`，五行合计正好 150；因此 `affiliate_click=0`、`outbound_click=0`，总收入 $0、key events 0。
+- [x] 周五观察结论：总 sessions 33→36、events 143→150，但 engaged sessions 20→14、engagement rate 60.61%→38.89%、平均互动 10s→8s；最新完整周无可见 Organic/Referral，portion landing 1→0，商业事件仍 0。`EXP-44C79107` 继续 Active / collect，8/9 再做正式 Keep/Adjust/Kill，不提前宣称 uplift。
+- [x] 已关闭本次 GA4 工作页签 `t3`；浏览器仅剩用户原闲鱼页签 `t2`，未导航、未关闭。
+
+### Pinterest 与 Semrush 维护快照
+
+- [x] 已从项目记录恢复 Snapshot 11 口径：Pinterest 自有 Pin、排除 repin/paid；近 7 天 2,003 / 9 / 8 / 1 / 0，近 30 天 11,617 / 65 / 57 / 6 / 4，数据截至 7/29且采集路径与早期 UI 不同；Semrush 7/17 历史值为 AS 2 / 12 referring domains / 28 backlinks / 20 organic keywords。
+- [x] 已用 `tab new` 新开 Pinterest Business Hub 工作页签 `t4`；登录与页面可读性待复核，不导航用户闲鱼页签。
+- [x] Pinterest 登录有效，账号为 SmartPetGuide / `@muchengxian`，域名已验证。Business Hub 默认近 30 天卡片可见 9,375 impressions / 57 engagements / 5 saves；未展示 Pin clicks/outbound，也未给出准确结束日，因此先进入完整 Analytics，不把卡片值与 Snapshot 11 的服务端汇总机械同比。
+- [x] 已关闭营销计划调查弹窗并点击“查看分析工具”；下一步只在完整 Analytics 显示日期、过滤器和五项指标后形成本次维护快照。
+- [x] 完整 Pinterest Analytics 已打开，URL 明确 `content_type=organic`、`include_curated=created`、`last30d`，即自然内容 / 自有 Pin / 近 30 天；页面日期为 2026-07-08—08-04（UTC 日数据）。当前完整 snapshot 较长，先读取顶部五项总计，再切换同过滤器的 7 天窗口。
+- [x] 完整 Analytics 的 body 文本确认当前显示 2026-07-08—08-07、指标更新于 2 天前：136 impressions / 0 engagements / 0 outbound / 0 saves / audience 15 / engaged audience 0；Pin clicks 未作为顶部卡显示，不能填值。该结果与 Business Hub 9,375 / 57 / 5 明显属于不同聚合路径，必须并列标注、不得择一伪装同口径趋势。
+- [x] 浏览器错误记录：直接用含 `&` 的完整 URL 调用 Windows `.cmd open` 时，wrapper 仅导航到 `content_type=organic`，其余参数被 cmd 当作命令并返回 exit 1；页面没有外部写入。停止用未转义 URL，改为页面日期控件或正确转义参数。
+- [x] Pinterest 自动恢复了完整 `last30d` 参数；交互快照确认日期范围控件 `@e21` 可用。下一步通过页面控件选择“过去 7 天”，避免再次受 Windows `.cmd` 的 `&` 解析影响。
+- [x] 日期范围普通 click 返回成功但控件仍为 `aggregation=last30d` 且未展开可访问选项；未把点击成功当成窗口切换。改用原生 `select` 设置“过去 7 天”，并以 URL 与 body 日期双重确认。
+- [x] 原生 `select` 成功：URL 为 `aggregation=last7d`，正文日期 2026-07-31—08-07、指标更新于 2 天前；同一自然/自有 Pin 路径为 2 impressions / 0 engagements / 0 outbound / 0 saves / audience 2 / engaged audience 0。页面顶部未展示 Pin clicks 数值，需通过指标表单独核对，不填猜测值。
+- [x] 当前快照确认折线图指标控件为 `@e33`，可选择 `Pin 图点击次数`；热门 Pin 与最佳图板的排序控件不是总量来源，不用它们推算。下一步从折线图总计读取 7 天与 30 天 Pin clicks。
+- [x] 7 天折线图切到 `primary_metric=PIN_CLICK` 后总计为 0；因此同一路径完整 7 天五项为 2 impressions / 0 engagements / 0 Pin clicks / 0 outbound / 0 saves。下一步切回 30 天并以相同方式补齐 Pin clicks。
+- [x] 30 天折线图同样确认 `Pin 图总点击次数=0`；完整 Analytics 的自然/自有 Pin 路径为 136 impressions / 0 engagements / 0 Pin clicks / 0 outbound / 0 saves，显示窗口 7/8—8/7、指标更新于 2 天前、实时数据不可用。7 天仅两张 Pin 各 1 impression，不发布新 Pin，继续维护模式。
+- [x] Pinterest 口径裁决：Business Hub（9,375 impressions / 57 engagements / 5 saves）与 Analytics 自然/自有 Pin（136 / 0 / 0）同日读数不可拼接，说明聚合/归属口径不同；Snapshot 12 以能明确日期和过滤器的 Analytics 路径为主，并把 Hub 卡片作为“不同口径旁证”，不与 Snapshot 11 服务端汇总做机械同比。
+- [x] 已关闭 Pinterest 工作页签 `t4`。新开 Semrush 工作页签时，Windows `.cmd` 再次把 URL 中 `&db=us` 截断并返回 exit 1；已打开的基础 domain URL 仍可用于只读登录检查，后续不再拼接含 `&` 参数。
+- [x] Semrush 登录不可用：页头仍显示 Log In / Sign Up，并弹出“Register to get 10 free requests”；虽然查询框含 `smartpetguide.net`，主体却错误显示 `Organic Rankings: ebay.com` 与占位式 `some ebay keyword`，不可采信。今日 Semrush 标记 N/A，不登录、不创建账号、不把伪数据写入快照；仅保留 7/17 用户确认的 AS 2 / 12 referring domains / 28 backlinks / 20 organic keywords 为历史背景。
+- [x] 已关闭 Semrush 工作页签 `t5`；收工前浏览器仅剩用户原闲鱼页签 `t2`，未导航、未关闭。
+
+### 文件同步与收口
+
+- [x] 决策前已重读 `task_plan.md` 的 Week 13 排班与硬闸门、以及指标日志 Snapshot 11 格式：8/7 任务确为形成 Snapshot 12；0 新 URL、0 新 Pin/邮件、唯一实验 Review 仍固定 8/9，今天只更新事实层和活跃入口。
+- [x] 已核对 `weekly-report.md`、根/项目 `CLAUDE.md` 与 Week 13 模板：当前仍把周四写成最新状态，且 8/7 仍为 pending；本次需同步 Snapshot 12、把下一项切到 8/8 证据矩阵。月度北极星/资源比例/停止项均未变化，Month 2 战略书 N/A。
+- [x] 已同步 Snapshot 12 到指标日志、周五周报、计划、findings、根/项目 Claude 活跃入口与 Week 13 模板；并把模板旧 GA4/Pinterest/Semrush 事实锁更新为当前快照，避免下一会话同时读到旧基线和新 closure。首次 `git diff --check` 通过。
+- [x] 收口发现并清理开工时不存在的 zero-byte `({type`：创建时间 2026-08-07 22:05、内容为空，属于本次浏览器命令解析副产物；删除前已核对绝对路径、大小与日期，未触碰用户文件。
+
+### 文件同步矩阵与 N/A
+
+- [x] GSC / GA4 / Pinterest / Semrush 新快照 → `docs/monetization/weekly-metrics-log.md`、`weekly-report.md`、`findings.md`、`progress.md`。
+- [x] 8/7 排班完成、下一项 8/8 → `task_plan.md`、根 `CLAUDE.md`、`.claude/CLAUDE.md`、`docs/claude-week13-execution-prompt-template.md`。
+- [x] Month 2 战略书 N/A：北极星、资源比例、停止事项和最终裁决均未变化；正式月度裁决仍锁定 8/9。
+- [x] backlinks / CRM / 邮件文件 N/A：今天没有新 inbound、回复、接受、落链或外部发送，PHP/Round 4 状态未变。
+- [x] 站点源码、`content-dates.json`、sitemap 与 build N/A：今天为纯后台只读与文档快照，没有页面或配置修改；生产站仍需在 push 后做 READY/HTTP 存活核对。
+- [x] 提交前验收：`git diff --check` 与 `git diff --cached --check` 通过；暂存区仅 8 个预期文档，最终 188 insertions / 10 deletions，无 untracked 文件。CRLF 提示为现有 Windows 行尾转换警告，不是 diff 错误。
